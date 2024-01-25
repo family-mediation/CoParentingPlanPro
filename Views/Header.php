@@ -14,6 +14,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
+      <div class="container" class="text-center" >
     <h1>Coparent Pro Version 1</h1>
 
     <!-- Optional JavaScript -->
