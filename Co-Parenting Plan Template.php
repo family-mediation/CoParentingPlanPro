@@ -1,5 +1,6 @@
+<?php $parentAName = $_POST['ParentAFirst']." ".$_POST['ParentALast']?>
+<h1><?php echo $parentAName; ?></h1>
 <html>
-
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
@@ -50,8 +51,8 @@ href="#GuidingPrinciplesProtectionFromDisputes">2.03   Guiding Principles. 
 Protection from Parental Disputes</a> </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PartiesInformationonParentA"><span lang=FR>3.00   Parties: Information
-on Parent A</span></a></p>
+href="#PartiesInformationon<? php echo $parentAName; ?>"><span lang=FR>3.00   Parties: Information
+on <?php echo $parentAName; ?></span></a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
 href="#PartiesInformationonParentB"><span lang=FR>3.01   Parties: Information
@@ -218,7 +219,7 @@ Attached to a Weekend</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'>           <a
 href="#PhysicalCustodyHolidaysEveryYearWithAorB">6.03D          Every Year with
-Parent A or Parent B</a></p>
+<?php echo $parentAName; ?> or Parent B</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
 href="#PhysicalCustodyTravelwithChild">6.04   Physical Custody and Timesharing:
@@ -590,7 +591,7 @@ border:none'>&nbsp;</p>
 border:none'>&nbsp;</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Name of Parent A</p>
+border:none'>Name of <?php echo $parentAName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
 border:none'>Address</p>
@@ -992,9 +993,9 @@ line-height:150%;border:none'><u><span lang=FR>PARTIES:</span></u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PartiesInformationonParentA><b><span lang=FR>3.00  </span></b></a><u><span
+name=PartiesInformationon<? php echo $parentAName; ?>><b><span lang=FR>3.00  </span></b></a><u><span
 lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.  </span>PARENT
-A’s full legal name is ____________.  Parent A’s residence address is
+A’s full legal name is ____________.  <?php echo $parentAName; ?>’s residence address is
 ____________.  </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
@@ -1058,7 +1059,7 @@ resolution process set out in this document.</span></p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=LegalCustodySole><b>5.02</b>  <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>. 
-Parent A/B shall have sole legal custody of the Child(ren).</p>
+<?php echo $parentAName; ?>/B shall have sole legal custody of the Child(ren).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
@@ -1067,7 +1068,7 @@ PARENTS MUST CONSULT BUT ONE PARENT HAS TIE-BREAKING AUTHORITY</u></a>. 
 Parents shall share joint legal custody of the Child(ren), provided however,
 that if Parents cannot mutually agree on a legal custody decision for the
 Child(ren) after consulting with the other Parent and the Child(ren), then
-Parent A/B shall have tie-breaking authority to make the legal custody decision
+<?php echo $parentAName; ?>/B shall have tie-breaking authority to make the legal custody decision
 in the event of an impasse.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -1076,17 +1077,17 @@ name=LegalCustodyParentsConsultDivofAuthority><b>5.04  </b><u>LEGAL CUSTODY:
 PARENTS MUST CONSULT BUT THERE IS A DIVISION OF AUTHORITY</u>.  </a>Parents
 shall share joint legal custody of the Child(ren), provided however, that if
 Parents cannot mutually agree on a legal custody decision for the Child(ren),
-then Parent A shall have tie-breaking authority to make <span style='color:
+then <?php echo $parentAName; ?> shall have tie-breaking authority to make <span style='color:
 #333333'>major decisions about the Child(ren)'s education and extracurricular
 activities, after consulting with Parent B and the Child(ren) and Parent B
 shall have tie-breaking authority to make major decisions about the Child(ren)'s
-health care, language, and spirituality, after consulting with Parent A and the
+health care, language, and spirituality, after consulting with <?php echo $parentAName; ?> and the
 child.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=LegalCustodyAccesstoInformation><b>5.05</b>  <u>LEGAL CUSTODY: ACCESS TO
-INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.  Although Parent A/B is
+INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.  Although <?php echo $parentAName; ?>/B is
 awarded sole legal custody, Parent B/A shall have free and unrestricted access
 to all information pertaining to the Child(ren).  The Parent who does not have
 legal custody may independently contact any provider serving the Child(ren)
@@ -2439,16 +2440,16 @@ Parents shall share time with the Child(ren) during Fall Breaks as follows:  </p
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyFallBreakSB><b>6.02A(i)      </b><u>SPLIT BREAK</u>.</a> 
-In odd years, Parent A shall have the Child(ren) during the first half of the
+In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
 break and Parent B shall have the Child(ren) during the second half of the
 break.  In even years, Parent B shall have the Child(ren) during the first half
-of the break and Parent A shall have the Child(ren) during the second half of
+of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyFallBreakAB><b>6.02A(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, Parent A shall have the entire break.  In even calendar
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
 years, Parent B shall have the entire break.   </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -2466,16 +2467,16 @@ follows:  </p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyThanksgivingSB><b>6.02B(i)      </b><u>SPLIT BREAK</u></a>. 
-In odd years, Parent A shall have the Child(ren) during the first half of the
+In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
 break and Parent B shall have the Child(ren) during the second half of the
 break.  In even years, Parent B shall have the Child(ren) during the first half
-of the break and Parent A shall have the Child(ren) during the second half of
+of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyThanksgivingAB><b>6.02B(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, Parent A shall have the entire break.  In even calendar
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
 years, Parent B shall have the entire break.   </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -2500,7 +2501,7 @@ follows:</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyWinterBreakSB><b>6.02C(i)      </b><u>SPLIT BREAK</u></a>. 
-In odd years, Parent A shall have the Child(ren) during the first half of the
+In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
 break, to include Christmas Eve and Christmas Day, and Parent B shall have the
 Child(ren) during the second half of the break, to include New Year’s Eve and
 New Year’s Day.  In even years, Parent B shall have the Child(ren) during the
@@ -2511,17 +2512,17 @@ Year’s Eve and New Year’s Day.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyWinterBreakAB><b>6.02C(ii)     </b><u>ALTERNATE BREAK</u>.</a> 
-In odd calendar years, Parent A shall have the entire break.  In even calendar
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
 years, Parent B shall have the entire break.   </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodyWinterBreakSBwithHoliday><b>6.02C(iii)    </b><u>SPLIT
-BREAK WITH HOLIDAY TIME</u></a>.<b>  </b>In even years, Parent A shall have the
+BREAK WITH HOLIDAY TIME</u></a>.<b>  </b>In even years, <?php echo $parentAName; ?> shall have the
 first half of Winter Break to include Christmas Eve and Christmas Day, and
 Parent B shall have the second half to include New Year’s Eve and New Year’s
 Day.  In odd years, Parent B shall have the first half of Winter Break to
-include Christmas Eve and Christmas Day and Parent A shall have the second
+include Christmas Eve and Christmas Day and <?php echo $parentAName; ?> shall have the second
 half, to include New Year’s Eve and New Year’s Day.  During their time, either
 parent may elect to travel with the Child(ren).  In the event that the
 custodial parent is not traveling, the non-custodial parent shall have the
@@ -2542,16 +2543,16 @@ Parents shall share time with the Child(ren) during Spring Breaks as follows:  <
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodySpringBreakSB><b>6.02D(i)      </b><u>SPLIT BREAK</u>.  </a>In
-odd years, Parent A shall have the Child(ren) during the first half of the
+odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
 break and Parent B shall have the Child(ren) during the second half of the
 break.  In even years, Parent B shall have the Child(ren) during the first half
-of the break and Parent A shall have the Child(ren) during the second half of
+of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodySpringBreakAB><b>6.02D(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, Parent A shall have the entire break.  In even calendar
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
 years, Parent B shall have the entire break.   </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -2568,10 +2569,10 @@ Parents shall share time with the Child(ren) during Summer Break as follows:</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
 name=PhysicalCustodySummerBreakSB><b>6.02E(i)      </b><u>SPLIT BREAK</u></a>. 
-In odd years, Parent A shall have the Child(ren) during the first half of the
+In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
 break and Parent B shall have the Child(ren) during the second half of the
 break.  In even years, Parent B shall have the Child(ren) during the first half
-of the break and Parent A shall have the Child(ren) during the second half of
+of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break, to include New Year’s Eve and New Year’s Day.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -2589,7 +2590,7 @@ break provided however that both parents shall have the option to take
 ___days/weeks of uninterrupted time with the Child(ren) every summer.  Parents
 shall select and exchange their dates for uninterrupted time with the
 Child(ren) by no later than ____________(date) of the same year.  In even
-years, Parent A shall have the first choice of dates for uninterrupted time
+years, <?php echo $parentAName; ?> shall have the first choice of dates for uninterrupted time
 during the Summer Break.  In odd years, Parent B shall have the first choice of
 dates for uninterrupted time during the Summer Break.  </p>
 
@@ -2813,17 +2814,17 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
 name=PhysicalCustodyHolidaysAltYearly><b>6.03A         </b><u>ALTERNATE YEARLY</u></a>. 
-Parent A shall have the Child(ren) in even/odd years.  Parent B shall have the Child(ren)
+<?php echo $parentAName; ?> shall have the Child(ren) in even/odd years.  Parent B shall have the Child(ren)
 in even/odd years.  An alternated holiday/special day shall be defined as
 beginning at ___am/pm and ending at ___am/pm.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
 name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>         <u>SPLIT EVERY
-YEAR</u></a>.  Parent A shall have the Child(ren) for the first half and Parent
+YEAR</u></a>.  <?php echo $parentAName; ?> shall have the Child(ren) for the first half and Parent
 B shall have the Child(ren) for the second half of this holiday/special day in
 even/odd years.  Parent B shall have the Child(ren) for the first half and
-Parent A shall have the Child(ren) for the second half of this holiday/special
+<?php echo $parentAName; ?> shall have the Child(ren) for the second half of this holiday/special
 day in even/odd years.  A split holiday shall be defined as beginning at
 ___am/pm and ending at ___am/pm.</p>
 
@@ -2861,11 +2862,11 @@ shall not occur.&nbsp;  </p>
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>Parents shall alternate having the first choice for dates for
 off-island travel during the Child(ren)’s summer vacations each year.  In even
-years, Parent A shall have first choice for dates of travel so long as they
+years, <?php echo $parentAName; ?> shall have first choice for dates of travel so long as they
 provide those specific dates in writing to Parent B by no later than _________
 [insert date] of that same year.  In odd years, Parent B shall have first
 choice for dates of travel so long as they provide the specific dates in
-writing to Parent A by no later than _________ [insert date] of that same year.
+writing to <?php echo $parentAName; ?> by no later than _________ [insert date] of that same year.
 If either parent wishes to take the Child(ren) out of the country or miss any
 school days in order to travel, such a trip shall require the non-traveling
 parent’s consent which, if such requests are occasional, shall not be
@@ -2924,7 +2925,7 @@ neutral location  __________________________ [insert address].</p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=PhyscialCustodyDelgationPickupDropOff><b>6.10  </b><u>PHYSICAL CUSTODY AND
 TIMESHARING:  PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>. 
-<span style='color:#333333'>If it is not possible for Parent A or Parent B to
+<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or Parent B to
 pick up or drop off the Child(ren) as provided for in the parenting time
 arrangement, the Parent who is responsible for the pick-up or drop off may
 delegate another person to pick up or drop off the Child(ren).</span></p>
@@ -2933,7 +2934,7 @@ delegate another person to pick up or drop off the Child(ren).</span></p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11  </b><u>PHYSICAL CUSTODY
 AND TIMESHARING:  PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
-<span style='color:#333333'>If it is not possible for Parent A or Parent B to
+<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or Parent B to
 pick up or drop off the Child(ren) as provided for in the parenting time
 arrangement, the following people may pick up or drop off the Child(ren):
 ____________________________[insert names of all jointly authorized
@@ -2951,7 +2952,7 @@ property. If there is potential for conflict on this issue, it can be important
 to be clear about where the Child(ren) may take these items and communicate
 this directly to the other Parent.  </span>Child(ren) may take personal items
 (for example, clothing, toys, sports equipment, cell phone, regardless of which
-Parent purchased these items), between the homes of Parent A and Parent B.
+Parent purchased these items), between the homes of <?php echo $parentAName; ?> and Parent B.
 Parents will not restrict the Child(ren)'s ability to take these items between
 homes. Parents will each have toiletries, pajamas and as many belongings as
 possible for the Child(ren) in their homes. These items will not travel back
@@ -3129,9 +3130,9 @@ they wish.</span></p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=CommunicationSpecific><b>7.08  </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
 NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
-regular parenting time schedule, Parent A may call the child between [insert
+regular parenting time schedule, <?php echo $parentAName; ?> may call the child between [insert
 time] and [insert time] when they are with Parent B and Parent B may call the
-child between [insert time] and [insert time] when they are with Parent A.
+child between [insert time] and [insert time] when they are with <?php echo $parentAName; ?>.
 Calls will normally be no more than 10 minutes.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3180,13 +3181,13 @@ shall be bound by and follow the Uniform Interstate Family Support Act.</p>
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
 border:none'><a name=SoCChildSupportSameState><b>8.01  </b><u>SUPPORT OF THE
 CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN THE SAME
-STATE</u>.  </a>Child support shall be paid by Parent A/B to Parent B/A and
+STATE</u>.  </a>Child support shall be paid by <?php echo $parentAName; ?>/B to Parent B/A and
 calculated pursuant to the State child support guidelines worksheet. </p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
 border:none'><a name=SoCChildSupportDifferentState><b>8.02  </b><u>SUPPORT OF
 THE CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN
-DIFFERENT STATES</u></a>. Child support shall be paid by Parent A/B to Parent
+DIFFERENT STATES</u></a>. Child support shall be paid by <?php echo $parentAName; ?>/B to Parent
 B/A and calculated pursuant to the guidelines for child support in the ____
 [insert State].  </p>
 
@@ -3194,7 +3195,7 @@ B/A and calculated pursuant to the guidelines for child support in the ____
 margin-left:0in;text-align:justify;line-height:150%'><a
 name=SoCChildSupportAgreedAlternative><b>8.03  </b><u>SUPPORT OF THE
 CHILD(REN): MUTUALLY AGREED UPON CHILD SUPPORT AMOUNT ALTERNATIVE</u></a>. 
-Child Support shall be paid by Parent A/B to Parent B/A by agreement of the
+Child Support shall be paid by <?php echo $parentAName; ?>/B to Parent B/A by agreement of the
 Parents in the amount of $______/per Child per month for a total monthly child
 support amount of $_______.  Both Parents understand that child support is
 modifiable going forward and at any time either Parent may request that child
@@ -3236,7 +3237,7 @@ OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</u></a>.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=SoCHealthInsurance><b>8.08  </b><u>SUPPORT OF THE CHILD(REN): HEALTH
-INSURANCE PREMIUM</u></a><u>S</u>.   Parent A/B shall cover the Child(ren)’s
+INSURANCE PREMIUM</u></a><u>S</u>.   <?php echo $parentAName; ?>/B shall cover the Child(ren)’s
 health insurance premiums in the amount of $______ per month.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3247,13 +3248,13 @@ CO-PAYS FOR HEALTH-RELATED EXPENSES</u></a>.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
 name=SoCUninsuredCoPaysSR><b>8.09A         </b><u>SOLE RESPONSIBILITY</u></a>.
-Parent A/B shall cover 100% of the Child(ren)’s uninsured co-pays for
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s uninsured co-pays for
 health-related expenses premiums in the amount of $______ per month.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
 name=SoCUninsuredCoPaysSpR>8.09B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-Parent A shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
 uninsured co-pays for health-related expenses premiums in the amount of $______
 per month.</p>
 
@@ -3263,7 +3264,7 @@ name=SoCUninsuredCoPaysThresholdAmount>8.09C         </a></b><u>RESPONSIBILITY
 FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to $____ per Child per
 calendar year in uninsured co-pays for health-related expenses.  In the event
 that any Child’s uninsured co-pays for health-related expenses paid by either
-parent exceeds $____ per calendar year, then Parent A shall cover ____% and
+parent exceeds $____ per calendar year, then <?php echo $parentAName; ?> shall cover ____% and
 Parent B shall cover ____% of the Child(ren)’s uninsured co-pays for
 health-related expenses premiums exceeding the threshold amount.</p>
 
@@ -3293,12 +3294,12 @@ EXTRACURRICULAR EXPENSES</u></a>.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
 name=SoCExtracurricularSR><b>8.10A         </b><u>SOLE RESPONSIBILITY</u></a>.
-Parent A/B shall cover 100% of the Child(ren)’s extracurricular expenses.</p>
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s extracurricular expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
 name=SoCExtracurricularSpR>8.10B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-Parent A shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
 extracurricular expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3330,12 +3331,12 @@ PRIVATE SCHOOL EXPENSES</u>.</a></p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
 name=SoCPrivateSchoolExpensesSR><b>8.11A         </b><u>SOLE RESPONSIBILITY</u></a>.
-Parent A/B shall cover 100% of the Child(ren)’s private school expenses.</p>
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s private school expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
 name=SoCPrivateSchoolExpensesSpR>8.11B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-Parent A shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
 private school expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3366,13 +3367,13 @@ SCHOOL EDUCATION EXPENSES</u></a>.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCPostSchoolExpensesSR><b>8.12A         </b><u>SOLE RESPONSIBILITY</u></a>.
-Parent A/B shall cover 100% of the Child(ren)’s post-high school education
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s post-high school education
 expenses.  </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
 name=SoCPostSchoolExpensesSpR>8.12B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-Parent A shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
 post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3383,7 +3384,7 @@ CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S
 POST-HIGH SCHOOL EDUCATION EXPENSES</u>.  After funds from any 529 accounts
 held on behalf of a Child or Child(ren), Coverdell accounts or other funds
 ear-marked to pay for a Child’s post-high school education expenses are
-expended, then Parent A/B shall cover 100% of the Child(ren)’s remaining
+expended, then <?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s remaining
 post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3394,14 +3395,14 @@ CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S
 POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.  After funds from any 529 accounts
 held on behalf of a Child or Child(ren), Coverdell accounts or other funds
 ear-marked to pay for a Child’s post-high school education expenses are
-expended, then Parent A shall cover ____% and Parent B shall cover ____% of the
+expended, then <?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the
 Child(ren)’s remaining post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
 name=SoCPostSchoolExpensesCap>8.12E</a></b>         <u>CAP ON PAYMENT BY EACH
 PARENT PER ACADEMIC SCHOOL YEAR</u>.  The Child(ren)’s post-high school
-education expenses shall be paid such that Parent A shall cover ____% up to a
+education expenses shall be paid such that <?php echo $parentAName; ?> shall cover ____% up to a
 cap of $____ amount per academic school year and Parent B shall cover ____% up
 to a cap of $____ amount per academic school year. </p>
 
@@ -3437,13 +3438,13 @@ CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</u></a>.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCDependentsSA><b>8.13A         </b><u>SOLE AUTHORITY TO CLAIM THE
-CHILD(REN</u></a><u>)</u>. Parent A/B shall be entitled to claim any Child(ren)
+CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?>/B shall be entitled to claim any Child(ren)
 as a dependent for tax purposes every year.  </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCDependentsSpA><b>8.13B         </b><u>SPLIT AUTHORITY TO CLAIM THE
-CHILD(REN</u></a><u>)</u>. Parent A shall be entitled to claim _____(Child’s
+CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?> shall be entitled to claim _____(Child’s
 Initials) as a dependent for tax purposes every year.  Parent B shall be
 entitled to claim _____(Child’s Initials) as a dependent for tax purposes every
 year.  </p>
@@ -3451,7 +3452,7 @@ year.  </p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCDependentsSpAthenAlternate><b>8.13C         </b><u>SPLIT AUTHORITY TO
-CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. Parent A shall be entitled to
+CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. <?php echo $parentAName; ?> shall be entitled to
 claim _____(Child’s Initials) as a dependent for tax purposes every year. 
 Parent B shall be entitled to claim _____(Child’s Initials) as a dependent for
 tax purposes every year. Once the older Child is no longer eligible to be
@@ -3461,7 +3462,7 @@ Child.   </p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCDependentsAlternate><b>8.13D         </b><u>ALTERNATE AUTHORITY TO
-CLAIM THE CHILD(REN</u></a><u>)</u>. Parent A shall be entitled to claim the
+CLAIM THE CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?> shall be entitled to claim the
 Child(ren) as dependent(s) for tax purposes in even years.  Parent B shall be
 entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
 years.  </p>
@@ -3612,7 +3613,7 @@ attending the Child(ren)’s school events and extracurricular activities.</span><
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=OtherIssuesDocuments><b>9.11  </b><u>OTHER ISSUES: DOCUMENTS</u></a>.  <span
-style='color:#333333'>Parent A/B will keep the original passport issued in the
+style='color:#333333'><?php echo $parentAName; ?>/B will keep the original passport issued in the
 Child(ren)'s name, their social security card, birth certificate, and [insert
 any other relevant documents] at their home, and these documents will be made
 available to Parent B/A as needed. Both Parents shall have copies of all of the

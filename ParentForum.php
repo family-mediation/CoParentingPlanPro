@@ -1,5 +1,5 @@
 <div class="text-center">
-    <form method="post" class="" locale="ENGLISH" action="Submit.php">
+    <form method="post" class="" locale="ENGLISH" action="Co-Parenting Plan Template.php">
         <div class="card p-4">
             <label data-dm->Nature of Case (Select One)</label>
             <div class="">
@@ -45,7 +45,11 @@
         <H1> Information About You</H1>
         <div class="card p-4">
             <label class="" hide="true" data-dm->Full Legal Name</label>
-            <input type="text" class="" name=" " placeholder="Full Legal Name" data-placeholder-original="Full Legal Name">
+            <input type="text" class="" name="ParentAFirst" placeholder="Full Legal Name" data-placeholder-original="Full Legal Name">
+            <input type="hidden" name=" " value="Full Legal Name" class="">
+            
+            <label class="" hide="true" data-dm->Last Name</label>
+            <input type="text" class="" name="ParentALast" placeholder="Full Legal Name" data-placeholder-original="Full Legal Name">
             <input type="hidden" name=" " value="Full Legal Name" class="">
 
 
