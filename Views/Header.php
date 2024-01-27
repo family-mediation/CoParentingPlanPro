@@ -15,11 +15,33 @@
     <link src="Scripts/Pagination.js">
     <title>CoparentingPlan Pro</title>
     <script>
-        $(document).ready( function (){
-        let elements = $("#mainForm").children();
-        elements.addClass("hidden");
-            }
-        )
+        let pageCount = 0;
+        let numPages = 0;
+        let current = $("#page" + pageCount);
+        $(document).ready(function() {
+            let elements = $("#mainForm").children();
+            numPages = elements.length;
+            //hide everything
+            elements.addClass("hidden");
+            current.removeClass("hidden");
+            next = $("#next");
+        });
+        
+       function nextHandler(){
+            current.addClass("hidden");
+            pageCount = (pageCount + 1) % numPages;
+            current = $("#page" + pageCount);
+            current.removeClass("hidden");
+            console.log(pageCount);
+        };
+        function previousHandler(){
+            current.addClass("hidden");
+            pageCount = (pageCount - 1) % numPages;
+            current = $("#page" + pageCount);
+            current.removeClass("hidden");
+            console.log(pageCount);
+        };
+
     </script>
 </head>
 <header>
