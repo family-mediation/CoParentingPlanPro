@@ -1,14 +1,15 @@
-<?php $parentAName = $_POST['ParentAFirst']." ".$_POST['ParentALast']?>
-<h1><?php echo $parentAName; ?></h1>
+<?php $parentAName = $_POST['partyAFirst']." ".$_POST['partyALast'];
+      $parentBName = $_POST['partyBFirst']." ".$_POST['partyBLast'];
+      $varName = "INSERT VARIABLE HERE";
+?>
+
+
 <html>
-<head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-
 </head>
 
 <body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
-
 <div class=WordSection1>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;</p>
@@ -22,537 +23,537 @@ normal'>AGREEMENT REGARDING CHILD CUSTODY, TIMESHARING AND SUPPORT</p>
 <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;</p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#IntroductionParentsDesire">1.01   Introduction: Parents’ Desire to
+href="#IntroductionParentsDesire">1.01&nbsp;&nbsp; Introduction: Parents' Desire to
 Effect Complete Agreement</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#IntroductionParentstoSeekFamilyCourt">1.02   Introduction: Parents to
+href="#IntroductionParentstoSeekFamilyCourt">1.02&nbsp;&nbsp; Introduction: Parents to
 Seek Family Court Approval</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#IntroductionParentsDoNotSeekFamilyCourt">1.03   Introduction: Parents Do
+href="#IntroductionParentsDoNotSeekFamilyCourt">1.03&nbsp;&nbsp; Introduction: Parents Do
 Not Intend to Seek Family Court Approval</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
 name=GuidingPrinciplesResponsibilitiestoChild></a><a
-href="#GuidingPrinciplesResponsibilitiestoChild">2.00   Guiding Principles.
+href="#GuidingPrinciplesResponsibilitiestoChild">2.00&nbsp;&nbsp; Guiding Principles.
 Responsibilities to Our Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#GuidingPrinciplesResponsibilitiestoCoPar">2.01   Guiding Principles. 
+href="#GuidingPrinciplesResponsibilitiestoCoPar">2.01&nbsp;&nbsp; Guiding Principles.&nbsp;
 Responsibilities to Our Co-Parent</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#GuidingPrinciplesNewIntimatePartners">2.02   Guiding Principles. 
+href="#GuidingPrinciplesNewIntimatePartners">2.02&nbsp;&nbsp; Guiding Principles.&nbsp;
 Statement About New Intimate Partners</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#GuidingPrinciplesProtectionFromDisputes">2.03   Guiding Principles. 
+href="#GuidingPrinciplesProtectionFromDisputes">2.03&nbsp;&nbsp; Guiding Principles.&nbsp;
 Protection from Parental Disputes</a> </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PartiesInformationon<? php echo $parentAName; ?>"><span lang=FR>3.00   Parties: Information
+href="#PartiesInformationon<?php echo $parentAName; ?>"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
 on <?php echo $parentAName; ?></span></a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PartiesInformationonParentB"><span lang=FR>3.01   Parties: Information
-on Parent B</span></a></p>
+href="#PartiesInformationonParentB"><span lang=FR>3.01&nbsp;&nbsp; Parties: Information
+on <?php echo $parentBName; ?></span></a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#ChildrenInformationonChildren">4.00   Children: Information on the
+href="#ChildrenInformationonChildren">4.00&nbsp;&nbsp; Children: Information on the
 Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyDefinition">5.00   Legal Custody: Definition</a> </p>
+href="#LegalCustodyDefinition">5.00&nbsp;&nbsp; Legal Custody: Definition</a> </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyJoint">5.01   Legal Custody: Joint to Both Parents</a> </p>
+href="#LegalCustodyJoint">5.01&nbsp;&nbsp; Legal Custody: Joint to Both Parents</a> </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodySole">5.02   Legal Custody: Sole to One Parent</a></p>
+href="#LegalCustodySole">5.02&nbsp;&nbsp; Legal Custody: Sole to One Parent</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyParentsConsultOneAuthority">5.03   Legal Custody: Parents
+href="#LegalCustodyParentsConsultOneAuthority">5.03&nbsp;&nbsp; Legal Custody: Parents
 Must Consult but One Parent has Tie-Breaking Authority</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyParentsConsultDivofAuthority">5.04   Legal Custody: Parents
+href="#LegalCustodyParentsConsultDivofAuthority">5.04&nbsp;&nbsp; Legal Custody: Parents
 Must Consult but there is a Division of Authority</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyAccesstoInformation">5.05   Legal Custody: Access to
+href="#LegalCustodyAccesstoInformation">5.05&nbsp;&nbsp; Legal Custody: Access to
 Information for Parent Without Legal Custody</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyEmergencyContact">5.06   Legal Custody: Emergency Contacts
+href="#LegalCustodyEmergencyContact">5.06&nbsp;&nbsp; Legal Custody: Emergency Contacts
 for the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyExpertAdvice">5.07   Legal Custody: Expert Advice When
+href="#LegalCustodyExpertAdvice">5.07&nbsp;&nbsp; Legal Custody: Expert Advice When
 Making Legal Custody Decisions</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyDaytoDay">5.08   Legal Custody: Day-to-Day Decisions</a></p>
+href="#LegalCustodyDaytoDay">5.08&nbsp;&nbsp; Legal Custody: Day-to-Day Decisions</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyEmergencyDecisions">5.09   Legal Custody: Emergency
+href="#LegalCustodyEmergencyDecisions">5.09&nbsp;&nbsp; Legal Custody: Emergency
 Decisions</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyHealthEmergencyDeathofParent">5.10   Legal Custody: Health
+href="#LegalCustodyHealthEmergencyDeathofParent">5.10&nbsp;&nbsp; Legal Custody: Health
 Emergency or Death of the Other Parent</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#LegalCustodyParallelParenting">5.11   Legal Custody: Parallel Parenting</a></p>
+href="#LegalCustodyParallelParenting">5.11&nbsp;&nbsp; Legal Custody: Parallel Parenting</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyGlobalPriority">6.00   Physical Custody and Timesharing:
+href="#PhysicalCustodyGlobalPriority">6.00&nbsp;&nbsp; Physical Custody and Timesharing:
 Global Priority</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyDuringSchoolYear">6.01   Physical Custody and
+href="#PhysicalCustodyDuringSchoolYear">6.01&nbsp;&nbsp; Physical Custody and
 Timesharing: Timesharing During the School Year</a></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
-href="#PhysicalCustodyEqual">          6.01A          Equal Timesharing
+href="#PhysicalCustodyEqual">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equal Timesharing
 Schedules</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyOther">           6.01B          Other Timesharing
+href="#PhysicalCustodyOther"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other Timesharing
 Schedules</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyDuringSchoolBreaks">6.02   Physical Custody and
+href="#PhysicalCustodyDuringSchoolBreaks">6.02&nbsp;&nbsp; Physical Custody and
 Timesharing: Timesharing During the School Breaks</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyFallBreak">           6.02A          Fall Break</a></p>
+href="#PhysicalCustodyFallBreak"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fall Break</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-name="_heading=h.hcavjzxvdgkz"></a><a href="#PhysicalCustodyFallBreakSB">                    6.02A(i)
+name="_heading=h.hcavjzxvdgkz"></a><a href="#PhysicalCustodyFallBreakSB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A(i)
 Split Break</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-name="_heading=h.ptfvl3aera8c"></a>                    <a
+name="_heading=h.ptfvl3aera8c"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyFallBreakAB">6.02A(ii) Alternate Break</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-name="_heading=h.q5n0t569stji"></a>                    <a
+name="_heading=h.q5n0t569stji"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyFallBreakContinueSchedule">6.02A(iii) Continue Schedule
 During the School Year</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#PhysicalCustodyThanksgiving">6.02B          Thanksgiving Break</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodyThanksgiving">6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thanksgiving Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyThanksgivingSB">6.02B (i) Split Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyThanksgivingAB">6.02B (ii) Alternate Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyThanksgivingTimeonDay">6.02B (iii) Time on Thanksgiving
 Day</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyThanksgivingContinueSched">6.02B (iv) Continue Schedule
 During the School Year</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyWinterBreak">           6.02C          Winter Break</a></p>
+href="#PhysicalCustodyWinterBreak"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Winter Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyWinterBreakSB">6.02C (i) Split Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyWinterBreakAB">6.02C (ii) Alternate Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyWinterBreakSBwithHoliday">6.02C (iii) Split Break with
 Holiday Time</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodyWinterBreakContinueSched">6.02C (iv) Continue Schedule
 During the School Year</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#PhysicalCustodySpringBreak">6.02D          Spring Break</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodySpringBreak">6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySpringBreakSB">6.02D (i) Split Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySpringBreakAB">6.02D (ii) Alternate Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySpringBreakContinueSched">6.02D (iii) Continue Scheduling
 During the School Year</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>          <a
-href="#PhysicalCustodySummerBreak">6.02E          Summer Break</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodySummerBreak">6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Summer Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySummerBreakSB">6.02E (i) Split Break</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySummerBreakContSched">6.02E (ii) Continue Schedule During
 the School Year</a> </p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>                    <a
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 href="#PhysicalCustodySummerBreakContSchedUnint">6.02E (iii) Continue Schedule
 During the School Year with Option for Uninterrupted Time</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyHolidaysandSpecialDays">6.03   Physical Custody and
+href="#PhysicalCustodyHolidaysandSpecialDays">6.03&nbsp;&nbsp; Physical Custody and
 Timesharing: Holidays and Special Days</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyHolidaysAltYearly">           6.03A          Alternate
+href="#PhysicalCustodyHolidaysAltYearly"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate
 Yearly</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#PhysicalCustodyHolidaysSplitEveryYear">6.03B          Split Every Year</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodyHolidaysSplitEveryYear">6.03B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Every Year</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#PhysicalCustodyHolidaysMonFri">6.03C          Monday/Friday Holidays
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodyHolidaysMonFri">6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monday/Friday Holidays
 Attached to a Weekend</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#PhysicalCustodyHolidaysEveryYearWithAorB">6.03D          Every Year with
-<?php echo $parentAName; ?> or Parent B</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#PhysicalCustodyHolidaysEveryYearWithAorB">6.03D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Every Year with
+<?php echo $parentAName; ?> or <?php echo $parentBName; ?></a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyTravelwithChild">6.04   Physical Custody and Timesharing:
+href="#PhysicalCustodyTravelwithChild">6.04&nbsp;&nbsp; Physical Custody and Timesharing:
 Travel with the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyRescheduling">6.05   Physical Custody and Timesharing:
+href="#PhysicalCustodyRescheduling">6.05&nbsp;&nbsp; Physical Custody and Timesharing:
 Rescheduling and Make-Up Time</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyROFR">6.06   Physical Custody and Timesharing: Right of
+href="#PhysicalCustodyROFR">6.06&nbsp;&nbsp; Physical Custody and Timesharing: Right of
 First Refusal</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhysicalCustodyPickupNonSchool">6.07   Physical Custody and Timesharing:
-Pick-Up for Non-School Exchanges</a>. <a href="#PhysicalCustodyDropOffNonSchool">6.08          Physical
+href="#PhysicalCustodyPickupNonSchool">6.07&nbsp;&nbsp; Physical Custody and Timesharing:
+Pick-Up for Non-School Exchanges</a>. <a href="#PhysicalCustodyDropOffNonSchool">6.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical
 Custody and Timesharing: Drop Off for Non-School Exchanges</a>.</p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyNeutralLocation">6.09   Physical Custody and Timesharing:
+href="#PhyscialCustodyNeutralLocation">6.09&nbsp;&nbsp; Physical Custody and Timesharing:
 Exchanges at a Neutral Location.</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyDelgationPickupDropOff">6.10   Physical Custody and
+href="#PhyscialCustodyDelgationPickupDropOff">6.10&nbsp;&nbsp; Physical Custody and
 Timesharing: Parental Authority to Delegate Pick-Up and Drop Off the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyAuthorizatioPickupDropOff">6.11    Physical Custody and
+href="#PhyscialCustodyAuthorizatioPickupDropOff">6.11&nbsp;&nbsp;  Physical Custody and
 Timesharing: Persons Authorized to Pick Up and Drop Off the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyChildBelongings">6.12   Physical Custody and Timesharing:
-Child(ren)’s Personal Belongings</a>        </p>
+href="#PhyscialCustodyChildBelongings">6.12&nbsp;&nbsp; Physical Custody and Timesharing:
+Child(ren)'s Personal Belongings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyRelocation">6.13   Physical Custody and Timesharing:
-Relocation</a>    </p>
+href="#PhyscialCustodyRelocation">6.13&nbsp;&nbsp; Physical Custody and Timesharing:
+Relocation</a>&nbsp;&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#PhyscialCustodyModofSchedule">6.14   Physical Custody and Timesharing:
+href="#PhyscialCustodyModofSchedule">6.14&nbsp;&nbsp; Physical Custody and Timesharing:
 Modification of Schedule by Agreement of Both Parents</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#Communication">7.00   Communication</a></p>
+href="#Communication">7.00&nbsp;&nbsp; Communication</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationEmailOnly">7.01   Communication Between Co-Parents: E-mail
+href="#CommunicationEmailOnly">7.01&nbsp;&nbsp; Communication Between Co-Parents: E-mail
 Only</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationEmailandTextOnly">7.02   Communication Between Co-Parents:
+href="#CommunicationEmailandTextOnly">7.02&nbsp;&nbsp; Communication Between Co-Parents:
 E-mail and Text Only</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationOurFamilyWizard">7.03   Communication Between Co-Parents:
+href="#CommunicationOurFamilyWizard">7.03&nbsp;&nbsp; Communication Between Co-Parents:
 Our Family Wizard or Other Mutually Agreed Upon Parenting Communication
 Application</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationMonthlyConference">7.04   Communication Between Co-Parents:
+href="#CommunicationMonthlyConference">7.04&nbsp;&nbsp; Communication Between Co-Parents:
 Monthly Conference</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationSemiAnnualConference">7.05   Communication Between
+href="#CommunicationSemiAnnualConference">7.05&nbsp;&nbsp; Communication Between
 Co-Parents: Semi Annual Conference</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationAnnualConference">7.06   Communication Between Co-Parents:
+href="#CommunicationAnnualConference">7.06 &nbsp; Communication Between Co-Parents:
 Annual Conference</a> </p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationUnlimited">7.07   Communication Between Child(ren) and
+href="#CommunicationUnlimited">7.07&nbsp;&nbsp; Communication Between Child(ren) and
 Non-Custodial Parent: Unlimited</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationSpecific">7.08   Communication Between Child(ren) and
+href="#CommunicationSpecific">7.08&nbsp;&nbsp; Communication Between Child(ren) and
 Non-Custodial Parent: Specific</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationExchangeofContactInfo">7.09   Communication: Exchange of
+href="#CommunicationExchangeofContactInfo">7.09&nbsp;&nbsp; Communication: Exchange of
 Contact Information</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationSchedulingExtracurricular">7.10   Communication: Scheduling
+href="#CommunicationSchedulingExtracurricular">7.10&nbsp;&nbsp; Communication: Scheduling
 Extracurricular Activities for the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#CommunicationSelectingExtracurricular">7.11   Communication: Selecting
+href="#CommunicationSelectingExtracurricular">7.11&nbsp;&nbsp; Communication: Selecting
 Extracurricular Activities for the Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCMonthlyUnderLaw">8.00   Support of the Child(ren): Child Support
+href="#SoCMonthlyUnderLaw">8.00&nbsp;&nbsp; Support of the Child(ren): Child Support
 Guidelines Amount Under the Law</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCChildSupportSameState">8.01   Support of the Child(ren): Child
+href="#SoCChildSupportSameState">8.01&nbsp;&nbsp; Support of the Child(ren): Child
 Support Guidelines Amount When Parents Reside in the Same State</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCChildSupportDifferentState">8.02   Support of the Child(ren): Child
+href="#SoCChildSupportDifferentState">8.02&nbsp;&nbsp; Support of the Child(ren): Child
 Support Guidelines Amount When Parents Reside in Different States</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCChildSupportAgreedAlternative">8.03   Support of the Child(ren):
+href="#SoCChildSupportAgreedAlternative">8.03&nbsp;&nbsp; Support of the Child(ren):
 Mutually Agreed Upon Amount Alternative</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCChildSupportNoAgreement">8.04   Support of the Child(ren): No
+href="#SoCChildSupportNoAgreement">8.04&nbsp;&nbsp; Support of the Child(ren): No
 Agreement of the Parties Re Monthly Child Support Amount and/or Jurisdiction</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCChildSupportAccountAlternative">8.05   Support of the Child(ren):
+href="#SoCChildSupportAccountAlternative">8.05&nbsp;&nbsp; Support of the Child(ren):
 Child Support Account Alternative</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SocDirectPayment">8.06   Support of the Child(ren): Direct Payment of
+href="#SocDirectPayment">8.06&nbsp;&nbsp; Support of the Child(ren): Direct Payment of
 the Child Support</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCThroughStateAgency">8.07   Support of the Child(ren): Payment of
+href="#SoCThroughStateAgency">8.07&nbsp;&nbsp; Support of the Child(ren): Payment of
 Child Support Through the State Child Support Enforcement Agency</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCHealthInsurance">8.08   Support of the Child(ren): Health Insurance
+href="#SoCHealthInsurance">8.08&nbsp;&nbsp; Support of the Child(ren): Health Insurance
 Premiums</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCUninsuredCoPays">8.09   Support of the Child(ren): Uninsured Co-Pays
+href="#SoCUninsuredCoPays">8.09&nbsp;&nbsp; Support of the Child(ren): Uninsured Co-Pays
 for Health-Related Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>          <a
-href="#SoCUninsuredCoPaysSR">8.09A          Sole Responsibility</a> </p>
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCUninsuredCoPaysSR">8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a> </p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCUninsuredCoPaysSpR">8.09B          Split Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCUninsuredCoPaysSpR">8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCUninsuredCoPaysThresholdAmount">8.09C          Responsibility for
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCUninsuredCoPaysThresholdAmount">8.09C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Responsibility for
 Threshold Amount</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCUninsuredCoPaysRecbyProvider">8.09D          Definition of Uninsured
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCUninsuredCoPaysRecbyProvider">8.09D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Uninsured
 Health-Related Expenses: Recommended by Providers</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>          <a
-href="#SoCUninsuredCoPaysAgreementbyParents">8.09E          Definition of
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCUninsuredCoPaysAgreementbyParents">8.09E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of
 Uninsured Health-Related Expenses: Mutual Agreement of the Parents</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCExtracurricular">8.10   Support of the Child(ren): Extracurricular
+href="#SoCExtracurricular">8.10&nbsp;&nbsp; Support of the Child(ren): Extracurricular
 Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCExtracurricularSR">8.10A          Sole Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCExtracurricularSR">8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCExtracurricularSpR">8.10B          Split Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCExtracurricularSpR">8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCExtracurricularSelection">8.10C          Selecting Extracurricular
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCExtracurricularSelection">8.10C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selecting Extracurricular
 Activities for the Child(ren) Pursuant to 7.10 Hereinabove</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCExtracurricularMutualAgreement">8.10D          Extracurricular
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCExtracurricularMutualAgreement">8.10D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extracurricular
 Activities Must Be Mutually Agreed Upon</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCPrivateSchoolExpenses">8.11   Support of the Child(ren): Private
+href="#SoCPrivateSchoolExpenses">8.11&nbsp;&nbsp; Support of the Child(ren): Private
 School Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPrivateSchoolExpensesSR">8.11A          Sole Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPrivateSchoolExpensesSR">8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPrivateSchoolExpensesSpR">8.11B          Split Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPrivateSchoolExpensesSpR">8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPrivateSchoolExpensesDefinition">8.11C          Definition of Private
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPrivateSchoolExpensesDefinition">8.11C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Private
 School Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPrivateSchoolExpensesMutualAgreement">8.11D          Mutual Agreement
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPrivateSchoolExpensesMutualAgreement">8.11D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement
 of Parents</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPrivateSchoolExpensesReserve">8.11E          Reserve</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPrivateSchoolExpensesReserve">8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCPostSchoolExpenses">8.12   Support of the Child(ren): Post-High
+href="#SoCPostSchoolExpenses">8.12&nbsp;&nbsp; Support of the Child(ren): Post-High
 School Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesSR">8.12A          Sole Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesSR">8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesSpR">8.12B          Split Responsibility</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesSpR">8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesSRFundsfromchildacc">8.12C          Sole
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesSRFundsfromchildacc">8.12C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole
 Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
 Children, Coverdell Accounts of Other Funds</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesSpRFundsfromchildac">8.12D          Split
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesSpRFundsfromchildac">8.12D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split
 Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
-Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child’s
+Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child's
 Post-High School Education Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesCap">8.12E          Cap on Payment by Each Parent
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesCap">8.12E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cap on Payment by Each Parent
 per Academic School Year</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>          <a
-href="#SoCPostSchoolExpensesDef">8.12F          Definition of Post-High School
+<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesDef">8.12F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Post-High School
 Education Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesMutualAgreement">8.12G          Mutual Agreement of
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesMutualAgreement">8.12G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement of
 Parents</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCPostSchoolExpensesReserve">8.12H          Reserve</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCPostSchoolExpensesReserve">8.12H &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#SoCDependents">8.13   Support of the Child(ren): Claiming the Child(ren)
+href="#SoCDependents">8.13&nbsp;&nbsp; Support of the Child(ren): Claiming the Child(ren)
 as a Dependent for Tax Purposes</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCDependentsSA">8.13A          Sole Authority to Claim the Child(ren)</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCDependentsSA">8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Authority to Claim the Child(ren)</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCDependentsSpA">8.13B          Split Authority to Claim the Child(ren)</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCDependentsSpA">8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim the Child(ren)</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCDependentsSpAthenAlternate">8.13C          Split Authority to Claim
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCDependentsSpAthenAlternate">8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim
 the Child(ren) then Alternate</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCDependentsAlternate">8.13D          Alternate Authority to Claim the
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCDependentsAlternate">8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate Authority to Claim the
 Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
-href="#SoCProtocolsforReimbursment">8.14   Support of the Child(ren): Protocols
+href="#SoCProtocolsforReimbursment">8.14&nbsp;&nbsp; Support of the Child(ren): Protocols
 for Reimbursement of Child-Related Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentTimeframe">8.14A          Timeframe for
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentTimeframe">8.14A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Timeframe for
 Reimbursement of Child-Related Expenses and Reimbursement</a> </p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentMonthly">8.14B          Monthly Calculation
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentMonthly">8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly Calculation
 of Child-Related Expenses and Reimbursement</a> </p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentQuarterly">8.14C          Quarterly
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentQuarterly">8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quarterly
 Calculation of Child-Related Expenses and Reimbursement</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentAnnual">8.14D          Annual Calculation of
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentAnnual">8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Annual Calculation of
 Child-Related Expenses and Reimbursement</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentDocumentation">8.14E          Documentation
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentDocumentation">8.14E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Documentation
 Required for Reimbursement of Child-Related Expenses</a></p>
 
-<p class=MsoNormal style='margin:0in;line-height:normal'>           <a
-href="#SoCProtocolsforReimbursmentMethod">8.14F          Reimbursement Method</a></p>
+<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+href="#SoCProtocolsforReimbursmentMethod">8.14F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reimbursement Method</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesCoParentingCounseling">9.00   Other Issues:  Co-Parent
+href="#OtherIssuesCoParentingCounseling">9.00&nbsp;&nbsp; Other Issues:&nbsp; Co-Parent
 Counseling</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesChildFocusedTherapist">9.01   Other Issues:  Child-Focused
+href="#OtherIssuesChildFocusedTherapist">9.01&nbsp;&nbsp; Other Issues:&nbsp; Child-Focused
 Therapist</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesSocialMediaBetweenParents">9.02   Other Issues:  Social Media
+href="#OtherIssuesSocialMediaBetweenParents">9.02&nbsp;&nbsp; Other Issues:&nbsp; Social Media
 Between Parents</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesSocialMediaForChild">9.03   Other Issues:  Social Media For
+href="#OtherIssuesSocialMediaForChild">9.03&nbsp;&nbsp; Other Issues:&nbsp; Social Media For
 Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesJointTeacherMeeting">9.04   Other Issues:  Joint
+href="#OtherIssuesJointTeacherMeeting">9.04&nbsp;&nbsp; Other Issues:&nbsp; Joint
 Parent-Teacher Meetings</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesSeperateTeacherMeeting">9.05   Other Issues:  Separate
+href="#OtherIssuesSeperateTeacherMeeting">9.05&nbsp;&nbsp; Other Issues:&nbsp; Separate
 Parent-Teacher Meetings</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesOneParentTeacherMeeting">9.06   Other Issues:  One Parent to
+href="#OtherIssuesOneParentTeacherMeeting">9.06&nbsp;&nbsp; Other Issues:&nbsp; One Parent to
 Attend Parent-Teacher Meetings</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesReportCard">9.07   Other Issues:  Report Cards for the
+href="#OtherIssuesReportCard">9.07&nbsp;&nbsp; Other Issues:&nbsp; Report Cards for the
 Child(ren)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesJointAttendance">9.08   Other Issues:  Joint Attendance at
+href="#OtherIssuesJointAttendance">9.08&nbsp;&nbsp; Other Issues:&nbsp; Joint Attendance at
 School and Extracurricular Events</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesOneParentExtracurricular">9.09   Other Issues:  Custodial
+href="#OtherIssuesOneParentExtracurricular">9.09&nbsp;&nbsp; Other Issues:&nbsp; Custodial
 Parent to Attend School and Extracurricular Events</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesAlternateAttendance">9.10   Other Issues:  Alternate
+href="#OtherIssuesAlternateAttendance">9.10&nbsp;&nbsp; Other Issues:&nbsp; Alternate
 Attendance at School and Extracurricular Events</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesDocuments">9.11   Other Issues: Documents</a></p>
+href="#OtherIssuesDocuments">9.11&nbsp;&nbsp; Other Issues: Documents</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesJointConsentPassport">9.12   Other Issues: Joint Authority to
+href="#OtherIssuesJointConsentPassport">9.12&nbsp;&nbsp; Other Issues: Joint Authority to
 Consent for Passport</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesSoleConsentPassport">9.13   Other Issues: Sole Authority to
+href="#OtherIssuesSoleConsentPassport">9.13&nbsp;&nbsp; Other Issues: Sole Authority to
 Consent for Passport</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesNewIntimatePartnerLD">9.14   Other Issues: New Intimate
+href="#OtherIssuesNewIntimatePartnerLD">9.14&nbsp;&nbsp; Other Issues: New Intimate
 Partner Protocols (Less Detailed)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesNewIntimatePartnerMD">9.15   Other Issues: New Intimate
+href="#OtherIssuesNewIntimatePartnerMD">9.15&nbsp;&nbsp; Other Issues: New Intimate
 Partner Protocols (More Detailed)</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
-href="#OtherIssuesAlternativeDisputeResolution">9.16   Other Issues:
+href="#OtherIssuesAlternativeDisputeResolution">9.16&nbsp;&nbsp; Other Issues:
 Alternative Dispute Resolution</a></p>
 
 <p class=MsoNormal style='margin:0in;line-height:normal'><a
@@ -606,7 +607,7 @@ border:none'>E-Mail</p>
 border:none'>&nbsp;</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Name of Parent B</p>
+border:none'>Name of <?php echo $parentBName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
 border:none'>Address</p>
@@ -621,14 +622,14 @@ border:none'>E-Mail</p>
 border:none'>&nbsp;</p>
 
 <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
-0in;line-height:normal;border:none'>IN THE FAMILY COURT OF THE ___________
+0in;line-height:normal;border:none'>IN THE FAMILY COURT OF THE  <?php echo $varName; ?>
 CIRCUIT</p>
 
 <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
 0in;line-height:normal;border:none'>&nbsp;</p>
 
 <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
-0in;line-height:normal;border:none'>STATE OF _____________</p>
+0in;line-height:normal;border:none'>STATE OF  <?php echo $varName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
 border:none'>&nbsp;</p>
@@ -642,11 +643,11 @@ border:none'>&nbsp;</p>
   <td width=307 valign=top style='width:3.2in;border:none;border-right:solid black 1.0pt;
   padding:0in 0in 0in 0in'>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-  border:none'>PARENT A,</p>
+  border:none'><?php echo $parentAName; ?>,</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
   border:none'>&nbsp;</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-  border:none'>                   Plaintiff/Petitioner,</p>
+  border:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plaintiff/Petitioner,</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
   border:none'>&nbsp;</p>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
@@ -654,11 +655,11 @@ border:none'>&nbsp;</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
   border:none'>&nbsp;</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-  border:none'>PARENT B,</p>
+  border:none'><?php echo $parentBName; ?>,</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
   border:none'>&nbsp;</p>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-  border:none'>                   Defendant/Respondent.</p>
+  border:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Defendant/Respondent.</p>
   </td>
   <td width=29 valign=top style='width:.3in;padding:0in 0in 0in 0in'>
   <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -720,8 +721,8 @@ margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>1.00 </b>THIS
-AGREEMENT is made and <span style='background:white'>entered this __ (day) day
-of _______ (month), ______ (year)</span>, by and between PARENT A and PARENT B
+AGREEMENT is made and <span style='background:white'>entered this  <?php echo $varName; ?> (day) day
+of  <?php echo $varName; ?> (month),  <?php echo $varName; ?> (year)</span>, by and between <?php echo $parentAName; ?> and <?php echo $parentBName; ?>
 (collectively hereinafter referred to as “Parents”) and applies to the
 Child(ren) named below in Paragraph 3.00.</p>
 
@@ -735,7 +736,7 @@ Child(ren);</p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
 none'><a name=IntroductionParentstoSeekFamilyCourt><b>1.02</b> </a>WHEREAS,
 parents intend to seek approval of their Agreement from the Family Court of the
-____________ Circuit of the State of ____________ hereinafter referred to as
+ <?php echo $varName; ?> Circuit of the State of  <?php echo $varName; ?> hereinafter referred to as
 the “Family Court”;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
@@ -750,11 +751,11 @@ margin-bottom:0in;margin-left:.5in;text-align:center;text-indent:0in;
 line-height:150%;border:none'><u>GUIDING PRINCIPLES</u>:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>2.00  </b><u>RESPONSIBILITIES
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>2.00&nbsp; </b><u>RESPONSIBILITIES
 TO OUR CHILD(REN)</u>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
-margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'>a.       Children
+margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Children
 of separated Parents do best in both the short term and the long run when they
 feel loved and cared for by both Parents. We recognize that this requires that
 we cooperate, and that we each support our Child(ren) having a good
@@ -764,52 +765,52 @@ Child(ren).</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>b.       Our Child(ren) have the right to love and be
+style='color:#333333'>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our Child(ren) have the right to love and be
 loved by both Parents, without feeling guilt or disapproval.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>c.       We agree that we will make decisions that are in
+style='color:#333333'>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We agree that we will make decisions that are in
 the best interests of our Child(ren) and will put their interests ahead of our
 own.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>d.       We will find an appropriate way to consider our
-Child(ren)’s views in making our decisions, provided however, that our
+style='color:#333333'>d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will find an appropriate way to consider our
+Child(ren)'s views in making our decisions, provided however, that our
 Child(ren) should never be put in the position of having to “choose” between
-Parents.  They love both of us and have a right to meaningful and regular
+Parents.&nbsp; They love both of us and have a right to meaningful and regular
 contact with both Parents and their extended families unless there are safety
 issues.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>e.       We will make it clear to our Child(ren) that
+style='color:#333333'>e.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will make it clear to our Child(ren) that
 although we're asking for their input, they're not responsible for the
 decisions or final plans. We are responsible for making these decisions.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>f.        Our Child(ren) and the other Parent should know
+style='color:#333333'>f.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our Child(ren) and the other Parent should know
 well in advance about important changes that will affect them, such as if one
 Parent is planning to relocate or have a new partner move into their home.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>g.       We will keep our Child(ren) out of our conflict.
+style='color:#333333'>g.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will keep our Child(ren) out of our conflict.
 We will not ask them to pick sides, carry messages, or hear our possible
 complaints about the other Parent.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>h.      We agree that we will communicate in a civil
+style='color:#333333'>h.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We agree that we will communicate in a civil
 manner with each other, and we will not argue in front of the Child(ren) or
 involve them in any conflict between us. We will each encourage our Child(ren)
 to respect the other parent.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>i.        We agree that we will first seek services from
+style='color:#333333'>i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We agree that we will first seek services from
 mental health professional(s), subject matter experts, and mediators or
 arbitrators to assist us in decision-making and parenting our Child(ren),
 rather than file legal requests for relief with the Family Court.</span></p>
@@ -820,12 +821,12 @@ style='color:#333333'>&nbsp;</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=GuidingPrinciplesResponsibilitiestoCoPar><b>2.01  </b></a><u>RESPONSIBILITIES
+name=GuidingPrinciplesResponsibilitiestoCoPar><b>2.01&nbsp; </b></a><u>RESPONSIBILITIES
 TO OUR CO-PARENT</u>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>a.       We will both promote our Child(ren)'s
+style='color:#333333'>a. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will both promote our Child(ren)'s
 relationship with the other Parent. We will not speak negatively about the
 other Parent in the presence of the Child(ren), and we will encourage our
 Child(ren) to spend time with their siblings, the other Parent, and their
@@ -834,12 +835,12 @@ negatively about the other Parent in the presence of the Child(ren).</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>b.       We will exchange educational, medical, and
+style='color:#333333'>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will exchange educational, medical, and
 extra-curricular information about our Child(ren).</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>c.       We recognize the importance of exchanging
+style='color:#333333'>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We recognize the importance of exchanging
 contact information (Parents' address, telephone numbers, email address), so we
 can communicate and know about our Child(ren).</span></p>
 
@@ -849,26 +850,26 @@ style='color:#333333'>&nbsp;</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=GuidingPrinciplesNewIntimatePartners><b>2.02</b></a><b>  </b><u>STATEMENT
+name=GuidingPrinciplesNewIntimatePartners><b>2.02</b></a><b>&nbsp; </b><u>STATEMENT
 ABOUT NEW INTIMATE PARTNERS</u>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>a.       We recognize that new intimate relationships for
+style='color:#333333'>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We recognize that new intimate relationships for
 either Parent may impact our Child(ren). We agree that we will carefully
 consider how to introduce any new partners and possible step-siblings to our
 Child(ren). </span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>b.       We will communicate with to the other Parent
+style='color:#333333'>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will communicate with to the other Parent
 before there is significant involvement of a new partner in the lives of our
 Child(ren) (e.g a vacation with a new partner, cohabitation, remarriage, a
-pregnancy as a result of a new relationship).  </span></p>
+pregnancy as a result of a new relationship).&nbsp; </span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
-style='color:#333333'>c.       We understand that this requirement is
+style='color:#333333'>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We understand that this requirement is
 reciprocal and that both Parents have an affirmative responsibility to inform
 the other Parent in advance of informing the Child(ren) of any significant
 involvement of a new partner in the lives of our Child(ren).</span></p>
@@ -880,18 +881,18 @@ style='color:#333333'>&nbsp;</span></p>
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=GuidingPrinciplesProtectionFromDisputes><b><span style='color:#333333'>2.03</span></b></a><b><span
-style='color:#333333'>  </span></b><u><span style='color:#333333'>PROTECTION
+style='color:#333333'>&nbsp; </span></b><u><span style='color:#333333'>PROTECTION
 FROM PARENTAL DISPUTES</span></u><span style='color:#333333'>.</span> Both
 Parents recognize that they can do much to minimize any possible negative
-impact of their divorce or separation on the Child(ren).  <span
+impact of their divorce or separation on the Child(ren).&nbsp; <span
 style='background:white'>Each parent desires to remain responsible and active
-in promoting the </span>Child(ren)<span style='background:white'>’s growth and
+in promoting the </span>Child(ren)<span style='background:white'>'s growth and
 development consistent with their best interests.&nbsp; </span>To this end,
 each of the Parents agree that they will always support the Child(ren) in
 having the best possible relationship with the other Parent. <span
 style='background:white'>Both Parents shall make a sincere effort to maintain
 open, ongoing communications concerning the </span>Child(ren)<span
-style='background:white'>’s development, needs, and interests.&nbsp; Each
+style='background:white'>'s development, needs, and interests.&nbsp; Each
 Parent agrees to honor one another's parenting style, privacy, and
 authority.&nbsp; </span>Parents further agree that:</p>
 
@@ -902,14 +903,14 @@ border:none'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbs
 fiancée, significant other, grandparent, other relative or other associate, to
 criticize, disparage, demand, insult, or otherwise “bad-mouth” the other
 parent, step-parent, significant other, or grandparent to the Child(ren) or in
-the presence or hearing of the Child(ren).  This prohibition shall apply even
+the presence or hearing of the Child(ren).&nbsp; This prohibition shall apply even
 to information that is truthful and accurate. </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall disparage, denigrate, make morally judgmental
-comments about, or belittle the other Parent in the Child(ren)’s presence, or
+comments about, or belittle the other Parent in the Child(ren)'s presence, or
 allow them to be in the presence of people who do so.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
@@ -923,19 +924,19 @@ telephone – in the presence or hearing of the Child(ren).</p>
 border:none'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall align or attempt to align the Child(ren) against
 the other Parent (or relative), nor allow or encourage anyone else (including
-relative and friends) to do so.  Neither Parent shall directly or indirectly
+relative and friends) to do so.&nbsp; Neither Parent shall directly or indirectly
 ask the Child(ren) to choose between Parents, to choose to reside with one
-Parent instead of the other, or choose one household over the other household. 
+Parent instead of the other, or choose one household over the other household.&nbsp;
 </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>It is not intended that the Child(ren) become conduits for the Parents’
+</span>It is not intended that the Child(ren) become conduits for the Parents'
 communication between each other, and the Parents shall be prohibited from
 asking the Child(ren) to convey any communication on behalf of one of them to
 the other. Neither Parent shall ask the Child(ren) to pass orders or instructions
-or uncomplimentary messages to the other Parent (orally or in writing). 
+or uncomplimentary messages to the other Parent (orally or in writing).&nbsp;
 Complimentary messages are allowed and encouraged.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
@@ -944,13 +945,13 @@ border:none'>f.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbs
 </span>Neither Parent shall ask the Child(ren) to “keep secrets” from the other
 Parent or ask or encourage the Child(ren) to lie to the other Parent about
 events or persons the Child(ren) experienced during the visit with the other
-Parent, grandparent or relative.  </p>
+Parent, grandparent or relative.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>g.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall ask the Child(ren) to “spy on” the other Parent or
-the other Parent’s lifestyle or household nor ask any detailed, “probing”
+the other Parent's lifestyle or household nor ask any detailed, “probing”
 questions about the other Parent or lifestyle or household of the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
@@ -967,14 +968,14 @@ border:none'>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbs
 </span>Both Parents shall encourage a positive parent-child relationship
 between the Child(ren) and the other Parent and shall not say or do anything
 (including “grimace” or put on a “long face”) to adversely affect the
-Child(ren)’s love for the other Parent.</p>
+Child(ren)'s love for the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>j.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall interfere with a parent-child relationship with the
 other Parent, and neither Parent shall conceal the Child(ren) from the other
-Parent during the other Parent’s period of responsibility.</p>
+Parent during the other Parent's period of responsibility.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 .05pt;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
@@ -993,16 +994,16 @@ line-height:150%;border:none'><u><span lang=FR>PARTIES:</span></u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PartiesInformationon<? php echo $parentAName; ?>><b><span lang=FR>3.00  </span></b></a><u><span
-lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.  </span>PARENT
-A’s full legal name is ____________.  <?php echo $parentAName; ?>’s residence address is
-____________.  </p>
+name=PartiesInformationon<?php echo $parentAName; ?><b><span lang=FR>3.00&nbsp; </span></b></a><u><span
+lang=FR>PARTIES: INFORMATION ON <?php echo $parentAName; ?></span></u><span lang=FR>.&nbsp; </span>PARENT
+A's full legal name is  <?php echo $varName; ?>.&nbsp; <?php echo $parentAName; ?>'s residence address is
+ <?php echo $varName; ?>.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT
-B</u></a>. Parent B’s full legal name is ____________.  Parent B’s residence
-address is ____________.  </p>
+B</u></a>. <?php echo $parentBName; ?>'s full legal name is  <?php echo $varName; ?>.&nbsp; <?php echo $parentBName; ?>'s residence
+address is  <?php echo $varName; ?>.&nbsp; </p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
 margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
@@ -1010,13 +1011,13 @@ margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=ChildrenInformationonChildren><b>4.00  </b><u>CHILD(REN): INFORMATION ON
-CHILD(REN</u></a><u>)</u>.  The Parents have ____ Child(ren) together as
-follows: Child A (“____________”) born in ( ___ birth year), Child B
-(“____________”) born in (birth year), Child C (“____________”) born in ( ___
-birth year), Child D (“____________”) born in ( ___ birth year), Child D
-(“____________”) born in ( ___ birth year), Child E (“____________”) born in (
-___ birth year) collectively hereinafter referred to as “the Child(ren)” or
+name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
+CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have  <?php echo $varName; ?> Child(ren) together as
+follows: Child A (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child B
+(“ <?php echo $varName; ?>”) born in (birth year), Child C (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?>
+birth year), Child D (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child D
+(“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child E (“ <?php echo $varName; ?>”) born in (
+ <?php echo $varName; ?> birth year) collectively hereinafter referred to as “the Child(ren)” or
 individually referred to using their initials.</p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
@@ -1025,18 +1026,18 @@ line-height:150%'><u>LEGAL CUSTODY:</u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyDefinition></a><a name="_heading=h.gjdgxs"></a><b>5.00</b>  <u>LEGAL
+name=LegalCustodyDefinition></a><a name="_heading=h.gjdgxs"></a><b>5.00</b>&nbsp; <u>LEGAL
 CUSTODY: DEFINITION</u>. Legal custody is the authority to make major decisions
 involving the Child(ren).&nbsp; Such major decisions would include, among
 others, the decision to allow the Child(ren) to enter the armed forces, the
 decision to marry before the legal age, the decision to file a lawsuit, or
 accept a settlement of claims involving the Child(ren), the decision to allow
 the Child(ren) to use birth control, including pregnancy termination, the
-decision to allow the children to obtain a driver’s license or passport, the
+decision to allow the children to obtain a driver's license or passport, the
 decision to allow the Child(ren) to obtain substantial employment, the decision
 to authorize non-emergency medical or other treatment for the Child(ren), the
 decision to involve the Child(ren) in counseling, religious decisions affecting
-the Child(ren), major decisions involving the Child(ren)’s education, such as
+the Child(ren), major decisions involving the Child(ren)'s education, such as
 choice of school, change in school, advancement or retention, choice of
 curriculum, participation in extracurricular activities, and special education
 needs like tutoring, decisions as to the management of any substantial monies
@@ -1044,12 +1045,12 @@ received by the Child(ren), decisions regarding major expenditures by or for
 the Child(ren), decisions involving serious discipline problems of the
 Child(ren), decisions involving the receipt, management and sale of real or
 personal property while a child is under eighteen (18) years of age, and
-decisions involving a child’s travel to any distance beyond the jurisdiction of
+decisions involving a child's travel to any distance beyond the jurisdiction of
 the United States for any period of time.&nbsp;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyJoint><b>5.01</b>  <u>LEGAL CUSTODY: JOINT TO BOTH PARENTS</u></a>. 
+name=LegalCustodyJoint><b>5.01</b>&nbsp; <u>LEGAL CUSTODY: JOINT TO BOTH PARENTS</u></a>.&nbsp;
 Parents shall share joint legal custody of the Child(ren) and shall make
 decisions together. <span style='color:#333333'>Parents agree they shall make
 significant decisions together and encourage input from Child(ren). If Parents
@@ -1058,13 +1059,13 @@ resolution process set out in this document.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodySole><b>5.02</b>  <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>. 
+name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
 <?php echo $parentAName; ?>/B shall have sole legal custody of the Child(ren).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyParentsConsultOneAuthority><b>5.03</b>  <u>LEGAL CUSTODY:
-PARENTS MUST CONSULT BUT ONE PARENT HAS TIE-BREAKING AUTHORITY</u></a>. 
+name=LegalCustodyParentsConsultOneAuthority><b>5.03</b>&nbsp; <u>LEGAL CUSTODY:
+PARENTS MUST CONSULT BUT ONE PARENT HAS TIE-BREAKING AUTHORITY</u></a>.&nbsp;
 Parents shall share joint legal custody of the Child(ren), provided however,
 that if Parents cannot mutually agree on a legal custody decision for the
 Child(ren) after consulting with the other Parent and the Child(ren), then
@@ -1073,47 +1074,47 @@ in the event of an impasse.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyParentsConsultDivofAuthority><b>5.04  </b><u>LEGAL CUSTODY:
-PARENTS MUST CONSULT BUT THERE IS A DIVISION OF AUTHORITY</u>.  </a>Parents
+name=LegalCustodyParentsConsultDivofAuthority><b>5.04&nbsp; </b><u>LEGAL CUSTODY:
+PARENTS MUST CONSULT BUT THERE IS A DIVISION OF AUTHORITY</u>.&nbsp; </a>Parents
 shall share joint legal custody of the Child(ren), provided however, that if
 Parents cannot mutually agree on a legal custody decision for the Child(ren),
 then <?php echo $parentAName; ?> shall have tie-breaking authority to make <span style='color:
 #333333'>major decisions about the Child(ren)'s education and extracurricular
-activities, after consulting with Parent B and the Child(ren) and Parent B
+activities, after consulting with <?php echo $parentBName; ?> and the Child(ren) and <?php echo $parentBName; ?>
 shall have tie-breaking authority to make major decisions about the Child(ren)'s
 health care, language, and spirituality, after consulting with <?php echo $parentAName; ?> and the
 child.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyAccesstoInformation><b>5.05</b>  <u>LEGAL CUSTODY: ACCESS TO
-INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.  Although <?php echo $parentAName; ?>/B is
-awarded sole legal custody, Parent B/A shall have free and unrestricted access
-to all information pertaining to the Child(ren).  The Parent who does not have
+name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
+INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <?php echo $parentAName; ?>/B is
+awarded sole legal custody, <?php echo $parentBName; ?>/A shall have free and unrestricted access
+to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
 legal custody may independently contact any provider serving the Child(ren)
 including education, health-related, extracurricular, etc. and access any and
-all records or information.  The Parent with legal custody shall have an
+all records or information.&nbsp; The Parent with legal custody shall have an
 affirmative duty to inform the other Parent of any new providers working with
 the Child(ren).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyEmergencyContact><b>5.06</b>  <u>LEGAL CUSTODY: EMERGENCY
-CONTACTS FOR THE CHILD(REN</u></a><u>)</u>.  Both Parents shall be listed as
+name=LegalCustodyEmergencyContact><b>5.06</b>&nbsp; <u>LEGAL CUSTODY: EMERGENCY
+CONTACTS FOR THE CHILD(REN</u></a><u>)</u>.&nbsp; Both Parents shall be listed as
 the initial emergency contacts for the Child(ren) for any school,
 extracurricular activity or other event where an emergency contact is
 requested.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyExpertAdvice><b>5.07</b>  <u>LEGAL CUSTODY: EXPERT ADVICE WHEN
-MAKING LEGAL CUSTODY DECISIONS</u>. </a> Parents shall seek the advice and be
+name=LegalCustodyExpertAdvice><b>5.07</b>&nbsp; <u>LEGAL CUSTODY: EXPERT ADVICE WHEN
+MAKING LEGAL CUSTODY DECISIONS</u>. </a>&nbsp;Parents shall seek the advice and be
 guided by subject matter experts when making legal custody decisions on behalf
 of the Child(ren). </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyDaytoDay><b>5.08  </b><u>LEGAL CUSTODY: DAY-TO-DAY DECISIONS</u></a>. 
+name=LegalCustodyDaytoDay><b>5.08&nbsp; </b><u>LEGAL CUSTODY: DAY-TO-DAY DECISIONS</u></a>.&nbsp;
 <span style='color:#333333'>During the period when the Child(ren) is or are
 living with or in the care of a Parent, that Parent can make day-to-day
 decisions about our child, for example about, doing homework, meals, visiting
@@ -1121,8 +1122,8 @@ with their friends, use of computer, etc.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalCustodyEmergencyDecisions><b>5.09  </b><u>LEGAL CUSTODY: EMERGENCY
-DECISIONS</u></a>.  <span style='color:#333333'>In a health emergency for a
+name=LegalCustodyEmergencyDecisions><b>5.09&nbsp; </b><u>LEGAL CUSTODY: EMERGENCY
+DECISIONS</u></a>.&nbsp; <span style='color:#333333'>In a health emergency for a
 Child, the Parent with care of the Child(ren) at that time will make the
 treatment decision, on the advice of medical personnel. If a Parent makes an
 emergency health decision for a Child, the Parent who has made the decision must
@@ -1131,10 +1132,10 @@ immediately contact the other Parent.</span></p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=LegalCustodyHealthEmergencyDeathofParent><b><span style='color:#333333'>5.10</span></b></a><span
-style='color:#333333'>  </span><u>LEGAL CUSTODY: HEALTH EMERGENCY OR DEATH OF
-OTHER PARENT</u>.  <span style='color:#333333'>In the event of a Parent’s
+style='color:#333333'>&nbsp; </span><u>LEGAL CUSTODY: HEALTH EMERGENCY OR DEATH OF
+OTHER PARENT</u>.&nbsp; <span style='color:#333333'>In the event of a Parent's
 medical emergency, the other Parent shall assume the major decision-making
-responsibilities for the Child(ren) until the situation becomes resolved.  In
+responsibilities for the Child(ren) until the situation becomes resolved.&nbsp; In
 the event of the death of one Parent, the other Parent shall care for the Child(ren),
 but the surviving Parent shall ensure that the Child(ren) has/have continued
 relations with the relatives of the deceased Parent.</span></p>
@@ -1142,7 +1143,7 @@ relations with the relatives of the deceased Parent.</span></p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=LegalCustodyParallelParenting><b><span style='color:#333333'>5.11</span></b></a><span
-style='color:#333333'>  </span><u>LEGAL CUSTODY: PARALLEL PARENTING</u>.  <span
+style='color:#333333'>&nbsp; </span><u>LEGAL CUSTODY: PARALLEL PARENTING</u>.&nbsp; <span
 style='color:#333333'>Parents shall disengage from one another and make
 decisions independently when the Child(ren) is in their care.</span></p>
 
@@ -1152,8 +1153,8 @@ line-height:150%'><u>PHYSICAL CUSTODY AND TIMESHARING:</u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyGlobalPriority><b>6.00</b>  <u>PHYSICAL CUSTODY AND
-TIMESHARING: GLOBAL PRIORITY</u></a>.  If there is a conflict with different
+name=PhysicalCustodyGlobalPriority><b>6.00</b>&nbsp; <u>PHYSICAL CUSTODY AND
+TIMESHARING: GLOBAL PRIORITY</u></a>.&nbsp; If there is a conflict with different
 sections of the Physical Custody and Timesharing schedule, the governing
 hierarchy is from the highest to lowest as follows: (1) Holidays and Special
 Days; (2) Travel and Uninterrupted Time with the Child(ren); (3) Timesharing
@@ -1162,25 +1163,25 @@ Child(ren) During the School Year.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyDuringSchoolYear><b>6.01  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: TIMESHARING DURING THE SCHOOL YEAR</u>.  </a>During the school
+name=PhysicalCustodyDuringSchoolYear><b>6.01&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: TIMESHARING DURING THE SCHOOL YEAR</u>.&nbsp; </a>During the school
 year, parents agree to share time with their children as set forth
-hereinbelow.  Understanding that each individual Child’s developmental stage
-and needs should be the primary consideration for setting a schedule. 
+hereinbelow.&nbsp; Understanding that each individual Child's developmental stage
+and needs should be the primary consideration for setting a schedule.&nbsp;
 Generally, younger children need more frequent transitions so they do not feel
-abandoned by either parent, while older children can tolerate longer absences. 
-Each Child’s health, education, special needs, and social, emotional, and
-physical well-being must be considered in selecting an appropriate schedule. 
+abandoned by either parent, while older children can tolerate longer absences.&nbsp;
+Each Child's health, education, special needs, and social, emotional, and
+physical well-being must be considered in selecting an appropriate schedule.&nbsp;
 Schedules may change over time by agreement of the Parents based on the
-Child(ren)’s needs.  Below are suggested templates to be modified and based on each
-family’s needs.</p>
+Child(ren)'s needs.&nbsp; Below are suggested templates to be modified and based on each
+family's needs.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=PhysicalCustodyEqual><b>6.01A         </b><u>EQUAL TIMESHARING SCHEDULES</u></a>. 
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyEqual><b>6.01A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>EQUAL TIMESHARING SCHEDULES</u></a>.&nbsp;
 50/50 schedules can benefit a Child because the Child spends substantial time
-living with both Parents.  This allows the Child(ren) to build close
-relationships with both Parents and to feel cared for by both Parents.  50/50
+living with both Parents.&nbsp; This allows the Child(ren) to build close
+relationships with both Parents and to feel cared for by both Parents.&nbsp; 50/50
 schedules work best when:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
@@ -1199,13 +1200,13 @@ are able to communicate with each other about the Child(ren) without fighting;</
 margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
 border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Child(ren)
-is/are able to handle switching between parents’ homes;</p>
+is/are able to handle switching between parents' homes;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
 border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Both
-Parents are committed to putting the Child(ren)’s best interests first;</p>
+Parents are committed to putting the Child(ren)'s best interests first;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
@@ -1558,7 +1559,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;</
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>3-4-4-3
 Schedule</b> Please note that exchange date can be adjusted to meet each
-family’s needs (e.g. Parents exchange on Fridays after school as opposed to
+family's needs (e.g. Parents exchange on Fridays after school as opposed to
 Monday)</p>
 
 <table class=a2 border=1 cellspacing=0 cellpadding=0 width=623
@@ -1730,8 +1731,8 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;</
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>7-7
-Schedule (aka Week On-Week Off)</b>.  Please note that exchange date can be
-adjusted to meet each family’s needs (e.g. Parents exchange on Fridays after
+Schedule (aka Week On-Week Off)</b>.&nbsp; Please note that exchange date can be
+adjusted to meet each family's needs (e.g. Parents exchange on Fridays after
 school as opposed to Monday)</p>
 
 <table class=a3 border=1 cellspacing=0 cellpadding=0 width=623
@@ -1903,8 +1904,8 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><u><span
  style='text-decoration:none'>&nbsp;</span></u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=PhysicalCustodyOther>6.01B         </a></b><u>OTHER TIMESHARING SCHEDULES</u>.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyOther>6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>OTHER TIMESHARING SCHEDULES</u>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>8-6
@@ -2420,179 +2421,178 @@ Your Own</b></p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;</b></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          </b></p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyDuringSchoolBreaks><b>6.02</b>  <u>PHYSICAL CUSTODY AND
-TIMESHARING: TIMESHARING DURING THE SCHOOL BREAKS</u></a>.  Unless otherwise
+name=PhysicalCustodyDuringSchoolBreaks><b>6.02</b>&nbsp; <u>PHYSICAL CUSTODY AND
+TIMESHARING: TIMESHARING DURING THE SCHOOL BREAKS</u></a>.&nbsp; Unless otherwise
 agreed by both Parents, school breaks shall be defined as beginning after
 school on the last day prior to the break and ending at the morning drop off at
-school on the day school resumes.  During their designated school break time
+school on the day school resumes.&nbsp; During their designated school break time
 with the Child(ren), either Parent may elect to travel with the Child(ren) per
 the Travel with the Child(ren) provision hereinbelow.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodyFallBreak><b>6.02A          </b><u>FALL BREAK</u>.  </a>The
-Parents shall share time with the Child(ren) during Fall Breaks as follows:  </p>
+name=PhysicalCustodyFallBreak><b>6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </b><u>FALL BREAK</u>.&nbsp; </a>The
+Parents shall share time with the Child(ren) during Fall Breaks as follows:&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakSB><b>6.02A(i)      </b><u>SPLIT BREAK</u>.</a> 
+name=PhysicalCustodyFallBreakSB><b>6.02A(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u>.</a>&nbsp;
 In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and Parent B shall have the Child(ren) during the second half of the
-break.  In even years, Parent B shall have the Child(ren) during the first half
+break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
+break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
 of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakAB><b>6.02A(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
-years, Parent B shall have the entire break.   </p>
+name=PhysicalCustodyFallBreakAB><b>6.02A(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
+years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakContinueSchedule><b>6.02A(iii)    </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u></a>.  Parents shall continue the normal
+name=PhysicalCustodyFallBreakContinueSchedule><b>6.02A(iii)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR</u></a>.&nbsp; Parents shall continue the normal
 during the school year schedule during this break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodyThanksgiving><b>6.02B         </b><u>THANKSGIVING BREAK</u></a>. 
+name=PhysicalCustodyThanksgiving><b>6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>THANKSGIVING BREAK</u></a>.&nbsp;
 The Parents shall share time with the Child(ren) during Thanksgiving Breaks as
-follows:  </p>
+follows:&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyThanksgivingSB><b>6.02B(i)      </b><u>SPLIT BREAK</u></a>. 
+name=PhysicalCustodyThanksgivingSB><b>6.02B(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u></a>.&nbsp;
 In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and Parent B shall have the Child(ren) during the second half of the
-break.  In even years, Parent B shall have the Child(ren) during the first half
+break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
+break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
 of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyThanksgivingAB><b>6.02B(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
-years, Parent B shall have the entire break.   </p>
+name=PhysicalCustodyThanksgivingAB><b>6.02B(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
+years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyThanksgivingTimeonDay><b>6.02B(iii)    </b><u>TIME ON
-THANKSGIVING DAY</u></a>.  Notwithstanding the above, the Parent who does not
+name=PhysicalCustodyThanksgivingTimeonDay><b>6.02B(iii)&nbsp;&nbsp;&nbsp; </b><u>TIME ON
+THANKSGIVING DAY</u></a>.&nbsp; Notwithstanding the above, the Parent who does not
 have the Child(ren) on Thanksgiving Day shall have the right to spend time with
 the Child(ren) between 12 noon and 3pm on Thanksgiving Day. </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyThanksgivingContinueSched><b>6.02B(iv)    </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.</a>  Parents shall continue the normal
+name=PhysicalCustodyThanksgivingContinueSched><b>6.02B(iv)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR</u>.</a>&nbsp; Parents shall continue the normal
 during the school year schedule during this break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodyWinterBreak><b>6.02C         </b><u>WINTER BREAK</u></a>. 
+name=PhysicalCustodyWinterBreak><b>6.02C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>WINTER BREAK</u></a>.&nbsp;
 The Parents shall share time with the Child(ren) during Winter Break as
 follows:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyWinterBreakSB><b>6.02C(i)      </b><u>SPLIT BREAK</u></a>. 
+name=PhysicalCustodyWinterBreakSB><b>6.02C(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u></a>.&nbsp;
 In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break, to include Christmas Eve and Christmas Day, and Parent B shall have the
-Child(ren) during the second half of the break, to include New Year’s Eve and
-New Year’s Day.  In even years, Parent B shall have the Child(ren) during the
-first half of the break, to include Christmas Eve and Christmas Day, and Parent
-A shall have the Child(ren) during the second half of the break, to include New
-Year’s Eve and New Year’s Day.</p>
+break, to include Christmas Eve and Christmas Day, and <?php echo $parentBName; ?> shall have the
+Child(ren) during the second half of the break, to include New Year's Eve and
+New Year's Day.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the
+first half of the break, to include Christmas Eve and Christmas Day, and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of the break, to include New
+Year's Eve and New Year's Day.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyWinterBreakAB><b>6.02C(ii)     </b><u>ALTERNATE BREAK</u>.</a> 
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
-years, Parent B shall have the entire break.   </p>
+name=PhysicalCustodyWinterBreakAB><b>6.02C(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u>.</a>&nbsp;
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
+years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyWinterBreakSBwithHoliday><b>6.02C(iii)    </b><u>SPLIT
-BREAK WITH HOLIDAY TIME</u></a>.<b>  </b>In even years, <?php echo $parentAName; ?> shall have the
+name=PhysicalCustodyWinterBreakSBwithHoliday><b>6.02C(iii)&nbsp;&nbsp;&nbsp; </b><u>SPLIT
+BREAK WITH HOLIDAY TIME</u></a>.<b>&nbsp; </b>In even years, <?php echo $parentAName; ?> shall have the
 first half of Winter Break to include Christmas Eve and Christmas Day, and
-Parent B shall have the second half to include New Year’s Eve and New Year’s
-Day.  In odd years, Parent B shall have the first half of Winter Break to
+<?php echo $parentBName; ?> shall have the second half to include New Year's Eve and New Year's
+Day.&nbsp; In odd years, <?php echo $parentBName; ?> shall have the first half of Winter Break to
 include Christmas Eve and Christmas Day and <?php echo $parentAName; ?> shall have the second
-half, to include New Year’s Eve and New Year’s Day.  During their time, either
-parent may elect to travel with the Child(ren).  In the event that the
+half, to include New Year's Eve and New Year's Day.&nbsp; During their time, either
+parent may elect to travel with the Child(ren).&nbsp; In the event that the
 custodial parent is not traveling, the non-custodial parent shall have the
-opportunity to spend time with the children on Christmas Day between ____am/pm
-and ____am/pm and New Year’s Day between ____am/pm and ____am/pm.</p>
+opportunity to spend time with the children on Christmas Day between  <?php echo $varName; ?>am/pm
+and  <?php echo $varName; ?>am/pm and New Year's Day between  <?php echo $varName; ?>am/pm and  <?php echo $varName; ?>am/pm.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><b>6<a
-name=PhysicalCustodyWinterBreakContinueSched>.02C(iv)    </a></b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.  Parents shall continue the normal during
+name=PhysicalCustodyWinterBreakContinueSched>.02C(iv)&nbsp;&nbsp;&nbsp; </a></b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR</u>.&nbsp; Parents shall continue the normal during
 the school year schedule during this break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodySpringBreak><b>6.02D         </b><u>SPRING BREAK</u>.  </a>The
-Parents shall share time with the Child(ren) during Spring Breaks as follows:  </p>
+name=PhysicalCustodySpringBreak><b>6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPRING BREAK</u>.&nbsp; </a>The
+Parents shall share time with the Child(ren) during Spring Breaks as follows:&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakSB><b>6.02D(i)      </b><u>SPLIT BREAK</u>.  </a>In
+name=PhysicalCustodySpringBreakSB><b>6.02D(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u>.&nbsp; </a>In
 odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and Parent B shall have the Child(ren) during the second half of the
-break.  In even years, Parent B shall have the Child(ren) during the first half
+break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
+break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
 of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
 the break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakAB><b>6.02D(ii)     </b><u>ALTERNATE BREAK</u></a>. 
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.  In even calendar
-years, Parent B shall have the entire break.   </p>
+name=PhysicalCustodySpringBreakAB><b>6.02D(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
+In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
+years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakContinueSched><b>6.02D(iii)   </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.</a>  Parents shall continue the normal
+name=PhysicalCustodySpringBreakContinueSched><b>6.02D(iii)&nbsp;&nbsp; </b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR</u>.</a>&nbsp; Parents shall continue the normal
 during the school year schedule during this break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.  The
+name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.&nbsp; The
 Parents shall share time with the Child(ren) during Summer Break as follows:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakSB><b>6.02E(i)      </b><u>SPLIT BREAK</u></a>. 
+name=PhysicalCustodySummerBreakSB><b>6.02E(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u></a>.&nbsp;
 In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and Parent B shall have the Child(ren) during the second half of the
-break.  In even years, Parent B shall have the Child(ren) during the first half
+break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
+break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
 of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
-the break, to include New Year’s Eve and New Year’s Day.</p>
+the break, to include New Year's Eve and New Year's Day.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakContSched><b>6.02E(ii)     </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.</a>  Parents shall continue the normal
+name=PhysicalCustodySummerBreakContSched><b>6.02E(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR</u>.</a>&nbsp; Parents shall continue the normal
 during the school year schedule during this break.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakContSchedUnint><b>6.02E(iii)    </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR WITH OPTION FOR UNITERRUPTED TIME</u></a>. 
+name=PhysicalCustodySummerBreakContSchedUnint><b>6.02E(iii)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
+SCHEDULE DURING THE SCHOOL YEAR WITH OPTION FOR UNITERRUPTED TIME</u></a>.&nbsp;
 Parents shall continue the normal during the school year schedule during this
 break provided however that both parents shall have the option to take
-___days/weeks of uninterrupted time with the Child(ren) every summer.  Parents
+ <?php echo $varName; ?>days/weeks of uninterrupted time with the Child(ren) every summer.&nbsp; Parents
 shall select and exchange their dates for uninterrupted time with the
-Child(ren) by no later than ____________(date) of the same year.  In even
+Child(ren) by no later than  <?php echo $varName; ?>(date) of the same year.&nbsp; In even
 years, <?php echo $parentAName; ?> shall have the first choice of dates for uninterrupted time
-during the Summer Break.  In odd years, Parent B shall have the first choice of
-dates for uninterrupted time during the Summer Break.  </p>
+during the Summer Break.&nbsp; In odd years, <?php echo $parentBName; ?> shall have the first choice of
+dates for uninterrupted time during the Summer Break.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><u><span
@@ -2600,12 +2600,12 @@ margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><u><span
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyHolidaysandSpecialDays><b>6.03</b>  <u>PHYSICAL CUSTODY AND
-TIMESHARING: HOLIDAYS AND SPECIAL DAYS</u>.  </a>Parents agree that the
+name=PhysicalCustodyHolidaysandSpecialDays><b>6.03</b>&nbsp; <u>PHYSICAL CUSTODY AND
+TIMESHARING: HOLIDAYS AND SPECIAL DAYS</u>.&nbsp; </a>Parents agree that the
 following holidays shall be shared as follows:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          </p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
 <table class=a7 border=1 cellspacing=0 cellpadding=0 width=623
  style='border-collapse:collapse;border:none'>
@@ -2613,11 +2613,11 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>                                                          <u>Alternate</u>     <u>Split</u>    
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>Alternate</u>&nbsp;&nbsp;&nbsp;&nbsp; <u>Split</u>&nbsp; &nbsp;&nbsp;
   <u>Attach to Weekend</u></p>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>                                                         
-  6.03A       6.03B              6.03C</p>
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.03B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.03C</p>
   </td>
  </tr>
  <tr>
@@ -2625,7 +2625,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
   margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>New
-  Year’s Day (Jan 1)                      </p>
+  Year's Day (Jan 1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
   </td>
  </tr>
  <tr>
@@ -2640,7 +2640,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>President’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>President's
   Day (Monday)</p>
   </td>
  </tr>
@@ -2672,7 +2672,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Mother’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Mother's
   Day (Sunday)</p>
   </td>
  </tr>
@@ -2688,7 +2688,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Father’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Father's
   Day (Sunday)</p>
   </td>
  </tr>
@@ -2728,7 +2728,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Veteran’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Veteran's
   Day (Nov 11)</p>
   </td>
  </tr>
@@ -2760,7 +2760,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>New Year’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>New Year's
   Eve (Dec 31)</p>
   </td>
  </tr>
@@ -2769,7 +2769,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
   margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parent
-  A’s Birthday [insert date]</p>
+  A's Birthday [insert date]</p>
   </td>
  </tr>
  <tr>
@@ -2777,14 +2777,14 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
   margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parent
-  B’s Birthday [insert date]</p>
+  B's Birthday [insert date]</p>
   </td>
  </tr>
  <tr>
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Child(ren)’s
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Child(ren)'s
   Birthday(s) [insert dates]</p>
   </td>
  </tr>
@@ -2792,7 +2792,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
   <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
   border-top:none;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'> </p>
+  margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</p>
   </td>
  </tr>
  <tr>
@@ -2812,71 +2812,70 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <
 </table>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=PhysicalCustodyHolidaysAltYearly><b>6.03A         </b><u>ALTERNATE YEARLY</u></a>. 
-<?php echo $parentAName; ?> shall have the Child(ren) in even/odd years.  Parent B shall have the Child(ren)
-in even/odd years.  An alternated holiday/special day shall be defined as
-beginning at ___am/pm and ending at ___am/pm.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;
+<?php echo $parentAName; ?> shall have the Child(ren) in even/odd years.&nbsp; <?php echo $parentBName; ?> shall have the Child(ren)
+in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
+beginning at  <?php echo $varName; ?>am/pm and ending at  <?php echo $varName; ?>am/pm.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>         <u>SPLIT EVERY
-YEAR</u></a>.  <?php echo $parentAName; ?> shall have the Child(ren) for the first half and Parent
-B shall have the Child(ren) for the second half of this holiday/special day in
-even/odd years.  Parent B shall have the Child(ren) for the first half and
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
+YEAR</u></a>.&nbsp; <?php echo $parentAName; ?> shall have the Child(ren) for the first half and <?php echo $parentBName; ?> shall have the Child(ren) for the second half of this holiday/special day in
+even/odd years.&nbsp; <?php echo $parentBName; ?> shall have the Child(ren) for the first half and
 <?php echo $parentAName; ?> shall have the Child(ren) for the second half of this holiday/special
-day in even/odd years.  A split holiday shall be defined as beginning at
-___am/pm and ending at ___am/pm.</p>
+day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
+ <?php echo $varName; ?>am/pm and ending at  <?php echo $varName; ?>am/pm.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=PhysicalCustodyHolidaysMonFri><b>6.03C         </b><u>MONDAY/FRIDAY
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
 HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>         <u>EVERY
-YEAR WITH PARENT A OR PARENT B</u></a>.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>EVERY
+YEAR WITH <?php echo $parentAName; ?> OR <?php echo $parentBName; ?></u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyTravelwithChild><b>6.04  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.  </a>Each parent shall have the
-right to take up to ________ [insert days/weeks] days/weeks of off-island
+name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have the
+right to take up to  <?php echo $varName; ?> [insert days/weeks] days/weeks of off-island
 travel with the Child(ren) every year. The traveling parent shall provide
-________ [insert number of days] days’ notice in writing to the non-traveling parent
-if the trip is outside of the State of Hawai‘i.  If the trip is within the
-State of Hawai‘i, the traveling parent shall provide ________ [insert number of
-days] days’ notice in writing to the non-traveling parent.  For out-of-state
-travel, at least ________ [insert number of days] days prior to departure (or
-________ [insert number of days] days prior to departure for in-state travel),
+ <?php echo $varName; ?> [insert number of days] days' notice in writing to the non-traveling parent
+if the trip is outside of the State of Hawai‘i.&nbsp; If the trip is within the
+State of Hawai‘i, the traveling parent shall provide  <?php echo $varName; ?> [insert number of
+days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
+travel, at least  <?php echo $varName; ?> [insert number of days] days prior to departure (or
+ <?php echo $varName; ?> [insert number of days] days prior to departure for in-state travel),
 the traveling parent shall provide the non-traveling parent full details
 regarding the trip including: (a) airline; flight number; dates and times of
 each flight leg; (b) the dates and times the traveling parent and the
 Child(ren) will be staying in each hotel, residence, etc.; and (c) if the
 Child(ren) are going to be traveling with others, the names of the other
-travelers.  If the traveling parent does not provide this information, the trip
-shall not occur.&nbsp;  </p>
+travelers.&nbsp; If the traveling parent does not provide this information, the trip
+shall not occur.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>Parents shall alternate having the first choice for dates for
-off-island travel during the Child(ren)’s summer vacations each year.  In even
+off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In even
 years, <?php echo $parentAName; ?> shall have first choice for dates of travel so long as they
-provide those specific dates in writing to Parent B by no later than _________
-[insert date] of that same year.  In odd years, Parent B shall have first
+provide those specific dates in writing to <?php echo $parentBName; ?> by no later than  <?php echo $varName; ?>
+[insert date] of that same year.&nbsp; In odd years, <?php echo $parentBName; ?> shall have first
 choice for dates of travel so long as they provide the specific dates in
-writing to <?php echo $parentAName; ?> by no later than _________ [insert date] of that same year.
+writing to <?php echo $parentAName; ?> by no later than  <?php echo $varName; ?> [insert date] of that same year.
 If either parent wishes to take the Child(ren) out of the country or miss any
 school days in order to travel, such a trip shall require the non-traveling
-parent’s consent which, if such requests are occasional, shall not be
+parent's consent which, if such requests are occasional, shall not be
 unreasonably withheld. Parents agree that off-island travel shall not
-negatively impact the Child(ren)’s education.</p>
+negatively impact the Child(ren)'s education.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyRescheduling><b>6.05  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: RESCHEDULING AND MAKE-UP TIME</u>.</a><span style='color:#333333'> 
+name=PhysicalCustodyRescheduling><b>6.05&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: RESCHEDULING AND MAKE-UP TIME</u>.</a><span style='color:#333333'>&nbsp;
 </span><span style='color:#333333'>If a Parent is faced with an unexpected
 situation such as illness or a death in the family, or an irregular event like
 a family wedding, the other Parent will make every effort to accommodate a
@@ -2886,10 +2885,10 @@ parent, reasonable “make-up time” will be arranged by the Parents.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyROFR><b>6.06  </b><u>PHYSICAL CUSTODY AND TIMESHARING:
-RIGHT OF FIRST REFUSAL</u></a>.<b>  </b><span style='color:#333333'>We agree
+name=PhysicalCustodyROFR><b>6.06&nbsp; </b><u>PHYSICAL CUSTODY AND TIMESHARING:
+RIGHT OF FIRST REFUSAL</u></a>.<b>&nbsp; </b><span style='color:#333333'>We agree
 that if a Parent is unable to care for the Child(ren) themselves for a period
-of more than _______</span> [insert number of hours]<span style='color:#333333'>
+of more than  <?php echo $varName; ?></span> [insert number of hours]<span style='color:#333333'>
 hours during their time with the Child(ren), they shall notify the other Parent
 and give them the opportunity to spend the period for which childcare is
 required with the Child(ren). </span>If the non-custodial Parent cannot
@@ -2899,60 +2898,60 @@ caring for the Child(ren).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyPickupNonSchool><b>6.07  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: PICK-UP FOR NON-SCHOOL EXCHANGES</u></a>.  If possible, exchanges
+name=PhysicalCustodyPickupNonSchool><b>6.07&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: PICK-UP FOR NON-SCHOOL EXCHANGES</u></a>.&nbsp; If possible, exchanges
 shall occur at school provided however, that if exchanges are not during school
 pick-ups or drop offs, then the Parents receiving the Child(ren) for custodial
 time shall pick-up the Child(ren) from the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyDropOffNonSchool><b>6.08  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: DROP OFF FOR NON-SCHOOL EXCHANGES</u></a>.  If possible, exchanges
+name=PhysicalCustodyDropOffNonSchool><b>6.08&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: DROP OFF FOR NON-SCHOOL EXCHANGES</u></a>.&nbsp; If possible, exchanges
 shall occur at school provided however, that if exchanges are not during school
 pick-ups or drop offs, then the Parents relinquishing the Child(ren) for
-custodial time shall drop off the Child(ren) to the other Parent.     </p>
+custodial time shall drop off the Child(ren) to the other Parent. &nbsp;&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyNeutralLocation><b>6.09  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.  </a>If possible, exchanges
+name=PhyscialCustodyNeutralLocation><b>6.09&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
 shall occur at school provided however, that if exchanges are not during school
 pick-ups or drop offs, Parents agree to exchange the child at the following
-neutral location  __________________________ [insert address].</p>
+neutral location&nbsp;  <?php echo $varName; ?> [insert address].</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyDelgationPickupDropOff><b>6.10  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING:  PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>. 
-<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or Parent B to
+name=PhyscialCustodyDelgationPickupDropOff><b>6.10&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING:&nbsp; PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.&nbsp;
+<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or <?php echo $parentBName; ?> to
 pick up or drop off the Child(ren) as provided for in the parenting time
 arrangement, the Parent who is responsible for the pick-up or drop off may
 delegate another person to pick up or drop off the Child(ren).</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11  </b><u>PHYSICAL CUSTODY
-AND TIMESHARING:  PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
-<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or Parent B to
+name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11&nbsp; </b><u>PHYSICAL CUSTODY
+AND TIMESHARING:&nbsp; PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
+<span style='color:#333333'>If it is not possible for <?php echo $parentAName; ?> or <?php echo $parentBName; ?> to
 pick up or drop off the Child(ren) as provided for in the parenting time
 arrangement, the following people may pick up or drop off the Child(ren):
-____________________________[insert names of all jointly authorized
+ <?php echo $varName; ?>[insert names of all jointly authorized
 individuals].</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyChildBelongings><b>6.12  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: CHILD(REN)’S PERSONAL BELONGINGS</u>.</a><span style='color:#333333'>
+name=PhyscialCustodyChildBelongings><b>6.12&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: CHILD(REN)'S PERSONAL BELONGINGS</u>.</a><span style='color:#333333'>
 </span><span style='color:#333333'>Child(ren) often have favorite clothing,
 toys, or communication devices that they would like to have with them, wherever
 they are living. Even if these are gifts from one parent, it is normally
-appropriate to recognize the Child(ren)’s attachments and rights to personal
+appropriate to recognize the Child(ren)'s attachments and rights to personal
 property. If there is potential for conflict on this issue, it can be important
 to be clear about where the Child(ren) may take these items and communicate
-this directly to the other Parent.  </span>Child(ren) may take personal items
+this directly to the other Parent.&nbsp; </span>Child(ren) may take personal items
 (for example, clothing, toys, sports equipment, cell phone, regardless of which
-Parent purchased these items), between the homes of <?php echo $parentAName; ?> and Parent B.
+Parent purchased these items), between the homes of <?php echo $parentAName; ?> and <?php echo $parentBName; ?>.
 Parents will not restrict the Child(ren)'s ability to take these items between
 homes. Parents will each have toiletries, pajamas and as many belongings as
 possible for the Child(ren) in their homes. These items will not travel back
@@ -2960,29 +2959,29 @@ and forth.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyRelocation><b>6.13  </b><u>PHYSICAL CUSTODY AND
-TIMESHARING: RELOCATION</u></a>.<b>  </b>If either Parent intends to relocate
+name=PhyscialCustodyRelocation><b>6.13&nbsp; </b><u>PHYSICAL CUSTODY AND
+TIMESHARING: RELOCATION</u></a>.<b>&nbsp; </b>If either Parent intends to relocate
 away from the island of their current residences or outside of the State where
 they currently reside, then the moving Parent shall provide the other Parent at
-least ______ (___) [insert number of days] days’ notice of their intent to
-move.  After receiving notice of an intent to relocate, Parents shall meet and
+least  <?php echo $varName; ?> ( <?php echo $varName; ?>) [insert number of days] days' notice of their intent to
+move.&nbsp; After receiving notice of an intent to relocate, Parents shall meet and
 review this <u>Co-Parenting Plan:</u> <u>Agreement Regarding Child Custody,
 Timesharing, and Support</u> to try to mutually agree on a modified plan they
 feel is in the best interests of the Child(ren). In the event that Parents
 cannot reach an agreement, the Child(ren) shall remain with the non-moving
-parent until Parents are able to mutually agree or further order of the Court. 
+parent until Parents are able to mutually agree or further order of the Court.&nbsp;
 </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhyscialCustodyModofSchedule><b>6.14</b>  <u>PHYSICAL CUSTODY AND
+name=PhyscialCustodyModofSchedule><b>6.14</b>&nbsp; <u>PHYSICAL CUSTODY AND
 TIMESHARING: MODIFICATION OF SCHEDULE BY AGREEMENT OF BOTH PARENTS</u></a>.
 While both Parents agree and intend that it is a priority to maintain stability
 and consistency in the life of their Child(ren), they understand that they have
-the power to modify the foregoing schedule at any time.  Parents shall continue
-to work out the details of the Child(ren)’s schedules based on what is
+the power to modify the foregoing schedule at any time.&nbsp; Parents shall continue
+to work out the details of the Child(ren)'s schedules based on what is
 reasonable under the circumstances, mutually agreed to, and deemed in the best
-interest of the Child(ren).  The foregoing schedule may be modified upon mutual
+interest of the Child(ren).&nbsp; The foregoing schedule may be modified upon mutual
 agreement of the Parents in writing (text or e-mail is sufficient).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -2994,9 +2993,9 @@ line-height:150%'><u>COMMUNICATION:</u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=Communication><b>7.00</b>  <u>COMMUNICATION</u></a>.  Parents agree and
+name=Communication><b>7.00</b>&nbsp; <u>COMMUNICATION</u></a>.&nbsp; Parents agree and
 understand that communication between Co-Parents is critical to their
-Child(ren)’s well-being.  Parents shall work together to agree on what
+Child(ren)'s well-being.&nbsp; Parents shall work together to agree on what
 information needs to be communicated to the other Parent in a timely manner
 and, at a minimum agree, that the following shall be communicated:</p>
 
@@ -3013,7 +3012,7 @@ child is missing school.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>A
-child will be spending the night somewhere other than the custodial parent’s
+child will be spending the night somewhere other than the custodial parent's
 home.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
@@ -3025,7 +3024,7 @@ pet belonging to a child is missing, dying, or new.</p>
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>An
 individual, other than the parent or subject child(ren), is moving into the
-custodial parent’s home or property (includes long-term tenants).</p>
+custodial parent's home or property (includes long-term tenants).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
@@ -3044,101 +3043,101 @@ advance in writing).</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>h.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span>Discipline
-of a child during one parent’s timesharing day which may affect the other
-parent’s timesharing.  </p>
+of a child during one parent's timesharing day which may affect the other
+parent's timesharing.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationEmailOnly><b>7.01</b>  <u>COMMUNICATION BETWEEN CO-PARENTS:
-E-MAIL ONLY</u></a>. Parents shall communicate primarily through e-mail.  The
+name=CommunicationEmailOnly><b>7.01</b>&nbsp; <u>COMMUNICATION BETWEEN CO-PARENTS:
+E-MAIL ONLY</u></a>. Parents shall communicate primarily through e-mail.&nbsp; The
 Parents may utilize text or telephone calls in an emergency situation or in the
-event a timely response is needed (within 2 – 4 hours).  Otherwise, all
-communication shall be via e-mail.  Both Parents shall check their e-mail at
+event a timely response is needed (within 2 – 4 hours).&nbsp; Otherwise, all
+communication shall be via e-mail.&nbsp; Both Parents shall check their e-mail at
 least once daily and shall respond to messages or other items needing attention
-(i.e. switch requests) within 48 hours.  If more time is needed to respond, the
+(i.e. switch requests) within 48 hours.&nbsp; If more time is needed to respond, the
 receiving parent shall acknowledge the message and provide a timeline in which
 a response shall be provided.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationEmailandTextOnly><b>7.02</b>  <u>COMMUNICATION BETWEEN
+name=CommunicationEmailandTextOnly><b>7.02</b>&nbsp; <u>COMMUNICATION BETWEEN
 CO-PARENTS: E-MAIL AND TEXT ONLY</u></a>. Parents shall communicate primarily
-through e-mail and text.  The Parents may utilize telephone calls in an
+through e-mail and text.&nbsp; The Parents may utilize telephone calls in an
 emergency situation or in the event a timely response is needed (within 2 – 4
-hours).  Otherwise, all communication shall be via e-mail or text.  Both
+hours).&nbsp; Otherwise, all communication shall be via e-mail or text.&nbsp; Both
 Parents shall check their e-mail and texts at least once daily and shall
 respond to messages or other items needing attention (i.e. switch requests)
-within 48 hours.  If more time is needed to respond, the receiving parent shall
+within 48 hours.&nbsp; If more time is needed to respond, the receiving parent shall
 acknowledge the message and provide a timeline in which a response shall be
 provided.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationOurFamilyWizard><b>7.03</b>  <u>COMMUNICATION BETWEEN
+name=CommunicationOurFamilyWizard><b>7.03</b>&nbsp; <u>COMMUNICATION BETWEEN
 CO-PARENTS: OUR FAMILY WIZARD OR OTHER MUTUALLY AGREED UPON PARENTING
 COMMUNICATION APPLICATION</u>.</a> Parents shall communicate solely through Our
 Family Wizard or other mutually agreed upon parenting communication
-application.  Both Parents shall sign up for Our Family Wizard or other
+application.&nbsp; Both Parents shall sign up for Our Family Wizard or other
 mutually agreed upon parenting communication application within ten (10) days
 of the date the last party signs this Agreement and shall maintain an account
 with said program.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationMonthlyConference><b>7.04  </b><u>COMMUNICATION BETWEEN
+name=CommunicationMonthlyConference><b>7.04&nbsp; </b><u>COMMUNICATION BETWEEN
 CO-PARENTS: MONTHLY CONFERENCE</u></a>. Parents shall meet monthly to discuss
-the children’s development and needs including education, health, well-being,
+the children's development and needs including education, health, well-being,
 extracurricular activities, scheduling issues, travel and any other issues
-pertaining to their child(ren).  Conferences shall be on the first _____ 
+pertaining to their child(ren).&nbsp; Conferences shall be on the first  <?php echo $varName; ?>&nbsp;
 [insert day of the week] of each month unless mutually agreed to otherwise.
 Meetings may be via in-person, video conference or telephone calls, as mutually
-agreed by the Parents.  This requirement for monthly conferences between
-Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually
-agreed by the Parents.  </p>
+agreed by the Parents.&nbsp; This requirement for monthly conferences between
+Parents shall end upon each child's eighteenth (18th) birthday, or as mutually
+agreed by the Parents.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationSemiAnnualConference><b>7.05  </b><u>COMMUNICATION BETWEEN
+name=CommunicationSemiAnnualConference><b>7.05&nbsp; </b><u>COMMUNICATION BETWEEN
 CO-PARENTS: SEMI-ANNUAL CONFERENCE</u></a>. Parents shall meet and confer twice
-annually by no later than ________ [insert date] and ________ [insert date]
-every year.  Meetings may be via in-person, video conference or telephone
-calls, as mutually agreed by the Parents.  This requirement for bi-annual
-conferences between Parents shall end upon each child’s eighteenth (18th)
-birthday, or as mutually agreed by the Parents.  </p>
+annually by no later than  <?php echo $varName; ?> [insert date] and  <?php echo $varName; ?> [insert date]
+every year.&nbsp; Meetings may be via in-person, video conference or telephone
+calls, as mutually agreed by the Parents.&nbsp; This requirement for bi-annual
+conferences between Parents shall end upon each child's eighteenth (18th)
+birthday, or as mutually agreed by the Parents.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationAnnualConference><b>7.06  </b><u>COMMUNICATION BETWEEN
+name=CommunicationAnnualConference><b>7.06&nbsp; </b><u>COMMUNICATION BETWEEN
 CO-PARENTS: ANNUAL CONFERENCE</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parents
-shall meet and confer annually by no later than ________ [insert date] every
-year.  Meetings may be via in-person, video conference or telephone calls, as
-mutually agreed by the Parents.  This requirement for annual conferences
-between Parents shall end upon each child’s eighteenth (18th) birthday, or as
+shall meet and confer annually by no later than  <?php echo $varName; ?> [insert date] every
+year.&nbsp; Meetings may be via in-person, video conference or telephone calls, as
+mutually agreed by the Parents.&nbsp; This requirement for annual conferences
+between Parents shall end upon each child's eighteenth (18th) birthday, or as
 mutually agreed by the Parents.<u> </u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationUnlimited><b>7.07  </b><u>COMMUNICATION BETWEEN CHILD(REN)
-AND NON-CUSTODIAL PARENT: UNLIMITED</u></a>.  <span style='color:#333333'>During
+name=CommunicationUnlimited><b>7.07&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN)
+AND NON-CUSTODIAL PARENT: UNLIMITED</u></a>.&nbsp; <span style='color:#333333'>During
 the regular parenting time schedule, the child may contact each parent whenever
 they wish.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationSpecific><b>7.08  </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
+name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
 NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
 regular parenting time schedule, <?php echo $parentAName; ?> may call the child between [insert
-time] and [insert time] when they are with Parent B and Parent B may call the
+time] and [insert time] when they are with <?php echo $parentBName; ?> and <?php echo $parentBName; ?> may call the
 child between [insert time] and [insert time] when they are with <?php echo $parentAName; ?>.
 Calls will normally be no more than 10 minutes.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationExchangeofContactInfo><b>7.08 </b> <u>COMMUNICATION: 
-EXCHANGE OF CONTACT INFORMATION</u></a>.  <span style='color:#333333'>Parents
+name=CommunicationExchangeofContactInfo><b>7.08 </b> <u>COMMUNICATION:&nbsp;
+EXCHANGE OF CONTACT INFORMATION</u></a>.&nbsp; <span style='color:#333333'>Parents
 shall provide to the other Parent with updated telephone number(s), email
 address, and home address. Parents agree that if this contact information
 changes, they shall provide the new contact information to the other Parent
@@ -3146,24 +3145,24 @@ immediately.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationSchedulingExtracurricular><b>7.09  </b><u>COMMUNICATION:
-SCHEDULING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u></a>.  Both Parents
+name=CommunicationSchedulingExtracurricular><b>7.09&nbsp; </b><u>COMMUNICATION:
+SCHEDULING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u></a>.&nbsp; Both Parents
 understand that reasonable extracurricular activities are healthy and
-appropriate outlets for our Child(ren).  Both Parents understand that selecting
+appropriate outlets for our Child(ren).&nbsp; Both Parents understand that selecting
 extracurricular activities for the Child(ren) is a legal custody decision. <span
 style='color:#333333'>Neither of us will schedule extra-curricular activities
 during the time the Child(ren) is to be living with or in the care of the other
-Parent, unless the other Parent agrees.</span><b>  </b><span style='color:#333333'>The
+Parent, unless the other Parent agrees.</span><b>&nbsp; </b><span style='color:#333333'>The
 other Parent shall not unreasonably withhold their agreement.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=CommunicationSelectingExtracurricular><b>7.10</b>  <u>COMMUNICATION:
-SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u>.  </a><span
+name=CommunicationSelectingExtracurricular><b>7.10</b>&nbsp; <u>COMMUNICATION:
+SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u>.&nbsp; </a><span
 style='color:#333333'>Each Parent may select and pay for one extra-curricular
 activity that occurs no more than once a week for each Child, and the other
 Parent shall be expected to take each Child to that activity and support the
-Child’s participation during the time that the Child is in their care.</span>  </p>
+Child's participation during the time that the Child is in their care.</span>&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</p>
@@ -3173,45 +3172,45 @@ margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
 line-height:150%'><u>SUPPORT OF THE CHILD(REN):</u></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
-border:none'><a name=SoCMonthlyUnderLaw><b>8.00</b>  <u>SUPPORT OF THE
-CHILD(REN): MONTHLY CHILD SUPPORT AMOUNT UNDER THE LAW</u>.</a>  Each State has
+border:none'><a name=SoCMonthlyUnderLaw><b>8.00</b>&nbsp; <u>SUPPORT OF THE
+CHILD(REN): MONTHLY CHILD SUPPORT AMOUNT UNDER THE LAW</u>.</a>&nbsp; Each State has
 Child Support Guidelines used to calculate monthly child support. Each parent
 shall be bound by and follow the Uniform Interstate Family Support Act.</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
-border:none'><a name=SoCChildSupportSameState><b>8.01  </b><u>SUPPORT OF THE
+border:none'><a name=SoCChildSupportSameState><b>8.01&nbsp; </b><u>SUPPORT OF THE
 CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN THE SAME
-STATE</u>.  </a>Child support shall be paid by <?php echo $parentAName; ?>/B to Parent B/A and
+STATE</u>.&nbsp; </a>Child support shall be paid by <?php echo $parentAName; ?>/B to <?php echo $parentBName; ?>/A and
 calculated pursuant to the State child support guidelines worksheet. </p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
-border:none'><a name=SoCChildSupportDifferentState><b>8.02  </b><u>SUPPORT OF
+border:none'><a name=SoCChildSupportDifferentState><b>8.02&nbsp; </b><u>SUPPORT OF
 THE CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN
 DIFFERENT STATES</u></a>. Child support shall be paid by <?php echo $parentAName; ?>/B to Parent
-B/A and calculated pursuant to the guidelines for child support in the ____
-[insert State].  </p>
+B/A and calculated pursuant to the guidelines for child support in the  <?php echo $varName; ?>
+[insert State].&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;line-height:150%'><a
-name=SoCChildSupportAgreedAlternative><b>8.03  </b><u>SUPPORT OF THE
-CHILD(REN): MUTUALLY AGREED UPON CHILD SUPPORT AMOUNT ALTERNATIVE</u></a>. 
-Child Support shall be paid by <?php echo $parentAName; ?>/B to Parent B/A by agreement of the
-Parents in the amount of $______/per Child per month for a total monthly child
-support amount of $_______.  Both Parents understand that child support is
+name=SoCChildSupportAgreedAlternative><b>8.03&nbsp; </b><u>SUPPORT OF THE
+CHILD(REN): MUTUALLY AGREED UPON CHILD SUPPORT AMOUNT ALTERNATIVE</u></a>.&nbsp;
+Child Support shall be paid by <?php echo $parentAName; ?>/B to <?php echo $parentBName; ?>/A by agreement of the
+Parents in the amount of $ <?php echo $varName; ?>/per Child per month for a total monthly child
+support amount of $ <?php echo $varName; ?>.&nbsp; Both Parents understand that child support is
 modifiable going forward and at any time either Parent may request that child
 support be calculated pursuant to their State guidelines and ordered to be paid
 pursuant to and Order for Income Withholding (or similar order) via the State
 Child Support Enforcement Agency.</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
-border:none'><a name=SoCChildSupportNoAgreement><b>8.04  </b><u>SUPPORT OF THE
+border:none'><a name=SoCChildSupportNoAgreement><b>8.04&nbsp; </b><u>SUPPORT OF THE
 CHILD(REN): NO AGREEMENT OF THE PARTIES RE MONTHLY CHILD SUPPORT AMOUNT AND/OR
-JURISDICTION</u></a>.  Parents do not agree on the amount of Child Support to
+JURISDICTION</u></a>.&nbsp; Parents do not agree on the amount of Child Support to
 be paid and/or on which State should have jurisdiction to calculate child
-support under the Uniform Interstate Family Support Act.  Parents agree to
+support under the Uniform Interstate Family Support Act.&nbsp; Parents agree to
 litigate the issue of child support through the Family Court and/or the State
-Child Support Enforcement Agency.  <b>Note: In many states, physical custody
-and timesharing with the Child(ren) impacts the calculation of child support. 
+Child Support Enforcement Agency.&nbsp; <b>Note: In many states, physical custody
+and timesharing with the Child(ren) impacts the calculation of child support.&nbsp;
 If the child support amount if going to be litigated through the Family Court
 or administratively through the State Child Support Enforcement Agency, Parents
 are hereby advised to seek independent legal counsel before making any
@@ -3222,295 +3221,295 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=SoCChildSupportAccountAlternative><b><span style='background:yellow'>8.05 </span></b><u><span
 style='background:yellow'>SUPPO</span></u></a><u><span style='background:yellow'>RT
 OF THE CHILD(REN): CHILD SUPPORT ACCOUNT ALTERNATIVE</span></u><span
-style='background:yellow'>.  Parents agree that</span></p>
+style='background:yellow'>.&nbsp; Parents agree that</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SocDirectPayment><b>8.06  </b><u>SUPPORT OF THE CHILD(REN): DIRECT PAYMENT
+name=SocDirectPayment><b>8.06&nbsp; </b><u>SUPPORT OF THE CHILD(REN): DIRECT PAYMENT
 OF CHILD SUPPORT</u>.</a></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCThroughStateAgency><b>8.07  </b><u>SUPPORT OF THE CHILD(REN): PAYMENT
+name=SoCThroughStateAgency><b>8.07&nbsp; </b><u>SUPPORT OF THE CHILD(REN): PAYMENT
 OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCHealthInsurance><b>8.08  </b><u>SUPPORT OF THE CHILD(REN): HEALTH
-INSURANCE PREMIUM</u></a><u>S</u>.   <?php echo $parentAName; ?>/B shall cover the Child(ren)’s
-health insurance premiums in the amount of $______ per month.</p>
+name=SoCHealthInsurance><b>8.08&nbsp; </b><u>SUPPORT OF THE CHILD(REN): HEALTH
+INSURANCE PREMIUM</u></a><u>S</u>.&nbsp;&nbsp; <?php echo $parentAName; ?>/B shall cover the Child(ren)'s
+health insurance premiums in the amount of $ <?php echo $varName; ?> per month.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCUninsuredCoPays><b>8.09  </b><u>SUPPORT OF THE CHILD(REN): UNINSURED
+name=SoCUninsuredCoPays><b>8.09&nbsp; </b><u>SUPPORT OF THE CHILD(REN): UNINSURED
 CO-PAYS FOR HEALTH-RELATED EXPENSES</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=SoCUninsuredCoPaysSR><b>8.09A         </b><u>SOLE RESPONSIBILITY</u></a>.
-<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s uninsured co-pays for
-health-related expenses premiums in the amount of $______ per month.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCUninsuredCoPaysSR><b>8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)'s uninsured co-pays for
+health-related expenses premiums in the amount of $ <?php echo $varName; ?> per month.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCUninsuredCoPaysSpR>8.09B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
-uninsured co-pays for health-related expenses premiums in the amount of $______
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCUninsuredCoPaysSpR>8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+<?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the Child(ren)'s
+uninsured co-pays for health-related expenses premiums in the amount of $ <?php echo $varName; ?>
 per month.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCUninsuredCoPaysThresholdAmount>8.09C         </a></b><u>RESPONSIBILITY
-FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to $____ per Child per
-calendar year in uninsured co-pays for health-related expenses.  In the event
-that any Child’s uninsured co-pays for health-related expenses paid by either
-parent exceeds $____ per calendar year, then <?php echo $parentAName; ?> shall cover ____% and
-Parent B shall cover ____% of the Child(ren)’s uninsured co-pays for
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCUninsuredCoPaysThresholdAmount>8.09C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESPONSIBILITY
+FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to $ <?php echo $varName; ?> per Child per
+calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
+that any Child's uninsured co-pays for health-related expenses paid by either
+parent exceeds $ <?php echo $varName; ?> per calendar year, then <?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and
+<?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the Child(ren)'s uninsured co-pays for
 health-related expenses premiums exceeding the threshold amount.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCUninsuredCoPaysRecbyProvider>8.09D         </a></b><u>DEFINITION OF
-UNINSURED HEALTH-RELATED EXPENSES: RECOMMENDED BY PROVIDERS</u>.  Uninsured
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCUninsuredCoPaysRecbyProvider>8.09D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>DEFINITION OF
+UNINSURED HEALTH-RELATED EXPENSES: RECOMMENDED BY PROVIDERS</u>.&nbsp; Uninsured
 health-related expenses shall include, without limitation, all medical, dental,
 vision, mental health, orthodontia, chiropractic and other health-related
-expenses for a Child recommended for a Child by the Child’s relevant provider
+expenses for a Child recommended for a Child by the Child's relevant provider
 (Pediatrician, Dentist, Orthodontist, Therapist, Psychiatrist, etc.).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCUninsuredCoPaysAgreementbyParents>8.09E         </a></b><u>DEFINITION
-OF UNINSURED HEALTH-RELATED EXPENSES: MUTUAL AGREEMENT OF THE PARENTS</u>. 
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCUninsuredCoPaysAgreementbyParents>8.09E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>DEFINITION
+OF UNINSURED HEALTH-RELATED EXPENSES: MUTUAL AGREEMENT OF THE PARENTS</u>.&nbsp;
 Uninsured health-related expenses shall include, without limitation, all
 medical, dental, vision, mental health, orthodontia, chiropractic and other
 health-related expenses for a Child that both Parents mutually agree is in a
-Child’s best interest.</p>
+Child's best interest.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCExtracurricular><b>8.10  </b><u>SUPPORT OF THE CHILD(REN):
+name=SoCExtracurricular><b>8.10&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
 EXTRACURRICULAR EXPENSES</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=SoCExtracurricularSR><b>8.10A         </b><u>SOLE RESPONSIBILITY</u></a>.
-<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s extracurricular expenses.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCExtracurricularSR><b>8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)'s extracurricular expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCExtracurricularSpR>8.10B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCExtracurricularSpR>8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+<?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the Child(ren)'s
 extracurricular expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCExtracurricularSelection>8.10C         </a></b><u>SELECTING
-EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN) PURSUANT TO 7.10 HEREINABOVE</u>. 
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCExtracurricularSelection>8.10C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SELECTING
+EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN) PURSUANT TO 7.10 HEREINABOVE</u>.&nbsp;
 If the Parents have elected to separately select<span style='color:#333333'>
 and pay for one extra-curricular activity that occurs no more than once a week
 for each Child, then the other Parent shall be expected to take each Child to
-that activity and support the Child’s participation during the time that the
-Child is in their care, pursuant to Paragraph 7.10 hereinabove.  Each Parent
+that activity and support the Child's participation during the time that the
+Child is in their care, pursuant to Paragraph 7.10 hereinabove.&nbsp; Each Parent
 shall pay for 100% of their selected extracurricular activity, which shall
 include supplies, uniforms, travel out-of-state, and other expenses required
 for the Child to participate</span>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCExtracurricularMutualAgreement>8.10D         </a></b><u>EXTRACURRICULAR
-ACTIVITIES MUST BE MUTUALLY AGREED UPON</u>.  Parents shall only be responsible
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCExtracurricularMutualAgreement>8.10D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>EXTRACURRICULAR
+ACTIVITIES MUST BE MUTUALLY AGREED UPON</u>.&nbsp; Parents shall only be responsible
 for paying for extracurricular activities that are mutually agreed upon by both
-Parents.  Parents agree to consult and be guided by the Child’s preferences in
+Parents.&nbsp; Parents agree to consult and be guided by the Child's preferences in
 selecting mutually agreed upon extracurricular activities.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCPrivateSchoolExpenses><b>8.11</b>  <u>SUPPORT OF THE CHILD(REN):
+name=SoCPrivateSchoolExpenses><b>8.11</b>&nbsp; <u>SUPPORT OF THE CHILD(REN):
 PRIVATE SCHOOL EXPENSES</u>.</a></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=SoCPrivateSchoolExpensesSR><b>8.11A         </b><u>SOLE RESPONSIBILITY</u></a>.
-<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s private school expenses.</p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPrivateSchoolExpensesSR><b>8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)'s private school expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPrivateSchoolExpensesSpR>8.11B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPrivateSchoolExpensesSpR>8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+<?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the Child(ren)'s
 private school expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPrivateSchoolExpensesDefinition>8.11C         </a></b><u>DEFINITION OF
-PRIVATE SCHOOL EXPENSES</u>.  Private school expenses shall be defined to
-include all expenses related to a Child’s attendance at a private school
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPrivateSchoolExpensesDefinition>8.11C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>DEFINITION OF
+PRIVATE SCHOOL EXPENSES</u>.&nbsp; Private school expenses shall be defined to
+include all expenses related to a Child's attendance at a private school
 including, without limitation, application fees/costs, tuition, books,
 uniforms, school lunches, and before and/or after school care expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPrivateSchoolExpensesMutualAgreement>8.11D         </a></b><u>MUTUAL
-AGREEMENT OF PARENTS</u>.  Either Parent may apply for a Child to attend
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPrivateSchoolExpensesMutualAgreement>8.11D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>MUTUAL
+AGREEMENT OF PARENTS</u>.&nbsp; Either Parent may apply for a Child to attend
 private school but unless one parent has sole legal custody, both Parents must
-approve the enrollment of any Child in a private school.<b>         </b></p>
+approve the enrollment of any Child in a private school.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPrivateSchoolExpensesReserve>8.11E         </a></b><u>RESERVE</u>. 
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPrivateSchoolExpensesReserve>8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
 Parents shall reserve the issue of private school expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCPostSchoolExpenses><b>8.12  </b><u>SUPPORT OF THE CHILD(REN): POST-HIGH
+name=SoCPostSchoolExpenses><b>8.12&nbsp; </b><u>SUPPORT OF THE CHILD(REN): POST-HIGH
 SCHOOL EDUCATION EXPENSES</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCPostSchoolExpensesSR><b>8.12A         </b><u>SOLE RESPONSIBILITY</u></a>.
-<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s post-high school education
-expenses.  </p>
+name=SoCPostSchoolExpensesSR><b>8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+<?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)'s post-high school education
+expenses.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPostSchoolExpensesSpR>8.12B         </a></b><u>SPLIT RESPONSIBILITY</u>.
-<?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the Child(ren)’s
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPostSchoolExpensesSpR>8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+<?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the Child(ren)'s
 post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPostSchoolExpensesSRFundsfromchildacc>8.12C         </a></b><u>SOLE
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPostSchoolExpensesSRFundsfromchildacc>8.12C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SOLE
 RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR
-CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S
-POST-HIGH SCHOOL EDUCATION EXPENSES</u>.  After funds from any 529 accounts
+CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD'S
+POST-HIGH SCHOOL EDUCATION EXPENSES</u>.&nbsp; After funds from any 529 accounts
 held on behalf of a Child or Child(ren), Coverdell accounts or other funds
-ear-marked to pay for a Child’s post-high school education expenses are
-expended, then <?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)’s remaining
+ear-marked to pay for a Child's post-high school education expenses are
+expended, then <?php echo $parentAName; ?>/B shall cover 100% of the Child(ren)'s remaining
 post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCPostSchoolExpensesSpRFundsfromchildac><b>8.12D         </b><u>SPLIT
+name=SoCPostSchoolExpensesSpRFundsfromchildac><b>8.12D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT
 RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR
-CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S
-POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.  After funds from any 529 accounts
+CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD'S
+POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.&nbsp; After funds from any 529 accounts
 held on behalf of a Child or Child(ren), Coverdell accounts or other funds
-ear-marked to pay for a Child’s post-high school education expenses are
-expended, then <?php echo $parentAName; ?> shall cover ____% and Parent B shall cover ____% of the
-Child(ren)’s remaining post-high school education expenses.</p>
+ear-marked to pay for a Child's post-high school education expenses are
+expended, then <?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% of the
+Child(ren)'s remaining post-high school education expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPostSchoolExpensesCap>8.12E</a></b>         <u>CAP ON PAYMENT BY EACH
-PARENT PER ACADEMIC SCHOOL YEAR</u>.  The Child(ren)’s post-high school
-education expenses shall be paid such that <?php echo $parentAName; ?> shall cover ____% up to a
-cap of $____ amount per academic school year and Parent B shall cover ____% up
-to a cap of $____ amount per academic school year. </p>
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
+PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
+education expenses shall be paid such that <?php echo $parentAName; ?> shall cover  <?php echo $varName; ?>% up to a
+cap of $ <?php echo $varName; ?> amount per academic school year and <?php echo $parentBName; ?> shall cover  <?php echo $varName; ?>% up
+to a cap of $ <?php echo $varName; ?> amount per academic school year. </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
 name=SoCPostSchoolExpensesDef><b>8.12F</b> <u>DEFINITION OF POST-HIGH SCHOOL
-EDUCATION EXPENSES</u></a>.  Private school expenses shall be defined to
-include all expenses related to a Child’s attendance at any post-high school
+EDUCATION EXPENSES</u></a>.&nbsp; Private school expenses shall be defined to
+include all expenses related to a Child's attendance at any post-high school
 educational institution (including vocational and trade schools), without
 limitation, application fees/costs, tuition, books, uniforms, school lunches,
 and before and/or after school care expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPostSchoolExpensesMutualAgreement>8.12G         </a></b><u>MUTUAL
-AGREEMENT OF PARENTS</u>.  Either Parent may apply for a Child to attend a
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPostSchoolExpensesMutualAgreement>8.12G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>MUTUAL
+AGREEMENT OF PARENTS</u>.&nbsp; Either Parent may apply for a Child to attend a
 post-high school education institution (includes trade and vocational schools),
 but in order for the other Parent to be financially responsible, both Parents
 must approve the enrollment of any Child or Adult Child in a post-high school
-educational institution.<b>  </b></p>
+educational institution.<b>&nbsp; </b></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>          <a
-name=SoCPostSchoolExpensesReserve>8.12H         </a></b><u>RESERVE</u>. 
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCPostSchoolExpensesReserve>8.12H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
 Parents shall reserve the issue of post-high school educational school
 expenses.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCDependents><b>8.13  </b><u>SUPPORT OF THE CHILD(REN): CLAIMING THE
+name=SoCDependents><b>8.13&nbsp; </b><u>SUPPORT OF THE CHILD(REN): CLAIMING THE
 CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCDependentsSA><b>8.13A         </b><u>SOLE AUTHORITY TO CLAIM THE
+name=SoCDependentsSA><b>8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE AUTHORITY TO CLAIM THE
 CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?>/B shall be entitled to claim any Child(ren)
-as a dependent for tax purposes every year.  </p>
+as a dependent for tax purposes every year.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCDependentsSpA><b>8.13B         </b><u>SPLIT AUTHORITY TO CLAIM THE
-CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?> shall be entitled to claim _____(Child’s
-Initials) as a dependent for tax purposes every year.  Parent B shall be
-entitled to claim _____(Child’s Initials) as a dependent for tax purposes every
-year.  </p>
+name=SoCDependentsSpA><b>8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO CLAIM THE
+CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?> shall be entitled to claim  <?php echo $varName; ?>(Child's
+Initials) as a dependent for tax purposes every year.&nbsp; <?php echo $parentBName; ?> shall be
+entitled to claim  <?php echo $varName; ?>(Child's Initials) as a dependent for tax purposes every
+year.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCDependentsSpAthenAlternate><b>8.13C         </b><u>SPLIT AUTHORITY TO
+name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
 CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. <?php echo $parentAName; ?> shall be entitled to
-claim _____(Child’s Initials) as a dependent for tax purposes every year. 
-Parent B shall be entitled to claim _____(Child’s Initials) as a dependent for
+claim  <?php echo $varName; ?>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
+<?php echo $parentBName; ?> shall be entitled to claim  <?php echo $varName; ?>(Child's Initials) as a dependent for
 tax purposes every year. Once the older Child is no longer eligible to be
 claimed for tax purposes, then the Parents shall alternate claiming the younger
-Child.   </p>
+Child.&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCDependentsAlternate><b>8.13D         </b><u>ALTERNATE AUTHORITY TO
+name=SoCDependentsAlternate><b>8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE AUTHORITY TO
 CLAIM THE CHILD(REN</u></a><u>)</u>. <?php echo $parentAName; ?> shall be entitled to claim the
-Child(ren) as dependent(s) for tax purposes in even years.  Parent B shall be
+Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <?php echo $parentBName; ?> shall be
 entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
-years.  </p>
+years.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=SoCProtocolsforReimbursment><b>8.14  </b><u>SUPPORT OF THE CHILD(REN):
+name=SoCProtocolsforReimbursment><b>8.14&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
 PROTOCOLS FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=SoCProtocolsforReimbursmentTimeframe><b>8.14A         </b><u>TIMEFRAME FOR
-REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.  Upon a request in writing
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCProtocolsforReimbursmentTimeframe><b>8.14A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>TIMEFRAME FOR
+REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; Upon a request in writing
 (text or email is ok) from a Parent for reimbursement, the other Parent shall
-reimburse the requesting Parent within ____ days.</p>
+reimburse the requesting Parent within  <?php echo $varName; ?> days.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
-name=SoCProtocolsforReimbursmentMonthly><b>8.14B         </b><u>MONTHLY
-CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u></a>.  Parents shall
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+name=SoCProtocolsforReimbursmentMonthly><b>8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONTHLY
+CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u></a>.&nbsp; Parents shall
 calculate child-related expenses and reimburse each other on a monthly basis.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCProtocolsforReimbursmentQuarterly><b>8.14C         </b><u>QUARTERLY
-CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.</a>  Parents shall
+name=SoCProtocolsforReimbursmentQuarterly><b>8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>QUARTERLY
+CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.</a>&nbsp; Parents shall
 calculate child-related expenses and reimburse each other on a quarterly basis.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCProtocolsforReimbursmentAnnual><b>8.14D         </b><u>ANNUAL
-CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.  </a>Parents shall
+name=SoCProtocolsforReimbursmentAnnual><b>8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ANNUAL
+CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.&nbsp; </a>Parents shall
 calculate child-related expenses and reimburse each other on an annual basis.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
-name=SoCProtocolsforReimbursmentDocumentation><b>8.14E         </b><u>DOCUMENTATION
-REQUIRED FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.  A requesting
+name=SoCProtocolsforReimbursmentDocumentation><b>8.14E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>DOCUMENTATION
+REQUIRED FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; A requesting
 Parent shall include written documentation proving the child-related expense in
 order to receive reimbursement from the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>          <a
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 name=SoCProtocolsforReimbursmentMethod><b>8.14F </b><u>REIMBURSEMENT METHOD</u></a>.
 Parents shall use the following method to reimburse each other for
 child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
 or other mutually agreed upon parenting expense tool or application, or
-__________________.<b>    </b></p>
+ <?php echo $varName; ?>.<b>&nbsp;&nbsp;&nbsp; </b></p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
 margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
@@ -3518,154 +3517,154 @@ line-height:150%'><u>OTHER ISSUES:</u></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesCoParentingCounseling><b>9.00</b>  <u>OTHER ISSUES: CO-PARENT
-COUNSELING</u></a>.  Parents agree to engage______________________(name), or
+name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
+COUNSELING</u></a>.&nbsp; Parents agree to engage <?php echo $varName; ?>(name), or
 other mutually selected licensed mental health professional, as a Co-Parent
-Counselor to assist them in collaboratively parenting the Child(ren).  Both
+Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
 Parents shall continue in Co-Parent Counseling until clinically discharged or
 upon the mutual agreement of both Parents.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesChildFocusedTherapist><b>9.01  </b><u>OTHER ISSUES:
-CHILD-FOCUSED THERAPIST</u></a>.  Parents agree to
-engage______________________(name), or other mutually selected licensed mental
-health professional, as a Child-Focused Therapist for Child(ren).  Both parents
+name=OtherIssuesChildFocusedTherapist><b>9.01&nbsp; </b><u>OTHER ISSUES:
+CHILD-FOCUSED THERAPIST</u></a>.&nbsp; Parents agree to
+engage <?php echo $varName; ?>(name), or other mutually selected licensed mental
+health professional, as a Child-Focused Therapist for Child(ren).&nbsp; Both parents
 shall have access to the child therapist and shall participate in therapy and/or
-engage with the Child-Focused Therapist at the therapist’s discretion.  Parents
-shall alternate taking the Child(ren) to therapy.  Parents agree that the
+engage with the Child-Focused Therapist at the therapist's discretion.&nbsp; Parents
+shall alternate taking the Child(ren) to therapy.&nbsp; Parents agree that the
 Child(ren) shall continue in therapy as needed and upon the schedule
 recommended by the therapist with input from the Child(ren) until clinically
-discharged.  If mutually agreed, parent may jointly select a new therapist for
-Child(ren).  Unless they have sole legal custody of the Child(ren), neither
-Parent may unilaterally terminate child therapy without the other Parent’s
+discharged.&nbsp; If mutually agreed, parent may jointly select a new therapist for
+Child(ren).&nbsp; Unless they have sole legal custody of the Child(ren), neither
+Parent may unilaterally terminate child therapy without the other Parent's
 consent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesSocialMediaBetweenParents><b>9.02  </b><u>OTHER ISSUES: SOCIAL
-MEDIA BETWEEN PARENTS</u></a>.  Neither Parent shall post any pictures of the
+name=OtherIssuesSocialMediaBetweenParents><b>9.02&nbsp; </b><u>OTHER ISSUES: SOCIAL
+MEDIA BETWEEN PARENTS</u></a>.&nbsp; Neither Parent shall post any pictures of the
 other Parent on social media nor make any derogatory comment about the other
-Parent on social media.  </p>
+Parent on social media.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesSocialMediaForChild><b>9.03</b>  <u>OTHER ISSUES: SOCIAL MEDIA
-FOR CHILD(REN</u></a><u>)</u>.  Parents agree that none of their Child(ren)
+name=OtherIssuesSocialMediaForChild><b>9.03</b>&nbsp; <u>OTHER ISSUES: SOCIAL MEDIA
+FOR CHILD(REN</u></a><u>)</u>.&nbsp; Parents agree that none of their Child(ren)
 shall have access to any social media platform until they reach thirteen (13)
-years of age, and thereafter both Parents shall monitor any Child’s social
+years of age, and thereafter both Parents shall monitor any Child's social
 media usage to ensure that it is safe and does not cause embarrassment to
 either Parent or the Child. </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesJointTeacherMeeting><b>9.04  </b><u>OTHER ISSUES: JOINT
-PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>  Parents agree
-that it is in their Child(ren)’s best interests that they both attend
+name=OtherIssuesJointTeacherMeeting><b>9.04&nbsp; </b><u>OTHER ISSUES: JOINT
+PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree
+that it is in their Child(ren)'s best interests that they both attend
 parent-teacher meetings together.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesSeperateTeacherMeeting><b>9.05  </b><u>OTHER ISSUES: SEPARATE
-PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>  Parents agree </span>that
+name=OtherIssuesSeperateTeacherMeeting><b>9.05&nbsp; </b><u>OTHER ISSUES: SEPARATE
+PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree </span>that
 they<span style='color:#333333'> will each arrange our own separate
 parent-teacher meetings.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=OtherIssuesOneParentTeacherMeeting><b>9.</b></a><b><span style='color:
-#333333'>06</span></b><span style='color:#333333'>  </span><u>OTHER ISSUES: ONE
-PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.  <span style='color:#333333'>Parent
-A/B will attend all parent-teacher meetings and will advise Parent B/A of the
+#333333'>06</span></b><span style='color:#333333'>&nbsp; </span><u>OTHER ISSUES: ONE
+PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.&nbsp; <span style='color:#333333'>Parent
+A/B will attend all parent-teacher meetings and will advise <?php echo $parentBName; ?>/A of the
 Child(ren)'s progress.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=OtherIssuesReportCard><b>9.</b></a><b><span style='color:#333333'>07</span></b><span
-style='color:#333333'>  <u>OTHER ISSUES: REPORT CARDS FOR THE CHILD(REN</u></span><u><span
-style='color:#333333'>)</span></u><span style='color:#333333'>.  Both Parents
+style='color:#333333'>&nbsp; <u>OTHER ISSUES: REPORT CARDS FOR THE CHILD(REN</u></span><u><span
+style='color:#333333'>)</span></u><span style='color:#333333'>.&nbsp; Both Parents
 will be provided with separate report cards for the Child(ren). Parents shall
 notify the school authorities to provide separate report cards.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=OtherIssuesJointAttendance><b>9.</b></a><b><span style='color:#333333'>08</span></b><span
-style='color:#333333'>  <u>OTHER ISSUES: JOINT ATTENDANCE AT SCHOOL AND
-EXTRACURRICULAR EVENTS</u></span><span style='color:#333333'>.  Both Parents
+style='color:#333333'>&nbsp; <u>OTHER ISSUES: JOINT ATTENDANCE AT SCHOOL AND
+EXTRACURRICULAR EVENTS</u></span><span style='color:#333333'>.&nbsp; Both Parents
 may attend school events and extra-curricular activities.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=OtherIssuesOneParentExtracurricular></a><a name="_heading=h.30j0zll"></a><b>9.</b><b><span
-style='color:#333333'>09</span></b><span style='color:#333333'>  <u>OTHER
-ISSUES: CUSTODIAL PARENT TO ATTEND SCHOOL AND EXTRACURRICULAR EVENTS</u>.  </span><span
+style='color:#333333'>09</span></b><span style='color:#333333'>&nbsp; <u>OTHER
+ISSUES: CUSTODIAL PARENT TO ATTEND SCHOOL AND EXTRACURRICULAR EVENTS</u>.&nbsp; </span><span
 style='color:#333333'>The Parent with whom the Child(ren) is/are residing at
 the time of the school event and extracurricular activity will be the sole
 Parent to attend these events.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesAlternateAttendance><b>9.10  </b></a><u><span style='color:
+name=OtherIssuesAlternateAttendance><b>9.10&nbsp; </b></a><u><span style='color:
 #333333'>OTHER ISSUES: ALTERNATE ATTENDANCE AT SCHOOL AND EXTRACURRICULAR
-EVENTS</span></u><span style='color:#333333'>.  Parent shall alternate
-attending the Child(ren)’s school events and extracurricular activities.</span></p>
+EVENTS</span></u><span style='color:#333333'>.&nbsp; Parent shall alternate
+attending the Child(ren)'s school events and extracurricular activities.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesDocuments><b>9.11  </b><u>OTHER ISSUES: DOCUMENTS</u></a>.  <span
+name=OtherIssuesDocuments><b>9.11&nbsp; </b><u>OTHER ISSUES: DOCUMENTS</u></a>.&nbsp; <span
 style='color:#333333'><?php echo $parentAName; ?>/B will keep the original passport issued in the
 Child(ren)'s name, their social security card, birth certificate, and [insert
 any other relevant documents] at their home, and these documents will be made
-available to Parent B/A as needed. Both Parents shall have copies of all of the
+available to <?php echo $parentBName; ?>/A as needed. Both Parents shall have copies of all of the
 important documents.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesJointConsentPassport><b>9.12  </b><u>OTHER ISSUES: JOINT
-AUTHORITY TO CONSENT FOR PASSPORT</u></a>.  <span style='color:#333333'>Parent
-A and Parent B must both consent for the purposes of a passport application for
+name=OtherIssuesJointConsentPassport><b>9.12&nbsp; </b><u>OTHER ISSUES: JOINT
+AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'><?php echo $parentAName; ?>
+and <?php echo $parentBName; ?> must both consent for the purposes of a passport application for
 any Child.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesSoleConsentPassport><b>9.13  </b><u>OTHER ISSUES: SOLE
-AUTHORITY TO CONSENT FOR PASSPORT</u></a>.  <span style='color:#333333'>Parent
-A/B can apply for the passport for a Child without the consent of Parent B/A.</span></p>
+name=OtherIssuesSoleConsentPassport><b>9.13&nbsp; </b><u>OTHER ISSUES: SOLE
+AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'>Parent
+A/B can apply for the passport for a Child without the consent of <?php echo $parentBName; ?>/A.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesNewIntimatePartnerLD><b>9.14  </b><u>OTHER ISSUES: NEW INTIMATE
-PARTNER PROTOCOLS (LESS DETAILED)</u>.  </a>Both parents agree that they shall
+name=OtherIssuesNewIntimatePartnerLD><b>9.14&nbsp; </b><u>OTHER ISSUES: NEW INTIMATE
+PARTNER PROTOCOLS (LESS DETAILED)</u>.&nbsp; </a>Both parents agree that they shall
 not introduce any of their minor children to a new significant other or
 intimate partner until (a) they have been in an intimate dating relationship
 for six (6) months or longer and (b) the other parent has been given an
-opportunity to meet that significant other/intimate partner first.  Parents
-shall be guided by the children’s best interests and conflict minimization in
+opportunity to meet that significant other/intimate partner first.&nbsp; Parents
+shall be guided by the children's best interests and conflict minimization in
 determining a reasonable compromise on any issues arising from this provision.
 If parents cannot agree, they shall consult with and engage mutually acceptable
 therapist or other mental health professional informed and guided by their
 recommendations. Unless otherwise agreed upon in writing, neither parent shall
 be allowed to travel with the children and their significant other/intimate
-partner unless or until that parent has, in fact, married their new partner. 
+partner unless or until that parent has, in fact, married their new partner.&nbsp;
 This plan is subject to further review based on the best interests of the
 children and their observed reactions and behaviors throughout any introduction
 process.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesNewIntimatePartnerMD><b>9.15  </b><u>OTHER ISSUES: NEW INTIMATE
-PARTNER PROTOCOLS (MORE DETAILED)</u></a>.  Given that both parents will likely
+name=OtherIssuesNewIntimatePartnerMD><b>9.15&nbsp; </b><u>OTHER ISSUES: NEW INTIMATE
+PARTNER PROTOCOLS (MORE DETAILED)</u></a>.&nbsp; Given that both parents will likely
 engage in new intimate partner relationships in the future, it is their intent
-that the children’s well-being, comfort and stability remain the highest
-priority.  Both parents agree to be respectful of one another and guided by the
+that the children's well-being, comfort and stability remain the highest
+priority.&nbsp; Both parents agree to be respectful of one another and guided by the
 following concepts and protocols: </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
 border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Take
-an honest look at the relationship.  If you are just having fun enjoying a new
-person’s company but know there is no long-term potential, it is probably best
+an honest look at the relationship.&nbsp; If you are just having fun enjoying a new
+person's company but know there is no long-term potential, it is probably best
 not to introduce the children to a new intimate partner.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
@@ -3673,13 +3672,13 @@ margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
 border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Your
 relationship shall be well-established and stable prior to initiating these new
-intimate partner protocols.  The Parents shall discuss the appropriate timing
+intimate partner protocols.&nbsp; The Parents shall discuss the appropriate timing
 and circumstances in which the children should formally meet a new intimate
-partner and be told that the nature of the relationship is romantic.  It is
+partner and be told that the nature of the relationship is romantic.&nbsp; It is
 understood that the children may come into contact with the new intimate
 partner in advance, but the actual introduction of this new person as a
 romantic relationship shall not occur before the Parents are able to discuss
-the circumstances in co-parent counseling.  </p>
+the circumstances in co-parent counseling.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
@@ -3688,7 +3687,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
 other parent shall be notified in advance of the children and given the
 opportunity to meet the new intimate partner prior to the children being
 introduced to the new intimate partner and told the nature of the relationship
-is romantic.  </p>
+is romantic.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
 margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
@@ -3696,8 +3695,8 @@ border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Parents
 shall use best practices and judgment when engaging in appropriate public
 displays of affection with their new intimate partner in front of any of the
-children.  Parents shall further check in with the children to gauge their
-comfort with the new intimate partner.  This may be accomplished within a
+children.&nbsp; Parents shall further check in with the children to gauge their
+comfort with the new intimate partner.&nbsp; This may be accomplished within a
 therapeutic process (e.g. check-ins by the co-parent counselor with the child
 therapist as discussed below). </p>
 
@@ -3706,7 +3705,7 @@ margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
 border:none'><span style='font-family:"Noto Sans Symbols"'>&#9679;<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>New
 intimate partners, and even step-parents, shall refrain from disciplining the
-children unless there is an agreement between both parents otherwise<b>.  </b>The
+children unless there is an agreement between both parents otherwise<b>.&nbsp; </b>The
 Parents shall discuss age-appropriate discipline options for the children.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -3716,13 +3715,13 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
 the event there are any problems related to the new intimate partner or these
 protocols, the Parents shall engage a mental health professional such as a
 co-parent counselor or family therapist who may also confer with the child
-therapist to ensure the children’s well-being, comfort and stability remain the
-highest priority.  </p>
+therapist to ensure the children's well-being, comfort and stability remain the
+highest priority.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=OtherIssuesAlternativeDisputeResolution><b>9.16  </b><u>OTHER ISSUES:
-ALTERNATIVE DISPUTE RESOLUTION</u></a>.  If there is any disagreement related
+name=OtherIssuesAlternativeDisputeResolution><b>9.16&nbsp; </b><u>OTHER ISSUES:
+ALTERNATIVE DISPUTE RESOLUTION</u></a>.&nbsp; If there is any disagreement related
 to this Agreement or any Child-related issues, both Parents agree that they
 shall engage a mutually selected mediator to help them resolve the issue(s)
 prior to filing a motion for relief with the Family Court.</p>
@@ -3733,7 +3732,7 @@ margin-bottom:.05pt;margin-left:.5pt;text-align:center;line-height:150%'><u>LEGA
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;line-height:150%'><a
 name=LegalContinuingJurisdiction><b>10.00  </b><u>LEGAL: CONTINUING
-JURISDICTION</u></a>.  Except as otherwise limited by Statute, Court Rule or
+JURISDICTION</u></a>.&nbsp; Except as otherwise limited by Statute, Court Rule or
 case authority, the Family Court shall have the ongoing authority and personal
 and subject matter jurisdiction to make any other just and equitable orders
 which may be necessary to enforce the intended agreement and specific
@@ -3741,22 +3740,22 @@ provisions set forth herein.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalEnforcement><b>10.01</b> <u>LEGAL: ENFORCEMENT</u></a>.  A Parent who
+name=LegalEnforcement><b>10.01</b> <u>LEGAL: ENFORCEMENT</u></a>.&nbsp; A Parent who
 fails to comply with this <u>Co-Parenting Plan: Agreement Regarding Child
 Custody, Timesharing, and Support</u> shall be liable to the other Parent for
 all reasonable legal fees and costs incurred and reasonable damages suffered by
-the other Parent as a result of noncompliance.  The Family Court shall have
+the other Parent as a result of noncompliance.&nbsp; The Family Court shall have
 continuing jurisdiction over the parents and their property to enforce and
 implement the provisions of the Agreement, to the extent permitted by
 applicable statutory authority, court rule and/or case law.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalVoluntaryExecution><b>10.02 </b><u>LEGAL: VOLUNTARY EXECUTION</u></a>. 
+name=LegalVoluntaryExecution><b>10.02 </b><u>LEGAL: VOLUNTARY EXECUTION</u></a>.&nbsp;
 Each Parent acknowledges that they have voluntarily executed this <u>Co-Parenting
 Plan: Agreement Regarding Child Custody, Timesharing, and Support</u> with
 sufficient knowledge of the facts and the law, and that it is fair and
-reasonable.  Both Parents have been advised to seek independent legal counsel
+reasonable.&nbsp; Both Parents have been advised to seek independent legal counsel
 regarding these and all other matters contained herein.</p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
@@ -3788,18 +3787,17 @@ line-height:107%'>&nbsp;</p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>____________________________________          ____________________________________</p>
+margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <?php echo $varName; ?></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Name:                                                          Name:</p>
+margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Parent
-A                                                      Parent B</p>
+margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> <?php echo $parentAName; ?></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $parentBName; ?></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Residential
-Address:                                   Residential Address:       </p>
+Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
@@ -3809,7 +3807,7 @@ margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>E-Mail
-Address:                                           E-Mail Address:                       </p>
+Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-Mail Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
@@ -3818,7 +3816,7 @@ margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</
 margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>SSN:            XXX-XX-____                            XXX-XX-____</p>
+margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>SSN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX- <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX- <?php echo $varName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-align:justify;text-indent:0in;
 line-height:107%'>&nbsp;</p>
@@ -3830,8 +3828,8 @@ line-height:107%'>&nbsp;</p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Date: _____________________________            Date:
-_____________________________</p>
+margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Date:  <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date:
+ <?php echo $varName; ?></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.2pt;margin-bottom:.15pt;
 margin-left:.5pt;text-align:justify;line-height:107%'><span style='font-size:

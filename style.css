@@ -1,0 +1,34 @@
+body
+{
+    --color1: #896c24;
+    --color2: #5b4a00;
+    --color3:#ffffff;
+}
+header, footer
+{
+    color: var(--color3) !important;
+}
+.color1
+{
+    background-color: var(--color1);
+}
+.color2
+{
+    background-color: var(--color2);
+}
+.color3
+{
+    background-color: var(--color3);
+}
+.color4
+{
+    background-color: var(--color4);
+}
+.color5
+{
+    background-color: var(--color5);
+}
+.hidden
+{
+    display: none;
+}
