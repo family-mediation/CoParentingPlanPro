@@ -17,14 +17,15 @@
     <script>
         let pageCount = 0;
         let numPages = 0;
-        let current = $("#page" + pageCount);
+        let current;
         $(document).ready(function() {
+            current = $("#page" + pageCount);
             let elements = $("#mainForm").children();
             numPages = elements.length;
             //hide everything
             elements.addClass("hidden");
             current.removeClass("hidden");
-            next = $("#next");
+
         });
         
        function nextHandler(){
@@ -36,7 +37,7 @@
         };
         function previousHandler(){
             current.addClass("hidden");
-            pageCount = (pageCount - 1) % numPages;
+            pageCount =  pageCount > 0 ? (pageCount - 1) % numPages : numPages -1;
             current = $("#page" + pageCount);
             current.removeClass("hidden");
             console.log(pageCount);
@@ -72,7 +73,7 @@
         </ul>
     </nav>
 </header>
-<div class="container">
+<div id="content" class="container">
     <row class="text-center">
         <h1>Coparent Pro Version 1</h1>
     </row>
