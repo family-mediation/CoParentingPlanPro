@@ -82,8 +82,8 @@
 
                 <label class="" hide="true" data-dm->Your Race</label>
                 <input type="text" name="partyARace" class="" placeholder="Your Race" data-placeholder-original="Your Race">
-
-
+            </div>
+            <div id="page2" class="card p-4">
                 <label class="" hide="true" data-dm->Your Highest Grade Completed</label>
                 <input type="text" name="partyAEducationLevel" class="" placeholder="Your Highest Grade Completed" data-placeholder-original="Your Highest Grade Completed">
 
@@ -118,7 +118,8 @@
 
                 <label class="" hide="true" data-dm->Your Gross Monthly Income (Welfare)</label>
                 <input type="text" name="partyAWelfareIncome" class="" placeholder="Your Gross Monthly Income (Welfare)" data-placeholder-original="Your Gross Monthly Income (Welfare)">
-
+            </div>
+            <div id="page3" class="card p-4">
                 <div class="">
                     <label data-dm->Were You Previously Married?</label>
                     <div class="">
@@ -187,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div id="page2" class="card p-4">
+            <div id="page4" class="card p-4">
                 <H1> Information About Your spouse</H1>
 
 
@@ -222,7 +223,8 @@
 
                 <label class="" hide="true" data-dm->Spouse's Race</label>
                 <input type="text" name=" " class="" placeholder="Spouse's Race" data-placeholder-original="Spouse's Race">
-
+            </div>
+            <div id="page5" class="card p-4">
                 <label class="" hide="true" data-dm->Spouse's Highest Grade Completed</label>
                 <input type="text" name=" " class="" placeholder="Spouse's Highest Grade Completed" data-placeholder-original="Spouse's Highest Grade Completed">
 
@@ -255,7 +257,8 @@
 
                 <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Welfare)</label>
                 <input type="text" name=" " class="" placeholder="Spouse's Gross Monthly Income (Welfare)" data-placeholder-original="Spouse's Gross Monthly Income (Welfare)">
-
+                </div>
+            <div id="page6" class="card p-4 ">
                 <label data-dm->Was Your Spouse Previously Married?</label>
                 <div class="">
                     <div class="">
@@ -329,7 +332,7 @@
                 </div>
 
             </div>
-            <div id="page3" class="card">
+            <div id="page7" class="card p-4">
                 <H1> Information About You Both </H1>
 
                 <label data-dm->Date of This Marriage</label>
@@ -387,12 +390,13 @@
 
                 </div>
             </div>
-            <div id="page4" class="card">
+            <div id="page8" class="card p-4">
                 <H1>Info about your Kids</H1>
                 <label data-dm->Name, Age, Grade, School Name of Each Child</label>
                 <textarea name=" ">
             </textarea>
                 <div class="">
+                    <br/>
                     <input class="" name=" " type="submit" value="Send Message">
                 </div>
             </div>

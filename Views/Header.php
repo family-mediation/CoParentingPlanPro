@@ -12,38 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link src="Scripts/Pagination.js">
+    <script  src="pagination.js" type="text/javascript"></script>
     <title>CoparentingPlan Pro</title>
-    <script>
-        let pageCount = 0;
-        let numPages = 0;
-        let current;
-        $(document).ready(function() {
-            current = $("#page" + pageCount);
-            let elements = $("#mainForm").children();
-            numPages = elements.length;
-            //hide everything
-            elements.addClass("hidden");
-            current.removeClass("hidden");
-
-        });
-        
-       function nextHandler(){
-            current.addClass("hidden");
-            pageCount = (pageCount + 1) % numPages;
-            current = $("#page" + pageCount);
-            current.removeClass("hidden");
-            console.log(pageCount);
-        };
-        function previousHandler(){
-            current.addClass("hidden");
-            pageCount =  pageCount > 0 ? (pageCount - 1) % numPages : numPages -1;
-            current = $("#page" + pageCount);
-            current.removeClass("hidden");
-            console.log(pageCount);
-        };
-
-    </script>
 </head>
 <header>
     <nav class="navbar navbar-expand-md color2 justify-content-center">
@@ -80,3 +50,4 @@
 
 
     <!-- Optional JavaScript -->
+ 

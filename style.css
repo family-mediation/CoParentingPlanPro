@@ -1,5 +1,6 @@
 body
 {
+    font-family: Poppins,"Poppins Fallback"
     --color1: #896c24;
     --color2: #5b4a00;
     --color3:#ffffff;
@@ -35,4 +36,8 @@ header, footer
 #content
 {
     min-height: 100vh;
+}
+button
+{
+    background-color: var(--color1);
 }
