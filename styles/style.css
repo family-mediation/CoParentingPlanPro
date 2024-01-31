@@ -11,14 +11,22 @@
 }
 body
 {
+    background-image: url("https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-2-2880w.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Poppins;
     --color1: #896c24;
     --color2: #5b4a00;
     --color3:#ffffff;
 }
-header, footer
+header, footer, header a
 {
     color: var(--color3) !important;
+}
+.dropdown
+{
+    color: var(--color3) ;
 }
 .color1
 {
@@ -38,9 +46,17 @@ header, footer
 }
 #content
 {
-    min-height: 100vh;
+    min-height: 88vh;
+    position: relative;
+    margin-top: 5%;
+    background-color: var(--color3);
+}
+#mainForm
+{
+    background-color: white;
 }
 button
 {
     background-color: var(--color1);
+    color: var(--color3) ;
 }

@@ -16,10 +16,11 @@
     <title>CoparentingPlan Pro</title>
 </head>
 <header>
+    <div class="row color1 h-25 p-4" >
+    </div>
     <nav class="navbar navbar-expand-md color2 justify-content-center">
+        <navbar-brand class="justify-content-start"><image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png"/> </navbar-brand>
         <ul class="navbar-nav text-center">
-
-
             <div class="dropdown">
                 <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: Introduction </a>
                 <div class="dropdown-menu">
@@ -43,7 +44,8 @@
         </ul>
     </nav>
 </header>
-<div id="content" class="container">
+<div id="content" class="container-fluid">
+    <div class="container">
     <row class="text-center">
         <h1>Coparent Pro Version 1</h1>
     </row>
