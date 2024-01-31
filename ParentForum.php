@@ -360,7 +360,6 @@
                         <input type="text" name=" " class="form-control" placeholder="Spouse's Length of Service" data-placeholder-original="Spouse's Length of Service">
                     </div>
 
-
                 </div>
 
                 <div class="form-group">
@@ -475,12 +474,20 @@
             <div id="page7" class="card p-4">
                 <H1> Information About You Both </H1>
 
-                <label data-dm->Date of This Marriage</label>
-                <input type="date" class="" lang="undefined" placeholder="Select Date" date_format="mmddyyyy" name=" " data-placeholder-original="Select Date">
-                <div class="">
-                    <label data-dm->Location of This Marriage</label>
-                    <input type="text" name=" " class="" placeholder="County/State" data-placeholder-original="County/State">
+                <div class="form-group row p-3">
+
+                    <div class="col-lg-6">
+                        <label data-dm->Date of This Marriage</label>
+                        <input type="date" class="form-control" lang="undefined" placeholder="Select Date" date_format="mmddyyyy" name=" " data-placeholder-original="Select Date">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label data-dm->Location of This Marriage</label>
+                        <input type="text" name=" " class="form-control" placeholder="County/State" data-placeholder-original="County/State">
+                    </div>
+
                 </div>
+
                 <div class="">
                     <label data-dm->Are You Living Separately?</label>
                     <div class="">
@@ -533,9 +540,12 @@
 
             <div id="page8" class="card p-4">
                 <H1>Info about your Kids</H1>
+
+                <div class="form-group">
                 <label data-dm->Name, Age, Grade, School Name of Each Child</label>
-                <textarea name=" ">
-            </textarea>
+                <textarea class="form-control" name=" "></textarea>
+                </div>
+                
                 <div class="">
                     <br />
                     <input class="" name=" " type="submit" value="Send Message">
