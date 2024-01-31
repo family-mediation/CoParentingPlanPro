@@ -260,7 +260,7 @@
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->Spouse's First Name</label>
-                        <input type="text" name="partyBfirst" class="form-control" placeholder="Spouse's Full Legal Name" data-placeholder-original="Spouse's Full Legal Name">
+                        <input type="text" name="partyBFirst" class="form-control" placeholder="Spouse's Full Legal Name" data-placeholder-original="Spouse's Full Legal Name">
                     </div>
 
                     <div class="col-lg-6">
