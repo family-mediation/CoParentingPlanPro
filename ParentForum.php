@@ -323,39 +323,80 @@
 
 
             <div id="page5" class="card p-4">
-                <label class="" hide="true" data-dm->Spouse's Highest Grade Completed</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Highest Grade Completed" data-placeholder-original="Spouse's Highest Grade Completed">
+                <div class="form-group row p-3">
+
+                    <div class="col-lg-6">
+                        <label class="p-1" hide="true" data-dm->Spouse's Highest Grade Completed</label>
+                        <input type="text" name=" " class="form-control p-3" placeholder="Spouse's Highest Grade Completed" data-placeholder-original="Spouse's Highest Grade Completed">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label data-dm->Spouse has lived on Oahu since</label>
+                        <input type="text" name=" " class="form-control" placeholder="Year" data-placeholder-original="Year">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label data-dm->Spouse has lived in the state of Hawaii since</label>
+                        <input type="text" name=" " class="form-control" placeholder="Year" data-placeholder-original="Year">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label data-dm->Spouse's Primary Employer</label>
+                    <textarea name=" " class="form-control" placeholder="Company Name &amp; Address" data-placeholder-original="Company Name &amp; Address"></textarea>
+                </div>
 
 
-                <label data-dm->Spouse has lived in the state of Hawaii since</label>
-                <input type="text" name=" " class="" placeholder="Year" data-placeholder-original="Year">
+                <div class="form-group row p-3">
 
-                <label data-dm->Spouse has lived on Oahu since</label>
-                <input type="text" name=" " class="" placeholder="Year" data-placeholder-original="Year">
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Spouse's Job Title</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Job Title" data-placeholder-original="Spouse's Job Title">
+                    </div>
 
-                <label data-dm->Spouse's Primary Employer</label>
-                <textarea name=" " class="" placeholder="Company Name &amp; Address" data-placeholder-original="Company Name &amp; Address">
-            </textarea>
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Spouse's Length of Service</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Length of Service" data-placeholder-original="Spouse's Length of Service">
+                    </div>
 
 
-                <label class="" hide="true" data-dm->Spouse's Job Title</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Job Title" data-placeholder-original="Spouse's Job Title">
+                </div>
 
-                <label class="" hide="true" data-dm->Spouse's Work Schedule</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Work Schedule" data-placeholder-original="Spouse's Work Schedule">
+                <div class="form-group">
+                    <label class="" hide="true" data-dm->Spouse's Work Schedule</label>
+                    <input type="text" name=" " class="form-control" placeholder="Spouse's Work Schedule" data-placeholder-original="Spouse's Work Schedule">
+                </div>
 
-                <label class="" hide="true" data-dm->Spouse's Length of Service</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Length of Service" data-placeholder-original="Spouse's Length of Service">
+                <div class="form-group row p-3 text-center">
 
-                <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Primary)</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Gross Monthly Income (Primary)" data-placeholder-original="Spouse's Gross Monthly Income (Primary)">
+                    <div class="col-lg-5 mx-auto">
+                        <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Primary)</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Gross Monthly Income (Primary)" data-placeholder-original="Spouse's Gross Monthly Income (Primary)">
+                    </div>
 
-                <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Secondary)</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Gross Monthly Income (Secondary)" data-placeholder-original="Spouse's Gross Monthly Income (Secondary)">
+                </div>
 
-                <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Welfare)</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Gross Monthly Income (Welfare)" data-placeholder-original="Spouse's Gross Monthly Income (Welfare)">
+                <div class="form-group row p-3 text-center">
+
+                    <div class="col-lg-5 mx-auto">
+                        <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Secondary)</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Gross Monthly Income (Secondary)" data-placeholder-original="Spouse's Gross Monthly Income (Secondary)">
+                    </div>
+
+                </div>
+
+                <div class="form-group row p-3 text-center">
+                    <div class="col-lg-5 mx-auto">
+                        <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Welfare)</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Gross Monthly Income (Welfare)" data-placeholder-original="Spouse's Gross Monthly Income (Welfare)">
+                    </div>
+
+                </div>
+
+
             </div>
+
             <div id="page6" class="card p-4 ">
                 <label data-dm->Was Your Spouse Previously Married?</label>
                 <div class="">
@@ -430,6 +471,7 @@
                 </div>
 
             </div>
+
             <div id="page7" class="card p-4">
                 <H1> Information About You Both </H1>
 
@@ -488,6 +530,7 @@
 
                 </div>
             </div>
+
             <div id="page8" class="card p-4">
                 <H1>Info about your Kids</H1>
                 <label data-dm->Name, Age, Grade, School Name of Each Child</label>
