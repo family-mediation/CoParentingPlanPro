@@ -15,6 +15,7 @@
     <script  src="scripts/pagination.js" type="text/javascript"></script>
     <title>CoparentingPlan Pro</title>
 </head>
+<div id="wrapper">
 <header>
     <div class="row color1 h-25 p-4" >
     </div>
@@ -44,10 +45,11 @@
         </ul>
     </nav>
 </header>
-<div id="content" class="container-fluid">
+<body>
+<div id="content" class="container-fluid d-flex">
     <div class="container">
     <row class="text-center">
-        <h1>Coparent Pro Version 1</h1>
+        <h1 class="pt-4">Coparent Pro Version 1</h1>
     </row>
 
 

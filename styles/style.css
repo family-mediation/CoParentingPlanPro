@@ -44,12 +44,16 @@ header, footer, header a
 {
     display: none;
 }
+#wrapper
+{
+    min-height: 100vh;
+}
 #content
 {
-    min-height: 88vh;
     position: relative;
     margin-top: 5%;
     background-color: var(--color3);
+    height: 100vh;
 }
 #mainForm
 {
