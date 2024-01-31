@@ -367,7 +367,7 @@
                     <input type="text" name=" " class="form-control" placeholder="Spouse's Work Schedule" data-placeholder-original="Spouse's Work Schedule">
                 </div>
 
-                <div class="form-group row p-3 text-center">
+                <div class="form-group row p-2 text-center">
 
                     <div class="col-lg-5 mx-auto">
                         <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Primary)</label>
@@ -376,7 +376,7 @@
 
                 </div>
 
-                <div class="form-group row p-3 text-center">
+                <div class="form-group row p-2 text-center">
 
                     <div class="col-lg-5 mx-auto">
                         <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Secondary)</label>
@@ -385,7 +385,7 @@
 
                 </div>
 
-                <div class="form-group row p-3 text-center">
+                <div class="form-group row p-2 text-center">
                     <div class="col-lg-5 mx-auto">
                         <label class="" hide="true" data-dm->Spouse's Gross Monthly Income (Welfare)</label>
                         <input type="text" name=" " class="form-control" placeholder="Spouse's Gross Monthly Income (Welfare)" data-placeholder-original="Spouse's Gross Monthly Income (Welfare)">
