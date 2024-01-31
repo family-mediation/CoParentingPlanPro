@@ -43,7 +43,7 @@
                 </div>
 
             </div>
-            
+
             <div id="page1" class="container card p-4">
                 <H1> Information About You</H1>
                 <h2>Please enter your full legal Name</h2>
@@ -114,42 +114,75 @@
             </div>
 
 
-            <div id="page2" class="card p-4">
-                <label class="" hide="true" data-dm->Your Highest Grade Completed</label>
-                <input type="text" name="partyAEducationLevel" class="" placeholder="Your Highest Grade Completed" data-placeholder-original="Your Highest Grade Completed">
+            <div id="page2" class="container card p-4">
+
+                <div class="form-group row p-3">
+
+                    <div class="col-lg-6">
+                        <label class="p-1" hide="true" data-dm->Your Highest Grade Completed</label>
+                        <input type="text" name="partyAEducationLevel" class="form-control p-3" placeholder="Your Highest Grade Completed" data-placeholder-original="Your Highest Grade Completed">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label data-dm->You have lived on Oahu since</label>
+                        <input type="text" name="partyAYearsOnOahu" class="form-control" placeholder="Year" data-placeholder-original="Year">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label data-dm->You have lived in the state of Hawaii since</label>
+                        <input type="text" name="partyAYearsInState" class="form-control" placeholder="Year" data-placeholder-original="Year">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label data-dm->Your Primary Employer</label>
+                    <textarea name="partyAEmployer" class="form-control" placeholder="Company Name &amp; Address" data-placeholder-original="Company Name &amp; Address"></textarea>
+                </div>
 
 
-                <label data-dm->You have lived in the state of Hawaii since</label>
-                <input type="text" name="partyAYearsInState" class="" placeholder="Year" data-placeholder-original="Year">
+                <div class="form-group row p-3">
+
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Your Job Title</label>
+                        <input type="text" name="partyAJobTitle" class="form-control" placeholder="Your Job Title" data-placeholder-original="Your Job Title">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Your Length of Service</label>
+                        <input type="text" name="partyALengthOfService" class="form-control" placeholder="Your Length of Service" data-placeholder-original="Your Length of Service">
+                    </div>
 
 
-                <label data-dm->You have Lived on Oahu since</label>
-                <input type="text" name="partyAYearsOnOahu" class="" placeholder="Year" data-placeholder-original="Year">
+                </div>
 
+                <div class="form-group">
+                    <label class="" hide="true" data-dm->Your Work Schedule</label>
+                    <input type="text" name="partyAWorkSchedule" class="form-control" placeholder="Your Work Schedule" data-placeholder-original="Your Work Schedule">
+                </div>
 
-                <label data-dm->Your Primary Employer</label>
-                <textarea name="partyAEmployer" class="" placeholder="Company Name &amp; Address" data-placeholder-original="Company Name &amp; Address">
-            </textarea>
+                <div class="form-group row p-3">
 
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Your Gross Monthly Income (Primary)</label>
+                        <input type="text" name="partyAPrimaryGrossIncome" class="form-control" placeholder="Gross Monthly Income (Primary)" data-placeholder-original="Your Gross Monthly Income (Primary)">
+                    </div>
 
-                <label class="" hide="true" data-dm->Your Job Title</label>
-                <input type="text" name="partyAJobTitle" class="" placeholder="Your Job Title" data-placeholder-original="Your Job Title">
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Your Gross Monthly Income (Secondary)</label>
+                        <input type="text" name="partyASecondaryGrossIncome" class="form-control" placeholder="Gross Monthly Income (Secondary)" data-placeholder-original="Your Gross Monthly Income (Secondary)">
+                    </div>
 
-                <label class="" hide="true" data-dm->Your Work Schedule</label>
-                <input type="text" name="partyAWorkSchedule" class="" placeholder="Your Work Schedule" data-placeholder-original="Your Work Schedule">
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Your Gross Monthly Income (Welfare)</label>
+                        <input type="text" name="partyAWelfareIncome" class="form-control" placeholder="Gross Monthly Income (Welfare)" data-placeholder-original="Your Gross Monthly Income (Welfare)">
+                    </div>
 
-                <label class="" hide="true" data-dm->Your Length of Service</label>
-                <input type="text" name="partyALengthOfService" class="" placeholder="Your Length of Service" data-placeholder-original="Your Length of Service">
+                </div>
 
-                <label class="" hide="true" data-dm->Your Gross Monthly Income (Primary)</label>
-                <input type="text" name="partyAPrimaryGrossIncome" class="" placeholder="Your Gross Monthly Income (Primary)" data-placeholder-original="Your Gross Monthly Income (Primary)">
-
-                <label class="" hide="true" data-dm->Your Gross Monthly Income (Secondary)</label>
-                <input type="text" name="partyASecondaryGrossIncome" class="" placeholder="Your Gross Monthly Income (Secondary)" data-placeholder-original="Your Gross Monthly Income (Secondary)">
-
-                <label class="" hide="true" data-dm->Your Gross Monthly Income (Welfare)</label>
-                <input type="text" name="partyAWelfareIncome" class="" placeholder="Your Gross Monthly Income (Welfare)" data-placeholder-original="Your Gross Monthly Income (Welfare)">
             </div>
+
+
             <div id="page3" class="card p-4">
                 <div class="">
                     <label data-dm->Were You Previously Married?</label>
