@@ -82,7 +82,7 @@
 
                     <div class="col-lg-4">
                         <label data-dm->Home Phone No.</label>
-                        <input type="tel" name="partyAHome" placeholder="888-888-8888" class="form-control">
+                        <input type="tel" name="partyAHome" placeholder="808-888-8888" class="form-control">
                     </div>
 
                     <div class="col-lg-4">
@@ -252,42 +252,76 @@
                     </div>
                 </div>
             </div>
+
             <div id="page4" class="card p-4">
                 <H1> Information About Your spouse</H1>
-
-
                 <h2>Please enter your spouse's full legal Name</h2>
-                <label class="" hide="true" data-dm->Spouse's First Name</label>
-                <input type="text" name="partyBfirst" class="" placeholder="Spouse's Full Legal Name" data-placeholder-original="Spouse's Full Legal Name">
 
-                <label class="" hide="true" data-dm->Spouse's Birth or Maiden Name</label>
-                <input type="text" name="partyBLast" class="" placeholder="Spouse's Birth or Maiden Name" data-placeholder-original="Spouse's Birth or Maiden Name">
+                <div class="form-group row p-3">
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Spouse's First Name</label>
+                        <input type="text" name="partyBfirst" class="form-control" placeholder="Spouse's Full Legal Name" data-placeholder-original="Spouse's Full Legal Name">
+                    </div>
 
-                <label data-dm->Spouse's Address</label>
-                <textarea name=" " class="" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code">
-            </textarea>
+                    <div class="col-lg-6">
+                        <label class="" hide="true" data-dm->Spouse's Birth or Maiden Name</label>
+                        <input type="text" name="partyBLast" class="form-control" placeholder="Spouse's Birth or Maiden Name" data-placeholder-original="Spouse's Birth or Maiden Name">
 
-                <label data-dm->Spouse's Cell Phone No.</label>
-                <input type="tel" name=" " placeholder="808-888-8888" class="" data-placeholder-original="808-888-8888">
+                    </div>
 
-                <label data-dm->Spouse's Home Phone No.</label>
-                <input type="tel" name=" " placeholder="">
+                </div>
 
-                <label class="" hide="true" data-dm->Spouse's Email</label>
-                <input type="email" name=" " placeholder="Spouse's Email Address" class="" data-placeholder-original="Spouse's Email Address">
+                <div class="form-group row p-3">
+                    <div class="col-lg-9">
+                        <label data-dm->Spouse's Address</label>
+                        <textarea name=" " class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    </div>
 
-                <label class="" hide="true" data-dm->Spouse's Last 4 Digits of Social Security Number</label>
-                <input type="text" name=" " placeholder="Spouse's Last 4 Digits of Social Security Number" class="" data-placeholder-original="Spouse's Last 4 Digits of Social Security Number">
+                    <div class="col-lg-3">
+                        <label class="" hide="true" data-dm->Spouse's Last 4 Digits of Social Security Number</label>
+                        <input type="text" name=" " placeholder="Spouse's SSN Last 4 Digits" class="form-control" data-placeholder-original="Spouse's Last 4 Digits of Social Security Number">
+                    </div>
 
-                <label data-dm->Spouse's Date of Birth</label>
-                <input type="date" class="" lang="undefined" placeholder="" date_format="mmddyyyy" name=" ">
+                </div>
 
-                <label data-dm->Spouse's Place of Birth</label>
-                <input type="text" name=" ">
+                <div class="form-group row p-3">
+                    <div class="col-lg-4">
+                        <label data-dm->Spouse's Cell Phone No.</label>
+                        <input type="tel" name=" " placeholder="808-888-8888" class="form-control" data-placeholder-original="808-888-8888">
+                    </div>
 
-                <label class="" hide="true" data-dm->Spouse's Race</label>
-                <input type="text" name=" " class="" placeholder="Spouse's Race" data-placeholder-original="Spouse's Race">
+                    <div class="col-lg-4">
+                        <label data-dm->Spouse's Home Phone No.</label>
+                        <input type="tel" name=" " placeholder="808-888-8888" class="form-control">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Spouse's Email</label>
+                        <input type="email" name=" " placeholder="Spouse's Email Address" class="form-control" data-placeholder-original="Spouse's Email Address">
+                    </div>
+                </div>
+
+                <div class="form-group row p-3">
+                    <div class="col-lg-4">
+                        <label data-dm->Spouse's Date of Birth</label>
+                        <input type="date" class="form-control" lang="undefined" placeholder="" date_format="mmddyyyy" name=" ">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label data-dm->Spouse's Place of Birth</label>
+                        <input type="text" name=" " class="form-control">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Spouse's Race</label>
+                        <input type="text" name=" " class="form-control" placeholder="Spouse's Race" data-placeholder-original="Spouse's Race">
+                    </div>
+
+                </div>
+
             </div>
+
+
             <div id="page5" class="card p-4">
                 <label class="" hide="true" data-dm->Spouse's Highest Grade Completed</label>
                 <input type="text" name=" " class="" placeholder="Spouse's Highest Grade Completed" data-placeholder-original="Spouse's Highest Grade Completed">
