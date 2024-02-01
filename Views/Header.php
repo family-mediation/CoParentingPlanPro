@@ -31,9 +31,10 @@
                     <li class="dropdown-item"><a class="nav-link">About your children</a></li>
                 </div>
             </div>
-
             <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
-            <li class="nav-item"><a class="nav-link"> Section 3: <br /> Parties: </a></li>
+            <div class="dropdown">
+                <a href='#' class="dropdown-toggle" data-bs-toggle="dropdown"> Section 3: Parties </a>
+            </div>
             <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
             <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
             <li class="nav-item"><a class="nav-link"> Section 6: <br /> Physical Custody and Timesharing </a></li>

@@ -6,3 +6,4 @@ $db = new Database;
 require_once("views/Header.php");
     require_once("ParentForum.php");
 require_once("views/Footer.php");
+
