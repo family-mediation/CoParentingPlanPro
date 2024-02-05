@@ -85,16 +85,60 @@
             <div id="page2" class="card p-4">
                 <H1>Children</H1>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                 <label data-dm->Name, Age, Grade, School Name of Each Child</label>
                 <textarea class="form-control" name=" "></textarea>
+                </div> -->
+
+                <div class="input-field">
+                    <table class="table table-bordered" id="table_field">
+                        <tr>
+                            <th>Initials</th>
+                            <th>Birth Year</th>
+                            <th>Add or Remove</th>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control" type="text" name="txtInitials" required=""></td>
+                            <td><input class="form-control" type="text" name="txtBirthYear" required=""></td>
+                            <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
+                        </tr>
+                    </table>
+
+
+                    <script>
+                        $(document).ready(function(){
+                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials" required=""></td><td><input class="form-control" type="text" name="txtBirthYear" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="remove"></td></tr>';
+
+
+                            var x = 1; 
+                            $("#add").click(function(){
+                                $("#table_field").append(html);                                
+                            });
+                            $("#table_field").on('click','#remove',function(){
+                                $(this).closest('tr').remove();                                
+                            });
+
+                        });
+                    </script>
+                 
+
+
                 </div>
+
+
+
+
                 
                 <div class="">
                     <br />
                     <input class="" name=" " type="submit" value="Send Message">
                 </div>
+
+
             </div>
+
+
+
         </div>
     </form>
     <div class="row justify-content-center pt-4 pb-4">
