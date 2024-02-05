@@ -33,7 +33,7 @@
             </div>
             <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
             <div class="dropdown">
-                <a href='#' class="dropdown-toggle" data-bs-toggle="dropdown"> Section 3: Parties </a>
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"> Section 3: Parties </a>
             </div>
             <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
             <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
