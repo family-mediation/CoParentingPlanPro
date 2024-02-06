@@ -1,7 +1,7 @@
 <div class="text-center">
     <form method="post" class="" locale="ENGLISH" action="Co-Parenting Plan Template.php">
         <div id="mainForm">
-            
+
             <div id="page0" class="container card p-4">
                 <H1>Parent A</H1>
 
@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="form-group row p-3">
-                        <label data-dm->Residence</label>
-                        <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    <label data-dm->Residence</label>
+                    <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
                 </div>
 
                 <div class="form-group row p-3">
@@ -44,7 +44,7 @@
 
             <div id="page1" class="card p-4">
                 <H1>Parent B</H1>
-        
+
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->First Name</label>
@@ -58,8 +58,8 @@
                 </div>
 
                 <div class="form-group row p-3">
-                        <label data-dm->Residence</label>
-                        <textarea name=" " class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    <label data-dm->Residence</label>
+                    <textarea name=" " class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
                 </div>
 
                 <div class="form-group row p-4">
@@ -82,13 +82,8 @@
             </div>
 
 
-            <div id="page2" class="card p-4">
+            <div id="page2" class="container p-4">
                 <H1>Children</H1>
-
-                <!-- <div class="form-group">
-                <label data-dm->Name, Age, Grade, School Name of Each Child</label>
-                <textarea class="form-control" name=" "></textarea>
-                </div> -->
 
                 <div class="input-field">
                     <table class="table table-bordered" id="table_field">
@@ -97,30 +92,39 @@
                             <th>Birth Year</th>
                             <th>Add or Remove</th>
                         </tr>
+
+
                         <tr>
-                            <td><input class="form-control" type="text" name="txtInitials" required=""></td>
-                            <td><input class="form-control" type="text" name="txtBirthYear" required=""></td>
+                            <td><input class="form-control" type="text" name="txtInitials[]" required=""></td>
+                            <td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td>
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
 
 
                     <script>
-                        $(document).ready(function(){
-                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials" required=""></td><td><input class="form-control" type="text" name="txtBirthYear" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="remove"></td></tr>';
+                        $(document).ready(function() {
+                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
+                            
+                            // remove max if don't want to have a cap on number of kids to add
+                            var max = 5;
 
-
-                            var x = 1; 
-                            $("#add").click(function(){
-                                $("#table_field").append(html);                                
+                            var x = 1;
+                            $("#add").click(function() {
+                                if (x <= max) {
+                                    $("#table_field").append(html);
+                                    x++;
+                                }
+                               
                             });
-                            $("#table_field").on('click','#remove',function(){
-                                $(this).closest('tr').remove();                                
+                            $("#table_field").on('click', '#remove', function() {
+                                $(this).closest('tr').remove();
+                                x--;
                             });
 
                         });
                     </script>
-                 
+
 
 
                 </div>
@@ -128,10 +132,10 @@
 
 
 
-                
+
                 <div class="">
                     <br />
-                    <input class="" name=" " type="submit" value="Send Message">
+                    <input class="" name="submit" type="submit" value="Send Message">
                 </div>
 
 
