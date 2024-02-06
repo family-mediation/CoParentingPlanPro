@@ -35,7 +35,7 @@
             <li class="nav-item"><a class="nav-link" href="Parties.php"> Section 3: <br /> Parties </a></li>
             <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
             <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
-            <li class="nav-item"><a class="nav-link"> Section 6: <br /> Physical Custody and Timesharing </a></li>
+            <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 6: <br /> Physical Custody and Timesharing </a></li>
             <li class="nav-item"><a class="nav-link"> Section 7: <br /> Communication </a></li>
             <li class="nav-item"><a class="nav-link"> Section 8: <br /> Support of the Child(ren) </a></li>
             <li class="nav-item"><a class="nav-link"> Section 9: <br /> Other Issues </a></li>
