@@ -1,7 +1,10 @@
+<?php
+require_once("views/header.php");
+?>
 <div class="text-center">
     <form method="post" class="" locale="ENGLISH" action="Co-Parenting Plan Template.php">
         <div id="mainForm">
-        <div id="page1" class="container card p-4">
+        <div id="page0" class="container card p-4">
                 <H1> Information on Parent A</H1>
                 <h2>Please enter your full legal name and residence address</h2>
                 <div class="form-group row p-3">
@@ -23,7 +26,7 @@
 
             </div>
 
-            <div id="page2" class="container card p-4">
+            <div id="page1" class="container card p-4">
                 <H1> Information on Parent B</H1>
                 <h2>Please enter your full legal name and residence address</h2>
                 <div class="form-group row p-3">
@@ -52,3 +55,6 @@
         <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp; <button id="next" onclick="nextHandler()">Next Page</button>
     </div>
 </div>
+<?php
+require_once("views/footer.php");
+?>
