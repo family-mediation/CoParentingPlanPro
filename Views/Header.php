@@ -31,6 +31,8 @@
                     <li class="dropdown-item"><a class="nav-link">About your children</a></li>
                 </div>
             </div>
+
+            
             <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
             <li class="nav-item"><a class="nav-link" href="Parties.php"> Section 3: <br /> Parties </a></li>
             <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
