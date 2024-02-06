@@ -3,7 +3,7 @@
         <div id="mainForm">
         <div id="page1" class="container card p-4">
                 <H1> Information on Parent A</H1>
-                <h2>Please enter your full legal Name and residence address</h2>
+                <h2>Please enter your full legal name and residence address</h2>
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->First Name</label>
@@ -16,18 +16,16 @@
                     </div>    
                 </div>
 
-                <div class="form-group row p-3">
-                    <div class="col-lg-9">
+                <div class="form-group">
                         <label data-dm->Your Address</label>
                         <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
-                    </div>
                 </div>
 
             </div>
 
             <div id="page2" class="container card p-4">
                 <H1> Information on Parent B</H1>
-                <h2>Please enter your full legal Name and residence address</h2>
+                <h2>Please enter your full legal name and residence address</h2>
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->First Name</label>
@@ -40,11 +38,9 @@
                     </div>    
                 </div>
 
-                <div class="form-group row p-3">
-                    <div class="col-lg-9">
+                <div class="form-group">
                         <label data-dm->Your Address</label>
                         <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
-                    </div>
                 </div>
                 
             </div>
