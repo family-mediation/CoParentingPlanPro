@@ -548,7 +548,7 @@
                 
                 <div class="">
                     <br />
-                    <input class="" name=" " type="submit" value="Send Message">
+                    <button class="" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
                 </div>
             </div>
         </div>

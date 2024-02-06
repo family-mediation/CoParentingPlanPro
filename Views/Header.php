@@ -22,8 +22,9 @@
     <nav class="navbar navbar-expand-md color2 justify-content-center">
         <navbar-brand class="justify-content-start"><image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png"/> </navbar-brand>
         <ul class="navbar-nav text-center">
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: Introduction </a>
+     
+            <div class="dropdown nav-item">
+                <a href="./" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: Introduction </a>
                 <div class="dropdown-menu">
                     <li class="dropdown-item"><a class="nav-link">About the Case</a></li>
                     <li class="dropdown-item"><a class="nav-link">About you</a></li>
@@ -31,6 +32,7 @@
                     <li class="dropdown-item"><a class="nav-link">About your children</a></li>
                 </div>
             </div>
+         
 
             
             <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
