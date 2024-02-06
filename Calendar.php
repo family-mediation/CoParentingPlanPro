@@ -1,9 +1,13 @@
 <? php
     //open the file
-    $filename = "testCalendar.ics";
+    
     if(isset($_POST['partyAName']))
     {
         $fileName = $_POST['partyAName']."calendar.ics";
+    }
+    else
+    {
+        $fileName = "testCalendar.ics";
     }
     $calendarFile = fopen($fileName, "w");
     //generate the calendar string.
@@ -32,8 +36,14 @@
     //https://stackoverflow.com/questions/3697748/fastest-way-to-serve-a-file-using-php
     
     
-    
-    
-    
-    
-    
+    ?>
+<?php
+require_once("views/header.php");
+?>
+<row class="text-center">
+    <H1>Heres your generated Calendar</H1>
+    <p><?php echo $fileName; ?></p>
+</row>
+<?php
+require_once("views/footer.php");
+?>
