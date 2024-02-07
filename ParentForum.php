@@ -103,7 +103,7 @@
                             <td><input class="form-control" type="text" name="txtInitials[]" required=""></td>
                             <td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td>
                             <!-- <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td> -->
-                            <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
+                            <td><button class="btn btn-success" type="button" name="add" id="add"><i class="bi bi-plus-lg"></i></button></td>
                         </tr>
                     </table>
                   <div class="row justify-content-center pt-4 pb-4">
@@ -113,7 +113,7 @@
 
                   <script>
                         $(document).ready(function() {
-                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
+                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><button class="btn btn-danger" type="button" name="remove" id="remove"><i class="bi bi-trash"></i></button></td></tr>';
 
                             // remove max if don't want to have a cap on number of kids to add
                             var max = 5;
