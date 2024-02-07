@@ -16,7 +16,7 @@ require_once("views/header.php");
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->Last Name</label>
                         <input type="text" class="form-control" name="partyALast" placeholder="Last Name" data-placeholder-original="Full Legal Name">
-                    </div>    
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -27,7 +27,7 @@ require_once("views/header.php");
             </div>
 
             <div id="page1" class="container card p-4">
-                <H1> Information on Parent B</H1>
+                <H1> Information on Parent</H1>
                 <h2>Please enter your full legal name and residence address</h2>
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
@@ -38,14 +38,14 @@ require_once("views/header.php");
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->Last Name</label>
                         <input type="text" class="form-control" name="partyALast" placeholder="Last Name" data-placeholder-original="Full Legal Name">
-                    </div>    
+                    </div>
                 </div>
 
                 <div class="form-group">
                         <label data-dm->Your Address</label>
                         <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
                 </div>
-                
+
             </div>
 
 
