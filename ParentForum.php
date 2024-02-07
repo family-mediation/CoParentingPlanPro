@@ -102,6 +102,7 @@
                         <tr>
                             <td><input class="form-control" type="text" name="txtInitials[]" required=""></td>
                             <td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td>
+                            <!-- <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td> -->
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
