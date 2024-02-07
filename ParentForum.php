@@ -107,8 +107,24 @@
                     </table>
                   <div class="row justify-content-center pt-4 pb-4">
                     <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
-                    <button id="generate" class="" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
+                    <button id="generate" class="" onClick="validateChildForm('txtInitials[]', 'txtBirthYear[]')" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
                   </div>
+
+                  <script>
+                    function validateChildForm(nameFields, birthFields) {
+                      for (var kid in nameFields.length) {
+                        console.log(kid)
+                        var initials = document.getElementsByName(nameFields)[kid].value;
+                        var birthYear = document.getElementsByName(birthFields)[kid].value;
+                        if (initials === "" || birthYear === "") {
+                          alert("Please fill in all required fields.");
+                        } else {
+                          // Add your logic to proceed with the form submission or other actions
+                          alert("Form submitted successfully!");
+                        }
+                      }
+                    }
+                  </script>
 
                   <script>
                         $(document).ready(function() {
