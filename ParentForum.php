@@ -38,7 +38,9 @@
                         <input type="text" name="paryASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number">
                     </div>
                 </div>
-
+                <div class="row justify-content-center pt-4 pb-4">
+                    <button id="next" onclick="nextHandler()">Next Page</button>
+                </div>
             </div>
 
 
@@ -78,7 +80,10 @@
                         <input type="text" name=" " placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Spouse's Last 4 Digits of Social Security Number">
                     </div>
                 </div>
-
+                <div class="row justify-content-center pt-4 pb-4">
+                    <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
+                    <button id="next" onclick="nextHandler()">Next Page</button>
+                </div>
             </div>
 
 
@@ -100,12 +105,15 @@
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
+                  <div class="row justify-content-center pt-4 pb-4">
+                    <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
+                    <button id="generate" class="" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
+                  </div>
 
-
-                    <script>
+                  <script>
                         $(document).ready(function() {
                             var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
-                            
+
                             // remove max if don't want to have a cap on number of kids to add
                             var max = 5;
 
@@ -115,7 +123,7 @@
                                     $("#table_field").append(html);
                                     x++;
                                 }
-                               
+
                             });
                             $("#table_field").on('click', '#remove', function() {
                                 $(this).closest('tr').remove();
@@ -124,28 +132,8 @@
 
                         });
                     </script>
-
-
-
                 </div>
-
-
-
-
-
-                <div class="">
-                    <br />
-                    <button class="" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
-                </div>
-
-
             </div>
-
-
-
         </div>
     </form>
-    <div class="row justify-content-center pt-4 pb-4">
-        <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp; <button id="next" onclick="nextHandler()">Next Page</button>
-    </div>
 </div>
