@@ -22,9 +22,12 @@
 
         <div class="container-fluid">
             <div class="row color1 h-25 p-4">
-                <div class="col-12 d-inline-block">
-                    <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;&nbsp;(808) 439-8600
+                <div class="offset-md-5">
+                    <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;(808) 439-8600
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-envelope"></i>&nbsp;&nbsp;&nbsp;info@familymediationhawaii.com
                 </div>
+
             </div>
         </div>
 
@@ -41,7 +44,6 @@
                         <li class="dropdown-item"><a class="nav-link">About your children</a></li>
                     </div>
                 </div>
-
 
 
                 <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
