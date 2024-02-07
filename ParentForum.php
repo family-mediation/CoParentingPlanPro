@@ -39,8 +39,25 @@
                     </div>
                 </div>
                 <div class="row justify-content-center pt-4 pb-4">
-                    <button id="next" onclick="nextHandler()">Next Page</button>
+                    <button id="next" onclick="validateParentAForm() ? nextHandler() : other()">Next Page</button>
                 </div>
+              <script>
+                function validateParentAForm() {
+                    var initials = document.getElementsByName("partASocial");
+                    var birthYear = document.getElementsByName("partyAEmail");
+                    if (initials === "" || birthYear === "") {
+                      alert("Please fill in all required fields.");
+                      return false;
+                    } else {
+                      // Add your logic to proceed with the form submission or other actions
+                      alert("Form submitted successfully!");
+                      return true;
+                    }
+                }
+                function other() {
+                  console.log("it is wrong")
+                }
+              </script>
             </div>
 
 
