@@ -23,11 +23,13 @@
         <div class="container-fluid">
             <div class="row color1 h-25 p-4">
                 <div class="offset-md-5">
-                    <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;&nbsp;(808) 439-8600
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="bi bi-envelope"></i>&nbsp;&nbsp;&nbsp;info@familymediationhawaii.com
+                    <div class="container1">
+                        <div class="center" style="padding-right: 35vh">
+                            <i class="bi bi-telephone-fill"></i> (808) 439-8600
+                            <i class="bi bi-envelope" style="padding-left: 10vh"></i> info@familymediationhawaii.com
+                    </div>
+                    </div>
                 </div>
-
             </div>
         </div>
 
