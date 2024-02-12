@@ -18,9 +18,28 @@
                 </div>
 
                 <div class="form-group row p-3">
-                    <label data-dm->Residence</label>
-                    <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    <label data-dm->Street</label>
+                    <textarea name="partyAStreet" class="form-control" placeholder="Street" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
                 </div>
+
+                <div class="form-group row p-3">
+                    <div class="col-lg-4">
+                        <label data-dm->City</label>
+                        <input type="tel" name="partyACell" placeholder="City" class="form-control" data-placeholder-original="City">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->State</label>
+                        <input type="email" name="partyAEmail" class="form-control" placeholder="State" data-placeholder-original="State">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <label class="" hide="true" data-dm->Zipcode</label>
+                        <input type="text" name="paryASocial" placeholder="Zipcode" class="form-control" data-placeholder-original="Zipcode">
+                    </div>
+                </div>
+
+                
 
                 <div class="form-group row p-3">
                     <div class="col-lg-4">
