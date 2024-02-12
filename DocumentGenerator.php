@@ -2,10 +2,12 @@
 abstract class documentGenerator
 {
 	$fileName;
+	$responses;
 	$fileOutputString = fopen($fileName, "a+");
-	public function __construct(int $fileName)
+	public function __construct(int $fileName, $responses)
  	{
 		$this->fileName = $fileName;
+		$this->responses = $responses;
  	}
 // Generate the different components.
 	abstract function genPart1();
