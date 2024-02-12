@@ -131,28 +131,33 @@
 
 
                         <tr>
-                            <td><input class="form-control" type="text" name="txtInitials[]" required=""></td>
-                            <td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td>
+                            <td><input class="form-control" type="text" name="childInitials" required=""></td>
+                            <td><input class="form-control" type="text" name="childBirthYears" required=""></td>
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
                   <div class="row justify-content-center pt-4 pb-4">
                     <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
-                    <button id="generate" class="" onClick="validateChildForm('txtInitials[]', 'txtBirthYear[]')" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
+                    <button id="huh" class="" onClick="validateChildForm()">
+<!--                            name="generatePlan" type="submit" value="Generate Plan">-->
+                      Generate Plan or ndont</button>
                   </div>
 
                   <script>
-                    function validateChildForm(nameFields, birthFields) {
-                      for (var kid in nameFields.length) {
-                        var initials = document.getElementsByName(nameFields)[kid].value;
-                        var birthYear = document.getElementsByName(birthFields)[kid].value;
-                        if (initials === "" || birthYear === "") {
-                          alert("Please fill in all required fields.");
-                        } else {
-                          // Add your logic to proceed with the form submission or other actions
-                          alert("Form submitted successfully!");
-                        }
-                      }
+                    function validateChildForm() {
+                      const initials = document.getElementsByName("childInitials")[0].values;
+                      const birthYears = document.getElementsByName("childBirthYears");
+                      console.log(initials)
+
+                      // for (var initial in initials) {
+                      //   const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
+                      //   if (initials === "" || birthYear === "") && initialRegex.test(initials) {
+                      //     alert("Please check format of initials");
+                      //     return false;
+                      //   }
+                      // }
+
+                      return false;
                     }
                   </script>
 
