@@ -35,7 +35,7 @@
 
                     <div class="col-lg-4">
                         <label class="" hide="true" data-dm->Last 4 Digits of Social Security Number</label>
-                        <input type="text" name="paryASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number">
+                        <input type="text" name="partyASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number" required>
                     </div>
                 </div>
                 <div class="row justify-content-center pt-4 pb-4">
@@ -43,7 +43,8 @@
                 </div>
               <script>
                 function validateParentAForm() {
-                    var initials = document.getElementsByName("partASocial");
+                    var initials = document.getElementsByName("partyASocial").values;
+                    console.log(initials)
                     var birthYear = document.getElementsByName("partyAEmail");
                     if (initials === "" || birthYear === "") {
                       alert("Please fill in all required fields.");
@@ -144,27 +145,23 @@
                   </script>
 
                   <script>
-                        $(document).ready(function() {
-                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
+                    var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
 
-                            // remove max if don't want to have a cap on number of kids to add
-                            var max = 5;
+                    // remove max if don't want to have a cap on number of kids to add
+                    var max = 5;
 
-                            var x = 1;
-                            $("#add").click(function() {
-                                if (x <= max) {
-                                    $("#table_field").append(html);
-                                    x++;
-                                }
-
-                            });
-                            $("#table_field").on('click', '#remove', function() {
-                                $(this).closest('tr').remove();
-                                x--;
-                            });
-
-                        });
-                    </script>
+                    var x = 1;
+                    $("#add").click(function() {
+                      if (x <= max) {
+                        $("#table_field").append(html);
+                        x++;
+                      }
+                    });
+                    $("#table_field").on('click', '#remove', function() {
+                      $(this).closest('tr').remove();
+                      x--;
+                    });
+                  </script>
                 </div>
             </div>
         </div>
