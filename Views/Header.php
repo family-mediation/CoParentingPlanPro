@@ -19,12 +19,11 @@
 </head>
 <div id="wrapper">
     <header>
-
         <div class="container-fluid">
             <div class="row color1 h-25 p-4">
                 <div class="offset-md-5">
                     <div class="container1">
-                        <div class="center" style="padding-right: 35vh">
+                        <div class="center" style="padding-right: 38vh">
                             <i class="bi bi-telephone-fill"></i> (808) 439-8600
                             <i class="bi bi-envelope" style="padding-left: 10vh"></i> info@familymediationhawaii.com
                     </div>
