@@ -39,8 +39,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center pt-4 pb-4">
-                    <button id="next"
-                            onclick="validateParentAForm() ? nextHandler() : null">
+                    <button id="next" onclick="validateParentAForm() ? nextHandler() : null">
                       Next Page</button>
                 </div>
               <script>
@@ -131,38 +130,47 @@
 
 
                         <tr>
-                            <td><input class="form-control" type="text" name="childInitials" required=""></td>
-                            <td><input class="form-control" type="text" name="childBirthYears" required=""></td>
+                            <td><input class="form-control" type="text" name="childInitials" required></td>
+                            <td><input class="form-control" type="text" name="childBirthYears" required></td>
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
                   <div class="row justify-content-center pt-4 pb-4">
                     <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
-                    <button id="huh" class="" onClick="validateChildForm()">
-<!--                            name="generatePlan" type="submit" value="Generate Plan">-->
-                      Generate Plan or ndont</button>
+                    <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
                   </div>
 
                   <script>
+                    function submitForm() {
+                      //change the type attribute which will then send the form data over
+                      document.getElementsByName("generatePlan")[0].attributes[4].value = "submit";
+                    }
+
                     function validateChildForm() {
-                      const initials = document.getElementsByName("childInitials")[0].values;
+                      const initials = document.getElementsByName("childInitials");
                       const birthYears = document.getElementsByName("childBirthYears");
-                      console.log(initials)
+                      const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
+                      const birthYearRegex = /^[0-9]{4}$/;
 
-                      // for (var initial in initials) {
-                      //   const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
-                      //   if (initials === "" || birthYear === "") && initialRegex.test(initials) {
-                      //     alert("Please check format of initials");
-                      //     return false;
-                      //   }
-                      // }
-
-                      return false;
+                      for (let i = 0; i < initials.length; i++) {
+                        if (initials[i].value === "" || birthYears[i].value === "") {
+                          return false;
+                        }
+                        if (!initialRegex.test(initials[i].value)) {
+                          alert("Please check format of initials");
+                          return false;
+                        }
+                        if (!birthYearRegex.test(birthYears[i].value)) {
+                          alert("Please check format of birth years");
+                          return false;
+                        }
+                      }
+                      return true;
                     }
                   </script>
 
                   <script>
-                    var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
+                    var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input class="form-control" type="text" name="childBirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
 
                     // remove max if don't want to have a cap on number of kids to add
                     var max = 5;
