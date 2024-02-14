@@ -16,7 +16,6 @@ function nextHandler() {
     pageCount = (pageCount + 1) % numPages;
     current = $("#page" + pageCount);
     current.removeClass("hidden");
-    console.log(pageCount);
 };
 
 function previousHandler() {
@@ -24,6 +23,5 @@ function previousHandler() {
     pageCount = pageCount > 0 ? (pageCount - 1) % numPages : numPages - 1;
     current = $("#page" + pageCount);
     current.removeClass("hidden");
-    console.log(pageCount);
 };
  
