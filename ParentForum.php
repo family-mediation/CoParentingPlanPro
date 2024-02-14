@@ -8,39 +8,53 @@
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->First Name</label>
-                        <input type="text" class="form-control" name="partyAFirst" placeholder="First Name" data-placeholder-original="Full Legal Name">
+                        <input type="text" class="form-control" name="partyAFirst" placeholder="First Name" data-placeholder-original="Full Legal Name" required>
                     </div>
 
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->Last Name</label>
-                        <input type="text" class="form-control" name="partyALast" placeholder="Last Name" data-placeholder-original="Full Legal Name">
+                        <input type="text" class="form-control" name="partyALast" placeholder="Last Name" data-placeholder-original="Full Legal Name" required>
                     </div>
                 </div>
 
                 <div class="form-group row p-3">
                     <label data-dm->Residence</label>
-                    <textarea name="partyAStreet" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    <textarea name="partyAResidence" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code" required></textarea>
                 </div>
 
                 <div class="form-group row p-3">
                     <div class="col-lg-4">
                         <label data-dm->Cell Phone</label>
-                        <input type="tel" name="partyACell" placeholder="808-888-8888" class="form-control" data-placeholder-original="808-888-8888">
+                        <input type="tel" name="partyACell" placeholder="808-888-8888" class="form-control" data-placeholder-original="808-888-8888" required>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="" hide="true" data-dm->Email</label>
-                        <input type="email" name="partyAEmail" class="form-control" placeholder="Email Address" data-placeholder-original="Your Email Address">
+                        <input type="email" name="partyAEmail" class="form-control" placeholder="Email Address" data-placeholder-original="Your Email Address" required>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="" hide="true" data-dm->Last 4 Digits of Social Security Number</label>
-                        <input type="text" name="paryASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number">
+                        <input type="text" name="partyASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number" required>
                     </div>
                 </div>
                 <div class="row justify-content-center pt-4 pb-4">
-                    <button id="next" onclick="nextHandler()">Next Page</button>
+                    <button id="next" onclick="validateParentAForm() ? nextHandler() : null">
+                      Next Page</button>
                 </div>
+              <script>
+                function validateParentAForm() {
+                  const first = document.getElementsByName("partyAFirst")[0].value;
+                  const last = document.getElementsByName("partyALast")[0].value;
+                  const address = document.getElementsByName("partyAResidence")[0].value;
+                  const cell = document.getElementsByName("partyACell")[0].value;
+                  const email = document.getElementsByName("partyAEmail")[0].value;
+                  const ssn = document.getElementsByName("partyASocial")[0].value;
+                  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+                  return !(first === "" || last === "" || address === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
+                }
+              </script>
             </div>
 
 
@@ -50,40 +64,56 @@
                 <div class="form-group row p-3">
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->First Name</label>
-                        <input type="text" name="partyBFirst" class="form-control" placeholder="First Name" data-placeholder-original="Spouse's Full Legal Name">
+                        <input type="text" name="partyBFirst" class="form-control" placeholder="First Name" data-placeholder-original="Spouse's Full Legal Name" required>
                     </div>
 
                     <div class="col-lg-6">
                         <label class="" hide="true" data-dm->Last Name</label>
-                        <input type="text" name="partyBLast" class="form-control" placeholder="Last Name" data-placeholder-original="Spouse's Birth or Maiden Name">
+                        <input type="text" name="partyBLast" class="form-control" placeholder="Last Name" data-placeholder-original="Spouse's Birth or Maiden Name" required>
                     </div>
                 </div>
 
                 <div class="form-group row p-3">
                     <label data-dm->Residence</label>
-                    <textarea name=" " class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code"></textarea>
+                    <textarea name="partyBResidence" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code" required></textarea>
                 </div>
 
                 <div class="form-group row p-4">
                     <div class="col-lg-4">
                         <label data-dm->Cell Phone</label>
-                        <input type="tel" name=" " placeholder="808-888-8888" class="form-control" data-placeholder-original="808-888-8888">
+                        <input type="tel" name="partyBCell" placeholder="808-888-8888" class="form-control" data-placeholder-original="808-888-8888" required>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="" hide="true" data-dm->Email</label>
-                        <input type="email" name=" " placeholder="Email Address" class="form-control" data-placeholder-original="Spouse's Email Address">
+                        <input type="email" name="partyBEmail" placeholder="Email Address" class="form-control" data-placeholder-original="Spouse's Email Address" required>
                     </div>
 
                     <div class="col-lg-4">
                         <label class="" hide="true" data-dm->Last 4 Digits of Social Security Number</label>
-                        <input type="text" name=" " placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Spouse's Last 4 Digits of Social Security Number">
+                        <input type="text" name="partyBSocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Spouse's Last 4 Digits of Social Security Number" required>
                     </div>
                 </div>
                 <div class="row justify-content-center pt-4 pb-4">
                     <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-                    <button id="next" onclick="nextHandler()">Next Page</button>
+                    <button id="next" onclick="validateParentBForm() ? nextHandler() : null">Next Page</button>
                 </div>
+
+
+              <script>
+                function validateParentBForm() {
+                  const first = document.getElementsByName("partyBFirst")[0].value;
+                  const last = document.getElementsByName("partyBLast")[0].value;
+                  const address = document.getElementsByName("partyBResidence")[0].value;
+                  const cell = document.getElementsByName("partyBCell")[0].value;
+                  const email = document.getElementsByName("partyBEmail")[0].value;
+                  const ssn = document.getElementsByName("partyBSocial")[0].value;
+
+                  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+                  return !(first === "" || last === "" || address === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
+                }
+              </script>
             </div>
 
 
@@ -100,39 +130,63 @@
 
 
                         <tr>
-                            <td><input class="form-control" type="text" name="txtInitials[]" required=""></td>
-                            <td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td>
-                            <td><button class="btn btn-success" type="button" name="add" id="add"><i class="bi bi-plus-lg"></i></button></td>
-                            <!-- <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td> -->
+                            <td><input class="form-control" type="text" name="childInitials" required></td>
+                            <td><input class="form-control" type="text" name="childBirthYears" required></td>
+                            <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
                   <div class="row justify-content-center pt-4 pb-4">
                     <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
-                    <button id="generate" class="" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
+                    <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
                   </div>
 
                   <script>
-                        $(document).ready(function() {
-                            var html = '<tr><td><input class="form-control" type="text" name="txtInitials[]" required=""></td><td><input class="form-control" type="text" name="txtBirthYear[]" required=""></td><td><button class="btn btn-danger" type="button" name="remove" id="remove"><i class="bi bi-trash"></i></button></td></tr>';
+                    function submitForm() {
+                      //change the type attribute which will then send the form data over
+                      document.getElementsByName("generatePlan")[0].attributes[4].value = "submit";
+                    }
 
-                            // remove max if don't want to have a cap on number of kids to add
-                            var max = 5;
+                    function validateChildForm() {
+                      const initials = document.getElementsByName("childInitials");
+                      const birthYears = document.getElementsByName("childBirthYears");
+                      const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
+                      const birthYearRegex = /^[0-9]{4}$/;
 
-                            var x = 1;
-                            $("#add").click(function() {
-                                if (x <= max) {
-                                    $("#table_field").append(html);
-                                    x++;
-                                }
+                      for (let i = 0; i < initials.length; i++) {
+                        if (initials[i].value === "" || birthYears[i].value === "") {
+                          return false;
+                        }
+                        if (!initialRegex.test(initials[i].value)) {
+                          alert("Please check format of initials");
+                          return false;
+                        }
+                        if (!birthYearRegex.test(birthYears[i].value)) {
+                          alert("Please check format of birth years");
+                          return false;
+                        }
+                      }
+                      return true;
+                    }
+                  </script>
 
-                            });
-                            $("#table_field").on('click', '#remove', function() {
-                                $(this).closest('tr').remove();
-                                x--;
-                            });
+                  <script>
+                    var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input class="form-control" type="text" name="childBirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
 
-                        });
-                    </script>
+                    // remove max if don't want to have a cap on number of kids to add
+                    var max = 5;
+
+                    var x = 1;
+                    $("#add").click(function() {
+                      if (x <= max) {
+                        $("#table_field").append(html);
+                        x++;
+                      }
+                    });
+                    $("#table_field").on('click', '#remove', function() {
+                      $(this).closest('tr').remove();
+                      x--;
+                    });
+                  </script>
                 </div>
             </div>
         </div>
