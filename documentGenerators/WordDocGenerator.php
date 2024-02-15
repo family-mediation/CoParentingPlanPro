@@ -50,5 +50,3 @@ class wordDocGenerator extends documentGenerator
 	// Serve the .docx
 	}
 }
-$wordGen = new wordDocGenerator("output.txt",array(1,2,3));
-$wordGen->generateDocument();

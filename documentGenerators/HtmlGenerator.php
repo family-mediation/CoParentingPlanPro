@@ -796,5 +796,4 @@ class HtmlGenerator extends documentGenerator
 	// Serve the .docx
 	}
 }
-$htmlGen = new HtmlGenerator("./documents/"."output".".html",$_POST);
-$htmlGen->generateDocument();
+
