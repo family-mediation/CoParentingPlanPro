@@ -36,19 +36,8 @@
             <image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png" /> </navbar-brand>
             <ul class="navbar-nav text-center">
 
-                <div class="dropdown nav-item">
-                    <a href="./" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: Introduction </a>
-                    <div class="dropdown-menu">
-                        <li class="dropdown-item"><a class="nav-link">About the Case</a></li>
-                        <li class="dropdown-item"><a class="nav-link">About you</a></li>
-                        <li class="dropdown-item"><a class="nav-link">About your spouse</a></li>
-                        <li class="dropdown-item"><a class="nav-link">About your children</a></li>
-                    </div>
-                </div>
-
-
+                <li class="nav-item"><a class="nav-link" href="./">Section 1: <br /> Introduction </a></li>
                 <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
-                <li class="nav-item"><a class="nav-link" href="Parties.php"> Section 3: <br /> Parties </a></li>
                 <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
                 <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
                 <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 6: <br /> Physical Custody and Timesharing </a></li>

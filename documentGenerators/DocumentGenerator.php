@@ -25,7 +25,29 @@ abstract class documentGenerator
 	public abstract function packageDocument();
 	public function generateDocument()
 	{
+
 		$this->genHeader();
+	//the logic for the tree goes Here its a work in progress hence the if false.
+	if(false)
+    {
+		switch($responses["legalCustody"])
+		{
+            case 'joint':
+            break;
+            case 'soleA':
+            break;
+            case 'soleB':
+            break;
+            case 'tieBreakA':
+            break;
+            case 'tieBreakB':
+            break;
+            case 'divisionA':
+            break;
+            case 'divisionB':
+            break;
+		}
+	}
 		$this->genPart1();
 		$this->genPart1();
 		$this->genPart2();

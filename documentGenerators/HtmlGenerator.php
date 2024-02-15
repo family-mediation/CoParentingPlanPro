@@ -753,7 +753,13 @@ class HtmlGenerator extends documentGenerator
 	}
 	function genFooter()
 	{
-	    $footerString = "";
+	    $footerString = "
+        </div>
+
+        </body>
+
+        </html>
+        ";
         echo $footerString;
         $this->fileContentString .= $footerString;
 	}

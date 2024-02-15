@@ -13,5 +13,4 @@ $htmlGen = new HtmlGenerator($filePath.'/'.$fileName.".html",$_POST);
 $htmlGen->generateDocument();
 $wordGen = new wordDocGenerator($filePath.'/'.$fileName.".docx",$_POST);
 $wordGen->generateDocument();
-echo "</div>";
 require_once("views/Footer.php");
