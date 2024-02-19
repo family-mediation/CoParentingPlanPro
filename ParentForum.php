@@ -91,8 +91,25 @@
         </div>
 
         <div class="form-group row p-3">
-          <label data-dm->Residence</label>
-          <textarea name="partyBResidence" class="form-control" placeholder="Street Address, Apt, City, State, Zip Code" data-placeholder-original="Street Address, Apt, City, State, Zip Code" required></textarea>
+          <label data-dm->Street Address</label>
+          <textarea name="partyBResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
+        </div>
+
+        <div class="form-group row p-3">
+          <div class="col-lg-4">
+            <label data-dm->City</label>
+            <input type="text" name="" placeholder="City" class="form-control" data-placeholder-original="City" required>
+          </div>
+
+          <div class="col-lg-4">
+            <label class="" hide="true" data-dm->State</label>
+            <input type="text" name="" class="form-control" placeholder="State" data-placeholder-original="State" required>
+          </div>
+
+          <div class="col-lg-4">
+            <label class="" hide="true" data-dm->Zipcode</label>
+            <input type="text" name="" placeholder="Zipcode" class="form-control" data-placeholder-original="Zipcode" required>
+          </div>
         </div>
 
         <div class="form-group row p-4">
