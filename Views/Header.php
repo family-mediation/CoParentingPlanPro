@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script  src="scripts/pagination.js" type="text/javascript"></script>
+    <script src="scripts/pagination.js" type="text/javascript"></script>
     <title>Co-parenting Plan Pro</title>
 </head>
 <div id="wrapper">
@@ -26,18 +26,20 @@
                         <div class="center" style="padding-right: 38vh">
                             <i class="bi bi-telephone-fill"></i> (808) 439-8600
                             <i class="bi bi-envelope" style="padding-left: 10vh"></i> info@familymediationhawaii.com
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-md color2 justify-content-center" <navbar-brand class="justify-content-start">
-            <image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png" /> </navbar-brand>
+        <nav class="navbar navbar-expand-md color2 justify-content-center">
+            <div class="navbar-brand">
+                <image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png" />
+            </div>
             <ul class="navbar-nav text-center">
 
                 <div class="dropdown nav-item">
-                    <a href="./" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: Introduction </a>
+                    <a href="./" class="dropdown-toggle" data-bs-toggle="dropdown">Section 1: <br /> Introduction </a>
                     <div class="dropdown-menu">
                         <li class="dropdown-item"><a class="nav-link">About the Case</a></li>
                         <li class="dropdown-item"><a class="nav-link">About you</a></li>
@@ -47,15 +49,14 @@
                 </div>
 
 
-                <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
-                <li class="nav-item"><a class="nav-link" href="Parties.php"> Section 3: <br /> Parties </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
-                <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 6: <br /> Physical Custody and Timesharing </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 7: <br /> Communication </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 8: <br /> Support of the Child(ren) </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 9: <br /> Other Issues </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 10: <br /> Legal </a></li>
+                <li class="nav-item"><a class="nav-link" href="Parties.php"> Section 2: <br /> Parties </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 3: <br /> Children </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 4: <br /> Legal Custody </a></li>
+                <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 5: <br /> Physical Custody </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 6: <br /> Communication </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 7: <br /> Child Support </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 8: <br /> Other Issues </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 9: <br /> Legal </a></li>
 
             </ul>
         </nav>
