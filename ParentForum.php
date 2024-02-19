@@ -196,7 +196,7 @@
                   return false;
                 }
                 if (!initialRegex.test(initials[i].value)) {
-                  alert("Please check format of initials");
+                  alert("Please check format of initials (example: First.Last)");
                   return false;
                 }
                 if (!birthYearRegex.test(birthYears[i].value)) {
