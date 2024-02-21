@@ -1004,14 +1004,13 @@ line-height:150%;border:none'><u><span lang=FR>PARTIES:</span></u></p>
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=PartiesInformationon<?php echo $parentAName; ?><b><span lang=FR>3.00&nbsp; </span></b></a><u><span
 lang=FR>PARTIES: INFORMATION ON <?php echo $parentAName; ?></span></u><span lang=FR>.&nbsp; </span>PARENT
-A's full legal name is  <?php echo $varName; ?>.&nbsp; <?php echo $parentAName; ?>'s residence address is
- <?php echo $varName; ?>.&nbsp; </p>
+A's full legal name is <?php echo $parentAName; ?>.&nbsp; <?php echo $parentAName; ?>'s residence address is
+ <?php echo $parentAResidence; ?>.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT
-B</u></a>. <?php echo $parentBName; ?>'s full legal name is  <?php echo $varName; ?>.&nbsp; <?php echo $parentBName; ?>'s residence
-address is  <?php echo $varName; ?>.&nbsp; </p>
+name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON <?php echo $parentBName; ?></u></a>. <?php echo $parentBName; ?>'s full legal name is <?php echo $parentBName; ?>.&nbsp; <?php echo $parentBName; ?>'s residence
+address is <?php echo $parentBResidence; ?>.&nbsp; </p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
 margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
