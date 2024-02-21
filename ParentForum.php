@@ -169,8 +169,8 @@
 
 
             <tr>
-              <td><input class="form-control" type="text" name="childInitials" required></td>
-              <td><input class="form-control" type="text" name="childBirthYears" required></td>
+              <td><input class="form-control" type="text" name="childInitials[]" required></td>
+              <td><input class="form-control" type="text" name="childBirthYears[]" required></td>
               <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
             </tr>
           </table>
@@ -186,8 +186,8 @@
             }
 
             function validateChildForm() {
-              const initials = document.getElementsByName("childInitials");
-              const birthYears = document.getElementsByName("childBirthYears");
+              const initials = document.getElementsByName("childInitials[]");
+              const birthYears = document.getElementsByName("childBirthYears[]");
               const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
               const birthYearRegex = /^[0-9]{4}$/;
 
