@@ -1,5 +1,13 @@
 <?php $parentAName = $_POST['partyAFirst']." ".$_POST['partyALast'];
+      $parentAResidence = $_POST['partyAResidence']." ".$_POST['partyACity']." ".$_POST['partyAState']." ".$_POST['partyAZip'];
+      $parentACell = $_POST['partyACell'];
+      $parentAEmail = $_POST['partyAEmail'];
+
       $parentBName = $_POST['partyBFirst']." ".$_POST['partyBLast'];
+      $parentBResidence = $_POST['partyBResidence']." ".$_POST['partyBCity']." ".$_POST['partyBState']." ".$_POST['partyBZip'];
+      $parentBCell = $_POST['partyBCell'];
+      $parentBEmail = $_POST['partyBEmail'];
+
       $varName = "INSERT VARIABLE HERE";
 ?>
 
@@ -592,31 +600,31 @@ border:none'>&nbsp;</p>
 border:none'>&nbsp;</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Name of <?php echo $parentAName; ?></p>
+border:none'>Name of Parent A: <?php echo $parentAName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Address</p>
+border:none'>Address: <?php echo $parentAResidence; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Telephone</p>
+border:none'>Telephone: <?php echo $parentACell; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>E-Mail</p>
+border:none'>E-Mail: <?php echo $parentAEmail; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
 border:none'>&nbsp;</p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Name of <?php echo $parentBName; ?></p>
+border:none'>Name of Parent B: <?php echo $parentBName; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Address</p>
+border:none'>Address: <?php echo $parentBResidence; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>Telephone</p>
+border:none'>Telephone: <?php echo $parentBCell; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-border:none'>E-Mail</p>
+border:none'>E-Mail: <?php echo $parentBEmail; ?></p>
 
 <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
 border:none'>&nbsp;</p>
@@ -723,7 +731,7 @@ margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>1.00 </b>THIS
 AGREEMENT is made and <span style='background:white'>entered this  <?php echo $varName; ?> (day) day
 of  <?php echo $varName; ?> (month),  <?php echo $varName; ?> (year)</span>, by and between <?php echo $parentAName; ?> and <?php echo $parentBName; ?>
-(collectively hereinafter referred to as “Parents”) and applies to the
+(collectively hereinafter referred to as "Parents") and applies to the
 Child(ren) named below in Paragraph 3.00.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
@@ -737,7 +745,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
 none'><a name=IntroductionParentstoSeekFamilyCourt><b>1.02</b> </a>WHEREAS,
 parents intend to seek approval of their Agreement from the Family Court of the
  <?php echo $varName; ?> Circuit of the State of  <?php echo $varName; ?> hereinafter referred to as
-the “Family Court”;</p>
+the "Family Court";</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
@@ -778,7 +786,7 @@ own.</span></p>
 margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><span
 style='color:#333333'>d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will find an appropriate way to consider our
 Child(ren)'s views in making our decisions, provided however, that our
-Child(ren) should never be put in the position of having to “choose” between
+Child(ren) should never be put in the position of having to ï¿½chooseï¿½ between
 Parents.&nbsp; They love both of us and have a right to meaningful and regular
 contact with both Parents and their extended families unless there are safety
 issues.</span></p>
@@ -900,8 +908,8 @@ authority.&nbsp; </span>Parents further agree that:</p>
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall engage in, nor permit or encourage any step-parent,
-fiancée, significant other, grandparent, other relative or other associate, to
-criticize, disparage, demand, insult, or otherwise “bad-mouth” the other
+fiancï¿½e, significant other, grandparent, other relative or other associate, to
+criticize, disparage, demand, insult, or otherwise ï¿½bad-mouthï¿½ the other
 parent, step-parent, significant other, or grandparent to the Child(ren) or in
 the presence or hearing of the Child(ren).&nbsp; This prohibition shall apply even
 to information that is truthful and accurate. </p>
@@ -917,7 +925,7 @@ allow them to be in the presence of people who do so.&nbsp; </p>
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Neither Parent shall fight (verbally for physical) in person or by
-telephone – in the presence or hearing of the Child(ren).</p>
+telephone ï¿½ in the presence or hearing of the Child(ren).</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
@@ -942,7 +950,7 @@ Complimentary messages are allowed and encouraged.</p>
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>f.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Neither Parent shall ask the Child(ren) to “keep secrets” from the other
+</span>Neither Parent shall ask the Child(ren) to ï¿½keep secretsï¿½ from the other
 Parent or ask or encourage the Child(ren) to lie to the other Parent about
 events or persons the Child(ren) experienced during the visit with the other
 Parent, grandparent or relative.&nbsp; </p>
@@ -950,8 +958,8 @@ Parent, grandparent or relative.&nbsp; </p>
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
 0in;margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
 border:none'>g.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Neither Parent shall ask the Child(ren) to “spy on” the other Parent or
-the other Parent's lifestyle or household nor ask any detailed, “probing”
+</span>Neither Parent shall ask the Child(ren) to ï¿½spy onï¿½ the other Parent or
+the other Parent's lifestyle or household nor ask any detailed, ï¿½probingï¿½
 questions about the other Parent or lifestyle or household of the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
@@ -967,7 +975,7 @@ in their best interests and welfare.&nbsp;</p>
 border:none'>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Both Parents shall encourage a positive parent-child relationship
 between the Child(ren) and the other Parent and shall not say or do anything
-(including “grimace” or put on a “long face”) to adversely affect the
+(including ï¿½grimaceï¿½ or put on a ï¿½long faceï¿½) to adversely affect the
 Child(ren)'s love for the other Parent.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.15pt;margin-bottom:
@@ -1013,11 +1021,11 @@ margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
 CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have  <?php echo $varName; ?> Child(ren) together as
-follows: Child A (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child B
-(“ <?php echo $varName; ?>”) born in (birth year), Child C (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?>
-birth year), Child D (“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child D
-(“ <?php echo $varName; ?>”) born in (  <?php echo $varName; ?> birth year), Child E (“ <?php echo $varName; ?>”) born in (
- <?php echo $varName; ?> birth year) collectively hereinafter referred to as “the Child(ren)” or
+follows: Child A (ï¿½ <?php echo $varName; ?>ï¿½) born in (  <?php echo $varName; ?> birth year), Child B
+(ï¿½ <?php echo $varName; ?>ï¿½) born in (birth year), Child C (ï¿½ <?php echo $varName; ?>ï¿½) born in (  <?php echo $varName; ?>
+birth year), Child D (ï¿½ <?php echo $varName; ?>ï¿½) born in (  <?php echo $varName; ?> birth year), Child D
+(ï¿½ <?php echo $varName; ?>ï¿½) born in (  <?php echo $varName; ?> birth year), Child E (ï¿½ <?php echo $varName; ?>ï¿½) born in (
+ <?php echo $varName; ?> birth year) collectively hereinafter referred to as ï¿½the Child(ren)ï¿½ or
 individually referred to using their initials.</p>
 
 <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
@@ -2844,8 +2852,8 @@ TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have th
 right to take up to  <?php echo $varName; ?> [insert days/weeks] days/weeks of off-island
 travel with the Child(ren) every year. The traveling parent shall provide
  <?php echo $varName; ?> [insert number of days] days' notice in writing to the non-traveling parent
-if the trip is outside of the State of Hawai‘i.&nbsp; If the trip is within the
-State of Hawai‘i, the traveling parent shall provide  <?php echo $varName; ?> [insert number of
+if the trip is outside of the State of Hawaiï¿½i.&nbsp; If the trip is within the
+State of Hawaiï¿½i, the traveling parent shall provide  <?php echo $varName; ?> [insert number of
 days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
 travel, at least  <?php echo $varName; ?> [insert number of days] days prior to departure (or
  <?php echo $varName; ?> [insert number of days] days prior to departure for in-state travel),
@@ -2881,7 +2889,7 @@ situation such as illness or a death in the family, or an irregular event like
 a family wedding, the other Parent will make every effort to accommodate a
 request for a change in the </span>schedule. If the change in the schedule
 results in the Child(ren) missing considerable time with the accommodating
-parent, reasonable “make-up time” will be arranged by the Parents.</p>
+parent, reasonable ï¿½make-up timeï¿½ will be arranged by the Parents.</p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
@@ -3051,7 +3059,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=CommunicationEmailOnly><b>7.01</b>&nbsp; <u>COMMUNICATION BETWEEN CO-PARENTS:
 E-MAIL ONLY</u></a>. Parents shall communicate primarily through e-mail.&nbsp; The
 Parents may utilize text or telephone calls in an emergency situation or in the
-event a timely response is needed (within 2 – 4 hours).&nbsp; Otherwise, all
+event a timely response is needed (within 2 ï¿½ 4 hours).&nbsp; Otherwise, all
 communication shall be via e-mail.&nbsp; Both Parents shall check their e-mail at
 least once daily and shall respond to messages or other items needing attention
 (i.e. switch requests) within 48 hours.&nbsp; If more time is needed to respond, the
@@ -3063,7 +3071,7 @@ margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=CommunicationEmailandTextOnly><b>7.02</b>&nbsp; <u>COMMUNICATION BETWEEN
 CO-PARENTS: E-MAIL AND TEXT ONLY</u></a>. Parents shall communicate primarily
 through e-mail and text.&nbsp; The Parents may utilize telephone calls in an
-emergency situation or in the event a timely response is needed (within 2 – 4
+emergency situation or in the event a timely response is needed (within 2 ï¿½ 4
 hours).&nbsp; Otherwise, all communication shall be via e-mail or text.&nbsp; Both
 Parents shall check their e-mail and texts at least once daily and shall
 respond to messages or other items needing attention (i.e. switch requests)
