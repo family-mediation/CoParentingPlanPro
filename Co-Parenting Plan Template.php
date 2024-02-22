@@ -1020,10 +1020,10 @@ margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
 margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
 name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
 CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have  <?php echo $varName; ?> Child(ren) together as
-follows: Child A (� <?php echo $varName; ?>�) born in (  <?php echo $varName; ?> birth year), Child B
-(� <?php echo $varName; ?>�) born in (birth year), Child C (� <?php echo $varName; ?>�) born in (  <?php echo $varName; ?>
-birth year), Child D (� <?php echo $varName; ?>�) born in (  <?php echo $varName; ?> birth year), Child D
-(� <?php echo $varName; ?>�) born in (  <?php echo $varName; ?> birth year), Child E (� <?php echo $varName; ?>�) born in (
+follows: Child A ("<?php echo $varName; ?>") born in (  <?php echo $varName; ?> birth year), Child B
+("<?php echo $varName; ?>") born in (birth year), Child C ("<?php echo $varName; ?>") born in (  <?php echo $varName; ?>
+ birth year), Child D ("<?php echo $varName; ?>") born in (  <?php echo $varName; ?> birth year), Child E
+("<?php echo $varName; ?>") born in (  <?php echo $varName; ?> birth year), Child F ("<?php echo $varName; ?>") born in (
  <?php echo $varName; ?> birth year) collectively hereinafter referred to as �the Child(ren)� or
 individually referred to using their initials.</p>
 
