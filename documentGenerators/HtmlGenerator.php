@@ -4,7 +4,6 @@ class HtmlGenerator extends documentGenerator
 {
 	function genHeader()
 	{
-	 $varName = "John";
 	 $headerString = "
 	    <html>
          <meta http-equiv=Content-Type content=\"text/html; charset=windows-1252\">
