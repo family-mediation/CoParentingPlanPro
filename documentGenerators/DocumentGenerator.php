@@ -23,7 +23,8 @@ abstract class documentGenerator
 	public abstract function genPart7();
 	public abstract function genFooter();
 	public abstract function packageDocument();
-	public function generateDocument()
+	/* TODO:// HEY YOU GUYS, THIS IS WHERE ALL OF THE LOGIC GOES.*/
+    public function generateDocument()
 	{
 
 		$this->genHeader();

@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="submit.php">
+  <form method="post" class="" locale="ENGLISH" action="Submit.php">
     <div id="mainForm">
 
       <div id="page0" class="container card p-4">
