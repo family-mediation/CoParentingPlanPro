@@ -38,14 +38,14 @@ TRANSP:OPAQUE
 END:VEVENT
 ";
     $calendarFooter ="END:VCALENDAR";
-    $calendarString = $calendarHeader . $calendarEvent . $calendarFooter; // this will eventually have multiple events in a loop.    
+    $calendarString = $calendarHeader . $calendarEvent . $calendarFooter; // this will eventually have multiple events in a loop.
     fwrite($calendarFile, $calendarString);
     fclose($calendarFile);
-    // 
+    //
     //serve the file for downloading.
     //https://stackoverflow.com/questions/3697748/fastest-way-to-serve-a-file-using-php
-    
-    
+
+
     ?>
 <?php
 require_once("views/header.php");
