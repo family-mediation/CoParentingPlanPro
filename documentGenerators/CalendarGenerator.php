@@ -5,11 +5,16 @@ class CalendarGenerator
 	public $responses;
 	public $fileOutput;
 	public $fileContentString;
+	public $generationDate;
+	public $generationTime;
 	public function __construct(string $fileName,array $responses)
  	{
 		$this->fileName = $fileName;
 		$this->responses = $responses;
 		$this->fileOutput = fopen("./".$fileName,"w+");
+        $timestamp = time();
+        $this->$generationDate = gmdate('Ymd', $timestamp);
+        $this->$generationTime = gmdate('His', $timestamp);
  	}
 // Generate the different components.
 	public function genHeader()
@@ -45,7 +50,7 @@ class CalendarGenerator
         RRULE:FREQ=WEEKLY;UNTIL=20151229T220000Z;BYDAY=TU,TH
         DTSTAMP:20240206T030807Z
         UID:r79kfboffhrmncef3ca2fe4sqk@google.com
-        CREATED:20150830T020031Z
+        CREATED:".$this->generationDate."T".$this->generationTime."Z
         LAST-MODIFIED:20150830T020131Z
         LOCATION:Pacific Ocean Science & Technology\, Honolulu\, HI 96822\, USA
         SEQUENCE:1
