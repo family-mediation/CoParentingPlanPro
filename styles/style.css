@@ -56,9 +56,13 @@ header, footer, header a
     background-color: var(--color3);
     min-height: 100vh;
 }
-#mainForm
+#parentForm
 {
     background-color: white;
+}
+#childrenForm
+{
+  background-color: white;
 }
 button
 {

@@ -38,15 +38,14 @@
             </div>
             <ul class="navbar-nav text-center">
 
-                <li class="nav-item"><a class="nav-link" href="./">Section 1: <br /> Introduction </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 2: <br /> Guiding Principles </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 4: <br /> Children </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 5: <br /> Legal Custody </a></li>
-                <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 6: <br /> Physical Custody and Timesharing </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 7: <br /> Communication </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 8: <br /> Support of the Child(ren) </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 9: <br /> Other Issues </a></li>
-                <li class="nav-item"><a class="nav-link"> Section 10: <br /> Legal </a></li>
+                <li class="nav-item"><a class="nav-link" href="./">Section 1: <br /> Parties </a></li>
+                <li class="nav-item"><a class="nav-link" href="Children.php"> Section 2: <br /> Children </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 3: <br /> Legal Custody </a></li>
+                <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 4: <br /> Physical Custody and Timesharing </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 5: <br /> Communication </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 6: <br /> Support of the Child(ren) </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 7: <br /> Other Issues </a></li>
+                <li class="nav-item"><a class="nav-link"> Section 8: <br /> Legal </a></li>
             </ul>
         </nav>
     </header>
