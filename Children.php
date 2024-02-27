@@ -1,7 +1,7 @@
 <div class="text-center">
     <form method="post" class="" locale="ENGLISH" action="Submit.php">
         <div id="childrenForm">
-            <div id="page2" class="container p-4">
+            <div id="page1" class="container p-4">
                 <H1>Children</H1>
                 <div class="input-field">
                     <table class="table table-bordered" id="table_field">
@@ -17,7 +17,7 @@
                         </tr>
                     </table>
                     <div class="row justify-content-center pt-4 pb-4">
-                        <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
+                        <button id="toParties" onClick="previousHandler()">Back to Parties</button>&nbsp;&nbsp;
                         <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
                     </div>
 
