@@ -4,7 +4,7 @@
       <div id="page0" class="container card p-4">
         <h1>Legal Custody</h1>
         <p>place your code here</p>
-        <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
+        <button id="generate" name="generatePlan" type="submit" value="Generate Plan">Generate Plan</button>
 
       </div>
     </div>
