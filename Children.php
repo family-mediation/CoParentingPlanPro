@@ -17,7 +17,6 @@
                         </tr>
                     </table>
                     <div class="row justify-content-center pt-4 pb-4">
-                        <button id="toParties" onClick="previousHandler()">Back to Parties</button>&nbsp;&nbsp;
                         <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
                     </div>
 

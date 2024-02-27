@@ -4,7 +4,8 @@ require_once("MysqlUtil.php");
 // create an object that will serve as our database.
 $db = new Database; 
 require_once("views/Header.php");
-$page = $_GET['page'];
+$page = $_GET['page'] ?? 0;
+
 switch($page)
 {
     case 0:
