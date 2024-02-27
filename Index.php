@@ -6,14 +6,13 @@ $_SESSION['responses'] = array();
 }
 if(isset($_POST))
 {
-$_SESSION['responses'] += $_POST;
+$_SESSION['responses'] = array_replace($_SESSION['responses'], $_POST);
 }
 require_once("MysqlUtil.php");
 // create an object that will serve as our database.
 $db = new Database;
 $page = isset($_GET['page']) ?$_GET['page'] : 1 ;
 require_once("views/Header.php");
-echo var_dump($_SESSION['responses']);
 switch($page)
 {
     case 1:
