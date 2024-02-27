@@ -1,6 +1,3 @@
-<?php
-require_once("views/header.php");
-?>
 <div class="text-center">
     <form method="post" class="" locale="ENGLISH" action="Submit.php">
         <div id="childrenForm">
@@ -75,6 +72,3 @@ require_once("views/header.php");
         </div>
     </form>
 </div>
-<?php
-require_once("views/footer.php");
-?>
