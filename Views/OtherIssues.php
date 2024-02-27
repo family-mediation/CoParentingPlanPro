@@ -1,10 +1,8 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="./?page=4">
-    <div id="timesharingForm">
-
-      <div id="page3" class="container card p-4">
-        <h1>TIMESHARING FORM</h1>
-
+  <form method="post" class="" locale="ENGLISH" action="./?page=7">
+    <div id="otherIssuesForm">
+      <div id="page6" class="container card p-4">
+        <h1>OTHER ISSUES FORM</h1>
         <div class="form-group row p-3">
           <div class="col-lg-6">
             <label class="" hide="true" data-dm->First Name</label>
@@ -55,32 +53,9 @@
             <input type="text" name="partyASocial" placeholder="Last 4 Digits of SSN" class="form-control" data-placeholder-original="Last 4 Digits of Social Security Number" required>
           </div>
         </div>
-        <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="validateParentAForm() ? nextHandler() : null">
-            Next Page</button>
-        </div>
-        <script>
-          function validateParentAForm() {
-            const first = document.getElementsByName("partyAFirst")[0].value;
-            const last = document.getElementsByName("partyALast")[0].value;
-            const address = document.getElementsByName("partyAResidence")[0].value;
-            const city = document.getElementsByName("partyACity")[0].value;
-            const state = document.getElementsByName("partyAState")[0].value;
-            const zip = document.getElementsByName("partyAZip")[0].value;
-            const cell = document.getElementsByName("partyACell")[0].value;
-            const email = document.getElementsByName("partyAEmail")[0].value;
-            const ssn = document.getElementsByName("partyASocial")[0].value;
-            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-            return !(first === "" || last === "" || address === "" || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
-          }
-        </script>
       </div>
-
-
       <div id="page1" class="container card p-4">
         <h1>Parent B</h1>
-
         <div class="form-group row p-3">
           <div class="col-lg-6">
             <label class="" hide="true" data-dm->First Name</label>
@@ -97,7 +72,6 @@
           <label data-dm->Street Address</label>
           <textarea name="partyBResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
         </div>
-
         <div class="form-group row p-3">
           <div class="col-lg-4">
             <label data-dm->City</label>
@@ -132,13 +106,23 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="toChildren" onclick="validateParentBForm()">Next Page</button>
-<!--          need to go to children section-->
+          <button id="toChildren" onclick="validateParentAForm() && validateParentBForm()">Children Section</button>
         </div>
-
-
         <script>
+          function validateParentAForm() {
+            const first = document.getElementsByName("partyAFirst")[0].value;
+            const last = document.getElementsByName("partyALast")[0].value;
+            const address = document.getElementsByName("partyAResidence")[0].value;
+            const city = document.getElementsByName("partyACity")[0].value;
+            const state = document.getElementsByName("partyAState")[0].value;
+            const zip = document.getElementsByName("partyAZip")[0].value;
+            const cell = document.getElementsByName("partyACell")[0].value;
+            const email = document.getElementsByName("partyAEmail")[0].value;
+            const ssn = document.getElementsByName("partyASocial")[0].value;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            return !(first === "" || last === "" || address === "" || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
+          }
           function validateParentBForm() {
             const first = document.getElementsByName("partyBFirst")[0].value;
             const last = document.getElementsByName("partyBLast")[0].value;
