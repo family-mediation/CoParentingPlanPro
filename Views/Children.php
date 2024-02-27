@@ -1,6 +1,6 @@
 <div class="text-center">
-    <form method="post" class="" locale="ENGLISH" action="Submit.php">
-        <div id="childrenForm">
+    <form method="post" class="" locale="ENGLISH" action=".\?page=3">
+         <div id="mainForm">
             <div id="page2" class="container p-4">
                 <H1>Children</H1>
                 <div class="input-field">

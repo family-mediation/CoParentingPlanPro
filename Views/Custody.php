@@ -1,6 +1,6 @@
 <div class="text-center">
   <form method="post" class="" locale="ENGLISH" action="./?page=1">
-    <div id="parentForm">
+     <div id="mainForm">
 
       <div id="page0" class="container card p-4">
         <h1>Parent A</h1>

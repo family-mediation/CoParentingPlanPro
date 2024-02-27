@@ -4,7 +4,7 @@ let current;
 $(document).ready(function () {
     alert("Document is ready sir!");
     current = $("#page" + pageCount);
-    let elements = $("form")[0].children();
+    let elements = $("#mainForm").children()[0];
     console.log(elements);
     numPages = elements.length;
     //hide everything
