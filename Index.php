@@ -25,7 +25,7 @@ switch($page)
         require_once("views/Custody.php");
         break;
     case 4:
-        require_once("views/TimeSharing.php");
+        require_once("views/Timesharing.php");
         break;
     case 5:
         require_once("views/Communication.php");

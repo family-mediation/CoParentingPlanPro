@@ -18,3 +18,4 @@ $wordGen->generateDocument();
 $calGen = new CalendarGenerator($filePath.'/'.$fileName.".ics",$src);
 $calGen->generateDocument();
 require_once("views/Footer.php");
+unset($_SESSION['responses']);
