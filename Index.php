@@ -8,10 +8,12 @@ $page = $_GET['page'];
 switch($page)
 {
     case 0:
-        require_once("ParentForum.php");
+        require_once("views/ParentForum.php");
         break;
     case 1:
-        require_once("Children.php");
+        require_once("views/Children.php");
         break;
+    default:
+        require_once("views/ParentForum.php");
 }
 require_once("views/Footer.php");
