@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="/coparentingplanpro/?page=1">
+  <form method="post" class="" locale="ENGLISH" action="Submit.php">
     <div id="parentForm">
 
       <div id="page0">
