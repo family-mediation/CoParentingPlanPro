@@ -1,10 +1,16 @@
 <?php
 session_start();
+$responses = array();
+if(isset($_POST))
+{
+$responses += $_POST;
+}
 require_once("MysqlUtil.php");
 // create an object that will serve as our database.
 $db = new Database;
 $page = isset($_GET['page']) ?$_GET['page'] : 1 ;
 require_once("views/Header.php");
+echo var_dump($responses);
 switch($page)
 {
     case 1:

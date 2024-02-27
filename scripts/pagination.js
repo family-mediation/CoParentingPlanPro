@@ -2,8 +2,10 @@ let pageCount = 0;
 let numPages = 0;
 let current;
 $(document).ready(function () {
+    alert("Document is ready sir!");
     current = $("#page" + pageCount);
-    let elements = $("#mainForm").children();
+    let elements = $("form")[0].children();
+    console.log(elements);
     numPages = elements.length;
     //hide everything
     elements.addClass("hidden");

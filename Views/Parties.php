@@ -1,6 +1,6 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="./?page=1">
-    <div id="parentForm">
+  <form method="post" class="" locale="ENGLISH" action="./?page=2">
+    <div id="mainForm">
 
       <div id="page0" class="container card p-4">
         <h1>Parent A</h1>
@@ -76,7 +76,6 @@
           }
         </script>
       </div>
-
 
       <div id="page1" class="container card p-4">
         <h1>Parent B</h1>
