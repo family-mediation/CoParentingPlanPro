@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="Children.php">
+  <form method="post" class="" locale="ENGLISH" action="/?page=1">
     <div id="parentForm">
 
       <div id="page0" class="container card p-4">
@@ -133,8 +133,7 @@
         </div>
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="toChildren" onclick="validateParentBForm()">Next Page</button>
-<!--          need to go to children section-->
+          <button id="toChildren" onclick="validateParentBForm()">Children Section</button>
         </div>
 
 

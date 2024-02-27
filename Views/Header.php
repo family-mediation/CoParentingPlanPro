@@ -39,7 +39,7 @@
             <ul class="navbar-nav text-center">
 
                 <li class="nav-item"><a class="nav-link" href="./">Section 1: <br /> Parties </a></li>
-                <li class="nav-item"><a class="nav-link" href="Children.php"> Section 2: <br /> Children </a></li>
+                <li class="nav-item"><a class="nav-link" href="/?page=1"> Section 2: <br /> Children </a></li>
                 <li class="nav-item"><a class="nav-link"> Section 3: <br /> Legal Custody </a></li>
                 <li class="nav-item"><a class="nav-link" href="Calendar.php"> Section 4: <br /> Physical Custody and Timesharing </a></li>
                 <li class="nav-item"><a class="nav-link"> Section 5: <br /> Communication </a></li>
