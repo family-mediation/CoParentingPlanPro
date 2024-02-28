@@ -35,19 +35,19 @@
         <br>
         <h4>Pick only one</h4>
         <div>
-          <input type="radio" name="jointCustody" id="joint" value="joint" />
+          <input type="radio" name="custody" id="joint" value="joint" />
           <label for="joint">Joint to both parents</label>
         </div>
         <div>
-          <input type="radio" name="soleCustody" id="sole" value="sole" />
+          <input type="radio" name="custody" id="sole" value="sole" />
           <label for="sole">Sole to one parent</label>
         </div>
         <div>
-          <input type="radio" name="consultTie" id="tieBreaking" value="tieBreaking" />
+          <input type="radio" name="custody" id="tieBreaking" value="tieBreaking" />
           <label for="tieBreaking">Parents must consult but one parent has tie-breaking authority</label>
         </div>
         <div>
-          <input type="radio" name="consultDivision" id="divisionAuth" value="divisionAuth" />
+          <input type="radio" name="custody" id="divisionAuth" value="divisionAuth" />
           <label for="divisionAuth">Parents must consult but there is a division of authority</label>
         </div>
 
@@ -62,6 +62,7 @@
 
       <div id="page2" class="container card p-4" style="display: none;">
         <h1>Legal Custody</h1>
+        <br>
         <h4>Optional</h4>
         <div>
 
