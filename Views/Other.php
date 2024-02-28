@@ -89,6 +89,9 @@
               <label for="9.16">Alternative Dispute Resolution</label>
               </div>
           </fieldset>
+          <div class="row justify-content-center pt-4 pb-4" name="communication">
+          <button id="next0" onclick="showPage('page1')">Next Page</button>
+        </div>
       </div>
     </div>
   </form>
