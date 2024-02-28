@@ -26,7 +26,7 @@
         </div>
       </div>
       <div id="page1" class="container card p-4" style="display: none;">
-          <fieldset><br><br>
+          <fieldset><br>
           <h1>Pick One:</h1>
             <div>
               <input type="radio" name="communication" id="emailonly"/>
@@ -123,4 +123,5 @@
   function previousHandler() {
     showPage('page1');
   }
+
 </script>
