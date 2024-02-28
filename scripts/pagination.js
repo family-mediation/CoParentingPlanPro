@@ -13,10 +13,12 @@ $(document).ready(function () {
 });
 
 function nextHandler() {
+  console.log(pageCount)
     current.addClass("hidden");
     pageCount = (pageCount + 1) % numPages;
     current = $("#page" + pageCount);
     current.removeClass("hidden");
+  console.log("after" + pageCount)
 };
 
 function previousHandler() {
