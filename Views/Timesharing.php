@@ -136,6 +136,130 @@
           </div>
         </div>
       </div>
+      <div id="page2" class="container card p-4">
+        <h1>Physical Custody and Time Sharing</h1>
+        <h3>Holiday Table</h3>
+        <div>
+          <p>Please select one:</p>
+          <div class="row justify-content-center">
+            <table class="table table-bordered" id="table_field">
+              <tr>
+                <th>Holiday</th>
+                <th>Parent A</th>
+                <th>Parent B</th>
+              </tr>
+              <tr>
+                <td>New Year's Day (January 1)</td>
+                <td><input class="form-control" type="radio" name="newYears" required></td>
+                <td><input class="form-control" type="radio" name="newYears" required></td>
+              </tr>
+              <tr>
+                <td>Martin Luther King Day (Monday)</td>
+                <td><input class="form-control" type="radio" name="mlk" required></td>
+                <td><input class="form-control" type="radio" name="mlk" required></td>
+              </tr>
+              <tr>
+                <td>President's Day (Monday)</td>
+                <td><input class="form-control" type="radio" name="presidents" required></td>
+                <td><input class="form-control" type="radio" name="presidents" required></td>
+              </tr>
+              <tr>
+                <td>Kuhio Day (Friday)</td>
+                <td><input class="form-control" type="radio" name="kuhio" required></td>
+                <td><input class="form-control" type="radio" name="kuhio" required></td>
+              </tr>
+              <tr>
+                <td>Good Friday (Friday)</td>
+                <td><input class="form-control" type="radio" name="goodFriday" required></td>
+                <td><input class="form-control" type="radio" name="goodFriday" required></td>
+              </tr>
+              <tr>
+                <td>Easter (Sunday)</td>
+                <td><input class="form-control" type="radio" name="easter" required></td>
+                <td><input class="form-control" type="radio" name="easter" required></td>
+              </tr>
+              <tr>
+                <td>Mother's Day (Sunday)</td>
+                <td><input class="form-control" type="radio" name="mothers" required></td>
+                <td><input class="form-control" type="radio" name="mothers" required></td>
+              </tr>
+              <tr>
+                <td>Memorial Day (Monday)</td>
+                <td><input class="form-control" type="radio" name="memorial" required></td>
+                <td><input class="form-control" type="radio" name="memorial" required></td>
+              </tr>
+              <tr>
+                <td>Father's Day (Sunday)</td>
+                <td><input class="form-control" type="radio" name="fathers" required></td>
+                <td><input class="form-control" type="radio" name="fathers" required></td>
+              </tr>
+              <tr>
+                <td>Fourth of July (July 4)</td>
+                <td><input class="form-control" type="radio" name="julyFourth" required></td>
+                <td><input class="form-control" type="radio" name="julyFourth" required></td>
+              </tr>
+              <tr>
+                <td>Statehood Day (Friday)</td>
+                <td><input class="form-control" type="radio" name="statehood" required></td>
+                <td><input class="form-control" type="radio" name="statehood" required></td>
+              </tr>
+              <tr>
+                <td>Labor Day (Monday)</td>
+                <td><input class="form-control" type="radio" name="labor" required></td>
+                <td><input class="form-control" type="radio" name="labor" required></td>
+              </tr>
+              <tr>
+                <td>Election Day (Tuesday)</td>
+                <td><input class="form-control" type="radio" name="election" required></td>
+                <td><input class="form-control" type="radio" name="election" required></td>
+              </tr>
+              <tr>
+                <td>Veteran's Day (November 11)</td>
+                <td><input class="form-control" type="radio" name="veterans" required></td>
+                <td><input class="form-control" type="radio" name="veterans" required></td>
+              </tr>
+              <tr>
+                <td>Thanksgiving (Thursday)</td>
+                <td><input class="form-control" type="radio" name="thanksgiving" required></td>
+                <td><input class="form-control" type="radio" name="thanksgiving" required></td>
+              </tr>
+              <tr>
+                <td>Christmas Eve (December 24)</td>
+                <td><input class="form-control" type="radio" name="christmasEve" required></td>
+                <td><input class="form-control" type="radio" name="christmasEve" required></td>
+              </tr>
+              <tr>
+                <td>Christmas Day (December 25)</td>
+                <td><input class="form-control" type="radio" name="christmas" required></td>
+                <td><input class="form-control" type="radio" name="christmas" required></td>
+              </tr>
+              <tr>
+                <td>New Year's Eve (December 31)</td>
+                <td><input class="form-control" type="radio" name="nye" required></td>
+                <td><input class="form-control" type="radio" name="nye" required></td>
+              </tr>
+              <tr>
+                <td>Parent A's Birthday (Insert date)</td>
+                <td><input class="form-control" type="radio" name="partyA" required></td>
+                <td><input class="form-control" type="radio" name="partyA" required></td>
+              </tr>
+              <tr>
+                <td>Parent B's Birthday (Insert date)</td>
+                <td><input class="form-control" type="radio" name="partyB" required></td>
+                <td><input class="form-control" type="radio" name="partyB" required></td>
+              </tr>
+              <tr>
+                <td>Children's Birthday(s) (Insert date)</td>
+                <td><input class="form-control" type="radio" name="child1" required></td>
+                <td><input class="form-control" type="radio" name="child1" required></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row justify-content-center pt-4 pb-4">
+          <button id="next" onclick="nextHandler()">Next Page</button>
+        </div>
+      </div>
       <div id="page3" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Optional</h3>
