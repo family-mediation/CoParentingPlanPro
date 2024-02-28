@@ -173,95 +173,67 @@
 
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="next2" onclick="nextHandler()">Next Page</button>
+          <button id="next2" onclick="nextToPage3()">Next Page</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
       </div>
 
-
-
       <div id="page3" class="container card p-4" style="display: none;">
-        <h1>Child Supportr</h1>
+        <h1>Child Support</h1>
         <br>
-        <h4>Extracurricular Expenses</h4>
+        <h4>Claiming the Child(ren) as a Dependent for Tax Purposes</h4>
         <h5>Pick only one</h5>
         <div>
-          <input type="radio" name="extraCurr" id="extraSoleResp" value="extraSoleResp" />
-          <label for="extraSoleResp">Sole Responsibility</label>
+          <input type="radio" name="taxPurpose" id="taxSole" value="taxSole" />
+          <label for="taxSole">Sole Authority to Claim the Child(ren)</label>
         </div>
         <div>
-          <input type="radio" name="extraCurr" id="extraSplitResp" value="extraSplitResp" />
-          <label for="extraSplitResp">Split Responsibility</label>
+          <input type="radio" name="taxPurpose" id="taxSplit" value="taxSplit" />
+          <label for="taxSplit">Split Authority to Claim the Child(ren)</label>
         </div>
         <div>
-          <input type="radio" name="extraCurr" id="pursuant" value="pursuant" />
-          <label for="pursuant">Selecting Extracurricular Activities for the Child(ren) Pursuant to 7.10 Hereinabove</label>
+          <input type="radio" name="taxPurpose" id="taxAlt" value="taxAlt" />
+          <label for="taxAlt">Split Authority to Claim the Child(ren) then Alternate</label>
         </div>
         <div>
-          <input type="radio" name="extraCurr" id="mutuallyExtra" value="mutuallyExtra" />
-          <label for="mutuallyExtra">Extracurricular Activities Must Be Mutually Agreed Upon</label>
+          <input type="radio" name="taxPurpose" id="taxAltAut" value="taxAltAut" />
+          <label for="taxAltAut">Alternate Authority to Claim the Child(ren)</label>
         </div>
 
         <br>
-        <h4>Private School Expenses</h4>
+        <h4>Protocols for Reimbursement of Child-Related Expenses</h4>
         <h5>Pick only one</h5>
         <div>
-          <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" />
-          <label for="extraSoleResp">Sole Responsibility</label>
+          <input type="radio" name="protocols" id="timeframe" value="timeframe" />
+          <label for="timeframe">Timeframe for Reimbursement of Child-Related Expenses and Reimbursement</label>
         </div>
         <div>
-          <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" />
-          <label for="extraSplitResp">Split Responsibility</label>
+          <input type="radio" name="protocols" id="monthlyCal" value="monthlyCal" />
+          <label for="monthlyCal">Monthly Calculation of Child-Related Expenses and Reimbursement</label>
         </div>
         <div>
-          <input type="radio" name="privateSchool" id="defPrivateSchool" value="defPrivateSchool" />
-          <label for="defPrivateSchool">Definition of Private School Expenses</label>
+          <input type="radio" name="protocols" id="quarterCal" value="quarterCal" />
+          <label for="quarterCal">Quarterly Calculation of Child-Related Expenses and Reimbursement</label>
         </div>
         <div>
-          <input type="radio" name="privateSchool" id="privateSchoolMutual" value="privateSchoolMutual" />
-          <label for="privateSchoolMutual">Mutual Agreement of Parents</label>
-        </div>
-        <div>
-          <input type="radio" name="privateSchool" id="privateReserve" value="privateReserve" />
-          <label for="privateReserve">Reserve</label>
+          <input type="radio" name="protocols" id="annualCal" value="annualCal" />
+          <label for="annualCal">Annual Calculation of Child-Related Expenses and Reimbursement</label>
         </div>
 
         <br>
-        <h4>Post-High School Expenses</h4>
-        <h5>Pick only one</h5>
+        <h5>Optional</h5>
         <div>
-          <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" />
-          <label for="postSoleResp">Sole Responsibility</label>
+          <input type="checkbox" id="8.14e" name="childsupportRei" />
+          <label for="8.14e">Documentation Required for Reimbursement of Child-Related Expenses</label>
         </div>
-        <div>
-          <input type="radio" name="postHigh" id="postSplitResp" value="postSplitResp" />
-          <label for="postSplitResp">Split Responsibility</label>
-        </div>
-        <div>
-          <input type="radio" name="postHigh" id="postSole529" value="postSole529" />
-          <label for="postSole529">Sole Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of Other Funds</label>
-        </div>
-        <div style="display: flex; align-items: center;">
-          <input type="radio" name="postHigh" id="postSplit529" value="postSplit529" style="margin-right: 10px;" />
-          <label for="postSplit529">Split Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child’s Post-High School Education Expenses</label>
-        </div>
-        <div>
-          <input type="radio" name="postHigh" id="postCap" value="postCap" />
-          <label for="postCap">Cap on Payment by Each Parent per Academic School Year</label>
-        </div>
-        <div>
-          <input type="radio" name="postHigh" id="postCap" value="postCap" />
-          <label for="postCap">Definition of Post-High School Education Expenses</label>
-        </div>
-        <div>
-          <input type="radio" name="postHigh" id="postMutual" value="postMutual" />
-          <label for="postMutual">Mutual Agreement of Parents</label>
-        </div>
-        <div>
-          <input type="radio" name="postHigh" id="postReserve" value="postReserve" />
-          <label for="postReserve">Reserve</label>
-        </div>
+        <br>
+        <h5>Reimbursement Method</h5>
+        <p>Parents shall use the following method to
+          reimburse each other for child-related expenses: Check, Bank Account Transfer,
+          Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or
+          application, or <input type="text" name="reimburseMethod" />
+        </p>
 
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous3" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
@@ -285,7 +257,11 @@
   }
 
   function nextHandler() {
-    showPage('page2');
+    showPage('page3');
+  }
+
+  function nextToPage3() {
+    showPage('page3');
   }
 
   function previousHandler() {
