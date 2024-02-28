@@ -136,6 +136,64 @@
           </div>
         </div>
       </div>
+      <div id="page3" class="container card p-4">
+        <h1>Physical Custody and Time Sharing</h1>
+        <h3>Optional</h3>
+        <div>
+          <div>
+            <p>Please check all that apply:</p>
+            <div class="row justify-content-center">
+              <div class="column">
+                <div>
+                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children"/>
+                  <label for="travel-with-children">Travel with the Children</label>
+                </div>
+                <div>
+                  <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time"/>
+                  <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
+                </div>
+                <div>
+                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal"/>
+                  <label for="first-refusal">Right of First Refusal</label>
+                </div>
+                <div>
+                  <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>
+                  <label for="drop-off">Drop Off for Non-School Exchange</label>
+                </div>
+                <div>
+                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location"/>
+                  <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                  <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
+                  <label for="delegate-pick-up">Parental Authority to Delegate Pick-Up and Drop Off</label>
+                </div>
+                <div>
+                  <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized"/>
+                  <label for="persons-authorized">Persons Authorized to Pick Up and Drop Off</label>
+                </div>
+                <div>
+                  <input id="children-belongings" type="checkbox" name="children-belongings" value="children-belongings"/>
+                  <label for="children-belongings">Children's Personal Belongings</label>
+                </div>
+                <div>
+                  <input id="relocation" type="checkbox" name="relocation" value="relocation"/>
+                  <label for="relocation">Relocation</label>
+                </div>
+                <div>
+                  <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
+                  <label for="modify-schedule">Modification of Schedule by Agreement of Both Parties</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-4 pb-4">
+            <button id="toCommunication" onclick="">Communication</button>
+          </div>
+        </div>
+      </div>
     </div>
   </form>
 </div>
