@@ -69,3 +69,8 @@ button
     background-color: var(--color1);
     color: var(--color3) ;
 }
+
+#page1 {
+    text-align: center;
+    padding-left: 30%;
+}
