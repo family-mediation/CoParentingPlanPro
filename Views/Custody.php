@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="./?page=4">
+  <form method="post" class="" locale="ENGLISH" action="./?page=4" onsubmit="return false;">
     <div id="mainForm">
       <div id="page0" class="container card p-4">
         <h1>Legal Custody</h1>
@@ -25,224 +25,107 @@
           jurisdiction of the United States for any period of time.</p>
 
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
+          <button id="next0" onclick="showPage('page1')">Next Page</button>
+          <!-- <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
       </div>
 
-      <div id="page1" class="container card p-4">
+      <div id="page1" class="container card p-4" style="display: none;">
         <h1>Legal Custody</h1>
         <br>
         <h4>Pick only one</h4>
         <div>
-          <input type="radio" name="communication" id="emailonly" />
-          <label for="emailonly">Joint to both parents</label>
+          <input type="radio" name="jointCustody" id="joint" value="joint" />
+          <label for="joint">Joint to both parents</label>
         </div>
         <div>
-          <input type="radio" name="communication" id="emailtext" />
-          <label for="emailtext">Sole to one parent</label>
+          <input type="radio" name="soleCustody" id="sole" value="sole" />
+          <label for="sole">Sole to one parent</label>
         </div>
         <div>
-          <input type="radio" name="communication" id="wizardmutually" />
-          <label for="wizardmutually">Parents must consult but one parent has tie-breaking authority</label>
+          <input type="radio" name="consultTie" id="tieBreaking" value="tieBreaking" />
+          <label for="tieBreaking">Parents must consult but one parent has tie-breaking authority</label>
         </div>
-
         <div>
-          <input id="fall-alternate-break" type="radio" name="schoolFallBreakSchedule" value="fall-alternate-break" />
-          <label for="fall-alternate-break">Parents must consult but there is a division of authority</label>
+          <input type="radio" name="consultDivision" id="divisionAuth" value="divisionAuth" />
+          <label for="divisionAuth">Parents must consult but there is a division of authority</label>
         </div>
 
-
-        <div>
-
-          <div class="row justify-content-center pt-4 pb-4">
-            <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-            <button id="another" onclick="nextHandler()">Next Page</button>
-          </div>
+        <div class="row justify-content-center pt-4 pb-4">
+          <button id="previous1" onClick="showPage('page0')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next1" onclick="nextHandler()">Next Page</button>
+          <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
+          <button id="another" onclick="nextHandler()">Next Page</button> -->
         </div>
+
       </div>
 
-      <div id="page2" class="container card p-4">
-        <h1>Physical Custody and Time Sharing</h1>
-        <h3>Holiday Table</h3>
+      <div id="page2" class="container card p-4" style="display: none;">
+        <h1>Legal Custody</h1>
+        <h4>Optional</h4>
         <div>
-          <p>Please select one:</p>
-          <div class="row justify-content-center">
-            <table class="table table-bordered" id="table_field">
-              <tr>
-                <th>Holiday</th>
-                <th>Parent A</th>
-                <th>Parent B</th>
-              </tr>
-              <tr>
-                <td>New Year's Day (January 1)</td>
-                <td><input class="form-control" type="radio" name="newYears" required></td>
-                <td><input class="form-control" type="radio" name="newYears" required></td>
-              </tr>
-              <tr>
-                <td>Martin Luther King Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="mlk" required></td>
-                <td><input class="form-control" type="radio" name="mlk" required></td>
-              </tr>
-              <tr>
-                <td>President's Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="presidents" required></td>
-                <td><input class="form-control" type="radio" name="presidents" required></td>
-              </tr>
-              <tr>
-                <td>Kuhio Day (Friday)</td>
-                <td><input class="form-control" type="radio" name="kuhio" required></td>
-                <td><input class="form-control" type="radio" name="kuhio" required></td>
-              </tr>
-              <tr>
-                <td>Good Friday (Friday)</td>
-                <td><input class="form-control" type="radio" name="goodFriday" required></td>
-                <td><input class="form-control" type="radio" name="goodFriday" required></td>
-              </tr>
-              <tr>
-                <td>Easter (Sunday)</td>
-                <td><input class="form-control" type="radio" name="easter" required></td>
-                <td><input class="form-control" type="radio" name="easter" required></td>
-              </tr>
-              <tr>
-                <td>Mother's Day (Sunday)</td>
-                <td><input class="form-control" type="radio" name="mothers" required></td>
-                <td><input class="form-control" type="radio" name="mothers" required></td>
-              </tr>
-              <tr>
-                <td>Memorial Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="memorial" required></td>
-                <td><input class="form-control" type="radio" name="memorial" required></td>
-              </tr>
-              <tr>
-                <td>Father's Day (Sunday)</td>
-                <td><input class="form-control" type="radio" name="fathers" required></td>
-                <td><input class="form-control" type="radio" name="fathers" required></td>
-              </tr>
-              <tr>
-                <td>Fourth of July (July 4)</td>
-                <td><input class="form-control" type="radio" name="julyFourth" required></td>
-                <td><input class="form-control" type="radio" name="julyFourth" required></td>
-              </tr>
-              <tr>
-                <td>Statehood Day (Friday)</td>
-                <td><input class="form-control" type="radio" name="statehood" required></td>
-                <td><input class="form-control" type="radio" name="statehood" required></td>
-              </tr>
-              <tr>
-                <td>Labor Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="labor" required></td>
-                <td><input class="form-control" type="radio" name="labor" required></td>
-              </tr>
-              <tr>
-                <td>Election Day (Tuesday)</td>
-                <td><input class="form-control" type="radio" name="election" required></td>
-                <td><input class="form-control" type="radio" name="election" required></td>
-              </tr>
-              <tr>
-                <td>Veteran's Day (November 11)</td>
-                <td><input class="form-control" type="radio" name="veterans" required></td>
-                <td><input class="form-control" type="radio" name="veterans" required></td>
-              </tr>
-              <tr>
-                <td>Thanksgiving (Thursday)</td>
-                <td><input class="form-control" type="radio" name="thanksgiving" required></td>
-                <td><input class="form-control" type="radio" name="thanksgiving" required></td>
-              </tr>
-              <tr>
-                <td>Christmas Eve (December 24)</td>
-                <td><input class="form-control" type="radio" name="christmasEve" required></td>
-                <td><input class="form-control" type="radio" name="christmasEve" required></td>
-              </tr>
-              <tr>
-                <td>Christmas Day (December 25)</td>
-                <td><input class="form-control" type="radio" name="christmas" required></td>
-                <td><input class="form-control" type="radio" name="christmas" required></td>
-              </tr>
-              <tr>
-                <td>New Year's Eve (December 31)</td>
-                <td><input class="form-control" type="radio" name="nye" required></td>
-                <td><input class="form-control" type="radio" name="nye" required></td>
-              </tr>
-              <tr>
-                <td>Parent A's Birthday (Insert date)</td>
-                <td><input class="form-control" type="radio" name="partyA" required></td>
-                <td><input class="form-control" type="radio" name="partyA" required></td>
-              </tr>
-              <tr>
-                <td>Parent B's Birthday (Insert date)</td>
-                <td><input class="form-control" type="radio" name="partyB" required></td>
-                <td><input class="form-control" type="radio" name="partyB" required></td>
-              </tr>
-              <tr>
-                <td>Children's Birthday(s) (Insert date)</td>
-                <td><input class="form-control" type="radio" name="child1" required></td>
-                <td><input class="form-control" type="radio" name="child1" required></td>
-              </tr>
-            </table>
+
+          <div>
+            <input type="checkbox" id="5.05" name="legalcustody" />
+            <label for="7.09">Access to Information for Parent without Legal Custody</label>
           </div>
+
+          <div>
+            <input type="checkbox" id="5.06" name="legalcustody" />
+            <label for="5.06">Emergency Contacts for the Child(ren)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5.07" name="legalcustody" />
+            <label for="5.07">Expert Advice when making Legal Custody Decisions</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5.08" name="legalcustody" />
+            <label for="5.08">Day-to-Day Decisions</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5.09" name="legalcustody" />
+            <label for="5.09">Emergency Decisions</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5.10" name="legalcustody" />
+            <label for="5.10">Health Emergency or Death of Other Parent</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5.11" name="legalcustody" />
+            <label for="5.11">Parallel Parenting</label>
+          </div>
+
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
+          <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
+          <button id="next2" onclick="nextHandler()">Next Page</button>
+          <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
+          <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
       </div>
-      <div id="page3" class="container card p-4">
-        <h1>Physical Custody and Time Sharing</h1>
-        <h3>Optional</h3>
-        <div>
-          <div>
-            <p>Please check all that apply:</p>
-            <div class="row justify-content-center">
-              <div class="column">
-                <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" />
-                  <label for="travel-with-children">Travel with the Children</label>
-                </div>
-                <div>
-                  <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time" />
-                  <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
-                </div>
-                <div>
-                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal" />
-                  <label for="first-refusal">Right of First Refusal</label>
-                </div>
-                <div>
-                  <input id="drop-off" type="checkbox" name="drop-off" value="drop-off" />
-                  <label for="drop-off">Drop Off for Non-School Exchange</label>
-                </div>
-                <div>
-                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" />
-                  <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
-                </div>
-              </div>
-              <div class="column">
-                <div>
-                  <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up" />
-                  <label for="delegate-pick-up">Parental Authority to Delegate Pick-Up and Drop Off</label>
-                </div>
-                <div>
-                  <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" />
-                  <label for="persons-authorized">Persons Authorized to Pick Up and Drop Off</label>
-                </div>
-                <div>
-                  <input id="children-belongings" type="checkbox" name="children-belongings" value="children-belongings" />
-                  <label for="children-belongings">Children's Personal Belongings</label>
-                </div>
-                <div>
-                  <input id="relocation" type="checkbox" name="relocation" value="relocation" />
-                  <label for="relocation">Relocation</label>
-                </div>
-                <div>
-                  <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule" />
-                  <label for="modify-schedule">Modification of Schedule by Agreement of Both Parties</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center pt-4 pb-4">
-            <button id="toCommunication" onclick="">Communication</button>
-          </div>
-        </div>
-      </div>
+
     </div>
   </form>
 </div>
+
+<script>
+  function showPage(pageId) {
+    document.getElementById("page0").style.display = "none";
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById(pageId).style.display = "block";
+  }
+
+  function nextHandler() {
+    showPage('page2');
+  }
+
+  function previousHandler() {
+    showPage('page1');
+  }
+</script>
