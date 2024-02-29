@@ -101,7 +101,7 @@
           </fieldset>
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="next2" onclick="nextHandler()">Next Page</button>
+          <button id="next2" onclick="submit()">Next Page</button>
         </div> 
       </div>  
     </div>
