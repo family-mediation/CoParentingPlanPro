@@ -13,7 +13,7 @@ if(!is_dir($filePath))
  }
 $htmlGen = new HtmlGenerator($filePath.'/'.$fileName.".html",$src);
 $htmlGen->generateDocument();
-$wordGen = new wordDocGenerator($filePath.'/'.$fileName.".docx",$src);
+$wordGen = new wordDocGenerator($filePath.'/'.$fileName,$src);
 $wordGen->generateDocument();
 $calGen = new CalendarGenerator($filePath.'/'.$fileName.".ics",$src);
 $calGen->generateDocument();

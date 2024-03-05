@@ -44,8 +44,12 @@ class wordDocGenerator extends documentGenerator
 	function packageDocument()
 	{
 	// Take the template.zip copy it and rename it in the downloads folder
+    if(!copy("Templates/Co-ParentingPlanTemplate.docx",$this->fileName))
+    {
+        alert("file not copied!");
+    };
 	// Take the string and write it to document.xml
-	 fwrite($this->fileOutput,$this->fileContentString);
+	fwrite($this->fileOutput,$this->fileContentString);
 	// Zip the folder and rename it to .docx
 	// Serve the .docx
 	}
