@@ -36,12 +36,13 @@
             <div class="navbar-brand">
                 <image src="https://lirp.cdn-website.com/0ec4144d/dms3rep/multi/opt/family-mediation-hawaii-web-90-white-1-201w.png" />
             </div>
+
             <ul class="navbar-nav text-center">
 
                 <li class="nav-item"><a class="nav-link" href="./?page=1">Section 1: <br /> Parties </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=2"> Section 2: <br /> Children </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=3"> Section 3: <br /> Legal Custody </a></li>
-                <li class="nav-item"><a class="nav-link" href="./?page=4" > Section 4: <br /> Physical Custody and Timesharing </a></li>
+                <li class="nav-item"><a class="nav-link" href="./?page=4"> Section 4: <br /> Physical Custody and Timesharing </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=5"> Section 5: <br /> Communication </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=6"> Section 6: <br /> Support of the Child(ren) </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=7"> Section 7: <br /> Other Issues </a></li>
@@ -57,5 +58,19 @@
                     <h1 class="pt-4">Coparent Pro Version 1</h1>
                 </row>
 
-
                 <!-- Optional JavaScript -->
+                
+                <script>
+                    // use to bold the nav-link of user's current section 
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var urlParams = new URLSearchParams(location.search);
+                        var currentPage = urlParams.get('page');
+
+                        if (currentPage) {
+                            var activeLink = document.querySelector('.nav-link[href="./?page=' + currentPage + '"]');
+                            if (activeLink) {
+                                activeLink.classList.add('active-link');
+                            }
+                        }
+                    });
+                </script>
