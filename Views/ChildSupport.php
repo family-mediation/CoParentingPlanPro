@@ -16,8 +16,12 @@
           <label for="sameState">Child Support Guidelines Amount when Parents Reside in the Same State</label>
         </div>
         <div>
-          <input type="radio" name="childSupport" id="diffState" value="diffState" />
+          <input type="radio" name="childSupport" id="diffState" value="diffState" onclick="diffStateMoreInfo()" />
           <label for="diffState">Child Support Guidelines Amount when Parents Reside in Different States</label>
+        </div>
+        <div id="diffStateInfo" style="display: none;">
+          This is the additional information
+
         </div>
         <div>
           <input type="radio" name="childSupport" id="mutuAgreed" value="mutuAgreed" />
@@ -267,4 +271,18 @@
   function previousHandler() {
     showPage('page1');
   }
+
+
+  function diffStateMoreInfo() {
+    var x = document.getElementById('diffStateInfo');
+    x.style.display = document.getElementById('diffState').checked ? 'block' : 'none';
+  }
+
+
+  var radioButtons = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener('change', function() {
+      diffStateMoreInfo();
+    });
+  });
 </script>
