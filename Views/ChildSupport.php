@@ -237,7 +237,7 @@
 
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous3" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="next3" onclick="nextToPage3()">Next Page</button>
+          <button id="next3" onclick="submit()">Next Page</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
