@@ -19,9 +19,9 @@
           <input type="radio" name="childSupport" id="diffState" value="diffState" onclick="diffStateMoreInfo()" />
           <label for="diffState">Child Support Guidelines Amount when Parents Reside in Different States</label>
         </div>
-        <div id="diffStateInfo" style="display: none;">
-          This is the additional information
-
+        <div class="container card p-4" id="diffStateInfo" style="display: none;">
+          Child support shall be paid by Parent A/B to Parent B/A and calculated pursuant to the guidelines for child support in
+          the <input type="text" name="diffState" /> [insert State].
         </div>
         <div>
           <input type="radio" name="childSupport" id="mutuAgreed" value="mutuAgreed" />
