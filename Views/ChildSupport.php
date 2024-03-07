@@ -24,8 +24,17 @@
           the <input type="text" name="diffState" /> [insert State].
         </div>
         <div>
-          <input type="radio" name="childSupport" id="mutuAgreed" value="mutuAgreed" />
+          <input type="radio" name="childSupport" id="mutuAgreed" value="mutuAgreed" onclick="mutuAgreedMoreInfo()" />
           <label for="mutuAgreed">Mutually Agreed Upon Amount Alternative</label>
+        </div>
+        <div class="container card p-4" id="mutuAgreedInfo" style="display: none;">
+          Child Support shall be paid by Parent A/B to
+          Parent B/A by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
+          for a total monthly child support amount of $<input type="number" name="mutual-2" style="width: 100px;" step="0.01" />. Both Parents understand that
+          child support is modifiable going forward and at any time either Parent may request that
+          child support be calculated pursuant to their State guidelines and ordered to be paid
+          pursuant to and Order for Income Withholding (or similar order) via the State Child
+          Support Enforcement Agency.
         </div>
         <div>
           <input type="radio" name="childSupport" id="noAgree" value="noAgree" />
@@ -274,8 +283,8 @@
 
 
   function diffStateMoreInfo() {
-    var x = document.getElementById('diffStateInfo');
-    x.style.display = document.getElementById('diffState').checked ? 'block' : 'none';
+    var a = document.getElementById('diffStateInfo');
+    a.style.display = document.getElementById('diffState').checked ? 'block' : 'none';
   }
 
 
@@ -285,4 +294,19 @@
       diffStateMoreInfo();
     });
   });
+
+
+function mutuAgreedMoreInfo() {
+  var b = document.getElementById('mutuAgreedInfo');
+  b.style.display = document.getElementById('mutuAgreed').checked ? 'block' : 'none';
+}
+
+var radioButtonsY = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  radioButtonsY.forEach(function(radioButton1) {
+    radioButton1.addEventListener('change', function() {
+      mutuAgreedMoreInfo();
+    });
+  });
+
+
 </script>
