@@ -18,7 +18,7 @@
                     </table>
                     <div class="row justify-content-center pt-4 pb-4">
                         <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp;
-                        <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Generate Plan</button>
+                        <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Next Section</button>
                     </div>
 
                     <script>
