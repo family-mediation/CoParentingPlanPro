@@ -99,13 +99,30 @@
         <h4>Uninsured Co-Pays for Health-Related Expenses</h4>
         <h5>Pick only one</h5>
         <div>
-          <input type="radio" name="insurance" id="soleResp" value="soleResp" />
+          <input type="radio" name="insurance" id="soleResp" value="soleResp" onclick="soleMore()" />
           <label for="soleResp">Sole Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="soleInfo" style="display: none;">
+          <select id="parentAB4">
+            <option value="parentA4">Parent A</option>
+            <option value="parentB4">Parent B</option>
+          </select> shall cover 100% of the Child(ren)’s
+          uninsured co-pays for health-related expenses premiums in the amount of <br>$<input type="number" name="sole-1" style="width: 100px;" step="0.01" />/per month.
+        </div>
+
         <div>
           <input type="radio" name="insurance" id="splitResp" value="splitResp" />
           <label for="splitResp">Split Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="splitInfo" style="display: none;">
+          Parent A shall cover <input type="number" name="sole-1" style="width: 100px;" step="0.01" />% and Parent B shall
+          cover ____% of the Child(ren)'s uninsured co-pays for health-related expenses
+          premiums in the amount of $______ per month.
+        </div>
+
+
         <div>
           <input type="radio" name="insurance" id="threshold" value="thresold" />
           <label for="thresold">Responsibility for Threshold Amount</label>
@@ -341,6 +358,18 @@
   radioButtonsB.forEach(function(radioButton3) {
     radioButton3.addEventListener('change', function() {
       noAgreeMore();
+    });
+  });
+
+  function soleMore() {
+    var b = document.getElementById('soleInfo');
+    b.style.display = document.getElementById('soleResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsC = document.querySelectorAll('input[type="radio"][name="insurance"]');
+  radioButtonsC.forEach(function(radioButton4) {
+    radioButton4.addEventListener('change', function() {
+      soleMore();
     });
   });
 </script>
