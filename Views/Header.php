@@ -1,3 +1,6 @@
+<?php
+if(!session_id()) session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -40,9 +43,18 @@
             <ul class="navbar-nav text-center">
 
                 <li class="nav-item"><a class="nav-link" href="./?page=1">Section 1: <br /> Parties </a></li>
-                <li class="nav-item"><a class="nav-link" href="./?page=2"> Section 2: <br /> Children </a></li>
+              <?php
+                  $canSeeChildren = $_SESSION['canSeeChildren'];
+                  console_log("should be false at first");
+                  console_log($_SESSION['canSeeChildren']);
+                if ($canSeeChildren) {
+                    echo '<a href="javascript:void(0);">IT WAS TRUE</a>';
+                } else {
+                    echo '<li class="nav-item"><a class="nav-link" href="./?page=2" aria-disabled="true">Section 2: <br /> FALSE </a></li>';
+                }
+              ?>
                 <li class="nav-item"><a class="nav-link" href="./?page=3"> Section 3: <br /> Legal Custody </a></li>
-                <li class="nav-item"><a class="nav-link" href="./?page=4"> Section 4: <br /> Physical Custody and Timesharing </a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php if(!isset($_SESSION['page'])){$_SESSION['page'] = 25;} else {$_SESSION['page'] = 4;} ?>"> Section 4: <br /> Physical Custody and Timesharing </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=5"> Section 5: <br /> Communication </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=6"> Section 6: <br /> Support of the Child(ren) </a></li>
                 <li class="nav-item"><a class="nav-link" href="./?page=7"> Section 7: <br /> Other Issues </a></li>
