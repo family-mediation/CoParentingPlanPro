@@ -12,34 +12,60 @@
         <br>
         <h4>Pick only one</h4>
         <div>
-          <input type="radio" name="childSupport" id="sameState" value="sameState" />
+          <input type="radio" name="childSupport" id="sameState" value="sameState" onclick="sameStateMoreInfo()" />
           <label for="sameState">Child Support Guidelines Amount when Parents Reside in the Same State</label>
         </div>
-        <div>
-          <input type="radio" name="childSupport" id="diffState" value="diffState" onclick="diffStateMoreInfo()" />
-          <label for="diffState">Child Support Guidelines Amount when Parents Reside in Different States</label>
+
+
+        <div class="container card p-4" id="sameStateInfo" style="display: none;">
+          Child support shall be paid by <select id="parentAB1">
+            <option value="parentA1">Parent A</option>
+            <option value="parentB1">Parent B</option>
+          </select> to <select id="parentAB2">
+            <option value="parentA2">Parent A</option>
+            <option value="parentB2" selected>Parent B</option>
+          </select> and calculated pursuant to the State child support guidelines
+          worksheet.
         </div>
-        <div class="container card p-4" id="diffStateInfo" style="display: none;">
-          Child support shall be paid by Parent A/B to Parent B/A and calculated pursuant to the guidelines for child support in
-          the <input type="text" name="diffState" /> [insert State].
-        </div>
+
         <div>
           <input type="radio" name="childSupport" id="mutuAgreed" value="mutuAgreed" onclick="mutuAgreedMoreInfo()" />
           <label for="mutuAgreed">Mutually Agreed Upon Amount Alternative</label>
         </div>
         <div class="container card p-4" id="mutuAgreedInfo" style="display: none;">
-          Child Support shall be paid by Parent A/B to
-          Parent B/A by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
+          Child Support shall be paid by <select id="parentAB2">
+            <option value="parentA2">Parent A</option>
+            <option value="parentB2">Parent B</option>
+          </select> to
+          <select id="parentAB3">
+            <option value="parentA3">Parent A</option>
+            <option value="parentB3" selected>Parent B</option>
+          </select> by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
           for a total monthly child support amount of $<input type="number" name="mutual-2" style="width: 100px;" step="0.01" />. Both Parents understand that
           child support is modifiable going forward and at any time either Parent may request that
           child support be calculated pursuant to their State guidelines and ordered to be paid
           pursuant to and Order for Income Withholding (or similar order) via the State Child
           Support Enforcement Agency.
         </div>
+
         <div>
-          <input type="radio" name="childSupport" id="noAgree" value="noAgree" />
+          <input type="radio" name="childSupport" id="noAgree" value="noAgree" onclick="noAgreeMore()" />
           <label for="noAgree">No Agreement of the Parents Re Monthly Child Support Amount and/or Jurisdiction</label>
         </div>
+
+        <div class="container card p-4" id="noAgreeInfo" style="display: none;">
+          Parents do not agree on the amount of Child Support to be paid and/or on which State should have
+          jurisdiction to calculate child support under the Uniform Interstate Family Support Act.
+          Parents agree to litigate the issue of child support through the Family Court and/or the
+          State Child Support Enforcement Agency. <b>Note: In many states, physical custody
+            and timesharing with the Child(ren) impacts the calculation of child support. If
+            the child support amount if going to be litigated through the Family Court or
+            administratively through the State Child Support Enforcement Agency, Parents
+            are hereby advised to seek independent legal counsel before making any
+            agreements regarding physical custody and timesharing.</b>
+        </div>
+
+
         <div>
           <input type="radio" name="childSupport" id="alternative" value="alternative" />
           <label for="alternative">Child Support Account Alternative</label>
@@ -282,31 +308,39 @@
   }
 
 
-  function diffStateMoreInfo() {
-    var a = document.getElementById('diffStateInfo');
-    a.style.display = document.getElementById('diffState').checked ? 'block' : 'none';
+  function mutuAgreedMoreInfo() {
+    var b = document.getElementById('mutuAgreedInfo');
+    b.style.display = document.getElementById('mutuAgreed').checked ? 'block' : 'none';
   }
 
-
-  var radioButtons = document.querySelectorAll('input[type="radio"][name="childSupport"]');
-  radioButtons.forEach(function(radioButton) {
-    radioButton.addEventListener('change', function() {
-      diffStateMoreInfo();
-    });
-  });
-
-
-function mutuAgreedMoreInfo() {
-  var b = document.getElementById('mutuAgreedInfo');
-  b.style.display = document.getElementById('mutuAgreed').checked ? 'block' : 'none';
-}
-
-var radioButtonsY = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  var radioButtonsY = document.querySelectorAll('input[type="radio"][name="childSupport"]');
   radioButtonsY.forEach(function(radioButton1) {
     radioButton1.addEventListener('change', function() {
       mutuAgreedMoreInfo();
     });
   });
 
+  function sameStateMoreInfo() {
+    var b = document.getElementById('sameStateInfo');
+    b.style.display = document.getElementById('sameState').checked ? 'block' : 'none';
+  }
 
+  var radioButtonsA = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  radioButtonsA.forEach(function(radioButton2) {
+    radioButton2.addEventListener('change', function() {
+      sameStateMoreInfo();
+    });
+  });
+
+  function noAgreeMore() {
+    var b = document.getElementById('noAgreeInfo');
+    b.style.display = document.getElementById('noAgree').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsB = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  radioButtonsB.forEach(function(radioButton3) {
+    radioButton3.addEventListener('change', function() {
+      noAgreeMore();
+    });
+  });
 </script>
