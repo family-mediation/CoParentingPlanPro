@@ -35,20 +35,73 @@
         <br>
         <h4>Pick only one</h4>
         <div>
-          <input type="radio" name="custody" id="joint" value="joint" />
+          <input type="radio" name="custody" id="joint" value="joint" onclick="jointMoreInfo()" />
           <label for="joint">Joint to both parents</label>
         </div>
-        <div>
-          <input type="radio" name="custody" id="sole" value="sole" />
-          <label for="sole">Sole to one parent</label>
+
+        <div class="container card p-4" id="jointCustody" style="display: none;">
+          <input type="radio" name="tieBreakingAuthority" id="tieBreakA" />
+          <label for="tiebreakA">Tie-Breaking Authority to Parent A</label>
+
+          <br><input type="radio" name="tieBreakingAuthority" id="tieBreakB" />
+          <label for="tieBreakB">Tie-Breaking Authority to Parent A</label>
         </div>
+
         <div>
-          <input type="radio" name="custody" id="tieBreaking" value="tieBreaking" />
-          <label for="tieBreaking">Parents must consult but one parent has tie-breaking authority</label>
+          <input type="radio" name="custody" id="soleA" value="soleA" onclick="soleMoreInfoA()" />
+          <label for="soleA">Sole to Parent A</label>
         </div>
+
+        <div class="container card p-4" id="soleMoreA" style="display: none;">
+          Although Parent A is awarded sole legal custody, Parent B
+          shall have free and unrestricted access to all information pertaining to the Child(ren).
+          The Parent who does not have legal custody may independently contact any provider
+          serving the Child(ren) including education, health-related, extracurricular, etc. and
+          access any and all records or information. The Parent with legal custody shall have an
+          affirmative duty to inform the other Parent of any new providers working with the
+          Child(ren).
+        </div>
+
         <div>
-          <input type="radio" name="custody" id="divisionAuth" value="divisionAuth" />
+          <input type="radio" name="custody" id="soleB" value="soleB" onclick="soleMoreInfoB()" />
+          <label for="soleB">Sole to Parent B</label>
+        </div>
+
+        <div class="container card p-4" id="soleMoreB" style="display: none;">
+          Although Parent B is awarded sole legal custody, Parent A
+          shall have free and unrestricted access to all information pertaining to the Child(ren).
+          The Parent who does not have legal custody may independently contact any provider
+          serving the Child(ren) including education, health-related, extracurricular, etc. and
+          access any and all records or information. The Parent with legal custody shall have an
+          affirmative duty to inform the other Parent of any new providers working with the
+          Child(ren).
+        </div>
+
+        <div>
+          <input type="radio" name="custody" id="divisionAuth" value="divisionAuth" onclick="divAutInfo()" />
           <label for="divisionAuth">Parents must consult but there is a division of authority</label>
+        </div>
+
+        <div class="container card p-4" id="AutMoreInfo" style="display: none;">
+          Parents shall share joint legal custody of the Child(ren), provided
+          however, that if Parents cannot mutually agree on a legal custody decision for the
+          Child(ren), then <select id="parentAB">
+            <option value="parentA">Parent A</option>
+            <option value="parentB">Parent B</option>
+          </select> shall have tie-breaking authority to make major decisions
+          about the Child(ren)'s education and extracurricular activities, after consulting with
+          <select id="parentAB">
+            <option value="parentA">Parent A</option>
+            <option value="parentB">Parent B</option>
+          </select> and the Child(ren) and <select id="parentAB">
+            <option value="parentA">Parent A</option>
+            <option value="parentB">Parent B</option>
+          </select> shall have tie-breaking authority to make
+          major decisions about the Child(ren)'s health care, language, and spirituality, after
+          consulting with <select id="parentAB">
+            <option value="parentA">Parent A</option>
+            <option value="parentB">Parent B</option>
+          </select> and the child.
         </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -129,4 +182,53 @@
   function previousHandler() {
     showPage('page1');
   }
+
+
+  function jointMoreInfo() {
+    var a = document.getElementById('jointCustody');
+    a.style.display = document.getElementById('joint').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsW = document.querySelectorAll('input[type="radio"][name="custody"]');
+  radioButtonsW.forEach(function(radioButton1) {
+    radioButton1.addEventListener('change', function() {
+      jointMoreInfo();
+    });
+  });
+
+  function soleMoreInfoA() {
+    var b = document.getElementById('soleMoreA');
+    b.style.display = document.getElementById('soleA').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsX = document.querySelectorAll('input[type="radio"][name="custody"]');
+  radioButtonsX.forEach(function(radioButton2) {
+    radioButton2.addEventListener('change', function() {
+      soleMoreInfoA();
+    });
+  });
+
+  function soleMoreInfoB() {
+    var c = document.getElementById('soleMoreB');
+    c.style.display = document.getElementById('soleB').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsY = document.querySelectorAll('input[type="radio"][name="custody"]');
+  radioButtonsY.forEach(function(radioButton3) {
+    radioButton3.addEventListener('change', function() {
+      soleMoreInfoB();
+    });
+  });
+
+  function divAutInfo() {
+    var d = document.getElementById('AutMoreInfo');
+    d.style.display = document.getElementById('divisionAuth').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsZ = document.querySelectorAll('input[type="radio"][name="custody"]');
+  radioButtonsZ.forEach(function(radioButton4) {
+    radioButton4.addEventListener('change', function() {
+      divAutInfo();
+    });
+  });
 </script>
