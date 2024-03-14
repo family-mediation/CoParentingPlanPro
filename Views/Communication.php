@@ -50,8 +50,8 @@
       <div id="page2" class="container card p-4" style="display: none;">
           <fieldset>
             <h1>Optional:</h1>
-            <div>
-              <p>Communication Between Co-Parents:</p>
+              <br>
+              <h4>Communication Between Co-Parents:</h4>
               <div>
               <input type="checkbox" id="7.04" name="communication" />
               <label for="7.04">Monthly Conference</label>
@@ -59,17 +59,16 @@
 
               <div>
               <input type="checkbox" id="7.05" name="communication" />
-              <lable for="7.04">Semi Annual Conference</lable>
+              <lable for="7.05">Semi Annual Conference</lable>
               </div>
 
               <div>
               <input type="checkbox" id="7.06" name="communication" />
-              <lable for="7.04">Annual Conference</lable>
-              </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </div>
-          
-            <div>
-              <p>Communication Between Child(ren) and Non-Custodial Parent:</p>
+              <lable for="7.06">Annual Conference</lable>
+              </div>
+              </br>&nbsp;
+              
+              <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
               <input type="checkbox" id="7.07" name="communication" />
               <label for="7.07">Unlimited</label>
@@ -79,10 +78,9 @@
               <input type="checkbox" id="7.08" name="communication" />
               <label for="7.08">Specific</label>
             </div>
-            </div>&nbsp;&nbsp;
 
-            <div>
-              <p>Communication:</p>
+              <br>
+              <h4>Communication:</h4>
               <div>
               <input type="checkbox" id="7.09" name="communication" />
               <label for="7.09">Exchange of Contact Information</label>
@@ -97,7 +95,7 @@
               <input type="checkbox" id="7.11" name="communication" />
               <label for="7.11">Selecting Extracurricular Activities for the Child(ren)</label>
               </div>
-            </div>      
+              </br>
           </fieldset>
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
