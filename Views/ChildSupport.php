@@ -112,28 +112,20 @@
         </div>
 
         <div>
-          <input type="radio" name="insurance" id="splitResp" value="splitResp" />
+          <input type="radio" name="insurance" id="splitResp" value="splitResp" onclick="splitMore()" />
           <label for="splitResp">Split Responsibility</label>
         </div>
 
         <div class="container card p-4" id="splitInfo" style="display: none;">
-          Parent A shall cover <input type="number" name="sole-1" style="width: 100px;" step="0.01" />% and Parent B shall
-          cover ____% of the Child(ren)'s uninsured co-pays for health-related expenses
-          premiums in the amount of $______ per month.
+          Parent A shall cover <input type="number" name="split-1" id="split-1" style="width: 100px;" step="0.01" oninput="updateSplit2()" />% and Parent B shall
+          cover <input type="number" name="split-2" id="split-2" style="width: 100px;" step="0.01" />% of the Child(ren)'s uninsured co-pays for health-related expenses
+          premiums in the amount of $<input type="number" name="split-3" style="width: 100px;" step="0.01" /> per month.
         </div>
 
 
         <div>
           <input type="radio" name="insurance" id="threshold" value="thresold" />
           <label for="thresold">Responsibility for Threshold Amount</label>
-        </div>
-        <div>
-          <input type="radio" name="insurance" id="recommend" value="recommend" />
-          <label for="recommend">Definition of Uninsured Health-Related Expenses: Recommended by Providers</label>
-        </div>
-        <div>
-          <input type="radio" name="insurance" id="mutual" value="mutual" />
-          <label for="mutual">Definition of Uninsured Health-Related Expenses: Mutual Agreement of the Parents</label>
         </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -372,4 +364,26 @@
       soleMore();
     });
   });
+
+  function splitMore() {
+    var b = document.getElementById('splitInfo');
+    b.style.display = document.getElementById('splitResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsD = document.querySelectorAll('input[type="radio"][name="insurance"]');
+  radioButtonsD.forEach(function(radioButton5) {
+    radioButton5.addEventListener('change', function() {
+      splitMore();
+    });
+  });
+
+  function updateSplit2() {
+    const split1Input = document.getElementById("split-1");
+    const split2Input = document.getElementById("split-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value.toFixed(2);
+  }
 </script>
