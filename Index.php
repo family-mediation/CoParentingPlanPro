@@ -48,7 +48,7 @@ switch($page)
 {
     case 1:
         //values that determine if a nav item can be clicked on
-        require("views/Header.php");
+        require_once("views/Header.php");
         require_once("views/Parties.php");
         break;
     case 2:
