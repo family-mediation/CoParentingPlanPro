@@ -174,36 +174,91 @@
         </div>
 
         <div>
-          <input type="radio" name="extraCurr" id="pursuant" value="pursuant" />
+          <input type="radio" name="extraCurr" id="pursuant" value="pursuant" onclick="pursuantECMore()" />
           <label for="pursuant">Selecting Extracurricular Activities for the Child(ren) Pursuant to 7.10 Hereinabove</label>
         </div>
+
+        <div class="container card p-4" id="pursuantECInfo" style="display: none;">
+          If the Parents have elected to separately select
+          and pay for one extra-curricular activity that occurs no more than once a week for each
+          Child, then the other Parent shall be expected to take each Child to that activity and
+          support the Child's participation during the time that the Child is in their care, pursuant
+          to Paragraph 7.10 hereinabove. Each Parent shall pay for 100% of their selected
+          extracurricular activity, which shall include supplies, uniforms, travel out-of-state, and
+          other expenses required for the Child to participate.
+        </div>
+
         <div>
-          <input type="radio" name="extraCurr" id="mutuallyExtra" value="mutuallyExtra" />
+          <input type="radio" name="extraCurr" id="mutuallyExtra" value="mutuallyExtra" onclick="mutuallyExtraMore()" />
           <label for="mutuallyExtra">Extracurricular Activities Must Be Mutually Agreed Upon</label>
+        </div>
+
+        <div class="container card p-4" id="mutuallyExtraInfo" style="display: none;">
+          Parents shall only be responsible for paying for extracurricular activities that
+          are mutually agreed upon by both Parents. Parents agree to consult and be guided by
+          the Child's preferences in selecting mutually agreed upon extracurricular activities.
         </div>
 
         <br>
         <h4>Private School Expenses</h4>
         <h5>Pick only one</h5>
         <div>
-          <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" />
+          <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
           <label for="extraSoleResp">Sole Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="solePrivateInfo" style="display: none;">
+          <select id="parentAB_Priv">
+            <option value="parentA_Priv">Parent A</option>
+            <option value="parentB_Priv">Parent B</option>
+          </select> shall cover 100% of the Child(ren)'s private school expenses.
+        </div>
+
+        <div class="container card p-4" id="soleECInfo" style="display: none;">
+          <select id="parentAB_EC">
+            <option value="parentA_EC">Parent A</option>
+            <option value="parentB_EC">Parent B</option>
+          </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
+        </div>
+
         <div>
-          <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" />
+          <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" onclick="privSplitMore()" />
           <label for="extraSplitResp">Split Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="splitPrivInfo" style="display: none;">
+          Parent A shall cover <input type="number" name="splitPriv-1" id="splitPriv-1" style="width: 100px;" step="0.01" oninput="updateSplitPriv2()" />% and Parent B shall
+          cover <input type="number" name="splitPriv-2" id="splitPriv-2" style="width: 100px;" step="0.01" oninput="updateSplitPriv1()" />% of the Child(ren)'s private school expenses.
+        </div>
+
         <div>
-          <input type="radio" name="privateSchool" id="defPrivateSchool" value="defPrivateSchool" />
+          <input type="radio" name="privateSchool" id="defPrivateSchool" value="defPrivateSchool" onclick="privSchoolDefMore()" />
           <label for="defPrivateSchool">Definition of Private School Expenses</label>
         </div>
+
+        <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
+          Private school expenses shall be defined to include all expenses related to a Child's attendance at a
+          private school including, without limitation, application fees/costs, tuition, books,
+          uniforms, school lunches, and before and/or after school care expenses.
+        </div>
+
         <div>
-          <input type="radio" name="privateSchool" id="privateSchoolMutual" value="privateSchoolMutual" />
+          <input type="radio" name="privateSchool" id="privateSchoolMutual" value="privateSchoolMutual" onclick="privSchoolMutMore()" />
           <label for="privateSchoolMutual">Mutual Agreement of Parents</label>
         </div>
+
+        <div class="container card p-4" id="mutPrivSchoolInfo" style="display: none;">
+          Either Parent may apply for a Child to attend private school but unless one parent has sole legal custody, both
+          Parents must approve the enrollment of any Child in a private school.
+        </div>
+
         <div>
-          <input type="radio" name="privateSchool" id="privateReserve" value="privateReserve" />
+          <input type="radio" name="privateSchool" id="privateReserve" value="privateReserve" onclick="privReserveMore()" />
           <label for="privateReserve">Reserve</label>
+        </div>
+
+        <div class="container card p-4" id="privReserveInfo" style="display: none;">
+          Parents shall reserve the issue of private school expenses.
         </div>
 
         <br>
@@ -436,6 +491,91 @@
     });
   });
 
+  function pursuantECMore() {
+    var b = document.getElementById('pursuantECInfo');
+    b.style.display = document.getElementById('pursuant').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsH = document.querySelectorAll('input[type="radio"][name="extraCurr"]');
+  radioButtonsH.forEach(function(radioButton9) {
+    radioButton9.addEventListener('change', function() {
+      pursuantECMore();
+    });
+  });
+
+  function mutuallyExtraMore() {
+    var b = document.getElementById('mutuallyExtraInfo');
+    b.style.display = document.getElementById('mutuallyExtra').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsI = document.querySelectorAll('input[type="radio"][name="extraCurr"]');
+  radioButtonsI.forEach(function(radioButton10) {
+    radioButton10.addEventListener('change', function() {
+      mutuallyExtraMore();
+    });
+  });
+
+  function privateSoleMore() {
+    var b = document.getElementById('solePrivateInfo');
+    b.style.display = document.getElementById('privateSoleResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsJ = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
+  radioButtonsJ.forEach(function(radioButton11) {
+    radioButton11.addEventListener('change', function() {
+      privateSoleMore();
+    });
+  });
+
+  function privSplitMore() {
+    var b = document.getElementById('splitPrivInfo');
+    b.style.display = document.getElementById('privateSplitResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsK = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
+  radioButtonsK.forEach(function(radioButton12) {
+    radioButton12.addEventListener('change', function() {
+      privSplitMore();
+    });
+  });
+
+  function privSchoolDefMore() {
+    var b = document.getElementById('defPrivSchoolInfo');
+    b.style.display = document.getElementById('defPrivateSchool').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsL = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
+  radioButtonsL.forEach(function(radioButton13) {
+    radioButton13.addEventListener('change', function() {
+      privSchoolDefMore();
+    });
+  });
+
+
+  function privSchoolMutMore() {
+    var b = document.getElementById('mutPrivSchoolInfo');
+    b.style.display = document.getElementById('privateSchoolMutual').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsM = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
+  radioButtonsM.forEach(function(radioButton14) {
+    radioButton14.addEventListener('change', function() {
+      privSchoolMutMore();
+    });
+  });
+
+  function privReserveMore() {
+    var b = document.getElementById('privReserveInfo');
+    b.style.display = document.getElementById('privateReserve').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsN = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
+  radioButtonsN.forEach(function(radioButton15) {
+    radioButton15.addEventListener('change', function() {
+      privReserveMore();
+    });
+  });
+
   // for updating Uninsured Co-Pays for Health-Related Expenses -> Spilt Responsibility
   function updateSplit2() {
     const split1Input = document.getElementById("split-1");
@@ -497,4 +637,23 @@
     split1Input.value = split1Value //.toFixed(2);
   }
 
+  function updateSplitPriv2() {
+    const split1Input = document.getElementById("splitPriv-1");
+    const split2Input = document.getElementById("splitPriv-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value //.toFixed(2);
+  }
+
+  function updateSplitPriv1() {
+    const split1Input = document.getElementById("splitPriv-1");
+    const split2Input = document.getElementById("splitPriv-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value //.toFixed(2);
+  }
 </script>
