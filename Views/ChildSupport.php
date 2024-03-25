@@ -118,14 +118,23 @@
 
         <div class="container card p-4" id="splitInfo" style="display: none;">
           Parent A shall cover <input type="number" name="split-1" id="split-1" style="width: 100px;" step="0.01" oninput="updateSplit2()" />% and Parent B shall
-          cover <input type="number" name="split-2" id="split-2" style="width: 100px;" step="0.01" />% of the Child(ren)'s uninsured co-pays for health-related expenses
+          cover <input type="number" name="split-2" id="split-2" style="width: 100px;" step="0.01" oninput="updateSplit1()" />% of the Child(ren)'s uninsured co-pays for health-related expenses
           premiums in the amount of $<input type="number" name="split-3" style="width: 100px;" step="0.01" /> per month.
         </div>
 
-
         <div>
-          <input type="radio" name="insurance" id="threshold" value="thresold" />
+          <input type="radio" name="insurance" id="threshold" value="threshold" onclick="thresholdMore()" />
           <label for="thresold">Responsibility for Threshold Amount</label>
+        </div>
+
+        <div class="container card p-4" id="thresholdInfo" style="display: none;">
+          Each Parent shall cover
+          up to $<input type="number" name="threshold1" style="width: 100px;" step="0.01" /> per Child per calendar year in uninsured co-pays for health-related
+          expenses. In the event that any Child's uninsured co-pays for health-related expenses
+          paid by either parent exceeds $<input type="number" name="threshold2" style="width: 100px;" step="0.01" />per calendar year, then Parent A shall cover
+          <input type="number" name="threshold3" id="threshold3" style="width: 100px;" step="0.01" oninput="updateThreshold4()" />% and
+          Parent B shall cover <input type="number" name="threshold4" id="threshold4" style="width: 100px;" step="0.01" oninput="updateThreshold3()" />% of
+          the Child(ren)'s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.
         </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -143,13 +152,27 @@
         <h4>Extracurricular Expenses</h4>
         <h5>Pick only one</h5>
         <div>
-          <input type="radio" name="extraCurr" id="extraSoleResp" value="extraSoleResp" />
+          <input type="radio" name="extraCurr" id="extraSoleResp" value="extraSoleResp" onclick="soleECMore()" />
           <label for="extraSoleResp">Sole Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="soleECInfo" style="display: none;">
+          <select id="parentAB_EC">
+            <option value="parentA_EC">Parent A</option>
+            <option value="parentB_EC">Parent B</option>
+          </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
+        </div>
+
         <div>
-          <input type="radio" name="extraCurr" id="extraSplitResp" value="extraSplitResp" />
+          <input type="radio" name="extraCurr" id="extraSplitResp" value="extraSplitResp" onclick="splitECMore()" />
           <label for="extraSplitResp">Split Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="splitECInfo" style="display: none;">
+          Parent A shall cover <input type="number" name="splitEC-1" id="splitEC-1" style="width: 100px;" step="0.01" oninput="updateSplitEC2()" />% and Parent B shall
+          cover <input type="number" name="splitEC-2" id="splitEC-2" style="width: 100px;" step="0.01" oninput="updateSplitEC1()" />% of the Child(ren)'s extracurricular expenses.
+        </div>
+
         <div>
           <input type="radio" name="extraCurr" id="pursuant" value="pursuant" />
           <label for="pursuant">Selecting Extracurricular Activities for the Child(ren) Pursuant to 7.10 Hereinabove</label>
@@ -377,6 +400,43 @@
     });
   });
 
+  function thresholdMore() {
+    var b = document.getElementById('thresholdInfo');
+    b.style.display = document.getElementById('threshold').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsE = document.querySelectorAll('input[type="radio"][name="insurance"]');
+  radioButtonsE.forEach(function(radioButton6) {
+    radioButton6.addEventListener('change', function() {
+      thresholdMore();
+    });
+  });
+
+  function soleECMore() {
+    var b = document.getElementById('soleECInfo');
+    b.style.display = document.getElementById('extraSoleResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsF = document.querySelectorAll('input[type="radio"][name="extraCurr"]');
+  radioButtonsF.forEach(function(radioButton7) {
+    radioButton7.addEventListener('change', function() {
+      soleECMore();
+    });
+  });
+
+  function splitECMore() {
+    var b = document.getElementById('splitECInfo');
+    b.style.display = document.getElementById('extraSplitResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsG = document.querySelectorAll('input[type="radio"][name="extraCurr"]');
+  radioButtonsG.forEach(function(radioButton8) {
+    radioButton8.addEventListener('change', function() {
+      splitECMore();
+    });
+  });
+
+  // for updating Uninsured Co-Pays for Health-Related Expenses -> Spilt Responsibility
   function updateSplit2() {
     const split1Input = document.getElementById("split-1");
     const split2Input = document.getElementById("split-2");
@@ -384,6 +444,57 @@
     const split1Value = parseFloat(split1Input.value);
     const split2Value = 100 - split1Value;
 
-    split2Input.value = split2Value.toFixed(2);
+    split2Input.value = split2Value //.toFixed(2);
   }
+
+  function updateSplit1() {
+    const split1Input = document.getElementById("split-1");
+    const split2Input = document.getElementById("split-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value //.toFixed(2);
+  }
+
+  function updateThreshold4() {
+    const x = document.getElementById("threshold3");
+    const y = document.getElementById("threshold4");
+
+    const a = parseFloat(x.value);
+    const b = 100 - a;
+
+    y.value = b
+  }
+
+  function updateThreshold3() {
+    const x = document.getElementById("threshold3");
+    const y = document.getElementById("threshold4");
+
+    const a = parseFloat(y.value);
+    const b = 100 - a;
+
+    x.value = b
+  }
+
+  function updateSplitEC2() {
+    const split1Input = document.getElementById("splitEC-1");
+    const split2Input = document.getElementById("splitEC-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value //.toFixed(2);
+  }
+
+  function updateSplitEC1() {
+    const split1Input = document.getElementById("splitEC-1");
+    const split2Input = document.getElementById("splitEC-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value //.toFixed(2);
+  }
+
 </script>
