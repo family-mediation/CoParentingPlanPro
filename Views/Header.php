@@ -1,6 +1,3 @@
-<?php
-if(!session_id()) session_start();
-?>
 <!doctype html>
 <html lang="en">
 
@@ -42,43 +39,43 @@ if(!session_id()) session_start();
 
             <ul class="navbar-nav text-center">
 
-                <li class="nav-item"><a class="nav-link" href="./?page=1">Section 1: <br /> Parties </a></li>
+                <li class="nav-item"><a class="nav-link active-link" href="./?page=1">Section 1: <br /> Parties </a></li>
               <?php
                 if ($_SESSION['canSeeChildren']) {
-                  echo '<li class="nav-item"><a class="nav-link" href="./?page=2" aria-disabled="true">Section 2: <br /> Children </a></li>';
+                  echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=2" aria-disabled="true">Section 2: <br /> Children </a></li>';
                 } else {
                     echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 2: <br /> Children </a></li>';
                 }
                 if ($_SESSION['canSeeCustody']) {
-                    echo '<li class="nav-item"><a class="nav-link" href="./?page=3" aria-disabled="true">Section 3: <br /> Legal Custody </a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=3" aria-disabled="true">Section 3: <br /> Legal Custody </a></li>';
                 } else {
                     echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 3: <br /> Legal Custody </a></li>';
                 }
                 if ($_SESSION['canSeeTimesharing']) {
-                    echo '<li class="nav-item"><a class="nav-link" href="./?page=4" aria-disabled="true">Section 4: <br /> Physical Custody and Timesharing </a></li>';
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=4" aria-disabled="true">Section 4: <br /> Physical Custody and Timesharing </a></li>';
                 } else {
                     echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 4: <br /> Physical Custody and Timesharing </a></li>';
                 }
-              if ($_SESSION['canSeeCommunication']) {
-                  echo '<li class="nav-item"><a class="nav-link" href="./?page=5" aria-disabled="true">Section 5: <br /> Communication </a></li>';
-              } else {
-                  echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 5: <br /> Communication </a></li>';
-              }
-              if ($_SESSION['canSeeSupport']) {
-                  echo '<li class="nav-item"><a class="nav-link" href="./?page=6" aria-disabled="true">Section 6: <br /> Support of the Child(ren) </a></li>';
-              } else {
-                  echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 6: <br /> Support of the Child(ren) </a></li>';
-              }
-              if ($_SESSION['canSeeIssues']) {
-                  echo '<li class="nav-item"><a class="nav-link" href="./?page=7" aria-disabled="true">Section 7: <br /> Other Issues </a></li>';
-              } else {
-                  echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 7: <br /> Other Issues </a></li>';
-              }
-              if ($_SESSION['canSeeLegal']) {
-                  echo '<li class="nav-item"><a class="nav-link" href="./?page=8" aria-disabled="true">Section 8: <br /> Legal </a></li>';
-              } else {
-                  echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 8: <br /> Legal </a></li>';
-              }
+                if ($_SESSION['canSeeCommunication']) {
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=5" aria-disabled="true">Section 5: <br /> Communication </a></li>';
+                } else {
+                    echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 5: <br /> Communication </a></li>';
+                }
+                if ($_SESSION['canSeeSupport']) {
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=6" aria-disabled="true">Section 6: <br /> Support of the Child(ren) </a></li>';
+                } else {
+                    echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 6: <br /> Support of the Child(ren) </a></li>';
+                }
+                if ($_SESSION['canSeeIssues']) {
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=7" aria-disabled="true">Section 7: <br /> Other Issues </a></li>';
+                } else {
+                    echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 7: <br /> Other Issues </a></li>';
+                }
+                if ($_SESSION['canSeeLegal']) {
+                    echo '<li class="nav-item"><a class="nav-link active-link" href="./?page=8" aria-disabled="true">Section 8: <br /> Legal </a></li>';
+                } else {
+                    echo '<li class="nav-item"><a class="nav-link" aria-disabled="true">Section 8: <br /> Legal </a></li>';
+                }
               ?>
             </ul>
         </nav>

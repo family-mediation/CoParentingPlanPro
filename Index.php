@@ -7,6 +7,7 @@ if(isset($_POST)) {
     $_SESSION['responses'] = array_replace($_SESSION['responses'], $_POST);
 }
 require_once("MysqlUtil.php");
+//delete this later: use for convenience
 function console_log($output, $with_script_tags = true)
 {
     $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
@@ -16,10 +17,11 @@ function console_log($output, $with_script_tags = true)
     }
     echo $js_code;
 }
-if(isset($_SESSION['canSeeParties'])) {
+//initialize session variables
+if(!isset($_SESSION['canSeeParties'])) {
     $_SESSION['canSeeParties'] = true;
 }
-if(isset($_SESSION['canSeeChildren'])) {
+if(!isset($_SESSION['canSeeChildren'])) {
     $_SESSION['canSeeChildren'] = false;
 }
 if(!isset($_SESSION['canSeeCustody'])) {
@@ -43,16 +45,14 @@ if(!isset($_SESSION['canSeeLegal'])) {
 // create an object that will serve as our database.
 $db = new Database;
 $page = $_GET['page'] ?? 1;
-console_log($page);
 switch($page)
 {
     case 1:
         //values that determine if a nav item can be clicked on
-        require_once("views/Header.php");
+        require("views/Header.php");
         require_once("views/Parties.php");
         break;
     case 2:
-        $_SESSION['canSeeParties'] = true;
         require("views/Header.php");
         require_once("views/Children.php");
         break;
