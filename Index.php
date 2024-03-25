@@ -16,48 +16,74 @@ function console_log($output, $with_script_tags = true)
     }
     echo $js_code;
 }
-
+if(isset($_SESSION['canSeeParties'])) {
+    $_SESSION['canSeeParties'] = true;
+}
 if(isset($_SESSION['canSeeChildren'])) {
     $_SESSION['canSeeChildren'] = false;
-    console_log('settign false');
 }
-    console_log($_SESSION);
+if(!isset($_SESSION['canSeeCustody'])) {
+    $_SESSION['canSeeCustody'] = false;
+}
+if(!isset($_SESSION['canSeeTimesharing'])) {
+    $_SESSION['canSeeTimesharing'] = false;
+}
+if(!isset($_SESSION['canSeeCommunication'])) {
+    $_SESSION['canSeeCommunication'] = false;
+}
+if(!isset($_SESSION['canSeeSupport'])) {
+    $_SESSION['canSeeSupport'] = false;
+}
+if(!isset($_SESSION['canSeeIssues'])) {
+    $_SESSION['canSeeIssues'] = false;
+}
+if(!isset($_SESSION['canSeeLegal'])) {
+    $_SESSION['canSeeLegal'] = false;
+}
 // create an object that will serve as our database.
 $db = new Database;
-$_SESSION['page'] = isset($_GET['page']) ?$_GET['page'] : 1 ;
-if(isset($_SESSION['page'])){
-    $_SESSION['page'] = 1;
-}
-console_log($_SESSION['page']);
-require_once("views/Header.php");
-switch($_SESSION['page'])
+$page = $_GET['page'] ?? 1;
+console_log($page);
+switch($page)
 {
     case 1:
+        //values that determine if a nav item can be clicked on
+        require("views/Header.php");
         require_once("views/Parties.php");
         break;
     case 2:
+        $_SESSION['canSeeParties'] = true;
+        require("views/Header.php");
         require_once("views/Children.php");
         break;
     case 3:
+        $_SESSION['canSeeChildren'] = true;
+        require("views/Header.php");
         require_once("views/Custody.php");
         break;
     case 4:
+        $_SESSION['canSeeCustody'] = true;
+        require("views/Header.php");
         require_once("views/Timesharing.php");
-        //values that determine if a nav item can be clicked on
-        $_SESSION['canSeeChildren'] = true;
-        console_log("setting true in index");
-        console_log($_SESSION);
         break;
     case 5:
+        $_SESSION['canSeeTimesharing'] = true;
+        require("views/Header.php");
         require_once("views/Communication.php");
         break;
     case 6:
+        $_SESSION['canSeeCommunication'] = true;
+        require("views/Header.php");
         require_once("views/ChildSupport.php");
         break;
     case 7:
+        $_SESSION['canSeeSupport'] = true;
+        require("views/Header.php");
         require_once("views/Other.php");
         break;
     case 8:
+        $_SESSION['canSeeIssues'] = true;
+        require("views/Header.php");
         require_once("views/Legal.php");
         break;
     case 9:
