@@ -72,7 +72,7 @@
         </div>
 
         <br>
-        <h4>Payment: pick only one</h4>
+        <h4>Payment</h4>
         <div>
           <input type="radio" name="payment" id="directPay" value="directPay" />
           <label for="directPay">Direct Payment of the Child Support</label>
@@ -146,11 +146,13 @@
 
       </div>
 
-      <div id="page2" class="container card p-4" style="display: none;">
+      <div id="page2" class="container card pt-4" style="display: none;">
         <h1>Child Support</h1>
         <br>
-        <h4>Extracurricular Expenses</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Extracurricular Expenses</h4>
+        </div><br>
+        <!-- <hr><h4>Extracurricular Expenses</h4><hr> -->
         <div>
           <input type="radio" name="extraCurr" id="extraSoleResp" value="extraSoleResp" onclick="soleECMore()" />
           <label for="extraSoleResp">Sole Responsibility</label>
@@ -200,8 +202,10 @@
         </div>
 
         <br>
-        <h4>Private School Expenses</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Private School Expenses</h4>
+        </div><br>
+        <!-- <hr><h4>Private School Expenses</h4><hr> -->
         <div>
           <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
           <label for="extraSoleResp">Sole Responsibility</label>
@@ -262,23 +266,53 @@
         </div>
 
         <br>
-        <h4>Post-High School Expenses</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Post-High School Expenses</h4>
+        </div><br>
+        <!-- <hr><h4>Post-High School Expenses</h4><hr> -->
         <div>
-          <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" />
+          <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" onclick="postSoleRespMore()" />
           <label for="postSoleResp">Sole Responsibility</label>
         </div>
+
+        <div class="container card p-4" id="soleHighInfo" style="display: none;">
+          <select id="parentAB_High">
+            <option value="parentA_High">Parent A</option>
+            <option value="parentB_High">Parent B</option>
+          </select> shall cover 100% of the Child(ren)'s post-high school education expenses.
+        </div>
+
         <div>
-          <input type="radio" name="postHigh" id="postSplitResp" value="postSplitResp" />
+          <input type="radio" name="postHigh" id="postSplitResp" value="postSplitResp" onclick="postSplitRespMore()" />
           <label for="postSplitResp">Split Responsibility</label>
         </div>
-        <div>
-          <input type="radio" name="postHigh" id="postSole529" value="postSole529" />
-          <label for="postSole529">Sole Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of Other Funds</label>
+
+        <div class="container card p-4" id="splitHighInfo" style="display: none;">
+          Parent A shall cover <input type="number" name="splitHigh-1" id="splitHigh-1" style="width: 100px;" step="0.01" oninput="updateSplitHigh2()" />% and Parent B shall
+          cover <input type="number" name="splitHigh-2" id="splitHigh-2" style="width: 100px;" step="0.01" oninput="updateSplitHigh1()" />% of the Child(ren)'s post-high school education expenses.
         </div>
-        <div style="display: flex; align-items: center;">
-          <input type="radio" name="postHigh" id="postSplit529" value="postSplit529" style="margin-right: 10px;" />
-          <label for="postSplit529">Split Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child’s Post-High School Education Expenses</label>
+
+        <div>
+          <input type="radio" name="postHigh" id="postSole529" value="postSole529" onclick="postSole529More()" />
+          <label for="postSole529">Sole Responsibility After Funds from Any 529 Accounts</label>
+        </div>
+
+        <div class="container card p-4" id="postSole529Info" style="display: none;">
+          <u>SOLE RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS
+            HELD ON BEHALF OF A CHILD OR CHILD(REN), COVERDELL ACCOUNTS OR
+            OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL
+            EDUCATION EXPENSES</u>. After funds from any 529 accounts held on behalf of a Child
+          or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-
+          high school education expenses are expended, then <select id="parentAB_Sole529">
+            <option value="parentA_Sole529">Parent A</option>
+            <option value="parentB_Sole529">Parent B</option>
+          </select> shall cover 100% of
+          the Child(ren)’s remaining post-high school education expenses.
+        </div>
+
+        <div>
+          <input type="radio" name="postHigh" id="postSplit529" value="postSplit529" />
+          <label for="postSplit529">Split Responsibility After Funds from Any 529 Accounts</label>
         </div>
         <div>
           <input type="radio" name="postHigh" id="postCap" value="postCap" />
@@ -576,6 +610,42 @@
     });
   });
 
+  function postSoleRespMore() {
+    var b = document.getElementById('soleHighInfo');
+    b.style.display = document.getElementById('postSoleResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsO = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsO.forEach(function(radioButton16) {
+    radioButton16.addEventListener('change', function() {
+      postSoleRespMore();
+    });
+  });
+
+  function postSplitRespMore() {
+    var b = document.getElementById('splitHighInfo');
+    b.style.display = document.getElementById('postSplitResp').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsP = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsP.forEach(function(radioButton17) {
+    radioButton17.addEventListener('change', function() {
+      postSplitRespMore();
+    });
+  });
+
+  function postSole529More() {
+    var b = document.getElementById('postSole529Info');
+    b.style.display = document.getElementById('postSole529').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsQ = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsQ.forEach(function(radioButton18) {
+    radioButton18.addEventListener('change', function() {
+      postSole529More();
+    });
+  });
+
   // for updating Uninsured Co-Pays for Health-Related Expenses -> Spilt Responsibility
   function updateSplit2() {
     const split1Input = document.getElementById("split-1");
@@ -594,7 +664,7 @@
     const split2Value = parseFloat(split2Input.value);
     const split1Value = 100 - split2Value;
 
-    split1Input.value = split1Value //.toFixed(2);
+    split1Input.value = split1Value
   }
 
   function updateThreshold4() {
@@ -624,7 +694,7 @@
     const split1Value = parseFloat(split1Input.value);
     const split2Value = 100 - split1Value;
 
-    split2Input.value = split2Value //.toFixed(2);
+    split2Input.value = split2Value
   }
 
   function updateSplitEC1() {
@@ -634,7 +704,7 @@
     const split2Value = parseFloat(split2Input.value);
     const split1Value = 100 - split2Value;
 
-    split1Input.value = split1Value //.toFixed(2);
+    split1Input.value = split1Value
   }
 
   function updateSplitPriv2() {
@@ -644,7 +714,7 @@
     const split1Value = parseFloat(split1Input.value);
     const split2Value = 100 - split1Value;
 
-    split2Input.value = split2Value //.toFixed(2);
+    split2Input.value = split2Value
   }
 
   function updateSplitPriv1() {
@@ -654,6 +724,26 @@
     const split2Value = parseFloat(split2Input.value);
     const split1Value = 100 - split2Value;
 
-    split1Input.value = split1Value //.toFixed(2);
+    split1Input.value = split1Value
+  }
+
+  function updateSplitHigh2() {
+    const split1Input = document.getElementById("splitHigh-1");
+    const split2Input = document.getElementById("splitHigh-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value
+  }
+
+  function updateSplitHigh1() {
+    const split1Input = document.getElementById("splitHigh-1");
+    const split2Input = document.getElementById("splitHigh-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value
   }
 </script>
