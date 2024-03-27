@@ -4,10 +4,12 @@
       <div id="page0" class="container card p-4">
         <h1>Child Support</h1>
         <br>
-        <h4>Child Support Guidelines Amount under the Law</h4>
-        <p>Each State has Child Support Guidelines used to calculate monthly
+        <div class="card-header">
+          <h4>Child Support Guidelines Amount under the Law</h4>
+        </div><br>
+        <div>Each State has Child Support Guidelines used to calculate monthly
           child support. Each parent shall be bound by and follow the Uniform Interstate Family
-          Support Act.</p>
+          Support Act.</div>
 
         <br>
         <h4>Pick only one</h4>
@@ -72,7 +74,9 @@
         </div>
 
         <br>
-        <h4>Payment</h4>
+        <div class="card-header">
+          <h4>Payment</h4>
+        </div><br>
         <div>
           <input type="radio" name="payment" id="directPay" value="directPay" />
           <label for="directPay">Direct Payment of the Child Support</label>
@@ -91,13 +95,16 @@
       <div id="page1" class="container card p-4" style="display: none;">
         <h1>Child Support</h1>
         <br>
-        <h4>Health Insurance Premiums</h4>
+        <div class="card-header">
+          <h4>Health Insurance Premiums</h4>
+        </div><br>
         <p>Parent
           A/B shall cover the Child(ren)'s health insurance premiums in the amount of $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
           per month.</p>
         <br>
-        <h4>Uninsured Co-Pays for Health-Related Expenses</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Uninsured Co-Pays for Health-Related Expenses</h4>
+        </div><br>
         <div>
           <input type="radio" name="insurance" id="soleResp" value="soleResp" onclick="soleMore()" />
           <label for="soleResp">Sole Responsibility</label>
@@ -311,24 +318,67 @@
         </div>
 
         <div>
-          <input type="radio" name="postHigh" id="postSplit529" value="postSplit529" />
+          <input type="radio" name="postHigh" id="postSplit529" value="postSplit529" onclick="postSplit529More()" />
           <label for="postSplit529">Split Responsibility After Funds from Any 529 Accounts</label>
         </div>
+
+        <div class="container card p-4" id="postSplit529Info" style="display: none;">
+          <u>SPLIT RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS
+            HELD ON BEHALF OF A CHILD OR CHILD(REN), COVERDELL ACCOUNTS OR
+            OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL
+            EDUCATION EXPENSES</u>. After funds from any 529 accounts held on behalf of a Child
+          or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-
+          high school education expenses are expended, then Parent A shall cover
+          <input type="number" name="split529-1" id="split529-1" style="width: 100px;" step="0.01" oninput="update529Split2()" />% and
+          Parent B shall cover <input type="number" name="split529-2" id="split529-2" style="width: 100px;" step="0.01" oninput="update529Split1()" />%
+          of the Child(ren)’s remaining post-high school education expenses.
+        </div>
+
         <div>
-          <input type="radio" name="postHigh" id="postCap" value="postCap" />
+          <input type="radio" name="postHigh" id="postCap" value="postCap" onclick="postCapMore()" />
           <label for="postCap">Cap on Payment by Each Parent per Academic School Year</label>
         </div>
+
+        <div class="container card p-4" id="postCapInfo" style="display: none;">
+          The Child(ren)’s post-high school education expenses shall be paid such that
+          Parent A shall cover <input type="number" name="postCap-1" id="postCap-1" style="width: 100px;" step="0.01" oninput="updatePostCap2()" />%
+          up to a cap of $<input type="number" name="postCapA" style="width: 100px;" step="0.01" /> amount per academic school year
+          and Parent B shall cover <input type="number" name="postCap-2" id="postCap-2" style="width: 100px;" step="0.01" oninput="updatePostCap1()" />%
+          up to a cap of $<input type="number" name="postCapB" style="width: 100px;" step="0.01" /> amount per academic school
+          year.
+        </div>
+
         <div>
-          <input type="radio" name="postHigh" id="postCap" value="postCap" />
+          <input type="radio" name="postHigh" id="postCapDef" value="postCapDef" onclick="postCapDefMore()" />
           <label for="postCap">Definition of Post-High School Education Expenses</label>
         </div>
+
+        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
+          Private school expenses shall be defined to include all expenses related to a Child’s
+          attendance at any post-high school educational institution (including vocational and
+          trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
+          lunches, and before and/or after school care expenses.
+        </div>
+
         <div>
-          <input type="radio" name="postHigh" id="postMutual" value="postMutual" />
+          <input type="radio" name="postHigh" id="postMutual" value="postMutual" onclick="postMutualMore()" />
           <label for="postMutual">Mutual Agreement of Parents</label>
         </div>
+
+        <div class="container card p-4" id="postMutualInfo" style="display: none;">
+          Either Parent may apply for a Child to attend a post-high school education institution (includes trade and vocational
+          schools), but in order for the other Parent to be financially responsible, both Parents
+          must approve the enrollment of any Child or Adult Child in a post-high school
+          educational institution.
+        </div>
+
         <div>
-          <input type="radio" name="postHigh" id="postReserve" value="postReserve" />
+          <input type="radio" name="postHigh" id="postReserve" value="postReserve" onclick="postReserveMore()" />
           <label for="postReserve">Reserve</label>
+        </div>
+
+        <div class="container card p-4" id="postReserveInfo" style="display: none;">
+          Parents shall reserve the issue of post-high school educational school expenses.
         </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -342,43 +392,96 @@
       <div id="page3" class="container card p-4" style="display: none;">
         <h1>Child Support</h1>
         <br>
-        <h4>Claiming the Child(ren) as a Dependent for Tax Purposes</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Claiming the Child(ren) as a Dependent for Tax Purposes</h4>
+        </div><br>
         <div>
-          <input type="radio" name="taxPurpose" id="taxSole" value="taxSole" />
+          <input type="radio" name="taxPurpose" id="taxSole" value="taxSole" onclick="taxSoleMore()" />
           <label for="taxSole">Sole Authority to Claim the Child(ren)</label>
         </div>
+
+        <div class="container card p-4" id="taxSoleInfo" style="display: none;">
+          <select id="parentAB_taxSole">
+            <option value="parentA_taxSole">Parent A</option>
+            <option value="parentB_taxSole">Parent B</option>
+          </select> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year.
+        </div>
+
         <div>
-          <input type="radio" name="taxPurpose" id="taxSplit" value="taxSplit" />
+          <input type="radio" name="taxPurpose" id="taxSplit" value="taxSplit" onclick="taxSplitMore()" />
           <label for="taxSplit">Split Authority to Claim the Child(ren)</label>
         </div>
+
+        <div class="container card p-4" id="taxSplitInfo" style="display: none;">
+          Parent A shall be entitled to claim <input type="text" name="partyATax" placeholder="Child's Initials" style="width: 300px;" required>
+          as a dependent for tax purposes every year.
+          <br><br>Parent B shall be entitled to claim <input type="text" name="partyBTax" placeholder="Child's Initials" style="width: 300px;" required>
+          as a dependent for tax purposes every year.
+        </div>
+
         <div>
-          <input type="radio" name="taxPurpose" id="taxAlt" value="taxAlt" />
+          <input type="radio" name="taxPurpose" id="taxAlt" value="taxAlt" onclick="taxAltMore()" />
           <label for="taxAlt">Split Authority to Claim the Child(ren) then Alternate</label>
         </div>
+
+        <div class="container card p-4" id="taxAltInfo" style="display: none;">
+          Parent A shall be entitled to claim <input type="text" name="partyATaxAlt" placeholder="Child's Initials" style="width: 300px;" required>
+          as a dependent for tax purposes every year.
+          <br><br>Parent B shall be entitled to claim <input type="text" name="partyBTaxAlt" placeholder="Child's Initials" style="width: 300px;" required>
+          as a dependent for tax purposes every year. <br><br>Once the older Child is no longer eligible to be
+          claimed for tax purposes, then the Parents shall alternate claiming the younger Child.
+        </div>
+
         <div>
-          <input type="radio" name="taxPurpose" id="taxAltAut" value="taxAltAut" />
+          <input type="radio" name="taxPurpose" id="taxAltAut" value="taxAltAut" onclick="taxAltAutMore()" />
           <label for="taxAltAut">Alternate Authority to Claim the Child(ren)</label>
         </div>
 
+        <div class="container card p-4" id="taxAltAutInfo" style="display: none;">
+          Parent A shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in even years.<br>
+          Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years.
+        </div>
+
         <br>
-        <h4>Protocols for Reimbursement of Child-Related Expenses</h4>
-        <h5>Pick only one</h5>
+        <div class="card-header">
+          <h4>Protocols for Reimbursement of Child-Related Expenses</h4>
+        </div><br>
         <div>
-          <input type="radio" name="protocols" id="timeframe" value="timeframe" />
+          <input type="radio" name="protocols" id="timeframe" value="timeframe" onclick="timeframeMore()" />
           <label for="timeframe">Timeframe for Reimbursement of Child-Related Expenses and Reimbursement</label>
         </div>
+
+        <div class="container card p-4" id="timeframeInfo" style="display: none;">
+          Upon a request in writing (text or email is ok) from a Parent for
+          reimbursement, the other Parent shall reimburse the requesting Parent within <input type="number" name="timeVal" id="timeVal" style="width: 100px;" step="1" />
+          days.
+        </div>
+
         <div>
-          <input type="radio" name="protocols" id="monthlyCal" value="monthlyCal" />
+          <input type="radio" name="protocols" id="monthlyCal" value="monthlyCal" onclick="monthlyCalMore()" />
           <label for="monthlyCal">Monthly Calculation of Child-Related Expenses and Reimbursement</label>
         </div>
+
+        <div class="container card p-4" id="monthlyCalInfo" style="display: none;">
+          Parents shall calculate child-related expenses and reimburse each other on a monthly basis.
+        </div>
+
         <div>
-          <input type="radio" name="protocols" id="quarterCal" value="quarterCal" />
+          <input type="radio" name="protocols" id="quarterCal" value="quarterCal" onclick="quarterCalMore()" />
           <label for="quarterCal">Quarterly Calculation of Child-Related Expenses and Reimbursement</label>
         </div>
+
+        <div class="container card p-4" id="quarterCalInfo" style="display: none;">
+          Parents shall calculate child-related expenses and reimburse each other on a quarterly basis.
+        </div>
+
         <div>
-          <input type="radio" name="protocols" id="annualCal" value="annualCal" />
+          <input type="radio" name="protocols" id="annualCal" value="annualCal" onclick="annualCalMore()" />
           <label for="annualCal">Annual Calculation of Child-Related Expenses and Reimbursement</label>
+        </div>
+
+        <div class="container card p-4" id="annualCalInfo" style="display: none;">
+          Parents shall calculate child-related expenses and reimburse each other on an annual basis.
         </div>
 
         <br>
@@ -396,7 +499,7 @@
         </p>
 
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="previous3" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
+          <button id="previous3" onClick="showPage('page2')">Previous Page</button> &nbsp;&nbsp;
           <button id="next3" onclick="submit()">Next Page</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
@@ -646,6 +749,163 @@
     });
   });
 
+  function postSplit529More() {
+    var b = document.getElementById('postSplit529Info');
+    b.style.display = document.getElementById('postSplit529').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsR = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsR.forEach(function(radioButton19) {
+    radioButton19.addEventListener('change', function() {
+      postSplit529More();
+    });
+  });
+
+  function postCapMore() {
+    var b = document.getElementById('postCapInfo');
+    b.style.display = document.getElementById('postCap').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsS = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsS.forEach(function(radioButton20) {
+    radioButton20.addEventListener('change', function() {
+      postCapMore();
+    });
+  });
+
+  function postCapDefMore() {
+    var b = document.getElementById('postCapDefInfo');
+    b.style.display = document.getElementById('postCapDef').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsT = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsT.forEach(function(radioButton21) {
+    radioButton21.addEventListener('change', function() {
+      postCapDefMore();
+    });
+  });
+
+  function postMutualMore() {
+    var b = document.getElementById('postMutualInfo');
+    b.style.display = document.getElementById('postMutual').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsU = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsU.forEach(function(radioButton22) {
+    radioButton22.addEventListener('change', function() {
+      postMutualMore();
+    });
+  });
+
+  function postReserveMore() {
+    var b = document.getElementById('postReserveInfo');
+    b.style.display = document.getElementById('postReserve').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsV = document.querySelectorAll('input[type="radio"][name="postHigh"]');
+  radioButtonsV.forEach(function(radioButton23) {
+    radioButton23.addEventListener('change', function() {
+      postReserveMore();
+    });
+  });
+
+  function taxSoleMore() {
+    var b = document.getElementById('taxSoleInfo');
+    b.style.display = document.getElementById('taxSole').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsW = document.querySelectorAll('input[type="radio"][name="taxPurpose"]');
+  radioButtonsW.forEach(function(radioButton24) {
+    radioButton24.addEventListener('change', function() {
+      taxSoleMore();
+    });
+  });
+
+  function taxSplitMore() {
+    var b = document.getElementById('taxSplitInfo');
+    b.style.display = document.getElementById('taxSplit').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsX = document.querySelectorAll('input[type="radio"][name="taxPurpose"]');
+  radioButtonsX.forEach(function(radioButton25) {
+    radioButton25.addEventListener('change', function() {
+      taxSplitMore();
+    });
+  });
+
+  function taxAltMore() {
+    var b = document.getElementById('taxAltInfo');
+    b.style.display = document.getElementById('taxAlt').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsY = document.querySelectorAll('input[type="radio"][name="taxPurpose"]');
+  radioButtonsY.forEach(function(radioButton26) {
+    radioButton26.addEventListener('change', function() {
+      taxAltMore();
+    });
+  });
+
+  function taxAltAutMore() {
+    var b = document.getElementById('taxAltAutInfo');
+    b.style.display = document.getElementById('taxAltAut').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsZ = document.querySelectorAll('input[type="radio"][name="taxPurpose"]');
+  radioButtonsZ.forEach(function(radioButton27) {
+    radioButton27.addEventListener('change', function() {
+      taxAltAutMore();
+    });
+  });
+
+  function timeframeMore() {
+    var b = document.getElementById('timeframeInfo');
+    b.style.display = document.getElementById('timeframe').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsAA = document.querySelectorAll('input[type="radio"][name="protocols"]');
+  radioButtonsAA.forEach(function(radioButton28) {
+    radioButton28.addEventListener('change', function() {
+      timeframeMore();
+    });
+  });
+
+  function monthlyCalMore() {
+    var b = document.getElementById('monthlyCalInfo');
+    b.style.display = document.getElementById('monthlyCal').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsAB = document.querySelectorAll('input[type="radio"][name="protocols"]');
+  radioButtonsAB.forEach(function(radioButton29) {
+    radioButton29.addEventListener('change', function() {
+      monthlyCalMore();
+    });
+  });
+
+  function quarterCalMore() {
+    var b = document.getElementById('quarterCalInfo');
+    b.style.display = document.getElementById('quarterCal').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsAC = document.querySelectorAll('input[type="radio"][name="protocols"]');
+  radioButtonsAC.forEach(function(radioButton30) {
+    radioButton30.addEventListener('change', function() {
+      quarterCalMore();
+    });
+  });
+
+  function annualCalMore() {
+    var b = document.getElementById('annualCalInfo');
+    b.style.display = document.getElementById('annualCal').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsAD = document.querySelectorAll('input[type="radio"][name="protocols"]');
+  radioButtonsAD.forEach(function(radioButton31) {
+    radioButton31.addEventListener('change', function() {
+      annualCalMore();
+    });
+  });
+
+
   // for updating Uninsured Co-Pays for Health-Related Expenses -> Spilt Responsibility
   function updateSplit2() {
     const split1Input = document.getElementById("split-1");
@@ -740,6 +1000,46 @@
   function updateSplitHigh1() {
     const split1Input = document.getElementById("splitHigh-1");
     const split2Input = document.getElementById("splitHigh-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value
+  }
+
+  function update529Split2() {
+    const split1Input = document.getElementById("split529-1");
+    const split2Input = document.getElementById("split529-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value
+  }
+
+  function update529Split1() {
+    const split1Input = document.getElementById("split529-1");
+    const split2Input = document.getElementById("split529-2");
+
+    const split2Value = parseFloat(split2Input.value);
+    const split1Value = 100 - split2Value;
+
+    split1Input.value = split1Value
+  }
+
+  function updatePostCap2() {
+    const split1Input = document.getElementById("postCap-1");
+    const split2Input = document.getElementById("postCap-2");
+
+    const split1Value = parseFloat(split1Input.value);
+    const split2Value = 100 - split1Value;
+
+    split2Input.value = split2Value
+  }
+
+  function updatePostCap1() {
+    const split1Input = document.getElementById("postCap-1");
+    const split2Input = document.getElementById("postCap-2");
 
     const split2Value = parseFloat(split2Input.value);
     const split1Value = 100 - split2Value;
