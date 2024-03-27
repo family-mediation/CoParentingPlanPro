@@ -146,7 +146,7 @@
 
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous1" onClick="showPage('page0')">Previous Page</button> &nbsp;&nbsp;
-          <button id="next1" onclick="nextHandler()">Next Page</button>
+          <button id="next1" onclick="showPage('page2')">Next Page</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="another" onclick="nextHandler()">Next Page</button> -->
         </div>
@@ -382,8 +382,8 @@
         </div>
 
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="next2" onclick="nextToPage3()">Next Page</button>
+          <button id="previous2" onclick="showPage('page1')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next2" onclick="showPage('page3')">Next Page</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
@@ -487,9 +487,15 @@
         <br>
         <h5>Optional</h5>
         <div>
-          <input type="checkbox" id="8.14e" name="childsupportRei" />
+          <input type="checkbox" id="8.14e" name="childSupportRei" onclick="supportReiMore()" />
           <label for="8.14e">Documentation Required for Reimbursement of Child-Related Expenses</label>
         </div>
+
+        <div class="container card p-4" id="supportReiInfo" style="display: none;">
+          A requesting Parent shall include written documentation proving the child-related expense in order to receive
+          reimbursement from the other Parent.
+        </div>
+
         <br>
         <h5>Reimbursement Method</h5>
         <p>Parents shall use the following method to
@@ -511,6 +517,7 @@
 </div>
 
 <script>
+  // for the page buttons 
   function showPage(pageId) {
     document.getElementById("page0").style.display = "none";
     document.getElementById("page1").style.display = "none";
@@ -518,20 +525,7 @@
     document.getElementById("page3").style.display = "none";
     document.getElementById(pageId).style.display = "block";
   }
-
-  function nextHandler() {
-    showPage('page2');
-  }
-
-  function nextToPage3() {
-    showPage('page3');
-  }
-
-  function previousHandler() {
-    showPage('page1');
-  }
-
-
+  // radio buttons: page 0 
   function mutuAgreedMoreInfo() {
     var b = document.getElementById('mutuAgreedInfo');
     b.style.display = document.getElementById('mutuAgreed').checked ? 'block' : 'none';
@@ -568,6 +562,7 @@
     });
   });
 
+  // radio buttons: page 1
   function soleMore() {
     var b = document.getElementById('soleInfo');
     b.style.display = document.getElementById('soleResp').checked ? 'block' : 'none';
@@ -603,7 +598,9 @@
       thresholdMore();
     });
   });
-
+  
+  // radio buttons: page 2
+  // Extracurricular expenses 
   function soleECMore() {
     var b = document.getElementById('soleECInfo');
     b.style.display = document.getElementById('extraSoleResp').checked ? 'block' : 'none';
@@ -651,7 +648,8 @@
       mutuallyExtraMore();
     });
   });
-
+  
+  // private school expenses 
   function privateSoleMore() {
     var b = document.getElementById('solePrivateInfo');
     b.style.display = document.getElementById('privateSoleResp').checked ? 'block' : 'none';
@@ -712,7 +710,8 @@
       privReserveMore();
     });
   });
-
+  
+  // post-high school expenses 
   function postSoleRespMore() {
     var b = document.getElementById('soleHighInfo');
     b.style.display = document.getElementById('postSoleResp').checked ? 'block' : 'none';
@@ -808,7 +807,8 @@
       postReserveMore();
     });
   });
-
+  
+  // radio buttons: page 3
   function taxSoleMore() {
     var b = document.getElementById('taxSoleInfo');
     b.style.display = document.getElementById('taxSole').checked ? 'block' : 'none';
@@ -906,6 +906,11 @@
   });
 
 
+  function supportReiMore() {
+    var b = document.getElementById('supportReiInfo');
+    b.style.display = document.getElementById('8.14e').checked ? 'block' : 'none';
+  }
+
   // for updating Uninsured Co-Pays for Health-Related Expenses -> Spilt Responsibility
   function updateSplit2() {
     const split1Input = document.getElementById("split-1");
@@ -926,7 +931,8 @@
 
     split1Input.value = split1Value
   }
-
+  
+  // for updating Uninsured Co-pays for Health-Related Expenses -> Responsibility for Threshold Amount 
   function updateThreshold4() {
     const x = document.getElementById("threshold3");
     const y = document.getElementById("threshold4");
@@ -947,6 +953,7 @@
     x.value = b
   }
 
+  // for updating Extracurricular Expenses -> Spilt Responsibility
   function updateSplitEC2() {
     const split1Input = document.getElementById("splitEC-1");
     const split2Input = document.getElementById("splitEC-2");
@@ -967,6 +974,7 @@
     split1Input.value = split1Value
   }
 
+  // for updating Private School Expenses -> Spilt Responsibility
   function updateSplitPriv2() {
     const split1Input = document.getElementById("splitPriv-1");
     const split2Input = document.getElementById("splitPriv-2");
@@ -987,6 +995,7 @@
     split1Input.value = split1Value
   }
 
+  // for updating Post-High School Expenses -> Spilt Responsibility
   function updateSplitHigh2() {
     const split1Input = document.getElementById("splitHigh-1");
     const split2Input = document.getElementById("splitHigh-2");
@@ -1007,6 +1016,7 @@
     split1Input.value = split1Value
   }
 
+  // for updating Post-High School Expenses -> Spilt Responsibility after funds from 529 accounts
   function update529Split2() {
     const split1Input = document.getElementById("split529-1");
     const split2Input = document.getElementById("split529-2");
@@ -1027,6 +1037,7 @@
     split1Input.value = split1Value
   }
 
+  // for updating Post-High School Expenses -> Cap on payment by each parent per academic school year
   function updatePostCap2() {
     const split1Input = document.getElementById("postCap-1");
     const split2Input = document.getElementById("postCap-2");

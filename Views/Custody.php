@@ -4,7 +4,9 @@
       <div id="page0" class="container card p-4">
         <h1>Legal Custody</h1>
         <br>
-        <h4>Definition</h4>
+        <div class="card-header">
+          <h4>Definition</h4>
+        </div><br>
         <p>Legal custody is the authority to make major
           decisions involving the Child(ren).</p>
         <p>Such major decisions would include, among others,
