@@ -3,6 +3,48 @@
     <div id="mainForm">
 
       <div id="page0" class="container card p-4">
+        <h1>Introduction</h1>
+        <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Court</h4>
+            <div>
+              <input type="radio" name="court" id="circuit1" value="circuit1" />
+              <label for="circuit1">1<sup>st</sup> Circuit (Oahu)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="circuit2" value="circuit2" />
+              <label for="circuit2">2<sup>nd</sup> Circuit (Maui)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="circuit3" value="circuit3" />
+              <label for="circuit1">3<sup>rd</sup> Circuit (Hawaiʻi)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="circuit5" value="circuit5" />
+              <label for="circuit1">5<sup>th</sup> Circuit (Kauaʻi)</label>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div>
+              <h4>Case No.</h4>
+              <input type="text" id="caseNo" name="caseNo">
+            </div>
+
+            <div class="p-4">
+              <h4>Date</h4>
+              <input type="date" id="date1" name="date1">
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center pt-4 pb-4">
+          <button id="next1" onclick="nextHandler()">Next Page</button>
+        </div>
+      </div>
+
+      <div id="page1" class="container card p-4">
         <h1>Parent A</h1>
 
         <div class="form-group row p-3">
@@ -56,6 +98,7 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
+          <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="validateParentAForm() ? nextHandler() : null">
             Next Page</button>
         </div>
@@ -77,7 +120,7 @@
         </script>
       </div>
 
-      <div id="page1" class="container card p-4">
+      <div id="page2" class="container card p-4">
         <h1>Parent B</h1>
 
         <div class="form-group row p-3">
@@ -133,7 +176,7 @@
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="toChildren" onclick="validateParentBForm()">Next Page</button>
-<!--          need to go to children section-->
+          <!--          need to go to children section-->
         </div>
 
 
