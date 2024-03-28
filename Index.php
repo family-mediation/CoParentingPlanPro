@@ -17,6 +17,8 @@ function console_log($output, $with_script_tags = true)
     }
     echo $js_code;
 }
+
+console_log($_SESSION['responses']);
 //initialize session variables
 if(!isset($_SESSION['canSeeParties'])) {
     $_SESSION['canSeeParties'] = true;
