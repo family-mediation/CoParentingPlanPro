@@ -13,6 +13,7 @@ require_once("MysqlUtil.php");
 $db = new Database;
 $page = isset($_GET['page']) ?$_GET['page'] : 1 ;
 require_once("views/Header.php");
+echo var_dump($_SESSION['responses']);
 switch($page)
 {
     case 1:
