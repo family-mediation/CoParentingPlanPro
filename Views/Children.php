@@ -50,14 +50,12 @@
                       }
                     </script>
                     <script>
-                      var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input class="form-control" type="text" name="childBirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
-
+                      var x = 1;
                       // remove max if don't want to have a cap on number of kids to add
                       var max = 5;
-
-                      var x = 1;
                       $("#add").click(function() {
                         if (x <= max) {
+                          var html = '<tr><td><input class="form-control" type="text" name="child'+ x +'Initials" required></td><td><input class="form-control" type="text" name="child'+ x +'BirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
                           $("#table_field").append(html);
                           x++;
                         }

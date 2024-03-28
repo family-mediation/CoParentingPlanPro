@@ -762,6 +762,19 @@ class HtmlGenerator extends documentGenerator
         echo $footerString;
         $this->fileContentString .= $footerString;
 	}
+    function gen_custody_5_01()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyJoint><b>5.01</b>&nbsp; <u>LEGAL CUSTODY: JOINT TO BOTH PARENTS</u></a>.&nbsp;
+        Parents shall share joint legal custody of the Child(ren) and shall make
+        decisions together. <span style='color:#333333'>Parents agree they shall make
+        significant decisions together and encourage input from Child(ren). If Parents
+        cannot come to an agreement about a major decision, they shall use the dispute
+        resolution process set out in this document.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
 	function genPart1()
 	{
 	    $part1String = "";
