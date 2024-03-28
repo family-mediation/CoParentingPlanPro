@@ -15,6 +15,7 @@ abstract class documentGenerator
 // Generate the different components.
 	public abstract function genHeader();
 	public abstract function genPart1();
+	public abstract function gen_custody_5_01();
 	public abstract function genPart2();
 	public abstract function genPart3();
 	public abstract function genPart4();
@@ -48,6 +49,14 @@ abstract class documentGenerator
             case 'divisionB':
             break;
 		}
+	}
+	if(isset($responses["custody"]) && $responses["custody"] == "joint")
+	{
+		$this->gen_custody_5_01();
+	}
+	if(isset($responses["custody"]) && $responses["custody"] == "joint")
+	{
+		$this->gen_custody_5_02();
 	}
 		$this->genPart1();
 		$this->genPart1();
