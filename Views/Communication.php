@@ -53,8 +53,16 @@
               <br>
               <h4>Communication Between Co-Parents:</h4>
               <div>
-              <input type="checkbox" id="7.04" name="communication" />
+              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()"/>
               <label for="7.04">Monthly Conference</label>
+              <div class="container card p-3" id="monthly" style="display: none;">
+              <form action="https://example.com">
+              <label>
+               Conference shall be on the first (insert day of the week of each month)
+              <input type="week" name="monthly" />unless mutually agreed to otherwise.
+              </label>
+              </form>
+              </div>
               </div>
 
               <div>
@@ -120,6 +128,17 @@
 
   function previousHandler() {
     showPage('page1');
+  }
+
+  function showParentOptions() {
+    var monthlyRef = document.getElementById("monthly");
+    var checkbox = document.getElementById("7.04");
+
+    if (checkbox.checked) {
+      monthlyRef.style.display = "block";
+    } else {
+      monthlyRef.style.display = "none";
+    }
   }
 
 </script>
