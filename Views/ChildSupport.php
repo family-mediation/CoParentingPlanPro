@@ -98,8 +98,11 @@
         <div class="card-header">
           <h4>Health Insurance Premiums</h4>
         </div><br>
-        <p>Parent
-          A/B shall cover the Child(ren)'s health insurance premiums in the amount of $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
+        <p><select id="insParentAB4">
+            <option value="insParentA4">Parent A</option>
+            <option value="insParentB4">Parent B</option>
+          </select> shall cover the Child(ren)'s health insurance premiums in the amount of
+          $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
           per month.</p>
         <br>
         <div class="card-header">
@@ -213,6 +216,18 @@
           <h4>Private School Expenses</h4>
         </div><br>
         <!-- <hr><h4>Private School Expenses</h4><hr> -->
+
+        <div>
+          Definition of Private School Expenses
+          <i class="bi bi-caret-down-square-fill" onclick="privSchoolDefMore()"></i>
+        </div>
+
+        <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
+          Private school expenses shall be defined to include all expenses related to a Child's attendance at a
+          private school including, without limitation, application fees/costs, tuition, books,
+          uniforms, school lunches, and before and/or after school care expenses.
+        </div>
+
         <div>
           <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
           <label for="extraSoleResp">Sole Responsibility</label>
@@ -243,17 +258,6 @@
         </div>
 
         <div>
-          <input type="radio" name="privateSchool" id="defPrivateSchool" value="defPrivateSchool" onclick="privSchoolDefMore()" />
-          <label for="defPrivateSchool">Definition of Private School Expenses</label>
-        </div>
-
-        <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
-          Private school expenses shall be defined to include all expenses related to a Child's attendance at a
-          private school including, without limitation, application fees/costs, tuition, books,
-          uniforms, school lunches, and before and/or after school care expenses.
-        </div>
-
-        <div>
           <input type="radio" name="privateSchool" id="privateSchoolMutual" value="privateSchoolMutual" onclick="privSchoolMutMore()" />
           <label for="privateSchoolMutual">Mutual Agreement of Parents</label>
         </div>
@@ -277,6 +281,19 @@
           <h4>Post-High School Expenses</h4>
         </div><br>
         <!-- <hr><h4>Post-High School Expenses</h4><hr> -->
+
+        <div>
+          Definition of Post-High School Education Expenses
+          <i class="bi bi-caret-down-square-fill" onclick="postCapDefMore()"></i>
+        </div>
+
+        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
+          Private school expenses shall be defined to include all expenses related to a Child’s
+          attendance at any post-high school educational institution (including vocational and
+          trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
+          lunches, and before and/or after school care expenses.
+        </div>
+
         <div>
           <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" onclick="postSoleRespMore()" />
           <label for="postSoleResp">Sole Responsibility</label>
@@ -346,18 +363,6 @@
           and Parent B shall cover <input type="number" name="postCap-2" id="postCap-2" style="width: 100px;" step="0.01" oninput="updatePostCap1()" />%
           up to a cap of $<input type="number" name="postCapB" style="width: 100px;" step="0.01" /> amount per academic school
           year.
-        </div>
-
-        <div>
-          <input type="radio" name="postHigh" id="postCapDef" value="postCapDef" onclick="postCapDefMore()" />
-          <label for="postCap">Definition of Post-High School Education Expenses</label>
-        </div>
-
-        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
-          Private school expenses shall be defined to include all expenses related to a Child’s
-          attendance at any post-high school educational institution (including vocational and
-          trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
-          lunches, and before and/or after school care expenses.
         </div>
 
         <div>
@@ -598,7 +603,7 @@
       thresholdMore();
     });
   });
-  
+
   // radio buttons: page 2
   // Extracurricular expenses 
   function soleECMore() {
@@ -648,7 +653,7 @@
       mutuallyExtraMore();
     });
   });
-  
+
   // private school expenses 
   function privateSoleMore() {
     var b = document.getElementById('solePrivateInfo');
@@ -676,16 +681,12 @@
 
   function privSchoolDefMore() {
     var b = document.getElementById('defPrivSchoolInfo');
-    b.style.display = document.getElementById('defPrivateSchool').checked ? 'block' : 'none';
+    if (b.style.display === 'none') {
+      b.style.display = 'block';
+    } else {
+      b.style.display = 'none';
+    }
   }
-
-  var radioButtonsL = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
-  radioButtonsL.forEach(function(radioButton13) {
-    radioButton13.addEventListener('change', function() {
-      privSchoolDefMore();
-    });
-  });
-
 
   function privSchoolMutMore() {
     var b = document.getElementById('mutPrivSchoolInfo');
@@ -710,7 +711,7 @@
       privReserveMore();
     });
   });
-  
+
   // post-high school expenses 
   function postSoleRespMore() {
     var b = document.getElementById('soleHighInfo');
@@ -774,15 +775,12 @@
 
   function postCapDefMore() {
     var b = document.getElementById('postCapDefInfo');
-    b.style.display = document.getElementById('postCapDef').checked ? 'block' : 'none';
+    if (b.style.display === 'none') {
+      b.style.display = 'block';
+    } else {
+      b.style.display = 'none';
+    }
   }
-
-  var radioButtonsT = document.querySelectorAll('input[type="radio"][name="postHigh"]');
-  radioButtonsT.forEach(function(radioButton21) {
-    radioButton21.addEventListener('change', function() {
-      postCapDefMore();
-    });
-  });
 
   function postMutualMore() {
     var b = document.getElementById('postMutualInfo');
@@ -807,7 +805,7 @@
       postReserveMore();
     });
   });
-  
+
   // radio buttons: page 3
   function taxSoleMore() {
     var b = document.getElementById('taxSoleInfo');
@@ -931,7 +929,7 @@
 
     split1Input.value = split1Value
   }
-  
+
   // for updating Uninsured Co-pays for Health-Related Expenses -> Responsibility for Threshold Amount 
   function updateThreshold4() {
     const x = document.getElementById("threshold3");
