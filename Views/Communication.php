@@ -1,7 +1,7 @@
 <div class="text-center">
   <form method="post" class="" locale="ENGLISH" action="./?page=6" onsubmit="return false;">
     <div id="mainForm">
-      <div id="page0" class="container card p-5">
+      <div id="page0" class="container card p-4">
         <h1>COMMUNICATION</h1>
         <div class="form-group row p-3" name="communication">
           <p>Parents agree and understand that communication between Co-Parents is critical to their Child(ren)’s well-being.  
@@ -21,26 +21,30 @@
             <li>Discipline of a child during one parent’s timesharing day which may affect the other parent’s timesharing.</li>  
           </ol>     
         </div>
+        
         <div class="row justify-content-center pt-4 pb-4" name="communication">
           <button id="next0" onclick="showPage('page1')">Next Page</button>
         </div>
       </div>
+
       <div id="page1" class="container card p-4" style="display: none;">
-          <fieldset><br>
           <h1>Pick One:</h1>
+
             <div>
               <input type="radio" name="communication" id="emailonly"/>
               <label for="emailonly">E-mail Only</label>
             </div>
+
             <div>
               <input type="radio" name="communication" id="emailtext"/>
               <label for="emailtext">E-mail and Text</label>
             </div>
+
             <div>
               <input type="radio" name="communication" id="wizardmutually"/>
               <label for="wizardmutually">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
             </div>
-          </fieldset>       
+
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous1" onClick="showPage('page0')">Previous Page</button> &nbsp;&nbsp;
           <button id="next1" onclick="nextHandler()">Next Page</button>
@@ -48,49 +52,40 @@
       </div>
 
       <div id="page2" class="container card p-4" style="display: none;">
-          <fieldset>
             <h1>Optional:</h1>
               <br>
               <h4>Communication Between Co-Parents:</h4>
+
               <div>
-              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()"/>
+              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()" />
               <label for="7.04">Monthly Conference</label>
+              </div>
+
               <div class="container card p-4" id="monthly" style="display: none;">
-              <form>
-              <label>
                Conference shall be on the first (insert day of the week of each month)
               <input type="week" name="monthly" /> unless mutually agreed to otherwise.
-              </label>
-              </form>
-              </div>
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()"/>
+              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()" />
               <lable for="7.05">Semi Annual Conference</lable>
+              </div>
+
               <div class="container card p-4" id="semi" style="display: none;">
-              <form>
-              <label>
               Parents shall meet and confer twice annually by no later than
               <input type="text" id="semidate" />(insert date) and <input type="text" id="semidate" />(insert date) every year.
-              </label>
-              </form>
               </div>
+              
+              <div>
+              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()" />
+              <lable for="7.06">Annual Conference</lable>
               </div>
 
-              <div>
-              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()"/>
-              <lable for="7.06">Annual Conference</lable>
               <div class="container card p-4" id="annual" style="display: none;">
-              <form>
-              <label>
               Parents shall meet and confer annually by no later than
               <input type="text" id="semidate" /> every year.
-              </label>
-              </form>
               </div>
-              </div>
-              </br>&nbsp;
+              <br>&nbsp;
                     
               <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
@@ -99,17 +94,17 @@
               </div>
 
               <div>
-              <input type="checkbox" id="7.08" name="communication" onclick="commSpecific()"/>
+              <input type="checkbox" id="7.08" name="communication" onclick="commSpecific()" />
               <label for="7.08">Specific</label>
-              <div class="container card p-3" id="schedule" style="display: none;">
-              <label>
+              </div>
+              
+              <div class="container card p-4" id="schedule" style="display: none;">
               During the regular parenting time schedule, Parent A may call the child between 
               <input type="time" value="09:00" /> and <input type="time" value="17:00" /> when they are with Parent B
               and Parent B may call the childe between <input type="time" value="09:00" /> and <input type="time" value="17:00" />
               when they are with Parent A.
-              </label>
               </div>
-              </div>
+              
 
               <br>
               <h4>Communication:</h4>
@@ -127,12 +122,11 @@
               <input type="checkbox" id="7.11" name="communication" />
               <label for="7.11">Selecting Extracurricular Activities for the Child(ren)</label>
               </div>
-              </br>
-          </fieldset>
+            
           <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next2" onclick="submit()">Next Page</button>
-        </div> 
+          </div> 
       </div>  
     </div>
   </form>
