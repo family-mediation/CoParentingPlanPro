@@ -55,37 +55,61 @@
               <div>
               <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()"/>
               <label for="7.04">Monthly Conference</label>
-              <div class="container card p-3" id="monthly" style="display: none;">
-              <form action="https://example.com">
+              <div class="container card p-4" id="monthly" style="display: none;">
+              <form>
               <label>
                Conference shall be on the first (insert day of the week of each month)
-              <input type="week" name="monthly" />unless mutually agreed to otherwise.
+              <input type="week" name="monthly" /> unless mutually agreed to otherwise.
               </label>
               </form>
               </div>
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" />
+              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()"/>
               <lable for="7.05">Semi Annual Conference</lable>
+              <div class="container card p-4" id="semi" style="display: none;">
+              <form>
+              <label>
+              Parents shall meet and confer twice annually by no later than
+              <input type="text" id="semidate" />(insert date) and <input type="text" id="semidate" />(insert date) every year.
+              </label>
+              </form>
+              </div>
               </div>
 
               <div>
-              <input type="checkbox" id="7.06" name="communication" />
+              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()"/>
               <lable for="7.06">Annual Conference</lable>
+              <div class="container card p-4" id="annual" style="display: none;">
+              <form>
+              <label>
+              Parents shall meet and confer annually by no later than
+              <input type="text" id="semidate" /> every year.
+              </label>
+              </form>
+              </div>
               </div>
               </br>&nbsp;
-              
+                    
               <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
               <input type="checkbox" id="7.07" name="communication" />
               <label for="7.07">Unlimited</label>
               </div>
 
-            <div>
-              <input type="checkbox" id="7.08" name="communication" />
+              <div>
+              <input type="checkbox" id="7.08" name="communication" onclick="commSpecific()"/>
               <label for="7.08">Specific</label>
-            </div>
+              <div class="container card p-3" id="schedule" style="display: none;">
+              <label>
+              During the regular parenting time schedule, Parent A may call the child between 
+              <input type="time" value="09:00" /> and <input type="time" value="17:00" /> when they are with Parent B
+              and Parent B may call the childe between <input type="time" value="09:00" /> and <input type="time" value="17:00" />
+              when they are with Parent A.
+              </label>
+              </div>
+              </div>
 
               <br>
               <h4>Communication:</h4>
@@ -105,7 +129,7 @@
               </div>
               </br>
           </fieldset>
-        <div class="row justify-content-center pt-4 pb-4">
+          <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next2" onclick="submit()">Next Page</button>
         </div> 
@@ -138,6 +162,39 @@
       monthlyRef.style.display = "block";
     } else {
       monthlyRef.style.display = "none";
+    }
+  }
+
+  function showParentOptions2() {
+    var semiRef = document.getElementById("semi");
+    var checkbox = document.getElementById("7.05");
+
+    if (checkbox.checked) {
+      semiRef.style.display = "block";
+    } else {
+      semiRef.style.display = "none";
+    }
+  }
+
+  function showParentOptions3() {
+    var annualRef = document.getElementById("annual");
+    var checkbox = document.getElementById("7.06");
+
+    if (checkbox.checked) {
+      annualRef.style.display = "block";
+    } else {
+      annualRef.style.display = "none";
+    }
+  }
+
+  function commSpecific() {
+    var scheduleRef = document.getElementById("schedule");
+    var checkbox = document.getElementById("7.08");
+
+    if (checkbox.checked) {
+      scheduleRef.style.display = "block";
+    } else {
+      scheduleRef.style.display = "none";
     }
   }
 

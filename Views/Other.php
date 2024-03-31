@@ -9,15 +9,17 @@
               <label for="9.00">Co-Parent Counseling</label>
               </div>
               <div class="container card p-3" id="cotherapist" style="display: none;">
-              Name <input type="text" id="therapistInput" /> for Therapist.
+              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), or other mutually selected licensed mental health professional,
+               as a Co-Parent Counselor to assist them in collaboratively parenting the Child(ren).
               </div>
 
               <div>
               <input type="checkbox" id="9.01" name="others" onclick="clickMe('childTherapist')" />
               <label for="9.01">Child-Focused Therapist</label>
-             </div>
+              </div>
               <div class="container card p-3" id="childTherapistSection" style="display: none;">
-              Name <input type="text" id="childTherapistInput" /> for Therapist.
+              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), 
+              or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).              
               </div>
 
               <div>
@@ -45,12 +47,11 @@
               <label for="9.06">One Parent to Attend Parent-Teacher Meetings</label>
               </div>
 
-              <div id="parentOptions" style="display:none;">
-              <input type="radio" id="parentA" name="parentAttendance" value="parentA" />
-              <label for="parentA">Parent A</label>
-
-              <input type="radio" id="parentB" name="parentAttendance" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <div class="container card p-4" id="parentOptions" style="display: none;">
+              <select id="parentAB_Other">
+              <option value="parentAB_Other">Parent A</option>
+              <option value="parentAB_Other">Parent B</option>
+              </select> will attend all parent-teacher meetings and will advise Parent B/A of the Child(ren)'s progress.
               </div>
 
               <div>
@@ -78,14 +79,20 @@
               <label for="9.11">Documents</label>
               </div>
 
-              <div id="parentDoc" style="display:none;">
-              <input type="radio" id="parentA" name="parentDocuments" value="parentA" />
-              <label for="parentA">Parent A</label>
-
-              <input type="radio" id="parentB" name="parentDocuments" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <div class="container card p-4" id="parentDoc" style="display:none;">
+              <select id="parentAB_Other">
+              <option value="parentAB_Other">Parent A</option>
+              <option value="parentAB_Other">Parent B</option>
+              </select> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, 
+              and (insert any other relevant documents below) at their home, and these documents will be made available to 
+              <select id="parentAB_Other2">
+              <option value="parentAB_Other2">Parent A</option>
+              <option value="parentAB_Other2" selected>Parent B</option></select> as needed. 
+              Both Parents shall have copies of all of the important documents.
+              <br />
+              <input type="file" id="file" name="file" multiple />
               </div>
-
+ 
               <div>
               <input type="checkbox" id="9.12" name="others" />
               <label for="9.12">Joint Authority to Consent for Passport</label>
@@ -96,12 +103,14 @@
               <label for="9.13">Sole Authority to Consent for Passport</label>
               </div>
 
-              <div id="passport" style="display:none;">
-              <input type="radio" id="parentA" name="parentDocuments" value="parentA" />
-              <label for="parentA">Parent A</label>
-
-              <input type="radio" id="parentB" name="parentDocuments" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <div class="container card p-4" id="passport" style="display: none;">
+              <select id="parentAB_Other3">
+              <option value="parentAB_Other3">Parent A</option>
+              <option value="parentAB_Other3">Parent B</option>
+              </select> can apply for the passport for a Child without the consent of 
+              <select id="parentAB_Other4">
+              <option value="parentAB_Other4">Parent A</option>
+              <option value="parentAB_Other4" selected>Parent B</option></select>.
               </div>
 
               <div>
