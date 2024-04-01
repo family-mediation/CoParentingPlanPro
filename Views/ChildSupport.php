@@ -399,9 +399,9 @@
         </div>
 
         <div class="container card p-4" id="taxSoleInfo" style="display: none;">
-          <select id="parentAB_taxSole">
-            <option value="parentA_taxSole">Parent A</option>
-            <option value="parentB_taxSole">Parent B</option>
+          <select id="parentAB_taxSole" name="parentAB_taxSole">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year.
         </div>
 
@@ -485,7 +485,7 @@
         <br>
         <h5>Optional</h5>
         <div>
-          <input type="checkbox" id="8.14e" name="childSupportRei" onclick="supportReiMore()" />
+          <input type="checkbox" id="8.14e" name="childSupportRei" value="8.14e" onclick="supportReiMore()" />
           <label for="8.14e">Documentation Required for Reimbursement of Child-Related Expenses</label>
         </div>
 

@@ -25,6 +25,7 @@ class wordDocGenerator extends documentGenerator
 	{
 		echo "Generating Part3 <br/>";
 	}
+	// legal custody section 3
 	function gen_legal_custody_5_00()
 	{
 	}
@@ -63,7 +64,9 @@ class wordDocGenerator extends documentGenerator
 	}
 	function gen_legal_custody_5_11()
 	{
-	}
+	} //end of legal custody section 3
+
+	// child support section 6
 	function gen_child_support_8_00()
 	{
 	}
@@ -160,6 +163,43 @@ class wordDocGenerator extends documentGenerator
 	function gen_child_support_8_12H()
 	{
 	}
+	function gen_child_support_8_13()
+	{
+	}
+	function gen_child_support_8_13A()
+	{
+	}
+	function gen_child_support_8_13B()
+	{
+	}
+	function gen_child_support_8_13C()
+	{
+	}
+	function gen_child_support_8_13D()
+	{
+	}
+	function gen_child_support_8_14()
+	{
+	}
+	function gen_child_support_8_14A()
+	{
+	}
+	function gen_child_support_8_14B()
+	{
+	}
+	function gen_child_support_8_14C()
+	{
+	}
+	function gen_child_support_8_14D()
+	{
+	}
+	function gen_child_support_8_14E()
+	{
+	}
+	function gen_child_support_8_14F()
+	{
+	} //end of child support section 6
+
 
 
 	function genPart4()

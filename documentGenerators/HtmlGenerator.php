@@ -996,7 +996,7 @@ class HtmlGenerator extends documentGenerator
         decisions independently when the Child(ren) is in their care.</span></p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
-    }
+    }  // end of legal custody
 
     // CHILD SUPPORT 
     // header & monthly child support amount under the law 
@@ -1380,14 +1380,145 @@ class HtmlGenerator extends documentGenerator
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
+    // header for claiming the child(ren) as a dependent for tax purposes 
+    function gen_child_support_8_13()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCDependents><b>8.13&nbsp; </b><u>SUPPORT OF THE CHILD(REN): CLAIMING THE
+        CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_13A() // sole    
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCDependentsSA><b>8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE AUTHORITY TO CLAIM THE
+        CHILD(REN</u></a><u>)</u>.  <span style='background:yellow'>" . $this->responses["parentAB_taxSole"] . "</span> shall be entitled to claim any Child(ren)
+        as a dependent for tax purposes every year.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_13B() // split     
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCDependentsSpA><b>8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO CLAIM THE
+        CHILD(REN</u></a><u>)</u>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span> (Child's
+        Initials) as a dependent for tax purposes every year.&nbsp; Parent B shall be
+        entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span> (Child's Initials) as a dependent for tax purposes every
+        year.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_13C() // split then alternate
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
+        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. Parent A shall be entitled to
+        claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
+        Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
+        tax purposes every year. Once the older Child is no longer eligible to be
+        claimed for tax purposes, then the Parents shall alternate claiming the younger
+        Child.&nbsp;&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_13D() // alternate authority
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCDependentsAlternate><b>8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE AUTHORITY TO
+        CLAIM THE CHILD(REN</u></a><u>)</u>. <span style='background:yellow'>Parent A</span> shall be entitled to claim the
+        Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>Parent B</span> shall be
+        entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
+        years.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // header for protocols for reimbursement -> radio buttons
+    function gen_child_support_8_14()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCProtocolsforReimbursment><b>8.14&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
+        PROTOCOLS FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_14A() // timeframe
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCProtocolsforReimbursmentTimeframe><b>8.14A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>TIMEFRAME FOR
+        REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; Upon a request in writing
+        (text or email is ok) from a Parent for reimbursement, the other Parent shall
+        reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_14B() // monthly
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCProtocolsforReimbursmentMonthly><b>8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONTHLY
+        CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u></a>.&nbsp; Parents shall
+        calculate child-related expenses and reimburse each other on a monthly basis.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_14C() // quarterly
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCProtocolsforReimbursmentQuarterly><b>8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>QUARTERLY
+        CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.</a>&nbsp; Parents shall
+        calculate child-related expenses and reimburse each other on a quarterly basis.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_14D() // annual
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCProtocolsforReimbursmentAnnual><b>8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ANNUAL
+        CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.&nbsp; </a>Parents shall
+        calculate child-related expenses and reimburse each other on an annual basis.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // protocols for reimbursement -> optional 
+    function gen_child_support_8_14E() // documentation required
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCProtocolsforReimbursmentDocumentation><b>8.14E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>DOCUMENTATION
+        REQUIRED FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; A requesting
+        Parent shall include written documentation proving the child-related expense in
+        order to receive reimbursement from the other Parent.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
 
-
-
-
-
-
-
-
+    // protocols for reimbursement -> reimbursement method      
+    function gen_child_support_8_14F() // reimbursement method
+    {
+        $content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, show a blank line instead of displaying nothing
+        if (empty($content)) {
+            $content = "________";
+        }
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCProtocolsforReimbursmentMethod><b>8.14F </b><u>REIMBURSEMENT METHOD</u></a>.
+        Parents shall use the following method to reimburse each other for
+        child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
+        or other mutually agreed upon parenting expense tool or application, or
+        <span style='background:yellow'>$content</span>.<b>&nbsp;&nbsp;&nbsp; </b></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }   // end of child support
 
 
 

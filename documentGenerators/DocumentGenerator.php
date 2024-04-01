@@ -66,7 +66,18 @@ abstract class documentGenerator
 	public abstract function gen_child_support_8_12F();
 	public abstract function gen_child_support_8_12G();
 	public abstract function gen_child_support_8_12H();
-
+	public abstract function gen_child_support_8_13();
+	public abstract function gen_child_support_8_13A();
+	public abstract function gen_child_support_8_13B();
+	public abstract function gen_child_support_8_13C();
+	public abstract function gen_child_support_8_13D();
+	public abstract function gen_child_support_8_14();
+	public abstract function gen_child_support_8_14A();
+	public abstract function gen_child_support_8_14B();
+	public abstract function gen_child_support_8_14C();
+	public abstract function gen_child_support_8_14D();
+	public abstract function gen_child_support_8_14E();
+	public abstract function gen_child_support_8_14F();
 
 
 	public abstract function genPart4();
@@ -155,7 +166,7 @@ abstract class documentGenerator
 						break;
 				}
 			}
-		} //end of if
+		} //end of legal custody section 3
 
 		/*** Section 6: Child Support ***/
 		// Child support: page 0
@@ -284,6 +295,47 @@ abstract class documentGenerator
 		}
 
 		// page 3 -> claiming the child(ren) as a dependent for tax purposes 
+		if (isset($_SESSION['responses']['taxPurpose'])) {
+			$this->gen_child_support_8_13(); //header
+			switch ($_SESSION['responses']['taxPurpose']) {
+				case 'taxSole':
+					$this->gen_child_support_8_13A();
+					break;
+				case 'taxSplit':
+					$this->gen_child_support_8_13B();
+					break;
+				case 'taxAlt':
+					$this->gen_child_support_8_13C();
+					break;
+				case 'taxAltAut':
+					$this->gen_child_support_8_13D();
+					break;
+			}
+		}
+		// page 3 -> protocols for reimbursement of child-related expenses -> radio buttons 
+		if (isset($_SESSION['responses']['protocols'])) {
+			$this->gen_child_support_8_14(); //header
+			switch ($_SESSION['responses']['protocols']) {
+				case 'timeframe':
+					$this->gen_child_support_8_14A();
+					break;
+				case 'monthlyCal':
+					$this->gen_child_support_8_14B();
+					break;
+				case 'quarterCal':
+					$this->gen_child_support_8_14C();
+					break;
+				case 'annualCal':
+					$this->gen_child_support_8_14D();
+					break;
+			}
+		}
+		// page 3 -> protocols for reimbursement of child-related expenses -> optional
+		if (isset($_SESSION['responses']['childSupportRei']) && $_SESSION['responses']['childSupportRei'] == "8.14e") {
+			$this->gen_child_support_8_14E();
+		}
+		// page 3 -> protocols for reimbursement of child-related expenses -> reimbursement method 
+		$this->gen_child_support_8_14F(); // end of child support section 6
 
 
 
