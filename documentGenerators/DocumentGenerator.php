@@ -18,7 +18,7 @@ abstract class documentGenerator
 	public abstract function genPart2();
 	public abstract function genPart3();
 
-	// Legal Custody 
+	// Section 3: Legal Custody 
 	public abstract function gen_legal_custody_5_00();
 	public abstract function gen_legal_custody_5_01();
 	public abstract function gen_legal_custody_5_03A();
@@ -33,6 +33,17 @@ abstract class documentGenerator
 	public abstract function gen_legal_custody_5_10();
 	public abstract function gen_legal_custody_5_11();
 
+	// Section 6: Child Support
+	public abstract function gen_child_support_8_00();
+	public abstract function gen_child_support_8_01();
+	public abstract function gen_child_support_8_03();
+	public abstract function gen_child_support_8_04();
+	public abstract function gen_child_support_8_05();
+	public abstract function gen_child_support_8_06();
+	public abstract function gen_child_support_8_07();
+
+
+
 	public abstract function genPart4();
 	public abstract function genPart5();
 	public abstract function genPart6();
@@ -44,7 +55,7 @@ abstract class documentGenerator
 	{
 
 		$this->genHeader();
-		$this->gen_legal_custody_5_00();
+
 		//the logic for the tree goes Here its a work in progress hence the if false.
 		if (false) {
 			switch ($responses["legalCustody"]) {
@@ -66,6 +77,10 @@ abstract class documentGenerator
 		}
 
 		var_dump($_SESSION['responses']);
+
+		/*** Section 3: Legal Custody ***/
+		// Legal Custody: page 0 (definition)
+		$this->gen_legal_custody_5_00();
 
 		// Legal Custody: page 1
 		// joint to both parents -> tie-breaking authority to parent A or B
@@ -115,8 +130,42 @@ abstract class documentGenerator
 						break;
 				}
 			}
-		}
+		} //end of if
 
+		/*** Section 6: Child Support ***/
+		// Child support: page 0
+		// header & child support guidelines amount under the law
+		$this->gen_child_support_8_00();
+
+		// page 0 -> pick only one 
+		if (isset($_SESSION['responses']['childSupport'])) {
+			switch ($_SESSION['responses']['childSupport']) {
+				case 'sameState':
+					$this->gen_child_support_8_01();
+					break;
+				case 'mutuAgreed':
+					$this->gen_child_support_8_03();
+					break;
+				case 'noAgree':
+					$this->gen_child_support_8_04();
+					break;
+				case 'alternative':
+					$this->gen_child_support_8_05();
+					break;
+			}
+		}
+		// page 0 -> payment 
+		if (isset($_SESSION['responses']['payment'])) {
+			switch ($_SESSION['responses']['payment']) {
+				case 'directPay':
+					$this->gen_child_support_8_06();
+					break;
+				case 'stateEnforce':
+					$this->gen_child_support_8_07();
+					break;
+			}
+		}
+		// page 1 -> health insurance premiums 
 
 
 		$this->genPart1();

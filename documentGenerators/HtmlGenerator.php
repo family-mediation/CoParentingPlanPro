@@ -835,7 +835,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <b>Parent A</b> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>Parent A</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -850,7 +850,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <b>Parent B</b> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>Parent B</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -861,13 +861,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <b>Parent A</b> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>Parent A</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <b>Parent A </b> is
-        awarded sole legal custody, <b>Parent B </b> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent A </span> is
+        awarded sole legal custody, <span style='background:yellow'>Parent B </span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -883,13 +883,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <b>Parent B</b> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>Parent B</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <b>Parent B </b> is
-        awarded sole legal custody, <b>Parent A </b> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent B </span> is
+        awarded sole legal custody, <span style='background:yellow'>Parent A </span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -908,11 +908,11 @@ class HtmlGenerator extends documentGenerator
         PARENTS MUST CONSULT BUT THERE IS A DIVISION OF AUTHORITY</u>.&nbsp; </a>Parents
         shall share joint legal custody of the Child(ren), provided however, that if
         Parents cannot mutually agree on a legal custody decision for the Child(ren),
-        then   <b>" . $this->responses["parentABW"] . "</b> shall have tie-breaking authority to make <span style='color:
+        then   <span style='background:yellow'>" . $this->responses["parentABW"] . "</span> shall have tie-breaking authority to make <span style='color:
         #333333'>major decisions about the Child(ren)'s education and extracurricular
-        activities, after consulting with  <b>" . $this->responses["parentABX"] . "</b> and the Child(ren) and  <b>" . $this->responses["parentABY"] . "</b>
+        activities, after consulting with  <span style='background:yellow'>" . $this->responses["parentABX"] . "</span> and the Child(ren) and  <span style='background:yellow'>" . $this->responses["parentABY"] . "</span>
         shall have tie-breaking authority to make major decisions about the Child(ren)'s
-        health care, language, and spirituality, after consulting with  <b>" . $this->responses["parentABZ"] . "</b> and the
+        health care, language, and spirituality, after consulting with  <span style='background:yellow'>" . $this->responses["parentABZ"] . "</span> and the
         child.</span></p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -997,6 +997,118 @@ class HtmlGenerator extends documentGenerator
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
+
+    // CHILD SUPPORT 
+    // header & monthly child support amount under the law 
+    function gen_child_support_8_00()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</p>
+        
+        <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+        margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+        line-height:150%'><u>SUPPORT OF THE CHILD(REN):</u></p>
+        
+        <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
+        border:none'><a name=SoCMonthlyUnderLaw><b>8.00</b>&nbsp; <u>SUPPORT OF THE
+        CHILD(REN): MONTHLY CHILD SUPPORT AMOUNT UNDER THE LAW</u>.</a>&nbsp; Each State has
+        Child Support Guidelines used to calculate monthly child support. Each parent
+        shall be bound by and follow the Uniform Interstate Family Support Act.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // same state 
+    function gen_child_support_8_01()
+    {
+        $snippet = "<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
+        border:none'><a name=SoCChildSupportSameState><b>8.01&nbsp; </b><u>SUPPORT OF THE
+        CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN THE SAME
+        STATE</u>.&nbsp; </a>Child support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB1"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB2"] . "</span> and
+        calculated pursuant to the State child support guidelines worksheet. </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // mutually agreed upon amount alternative 
+    function gen_child_support_8_03()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;line-height:150%'><a
+        name=SoCChildSupportAgreedAlternative><b>8.03&nbsp; </b><u>SUPPORT OF THE
+        CHILD(REN): MUTUALLY AGREED UPON CHILD SUPPORT AMOUNT ALTERNATIVE</u></a>.&nbsp;
+        Child Support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB3"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB4"] . "</span> by agreement of the
+        Parents in the amount of <span style='background:yellow'>$" . $this->responses["mutual-1"] . "/per Child</span> per month for a total monthly child
+        support amount of <span style='background:yellow'>$" . $this->responses["mutual-2"] . "</span>.&nbsp; Both Parents understand that child support is
+        modifiable going forward and at any time either Parent may request that child
+        support be calculated pursuant to their State guidelines and ordered to be paid
+        pursuant to and Order for Income Withholding (or similar order) via the State
+        Child Support Enforcement Agency.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // no agreement of the parents 
+    function gen_child_support_8_04()
+    {
+        $snippet = "<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:150%;
+        border:none'><a name=SoCChildSupportNoAgreement><b>8.04&nbsp; </b><u>SUPPORT OF THE
+        CHILD(REN): NO AGREEMENT OF THE PARTIES RE MONTHLY CHILD SUPPORT AMOUNT AND/OR
+        JURISDICTION</u></a>.&nbsp; Parents do not agree on the amount of Child Support to
+        be paid and/or on which State should have jurisdiction to calculate child
+        support under the Uniform Interstate Family Support Act.&nbsp; Parents agree to
+        litigate the issue of child support through the Family Court and/or the State
+        Child Support Enforcement Agency.&nbsp; <b>Note: In many states, physical custody
+        and timesharing with the Child(ren) impacts the calculation of child support.&nbsp;
+        If the child support amount if going to be litigated through the Family Court
+        or administratively through the State Child Support Enforcement Agency, Parents
+        are hereby advised to seek independent legal counsel before making any
+        agreements regarding physical custody and timesharing. </b></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // child support account alternative 
+    // *** per Kristin, will add some text to this section & get back to us ***
+    function gen_child_support_8_05()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCChildSupportAccountAlternative><b><span style='background:yellow'>8.05 </span></b><u><span
+        style='background:yellow'>SUPPO</span></u></a><u><span style='background:yellow'>RT
+        OF THE CHILD(REN): CHILD SUPPORT ACCOUNT ALTERNATIVE</span></u><span
+        style='background:yellow'>.&nbsp; Parents agree that</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // payment -> pick only one -> direct payment 
+    function gen_child_support_8_06()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SocDirectPayment><b>8.06&nbsp; </b><u>SUPPORT OF THE CHILD(REN): DIRECT PAYMENT
+        OF CHILD SUPPORT</u>.</a></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // payment -> pick only one -> payment of child support through support enforcement agency 
+    function gen_child_support_8_07()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCThroughStateAgency><b>8.07&nbsp; </b><u>SUPPORT OF THE CHILD(REN): PAYMENT
+        OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // health insurance premiums 
+    function gen_child_support_8_08()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCHealthInsurance><b>8.08&nbsp; </b><u>SUPPORT OF THE CHILD(REN): HEALTH
+        INSURANCE PREMIUM</u></a><u>S</u>.&nbsp;&nbsp; <?php echo $parentAName; ?>/B shall cover the Child(ren)'s
+        health insurance premiums in the amount of $ <?php echo $varName; ?> per month.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
 
     function genPart4()
     {

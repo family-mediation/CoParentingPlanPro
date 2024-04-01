@@ -20,12 +20,12 @@
 
 
         <div class="container card p-4" id="sameStateInfo" style="display: none;">
-          Child support shall be paid by <select id="parentAB1">
-            <option value="parentA1">Parent A</option>
-            <option value="parentB1">Parent B</option>
-          </select> to <select id="parentAB2">
-            <option value="parentA2">Parent A</option>
-            <option value="parentB2" selected>Parent B</option>
+          Child support shall be paid by <select id="parentAB1" name="parentAB1">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
+          </select> to <select id="parentAB2" name="parentAB2">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B" selected>Parent B</option>
           </select> and calculated pursuant to the State child support guidelines
           worksheet.
         </div>
@@ -35,13 +35,13 @@
           <label for="mutuAgreed">Mutually Agreed Upon Amount Alternative</label>
         </div>
         <div class="container card p-4" id="mutuAgreedInfo" style="display: none;">
-          Child Support shall be paid by <select id="parentAB2">
-            <option value="parentA2">Parent A</option>
-            <option value="parentB2">Parent B</option>
+          Child Support shall be paid by <select id="parentAB3" name="parentAB3">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> to
-          <select id="parentAB3">
-            <option value="parentA3">Parent A</option>
-            <option value="parentB3" selected>Parent B</option>
+          <select id="parentAB4" name="parentAB4">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B" selected>Parent B</option>
           </select> by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
           for a total monthly child support amount of $<input type="number" name="mutual-2" style="width: 100px;" step="0.01" />. Both Parents understand that
           child support is modifiable going forward and at any time either Parent may request that
