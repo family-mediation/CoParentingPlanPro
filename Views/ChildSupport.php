@@ -169,9 +169,9 @@
         </div>
 
         <div class="container card p-4" id="soleECInfo" style="display: none;">
-          <select id="parentAB_EC">
-            <option value="parentA_EC">Parent A</option>
-            <option value="parentB_EC">Parent B</option>
+          <select id="parentAB_EC" name="parentAB_EC">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
         </div>
 
@@ -230,26 +230,19 @@
 
         <div>
           <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
-          <label for="extraSoleResp">Sole Responsibility</label>
+          <label for="privateSoleResp">Sole Responsibility</label>
         </div>
 
         <div class="container card p-4" id="solePrivateInfo" style="display: none;">
-          <select id="parentAB_Priv">
-            <option value="parentA_Priv">Parent A</option>
-            <option value="parentB_Priv">Parent B</option>
+          <select id="parentAB_Priv" name="parentAB_Priv">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s private school expenses.
-        </div>
-
-        <div class="container card p-4" id="soleECInfo" style="display: none;">
-          <select id="parentAB_EC">
-            <option value="parentA_EC">Parent A</option>
-            <option value="parentB_EC">Parent B</option>
-          </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
         </div>
 
         <div>
           <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" onclick="privSplitMore()" />
-          <label for="extraSplitResp">Split Responsibility</label>
+          <label for="privateSplitResp">Split Responsibility</label>
         </div>
 
         <div class="container card p-4" id="splitPrivInfo" style="display: none;">
@@ -300,9 +293,9 @@
         </div>
 
         <div class="container card p-4" id="soleHighInfo" style="display: none;">
-          <select id="parentAB_High">
-            <option value="parentA_High">Parent A</option>
-            <option value="parentB_High">Parent B</option>
+          <select id="parentAB_High" name="parentAB_High">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s post-high school education expenses.
         </div>
 
@@ -327,9 +320,9 @@
             OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL
             EDUCATION EXPENSES</u>. After funds from any 529 accounts held on behalf of a Child
           or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-
-          high school education expenses are expended, then <select id="parentAB_Sole529">
-            <option value="parentA_Sole529">Parent A</option>
-            <option value="parentB_Sole529">Parent B</option>
+          high school education expenses are expended, then <select id="parentAB_Sole529" name="parentAB_Sole529">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of
           the Child(ren)’s remaining post-high school education expenses.
         </div>

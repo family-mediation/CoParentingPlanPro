@@ -1118,7 +1118,7 @@ class HtmlGenerator extends documentGenerator
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
-    function gen_child_support_8_09A() //sole responsibility
+    function gen_child_support_8_09A() //uninsured co-pays for health-related expenses -> sole responsibility
     {
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
@@ -1153,6 +1153,242 @@ class HtmlGenerator extends documentGenerator
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
+    // header for Extracurricular Expenses 
+    function gen_child_support_8_10()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCExtracurricular><b>8.10&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
+        EXTRACURRICULAR EXPENSES</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_10A() // extracurricular expenses -> sole responsibility 
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCExtracurricularSR><b>8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+        <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)'s extracurricular expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_10B() // split responsibility
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCExtracurricularSpR>8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
+        extracurricular expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_10C() // pursuant to 7.10 hereinabove 
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCExtracurricularSelection>8.10C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SELECTING
+        EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN) PURSUANT TO 7.10 HEREINABOVE</u>.&nbsp;
+        If the Parents have elected to separately select<span style='color:#333333'>
+        and pay for one extra-curricular activity that occurs no more than once a week
+        for each Child, then the other Parent shall be expected to take each Child to
+        that activity and support the Child's participation during the time that the
+        Child is in their care, pursuant to Paragraph 7.10 hereinabove.&nbsp; Each Parent
+        shall pay for 100% of their selected extracurricular activity, which shall
+        include supplies, uniforms, travel out-of-state, and other expenses required
+        for the Child to participate</span>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_10D() // mutually agreed upon
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCExtracurricularMutualAgreement>8.10D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>EXTRACURRICULAR
+        ACTIVITIES MUST BE MUTUALLY AGREED UPON</u>.&nbsp; Parents shall only be responsible
+        for paying for extracurricular activities that are mutually agreed upon by both
+        Parents.&nbsp; Parents agree to consult and be guided by the Child's preferences in
+        selecting mutually agreed upon extracurricular activities.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // header for private school expenses 
+    function gen_child_support_8_11()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCPrivateSchoolExpenses><b>8.11</b>&nbsp; <u>SUPPORT OF THE CHILD(REN):
+        PRIVATE SCHOOL EXPENSES</u>.</a></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_11A() // sole
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPrivateSchoolExpensesSR><b>8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+        <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)'s private school expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_11B() // split
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPrivateSchoolExpensesSpR>8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
+        private school expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_11C() // definition
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPrivateSchoolExpensesDefinition>8.11C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>DEFINITION OF
+        PRIVATE SCHOOL EXPENSES</u>.&nbsp; Private school expenses shall be defined to
+        include all expenses related to a Child's attendance at a private school
+        including, without limitation, application fees/costs, tuition, books,
+        uniforms, school lunches, and before and/or after school care expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_11D() // mutual agreement of parents
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPrivateSchoolExpensesMutualAgreement>8.11D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>MUTUAL
+        AGREEMENT OF PARENTS</u>.&nbsp; Either Parent may apply for a Child to attend
+        private school but unless one parent has sole legal custody, both Parents must
+        approve the enrollment of any Child in a private school.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_11E() // reserve
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPrivateSchoolExpensesReserve>8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
+        Parents shall reserve the issue of private school expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // header for post-high school expenses 
+    function gen_child_support_8_12()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCPostSchoolExpenses><b>8.12&nbsp; </b><u>SUPPORT OF THE CHILD(REN): POST-HIGH
+        SCHOOL EDUCATION EXPENSES</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12A() // sole
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCPostSchoolExpensesSR><b>8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+        <span style='background:yellow'>" . $this->responses["parentAB_High"] . "</span> shall cover 100% of the Child(ren)'s post-high school education
+        expenses.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12B() // split
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPostSchoolExpensesSpR>8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
+        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
+        post-high school education expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12C() // sole after 529 
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPostSchoolExpensesSRFundsfromchildacc>8.12C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SOLE
+        RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR
+        CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD'S
+        POST-HIGH SCHOOL EDUCATION EXPENSES</u>.&nbsp; After funds from any 529 accounts
+        held on behalf of a Child or Child(ren), Coverdell accounts or other funds
+        ear-marked to pay for a Child's post-high school education expenses are
+        expended, then <span style='background:yellow'>" . $this->responses["parentAB_Sole529"] . "</span> shall cover 100% of the Child(ren)'s remaining
+        post-high school education expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12D() // split after 529
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCPostSchoolExpensesSpRFundsfromchildac><b>8.12D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT
+        RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR
+        CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD'S
+        POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.&nbsp; After funds from any 529 accounts
+        held on behalf of a Child or Child(ren), Coverdell accounts or other funds
+        ear-marked to pay for a Child's post-high school education expenses are
+        expended, then Parent A shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
+        Child(ren)'s remaining post-high school education expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12E() // cap on payment
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
+        PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
+        education expenses shall be paid such that Parent A shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
+        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and Parent B shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
+        to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12F() // definition
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
+        name=SoCPostSchoolExpensesDef><b>8.12F</b> <u>DEFINITION OF POST-HIGH SCHOOL
+        EDUCATION EXPENSES</u></a>.&nbsp; Private school expenses shall be defined to
+        include all expenses related to a Child's attendance at any post-high school
+        educational institution (including vocational and trade schools), without
+        limitation, application fees/costs, tuition, books, uniforms, school lunches,
+        and before and/or after school care expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12G() // mutual agreement
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPostSchoolExpensesMutualAgreement>8.12G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>MUTUAL
+        AGREEMENT OF PARENTS</u>.&nbsp; Either Parent may apply for a Child to attend a
+        post-high school education institution (includes trade and vocational schools),
+        but in order for the other Parent to be financially responsible, both Parents
+        must approve the enrollment of any Child or Adult Child in a post-high school
+        educational institution.<b>&nbsp; </b></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_12H() // reserve
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCPostSchoolExpensesReserve>8.12H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
+        Parents shall reserve the issue of post-high school educational school
+        expenses.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+
+
+
+
+
+
+
+
 
 
     function genPart4()

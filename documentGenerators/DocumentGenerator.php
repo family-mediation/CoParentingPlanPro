@@ -46,7 +46,26 @@ abstract class documentGenerator
 	public abstract function gen_child_support_8_09A();
 	public abstract function gen_child_support_8_09B();
 	public abstract function gen_child_support_8_09C();
-
+	public abstract function gen_child_support_8_10();
+	public abstract function gen_child_support_8_10A();
+	public abstract function gen_child_support_8_10B();
+	public abstract function gen_child_support_8_10C();
+	public abstract function gen_child_support_8_10D();
+	public abstract function gen_child_support_8_11();
+	public abstract function gen_child_support_8_11A();
+	public abstract function gen_child_support_8_11B();
+	public abstract function gen_child_support_8_11C();
+	public abstract function gen_child_support_8_11D();
+	public abstract function gen_child_support_8_11E();
+	public abstract function gen_child_support_8_12();
+	public abstract function gen_child_support_8_12A();
+	public abstract function gen_child_support_8_12B();
+	public abstract function gen_child_support_8_12C();
+	public abstract function gen_child_support_8_12D();
+	public abstract function gen_child_support_8_12E();
+	public abstract function gen_child_support_8_12F();
+	public abstract function gen_child_support_8_12G();
+	public abstract function gen_child_support_8_12H();
 
 
 
@@ -82,7 +101,7 @@ abstract class documentGenerator
 			}
 		}
 
-		var_dump($_SESSION['responses']);
+		//var_dump($_SESSION['responses']);
 
 		/*** Section 3: Legal Custody ***/
 		// Legal Custody: page 0 (definition)
@@ -176,7 +195,7 @@ abstract class documentGenerator
 
 		// page 1 -> uninsured co-pays for health-related expenses 
 		if (isset($_SESSION['responses']['insurance'])) {
-			$this->gen_child_support_8_09();
+			$this->gen_child_support_8_09(); //header
 			switch ($_SESSION['responses']['insurance']) {
 				case 'soleResp':
 					$this->gen_child_support_8_09A();
@@ -190,8 +209,82 @@ abstract class documentGenerator
 			}
 		}
 		// page 2 -> extracurricular expenses 
+		if (isset($_SESSION['responses']['extraCurr'])) {
+			$this->gen_child_support_8_10(); //header
+			switch ($_SESSION['responses']['extraCurr']) {
+				case 'extraSoleResp':
+					$this->gen_child_support_8_10A();
+					break;
+				case 'extraSplitResp':
+					$this->gen_child_support_8_10B();
+					break;
+				case 'pursuant':
+					$this->gen_child_support_8_10C();
+					break;
+				case 'mutuallyExtra':
+					$this->gen_child_support_8_10D();
+					break;
+			}
+		}
 		// page 2 -> private school expenses 
+		// per Kristin, include "8.11C Definition" with sole, split & mutual only  
+		if (isset($_SESSION['responses']['privateSchool'])) {
+			$this->gen_child_support_8_11(); //header
+			switch ($_SESSION['responses']['privateSchool']) {
+				case 'privateSoleResp':
+					$this->gen_child_support_8_11A();
+					$this->gen_child_support_8_11C();
+					break;
+				case 'privateSplitResp':
+					$this->gen_child_support_8_11B();
+					$this->gen_child_support_8_11C();
+					break;
+				case 'privateSchoolMutual':
+					$this->gen_child_support_8_11C();
+					$this->gen_child_support_8_11D();
+					break;
+				case 'privateReserve':
+					$this->gen_child_support_8_11E();
+					break;
+			}
+		}
 		// page 2 -> post-high school expenses
+		// per Kristin, include "8.12F Definition" with everything except for Reserve   
+		if (isset($_SESSION['responses']['postHigh'])) {
+			$this->gen_child_support_8_12(); //header
+			switch ($_SESSION['responses']['postHigh']) {
+				case 'postSoleResp':
+					$this->gen_child_support_8_12A();
+					$this->gen_child_support_8_12F();
+					break;
+				case 'postSplitResp':
+					$this->gen_child_support_8_12B();
+					$this->gen_child_support_8_12F();
+					break;
+				case 'postSole529':
+					$this->gen_child_support_8_12C();
+					$this->gen_child_support_8_12F();
+					break;
+				case 'postSplit529':
+					$this->gen_child_support_8_12D();
+					$this->gen_child_support_8_12F();
+					break;
+				case 'postCap':
+					$this->gen_child_support_8_12E();
+					$this->gen_child_support_8_12F();
+					break;
+				case 'postMutual':
+					$this->gen_child_support_8_12F();
+					$this->gen_child_support_8_12G();
+					break;
+				case 'postReserve':
+					$this->gen_child_support_8_12H();
+					break;
+			}
+		}
+
+		// page 3 -> claiming the child(ren) as a dependent for tax purposes 
+
 
 
 

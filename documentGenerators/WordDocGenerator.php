@@ -100,6 +100,67 @@ class wordDocGenerator extends documentGenerator
 	function gen_child_support_8_09C()
 	{
 	}
+	function gen_child_support_8_10()
+	{
+	}
+	function gen_child_support_8_10A()
+	{
+	}
+	function gen_child_support_8_10B()
+	{
+	}
+	function gen_child_support_8_10C()
+	{
+	}
+	function gen_child_support_8_10D()
+	{
+	}
+	function gen_child_support_8_11()
+	{
+	}
+	function gen_child_support_8_11A()
+	{
+	}
+	function gen_child_support_8_11B()
+	{
+	}
+	function gen_child_support_8_11C()
+	{
+	}
+	function gen_child_support_8_11D()
+	{
+	}
+	function gen_child_support_8_11E()
+	{
+	}
+	function gen_child_support_8_12()
+	{
+	}
+	function gen_child_support_8_12A()
+	{
+	}
+	function gen_child_support_8_12B()
+	{
+	}
+	function gen_child_support_8_12C()
+	{
+	}
+	function gen_child_support_8_12D()
+	{
+	}
+	function gen_child_support_8_12E()
+	{
+	}
+	function gen_child_support_8_12F()
+	{
+	}
+	function gen_child_support_8_12G()
+	{
+	}
+	function gen_child_support_8_12H()
+	{
+	}
+
 
 	function genPart4()
 	{
