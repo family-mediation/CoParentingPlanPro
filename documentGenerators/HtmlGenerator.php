@@ -1103,8 +1103,53 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCHealthInsurance><b>8.08&nbsp; </b><u>SUPPORT OF THE CHILD(REN): HEALTH
-        INSURANCE PREMIUM</u></a><u>S</u>.&nbsp;&nbsp; <?php echo $parentAName; ?>/B shall cover the Child(ren)'s
-        health insurance premiums in the amount of $ <?php echo $varName; ?> per month.</p>";
+        INSURANCE PREMIUM</u></a><u>S</u>.&nbsp;&nbsp;<span style='background:yellow'>" . $this->responses["parentAB5"] . "</span> shall cover the Child(ren)'s
+        health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // header for uninsured co-pays for health-related expenses
+    function gen_child_support_8_09()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=SoCUninsuredCoPays><b>8.09&nbsp; </b><u>SUPPORT OF THE CHILD(REN): UNINSURED
+        CO-PAYS FOR HEALTH-RELATED EXPENSES</u></a>.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_09A() //sole responsibility
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCUninsuredCoPaysSR><b>8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
+        <span style='background:yellow'>" . $this->responses["parentAB6"] . "</span> shall cover 100% of the Child(ren)'s uninsured co-pays for
+        health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_09B() //split responsibility
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCUninsuredCoPaysSpR>8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b><u>SPLIT RESPONSIBILITY</u>.
+        Parent A shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and Parent B shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
+        uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span>
+        per month.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    function gen_child_support_8_09C() //responsibility for threshold amount
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        name=SoCUninsuredCoPaysThresholdAmount>8.09C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESPONSIBILITY
+        FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per
+        calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
+        that any Child's uninsured co-pays for health-related expenses paid by either
+        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
+        Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
+        health-related expenses premiums exceeding the threshold amount.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
     }

@@ -41,6 +41,12 @@ abstract class documentGenerator
 	public abstract function gen_child_support_8_05();
 	public abstract function gen_child_support_8_06();
 	public abstract function gen_child_support_8_07();
+	public abstract function gen_child_support_8_08();
+	public abstract function gen_child_support_8_09();
+	public abstract function gen_child_support_8_09A();
+	public abstract function gen_child_support_8_09B();
+	public abstract function gen_child_support_8_09C();
+
 
 
 
@@ -166,6 +172,29 @@ abstract class documentGenerator
 			}
 		}
 		// page 1 -> health insurance premiums 
+		$this->gen_child_support_8_08();
+
+		// page 1 -> uninsured co-pays for health-related expenses 
+		if (isset($_SESSION['responses']['insurance'])) {
+			$this->gen_child_support_8_09();
+			switch ($_SESSION['responses']['insurance']) {
+				case 'soleResp':
+					$this->gen_child_support_8_09A();
+					break;
+				case 'splitResp':
+					$this->gen_child_support_8_09B();
+					break;
+				case 'threshold':
+					$this->gen_child_support_8_09C();
+					break;
+			}
+		}
+		// page 2 -> extracurricular expenses 
+		// page 2 -> private school expenses 
+		// page 2 -> post-high school expenses
+
+
+
 
 
 		$this->genPart1();

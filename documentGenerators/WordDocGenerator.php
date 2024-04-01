@@ -85,6 +85,21 @@ class wordDocGenerator extends documentGenerator
 	function gen_child_support_8_07()
 	{
 	}
+	function gen_child_support_8_08()
+	{
+	}
+	function gen_child_support_8_09()
+	{
+	}
+	function gen_child_support_8_09A()
+	{
+	}
+	function gen_child_support_8_09B()
+	{
+	}
+	function gen_child_support_8_09C()
+	{
+	}
 
 	function genPart4()
 	{

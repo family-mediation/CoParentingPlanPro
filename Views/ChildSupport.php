@@ -98,9 +98,9 @@
         <div class="card-header">
           <h4>Health Insurance Premiums</h4>
         </div><br>
-        <p><select id="insParentAB4">
-            <option value="insParentA4">Parent A</option>
-            <option value="insParentB4">Parent B</option>
+        <p><select id="parentAB5" name="parentAB5">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover the Child(ren)'s health insurance premiums in the amount of
           $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
           per month.</p>
@@ -114,9 +114,9 @@
         </div>
 
         <div class="container card p-4" id="soleInfo" style="display: none;">
-          <select id="parentAB4">
-            <option value="parentA4">Parent A</option>
-            <option value="parentB4">Parent B</option>
+          <select id="parentAB6" name="parentAB6">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)’s
           uninsured co-pays for health-related expenses premiums in the amount of <br>$<input type="number" name="sole-1" style="width: 100px;" step="0.01" />/per month.
         </div>
