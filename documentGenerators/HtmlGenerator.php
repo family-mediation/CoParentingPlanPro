@@ -2,9 +2,9 @@
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
-	function genHeader()
-	{
-	 $headerString = "
+    function genHeader()
+    {
+        $headerString = "
 	    <html>
          <meta http-equiv=Content-Type content=\"text/html; charset=windows-1252\">
          <meta name=Generator content=\"Microsoft Word 15 (filtered)\">
@@ -53,12 +53,12 @@ class HtmlGenerator extends documentGenerator
          Protection from Parental Disputes</a> </p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PartiesInformationon" .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . "\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
-         on " .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . "</span></a></p>
+         href=\"#PartiesInformationon" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
+         on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span></a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PartiesInformationonParentB\"><span lang=FR>3.01&nbsp;&nbsp; Parties: Information
-         on " .  $this->responses["partyBFirst"]." ".$this->responses["partyBLast"] . "</span></a></p>
+         on " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span></a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#ChildrenInformationonChildren\">4.00&nbsp;&nbsp; Children: Information on the
@@ -221,7 +221,7 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
          href=\"#PhysicalCustodyHolidaysEveryYearWithAorB\">6.03D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Every Year with
-         " .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . " or " .  $this->responses["partyBFirst"]." ".$this->responses["partyBLast"] . "</a></p>
+         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " or " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PhysicalCustodyTravelwithChild\">6.04&nbsp;&nbsp; Physical Custody and Timesharing:
@@ -593,31 +593,31 @@ class HtmlGenerator extends documentGenerator
          border:none'>&nbsp;</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Name of " .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . "</p>
+         border:none'>Name of " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address ".$this->responses["partyAResidence"]."</p>
+         border:none'>Address " . $this->responses["partyAResidence"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Telephone ".$this->responses["partyACell"]."</p>
+         border:none'>Telephone " . $this->responses["partyACell"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>E-Mail ".$this->responses["partyAEmail"]."</p>
+         border:none'>E-Mail " . $this->responses["partyAEmail"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>&nbsp;</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Name of " .  $this->responses["partyBFirst"]." ".$this->responses["partyBLast"] . "</p>
+         border:none'>Name of " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address ".$this->responses["partyBResidence"]."</p>
+         border:none'>Address " . $this->responses["partyBResidence"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Telephone ".$this->responses["partyBCell"]."</p>
+         border:none'>Telephone " . $this->responses["partyBCell"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>E-Mail ".$this->responses["partyBEmail"]."</p>
+         border:none'>E-Mail " . $this->responses["partyBEmail"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>&nbsp;</p>
@@ -644,7 +644,7 @@ class HtmlGenerator extends documentGenerator
            <td width=307 valign=top style='width:3.2in;border:none;border-right:solid black 1.0pt;
            padding:0in 0in 0in 0in'>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-           border:none'>" .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . ",</p>
+           border:none'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ",</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
            border:none'>&nbsp;</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -656,7 +656,7 @@ class HtmlGenerator extends documentGenerator
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
            border:none'>&nbsp;</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-           border:none'>" .  $this->responses["partyBFirst"]." ".$this->responses["partyBLast"] . ",</p>
+           border:none'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . ",</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
            border:none'>&nbsp;</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -723,7 +723,7 @@ class HtmlGenerator extends documentGenerator
          <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>1.00 </b>THIS
          AGREEMENT is made and <span style='background:white'>entered this  <?php echo $varName; ?> (day) day
-         of  <?php echo $varName; ?> (month),  <?php echo $varName; ?> (year)</span>, by and between " .  $this->responses["partyAFirst"]." ".$this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"]." ".$this->responses["partyBLast"] . "
+         of  <?php echo $varName; ?> (month),  <?php echo $varName; ?> (year)</span>, by and between " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "
          (collectively hereinafter referred to as �Parents�) and applies to the
          Child(ren) named below in Paragraph 3.00.</p>
 
@@ -749,10 +749,10 @@ class HtmlGenerator extends documentGenerator
 
         echo $headerString;
         $this->fileContentString .= $headerString;
-	}
-	function genFooter()
-	{
-	    $footerString = "
+    }
+    function genFooter()
+    {
+        $footerString = "
         </div>
 
         </body>
@@ -761,44 +761,265 @@ class HtmlGenerator extends documentGenerator
         ";
         echo $footerString;
         $this->fileContentString .= $footerString;
-	}
-	function genPart1()
-	{
-	    $part1String = "";
+    }
+    function genPart1()
+    {
+        $part1String = "";
         echo $part1String;
         $this->fileContentString .= $part1String;
-	}
-	function genPart2()
-	{
-         echo "Generating Part2 <br/>";
-	}
+    }
+    function genPart2()
+    {
+        echo "Generating Part2 <br/>";
+    }
     function genPart3()
-	{
-         echo "Generating Part3 <br/>";
-	}
-    function genPart4()
-	{
-         echo "Generating Part4 <br/>";
-	}
-	function genPart5()
-	{
-         echo "Generating Part5 <br/>";
-	}
-	function genPart6()
-	{
-          echo "Generating Part6 <br/>";
-	}
-	function genPart7()
-	{
-          echo "Generating Part7 <br/>";
-	}
-	function packageDocument()
-	{
-	// Take the template.zip copy it and rename it in the downloads folder
-	// Take the string and write it to document.xml
-	 fwrite($this->fileOutput,$this->fileContentString);
-	// Zip the folder and rename it to .docx
-	// Serve the .docx
-	}
-}
+    {
+        echo "Generating Part3 <br/>";
+    }
 
+    // LEGAL CUSTODY
+    // Header & definition section 
+    function gen_legal_custody_5_00()
+    {
+        $definition = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+        margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+        line-height:150%'><u>LEGAL CUSTODY:</u></p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyDefinition></a><a name='_heading=h.gjdgxs'></a><b>5.00</b>&nbsp; <u>LEGAL
+        CUSTODY: DEFINITION</u>. Legal custody is the authority to make major decisions
+        involving the Child(ren).&nbsp; Such major decisions would include, among
+        others, the decision to allow the Child(ren) to enter the armed forces, the
+        decision to marry before the legal age, the decision to file a lawsuit, or
+        accept a settlement of claims involving the Child(ren), the decision to allow
+        the Child(ren) to use birth control, including pregnancy termination, the
+        decision to allow the children to obtain a driver's license or passport, the
+        decision to allow the Child(ren) to obtain substantial employment, the decision
+        to authorize non-emergency medical or other treatment for the Child(ren), the
+        decision to involve the Child(ren) in counseling, religious decisions affecting
+        the Child(ren), major decisions involving the Child(ren)'s education, such as
+        choice of school, change in school, advancement or retention, choice of
+        curriculum, participation in extracurricular activities, and special education
+        needs like tutoring, decisions as to the management of any substantial monies
+        received by the Child(ren), decisions regarding major expenditures by or for
+        the Child(ren), decisions involving serious discipline problems of the
+        Child(ren), decisions involving the receipt, management and sale of real or
+        personal property while a child is under eighteen (18) years of age, and
+        decisions involving a child's travel to any distance beyond the jurisdiction of
+        the United States for any period of time.&nbsp;</p>";
+        echo $definition;
+        $this->fileContentString .= $definition;
+    }
+    // joint to both parents 
+    function gen_legal_custody_5_01()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyJoint><b>5.01</b>&nbsp; <u>LEGAL CUSTODY: JOINT TO BOTH PARENTS</u></a>.&nbsp;
+        Parents shall share joint legal custody of the Child(ren) and shall make
+        decisions together. <span style='color:#333333'>Parents agree they shall make
+        significant decisions together and encourage input from Child(ren). If Parents
+        cannot come to an agreement about a major decision, they shall use the dispute
+        resolution process set out in this document.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // joint to both parents -> tie-breaking authority to parent A
+    function gen_legal_custody_5_03A()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyParentsConsultOneAuthority><b>5.03</b>&nbsp; <u>LEGAL CUSTODY:
+        PARENTS MUST CONSULT BUT ONE PARENT HAS TIE-BREAKING AUTHORITY</u></a>.&nbsp;
+        Parents shall share joint legal custody of the Child(ren), provided however,
+        that if Parents cannot mutually agree on a legal custody decision for the
+        Child(ren) after consulting with the other Parent and the Child(ren), then
+        <b>Parent A</b> shall have tie-breaking authority to make the legal custody decision
+        in the event of an impasse.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // joint to both parents -> tie-breaking authority to parent B 
+    function gen_legal_custody_5_03B()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyParentsConsultOneAuthority><b>5.03</b>&nbsp; <u>LEGAL CUSTODY:
+        PARENTS MUST CONSULT BUT ONE PARENT HAS TIE-BREAKING AUTHORITY</u></a>.&nbsp;
+        Parents shall share joint legal custody of the Child(ren), provided however,
+        that if Parents cannot mutually agree on a legal custody decision for the
+        Child(ren) after consulting with the other Parent and the Child(ren), then
+        <b>Parent B</b> shall have tie-breaking authority to make the legal custody decision
+        in the event of an impasse.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // sole to parent A
+    function gen_legal_custody_5_05A()
+    {   // 5.02  
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
+        <b>Parent A</b> shall have sole legal custody of the Child(ren).</p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <b>Parent A </b> is
+        awarded sole legal custody, <b>Parent B </b> shall have free and unrestricted access
+        to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
+        legal custody may independently contact any provider serving the Child(ren)
+        including education, health-related, extracurricular, etc. and access any and
+        all records or information.&nbsp; The Parent with legal custody shall have an
+        affirmative duty to inform the other Parent of any new providers working with
+        the Child(ren).</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // sole to parent B
+    function gen_legal_custody_5_05B()
+    {   // 5.02
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
+        <b>Parent B</b> shall have sole legal custody of the Child(ren).</p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <b>Parent B </b> is
+        awarded sole legal custody, <b>Parent A </b> shall have free and unrestricted access
+        to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
+        legal custody may independently contact any provider serving the Child(ren)
+        including education, health-related, extracurricular, etc. and access any and
+        all records or information.&nbsp; The Parent with legal custody shall have an
+        affirmative duty to inform the other Parent of any new providers working with
+        the Child(ren).</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // parents must consult but there is a division of authority 
+    function gen_legal_custody_5_04()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyParentsConsultDivofAuthority><b>5.04&nbsp; </b><u>LEGAL CUSTODY:
+        PARENTS MUST CONSULT BUT THERE IS A DIVISION OF AUTHORITY</u>.&nbsp; </a>Parents
+        shall share joint legal custody of the Child(ren), provided however, that if
+        Parents cannot mutually agree on a legal custody decision for the Child(ren),
+        then   <b>" . $this->responses["parentABW"] . "</b> shall have tie-breaking authority to make <span style='color:
+        #333333'>major decisions about the Child(ren)'s education and extracurricular
+        activities, after consulting with  <b>" . $this->responses["parentABX"] . "</b> and the Child(ren) and  <b>" . $this->responses["parentABY"] . "</b>
+        shall have tie-breaking authority to make major decisions about the Child(ren)'s
+        health care, language, and spirituality, after consulting with  <b>" . $this->responses["parentABZ"] . "</b> and the
+        child.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // emergency contacts for the child(ren) 
+    function gen_legal_custody_5_06()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyEmergencyContact><b>5.06</b>&nbsp; <u>LEGAL CUSTODY: EMERGENCY
+        CONTACTS FOR THE CHILD(REN</u></a><u>)</u>.&nbsp; Both Parents shall be listed as
+        the initial emergency contacts for the Child(ren) for any school,
+        extracurricular activity or other event where an emergency contact is
+        requested.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // expert advice when making legal custody decisions 
+    function gen_legal_custody_5_07()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyExpertAdvice><b>5.07</b>&nbsp; <u>LEGAL CUSTODY: EXPERT ADVICE WHEN
+        MAKING LEGAL CUSTODY DECISIONS</u>. </a>&nbsp;Parents shall seek the advice and be
+        guided by subject matter experts when making legal custody decisions on behalf
+        of the Child(ren). </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // day-to-day decisions
+    function gen_legal_custody_5_08()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyDaytoDay><b>5.08&nbsp; </b><u>LEGAL CUSTODY: DAY-TO-DAY DECISIONS</u></a>.&nbsp;
+        <span style='color:#333333'>During the period when the Child(ren) is or are
+        living with or in the care of a Parent, that Parent can make day-to-day
+        decisions about our child, for example about, doing homework, meals, visiting
+        with their friends, use of computer, etc.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // emergency decisions 
+    function gen_legal_custody_5_09()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyEmergencyDecisions><b>5.09&nbsp; </b><u>LEGAL CUSTODY: EMERGENCY
+        DECISIONS</u></a>.&nbsp; <span style='color:#333333'>In a health emergency for a
+        Child, the Parent with care of the Child(ren) at that time will make the
+        treatment decision, on the advice of medical personnel. If a Parent makes an
+        emergency health decision for a Child, the Parent who has made the decision must
+        immediately contact the other Parent.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // health emergency or death of other parent
+    function gen_legal_custody_5_10()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyHealthEmergencyDeathofParent><b><span style='color:#333333'>5.10</span></b></a><span
+        style='color:#333333'>&nbsp; </span><u>LEGAL CUSTODY: HEALTH EMERGENCY OR DEATH OF
+        OTHER PARENT</u>.&nbsp; <span style='color:#333333'>In the event of a Parent's
+        medical emergency, the other Parent shall assume the major decision-making
+        responsibilities for the Child(ren) until the situation becomes resolved.&nbsp; In
+        the event of the death of one Parent, the other Parent shall care for the Child(ren),
+        but the surviving Parent shall ensure that the Child(ren) has/have continued
+        relations with the relatives of the deceased Parent.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    // parallel parenting 
+    function gen_legal_custody_5_11()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=LegalCustodyParallelParenting><b><span style='color:#333333'>5.11</span></b></a><span
+        style='color:#333333'>&nbsp; </span><u>LEGAL CUSTODY: PARALLEL PARENTING</u>.&nbsp; <span
+        style='color:#333333'>Parents shall disengage from one another and make
+        decisions independently when the Child(ren) is in their care.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function genPart4()
+    {
+        echo "Generating Part4 <br/>";
+    }
+    function genPart5()
+    {
+        echo "Generating Part5 <br/>";
+    }
+    function genPart6()
+    {
+        echo "Generating Part6 <br/>";
+    }
+    function genPart7()
+    {
+        echo "Generating Part7 <br/>";
+    }
+    function packageDocument()
+    {
+        // Take the template.zip copy it and rename it in the downloads folder
+        // Take the string and write it to document.xml
+        fwrite($this->fileOutput, $this->fileContentString);
+        // Zip the folder and rename it to .docx
+        // Serve the .docx
+    }
+}

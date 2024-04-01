@@ -25,6 +25,58 @@ class wordDocGenerator extends documentGenerator
 	{
          echo "Generating Part3 <br/>";
 	}
+	function gen_legal_custody_5_00() 
+	{
+
+	}
+	function gen_legal_custody_5_01() 
+	{
+
+	}
+	function gen_legal_custody_5_03A() 
+	{
+
+	}
+	function gen_legal_custody_5_03B() 
+	{
+		
+	}
+	function gen_legal_custody_5_05A() 
+	{
+
+	}
+	function gen_legal_custody_5_05B() 
+	{
+
+	}
+	function gen_legal_custody_5_04() 
+	{
+
+	}
+	function gen_legal_custody_5_06() 
+	{
+
+	}
+	function gen_legal_custody_5_07() 
+	{
+		
+	}
+	function gen_legal_custody_5_08() 
+	{
+		
+	}
+	function gen_legal_custody_5_09() 
+	{
+		
+	}
+	function gen_legal_custody_5_10() 
+	{
+		
+	}
+	function gen_legal_custody_5_11() 
+	{
+		
+	}
     function genPart4()
 	{
          echo "Generating Part4 <br/>";
