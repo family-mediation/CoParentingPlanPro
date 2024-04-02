@@ -18,6 +18,9 @@ abstract class documentGenerator
 	public abstract function genPart2();
 	public abstract function genPart3();
 
+    // Section 2: Children
+    public abstract function gen_children_4_00();
+
 	// Section 3: Legal Custody 
 	public abstract function gen_legal_custody_5_00();
 	public abstract function gen_legal_custody_5_01();
@@ -112,7 +115,8 @@ abstract class documentGenerator
 			}
 		}
 
-		//var_dump($_SESSION['responses']);
+        /** Section 2: Children. */
+        $this->gen_children_4_00();
 
 		/*** Section 3: Legal Custody ***/
 		// Legal Custody: page 0 (definition)

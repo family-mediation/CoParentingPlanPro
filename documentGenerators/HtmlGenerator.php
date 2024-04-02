@@ -745,7 +745,7 @@ class HtmlGenerator extends documentGenerator
          none'><a name=IntroductionParentsDoNotSeekFamilyCourt><b>1.03</b> </a>WHEREAS,
          Parents intend this to be a binding agreement between them to govern the
          co-parenting of their Child(ren) but do not plan to seek approval of their
-         Agreement from the Family Court of their jurisdiction.</p>";
+         Agreement from the Family Court of their jurisdiction.</p></div></body></html>";
 
         echo $headerString;
         $this->fileContentString .= $headerString;
@@ -768,13 +768,36 @@ class HtmlGenerator extends documentGenerator
         echo $part1String;
         $this->fileContentString .= $part1String;
     }
+
+    /**
+     * Guiding Principals statement.
+     * @return void - concats to the output content string
+     */
     function genPart2()
     {
-        echo "Generating Part2 <br/>";
+        $guidingPrincipals = "from co-parenting plan template.php: RESPONSIBILITIES TO OUR CHILD(REN)";
+        echo $guidingPrincipals;
+        $this->fileContentString .= $guidingPrincipals;
     }
     function genPart3()
     {
         echo "Generating Part3 <br/>";
+    }
+
+    /** Section 2: Children. */
+    function gen_children_4_00() {
+        $childrenInfo = "
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
+150%'><u>CHILDREN:</u></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
+CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\"" . $this->responses["child1Initials"] . "\") born in (" . $this->responses["child1BirthYears"] . "), Child B
+(\"" . $this->responses["child2Initials"] . "\") born in (" . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+        echo $childrenInfo;
+        $this->fileContentString .= $childrenInfo;
     }
 
     // LEGAL CUSTODY

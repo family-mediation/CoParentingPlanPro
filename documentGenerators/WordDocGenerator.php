@@ -25,7 +25,14 @@ class wordDocGenerator extends documentGenerator
 	{
 		echo "Generating Part3 <br/>";
 	}
-	// legal custody section 3
+
+    // Section 2: Children
+    function gen_children_4_00() {
+        console_log('inside word doc gen for gen_children_4_00');
+    }
+
+
+    // legal custody section 3
 	function gen_legal_custody_5_00()
 	{
 	}
