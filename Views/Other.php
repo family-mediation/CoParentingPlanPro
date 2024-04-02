@@ -3,128 +3,138 @@
      <div id="mainForm">
       <div id="page0" class="container card p-4">
         <h1>Other Issues:</h1>
-        <fieldset>
+        <br>
               <div>
-              <input type="checkbox" id="9.00" name="others" onclick="checkBox('therapist')"/>
+              <input type="checkbox" id="9.00"  onclick="checkBox('therapist')"/>
               <label for="9.00">Co-Parent Counseling</label>
               </div>
-              <div class="container card p-3" id="cotherapist" style="display: none;">
-              Name <input type="text" id="therapistInput" /> for Therapist.
+
+              <div class="container card p-4" id="cotherapist" style="display: none;">
+              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), or other mutually selected licensed mental health professional,
+               as a Co-Parent Counselor to assist them in collaboratively parenting the Child(ren).
               </div>
 
               <div>
-              <input type="checkbox" id="9.01" name="others" onclick="clickMe('childTherapist')" />
+              <input type="checkbox" id="9.01"  onclick="clickMe('childTherapist')" />
               <label for="9.01">Child-Focused Therapist</label>
-             </div>
-              <div class="container card p-3" id="childTherapistSection" style="display: none;">
-              Name <input type="text" id="childTherapistInput" /> for Therapist.
+              </div>
+
+              <div class="container card p-4" id="childTherapistSection" style="display: none;">
+              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), 
+              or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).              
               </div>
 
               <div>
-              <input type="checkbox" id="9.02" name="others" />
+              <input type="checkbox" id="9.02"/>
               <lable for="9.02">Social Media Between Parents</lable>
               </div>
           
               <div>
-              <input type="checkbox" id="9.03" name="others" />
+              <input type="checkbox" id="9.03"/>
               <label for="9.03">Social Media For Child(ren)</label>
               </div>
 
             <div>
-              <input type="checkbox" id="9.04" name="others" />
+              <input type="checkbox" id="9.04"/>
               <label for="9.04">Joint Parent-Teacher Meetings</label>
             </div>
 
               <div>
-              <input type="checkbox" id="9.05" name="others" />
+              <input type="checkbox" id="9.05"/>
               <label for="9.05">Separate Parent-Teacher Meetings</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.06" name="others" onclick="showParentOptions()"/>
+              <input type="checkbox" id="9.06"  onclick="showParentOptions()"/>
               <label for="9.06">One Parent to Attend Parent-Teacher Meetings</label>
               </div>
 
-              <div id="parentOptions" style="display:none;">
-              <input type="radio" id="parentA" name="parentAttendance" value="parentA" />
-              <label for="parentA">Parent A</label>
-
-              <input type="radio" id="parentB" name="parentAttendance" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <div class="container card p-4" id="parentOptions" style="display: none;">
+              <select id="parentAB_Other">
+              <option value="parentAB_Other">Parent A</option>
+              <option value="parentAB_Other">Parent B</option>
+              </select> will attend all parent-teacher meetings and will advise Parent B/A of the Child(ren)'s progress.
               </div>
 
               <div>
-              <input type="checkbox" id="9.07" name="others" />
+              <input type="checkbox" id="9.07"/>
               <label for="9.07">Report Cards for the Child(ren)</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.08" name="others" />
+              <input type="checkbox" id="9.08"/>
               <label for="9.08">Joint Attendance at School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.09" name="others" />
+              <input type="checkbox" id="9.09"/>
               <label for="9.09">Custodial Parent to Attend School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.10" name="others" />
+              <input type="checkbox" id="9.10"/>
               <label for="9.10">Alternate Attendance at School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.11" name="others" onclick="clickDoc()"/>
+              <input type="checkbox" id="9.11"  onclick="clickDoc()"/>
               <label for="9.11">Documents</label>
               </div>
 
-              <div id="parentDoc" style="display:none;">
-              <input type="radio" id="parentA" name="parentDocuments" value="parentA" />
-              <label for="parentA">Parent A</label>
+              <div class="container card p-4" id="parentDoc" style="display:none;">
+              <select id="parentAB_Other">
+              <option value="parentAB_Other">Parent A</option>
+              <option value="parentAB_Other">Parent B</option>
+              </select> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, 
+              and (insert any other relevant documents below) at their home, and these documents will be made available to 
+              <select id="parentAB_Other2">
+              <option value="parentAB_Other2">Parent A</option>
+              <option value="parentAB_Other2" selected>Parent B</option></select> as needed. 
+              Both Parents shall have copies of all of the important documents.
 
-              <input type="radio" id="parentB" name="parentDocuments" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <br>
+              <input type="file"  multiple />
               </div>
-
+ 
               <div>
-              <input type="checkbox" id="9.12" name="others" />
+              <input type="checkbox" id="9.12"/>
               <label for="9.12">Joint Authority to Consent for Passport</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.13" name="others" onclick="clickPassport()"/>
+              <input type="checkbox" id="9.13"  onclick="clickPassport()"/>
               <label for="9.13">Sole Authority to Consent for Passport</label>
               </div>
 
-              <div id="passport" style="display:none;">
-              <input type="radio" id="parentA" name="parentDocuments" value="parentA" />
-              <label for="parentA">Parent A</label>
-
-              <input type="radio" id="parentB" name="parentDocuments" value="parentB" />
-              <label for="parentB">Parent B</label>
+              <div class="container card p-4" id="passport" style="display: none;">
+              <select id="parentAB_Other3">
+              <option value="parentAB_Other3">Parent A</option>
+              <option value="parentAB_Other3">Parent B</option>
+              </select> can apply for the passport for a Child without the consent of 
+              <select id="parentAB_Other4">
+              <option value="parentAB_Other4">Parent A</option>
+              <option value="parentAB_Other4" selected>Parent B</option></select>.
               </div>
 
               <div>
-              <input type="checkbox" id="9.14" name="others" />
+              <input type="checkbox" id="9.14"/>
               <label for="9.14">New Intimate Partner Protocols (Less Detailed)</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.15" name="others" />
+              <input type="checkbox" id="9.15"/>
               <label for="9.15">New Intimate Partner Protocols (More Detailed)</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.16" name="others" />
+              <input type="checkbox" id="9.16"/>
               <label for="9.16">Alternative Dispute Resolution</label>
               </div>
-          </fieldset>
-          <div class="row justify-content-center pt-4 pb-4" name="others">
+          <div class="row justify-content-center pt-4 pb-4">
           <button id="next0" onclick="submit()">Next Page</button>
         </div>
       </div>
     </div>
-  </form>
 </div>
 
 <script>
