@@ -43,8 +43,8 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_01B();
     public abstract function gen_physical_custody_timesharing_6_02();
     public abstract function gen_physical_custody_timesharing_6_02A(string $type);
-    public abstract function gen_physical_custody_timesharing_6_02B();
-    public abstract function gen_physical_custody_timesharing_6_02C();
+    public abstract function gen_physical_custody_timesharing_6_02B(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02C(string $type);
     public abstract function gen_physical_custody_timesharing_6_02D();
     public abstract function gen_physical_custody_timesharing_6_02E();
     public abstract function gen_physical_custody_timesharing_6_03();
@@ -229,6 +229,32 @@ abstract class documentGenerator
                     break;
                 case "fall-continue-schedule":
                     $this->gen_physical_custody_timesharing_6_02A("fall-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolThanksgivingBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolThanksgivingBreakSchedule']) {
+                case "thanksgiving-split-break":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-split-break");
+                    break;
+                case "thanksgiving-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-alternate-break");
+                    break;
+                case "thanksgiving-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolWinterBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolWinterBreakSchedule']) {
+                case "winter-split-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-split-break");
+                    break;
+                case "winter-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-alternate-break");
+                    break;
+                case "winter-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-continue-schedule");
                     break;
             }
         }

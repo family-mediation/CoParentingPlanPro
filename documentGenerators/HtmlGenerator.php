@@ -959,6 +959,7 @@ class HtmlGenerator extends documentGenerator
         $this->fileContentString .= $content;
     }
 
+    // Fall Break schedules.
     function gen_physical_custody_timesharing_6_02A(string $type) {
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
@@ -989,8 +990,77 @@ class HtmlGenerator extends documentGenerator
                 echo "Error in HTML Generator for the variable: schoolFallBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_02B() {}
-    function gen_physical_custody_timesharing_6_02C() {}
+
+    // Thanksgiving Break schedules.
+    function gen_physical_custody_timesharing_6_02B(string $type) {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
+            name=PhysicalCustodyThanksgiving><b>6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>THANKSGIVING BREAK</u></a>.&nbsp;
+            The Parents shall share time with the Child(ren) during Thanksgiving Breaks as
+            follows:&nbsp; </p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "thanksgiving-split-break":
+                $split = new ThanksgivingSchedules();
+                $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            case "thanksgiving-alternate-break":
+                $alternate = new ThanksgivingSchedules();
+                $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            case "thanksgiving-continue-schedule":
+                $continue = new ThanksgivingSchedules();
+                $thanksgiving = $continue->get_continue();
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolThanksgivingBreakSchedule.";
+        }
+        // Adding option for parent to see child(ren).
+        $get_time = new ThanksgivingSchedules();
+        $content = $get_time->get_time();
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+
+    // Winter Break schedules.
+    function gen_physical_custody_timesharing_6_02C(string $type) {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
+            name=PhysicalCustodyWinterBreak><b>6.02C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>WINTER BREAK</u></a>.&nbsp;
+            The Parents shall share time with the Child(ren) during Winter Break as
+            follows:</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "winter-split-break":
+                $split = new WinterSchedules();
+                $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-alternate-break":
+                $alternate = new WinterSchedules();
+                $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-continue-schedule":
+                $continue = new WinterSchedules();
+                $winter = $continue->get_continue();
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolWinterBreakSchedule.";
+        }
+    }
     function gen_physical_custody_timesharing_6_02D() {}
     function gen_physical_custody_timesharing_6_02E() {}
     function gen_physical_custody_timesharing_6_03() {}

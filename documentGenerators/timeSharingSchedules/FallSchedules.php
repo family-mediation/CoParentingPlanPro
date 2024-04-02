@@ -1,20 +1,5 @@
 <?php
 class FallSchedules {
-//    private $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-//        margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-//        name=PhysicalCustodyFallBreakSB><b>6.02A(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u>.</a>&nbsp;
-/*        In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the*/
-/*        break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the*/
-/*        break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half*/
-/*        of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of*/
-//        the break.</p>";
-//    private $alternate = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-//margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-//name=PhysicalCustodyFallBreakAB><b>6.02A(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
-/*In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar*/
-/*years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>";*/
-
-    private $continue = "";
 
     public function get_split(string $parentAFirst, string $parentBFirst): string {
         return "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
