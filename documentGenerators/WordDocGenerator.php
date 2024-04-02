@@ -97,6 +97,23 @@ class wordDocGenerator extends documentGenerator
 
     } // End of section 4: Physical custody and Timesharing
 
+	//Communication section
+	function gen_communication_7() {}
+	function gen_communication_7_01() {}
+	function gen_communication_7_02() {}
+	function gen_communication_7_03() {}
+	function gen_communication_7_04() {}
+	function gen_communication_7_05() {}
+	function gen_communication_7_06() {}
+	function gen_communication_7_07() {}
+	function gen_communication_7_08() {}
+	function gen_communication_7_08_comm() {}
+	function gen_communication_7_09() {}
+	function gen_communication_7_10() {}
+
+	// End of Communication
+
+
 	// child support section 6
 	function gen_child_support_8_00()
 	{

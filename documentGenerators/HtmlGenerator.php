@@ -1143,6 +1143,268 @@ class HtmlGenerator extends documentGenerator
     } // End of section 4: Physical custody and Timesharing
 
 
+     //Section 7 Communication: Definition
+     function gen_communication_7()
+     {
+         $definition = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+         margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+         line-height:150%'><u>COMMUNICATION:</u></p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=Communication><b>7.00</b>&nbsp; <u>COMMUNICATION</u></a>.&nbsp; Parents agree and
+         understand that communication between Co-Parents is critical to their
+         Child(ren)'s well-being.&nbsp; Parents shall work together to agree on what
+         information needs to be communicated to the other Parent in a timely manner
+         and, at a minimum agree, that the following shall be communicated:</p>
+         
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>a.<span style='font:7.0pt'>&nbsp;&nbsp;&nbsp; </span>A
+         child is sick.</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>b.<span style='font:7.0pt'>&nbsp;&nbsp; </span>A
+         child is missing school.</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>c.<span style='font:7.0pt'>&nbsp;&nbsp;&nbsp; </span>A
+         child will be spending the night somewhere other than the custodial parent's
+         home.</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>d.<span style='font:7.0pt'>&nbsp;&nbsp; </span>A
+         pet belonging to a child is missing, dying, or new.</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>e.<span style='font:7.0pt'>&nbsp;&nbsp;&nbsp; </span>An
+         individual, other than the parent or subject child(ren), is moving into the
+         custodial parent's home or property (includes long-term tenants).</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>f.<span style='font:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;
+         </span>An individual other than a parent is transporting a child (those
+         authorized to transport the Child(ren) shall be agreed upon in advance in
+         writing).</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>g.<span style='font:7.0pt'>&nbsp;&nbsp;&nbsp; </span>An
+         individual other than a parent is caring a child when the custodial parent is
+         not present (those authorized to care for the children shall be agreed upon in
+         advance in writing).</p>
+ 
+         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+         border:none'>h.<span style='font:7.0pt'>&nbsp;&nbsp; </span>Discipline
+         of a child during one parent's timesharing day which may affect the other
+         parent's timesharing.&nbsp; </p>";
+ 
+         echo $definition;
+         $this->fileContentString .= $definition;
+     }
+ 
+     //Communication method
+ 
+     function gen_communication_7_01()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationEmailOnly><b>7.01</b>&nbsp; <u>COMMUNICATION BETWEEN CO-PARENTS:
+         <span style='background:yellow'>E-MAIL ONLY</span></u></a>. 
+         Parents shall communicate primarily through e-mail.&nbsp; The
+         Parents may utilize text or telephone calls in an emergency situation or in the
+         event a timely response is needed (within 2 � 4 hours).&nbsp; Otherwise, all
+         communication shall be via e-mail.&nbsp; Both Parents shall check their e-mail at
+         least once daily and shall respond to messages or other items needing attention
+         (i.e. switch requests) within 48 hours.&nbsp; If more time is needed to respond, the
+         receiving parent shall acknowledge the message and provide a timeline in which
+         a response shall be provided.</p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_02()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationEmailandTextOnly><b>7.02</b>&nbsp; <u>COMMUNICATION BETWEEN
+         CO-PARENTS: <span style='background:yellow'>E-MAIL AND TEXT ONLY</span></u></a>. 
+         Parents shall communicate primarily through e-mail and text.&nbsp; The Parents may utilize telephone calls in an
+         emergency situation or in the event a timely response is needed (within 2 � 4
+         hours).&nbsp; Otherwise, all communication shall be via e-mail or text.&nbsp; Both
+         Parents shall check their e-mail and texts at least once daily and shall
+         respond to messages or other items needing attention (i.e. switch requests)
+         within 48 hours.&nbsp; If more time is needed to respond, the receiving parent shall
+         acknowledge the message and provide a timeline in which a response shall be
+         provided.</p>";
+         
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_03()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationOurFamilyWizard><b>7.03</b>&nbsp; <u>COMMUNICATION BETWEEN
+         CO-PARENTS: <span style='background:yellow'>OUR FAMILY WIZARD OR OTHER MUTUALLY AGREED UPON PARENTING
+         COMMUNICATION APPLICATION</span></u>.</a> Parents shall communicate solely through Our
+         Family Wizard or other mutually agreed upon parenting communication
+         application.&nbsp; Both Parents shall sign up for Our Family Wizard or other
+         mutually agreed upon parenting communication application within ten (10) days
+         of the date the last party signs this Agreement and shall maintain an account
+         with said program.</p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     //communication between co-parents
+     function gen_communication_7_04()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationMonthlyConference><b>7.04&nbsp; </b><u>COMMUNICATION BETWEEN
+         CO-PARENTS: <span style='background:yellow'>MONTHLY CONFERENCE</span></u></a>. Parents shall meet monthly to discuss
+         the children's development and needs including education, health, well-being,
+         extracurricular activities, scheduling issues, travel and any other issues
+         pertaining to their child(ren).&nbsp; Conferences shall be on the first  <span style='background:yellow'>" . $this->responses["monthly"] . "</span>&nbsp;
+         [insert day of the week] of each month unless mutually agreed to otherwise.
+         Meetings may be via in-person, video conference or telephone calls, as mutually
+         agreed by the Parents.&nbsp; This requirement for monthly conferences between
+         Parents shall end upon each child's eighteenth (18th) birthday, or as mutually
+         agreed by the Parents.&nbsp; </p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_05()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationSemiAnnualConference><b>7.05&nbsp; </b><u>COMMUNICATION BETWEEN
+         CO-PARENTS: SEMI-ANNUAL CONFERENCE</u></a>. Parents shall meet and confer twice
+         annually by no later than <span sytle='background:yellow'>" . $this->responses["semifromdate"] . "</span> and <span sytle='background:yellow'>" . $this->responses["semitodate"] . "</span>
+         every year.&nbsp; Meetings may be via in-person, video conference or telephone
+         calls, as mutually agreed by the Parents.&nbsp; This requirement for bi-annual
+         conferences between Parents shall end upon each child's eighteenth (18th)
+         birthday, or as mutually agreed by the Parents.&nbsp; </p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_06()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationAnnualConference><b>7.06&nbsp; </b><u>COMMUNICATION BETWEEN
+         CO-PARENTS: ANNUAL CONFERENCE</u></a>.</p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+     
+     function gen_communication_7_06a()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parents
+         shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annuldate"] . "</span> every
+         year.&nbsp; Meetings may be via in-person, video conference or telephone calls, as
+         mutually agreed by the Parents.&nbsp; This requirement for annual conferences
+         between Parents shall end upon each child's eighteenth (18th) birthday, or as
+         mutually agreed by the Parents.<u> </u></p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_07()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationUnlimited><b>7.07&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN)
+         AND NON-CUSTODIAL PARENT: <span style='background:yellow'>UNLIMITED</span></u></a>.&nbsp; <span style='color:#333333'>During
+         the regular parenting time schedule, the child may contact each parent whenever
+         they wish.</span></p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_08()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
+         NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
+         regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["PAfromtime"] . "</span> and <span syle='background:yellow'>" . $this->responses["PAtotime"] . "</span> when they are with Parent B 
+         and Parent B may call the
+         child between <span syle='background:yellow'>" . $this->responses["PBfromtime"] . "</span> and <span syle='background:yellow'>" . $this->responses["PBtotime"] . "</span> when they are with ParentA.
+         Calls will normally be no more than 10 minutes.</span></p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_08_comm()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationExchangeofContactInfo><b>7.08 </b> <u>COMMUNICATION:&nbsp;
+         EXCHANGE OF CONTACT INFORMATION</u></a>.&nbsp; <span style='color:#333333'>Parents
+         shall provide to the other Parent with updated telephone number(s), email
+         address, and home address. Parents agree that if this contact information
+         changes, they shall provide the new contact information to the other Parent
+         immediately.</span></p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_09()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationSchedulingExtracurricular><b>7.09&nbsp; </b><u>COMMUNICATION:
+         SCHEDULING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u></a>.&nbsp; Both Parents
+         understand that reasonable extracurricular activities are healthy and
+         appropriate outlets for our Child(ren).&nbsp; Both Parents understand that selecting
+         extracurricular activities for the Child(ren) is a legal custody decision. <span
+         style='color:#333333'>Neither of us will schedule extra-curricular activities
+         during the time the Child(ren) is to be living with or in the care of the other
+         Parent, unless the other Parent agrees.</span><b>&nbsp; </b><span style='color:#333333'>The
+         other Parent shall not unreasonably withhold their agreement.</span></p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+ 
+     function gen_communication_7_10()
+     {
+         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=CommunicationSelectingExtracurricular><b>7.10</b>&nbsp; <u>COMMUNICATION:
+         SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u>.&nbsp; </a><span
+         style='color:#333333'>Each Parent may select and pay for one extra-curricular
+         activity that occurs no more than once a week for each Child, and the other
+         Parent shall be expected to take each Child to that activity and support the
+         Child's participation during the time that the Child is in their care.</span>&nbsp; </p>";
+ 
+         echo $snippet;
+         $this -> fileContentString .= $snippet;
+     }
+
+     // End of Communication
+     
     // LEGAL CUSTODY
     // Header & definition section 
     function gen_legal_custody_5_00()
