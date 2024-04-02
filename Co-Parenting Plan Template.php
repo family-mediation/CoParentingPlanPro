@@ -1156,43 +1156,6 @@ decisions independently when the Child(ren) is in their care.</span></p>
 
 
 
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=PhysicalCustodyDuringSchoolBreaks><b>6.02</b>&nbsp; <u>PHYSICAL CUSTODY AND
-TIMESHARING: TIMESHARING DURING THE SCHOOL BREAKS</u></a>.&nbsp; Unless otherwise
-agreed by both Parents, school breaks shall be defined as beginning after
-school on the last day prior to the break and ending at the morning drop off at
-school on the day school resumes.&nbsp; During their designated school break time
-with the Child(ren), either Parent may elect to travel with the Child(ren) per
-the Travel with the Child(ren) provision hereinbelow.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodyFallBreak><b>6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </b><u>FALL BREAK</u>.&nbsp; </a>The
-Parents shall share time with the Child(ren) during Fall Breaks as follows:&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakSB><b>6.02A(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u>.</a>&nbsp;
-In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
-break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
-of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
-the break.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakAB><b>6.02A(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
-years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodyFallBreakContinueSchedule><b>6.02A(iii)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u></a>.&nbsp; Parents shall continue the normal
-during the school year schedule during this break.</p>
-
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
 name=PhysicalCustodyThanksgiving><b>6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>THANKSGIVING BREAK</u></a>.&nbsp;

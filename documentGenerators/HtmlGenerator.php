@@ -1,6 +1,7 @@
 <?php
-include 'EqualTimeSharingSchedules.php';
-include 'OtherTimeSharingSchedules.php';
+include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
+include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedules/FallSchedules.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -944,7 +945,54 @@ class HtmlGenerator extends documentGenerator
                 echo "Error in HTML Generator for the variable: schoolYearSchedule - other schedules.";
         }
     }
-    function gen_physical_custody_timesharing_6_02() {}
+    function gen_physical_custody_timesharing_6_02() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyDuringSchoolBreaks><b>6.02</b>&nbsp; <u>PHYSICAL CUSTODY AND
+            TIMESHARING: TIMESHARING DURING THE SCHOOL BREAKS</u></a>.&nbsp; Unless otherwise
+            agreed by both Parents, school breaks shall be defined as beginning after
+            school on the last day prior to the break and ending at the morning drop off at
+            school on the day school resumes.&nbsp; During their designated school break time
+            with the Child(ren), either Parent may elect to travel with the Child(ren) per
+            the Travel with the Child(ren) provision hereinbelow.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+
+    function gen_physical_custody_timesharing_6_02A(string $type) {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
+            name=PhysicalCustodyFallBreak><b>6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </b><u>FALL BREAK</u>.&nbsp; </a>The
+            Parents shall share time with the Child(ren) during Fall Breaks as follows:&nbsp; </p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "fall-split-break":
+                $split = new FallSchedules();
+                $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            case "fall-alternate-break":
+                $alternate = new FallSchedules();
+                $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            case "fall-continue-schedule":
+                $continue = new FallSchedules();
+                $fall = $continue->get_continue();
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolFallBreakSchedule.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02B() {}
+    function gen_physical_custody_timesharing_6_02C() {}
+    function gen_physical_custody_timesharing_6_02D() {}
+    function gen_physical_custody_timesharing_6_02E() {}
     function gen_physical_custody_timesharing_6_03() {}
     function gen_physical_custody_timesharing_6_04() {}
     function gen_physical_custody_timesharing_6_05() {}

@@ -42,6 +42,11 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_01A();
     public abstract function gen_physical_custody_timesharing_6_01B();
     public abstract function gen_physical_custody_timesharing_6_02();
+    public abstract function gen_physical_custody_timesharing_6_02A(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02B();
+    public abstract function gen_physical_custody_timesharing_6_02C();
+    public abstract function gen_physical_custody_timesharing_6_02D();
+    public abstract function gen_physical_custody_timesharing_6_02E();
     public abstract function gen_physical_custody_timesharing_6_03();
     public abstract function gen_physical_custody_timesharing_6_04();
     public abstract function gen_physical_custody_timesharing_6_05();
@@ -211,7 +216,21 @@ abstract class documentGenerator
                     $this->gen_physical_custody_timesharing_6_01B();
                     break;
             }
-            // Page 1.
+        }
+        // Page 1.
+        $this->gen_physical_custody_timesharing_6_02();
+        if (isset($_SESSION['responses']['schoolFallBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolFallBreakSchedule']) {
+                case "fall-split-break":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-split-break");
+                    break;
+                case "fall-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-alternate-break");
+                    break;
+                case "fall-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-continue-schedule");
+                    break;
+            }
         }
 
 
