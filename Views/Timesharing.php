@@ -281,6 +281,10 @@
                   <label for="first-refusal">Right of First Refusal</label>
                 </div>
                 <div>
+                  <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
+                  <label for="pick-up">Pick Up for Non-School Exchange</label>
+                </div>
+                <div>
                   <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>
                   <label for="drop-off">Drop Off for Non-School Exchange</label>
                 </div>

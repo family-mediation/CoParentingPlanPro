@@ -1113,7 +1113,7 @@ class HtmlGenerator extends documentGenerator
                 break;
             case "summer-uniterrupted-break":
                 $alternate = new SummerSchedules();
-                $summer = $alternate->get_continue_uniterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $summer = $alternate->get_continue_uniterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst']); //need to implement this part, taking in time inputs
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
@@ -1128,18 +1128,197 @@ class HtmlGenerator extends documentGenerator
         }
     }
     function gen_physical_custody_timesharing_6_03() {}
-    function gen_physical_custody_timesharing_6_04() {}
-    function gen_physical_custody_timesharing_6_05() {}
-    function gen_physical_custody_timesharing_6_06() {}
-    function gen_physical_custody_timesharing_6_07() {}
-    function gen_physical_custody_timesharing_6_08() {}
-    function gen_physical_custody_timesharing_6_09() {}
-    function gen_physical_custody_timesharing_6_10() {}
-    function gen_physical_custody_timesharing_6_11() {}
-    function gen_physical_custody_timesharing_6_12() {}
-    function gen_physical_custody_timesharing_6_13() {}
-    function gen_physical_custody_timesharing_6_14() {
 
+    // Travel with children checked.
+    function gen_physical_custody_timesharing_6_04() {
+        //must implement the input - grabbing additional data if the user checks the box
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have the
+            right to take up to " . $this->responses['daysOff'] . "[insert days/weeks] days/weeks of off-island
+            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " [insert number of days] days' notice in writing to the non-traveling parent
+            if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
+            State of Hawai�i, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
+            days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
+            travel, at least   " . $this->responses['daysNotifyOutside'] . " [insert number of days] days prior to departure (or
+              " . $this->responses['dayNotifyHawaii'] . " [insert number of days] days prior to departure for in-state travel),
+            the traveling parent shall provide the non-traveling parent full details
+            regarding the trip including: (a) airline; flight number; dates and times of
+            each flight leg; (b) the dates and times the traveling parent and the
+            Child(ren) will be staying in each hotel, residence, etc.; and (c) if the
+            Child(ren) are going to be traveling with others, the names of the other
+            travelers.&nbsp; If the traveling parent does not provide this information, the trip
+            shall not occur.&nbsp;&nbsp; </p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
+            border:none'>Parents shall alternate having the first choice for dates for
+            off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In even
+            years,  " . $this->responses['partyAFirst'] . " shall have first choice for dates of travel so long as they
+            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " by no later than  " . $this->responses['yearsNotify'] . "
+            [insert date] of that same year.&nbsp; In odd years, " . $this->responses['partyBFirst'] . " shall have first
+            choice for dates of travel so long as they provide the specific dates in
+            writing to " . $this->responses['partyAFirst'] . " by no later than  " . $this->responses['sameYearNotify'] . "[insert date] of that same year.
+            If either parent wishes to take the Child(ren) out of the country or miss any
+            school days in order to travel, such a trip shall require the non-traveling
+            parent's consent which, if such requests are occasional, shall not be
+            unreasonably withheld. Parents agree that off-island travel shall not
+            negatively impact the Child(ren)'s education.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+
+    // Rescheduling and Make-Up time checked.
+    function gen_physical_custody_timesharing_6_05() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyRescheduling><b>6.05&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: RESCHEDULING AND MAKE-UP TIME</u>.</a><span style='color:#333333'>&nbsp;
+            </span><span style='color:#333333'>If a Parent is faced with an unexpected
+            situation such as illness or a death in the family, or an irregular event like
+            a family wedding, the other Parent will make every effort to accommodate a
+            request for a change in the </span>schedule. If the change in the schedule
+            results in the Child(ren) missing considerable time with the accommodating
+            parent, reasonable make-up time will be arranged by the Parents.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Right of first refusal checked.
+    function gen_physical_custody_timesharing_6_06() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyROFR><b>6.06&nbsp; </b><u>PHYSICAL CUSTODY AND TIMESHARING:
+            RIGHT OF FIRST REFUSAL</u></a>.<b>&nbsp; </b><span style='color:#333333'>We agree
+            that if a Parent is unable to care for the Child(ren) themselves for a period
+            of more than  " . $this->responses['refusalHours'] . "</span> [insert number of hours]<span style='color:#333333'>
+            hours during their time with the Child(ren), they shall notify the other Parent
+            and give them the opportunity to spend the period for which childcare is
+            required with the Child(ren). </span>If the non-custodial Parent cannot
+            accommodate the request, the custodial Parent is responsible for arranging and
+            paying for alternate childcare and will inform the other Parent of who will be
+            caring for the Child(ren).</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Pick-up, non-school.
+    function gen_physical_custody_timesharing_6_07() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyPickupNonSchool><b>6.07&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: PICK-UP FOR NON-SCHOOL EXCHANGES</u></a>.&nbsp; If possible, exchanges
+            shall occur at school provided however, that if exchanges are not during school
+            pick-ups or drop offs, then the Parents receiving the Child(ren) for custodial
+            time shall pick-up the Child(ren) from the other Parent.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Drop-off, non-school.
+    function gen_physical_custody_timesharing_6_08() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyDropOffNonSchool><b>6.08&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: DROP OFF FOR NON-SCHOOL EXCHANGES</u></a>.&nbsp; If possible, exchanges
+            shall occur at school provided however, that if exchanges are not during school
+            pick-ups or drop offs, then the Parents relinquishing the Child(ren) for
+            custodial time shall drop off the Child(ren) to the other Parent. &nbsp;&nbsp;&nbsp; </p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Exchanges, neutral location.
+    function gen_physical_custody_timesharing_6_09() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyNeutralLocation><b>6.09&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
+            shall occur at school provided however, that if exchanges are not during school
+            pick-ups or drop offs, Parents agree to exchange the child at the following
+            neutral location&nbsp;  " . $this->responses['exchangeAddress'] . " [insert address].</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Delegate Pick up and Drop off.
+    function gen_physical_custody_timesharing_6_10() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyDelgationPickupDropOff><b>6.10&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING:&nbsp; PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.&nbsp;
+            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            pick up or drop off the Child(ren) as provided for in the parenting time
+            arrangement, the Parent who is responsible for the pick-up or drop off may
+            delegate another person to pick up or drop off the Child(ren).</span></p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Persons authorized to pick up/drop off.
+    function gen_physical_custody_timesharing_6_11() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11&nbsp; </b><u>PHYSICAL CUSTODY
+            AND TIMESHARING:&nbsp; PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
+            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            pick up or drop off the Child(ren) as provided for in the parenting time
+            arrangement, the following people may pick up or drop off the Child(ren):
+             " . $this->responses['personsAuthorized'] . "[insert names of all jointly authorized
+            individuals].</span></p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Children's personal belongings.
+    function gen_physical_custody_timesharing_6_12() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyChildBelongings><b>6.12&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: CHILD(REN)'S PERSONAL BELONGINGS</u>.</a><span style='color:#333333'>
+            </span><span style='color:#333333'>Child(ren) often have favorite clothing,
+            toys, or communication devices that they would like to have with them, wherever
+            they are living. Even if these are gifts from one parent, it is normally
+            appropriate to recognize the Child(ren)'s attachments and rights to personal
+            property. If there is potential for conflict on this issue, it can be important
+            to be clear about where the Child(ren) may take these items and communicate
+            this directly to the other Parent.&nbsp; </span>Child(ren) may take personal items
+            (for example, clothing, toys, sports equipment, cell phone, regardless of which
+            Parent purchased these items), between the homes of " . $this->responses['parentAFirst'] . " and " . $this->responses['parentBFirst'] . ".
+            Parents will not restrict the Child(ren)'s ability to take these items between
+            homes. Parents will each have toiletries, pajamas and as many belongings as
+            possible for the Child(ren) in their homes. These items will not travel back
+            and forth.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Relocation.
+    function gen_physical_custody_timesharing_6_13() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyRelocation><b>6.13&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: RELOCATION</u></a>.<b>&nbsp; </b>If either Parent intends to relocate
+            away from the island of their current residences or outside of the State where
+            they currently reside, then the moving Parent shall provide the other Parent at
+            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") [insert number of days] days' notice of their intent to
+            move.&nbsp; After receiving notice of an intent to relocate, Parents shall meet and
+            review this <u>Co-Parenting Plan:</u> <u>Agreement Regarding Child Custody,
+            Timesharing, and Support</u> to try to mutually agree on a modified plan they
+            feel is in the best interests of the Child(ren). In the event that Parents
+            cannot reach an agreement, the Child(ren) shall remain with the non-moving
+            parent until Parents are able to mutually agree or further order of the Court.&nbsp;
+            </p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    function gen_physical_custody_timesharing_6_14() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhyscialCustodyModofSchedule><b>6.14</b>&nbsp; <u>PHYSICAL CUSTODY AND
+            TIMESHARING: MODIFICATION OF SCHEDULE BY AGREEMENT OF BOTH PARENTS</u></a>.
+            While both Parents agree and intend that it is a priority to maintain stability
+            and consistency in the life of their Child(ren), they understand that they have
+            the power to modify the foregoing schedule at any time.&nbsp; Parents shall continue
+            to work out the details of the Child(ren)'s schedules based on what is
+            reasonable under the circumstances, mutually agreed to, and deemed in the best
+            interest of the Child(ren).&nbsp; The foregoing schedule may be modified upon mutual
+            agreement of the Parents in writing (text or e-mail is sufficient).</p>";
+        echo $content;
+        $this->fileContentString .= $content;
     } // End of section 4: Physical custody and Timesharing
 
 

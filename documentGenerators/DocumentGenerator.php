@@ -284,7 +284,43 @@ abstract class documentGenerator
                     break;
             }
         }
+        // Page 2 - Holiday Table, need to implement. "PhysicalCustodyHolidaysandSpecialDays" search in template
 
+        // Page 3 - Optional checkboxes.
+        // Must implement new input data for all:
+        if (isset($_SESSION['responses']['travel-with-children'])) {
+            $this->gen_physical_custody_timesharing_6_04();
+        }
+        if (isset($_SESSION['responses']['reschedule-make-up-time'])) {
+            $this->gen_physical_custody_timesharing_6_05();
+        }
+        if (isset($_SESSION['responses']['first-refusal'])) {
+            $this->gen_physical_custody_timesharing_6_06();
+        }
+        if (isset($_SESSION['responses']['pick-up'])) {
+            $this->gen_physical_custody_timesharing_6_07();
+        }
+        if (isset($_SESSION['responses']['drop-off'])) {
+            $this->gen_physical_custody_timesharing_6_08();
+        }
+        if (isset($_SESSION['responses']['exchanges-neutral-location'])) {
+            $this->gen_physical_custody_timesharing_6_09();
+        }
+        if (isset($_SESSION['responses']['delegate-pick-up'])) {
+            $this->gen_physical_custody_timesharing_6_10();
+        }
+        if (isset($_SESSION['responses']['persons-authorized'])) {
+            $this->gen_physical_custody_timesharing_6_11();
+        }
+        if (isset($_SESSION['responses']['children-belongings'])) {
+            $this->gen_physical_custody_timesharing_6_12();
+        }
+        if (isset($_SESSION['responses']['relocation'])) {
+            $this->gen_physical_custody_timesharing_6_13();
+        }
+        if (isset($_SESSION['responses']['modify-schedule'])) {
+            $this->gen_physical_custody_timesharing_6_14();
+        }
 
 		/*** Section 6: Child Support ***/
 		// Child support: page 0
