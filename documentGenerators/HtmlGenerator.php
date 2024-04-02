@@ -2,6 +2,9 @@
 include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
 include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
 include 'timeSharingSchedules/FallSchedules.php';
+include 'timeSharingSchedules/WinterSchedules.php';
+include 'timeSharingSchedules/SpringSchedules.php';
+include 'timeSharingSchedules/SummerSchedules.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -1061,8 +1064,69 @@ class HtmlGenerator extends documentGenerator
                 echo "Error in HTML Generator for the variable: schoolWinterBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_02D() {}
-    function gen_physical_custody_timesharing_6_02E() {}
+
+    // Spring Break schedules.
+    function gen_physical_custody_timesharing_6_02D(string $type) {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
+            name=PhysicalCustodySpringBreak><b>6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPRING BREAK</u>.&nbsp; </a>The Parents shall share time with the Child(ren) during Spring Breaks as follows:&nbsp; </p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "spring-split-break":
+                $split = new SpringSchedules();
+                $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            case "spring-alternate-break":
+                $alternate = new SpringSchedules();
+                $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            case "spring-continue-schedule":
+                $continue = new SpringSchedules();
+                $spring = $continue->get_continue();
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolSpringBreakSchedule.";
+        }
+    }
+
+    // Summer Break schedules.
+    function gen_physical_custody_timesharing_6_02E(string $type) {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
+            name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.&nbsp; The
+            Parents shall share time with the Child(ren) during Summer Break as follows:</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "summer-split-break":
+                $split = new SummerSchedules();
+                $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            case "summer-uniterrupted-break":
+                $alternate = new SummerSchedules();
+                $summer = $alternate->get_continue_uniterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            case "summer-continue-schedule":
+                $continue = new SummerSchedules();
+                $summer = $continue->get_continue();
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolSummerBreakSchedule.";
+        }
+    }
     function gen_physical_custody_timesharing_6_03() {}
     function gen_physical_custody_timesharing_6_04() {}
     function gen_physical_custody_timesharing_6_05() {}

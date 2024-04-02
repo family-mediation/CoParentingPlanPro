@@ -121,8 +121,8 @@
                   <label for="summer-split-break">Split Break Schedule</label>
                 </div>
                 <div>
-                  <input id="summer-alternate-break" type="radio" name="schoolSummerBreakSchedule" value="summer-alternate-break"/>
-                  <label for="summer-alternate-break">Alternate Break Schedule</label>
+                  <input id="summer-uniterrupted-break" type="radio" name="schoolSummerBreakSchedule" value="summer-uniterrupted-break"/>
+                  <label for="summer-uniterrupted-break">Uniterrupted Break Schedule</label>
                 </div>
                 <div>
                   <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>

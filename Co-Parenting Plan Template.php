@@ -1156,64 +1156,6 @@ decisions independently when the Child(ren) is in their care.</span></p>
 
 
 
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodySpringBreak><b>6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPRING BREAK</u>.&nbsp; </a>The
-Parents shall share time with the Child(ren) during Spring Breaks as follows:&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakSB><b>6.02D(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u>.&nbsp; </a>In
-odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
-break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
-of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
-the break.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakAB><b>6.02D(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE BREAK</u></a>.&nbsp;
-In odd calendar years, <?php echo $parentAName; ?> shall have the entire break.&nbsp; In even calendar
-years, <?php echo $parentBName; ?> shall have the entire break.&nbsp;&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySpringBreakContinueSched><b>6.02D(iii)&nbsp;&nbsp; </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.</a>&nbsp; Parents shall continue the normal
-during the school year schedule during this break.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.&nbsp; The
-Parents shall share time with the Child(ren) during Summer Break as follows:</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakSB><b>6.02E(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT BREAK</u></a>.&nbsp;
-In odd years, <?php echo $parentAName; ?> shall have the Child(ren) during the first half of the
-break and <?php echo $parentBName; ?> shall have the Child(ren) during the second half of the
-break.&nbsp; In even years, <?php echo $parentBName; ?> shall have the Child(ren) during the first half
-of the break and <?php echo $parentAName; ?> shall have the Child(ren) during the second half of
-the break, to include New Year's Eve and New Year's Day.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakContSched><b>6.02E(ii)&nbsp;&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR</u>.</a>&nbsp; Parents shall continue the normal
-during the school year schedule during this break.</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
-name=PhysicalCustodySummerBreakContSchedUnint><b>6.02E(iii)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
-SCHEDULE DURING THE SCHOOL YEAR WITH OPTION FOR UNITERRUPTED TIME</u></a>.&nbsp;
-Parents shall continue the normal during the school year schedule during this
-break provided however that both parents shall have the option to take
- <?php echo $varName; ?>days/weeks of uninterrupted time with the Child(ren) every summer.&nbsp; Parents
-shall select and exchange their dates for uninterrupted time with the
-Child(ren) by no later than  <?php echo $varName; ?>(date) of the same year.&nbsp; In even
-years, <?php echo $parentAName; ?> shall have the first choice of dates for uninterrupted time
-during the Summer Break.&nbsp; In odd years, <?php echo $parentBName; ?> shall have the first choice of
-dates for uninterrupted time during the Summer Break.&nbsp; </p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
 margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><u><span
