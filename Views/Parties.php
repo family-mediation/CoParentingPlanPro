@@ -6,7 +6,23 @@
         <h1>Introduction</h1>
         <br>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
+            <h4>Nature of Case</h4>
+            <div>
+              <input type="radio" name="natureCase" id="divorce" value="Divorce" />
+              <label for="divorce">Divorce</label>
+            </div>
+            <div>
+              <input type="radio" name="natureCase" id="custodyNeverMarried" value="Custody (Never Married)" />
+              <label for="custodyNeverMarried">Custody (Never Married)</label>
+            </div>
+            <div>
+              <input type="radio" name="natureCase" id="other" value="Other" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
             <h4>Court</h4>
             <div>
               <input type="radio" name="court" id="1st" value="1st" />
@@ -26,7 +42,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div>
               <h4>Case No.</h4>
               <input type="text" id="caseNo" name="caseNo">

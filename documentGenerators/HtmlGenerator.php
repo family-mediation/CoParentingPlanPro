@@ -596,7 +596,8 @@ class HtmlGenerator extends documentGenerator
          border:none'>Name of Parent A: " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address: " . $this->responses["partyAResidence"] . "</p>
+         border:none'>Address: " . $this->responses["partyAResidence"] . ", " . $this->responses["partyACity"] . ",
+         " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>Telephone: " . $this->responses["partyACell"] . "</p>
@@ -611,7 +612,8 @@ class HtmlGenerator extends documentGenerator
          border:none'>Name of Parent B: " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address: " . $this->responses["partyBResidence"] . "</p>
+         border:none'>Address: " . $this->responses["partyBResidence"] . ", " . $this->responses["partyBCity"] . ",  
+         " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>Telephone: " . $this->responses["partyBCell"] . "</p>
@@ -668,7 +670,8 @@ class HtmlGenerator extends documentGenerator
            </td>
            <td width=288 valign=top style='width:3.0in;padding:0in 0in 0in 0in'>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-           border:none'>Case No. <span style='background:yellow'>" . $this->responses["caseNo"] . "</span></p>
+           border:none'>Case No. <span style='background:yellow'>" . $this->responses["caseNo"] . "</span>
+           <br>Nature of Case: <span style='background:yellow'>" . $this->responses["natureCase"] . "</span></p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
            border:none'>&nbsp;</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -753,16 +756,18 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=PartiesInformationon<?php echo $parentAName; ?><b><span lang=FR>3.00&nbsp; </span></b></a><u><span
+         name=PartiesInformationon<b><span lang=FR>3.00&nbsp; </span></b></a><u><span
          lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
-         A's full legal name is<span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
-         Parent A's residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . "</span>.&nbsp; </p>
+         A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
+         Parent A's residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
+          " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT B</u></a>. 
          Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; Parent B's residence
-         address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . "</span>.&nbsp; </p>";
+         address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . ", 
+          " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
 
         echo $headerString;
