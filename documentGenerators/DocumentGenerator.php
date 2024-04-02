@@ -36,6 +36,25 @@ abstract class documentGenerator
 	public abstract function gen_legal_custody_5_10();
 	public abstract function gen_legal_custody_5_11();
 
+    //Section 4: Physical Custody and Timesharing
+    public abstract function gen_physical_custody_timesharing_6_00();
+    public abstract function gen_physical_custody_timesharing_6_01();
+    public abstract function gen_physical_custody_timesharing_6_01A();
+    public abstract function gen_physical_custody_timesharing_6_01B();
+    public abstract function gen_physical_custody_timesharing_6_02();
+    public abstract function gen_physical_custody_timesharing_6_03();
+    public abstract function gen_physical_custody_timesharing_6_04();
+    public abstract function gen_physical_custody_timesharing_6_05();
+    public abstract function gen_physical_custody_timesharing_6_06();
+    public abstract function gen_physical_custody_timesharing_6_07();
+    public abstract function gen_physical_custody_timesharing_6_08();
+    public abstract function gen_physical_custody_timesharing_6_09();
+    public abstract function gen_physical_custody_timesharing_6_10();
+    public abstract function gen_physical_custody_timesharing_6_11();
+    public abstract function gen_physical_custody_timesharing_6_12();
+    public abstract function gen_physical_custody_timesharing_6_13();
+    public abstract function gen_physical_custody_timesharing_6_14();
+
 	// Section 6: Child Support
 	public abstract function gen_child_support_8_00();
 	public abstract function gen_child_support_8_01();
@@ -171,6 +190,30 @@ abstract class documentGenerator
 				}
 			}
 		} //end of legal custody section 3
+
+        /** Section 4: Physical Custody and Timesharing. */
+        $this->gen_physical_custody_timesharing_6_00();
+        $this->gen_physical_custody_timesharing_6_01();
+        // Page 0.
+        if (isset($_SESSION['responses']['schoolYearSchedule'])) {
+            switch ($_SESSION['responses']['schoolYearSchedule']) {
+                // Equal Timesharing schedules.
+                case "2-2-3":
+                case "3-4-4-3":
+                case "2-2-5-5":
+                case "7-7":
+                    $this->gen_physical_custody_timesharing_6_01A();
+                    break;
+                // Other Timesharing schedules.
+                case "8-6":
+                case "10-4":
+                case "ownSchedule":
+                    $this->gen_physical_custody_timesharing_6_01B();
+                    break;
+            }
+            // Page 1.
+        }
+
 
 		/*** Section 6: Child Support ***/
 		// Child support: page 0

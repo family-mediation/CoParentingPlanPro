@@ -1,4 +1,6 @@
 <?php
+include 'EqualTimeSharingSchedules.php';
+include 'OtherTimeSharingSchedules.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -786,19 +788,178 @@ class HtmlGenerator extends documentGenerator
 
     /** Section 2: Children. */
     function gen_children_4_00() {
-        $childrenInfo = "
-<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
-margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
-150%'><u>CHILDREN:</u></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
-CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\"" . $this->responses["child1Initials"] . "\") born in (" . $this->responses["child1BirthYears"] . "), Child B
-(\"" . $this->responses["child2Initials"] . "\") born in (" . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+        $childrenInfo = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+            margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
+            150%'><u>CHILDREN:</u></p>
+        
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
+            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: "
+                . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\""
+                . $this->responses["child1Initials"] . "\") born in ("
+                . $this->responses["child1BirthYears"] . "), Child B (\""
+                . $this->responses["child2Initials"] . "\") born in ("
+                . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
         echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
     }
+
+    /** Section 4: Physical Custody and Timesharing. */
+    function gen_physical_custody_timesharing_6_00() {
+        $header = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+            margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+            line-height:150%'><u>PHYSICAL CUSTODY AND TIMESHARING:</u></p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyGlobalPriority><b>6.00</b>&nbsp; <u>PHYSICAL CUSTODY AND
+            TIMESHARING: GLOBAL PRIORITY</u></a>.&nbsp; If there is a conflict with different
+            sections of the Physical Custody and Timesharing schedule, the governing
+            hierarchy is from the highest to lowest as follows: (1) Holidays and Special
+            Days; (2) Travel and Uninterrupted Time with the Child(ren); (3) Timesharing
+            with the Child(ren) During School Breaks, and (4) Timesharing with the
+            Child(ren) During the School Year.</p>";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+    function gen_physical_custody_timesharing_6_01() {
+        $header = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=PhysicalCustodyDuringSchoolYear><b>6.01&nbsp; </b><u>PHYSICAL CUSTODY AND
+            TIMESHARING: TIMESHARING DURING THE SCHOOL YEAR</u>.&nbsp; </a>During the school
+            year, parents agree to share time with their children as set forth
+            hereinbelow.&nbsp; Understanding that each individual Child's developmental stage
+            and needs should be the primary consideration for setting a schedule.&nbsp;
+            Generally, younger children need more frequent transitions so they do not feel
+            abandoned by either parent, while older children can tolerate longer absences.&nbsp;
+            Each Child's health, education, special needs, and social, emotional, and
+            physical well-being must be considered in selecting an appropriate schedule.&nbsp;
+            Schedules may change over time by agreement of the Parents based on the
+            Child(ren)'s needs.&nbsp; Below are suggested templates to be modified and based on each
+            family's needs.</p>";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+
+    /** Equal Timesharing Schedules. */
+    function gen_physical_custody_timesharing_6_01A() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyEqual><b>6.01A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>EQUAL TIMESHARING SCHEDULES</u></a>.&nbsp;
+            50/50 schedules can benefit a Child because the Child spends substantial time
+            living with both Parents.&nbsp; This allows the Child(ren) to build close
+            relationships with both Parents and to feel cared for by both Parents.&nbsp; 50/50
+            schedules work best when:</p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
+            border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
+            style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Parents
+            live fairly close to one another, so exchanges are easier;</p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
+            border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
+            style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Parents
+            are able to communicate with each other about the Child(ren) without fighting;</p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
+            border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
+            style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Child(ren)
+            is/are able to handle switching between parents' homes;</p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
+            border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
+            style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Both
+            Parents are committed to putting the Child(ren)'s best interests first;</p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
+            border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
+            style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Both
+            Parents agree that best for their Child(ren).</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($this->responses["schoolYearSchedule"]) {
+            case "2-2-3":
+                $equalSchedule = new EqualTimeSharingSchedules();
+                $schedule = $equalSchedule->get_2_2_3();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "3-4-4-3":
+                $equalSchedule = new EqualTimeSharingSchedules();
+                $schedule = $equalSchedule->get_3_4_4_3();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "2-2-5-5":
+                $equalSchedule = new EqualTimeSharingSchedules();
+                $schedule = $equalSchedule->get_2_2_5_5();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "7-7":
+                $equalSchedule = new EqualTimeSharingSchedules();
+                $schedule = $equalSchedule->get_7_7();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolYearSchedule - equal schedules.";
+        }
+    }
+
+    /** Other Timesharing Schedules. */
+    function gen_physical_custody_timesharing_6_01B() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyOther>6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>OTHER TIMESHARING SCHEDULES</u>.</p>
+            ";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($this->responses["schoolYearSchedule"]) {
+            case "8-6":
+                $otherSchedule = new OtherTimeSharingSchedules();
+                $schedule = $otherSchedule->get_8_6();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "10-4":
+                $otherSchedule = new OtherTimeSharingSchedules();
+                $schedule = $otherSchedule->get_10_4();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "ownSchedule":
+                $otherSchedule = new OtherTimeSharingSchedules();
+                $schedule = $otherSchedule->get_own_schedule();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            default:
+                echo "Error in HTML Generator for the variable: schoolYearSchedule - other schedules.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02() {}
+    function gen_physical_custody_timesharing_6_03() {}
+    function gen_physical_custody_timesharing_6_04() {}
+    function gen_physical_custody_timesharing_6_05() {}
+    function gen_physical_custody_timesharing_6_06() {}
+    function gen_physical_custody_timesharing_6_07() {}
+    function gen_physical_custody_timesharing_6_08() {}
+    function gen_physical_custody_timesharing_6_09() {}
+    function gen_physical_custody_timesharing_6_10() {}
+    function gen_physical_custody_timesharing_6_11() {}
+    function gen_physical_custody_timesharing_6_12() {}
+    function gen_physical_custody_timesharing_6_13() {}
+    function gen_physical_custody_timesharing_6_14() {
+
+    } // End of section 4: Physical custody and Timesharing
+
 
     // LEGAL CUSTODY
     // Header & definition section 

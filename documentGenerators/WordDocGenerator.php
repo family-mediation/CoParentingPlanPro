@@ -27,9 +27,7 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {
-        console_log('inside word doc gen for gen_children_4_00');
-    }
+    function gen_children_4_00() {}
 
 
     // legal custody section 3
@@ -72,6 +70,27 @@ class wordDocGenerator extends documentGenerator
 	function gen_legal_custody_5_11()
 	{
 	} //end of legal custody section 3
+
+    //Section 4: Physical Custody and Timesharing
+    function gen_physical_custody_timesharing_6_00() {}
+    function gen_physical_custody_timesharing_6_01() {}
+    function gen_physical_custody_timesharing_6_01A() {}
+    function gen_physical_custody_timesharing_6_01B() {}
+    function gen_physical_custody_timesharing_6_02() {}
+    function gen_physical_custody_timesharing_6_03() {}
+    function gen_physical_custody_timesharing_6_04() {}
+    function gen_physical_custody_timesharing_6_05() {}
+    function gen_physical_custody_timesharing_6_06() {}
+    function gen_physical_custody_timesharing_6_07() {}
+    function gen_physical_custody_timesharing_6_08() {}
+    function gen_physical_custody_timesharing_6_09() {}
+    function gen_physical_custody_timesharing_6_10() {}
+    function gen_physical_custody_timesharing_6_11() {}
+    function gen_physical_custody_timesharing_6_12() {}
+    function gen_physical_custody_timesharing_6_13() {}
+    function gen_physical_custody_timesharing_6_14() {
+
+    } // End of section 4: Physical custody and Timesharing
 
 	// child support section 6
 	function gen_child_support_8_00()
