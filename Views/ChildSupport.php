@@ -20,12 +20,12 @@
 
 
         <div class="container card p-4" id="sameStateInfo" style="display: none;">
-          Child support shall be paid by <select id="parentAB1">
-            <option value="parentA1">Parent A</option>
-            <option value="parentB1">Parent B</option>
-          </select> to <select id="parentAB2">
-            <option value="parentA2">Parent A</option>
-            <option value="parentB2" selected>Parent B</option>
+          Child support shall be paid by <select id="parentAB1" name="parentAB1">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
+          </select> to <select id="parentAB2" name="parentAB2">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B" selected>Parent B</option>
           </select> and calculated pursuant to the State child support guidelines
           worksheet.
         </div>
@@ -35,13 +35,13 @@
           <label for="mutuAgreed">Mutually Agreed Upon Amount Alternative</label>
         </div>
         <div class="container card p-4" id="mutuAgreedInfo" style="display: none;">
-          Child Support shall be paid by <select id="parentAB2">
-            <option value="parentA2">Parent A</option>
-            <option value="parentB2">Parent B</option>
+          Child Support shall be paid by <select id="parentAB3" name="parentAB3">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> to
-          <select id="parentAB3">
-            <option value="parentA3">Parent A</option>
-            <option value="parentB3" selected>Parent B</option>
+          <select id="parentAB4" name="parentAB4">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B" selected>Parent B</option>
           </select> by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
           for a total monthly child support amount of $<input type="number" name="mutual-2" style="width: 100px;" step="0.01" />. Both Parents understand that
           child support is modifiable going forward and at any time either Parent may request that
@@ -98,8 +98,11 @@
         <div class="card-header">
           <h4>Health Insurance Premiums</h4>
         </div><br>
-        <p>Parent
-          A/B shall cover the Child(ren)'s health insurance premiums in the amount of $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
+        <p><select id="parentAB5" name="parentAB5">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
+          </select> shall cover the Child(ren)'s health insurance premiums in the amount of
+          $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
           per month.</p>
         <br>
         <div class="card-header">
@@ -111,9 +114,9 @@
         </div>
 
         <div class="container card p-4" id="soleInfo" style="display: none;">
-          <select id="parentAB4">
-            <option value="parentA4">Parent A</option>
-            <option value="parentB4">Parent B</option>
+          <select id="parentAB6" name="parentAB6">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)’s
           uninsured co-pays for health-related expenses premiums in the amount of <br>$<input type="number" name="sole-1" style="width: 100px;" step="0.01" />/per month.
         </div>
@@ -166,9 +169,9 @@
         </div>
 
         <div class="container card p-4" id="soleECInfo" style="display: none;">
-          <select id="parentAB_EC">
-            <option value="parentA_EC">Parent A</option>
-            <option value="parentB_EC">Parent B</option>
+          <select id="parentAB_EC" name="parentAB_EC">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
         </div>
 
@@ -213,44 +216,38 @@
           <h4>Private School Expenses</h4>
         </div><br>
         <!-- <hr><h4>Private School Expenses</h4><hr> -->
-        <div>
-          <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
-          <label for="extraSoleResp">Sole Responsibility</label>
-        </div>
-
-        <div class="container card p-4" id="solePrivateInfo" style="display: none;">
-          <select id="parentAB_Priv">
-            <option value="parentA_Priv">Parent A</option>
-            <option value="parentB_Priv">Parent B</option>
-          </select> shall cover 100% of the Child(ren)'s private school expenses.
-        </div>
-
-        <div class="container card p-4" id="soleECInfo" style="display: none;">
-          <select id="parentAB_EC">
-            <option value="parentA_EC">Parent A</option>
-            <option value="parentB_EC">Parent B</option>
-          </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
-        </div>
 
         <div>
-          <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" onclick="privSplitMore()" />
-          <label for="extraSplitResp">Split Responsibility</label>
-        </div>
-
-        <div class="container card p-4" id="splitPrivInfo" style="display: none;">
-          Parent A shall cover <input type="number" name="splitPriv-1" id="splitPriv-1" style="width: 100px;" step="0.01" oninput="updateSplitPriv2()" />% and Parent B shall
-          cover <input type="number" name="splitPriv-2" id="splitPriv-2" style="width: 100px;" step="0.01" oninput="updateSplitPriv1()" />% of the Child(ren)'s private school expenses.
-        </div>
-
-        <div>
-          <input type="radio" name="privateSchool" id="defPrivateSchool" value="defPrivateSchool" onclick="privSchoolDefMore()" />
-          <label for="defPrivateSchool">Definition of Private School Expenses</label>
+          Definition of Private School Expenses
+          <i class="bi bi-caret-down-square-fill" onclick="privSchoolDefMore()"></i>
         </div>
 
         <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
           Private school expenses shall be defined to include all expenses related to a Child's attendance at a
           private school including, without limitation, application fees/costs, tuition, books,
           uniforms, school lunches, and before and/or after school care expenses.
+        </div>
+
+        <div>
+          <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
+          <label for="privateSoleResp">Sole Responsibility</label>
+        </div>
+
+        <div class="container card p-4" id="solePrivateInfo" style="display: none;">
+          <select id="parentAB_Priv" name="parentAB_Priv">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
+          </select> shall cover 100% of the Child(ren)'s private school expenses.
+        </div>
+
+        <div>
+          <input type="radio" name="privateSchool" id="privateSplitResp" value="privateSplitResp" onclick="privSplitMore()" />
+          <label for="privateSplitResp">Split Responsibility</label>
+        </div>
+
+        <div class="container card p-4" id="splitPrivInfo" style="display: none;">
+          Parent A shall cover <input type="number" name="splitPriv-1" id="splitPriv-1" style="width: 100px;" step="0.01" oninput="updateSplitPriv2()" />% and Parent B shall
+          cover <input type="number" name="splitPriv-2" id="splitPriv-2" style="width: 100px;" step="0.01" oninput="updateSplitPriv1()" />% of the Child(ren)'s private school expenses.
         </div>
 
         <div>
@@ -277,15 +274,28 @@
           <h4>Post-High School Expenses</h4>
         </div><br>
         <!-- <hr><h4>Post-High School Expenses</h4><hr> -->
+
+        <div>
+          Definition of Post-High School Education Expenses
+          <i class="bi bi-caret-down-square-fill" onclick="postCapDefMore()"></i>
+        </div>
+
+        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
+          Private school expenses shall be defined to include all expenses related to a Child’s
+          attendance at any post-high school educational institution (including vocational and
+          trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
+          lunches, and before and/or after school care expenses.
+        </div>
+
         <div>
           <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" onclick="postSoleRespMore()" />
           <label for="postSoleResp">Sole Responsibility</label>
         </div>
 
         <div class="container card p-4" id="soleHighInfo" style="display: none;">
-          <select id="parentAB_High">
-            <option value="parentA_High">Parent A</option>
-            <option value="parentB_High">Parent B</option>
+          <select id="parentAB_High" name="parentAB_High">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s post-high school education expenses.
         </div>
 
@@ -310,9 +320,9 @@
             OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL
             EDUCATION EXPENSES</u>. After funds from any 529 accounts held on behalf of a Child
           or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-
-          high school education expenses are expended, then <select id="parentAB_Sole529">
-            <option value="parentA_Sole529">Parent A</option>
-            <option value="parentB_Sole529">Parent B</option>
+          high school education expenses are expended, then <select id="parentAB_Sole529" name="parentAB_Sole529">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall cover 100% of
           the Child(ren)’s remaining post-high school education expenses.
         </div>
@@ -346,18 +356,6 @@
           and Parent B shall cover <input type="number" name="postCap-2" id="postCap-2" style="width: 100px;" step="0.01" oninput="updatePostCap1()" />%
           up to a cap of $<input type="number" name="postCapB" style="width: 100px;" step="0.01" /> amount per academic school
           year.
-        </div>
-
-        <div>
-          <input type="radio" name="postHigh" id="postCapDef" value="postCapDef" onclick="postCapDefMore()" />
-          <label for="postCap">Definition of Post-High School Education Expenses</label>
-        </div>
-
-        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
-          Private school expenses shall be defined to include all expenses related to a Child’s
-          attendance at any post-high school educational institution (including vocational and
-          trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
-          lunches, and before and/or after school care expenses.
         </div>
 
         <div>
@@ -401,9 +399,9 @@
         </div>
 
         <div class="container card p-4" id="taxSoleInfo" style="display: none;">
-          <select id="parentAB_taxSole">
-            <option value="parentA_taxSole">Parent A</option>
-            <option value="parentB_taxSole">Parent B</option>
+          <select id="parentAB_taxSole" name="parentAB_taxSole">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year.
         </div>
 
@@ -487,7 +485,7 @@
         <br>
         <h5>Optional</h5>
         <div>
-          <input type="checkbox" id="8.14e" name="childSupportRei" onclick="supportReiMore()" />
+          <input type="checkbox" id="8.14e" name="childSupportRei" value="8.14e" onclick="supportReiMore()" />
           <label for="8.14e">Documentation Required for Reimbursement of Child-Related Expenses</label>
         </div>
 
@@ -506,7 +504,7 @@
 
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous3" onClick="showPage('page2')">Previous Page</button> &nbsp;&nbsp;
-          <button id="next3" onclick="submit()">Next Page</button>
+          <button id="next3" onclick="submit()">Next Section</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
@@ -598,7 +596,7 @@
       thresholdMore();
     });
   });
-  
+
   // radio buttons: page 2
   // Extracurricular expenses 
   function soleECMore() {
@@ -648,7 +646,7 @@
       mutuallyExtraMore();
     });
   });
-  
+
   // private school expenses 
   function privateSoleMore() {
     var b = document.getElementById('solePrivateInfo');
@@ -676,16 +674,12 @@
 
   function privSchoolDefMore() {
     var b = document.getElementById('defPrivSchoolInfo');
-    b.style.display = document.getElementById('defPrivateSchool').checked ? 'block' : 'none';
+    if (b.style.display === 'none') {
+      b.style.display = 'block';
+    } else {
+      b.style.display = 'none';
+    }
   }
-
-  var radioButtonsL = document.querySelectorAll('input[type="radio"][name="privateSchool"]');
-  radioButtonsL.forEach(function(radioButton13) {
-    radioButton13.addEventListener('change', function() {
-      privSchoolDefMore();
-    });
-  });
-
 
   function privSchoolMutMore() {
     var b = document.getElementById('mutPrivSchoolInfo');
@@ -710,7 +704,7 @@
       privReserveMore();
     });
   });
-  
+
   // post-high school expenses 
   function postSoleRespMore() {
     var b = document.getElementById('soleHighInfo');
@@ -774,15 +768,12 @@
 
   function postCapDefMore() {
     var b = document.getElementById('postCapDefInfo');
-    b.style.display = document.getElementById('postCapDef').checked ? 'block' : 'none';
+    if (b.style.display === 'none') {
+      b.style.display = 'block';
+    } else {
+      b.style.display = 'none';
+    }
   }
-
-  var radioButtonsT = document.querySelectorAll('input[type="radio"][name="postHigh"]');
-  radioButtonsT.forEach(function(radioButton21) {
-    radioButton21.addEventListener('change', function() {
-      postCapDefMore();
-    });
-  });
 
   function postMutualMore() {
     var b = document.getElementById('postMutualInfo');
@@ -807,7 +798,7 @@
       postReserveMore();
     });
   });
-  
+
   // radio buttons: page 3
   function taxSoleMore() {
     var b = document.getElementById('taxSoleInfo');
@@ -931,7 +922,7 @@
 
     split1Input.value = split1Value
   }
-  
+
   // for updating Uninsured Co-pays for Health-Related Expenses -> Responsibility for Threshold Amount 
   function updateThreshold4() {
     const x = document.getElementById("threshold3");

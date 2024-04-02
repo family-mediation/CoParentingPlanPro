@@ -42,10 +42,10 @@
         </div>
 
         <div class="container card p-4" id="jointCustody" style="display: none;">
-          <input type="radio" name="tieBreakingAuthority" id="tieBreakA" />
+          <input type="radio" name="tieBreakingAuthority" id="tieBreakA" value="tieBreakA" />
           <label for="tiebreakA">Tie-Breaking Authority to Parent A</label>
 
-          <br><input type="radio" name="tieBreakingAuthority" id="tieBreakB" />
+          <br><input type="radio" name="tieBreakingAuthority" id="tieBreakB" value="tieBreakB" />
           <label for="tieBreakB">Tie-Breaking Authority to Parent B</label>
         </div>
 
@@ -87,22 +87,22 @@
         <div class="container card p-4" id="AutMoreInfo" style="display: none;">
           Parents shall share joint legal custody of the Child(ren), provided
           however, that if Parents cannot mutually agree on a legal custody decision for the
-          Child(ren), then <select id="parentAB">
-            <option value="parentA">Parent A</option>
-            <option value="parentB">Parent B</option>
+          Child(ren), then <select id="parentABW" name="parentABW">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall have tie-breaking authority to make major decisions
           about the Child(ren)'s education and extracurricular activities, after consulting with
-          <select id="parentAB">
-            <option value="parentA">Parent A</option>
-            <option value="parentB">Parent B</option>
-          </select> and the Child(ren) and <select id="parentAB">
-            <option value="parentA">Parent A</option>
-            <option value="parentB">Parent B</option>
+          <select id="parentABX" name="parentABX">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
+          </select> and the Child(ren) and <select id="parentABY" name="parentABY">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> shall have tie-breaking authority to make
           major decisions about the Child(ren)'s health care, language, and spirituality, after
-          consulting with <select id="parentAB">
-            <option value="parentA">Parent A</option>
-            <option value="parentB">Parent B</option>
+          consulting with <select id="parentABZ" name="parentABZ">
+            <option value="Parent A">Parent A</option>
+            <option value="Parent B">Parent B</option>
           </select> and the child.
         </div>
 
@@ -122,7 +122,7 @@
         <div>
 
           <div>
-            <input type="checkbox" id="5.06" name="legalcustody" onclick="moreInfo6()" />
+            <input type="checkbox" id="5.06" name="legalcustody[]" value="5.06" onclick="moreInfo6()" />
             <label for="5.06">Emergency Contacts for the Child(ren)</label>
           </div>
 
@@ -132,7 +132,7 @@
           </div>
 
           <div>
-            <input type="checkbox" id="5.07" name="legalcustody" onclick="moreInfo7()" />
+            <input type="checkbox" id="5.07" name="legalcustody[]" value="5.07" onclick="moreInfo7()" />
             <label for="5.07">Expert Advice when making Legal Custody Decisions</label>
           </div>
 
@@ -142,7 +142,7 @@
           </div>
 
           <div>
-            <input type="checkbox" id="5.08" name="legalcustody" onclick="moreInfo8()" />
+            <input type="checkbox" id="5.08" name="legalcustody[]" value="5.08" onclick="moreInfo8()" />
             <label for="5.08">Day-to-Day Decisions</label>
           </div>
 
@@ -154,7 +154,7 @@
 
 
           <div>
-            <input type="checkbox" id="5.09" name="legalcustody" onclick="moreInfo9()" />
+            <input type="checkbox" id="5.09" name="legalcustody[]" value="5.09" onclick="moreInfo9()" />
             <label for="5.09">Emergency Decisions</label>
           </div>
 
@@ -166,7 +166,7 @@
           </div>
 
           <div>
-            <input type="checkbox" id="5.10" name="legalcustody" onclick="moreInfo10()" />
+            <input type="checkbox" id="5.10" name="legalcustody[]" value="5.10" onclick="moreInfo10()" />
             <label for="5.10">Health Emergency or Death of Other Parent</label>
           </div>
 
@@ -179,7 +179,7 @@
           </div>
 
           <div>
-            <input type="checkbox" id="5.11" name="legalcustody" onclick="moreInfo11()" />
+            <input type="checkbox" id="5.11" name="legalcustody[]" value="5.11" onclick="moreInfo11()" />
             <label for="5.11">Parallel Parenting</label>
           </div>
 
@@ -190,7 +190,7 @@
         </div>
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous2" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="next2" onclick="submit()">Next Page</button>
+          <button id="next2" onclick="submit()">Next Section</button>
           <!-- <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="nextHandler()">Next Page</button> -->
         </div>
