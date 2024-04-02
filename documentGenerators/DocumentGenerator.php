@@ -6,6 +6,12 @@ abstract class documentGenerator
 	public $fileOutput;
 	public $fileContentString;
 	public $tableOfContentsString;
+
+	// for section 1.00 on coparenting plan to get the day, month and year
+	protected $day;
+    protected $month;
+    protected $year;
+
 	public function __construct(string $fileName, array $responses)
 	{
 		$this->fileName = $fileName;
@@ -89,7 +95,20 @@ abstract class documentGenerator
 	/* TODO:// HEY YOU GUYS, THIS IS WHERE ALL OF THE LOGIC GOES.*/
 	public function generateDocument()
 	{
+		// for section 1.00 on coparenting plan
+		if (isset($_SESSION['responses']['date1'])) {
+			// get the date from the session
+			$dateString = $_SESSION['responses']['date1'];
 
+			// parse the date string
+			$dateComponents = date_parse($dateString);
+			if ($dateComponents !== false) {
+				// extract day, month, and year
+				$this->day = $dateComponents['day'];
+				$this->month = $dateComponents['month'];
+				$this->year = $dateComponents['year'];
+			}
+		}
 		$this->genHeader();
 
 		//the logic for the tree goes Here its a work in progress hence the if false.

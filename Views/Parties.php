@@ -9,20 +9,20 @@
           <div class="col-lg-6">
             <h4>Court</h4>
             <div>
-              <input type="radio" name="court" id="circuit1" value="circuit1" />
-              <label for="circuit1">1<sup>st</sup> Circuit (Oahu)</label>
+              <input type="radio" name="court" id="1st" value="1st" />
+              <label for="1st">1<sup>st</sup> Circuit (Oahu)</label>
             </div>
             <div>
-              <input type="radio" name="court" id="circuit2" value="circuit2" />
-              <label for="circuit2">2<sup>nd</sup> Circuit (Maui)</label>
+              <input type="radio" name="court" id="circuit2" value="2nd" />
+              <label for="2nd">2<sup>nd</sup> Circuit (Maui)</label>
             </div>
             <div>
-              <input type="radio" name="court" id="circuit3" value="circuit3" />
-              <label for="circuit1">3<sup>rd</sup> Circuit (Hawaiʻi)</label>
+              <input type="radio" name="court" id="3rd" value="3rd" />
+              <label for="3rd">3<sup>rd</sup> Circuit (Hawaiʻi)</label>
             </div>
             <div>
-              <input type="radio" name="court" id="circuit5" value="circuit5" />
-              <label for="circuit1">5<sup>th</sup> Circuit (Kauaʻi)</label>
+              <input type="radio" name="court" id="5th" value="5th" />
+              <label for="5th">5<sup>th</sup> Circuit (Kauaʻi)</label>
             </div>
           </div>
 
@@ -46,7 +46,6 @@
 
       <div id="page1" class="container card p-4">
         <h1>Parent A</h1>
-
         <div class="form-group row p-3">
           <div class="col-lg-6">
             <label class="" hide="true" data-dm->First Name</label>

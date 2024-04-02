@@ -593,44 +593,44 @@ class HtmlGenerator extends documentGenerator
          border:none'>&nbsp;</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Name of " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</p>
+         border:none'>Name of Parent A: " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address " . $this->responses["partyAResidence"] . "</p>
+         border:none'>Address: " . $this->responses["partyAResidence"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Telephone " . $this->responses["partyACell"] . "</p>
+         border:none'>Telephone: " . $this->responses["partyACell"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>E-Mail " . $this->responses["partyAEmail"] . "</p>
+         border:none'>E-Mail: " . $this->responses["partyAEmail"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>&nbsp;</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Name of " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</p>
+         border:none'>Name of Parent B: " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Address " . $this->responses["partyBResidence"] . "</p>
+         border:none'>Address: " . $this->responses["partyBResidence"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>Telephone " . $this->responses["partyBCell"] . "</p>
+         border:none'>Telephone: " . $this->responses["partyBCell"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-         border:none'>E-Mail " . $this->responses["partyBEmail"] . "</p>
+         border:none'>E-Mail: " . $this->responses["partyBEmail"] . "</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>&nbsp;</p>
 
          <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
-         0in;line-height:normal;border:none'>IN THE FAMILY COURT OF THE  <?php echo $varName; ?>
+         0in;line-height:normal;border:none'>IN THE FAMILY COURT OF THE <span style='background:yellow'>" . $this->responses["court"] . "</span>
          CIRCUIT</p>
 
          <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
          0in;line-height:normal;border:none'>&nbsp;</p>
 
          <p class=MsoNormal align=center style='margin:0in;text-align:center;text-indent:
-         0in;line-height:normal;border:none'>STATE OF  <?php echo $varName; ?></p>
+         0in;line-height:normal;border:none'>STATE OF HAWAII</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
          border:none'>&nbsp;</p>
@@ -668,7 +668,7 @@ class HtmlGenerator extends documentGenerator
            </td>
            <td width=288 valign=top style='width:3.0in;padding:0in 0in 0in 0in'>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
-           border:none'>Case No. (Family Court)</p>
+           border:none'>Case No. <span style='background:yellow'>" . $this->responses["caseNo"] . "</span></p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
            border:none'>&nbsp;</p>
            <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -722,9 +722,9 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>1.00 </b>THIS
-         AGREEMENT is made and <span style='background:white'>entered this  <?php echo $varName; ?> (day) day
-         of  <?php echo $varName; ?> (month),  <?php echo $varName; ?> (year)</span>, by and between " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "
-         (collectively hereinafter referred to as �Parents�) and applies to the
+         AGREEMENT is made and <span style='background:white'>entered this <span style='background:yellow'>" . $this->day . " (day) day
+         of " . $this->month . " (month), " . $this->year . " (year)</span></span>, by and between <span style='background:yellow'>PARENT A</span> and <span style='background:yellow'>PARENT B</span>
+         (collectively hereinafter referred to as 'Parents') and applies to the
          Child(ren) named below in Paragraph 3.00.</p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
@@ -737,8 +737,8 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
          none'><a name=IntroductionParentstoSeekFamilyCourt><b>1.02</b> </a>WHEREAS,
          parents intend to seek approval of their Agreement from the Family Court of the
-          <?php echo $varName; ?> Circuit of the State of  <?php echo $varName; ?> hereinafter referred to as
-         the �Family Court�;</p>
+         <span style='background:yellow'>" . $this->responses["court"] . "</span> Circuit of the State of Hawaii hereinafter referred to as
+         the 'Family Court';</p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
