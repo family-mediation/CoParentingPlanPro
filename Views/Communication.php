@@ -31,17 +31,17 @@
           <h1>Pick One:</h1>
 
             <div>
-              <input type="radio" name="communication" id="emailonly"/>
+              <input type="radio" name="emailonly" value="emailonly" id="emailonly"/>
               <label for="emailonly">E-mail Only</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="emailtext"/>
+              <input type="radio" name="emailtext" value="emailtext" id="emailtext"/>
               <label for="emailtext">E-mail and Text</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="wizardmutually"/>
+              <input type="radio" name="wizardmutually" value="wizardmutually" id="wizardmutually"/>
               <label for="wizardmutually">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
             </div>
 
@@ -57,33 +57,33 @@
               <h4>Communication Between Co-Parents:</h4>
 
               <div>
-              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()" />
+              <input type="checkbox" id="7.04" name="monthlycoparent" value="monthlycoparent" onclick="showParentOptions()" />
               <label for="7.04">Monthly Conference</label>
               </div>
 
-              <div class="container card p-4" id="monthly" style="display: none;">
+              <div class="container card p-4" id="monthly" name="monthly" value="monthly" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
               <input type="week" name="monthly" /> unless mutually agreed to otherwise.
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()" />
+              <input type="checkbox" id="7.05" name="semiannual" onclick="showParentOptions2()" />
               <lable for="7.05">Semi Annual Conference</lable>
               </div>
 
-              <div class="container card p-4" id="semi" style="display: none;">
+              <div class="container card p-4" id="semi" name="semi" value="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" id="semidate" />(insert date) and <input type="text" id="semidate" />(insert date) every year.
+              <input type="text" id="semifromdate" name="semifromdate" value="semifromdate" />(insert date) and <input type="text" id="semitodate" name="semitodate" value="semitodate" />(insert date) every year.
               </div>
               
               <div>
-              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()" />
+              <input type="checkbox" id="7.06" name="annulcon" value="annulcon" onclick="showParentOptions3()" />
               <lable for="7.06">Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" id="semidate" /> every year.
+              <input type="text" id="annualdate" name="annualdate" value="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
@@ -100,8 +100,8 @@
               
               <div class="container card p-4" id="schedule" style="display: none;">
               During the regular parenting time schedule, Parent A may call the child between 
-              <input type="time" value="09:00" /> and <input type="time" value="17:00" /> when they are with Parent B
-              and Parent B may call the childe between <input type="time" value="09:00" /> and <input type="time" value="17:00" />
+              <input type="time" name="PAfromtime" value="PAfromtime" /> and <input type="time" name="PAtotime" value="PAtotime" /> when they are with Parent B
+              and Parent B may call the childe between <input type="time" name="PBfromtime" value="PBfromtime" /> and <input type="time" name="PBtotime" value="PBtotime" />
               when they are with Parent A.
               </div>
               

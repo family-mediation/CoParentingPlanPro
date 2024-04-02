@@ -19,8 +19,14 @@ abstract class documentGenerator
 	public abstract function genPart3();
 	public abstract function genPart4();
 	public abstract function genPart5();
+
 	public abstract function genPart6();
 	public abstract function genPart7();
+
+	//Section 7: Communication 
+	public abstract function gen_communication_7();
+
+
 	public abstract function genFooter();
 	public abstract function packageDocument();
 	/* TODO:// HEY YOU GUYS, THIS IS WHERE ALL OF THE LOGIC GOES.*/
@@ -49,6 +55,7 @@ abstract class documentGenerator
             break;
 		}
 	}
+
 		$this->genPart1();
 		$this->genPart1();
 		$this->genPart2();
