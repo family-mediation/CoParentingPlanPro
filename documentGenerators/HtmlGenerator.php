@@ -745,7 +745,25 @@ class HtmlGenerator extends documentGenerator
          none'><a name=IntroductionParentsDoNotSeekFamilyCourt><b>1.03</b> </a>WHEREAS,
          Parents intend this to be a binding agreement between them to govern the
          co-parenting of their Child(ren) but do not plan to seek approval of their
-         Agreement from the Family Court of their jurisdiction.</p>";
+         Agreement from the Family Court of their jurisdiction.</p>
+         
+         <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.15pt;
+         margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+         line-height:150%;border:none'><u><span lang=FR>PARTIES:</span></u></p>
+
+         <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=PartiesInformationon<?php echo $parentAName; ?><b><span lang=FR>3.00&nbsp; </span></b></a><u><span
+         lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
+         A's full legal name is<span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
+         Parent A's residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . "</span>.&nbsp; </p>
+
+         <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
+         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+         name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT B</u></a>. 
+         Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; Parent B's residence
+         address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . "</span>.&nbsp; </p>";
+
 
         echo $headerString;
         $this->fileContentString .= $headerString;
