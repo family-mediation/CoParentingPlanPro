@@ -50,46 +50,46 @@
               </div>
 
               <div class="container card p-4" id="parentOptions" style="display: none;">
-              <select id="parentAB_Other">
+              <select name="other" id="parentAB_Other">
               <option value="parentAB_Other">Parent A</option>
               <option value="parentAB_Other">Parent B</option>
               </select> will attend all parent-teacher meetings and will advise Parent B/A of the Child(ren)'s progress.
               </div>
 
               <div>
-              <input type="checkbox" id="9.07"/>
+              <input type="checkbox" name="other" id="9.07"/>
               <label for="9.07">Report Cards for the Child(ren)</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.08"/>
+              <input type="checkbox" name="other" id="9.08"/>
               <label for="9.08">Joint Attendance at School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.09"/>
+              <input type="checkbox" name="other" id="9.09"/>
               <label for="9.09">Custodial Parent to Attend School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.10"/>
+              <input type="checkbox" name="other" id="9.10"/>
               <label for="9.10">Alternate Attendance at School and Extracurricular Events</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.11"  onclick="clickDoc()"/>
+              <input type="checkbox" name="other" id="9.11"  onclick="clickDoc()"/>
               <label for="9.11">Documents</label>
               </div>
 
               <div class="container card p-4" id="parentDoc" style="display:none;">
-              <select id="parentAB_Other">
-              <option value="parentAB_Other">Parent A</option>
-              <option value="parentAB_Other">Parent B</option>
+              <select name="other" id="parentABdoc_Other">
+              <option value="parentABdoc_Other">Parent A</option>
+              <option value="parentABdoc_Other">Parent B</option>
               </select> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, 
               and (insert any other relevant documents below) at their home, and these documents will be made available to 
-              <select id="parentAB_Other2">
-              <option value="parentAB_Other2">Parent A</option>
-              <option value="parentAB_Other2" selected>Parent B</option></select> as needed. 
+              <select name="other" id="parentABdoc_Other2">
+              <option value="parentABdoc_Other2">Parent A</option>
+              <option value="parentABdoc_Other2" selected>Parent B</option></select> as needed. 
               Both Parents shall have copies of all of the important documents.
 
               <br>
@@ -107,11 +107,11 @@
               </div>
 
               <div class="container card p-4" id="passport" style="display: none;">
-              <select id="parentAB_Other3">
+              <select name="other "id="parentAB_Other3">
               <option value="parentAB_Other3">Parent A</option>
               <option value="parentAB_Other3">Parent B</option>
               </select> can apply for the passport for a Child without the consent of 
-              <select id="parentAB_Other4">
+              <select name="other" id="parentAB_Other4">
               <option value="parentAB_Other4">Parent A</option>
               <option value="parentAB_Other4" selected>Parent B</option></select>.
               </div>
