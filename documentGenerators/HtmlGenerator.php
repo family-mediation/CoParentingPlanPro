@@ -2349,7 +2349,21 @@ class HtmlGenerator extends documentGenerator
         $this->fileContentString .= $snippet;
     }   // end of child support
 
-
+    //Other section
+    function get_other_9_00() {
+        $other = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+        margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+        line-height:150%'><u>OTHER ISSUES:</u></p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
+        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>" . $this->responses[""] . "</span>(name), or
+        other mutually selected licensed mental health professional, as a Co-Parent
+        Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
+        Parents shall continue in Co-Parent Counseling until clinically discharged or
+        upon the mutual agreement of both Parents.</p>";
+    }
 
     function genPart4()
     {

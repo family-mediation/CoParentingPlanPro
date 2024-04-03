@@ -32,17 +32,17 @@
 
             <div>
               <input type="radio" name="commMethod" id="email" value="email" />
-              <label for="emailonly">E-mail Only</label>
+              <label for="email">E-mail Only</label>
             </div>
 
             <div>
               <input type="radio" name="commMethod" id="bothemailtext" value="bothemailtext" />
-              <label for="emailtext">E-mail and Text</label>
+              <label for="bothemailtext">E-mail and Text</label>
             </div>
 
             <div>
               <input type="radio" name="commMethod" id="wizardmutual" value="wizardmutual"/>
-              <label for="wizardmutually">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
+              <label for="wizardmutual">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
             </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -63,7 +63,7 @@
 
               <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
-              <input type="week" name="commbetweenCP" id="insertmonthly" value="insertmonthly"/> unless mutually agreed to otherwise.
+              <input type="week" name="commbetweenCP" id="insertmonthly"/> unless mutually agreed to otherwise.
               </div>
 
               <div>
@@ -73,7 +73,7 @@
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" name="commbetweenCP" id="semidate1" value="semidate1" />(insert date) and <input type="text" name="commbetweenCP" id="semidate2" value="semidate2" />(insert date) every year.
+              <input type="text" name="commbetweenCP" id="semidate1" />(insert date) and <input type="text" name="commbetweenCP" id="semidate2" />(insert date) every year.
               </div>
               
               <div>
@@ -83,7 +83,7 @@
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" name="commbetweenCP" id="annualdate" value="annualdate"/> every year.
+              <input type="text" name="commbetweenCP" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     

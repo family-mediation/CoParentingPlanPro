@@ -249,7 +249,9 @@ class wordDocGenerator extends documentGenerator
 	{
 	} //end of child support section 6
 
-
+	//Other Section
+	function get_other_9_00() {}
+	//End of other section
 
 	function genPart4()
 	{

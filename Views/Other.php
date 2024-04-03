@@ -5,47 +5,47 @@
         <h1>Other Issues:</h1>
         <br>
               <div>
-              <input type="checkbox" id="9.00"  onclick="checkBox('therapist')"/>
+              <input type="checkbox" id="9.00" name="counseling" onclick="checkBox('therapist')"/>
               <label for="9.00">Co-Parent Counseling</label>
               </div>
 
               <div class="container card p-4" id="cotherapist" style="display: none;">
-              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), or other mutually selected licensed mental health professional,
+              Parents agree to engage <input type="text" name="counseling" id="therapistInput9.00" /> (insert name for therapist), or other mutually selected licensed mental health professional,
                as a Co-Parent Counselor to assist them in collaboratively parenting the Child(ren).
               </div>
 
               <div>
-              <input type="checkbox" id="9.01"  onclick="clickMe('childTherapist')" />
+              <input type="checkbox" id="9.01" name="childfocused" onclick="clickMe('childTherapist')" />
               <label for="9.01">Child-Focused Therapist</label>
               </div>
 
               <div class="container card p-4" id="childTherapistSection" style="display: none;">
-              Parents agree to engage <input type="text" id="therapistInput" /> (insert name for therapist), 
+              Parents agree to engage <input type="text" name="childfocused" id="therapistInput9.01" /> (insert name for therapist), 
               or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).              
               </div>
 
               <div>
-              <input type="checkbox" id="9.02"/>
+              <input type="checkbox" name="other" id="9.02"/>
               <lable for="9.02">Social Media Between Parents</lable>
               </div>
           
               <div>
-              <input type="checkbox" id="9.03"/>
+              <input type="checkbox" name="other" id="9.03"/>
               <label for="9.03">Social Media For Child(ren)</label>
               </div>
 
             <div>
-              <input type="checkbox" id="9.04"/>
+              <input type="checkbox" name="other" id="9.04"/>
               <label for="9.04">Joint Parent-Teacher Meetings</label>
             </div>
 
               <div>
-              <input type="checkbox" id="9.05"/>
+              <input type="checkbox" name="other" id="9.05"/>
               <label for="9.05">Separate Parent-Teacher Meetings</label>
               </div>
 
               <div>
-              <input type="checkbox" id="9.06"  onclick="showParentOptions()"/>
+              <input type="checkbox" name="other" id="9.06"  onclick="showParentOptions()"/>
               <label for="9.06">One Parent to Attend Parent-Teacher Meetings</label>
               </div>
 

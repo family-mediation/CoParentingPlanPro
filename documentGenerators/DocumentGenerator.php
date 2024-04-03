@@ -67,7 +67,7 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_14();
 
 
-	//Section 7 Communication
+	//Section 5 Communication
 	public abstract function gen_communication_7();
 	public abstract function gen_communication_7_01();
 	public abstract function gen_communication_7_02();
@@ -129,6 +129,8 @@ abstract class documentGenerator
 	public abstract function gen_child_support_8_14E();
 	public abstract function gen_child_support_8_14F();
 
+	//Section 8 Other section
+	public abstract function get_other_9_00();
 
 	public abstract function genPart4();
 	public abstract function genPart5();
@@ -363,17 +365,16 @@ abstract class documentGenerator
 		$this->gen_communication_7();
 
 		//Communication method page 1 
-		if (isset($_SESSION['responses']['commMethod'])) {
-			switch ($_SESSION['responses']['commMethod']) {
-				case 'email':
-					$this->gen_communication_7_01();
-					break;
-				case 'bothemailtext':
-					$this->gen_communication_7_02();
-					break;
-				case 'wizardmutual':
-					$this->gen_communication_7_03();
-			}
+		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "email") {
+			$this->gen_communication_7_01();
+		}
+
+		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "bothemailtext") {
+			$this->gen_communication_7_02();
+		}
+
+		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "wizardmutual") {
+			$this->gen_communication_7_03();
 		}
 
 		//Optional communication page2
@@ -610,7 +611,8 @@ abstract class documentGenerator
 		$this->gen_child_support_8_14F(); // end of child support section 6
 
 
-
+		//Section 8 Other section
+		
 
 
 
