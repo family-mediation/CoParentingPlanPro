@@ -57,7 +57,7 @@
               <h4>Communication Between Co-Parents:</h4>
 
               <div>
-              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()" />
+              <input type="checkbox" id="7.04" name="commbetweenCP" onclick="showParentOptions()" />
               <label for="7.04">Monthly Conference</label>
               </div>
 
@@ -67,7 +67,7 @@
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" value="semiCon" onclick="showParentOptions2()" />
+              <input type="checkbox" id="7.05" name="commbetweenCP" value="semiCon" onclick="showParentOptions2()" />
               <lable for="7.05">Semi Annual Conference</lable>
               </div>
 
@@ -77,13 +77,13 @@
               </div>
               
               <div>
-              <input type="checkbox" id="7.06" name="communication" value="annualCon" onclick="showParentOptions3()" />
+              <input type="checkbox" id="7.06" name="commbetweenCP" value="annualCon" onclick="showParentOptions3()" />
               <lable for="7.06">Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" id="optionaldate" name="optionaldate" value="annualdate"/> every year.
+              <input type="text" id="optionaldate" name="commbetweenCP" value="annualdate"/> every year.
               </div>
               <br>&nbsp;
                     
