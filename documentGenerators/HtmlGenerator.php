@@ -1388,7 +1388,7 @@ class HtmlGenerator extends documentGenerator
          $this->fileContentString .= $definition;
      }
  
-     //Communication method
+     //Communication method page1
  
      function gen_communication_7_01()
      {
@@ -1454,7 +1454,7 @@ class HtmlGenerator extends documentGenerator
          CO-PARENTS: <span style='background:yellow'>MONTHLY CONFERENCE</span></u></a>. Parents shall meet monthly to discuss
          the children's development and needs including education, health, well-being,
          extracurricular activities, scheduling issues, travel and any other issues
-         pertaining to their child(ren).&nbsp; Conferences shall be on the first  <span style='background:yellow'>" . $this->responses["monthly"] . "</span>&nbsp;
+         pertaining to their child(ren).&nbsp; Conferences shall be on the first  <span style='background:yellow'>" . $this->responses["insertmonthly"] . "</span>&nbsp;
          [insert day of the week] of each month unless mutually agreed to otherwise.
          Meetings may be via in-person, video conference or telephone calls, as mutually
          agreed by the Parents.&nbsp; This requirement for monthly conferences between
@@ -1471,7 +1471,7 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSemiAnnualConference><b>7.05&nbsp; </b><u>COMMUNICATION BETWEEN
          CO-PARENTS: SEMI-ANNUAL CONFERENCE</u></a>. Parents shall meet and confer twice
-         annually by no later than <span sytle='background:yellow'>" . $this->responses["semifromdate"] . "</span> and <span sytle='background:yellow'>" . $this->responses["semitodate"] . "</span>
+         annually by no later than <span sytle='background:yellow'>" . $this->responses["semidate1"] . "</span> and <span sytle='background:yellow'>" . $this->responses["semidate2"] . "</span>
          every year.&nbsp; Meetings may be via in-person, video conference or telephone
          calls, as mutually agreed by the Parents.&nbsp; This requirement for bi-annual
          conferences between Parents shall end upon each child's eighteenth (18th)
@@ -1525,16 +1525,16 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
          NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
-         regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["PAfromtime"] . "</span> and <span syle='background:yellow'>" . $this->responses["PAtotime"] . "</span> when they are with Parent B 
+         regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B 
          and Parent B may call the
-         child between <span syle='background:yellow'>" . $this->responses["PBfromtime"] . "</span> and <span syle='background:yellow'>" . $this->responses["PBtotime"] . "</span> when they are with ParentA.
+         child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with ParentA.
          Calls will normally be no more than 10 minutes.</span></p>";
  
          echo $snippet;
          $this -> fileContentString .= $snippet;
      }
  
-     function gen_communication_7_08_comm()
+     function gen_communication_7_09()
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
@@ -1549,7 +1549,7 @@ class HtmlGenerator extends documentGenerator
          $this -> fileContentString .= $snippet;
      }
  
-     function gen_communication_7_09()
+     function gen_communication_7_10()
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
@@ -1567,7 +1567,7 @@ class HtmlGenerator extends documentGenerator
          $this -> fileContentString .= $snippet;
      }
  
-     function gen_communication_7_10()
+     function gen_communication_7_11()
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a

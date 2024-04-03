@@ -60,6 +60,23 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_13();
     public abstract function gen_physical_custody_timesharing_6_14();
 
+
+	//Section 7 Communication
+	public abstract function gen_communication_7();
+	public abstract function gen_communication_7_01();
+	public abstract function gen_communication_7_02();
+	public abstract function gen_communication_7_03();
+	public abstract function gen_communication_7_04();
+	public abstract function gen_communication_7_05();
+	public abstract function gen_communication_7_06();
+	public abstract function gen_communication_7_06a();
+	public abstract function gen_communication_7_07();
+	public abstract function gen_communication_7_08();
+	public abstract function gen_communication_7_09();
+	public abstract function gen_communication_7_10();
+	public abstract function gen_communication_7_11();
+
+
 	// Section 6: Child Support
 	public abstract function gen_child_support_8_00();
 	public abstract function gen_child_support_8_01();
@@ -321,6 +338,88 @@ abstract class documentGenerator
         if (isset($_SESSION['responses']['modify-schedule'])) {
             $this->gen_physical_custody_timesharing_6_14();
         }
+
+		/***Communication (supposed to be section 5, but 7 according to index of plan) ***/
+		//Communication: explanation page 0 
+		$this->gen_communication_7();
+
+		//Communication method page 1 
+		if (isset($_SESSION['responses']['commMethod'])) {
+			switch ($_SESSION['responses']['commMethod']) {
+				case 'email':
+					$this->gen_communication_7_01();
+					break;
+				case 'bothemailtext':
+					$this->gen_communication_7_02();
+					break;
+				case 'wizardmutual':
+					$this->gen_communication_7_03();
+			}
+		}
+
+		//Optional communication page2
+		//Communication Between Co-Parents:
+		if (isset($_SESSION['reponses']['commbetweenCP'])) {
+			switch ($_SESSION['reponses']['commbetweenCP']) {
+				case '7.04':
+					$this->gen_communication_7_04();
+					break;
+				case 'insertmonthly':
+					$this->gen_communication_7_04();
+					break;
+				case '7.05':
+					$this->gen_communication_7_05();
+					break;
+				case 'semidate1':
+					$this->gen_communication_7_05();
+					break;
+				case 'semidate2':
+					$this->gen_communication_7_05();
+					break;
+				case '7.06':
+					$this->gen_communication_7_06();
+					break;
+				case 'annualdate':
+					$this->gen_communication_7_06a();
+					break;
+			}
+		}
+
+		//Communication Between Child(ren) and Non-Custodial Parent:
+		if (isset($_SESSION['reponses']['betweenchildparent'])) {
+			switch ($_SESSION['reponses']['betweenchildparent']) {
+				case '7.07':
+					$this->gen_communication_7_07();
+					break;
+				case 'A9:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'A17:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'B9:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'B17:00':
+					$this->gen_communication_7_08();
+					break;
+			}
+		}
+
+		//Other Communication:
+		if (isset($_SESSION['reponses']['otherComm'])) {
+			switch ($_SESSION['reponses']['otherComm']) {
+				case '7.09':
+					$this->gen_communication_7_09();
+					break;
+				case '7.10':
+					$this->gen_communication_7_10();
+					break;
+				case '7.11':
+					$this->gen_communication_7_11();
+					break;
+			}
+		}
 
 		/*** Section 6: Child Support ***/
 		// Child support: page 0
