@@ -24,6 +24,9 @@ abstract class documentGenerator
 	public abstract function genPart2();
 	public abstract function genPart3();
 
+    // Section 2: Children
+    public abstract function gen_children_4_00();
+
 	// Section 3: Legal Custody 
 	public abstract function gen_legal_custody_5_00();
 	public abstract function gen_legal_custody_5_01();
@@ -38,6 +41,47 @@ abstract class documentGenerator
 	public abstract function gen_legal_custody_5_09();
 	public abstract function gen_legal_custody_5_10();
 	public abstract function gen_legal_custody_5_11();
+
+    //Section 4: Physical Custody and Timesharing
+    public abstract function gen_physical_custody_timesharing_6_00();
+    public abstract function gen_physical_custody_timesharing_6_01();
+    public abstract function gen_physical_custody_timesharing_6_01A();
+    public abstract function gen_physical_custody_timesharing_6_01B();
+    public abstract function gen_physical_custody_timesharing_6_02();
+    public abstract function gen_physical_custody_timesharing_6_02A(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02B(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02C(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02D(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02E(string $type);
+    public abstract function gen_physical_custody_timesharing_6_03();
+    public abstract function gen_physical_custody_timesharing_6_04();
+    public abstract function gen_physical_custody_timesharing_6_05();
+    public abstract function gen_physical_custody_timesharing_6_06();
+    public abstract function gen_physical_custody_timesharing_6_07();
+    public abstract function gen_physical_custody_timesharing_6_08();
+    public abstract function gen_physical_custody_timesharing_6_09();
+    public abstract function gen_physical_custody_timesharing_6_10();
+    public abstract function gen_physical_custody_timesharing_6_11();
+    public abstract function gen_physical_custody_timesharing_6_12();
+    public abstract function gen_physical_custody_timesharing_6_13();
+    public abstract function gen_physical_custody_timesharing_6_14();
+
+
+	//Section 7 Communication
+	public abstract function gen_communication_7();
+	public abstract function gen_communication_7_01();
+	public abstract function gen_communication_7_02();
+	public abstract function gen_communication_7_03();
+	public abstract function gen_communication_7_04();
+	public abstract function gen_communication_7_05();
+	public abstract function gen_communication_7_06();
+	public abstract function gen_communication_7_06a();
+	public abstract function gen_communication_7_07();
+	public abstract function gen_communication_7_08();
+	public abstract function gen_communication_7_09();
+	public abstract function gen_communication_7_10();
+	public abstract function gen_communication_7_11();
+
 
 	// Section 6: Child Support
 	public abstract function gen_child_support_8_00();
@@ -131,7 +175,8 @@ abstract class documentGenerator
 			}
 		}
 
-		//var_dump($_SESSION['responses']);
+        /** Section 2: Children. */
+        $this->gen_children_4_00();
 
 		/*** Section 3: Legal Custody ***/
 		// Legal Custody: page 0 (definition)
@@ -186,6 +231,214 @@ abstract class documentGenerator
 				}
 			}
 		} //end of legal custody section 3
+
+        /** Section 4: Physical Custody and Timesharing. */
+        $this->gen_physical_custody_timesharing_6_00();
+        $this->gen_physical_custody_timesharing_6_01();
+        // Page 0.
+        if (isset($_SESSION['responses']['schoolYearSchedule'])) {
+            switch ($_SESSION['responses']['schoolYearSchedule']) {
+                // Equal Timesharing schedules.
+                case "2-2-3":
+                case "3-4-4-3":
+                case "2-2-5-5":
+                case "7-7":
+                    $this->gen_physical_custody_timesharing_6_01A();
+                    break;
+                // Other Timesharing schedules.
+                case "8-6":
+                case "10-4":
+                case "ownSchedule":
+                    $this->gen_physical_custody_timesharing_6_01B();
+                    break;
+            }
+        }
+        // Page 1.
+        $this->gen_physical_custody_timesharing_6_02();
+        if (isset($_SESSION['responses']['schoolFallBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolFallBreakSchedule']) {
+                case "fall-split-break":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-split-break");
+                    break;
+                case "fall-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-alternate-break");
+                    break;
+                case "fall-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02A("fall-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolThanksgivingBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolThanksgivingBreakSchedule']) {
+                case "thanksgiving-split-break":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-split-break");
+                    break;
+                case "thanksgiving-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-alternate-break");
+                    break;
+                case "thanksgiving-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02B("thanksgiving-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolWinterBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolWinterBreakSchedule']) {
+                case "winter-split-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-split-break");
+                    break;
+                case "winter-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-alternate-break");
+                    break;
+                case "winter-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolSpringBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolSpringBreakSchedule']) {
+                case "spring-split-break":
+                    $this->gen_physical_custody_timesharing_6_02D("spring-split-break");
+                    break;
+                case "spring-alternate-break":
+                    $this->gen_physical_custody_timesharing_6_02D("spring-alternate-break");
+                    break;
+                case "spring-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02D("spring-continue-schedule");
+                    break;
+            }
+        }
+        if (isset($_SESSION['responses']['schoolSummerBreakSchedule'])) {
+            switch ($_SESSION['responses']['schoolSummerBreakSchedule']) {
+                case "summer-split-break":
+                    $this->gen_physical_custody_timesharing_6_02E("summer-split-break");
+                    break;
+                case "summer-uniterrupted-break":
+                    $this->gen_physical_custody_timesharing_6_02E("summer-uniterrupted-break");
+                    break;
+                case "summer-continue-schedule":
+                    $this->gen_physical_custody_timesharing_6_02E("summer-continue-schedule");
+                    break;
+            }
+        }
+        // Page 2 - Holiday Table, need to implement. "PhysicalCustodyHolidaysandSpecialDays" search in template
+
+        // Page 3 - Optional checkboxes.
+        // Must implement new input data for all:
+        if (isset($_SESSION['responses']['travel-with-children'])) {
+            $this->gen_physical_custody_timesharing_6_04();
+        }
+        if (isset($_SESSION['responses']['reschedule-make-up-time'])) {
+            $this->gen_physical_custody_timesharing_6_05();
+        }
+        if (isset($_SESSION['responses']['first-refusal'])) {
+            $this->gen_physical_custody_timesharing_6_06();
+        }
+        if (isset($_SESSION['responses']['pick-up'])) {
+            $this->gen_physical_custody_timesharing_6_07();
+        }
+        if (isset($_SESSION['responses']['drop-off'])) {
+            $this->gen_physical_custody_timesharing_6_08();
+        }
+        if (isset($_SESSION['responses']['exchanges-neutral-location'])) {
+            $this->gen_physical_custody_timesharing_6_09();
+        }
+        if (isset($_SESSION['responses']['delegate-pick-up'])) {
+            $this->gen_physical_custody_timesharing_6_10();
+        }
+        if (isset($_SESSION['responses']['persons-authorized'])) {
+            $this->gen_physical_custody_timesharing_6_11();
+        }
+        if (isset($_SESSION['responses']['children-belongings'])) {
+            $this->gen_physical_custody_timesharing_6_12();
+        }
+        if (isset($_SESSION['responses']['relocation'])) {
+            $this->gen_physical_custody_timesharing_6_13();
+        }
+        if (isset($_SESSION['responses']['modify-schedule'])) {
+            $this->gen_physical_custody_timesharing_6_14();
+        }
+
+		/***Communication (supposed to be section 5, but 7 according to index of plan) ***/
+		//Communication: explanation page 0 
+		$this->gen_communication_7();
+
+		//Communication method page 1 
+		if (isset($_SESSION['responses']['commMethod'])) {
+			switch ($_SESSION['responses']['commMethod']) {
+				case 'email':
+					$this->gen_communication_7_01();
+					break;
+				case 'bothemailtext':
+					$this->gen_communication_7_02();
+					break;
+				case 'wizardmutual':
+					$this->gen_communication_7_03();
+			}
+		}
+
+		//Optional communication page2
+		//Communication Between Co-Parents:
+		if (isset($_SESSION['reponses']['commbetweenCP'])) {
+			switch ($_SESSION['reponses']['commbetweenCP']) {
+				case '7.04':
+					$this->gen_communication_7_04();
+					break;
+				case 'insertmonthly':
+					$this->gen_communication_7_04();
+					break;
+				case '7.05':
+					$this->gen_communication_7_05();
+					break;
+				case 'semidate1':
+					$this->gen_communication_7_05();
+					break;
+				case 'semidate2':
+					$this->gen_communication_7_05();
+					break;
+				case '7.06':
+					$this->gen_communication_7_06();
+					break;
+				case 'annualdate':
+					$this->gen_communication_7_06a();
+					break;
+			}
+		}
+
+		//Communication Between Child(ren) and Non-Custodial Parent:
+		if (isset($_SESSION['reponses']['betweenchildparent'])) {
+			switch ($_SESSION['reponses']['betweenchildparent']) {
+				case '7.07':
+					$this->gen_communication_7_07();
+					break;
+				case 'A9:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'A17:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'B9:00':
+					$this->gen_communication_7_08();
+					break;
+				case 'B17:00':
+					$this->gen_communication_7_08();
+					break;
+			}
+		}
+
+		//Other Communication:
+		if (isset($_SESSION['reponses']['otherComm'])) {
+			switch ($_SESSION['reponses']['otherComm']) {
+				case '7.09':
+					$this->gen_communication_7_09();
+					break;
+				case '7.10':
+					$this->gen_communication_7_10();
+					break;
+				case '7.11':
+					$this->gen_communication_7_11();
+					break;
+			}
+		}
 
 		/*** Section 6: Child Support ***/
 		// Child support: page 0

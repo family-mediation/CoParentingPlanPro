@@ -25,7 +25,12 @@ class wordDocGenerator extends documentGenerator
 	{
 		echo "Generating Part3 <br/>";
 	}
-	// legal custody section 3
+
+    // Section 2: Children
+    function gen_children_4_00() {}
+
+
+    // legal custody section 3
 	function gen_legal_custody_5_00()
 	{
 	}
@@ -65,6 +70,50 @@ class wordDocGenerator extends documentGenerator
 	function gen_legal_custody_5_11()
 	{
 	} //end of legal custody section 3
+
+    //Section 4: Physical Custody and Timesharing
+    function gen_physical_custody_timesharing_6_00() {}
+    function gen_physical_custody_timesharing_6_01() {}
+    function gen_physical_custody_timesharing_6_01A() {}
+    function gen_physical_custody_timesharing_6_01B() {}
+    function gen_physical_custody_timesharing_6_02() {}
+    function gen_physical_custody_timesharing_6_02A(string $type) {}
+    function gen_physical_custody_timesharing_6_02B(string $type) {}
+    function gen_physical_custody_timesharing_6_02C(string $type) {}
+    function gen_physical_custody_timesharing_6_02D(string $type) {}
+    function gen_physical_custody_timesharing_6_02E(string $type) {}
+    function gen_physical_custody_timesharing_6_03() {}
+    function gen_physical_custody_timesharing_6_04() {}
+    function gen_physical_custody_timesharing_6_05() {}
+    function gen_physical_custody_timesharing_6_06() {}
+    function gen_physical_custody_timesharing_6_07() {}
+    function gen_physical_custody_timesharing_6_08() {}
+    function gen_physical_custody_timesharing_6_09() {}
+    function gen_physical_custody_timesharing_6_10() {}
+    function gen_physical_custody_timesharing_6_11() {}
+    function gen_physical_custody_timesharing_6_12() {}
+    function gen_physical_custody_timesharing_6_13() {}
+    function gen_physical_custody_timesharing_6_14() {
+
+    } // End of section 4: Physical custody and Timesharing
+
+	//Communication section
+	function gen_communication_7() {}
+	function gen_communication_7_01() {}
+	function gen_communication_7_02() {}
+	function gen_communication_7_03() {}
+	function gen_communication_7_04() {}
+	function gen_communication_7_05() {}
+	function gen_communication_7_06() {}
+	function gen_communication_7_06a() {}
+	function gen_communication_7_07() {}
+	function gen_communication_7_08() {}
+	function gen_communication_7_09() {}
+	function gen_communication_7_10() {}
+	function gen_communication_7_11() {}
+
+	// End of Communication
+
 
 	// child support section 6
 	function gen_child_support_8_00()

@@ -121,8 +121,8 @@
                   <label for="summer-split-break">Split Break Schedule</label>
                 </div>
                 <div>
-                  <input id="summer-alternate-break" type="radio" name="schoolSummerBreakSchedule" value="summer-alternate-break"/>
-                  <label for="summer-alternate-break">Alternate Break Schedule</label>
+                  <input id="summer-uniterrupted-break" type="radio" name="schoolSummerBreakSchedule" value="summer-uniterrupted-break"/>
+                  <label for="summer-uniterrupted-break">Uniterrupted Break Schedule</label>
                 </div>
                 <div>
                   <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>
@@ -279,6 +279,10 @@
                 <div>
                   <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal"/>
                   <label for="first-refusal">Right of First Refusal</label>
+                </div>
+                <div>
+                  <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
+                  <label for="pick-up">Pick Up for Non-School Exchange</label>
                 </div>
                 <div>
                   <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>

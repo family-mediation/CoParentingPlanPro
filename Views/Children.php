@@ -11,8 +11,8 @@
                             <th>Add or Remove</th>
                         </tr>
                         <tr>
-                            <td><input class="form-control" type="text" name="childInitials" required></td>
-                            <td><input class="form-control" type="text" name="childBirthYears" required></td>
+                            <td><input class="form-control" type="text" name="child1Initials" required></td>
+                            <td><input class="form-control" type="text" name="child1BirthYears" required></td>
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
@@ -28,8 +28,8 @@
                       }
 
                       function validateChildForm() {
-                        const initials = document.getElementsByName("childInitials");
-                        const birthYears = document.getElementsByName("childBirthYears");
+                        const initials = document.getElementsByName("child1Initials");
+                        const birthYears = document.getElementsByName("child1BirthYears");
                         const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
                         const birthYearRegex = /^[0-9]{4}$/;
 
@@ -50,14 +50,13 @@
                       }
                     </script>
                     <script>
-                      var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input class="form-control" type="text" name="childBirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
-
                       // remove max if don't want to have a cap on number of kids to add
                       var max = 5;
 
-                      var x = 1;
+                      var x = 2;
                       $("#add").click(function() {
                         if (x <= max) {
+                          var html = '<tr><td><input class="form-control" type="text" name="child'+ x +'Initials" required></td><td><input class="form-control" type="text" name="child'+ x +'BirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
                           $("#table_field").append(html);
                           x++;
                         }
