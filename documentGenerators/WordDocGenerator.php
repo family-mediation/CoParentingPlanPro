@@ -105,6 +105,7 @@ class wordDocGenerator extends documentGenerator
 	function gen_communication_7_04() {}
 	function gen_communication_7_05() {}
 	function gen_communication_7_06() {}
+	function gen_communication_7_06a() {}
 	function gen_communication_7_07() {}
 	function gen_communication_7_08() {}
 	function gen_communication_7_08_comm() {}

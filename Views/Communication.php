@@ -22,7 +22,7 @@
           </ol>     
         </div>
         
-        <div class="row justify-content-center pt-4 pb-4" name="communication">
+        <div class="row justify-content-center pt-4 pb-4">
           <button id="next0" onclick="showPage('page1')">Next Page</button>
         </div>
       </div>
@@ -31,17 +31,17 @@
           <h1>Pick One:</h1>
 
             <div>
-              <input type="radio" name="communication" id="emailonly"/>
+              <input type="radio" name="commMethod" id="email" value="email" id="emailonly"/>
               <label for="emailonly">E-mail Only</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="emailtext"/>
+              <input type="radio" name="commMethod" id="bothemailtext" value="bothemailtext" id="emailtext"/>
               <label for="emailtext">E-mail and Text</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="wizardmutually"/>
+              <input type="radio" name="commMethod" id="wizardmutual" value="wizardmutual" id="wizardmutually"/>
               <label for="wizardmutually">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
             </div>
 
@@ -61,13 +61,13 @@
               <label for="7.04">Monthly Conference</label>
               </div>
 
-              <div class="container card p-4" id="monthly" style="display: none;">
+              <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
               <input type="week" name="monthly" /> unless mutually agreed to otherwise.
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()" />
+              <input type="checkbox" id="7.05" name="communication" value="semiCon" onclick="showParentOptions2()" />
               <lable for="7.05">Semi Annual Conference</lable>
               </div>
 
@@ -77,13 +77,13 @@
               </div>
               
               <div>
-              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()" />
+              <input type="checkbox" id="7.06" name="communication" value="annualCon" onclick="showParentOptions3()" />
               <lable for="7.06">Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" id="semidate" /> every year.
+              <input type="text" id="optionaldate" name="optionaldate" value="annualdate"/> every year.
               </div>
               <br>&nbsp;
                     
