@@ -131,7 +131,24 @@ abstract class documentGenerator
 
 	//Section 8 Other section
 	public abstract function get_other_9_00();
+	public abstract function get_other_9_01();
+	public abstract function get_other_9_02();
+	public abstract function get_other_9_03();
+	public abstract function get_other_9_04();
+	public abstract function get_other_9_05();
+	public abstract function get_other_9_06();
+	public abstract function get_other_9_07();
+	public abstract function get_other_9_08();
+	public abstract function get_other_9_09();
+	public abstract function get_other_9_10();
+	public abstract function get_other_9_11();
+	public abstract function get_other_9_12();
+	public abstract function get_other_9_13();
+	public abstract function get_other_9_14();
+	public abstract function get_other_9_15();
+	public abstract function get_other_9_16();
 
+	//end of other section
 	public abstract function genPart4();
 	public abstract function genPart5();
 	public abstract function genPart6();
@@ -612,8 +629,67 @@ abstract class documentGenerator
 
 
 		//Section 8 Other section
-		
+		if (isset($_SESSION['responses']['counseling'])) {
+			switch ($_SESSION['responses']['counseling']) {
+				case 'therapistInput9.00':
+					$this->get_other_9_00();
+					break;
+			}
+		}
 
+		if (isset($_SESSION['responses']['childfocused'])) {
+			switch ($_SESSION['responses']['childfocused']) {
+				case 'therapistInput9.01':
+					$this->get_other_9_01();
+					break;
+			}
+		}
+
+		$this->get_other_9_02();
+		$this->get_other_9_03();
+		$this->get_other_9_04();
+		$this->get_other_9_05();
+
+		if (isset($_SESSION['responses']['other'])) {
+			switch ($_SESSION['responses']['other']) {
+				case 'parentAB_Other':
+					$this->get_other_9_06();
+					break;
+			}
+		}
+
+		$this->get_other_9_07();
+		$this->get_other_9_08();
+		$this->get_other_9_09();
+		$this->get_other_9_10();
+
+		if (isset($_SESSION['responses']['other'])) {
+			switch ($_SESSION['responses']['other']) {
+				case 'parentABdoc_Other':
+					$this->get_other_9_11();
+					break;
+				case 'parentABdoc_Other2':
+					$this->get_other_9_11();
+					break;
+			}
+		}
+
+		$this->get_other_9_12();
+
+		if (isset($_SESSION['responses']['other'])) {
+			switch ($_SESSION['responses']['other']) {
+				case 'parentABdoc_Other3':
+					$this->get_other_9_13();
+					break;
+				case 'parentABdoc_Other4':
+					$this->get_other_9_13();
+					break;
+			}
+		}
+
+		$this->get_other_9_14();
+		$this->get_other_9_15();
+		$this->get_other_9_16();
 
 
 		$this->genPart1();

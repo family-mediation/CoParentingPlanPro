@@ -2350,6 +2350,304 @@ class HtmlGenerator extends documentGenerator
     }   // end of child support
 
     //Other section
+    function gen_other_9_00()
+    {
+        $header = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+        margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
+        line-height:150%'><u>OTHER ISSUES:</u></p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
+        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>" . $this->responses["therapistInput9.00"] . "</span>(name), or
+        other mutually selected licensed mental health professional, as a Co-Parent
+        Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
+        Parents shall continue in Co-Parent Counseling until clinically discharged or
+        upon the mutual agreement of both Parents.</p>";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+
+    function gen_other_9_01()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesChildFocusedTherapist><b>9.01&nbsp; </b><u>OTHER ISSUES:
+        CHILD-FOCUSED THERAPIST</u></a>.&nbsp; Parents agree to
+        engage <span style='background:yellow'>" . $this->responses["therapistInput9.01"] . "</span>(name), or other mutually selected licensed mental
+        health professional, as a Child-Focused Therapist for Child(ren).&nbsp; Both parents
+        shall have access to the child therapist and shall participate in therapy and/or
+        engage with the Child-Focused Therapist at the therapist's discretion.&nbsp; Parents
+        shall alternate taking the Child(ren) to therapy.&nbsp; Parents agree that the
+        Child(ren) shall continue in therapy as needed and upon the schedule
+        recommended by the therapist with input from the Child(ren) until clinically
+        discharged.&nbsp; If mutually agreed, parent may jointly select a new therapist for
+        Child(ren).&nbsp; Unless they have sole legal custody of the Child(ren), neither
+        Parent may unilaterally terminate child therapy without the other Parent's
+        consent.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_02() 
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesSocialMediaBetweenParents><b>9.02&nbsp; </b><u>OTHER ISSUES: SOCIAL
+        MEDIA BETWEEN PARENTS</u></a>.&nbsp; Neither Parent shall post any pictures of the
+        other Parent on social media nor make any derogatory comment about the other
+        Parent on social media.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+    
+    function gen_other_9_03()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesSocialMediaForChild><b>9.03</b>&nbsp; <u>OTHER ISSUES: SOCIAL MEDIA
+        FOR CHILD(REN</u></a><u>)</u>.&nbsp; Parents agree that none of their Child(ren)
+        shall have access to any social media platform until they reach thirteen (13)
+        years of age, and thereafter both Parents shall monitor any Child's social
+        media usage to ensure that it is safe and does not cause embarrassment to
+        either Parent or the Child. </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_04()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesJointTeacherMeeting><b>9.04&nbsp; </b><u>OTHER ISSUES: JOINT
+        PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree
+        that it is in their Child(ren)'s best interests that they both attend
+        parent-teacher meetings together.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_05()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesSeperateTeacherMeeting><b>9.05&nbsp; </b><u>OTHER ISSUES: SEPARATE
+        PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree </span>that
+        they<span style='color:#333333'> will each arrange our own separate
+        parent-teacher meetings.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_06()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesOneParentTeacherMeeting><b>9.</b></a><b><span style='color:
+        #333333'>06</span></b><span style='color:#333333'>&nbsp; </span><u>OTHER ISSUES: ONE
+        PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.&nbsp; <span style='color:#333333'>Parent
+        A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the
+        Child(ren)'s progress.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_07()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesReportCard><b>9.</b></a><b><span style='color:#333333'>07</span></b><span
+        style='color:#333333'>&nbsp; <u>OTHER ISSUES: REPORT CARDS FOR THE CHILD(REN</u></span><u><span
+        style='color:#333333'>)</span></u><span style='color:#333333'>.&nbsp; Both Parents
+        will be provided with separate report cards for the Child(ren). Parents shall
+        notify the school authorities to provide separate report cards.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    } 
+    
+    function gen_other_9_08()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesJointAttendance><b>9.</b></a><b><span style='color:#333333'>08</span></b><span
+        style='color:#333333'>&nbsp; <u>OTHER ISSUES: JOINT ATTENDANCE AT SCHOOL AND
+        EXTRACURRICULAR EVENTS</u></span><span style='color:#333333'>.&nbsp; Both Parents
+        may attend school events and extra-curricular activities.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_09()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesOneParentExtracurricular></a><a name='_heading=h.30j0zll'></a><b>9.</b><b><span
+        style='color:#333333'>09</span></b><span style='color:#333333'>&nbsp; <u>OTHER
+        ISSUES: CUSTODIAL PARENT TO ATTEND SCHOOL AND EXTRACURRICULAR EVENTS</u>.&nbsp; </span><span
+        style='color:#333333'>The Parent with whom the Child(ren) is/are residing at
+        the time of the school event and extracurricular activity will be the sole
+        Parent to attend these events.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_10()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesAlternateAttendance><b>9.10&nbsp; </b></a><u><span style='color:
+        #333333'>OTHER ISSUES: ALTERNATE ATTENDANCE AT SCHOOL AND EXTRACURRICULAR
+        EVENTS</span></u><span style='color:#333333'>.&nbsp; Parent shall alternate
+        attending the Child(ren)'s school events and extracurricular activities.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_11()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesDocuments><b>9.11&nbsp; </b><u>OTHER ISSUES: DOCUMENTS</u></a>.&nbsp; <span
+        style='color:#333333'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span>/B will keep the original passport issued in the
+        Child(ren)'s name, their social security card, birth certificate, and [insert
+        any other relevant documents] at their home, and these documents will be made
+        available to<span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span>/A as needed. Both Parents shall have copies of all of the
+        important documents.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_12()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesJointConsentPassport><b>9.12&nbsp; </b><u>OTHER ISSUES: JOINT
+        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; Parent A and Parent B must both consent for the purposes of a passport application for
+        any Child.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_13()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesSoleConsentPassport><b>9.13&nbsp; </b><u>OTHER ISSUES: SOLE
+        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'>Parent
+        <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</span></p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_14()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesNewIntimatePartnerLD><b>9.14&nbsp; </b><u>OTHER ISSUES: NEW INTIMATE
+        PARTNER PROTOCOLS (LESS DETAILED)</u>.&nbsp; </a>Both parents agree that they shall
+        not introduce any of their minor children to a new significant other or
+        intimate partner until (a) they have been in an intimate dating relationship
+        for six (6) months or longer and (b) the other parent has been given an
+        opportunity to meet that significant other/intimate partner first.&nbsp; Parents
+        shall be guided by the children's best interests and conflict minimization in
+        determining a reasonable compromise on any issues arising from this provision.
+        If parents cannot agree, they shall consult with and engage mutually acceptable
+        therapist or other mental health professional informed and guided by their
+        recommendations. Unless otherwise agreed upon in writing, neither parent shall
+        be allowed to travel with the children and their significant other/intimate
+        partner unless or until that parent has, in fact, married their new partner.&nbsp;
+        This plan is subject to further review based on the best interests of the
+        children and their observed reactions and behaviors throughout any introduction
+        process.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
+    }
+
+    function gen_other_9_15()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesNewIntimatePartnerMD><b>9.15&nbsp; </b><u>OTHER ISSUES: NEW INTIMATE
+        PARTNER PROTOCOLS (MORE DETAILED)</u></a>.&nbsp; Given that both parents will likely
+        engage in new intimate partner relationships in the future, it is their intent
+        that the children's well-being, comfort and stability remain the highest
+        priority.&nbsp; Both parents agree to be respectful of one another and guided by the
+        following concepts and protocols: </p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Take
+        an honest look at the relationship.&nbsp; If you are just having fun enjoying a new
+        person's company but know there is no long-term potential, it is probably best
+        not to introduce the children to a new intimate partner.</p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Your
+        relationship shall be well-established and stable prior to initiating these new
+        intimate partner protocols.&nbsp; The Parents shall discuss the appropriate timing
+        and circumstances in which the children should formally meet a new intimate
+        partner and be told that the nature of the relationship is romantic.&nbsp; It is
+        understood that the children may come into contact with the new intimate
+        partner in advance, but the actual introduction of this new person as a
+        romantic relationship shall not occur before the Parents are able to discuss
+        the circumstances in co-parent counseling.&nbsp; </p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The
+        other parent shall be notified in advance of the children and given the
+        opportunity to meet the new intimate partner prior to the children being
+        introduced to the new intimate partner and told the nature of the relationship
+        is romantic.&nbsp; </p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Parents
+        shall use best practices and judgment when engaging in appropriate public
+        displays of affection with their new intimate partner in front of any of the
+        children.&nbsp; Parents shall further check in with the children to gauge their
+        comfort with the new intimate partner.&nbsp; This may be accomplished within a
+        therapeutic process (e.g. check-ins by the co-parent counselor with the child
+        therapist as discussed below). </p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>New
+        intimate partners, and even step-parents, shall refrain from disciplining the
+        children unless there is an agreement between both parents otherwise<b>.&nbsp; </b>The
+        Parents shall discuss age-appropriate discipline options for the children.</p>
+        
+        <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:71.5pt;text-align:justify;text-indent:-.25in;line-height:150%;
+        border:none'><span style='font-family:'Noto Sans Symbols''>&#9679;<span
+        style='font:7.0pt 'Times New Roman''>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>In
+        the event there are any problems related to the new intimate partner or these
+        protocols, the Parents shall engage a mental health professional such as a
+        co-parent counselor or family therapist who may also confer with the child
+        therapist to ensure the children's well-being, comfort and stability remain the
+        highest priority.&nbsp; </p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet; 
+    }
+
+    function gen_other_9_16()
+    {
+        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:.5pt;text-align:justify;line-height:150%'><a
+        name=OtherIssuesAlternativeDisputeResolution><b>9.16&nbsp; </b><u>OTHER ISSUES:
+        ALTERNATIVE DISPUTE RESOLUTION</u></a>.&nbsp; If there is any disagreement related
+        to this Agreement or any Child-related issues, both Parents agree that they
+        shall engage a mutually selected mediator to help them resolve the issue(s)
+        prior to filing a motion for relief with the Family Court.</p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet; 
+    }
     
 
     function genPart4()
