@@ -250,21 +250,21 @@ class wordDocGenerator extends documentGenerator
 	} //end of child support section 6
 
 	//Other Section
-	function get_other_9_00() {}
-	function get_other_9_01() {}
-	function get_other_9_03() {}
-	function get_other_9_04() {}
-	function get_other_9_05() {}
-	function get_other_9_06() {}
-	function get_other_9_07() {}
-	function get_other_9_08() {}
-	function get_other_9_10() {}
-	function get_other_9_11() {}
-	function get_other_9_12() {}
-	function get_other_9_13() {}
-	function get_other_9_14() {}
-	function get_other_9_15() {}
-	function get_other_9_16() {}
+	function gen_other_9_00() {}
+	function gen_other_9_01() {}
+	function gen_other_9_03() {}
+	function gen_other_9_04() {}
+	function gen_other_9_05() {}
+	function gen_other_9_06() {}
+	function gen_other_9_07() {}
+	function gen_other_9_08() {}
+	function gen_other_9_10() {}
+	function gen_other_9_11() {}
+	function gen_other_9_12() {}
+	function gen_other_9_13() {}
+	function gen_other_9_14() {}
+	function gen_other_9_15() {}
+	function gen_other_9_16() {}
 	//End of other section
 
 	function genPart4()
