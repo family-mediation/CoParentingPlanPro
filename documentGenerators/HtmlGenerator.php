@@ -790,27 +790,18 @@ class HtmlGenerator extends documentGenerator
         echo $footerString;
         $this->fileContentString .= $footerString;
     }
-    function genPart1()
-    {
-        $part1String = "";
-        echo $part1String;
-        $this->fileContentString .= $part1String;
-    }
 
     /**
      * Guiding Principals statement.
      * @return void - concats to the output content string
      */
-    function genPart2()
+    function gen_guiding_principals_statement()
     {
         $guidingPrincipals = "from co-parenting plan template.php: RESPONSIBILITIES TO OUR CHILD(REN)";
         echo $guidingPrincipals;
         $this->fileContentString .= $guidingPrincipals;
     }
-    function genPart3()
-    {
-        echo "Generating Part3 <br/>";
-    }
+
 
     /** Section 2: Children. */
     function gen_children_4_00() {
@@ -2648,24 +2639,7 @@ class HtmlGenerator extends documentGenerator
         echo $snippet;
         $this->fileContentString .= $snippet; 
     }
-    
 
-    function genPart4()
-    {
-        echo "Generating Part4 <br/>";
-    }
-    function genPart5()
-    {
-        echo "Generating Part5 <br/>";
-    }
-    function genPart6()
-    {
-        echo "Generating Part6 <br/>";
-    }
-    function genPart7()
-    {
-        echo "Generating Part7 <br/>";
-    }
     function packageDocument()
     {
         // Take the template.zip copy it and rename it in the downloads folder

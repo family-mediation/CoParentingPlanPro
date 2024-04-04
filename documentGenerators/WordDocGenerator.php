@@ -7,23 +7,11 @@ class wordDocGenerator extends documentGenerator
 		echo "Generating Header " . $this->fileName . " <br/>";
 		$this->fileContentString .= "test test test";
 	}
+    function gen_guiding_principals_statement(){}
 	function genFooter()
 	{
 		echo "Generating Footer " . $this->fileName . " <br/>";
 		$this->fileContentString .= "test test test";
-	}
-	function genPart1()
-	{
-		echo "Generating Part1 " . $this->fileName . " <br/>";
-		$this->fileContentString .= "test test test";
-	}
-	function genPart2()
-	{
-		echo "Generating Part2 <br/>";
-	}
-	function genPart3()
-	{
-		echo "Generating Part3 <br/>";
 	}
 
     // Section 2: Children
@@ -252,12 +240,14 @@ class wordDocGenerator extends documentGenerator
 	//Other Section
 	function gen_other_9_00() {}
 	function gen_other_9_01() {}
+	function gen_other_9_02() {}
 	function gen_other_9_03() {}
 	function gen_other_9_04() {}
 	function gen_other_9_05() {}
 	function gen_other_9_06() {}
 	function gen_other_9_07() {}
 	function gen_other_9_08() {}
+	function gen_other_9_09() {}
 	function gen_other_9_10() {}
 	function gen_other_9_11() {}
 	function gen_other_9_12() {}
@@ -266,23 +256,6 @@ class wordDocGenerator extends documentGenerator
 	function gen_other_9_15() {}
 	function gen_other_9_16() {}
 	//End of other section
-
-	function genPart4()
-	{
-		echo "Generating Part4 <br/>";
-	}
-	function genPart5()
-	{
-		echo "Generating Part5 <br/>";
-	}
-	function genPart6()
-	{
-		echo "Generating Part6 <br/>";
-	}
-	function genPart7()
-	{
-		echo "Generating Part7 <br/>";
-	}
 	function packageDocument()
 	{
 		// Take the template.zip copy it and rename it in the downloads folder

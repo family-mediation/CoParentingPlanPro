@@ -20,9 +20,9 @@ abstract class documentGenerator
 	}
 	// Generate the different components.
 	public abstract function genHeader();
-	public abstract function genPart1();
-	public abstract function genPart2();
-	public abstract function genPart3();
+	public abstract function gen_guiding_principals_statement();
+
+
 
     // Section 2: Children
     public abstract function gen_children_4_00();
@@ -149,10 +149,6 @@ abstract class documentGenerator
 	public abstract function gen_other_9_16();
 
 	//end of other section
-	public abstract function genPart4();
-	public abstract function genPart5();
-	public abstract function genPart6();
-	public abstract function genPart7();
 	public abstract function genFooter();
 	public abstract function packageDocument();
 	/* TODO:// HEY YOU GUYS, THIS IS WHERE ALL OF THE LOGIC GOES.*/
@@ -690,16 +686,6 @@ abstract class documentGenerator
 		$this->gen_other_9_14();
 		$this->gen_other_9_15();
 		$this->gen_other_9_16();
-
-
-		$this->genPart1();
-		$this->genPart1();
-		$this->genPart2();
-		$this->genPart3();
-		$this->genPart4();
-		$this->genPart5();
-		$this->genPart6();
-		$this->genPart7();
 		$this->genFooter();
 		$this->packageDocument();
 		fclose($this->fileOutput);
