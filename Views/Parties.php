@@ -3,8 +3,65 @@
     <div id="mainForm">
 
       <div id="page0" class="container card p-4">
-        <h1>Parent A</h1>
+        <h1>Introduction</h1>
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <h4>Nature of Case</h4>
+            <div>
+              <input type="radio" name="natureCase" id="divorce" value="Divorce" />
+              <label for="divorce">Divorce</label>
+            </div>
+            <div>
+              <input type="radio" name="natureCase" id="custodyNeverMarried" value="Custody (Never Married)" />
+              <label for="custodyNeverMarried">Custody (Never Married)</label>
+            </div>
+            <div>
+              <input type="radio" name="natureCase" id="other" value="Other" />
+              <label for="other">Other</label>
+            </div>
+          </div>
 
+          <div class="col-lg-4">
+            <h4>Court</h4>
+            <div>
+              <input type="radio" name="court" id="1st" value="1st" />
+              <label for="1st">1<sup>st</sup> Circuit (Oahu)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="circuit2" value="2nd" />
+              <label for="2nd">2<sup>nd</sup> Circuit (Maui)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="3rd" value="3rd" />
+              <label for="3rd">3<sup>rd</sup> Circuit (Hawaiʻi)</label>
+            </div>
+            <div>
+              <input type="radio" name="court" id="5th" value="5th" />
+              <label for="5th">5<sup>th</sup> Circuit (Kauaʻi)</label>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div>
+              <h4>Case No.</h4>
+              <input type="text" id="caseNo" name="caseNo">
+            </div>
+
+            <div class="p-4">
+              <h4>Date</h4>
+              <input type="date" id="date1" name="date1">
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center pt-4 pb-4">
+          <button id="next1" onclick="nextHandler()">Next Page</button>
+        </div>
+      </div>
+
+      <div id="page1" class="container card p-4">
+        <h1>Parent A</h1>
         <div class="form-group row p-3">
           <div class="col-lg-6">
             <label class="" hide="true" data-dm->First Name</label>
@@ -56,6 +113,7 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
+          <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="next" onclick="validateParentAForm() ? nextHandler() : null">
             Next Page</button>
         </div>
@@ -77,7 +135,7 @@
         </script>
       </div>
 
-      <div id="page1" class="container card p-4">
+      <div id="page2" class="container card p-4">
         <h1>Parent B</h1>
 
         <div class="form-group row p-3">
@@ -133,7 +191,7 @@
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="toChildren" onclick="validateParentBForm()">Next Page</button>
-<!--          need to go to children section-->
+          <!--          need to go to children section-->
         </div>
 
 
