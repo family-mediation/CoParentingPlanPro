@@ -260,8 +260,13 @@ class wordDocGenerator extends documentGenerator
 	{
 		// Take the template.zip copy it and rename it in the downloads folder
 		// Take the string and write it to document.xml
-		fwrite($this->fileOutput, $this->fileContentString);
+        if($this->fileOutput != false)
+        {
+		    fwrite($this->fileOutput, $this->fileContentString);
+        }
 		// Zip the folder and rename it to .docx
 		// Serve the .docx
+        fclose($this->fileOutput);
 	}
+
 }
