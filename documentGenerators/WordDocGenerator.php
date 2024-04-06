@@ -266,7 +266,7 @@ class wordDocGenerator extends documentGenerator
         }
 		// Zip the folder and rename it to .docx
 		// Serve the .docx
-        fclose($this->fileOutput);
+
 	}
 
 }

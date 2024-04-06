@@ -2652,6 +2652,6 @@ class HtmlGenerator extends documentGenerator
         // Zip the folder and rename it to .docx
         // Serve the .docx
         //close the file resource.
-        fclose($this->fileOutput);
+
     }
 }
