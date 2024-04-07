@@ -667,39 +667,531 @@ class wordDocGenerator extends documentGenerator
 	// child support section 6
 	function gen_child_support_8_00()
 	{
+		$snippet = "<w:p w14:paraId='039E6D0E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:pBdr>
+				<w:top w:val='nil' />
+				<w:left w:val='nil' />
+				<w:bottom w:val='nil' />
+				<w:right w:val='nil' />
+				<w:between w:val='nil' />
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='0' w:firstLine='0' />
+		</w:pPr>
+		<w:bookmarkStart w:id='81' w:name='SoCMonthlyUnderLaw' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.00</w:t>
+		</w:r>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): MONTHLY CHILD SUPPORT AMOUNT UNDER THE LAW</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='81' />
+		<w:r>
+			<w:t xml:space='preserve'> Each State has Child Support Guidelines used to calculate monthly child support. Each parent shall be bound by and follow the Uniform Interstate Family Support Act.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_01()
 	{
+		$snippet = "<w:p w14:paraId='6FCA6FAD' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:pBdr>
+				<w:top w:val='nil' />
+				<w:left w:val='nil' />
+				<w:bottom w:val='nil' />
+				<w:right w:val='nil' />
+				<w:between w:val='nil' />
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='0' w:firstLine='0' />
+		</w:pPr>
+		<w:bookmarkStart w:id='82' w:name='SoCChildSupportSameState' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.01</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN THE SAME STATE</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>. </w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='82' />
+		<w:r>
+			<w:t xml:space='preserve'>Child support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB1"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB2"] . "</span> and calculated pursuant to the State child support guidelines worksheet. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_03()
 	{
+		$snippet = "<w:p w14:paraId='464B7240' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='84' w:name='SoCChildSupportAgreedAlternative' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.03</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): MUTUALLY AGREED UPON CHILD SUPPORT AMOUNT ALTERNATIVE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='84' />
+		<w:r>
+			<w:t xml:space='preserve'>. Child Support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB3"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB4"] . "</span> by agreement of the Parents in the 
+			amount of <span style='background:yellow'>$" . $this->responses["mutual-1"] . "/per Child</span> per month for a total monthly child support amount of <span style='background:yellow'>$" . $this->responses["mutual-2"] . "</span>. Both Parents understand that child support
+			is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
+		</w:r>
+		<w:proofErr w:type='spellStart' />
+		<w:r>
+			<w:t>and</w:t>
+		</w:r>
+		<w:proofErr w:type='spellEnd' />
+		<w:r>
+			<w:t xml:space='preserve'> Order for Income Withholding (or similar order) via the State Child Support Enforcement Agency.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_04()
 	{
+		$snippet = "<w:p w14:paraId='576AE2A8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:pBdr>
+				<w:top w:val='nil' />
+				<w:left w:val='nil' />
+				<w:bottom w:val='nil' />
+				<w:right w:val='nil' />
+				<w:between w:val='nil' />
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='0' w:firstLine='0' />
+		</w:pPr>
+		<w:bookmarkStart w:id='85' w:name='SoCChildSupportNoAgreement' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.04</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): NO AGREEMENT OF THE PARTIES RE MONTHLY CHILD SUPPORT AMOUNT AND/OR JURISDICTION</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='85' />
+		<w:r>
+			<w:t xml:space='preserve'>. Parents do not agree on the amount of Child Support to be paid and/or on which State should have jurisdiction to calculate child support under the Uniform Interstate Family Support Act. Parents agree to litigate the issue of child support through the Family Court and/or the State Child Support Enforcement Agency. </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t xml:space='preserve'>Note: In many states, physical </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>custody</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t xml:space='preserve'> and timesharing with the Child(ren) impacts the calculation of child support. If the child support amount if going to be litigated through the Family Court or administratively through the State Child Support Enforcement Agency, Parents are hereby advised to seek independent legal counsel before making any agreements regarding physical custody and timesharing. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_05()
 	{
+		$snippet = "<w:p w14:paraId='3A8625F7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='86' w:name='SoCChildSupportAccountAlternative' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+				<w:highlight w:val='yellow' />
+			</w:rPr>
+			<w:t xml:space='preserve'>8.05 </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:highlight w:val='yellow' />
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPO</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='86' />
+		<w:r>
+			<w:rPr>
+				<w:highlight w:val='yellow' />
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>RT OF THE CHILD(REN): CHILD SUPPORT ACCOUNT ALTERNATIVE</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:highlight w:val='yellow' />
+			</w:rPr>
+			<w:t xml:space='preserve'>. Parents agree </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:rPr>
+				<w:highlight w:val='yellow' />
+			</w:rPr>
+			<w:t>that</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_06()
 	{
+		$snippet = "<w:p w14:paraId='476B53E4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='87' w:name='SocDirectPayment' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.06</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): DIRECT PAYMENT OF CHILD SUPPORT</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_07()
 	{
+		$snippet = "<w:p w14:paraId='7B7E1F87' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='88' w:name='SoCThroughStateAgency' />
+		<w:bookmarkEnd w:id='87' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.07</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): PAYMENT OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='88' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_08()
 	{
+		$snippet = "<w:p w14:paraId='308C65BF' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='89' w:name='SoCHealthInsurance' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.08</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): HEALTH INSURANCE PREMIUM</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='89' />
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>S</w:t>
+		</w:r>
+		<w:r>
+			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB5"] . "</span> shall cover the Child(ren)’s health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09()
 	{
+		$snippet = "<w:p w14:paraId='152812DA' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='90' w:name='SoCUninsuredCoPays' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:lastRenderedPageBreak />
+			<w:t>8.09</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): UNINSURED CO-PAYS FOR HEALTH-RELATED EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='90' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09A()
 	{
+		$snippet = "<w:p w14:paraId='3D67ED18' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='91' w:name='SoCUninsuredCoPaysSR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.09A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='91' />
+		<w:r>
+			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB6"] . "</span> shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09B()
 	{
+		$snippet = "<w:p w14:paraId='56FF7886' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='92' w:name='SoCUninsuredCoPaysSpR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.09B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='92' />
+		<w:r>
+			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)’s uninsured 
+			co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span> per month.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09C()
 	{
+		$snippet = "<w:p w14:paraId='21BF9F79' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='93' w:name='SoCUninsuredCoPaysThresholdAmount' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.09C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>RESPONSIBILITY FOR THRESHOLD AMOUNT</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='93' />
+		<w:r>
+			<w:t xml:space='preserve'>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>In the event that</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10()
 	{
