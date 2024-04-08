@@ -1195,99 +1195,1376 @@ class wordDocGenerator extends documentGenerator
 	}
 	function gen_child_support_8_10()
 	{
+		$snippet = "<w:p w14:paraId='05E617B9' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='96' w:name='SoCExtracurricular' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.10</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): EXTRACURRICULAR EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='96' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10A()
 	{
+		$snippet = "<w:p w14:paraId='6728CA27' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='97' w:name='SoCExtracurricularSR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.10A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='97' />
+		<w:r>
+			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10B()
 	{
+		$snippet = "<w:p w14:paraId='22E031FB' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:lastRenderedPageBreak />
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='98' w:name='SoCExtracurricularSpR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.10B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT RESPONSIBILITY</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='98' />
+		<w:r>
+			<w:t xml:space='preserve'> Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)’s extracurricular expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10C()
 	{
+		$snippet = "<w:p w14:paraId='0DEA2EAC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='99' w:name='SoCExtracurricularSelection' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.10C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN) PURSUANT TO 7.10 HEREINABOVE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='99' />
+		<w:r>
+			<w:t>. If the Parents have elected to separately select</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333' />
+			</w:rPr>
+			<w:t xml:space='preserve'> and pay for one extra-curricular activity that occurs no more than once a week for each Child, then the other Parent shall be expected to take each Child to that activity and support the Child’s participation during the time that the Child is in their care, pursuant to Paragraph 7.10 hereinabove. Each Parent shall pay for 100% of their selected extracurricular activity, which shall include supplies, uniforms, travel out-of-state, and other expenses required for the Child to participate</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10D()
 	{
+		$snippet = "<w:p w14:paraId='6C0D30B5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='100' w:name='SoCExtracurricularMutualAgreement' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.10D</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>EXTRACURRICULAR ACTIVITIES MUST BE MUTUALLY AGREED UPON</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='100' />
+		<w:r>
+			<w:t>. Parents shall only be responsible for paying for extracurricular activities that are mutually agreed upon by both Parents. Parents agree to consult and be guided by the Child’s preferences in selecting mutually agreed upon extracurricular activities.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11()
 	{
+		$snippet = "<w:p w14:paraId='511280BF' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='101' w:name='SoCPrivateSchoolExpenses' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11</w:t>
+		</w:r>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): PRIVATE SCHOOL EXPENSES</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11A()
 	{
+		$snippet = "<w:p w14:paraId='4DE1F5EE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='102' w:name='SoCPrivateSchoolExpensesSR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='102' />
+		<w:r>
+			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)’s private school expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11B()
 	{
+		$snippet = "<w:p w14:paraId='70A47D6E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='103' w:name='SoCPrivateSchoolExpensesSpR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='103' />
+		<w:r>
+			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)’s private school expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11C()
 	{
+		$snippet = "<w:p w14:paraId='716CDA39' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='104' w:name='SoCPrivateSchoolExpensesDefinition' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>DEFINITION OF PRIVATE SCHOOL EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='104' />
+		<w:r>
+			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at a private school including, without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11D()
 	{
+		$snippet = "<w:p w14:paraId='77FCA0E2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='105' w:name='SoCPrivateSchoolExpensesMutualAgreement' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11D</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>MUTUAL AGREEMENT OF PARENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='105' />
+		<w:r>
+			<w:t>. Either Parent may apply for a Child to attend private school but unless one parent has sole legal custody, both Parents must approve the enrollment of any Child in a private school.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11E()
 	{
+		$snippet = "<w:p w14:paraId='31B4F8C3' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:lastRenderedPageBreak />
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='106' w:name='SoCPrivateSchoolExpensesReserve' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.11E</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>RESERVE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='106' />
+		<w:r>
+			<w:t>. Parents shall reserve the issue of private school expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12()
 	{
+		$snippet = "<w:p w14:paraId='06B811A8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='107' w:name='SoCPostSchoolExpenses' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): POST-HIGH SCHOOL EDUCATION EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='107' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12A()
 	{
+		$snippet = "<w:p w14:paraId='5E8A1213' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='108' w:name='SoCPostSchoolExpensesSR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='108' />
+		<w:r>
+			<w:t xml:space='preserve'>.  <span style='background:yellow'>" . $this->responses["parentAB_High"] . "</span> shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12B()
 	{
+		$snippet = "<w:p w14:paraId='71E45E02' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='109' w:name='SoCPostSchoolExpensesSpR' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT RESPONSIBILITY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='109' />
+		<w:r>
+			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)’s post-high school education expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12C()
 	{
+		$snippet = "<w:p w14:paraId='60F75D46' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='110' w:name='SoCPostSchoolExpensesSRFundsfromchildacc' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL EDUCATION EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='110' />
+		<w:r>
+			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then <span style='background:yellow'>" . $this->responses["parentAB_Sole529"] . "</span> shall 
+			cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12D()
 	{
+		$snippet = "<w:p w14:paraId='0CC22BA9' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='111' w:name='SoCPostSchoolExpensesSpRFundsfromchildac' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12D</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT RESPONSIBILITY AFTER FUNDS FROM ANY 529 ACCOUNTS HELD ON BEHALF OF A CHILD OR CHILD(REN), COVERDELL ACCOUNTS OR OTHER FUNDS EAR-MARKED TO PAY FOR A CHILD’S POST-HIGH SCHOOL EDUCATION EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='111' />
+		<w:r>
+			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then Parent A shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and 
+			Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the Child(ren)’s remaining post-high school education expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12E()
 	{
+		$snippet = "<w:p w14:paraId='1011B515' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='112' w:name='SoCPostSchoolExpensesCap' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12E</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'> </w:t>
+		</w:r>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>CAP ON PAYMENT BY EACH PARENT PER ACADEMIC SCHOOL YEAR</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='112' />
+		<w:r>
+			<w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that Parent A shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a cap 
+			of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and Parent B shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up to a cap 
+			of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12F()
 	{
+		$snippet = "<w:p w14:paraId='125CB36F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='113' w:name='SoCPostSchoolExpensesDef' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:lastRenderedPageBreak />
+			<w:t>8.12F</w:t>
+		</w:r>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>DEFINITION OF POST-HIGH SCHOOL EDUCATION EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='113' />
+		<w:r>
+			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at any post-high school educational institution (including vocational and trade schools), without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12G()
 	{
+		$snippet = "<w:p w14:paraId='095C63C6' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='114' w:name='SoCPostSchoolExpensesMutualAgreement' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12G</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>MUTUAL AGREEMENT OF PARENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='114' />
+		<w:r>
+			<w:t xml:space='preserve'>. Either Parent may apply for a Child to attend a post-high school education institution (includes trade and vocational schools), but </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>in order for</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t xml:space='preserve'> the other Parent to be financially responsible, both Parents must approve the enrollment of any Child or Adult Child in a post-high school educational institution.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12H()
 	{
+		$snippet = "<w:p w14:paraId='386C4A1E' w14:textId='1AEEE9CB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='115' w:name='SoCPostSchoolExpensesReserve' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.12H</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>RESERVE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='115' />
+		<w:r>
+			<w:t>. Parents shall reserve the issue of post-high school educational school expenses.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13()
 	{
+		$snippet = "<w:p w14:paraId='2D643AAA' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='116' w:name='SoCDependents' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.13</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): CLAIMING THE CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='116' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13A()
 	{
+		$snippet = "<w:p w14:paraId='792B5675' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='117' w:name='SoCDependentsSA' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.13A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SOLE AUTHORITY TO CLAIM THE CHILD(REN</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='117' />
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>)</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>. <span style='background:yellow'>" . $this->responses["parentAB_taxSole"] . "</span> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13B()
 	{
+		$snippet = "<w:p w14:paraId='0EA0CA62' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='118' w:name='SoCDependentsSpA' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.13B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT AUTHORITY TO CLAIM THE CHILD(REN</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='118' />
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>)</w:t>
+		</w:r>
+		<w:r>
+			<w:t>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span></w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>_(</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span></w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>_(</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13C()
 	{
+		$snippet = "<w:p w14:paraId='4980B917' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='119' w:name='SoCDependentsSpAthenAlternate' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.13C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SPLIT AUTHORITY TO CLAIM THE CHILD(REN) THEN ALTERNATE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='119' />
+		<w:r>
+			<w:t>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span></w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>_(</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span></w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>_(</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. Once the older Child is no longer eligible to be claimed for tax purposes, then the Parents shall alternate claiming the younger Child. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13D()
 	{
+		$snippet = "<w:p w14:paraId='6A4976A1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='120' w:name='SoCDependentsAlternate' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.13D</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>ALTERNATE AUTHORITY TO CLAIM THE CHILD(REN</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='120' />
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>)</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>. Parent A shall be entitled to claim the Child(ren) as dependent(s) for tax purposes </w:t>
+		</w:r>
+		<w:r>
+			<w:lastRenderedPageBreak />
+			<w:t xml:space='preserve'>in even years. Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14()
 	{
+		$snippet = "<w:p w14:paraId='1F58DF13' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='121' w:name='SoCProtocolsforReimbursment' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>SUPPORT OF THE CHILD(REN): PROTOCOLS FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='121' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14A()
 	{
+		$snippet = "<w:p w14:paraId='2F72948D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='122' w:name='SoCProtocolsforReimbursmentTimeframe' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14A</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>TIMEFRAME FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='122' />
+		<w:r>
+			<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14B()
 	{
+		$snippet = "<w:p w14:paraId='59B9A4FC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='123' w:name='SoCProtocolsforReimbursmentMonthly' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14B</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>MONTHLY CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='123' />
+		<w:r>
+			<w:t xml:space='preserve'>. Parents shall calculate child-related expenses and reimburse each other </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>on a monthly basis</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14C()
 	{
+		$snippet = "<w:p w14:paraId='41FB477D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='124' w:name='SoCProtocolsforReimbursmentQuarterly' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14C</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>QUARTERLY CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='124' />
+		<w:r>
+			<w:t xml:space='preserve'> Parents shall calculate child-related expenses and reimburse each other on a quarterly basis.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14D()
 	{
+		$snippet = "<w:p w14:paraId='5FF26E7C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='125' w:name='SoCProtocolsforReimbursmentAnnual' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14D</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>ANNUAL CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>. </w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='125' />
+		<w:r>
+			<w:t>Parents shall calculate child-related expenses and reimburse each other on an annual basis.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14E()
 	{
+		$snippet = "<w:p w14:paraId='72857059' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='720' />
+			<w:jc w:val='both' />
+		</w:pPr>
+		<w:bookmarkStart w:id='126' w:name='SoCProtocolsforReimbursmentDocumentation' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14E</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>DOCUMENTATION REQUIRED FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='126' />
+		<w:r>
+			<w:t xml:space='preserve'>. A requesting Parent shall include written documentation proving the child-related expense </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart' />
+		<w:r>
+			<w:t>in order to</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd' />
+		<w:r>
+			<w:t xml:space='preserve'> receive reimbursement from the other Parent.</w:t>
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14F()
 	{
+		$content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, show a blank line instead of displaying nothing
+        if (empty($content)) {
+            $content = "________";
+        }
+		$snippet = "<w:p w14:paraId='0433F65B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='127' w:name='SoCProtocolsforReimbursmentMethod' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14F</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>REIMBURSEMENT METHOD</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='127' />
+		<w:r>
+			<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually 
+			agreed upon parenting expense tool or application, or <span style='background:yellow'>$content</span>.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+	</w:p>";
+        echo $snippet;
+        $this->fileContentString .= $snippet;
 	} //end of child support section 6
 
 	//Other Section
