@@ -688,6 +688,8 @@ abstract class documentGenerator
 		$this->gen_other_9_16();
 		$this->genFooter();
 		$this->packageDocument();
-		fclose($this->fileOutput);
+        if($this->fileOutput != false) {
+            fclose($this->fileOutput);
+        }
 	}
 }
