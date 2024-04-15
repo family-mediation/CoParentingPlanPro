@@ -18,8 +18,16 @@
         </div>
 
         <div class="form-group row p-3">
-          <label data-dm->Street Address</label>
-          <textarea name="partyAResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
+          <div class="col">
+            <label style="width: 700px" data-dm->Street Address
+              <textarea name="partyAResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
+            </label>
+          </div>
+          <div class="col">
+            <label hide="true" data-dm->Birthday
+              <input type="date" class="form-control" name="partyABirthday" required>
+            </label>
+          </div>
         </div>
 
         <div class="form-group row p-3">
@@ -64,6 +72,7 @@
             const first = document.getElementsByName("partyAFirst")[0].value;
             const last = document.getElementsByName("partyALast")[0].value;
             const address = document.getElementsByName("partyAResidence")[0].value;
+            const birthday = document.getElementsByName("partyABirthday")[0].value;
             const city = document.getElementsByName("partyACity")[0].value;
             const state = document.getElementsByName("partyAState")[0].value;
             const zip = document.getElementsByName("partyAZip")[0].value;
@@ -72,7 +81,7 @@
             const ssn = document.getElementsByName("partyASocial")[0].value;
             const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-            return !(first === "" || last === "" || address === "" || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
+            return !(first === "" || last === "" || address === "" || birthday === undefined || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
           }
         </script>
       </div>
@@ -91,12 +100,18 @@
             <input type="text" name="partyBLast" class="form-control" placeholder="Last Name" data-placeholder-original="Spouse's Birth or Maiden Name" required>
           </div>
         </div>
-
         <div class="form-group row p-3">
-          <label data-dm->Street Address</label>
-          <textarea name="partyBResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
+          <div class="col">
+            <label style="width: 700px" data-dm->Street Address
+              <textarea name="partyBResidence" class="form-control" placeholder="Street Address" data-placeholder-original="Street Address" required></textarea>
+            </label>
+          </div>
+          <div class="col">
+            <label hide="true" data-dm->Birthday
+              <input type="date" class="form-control" name="partyBBirthday" required>
+            </label>
+          </div>
         </div>
-
         <div class="form-group row p-3">
           <div class="col-lg-4">
             <label data-dm->City</label>
@@ -133,7 +148,6 @@
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
           <button id="toChildren" onclick="validateParentBForm()">Next Page</button>
-<!--          need to go to children section-->
         </div>
 
 
@@ -142,6 +156,7 @@
             const first = document.getElementsByName("partyBFirst")[0].value;
             const last = document.getElementsByName("partyBLast")[0].value;
             const address = document.getElementsByName("partyBResidence")[0].value;
+            const birthday = document.getElementsByName("partyBBirthday")[0].value;
             const city = document.getElementsByName("partyBCity")[0].value;
             const state = document.getElementsByName("partyBState")[0].value;
             const zip = document.getElementsByName("partyBZip")[0].value;
@@ -150,7 +165,7 @@
             const ssn = document.getElementsByName("partyBSocial")[0].value;
             const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-            return !(first === "" || last === "" || address === "" || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
+            return !(first === "" || last === "" || address === "" || birthday === undefined || city === "" || state === "" || zip === "" || cell === "" || email === "" || ssn === "") && emailRegex.test(email);
           }
         </script>
       </div>
