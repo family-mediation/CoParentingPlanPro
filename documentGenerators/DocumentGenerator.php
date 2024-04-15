@@ -50,6 +50,7 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_02();
     public abstract function gen_physical_custody_timesharing_6_02A(string $type);
     public abstract function gen_physical_custody_timesharing_6_02B(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02BOptional();
     public abstract function gen_physical_custody_timesharing_6_02C(string $type);
     public abstract function gen_physical_custody_timesharing_6_02D(string $type);
     public abstract function gen_physical_custody_timesharing_6_02E(string $type);
@@ -296,6 +297,11 @@ abstract class documentGenerator
                     break;
             }
         }
+        if (isset($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional'])) {
+            if ($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional']) {
+                $this->gen_physical_custody_timesharing_6_02BOptional();
+            }
+        }
         if (isset($_SESSION['responses']['schoolWinterBreakSchedule'])) {
             switch ($_SESSION['responses']['schoolWinterBreakSchedule']) {
                 case "winter-split-break":
@@ -306,6 +312,9 @@ abstract class documentGenerator
                     break;
                 case "winter-continue-schedule":
                     $this->gen_physical_custody_timesharing_6_02C("winter-continue-schedule");
+                    break;
+                case "winter-split-holiday-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-split-holiday-break");
                     break;
             }
         }

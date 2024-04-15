@@ -2,6 +2,7 @@
 include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
 include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
 include 'timeSharingSchedules/FallSchedules.php';
+include 'timeSharingSchedules/ThanksgivingSchedules.php';
 include 'timeSharingSchedules/WinterSchedules.php';
 include 'timeSharingSchedules/SpringSchedules.php';
 include 'timeSharingSchedules/SummerSchedules.php';
@@ -1038,11 +1039,12 @@ class HtmlGenerator extends documentGenerator
             default:
                 echo "Error in HTML Generator for the variable: schoolThanksgivingBreakSchedule.";
         }
-        // Adding option for parent to see child(ren).
-        $get_time = new ThanksgivingSchedules();
-        $content = $get_time->get_time();
-        echo $content;
-        $this->fileContentString .= $content;
+    }
+    function gen_physical_custody_timesharing_6_02BOptional() {
+        $time_break = new ThanksgivingSchedules();
+        $thanksgiving = $time_break->get_time();
+        echo $thanksgiving;
+        $this->fileContentString .= $thanksgiving;
     }
 
     // Winter Break schedules.
@@ -1064,6 +1066,12 @@ class HtmlGenerator extends documentGenerator
             case "winter-alternate-break":
                 $alternate = new WinterSchedules();
                 $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-split-holiday-break":
+                $split_holiday = new WinterSchedules();
+                $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
                 echo $winter;
                 $this->fileContentString .= $winter;
                 break;

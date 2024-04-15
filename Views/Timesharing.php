@@ -85,7 +85,7 @@
                     <label for="thanksgiving-continue-schedule">Continued Schedule</label>
                   </div>
                   <div>
-                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakSchedule" value="thanksgiving-time-break"/>
+                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakScheduleOptional" value=true/>
                     <label for="thanksgiving-time-break">Time on Thanksgiving Day</label>
                   </div>
                 </div>
@@ -104,10 +104,25 @@
                   </div>
                   <div>
                     <label class="flex-label" for="winter-split-holiday-break">
-                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break"/>
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
                       Split Break with Holiday Time Schedule
                     </label>
                   </div>
+                  <label class="collapse" id="split-break">
+                    (click again to close window)
+                    <label hide="true" data-dm->Start time Christmas
+                      <input type="time" class="form-control" name="christmasStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time Christmas
+                      <input type="time" class="form-control" name="christmasEnd" required>
+                    </label>
+                    <label hide="true" data-dm->Start time New Years Day
+                      <input type="time" class="form-control" name="newYearsStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time New Years Day
+                      <input type="time" class="form-control" name="newYearsEnd" required>
+                    </label>
+                  </label>
                   <div>
                     <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
                     <label for="winter-continue-schedule">Continued Schedule</label>
