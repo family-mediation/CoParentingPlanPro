@@ -6,8 +6,8 @@
         <h3>Timesharing During the School Year</h3>
           <div>
             <p>Please select one:</p>
-            <div class="row justify-content-center">
-              <div class="column p-3">
+            <div class="row justify-content-center" style="text-align: left;">
+              <div class="column p-3" style="border-style: double">
                 <p>Equal Timesharing Schedules:</p>
                 <div>
                   <input id="2-2-3" type="radio" name="schoolYearSchedule" value="2-2-3"/>
@@ -26,7 +26,7 @@
                   <label for="7-7">7-7 Schedule</label>
                 </div>
               </div>
-              <div class="column p-3">
+              <div class="column p-3" style="border-style: double">
                 <p>Other Timesharing Schedules:</p>
                 <div>
                   <input id="8-6" type="radio" name="schoolYearSchedule" value="8-6"/>
@@ -52,81 +52,93 @@
         <h3>Timesharing During the School Breaks</h3>
         <div>
           <div>
-            <p>Please select one:</p>
+            <p>Please select one for each break:</p>
             <div class="row justify-content-center">
-              <div class="column p-3">
-                <p>Fall Break:</p>
-                <div>
-                  <input id="fall-split-break" type="radio" name="schoolFallBreakSchedule" value="fall-split-break"/>
-                  <label for="fall-split-break">Split Break Schedule</label>
+              <div class="row p-3" style="text-align: left;">
+                <div class="column p-3" style="border-style: double">
+                  <p>Fall Break:</p>
+                  <div>
+                    <input id="fall-split-break" type="radio" name="schoolFallBreakSchedule" value="fall-split-break"/>
+                    <label for="fall-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="fall-alternate-break" type="radio" name="schoolFallBreakSchedule" value="fall-alternate-break"/>
+                    <label for="fall-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="fall-continue-schedule" type="radio" name="schoolFallBreakSchedule" value="fall-continue-schedule"/>
+                    <label for="fall-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="fall-alternate-break" type="radio" name="schoolFallBreakSchedule" value="fall-alternate-break"/>
-                  <label for="fall-alternate-break">Alternate Break Schedule</label>
+                <div class="column p-3" style="border-style: double">
+                  <p>Thanksgiving Break:</p>
+                  <div>
+                    <input id="thanksgiving-split-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-split-break"/>
+                    <label for="thanksgiving-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-alternate-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-alternate-break"/>
+                    <label for="thanksgiving-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-continue-schedule" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-continue-schedule"/>
+                    <label for="thanksgiving-continue-schedule">Continued Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakSchedule" value="thanksgiving-time-break"/>
+                    <label for="thanksgiving-time-break">Time on Thanksgiving Day</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="fall-continue-schedule" type="radio" name="schoolFallBreakSchedule" value="fall-continue-schedule"/>
-                  <label for="fall-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Thanksgiving Break:</p>
-                <div>
-                  <input id="thanksgiving-split-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-split-break"/>
-                  <label for="thanksgiving-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="thanksgiving-alternate-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-alternate-break"/>
-                  <label for="thanksgiving-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="thanksgiving-continue-schedule" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-continue-schedule"/>
-                  <label for="thanksgiving-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Winter Break:</p>
-                <div>
-                  <input id="winter-split-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-break"/>
-                  <label for="winter-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
-                  <label for="winter-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
-                  <label for="winter-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Spring Break:</p>
-                <div>
-                  <input id="spring-split-break" type="radio" name="schoolSpringBreakSchedule" value="spring-split-break"/>
-                  <label for="spring-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="spring-alternate-break" type="radio" name="schoolSpringBreakSchedule" value="spring-alternate-break"/>
-                  <label for="spring-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="spring-continue-schedule" type="radio" name="schoolSpringBreakSchedule" value="spring-continue-schedule"/>
-                  <label for="spring-continue-schedule">Continued Schedule</label>
+                <div class="column p-3" style="border-style: double">
+                  <p>Winter Break:</p>
+                  <div>
+                    <input id="winter-split-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-break"/>
+                    <label for="winter-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
+                    <label for="winter-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break"/>
+                    <label for="winter-split-holiday-break">Split Break with Holiday Time Schedule</label>
+                  </div>
+                  <div>
+                    <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
+                    <label for="winter-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
               </div>
-              <div class="column p-3">
-                <p>Summer Break:</p>
-                <div>
-                  <input id="summer-split-break" type="radio" name="schoolSummerBreakSchedule" value="summer-split-break"/>
-                  <label for="summer-split-break">Split Break Schedule</label>
+              <div class="row p-3" style="text-align: left;">
+                <div class="column p-3" style="border-style: double">
+                  <p>Spring Break:</p>
+                  <div>
+                    <input id="spring-split-break" type="radio" name="schoolSpringBreakSchedule" value="spring-split-break"/>
+                    <label for="spring-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="spring-alternate-break" type="radio" name="schoolSpringBreakSchedule" value="spring-alternate-break"/>
+                    <label for="spring-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="spring-continue-schedule" type="radio" name="schoolSpringBreakSchedule" value="spring-continue-schedule"/>
+                    <label for="spring-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="summer-alternate-break" type="radio" name="schoolSummerBreakSchedule" value="summer-alternate-break"/>
-                  <label for="summer-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>
-                  <label for="summer-continue-schedule">Continued Schedule</label>
+                <div class="column p-3" style="border-style: double">
+                  <p>Summer Break:</p>
+                  <div>
+                    <input id="summer-split-break" type="radio" name="schoolSummerBreakSchedule" value="summer-split-break"/>
+                    <label for="summer-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>
+                    <label for="summer-continue-schedule">Continued Schedule</label>
+                  </div>
+                  <div>
+                    <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule"/>
+                    <label for="summer-continue-uninterrupted-schedule">Continued Schedule with Option for Uninterrupted Time</label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -266,10 +278,10 @@
         <div>
           <div>
             <p>Please check all that apply:</p>
-            <div class="row justify-content-center">
-              <div class="column">
+            <div class="row justify-content-center" style="text-align: left">
+              <div class="column p-3" style="border-style: double">
                 <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" required/>
+                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" />
                   <label for="travel-with-children">Travel with the Children</label>
                 </div>
                 <div>
@@ -289,7 +301,7 @@
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
                 </div>
               </div>
-              <div class="column">
+              <div class="column p-3" style="border-style: double">
                 <div>
                   <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
                   <label for="delegate-pick-up">Parental Authority to Delegate Pick-Up and Drop Off</label>
