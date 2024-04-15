@@ -74,3 +74,10 @@ button
     font-weight: bold;
 }
 
+.flex-label {
+  display: flex;
+}
+input[type=radio] {
+  /* one way to help with spacing */
+  margin: 5px;
+}
