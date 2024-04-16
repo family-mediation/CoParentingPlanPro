@@ -19,7 +19,7 @@ class SummerSchedules {
     }
 
     /** Haven't implemented this choice fully - need to collect dates (replaced Alternate schedule). */
-    public function get_continue_uniterrupted(string $parentAFirst, string $parentBFirst, string $days_weeks, string $no_later_than): string {
+    public function get_continue_uninterrupted(string $parentAFirst, string $parentBFirst, string $days_weeks, string $no_later_than): string {
         return "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
             name=PhysicalCustodySummerBreakContSchedUnint><b>6.02E(iii)&nbsp;&nbsp;&nbsp; </b><u>CONTINUE
@@ -28,7 +28,7 @@ class SummerSchedules {
             break provided however that both parents shall have the option to take
             $days_weeks days/weeks of uninterrupted time with the Child(ren) every summer.&nbsp; Parents
             shall select and exchange their dates for uninterrupted time with the
-            Child(ren) by no later than $no_later_than (date) of the same year.&nbsp; In even
+            Child(ren) by no later than $no_later_than of the same year.&nbsp; In even
             years, $parentAFirst shall have the first choice of dates for uninterrupted time
             during the Summer Break.&nbsp; In odd years, $parentBFirst shall have the first choice of
             dates for uninterrupted time during the Summer Break.&nbsp; </p>";

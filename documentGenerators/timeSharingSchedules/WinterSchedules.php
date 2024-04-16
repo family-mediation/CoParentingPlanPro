@@ -40,6 +40,6 @@ margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
             half, to include New Year's Eve and New Year's Day.&nbsp; During their time, either
             parent may elect to travel with the Child(ren).&nbsp; In the event that the
             custodial parent is not traveling, the non-custodial parent shall have the
-            opportunity to spend time with the children on Christmas Day between $christmas_start am/pm and $christmas_end am/pm and New Year's Day between $newYears_start am/pm and $newYears_end am/pm.</p>";
+            opportunity to spend time with the children on Christmas Day between $christmas_start am/pm and $christmas_end and New Year's Day between $newYears_start and $newYears_end am/pm.</p>";
     }
 }

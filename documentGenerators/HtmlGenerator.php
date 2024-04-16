@@ -1121,7 +1121,7 @@ class HtmlGenerator extends documentGenerator
     function gen_physical_custody_timesharing_6_02E(string $type) {
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-            name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.&nbsp; The
+            name=PhysicalCustodySummerBreak><b>6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SUMMER BREAK</u></a>.&nbsp; The
             Parents shall share time with the Child(ren) during Summer Break as follows:</p>";
         echo $content;
         $this->fileContentString .= $content;
@@ -1132,9 +1132,9 @@ class HtmlGenerator extends documentGenerator
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
-            case "summer-uniterrupted-break":
+            case "summer-continue-uninterrupted-schedule":
                 $alternate = new SummerSchedules();
-                $summer = $alternate->get_continue_uniterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst']); //need to implement this part, taking in time inputs
+                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;

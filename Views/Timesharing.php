@@ -157,8 +157,19 @@
                   </div>
                   <div>
                     <label class="flex-label" for="summer-continue-uninterrupted-schedule">
-                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule"/>
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
                         Continued Schedule with Option for Uninterrupted Time
+                    </label>
+                    <label class="collapse" id="uninterrupted">
+                      <label>
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                        Exchange date
+                      </label>
+                      <label>
+                        <label hide="true" data-dm->Number of days
+                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
+                        </label>
+                    </label>
                     </label>
                   </div>
                 </div>
@@ -332,12 +343,10 @@
                 </div>
               </div>
               <div class="column p-3" style="border-style: double; width: 350px">
-                <div>
+
                   <label class="flex-label" for="delegate-pick-up">
-                    <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
-                    Parental Authority to Delegate Pick-Up and Drop Off
+                    <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>Parental Authority to Delegate Pick-Up and Drop Off
                   </label>
-                </div>
                 <div>
                   <label class="flex-label" for="persons-authorized">
                     <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized"/>

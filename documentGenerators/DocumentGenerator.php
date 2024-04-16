@@ -336,8 +336,8 @@ abstract class documentGenerator
                 case "summer-split-break":
                     $this->gen_physical_custody_timesharing_6_02E("summer-split-break");
                     break;
-                case "summer-uniterrupted-break":
-                    $this->gen_physical_custody_timesharing_6_02E("summer-uniterrupted-break");
+                case "summer-continue-uninterrupted-schedule":
+                    $this->gen_physical_custody_timesharing_6_02E("summer-continue-uninterrupted-schedule");
                     break;
                 case "summer-continue-schedule":
                     $this->gen_physical_custody_timesharing_6_02E("summer-continue-schedule");
