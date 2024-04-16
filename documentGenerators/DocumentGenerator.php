@@ -149,6 +149,13 @@ abstract class documentGenerator
 	public abstract function gen_other_9_15();
 	public abstract function gen_other_9_16();
 
+    //Section 8: Legal
+    public abstract function gen_legal_10_00();
+    public abstract function gen_legal_10_01();
+    public abstract function gen_legal_10_02();
+
+    public abstract function signature();
+
 	//end of other section
 	public abstract function genFooter();
 	public abstract function packageDocument();
@@ -695,8 +702,17 @@ abstract class documentGenerator
 		$this->gen_other_9_14();
 		$this->gen_other_9_15();
 		$this->gen_other_9_16();
+
+        // Legal
+        $this->gen_legal_10_00();
+        $this->gen_legal_10_01();
+        $this->gen_legal_10_02();
+
+        $this->signature();
+
 		$this->genFooter();
 		$this->packageDocument();
+
         if($this->fileOutput != false) {
             fclose($this->fileOutput);
         }

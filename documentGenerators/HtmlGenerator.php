@@ -6,6 +6,7 @@ include 'timeSharingSchedules/ThanksgivingSchedules.php';
 include 'timeSharingSchedules/WinterSchedules.php';
 include 'timeSharingSchedules/SpringSchedules.php';
 include 'timeSharingSchedules/SummerSchedules.php';
+include 'Signature.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -2645,6 +2646,56 @@ class HtmlGenerator extends documentGenerator
         prior to filing a motion for relief with the Family Court.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet; 
+    }
+
+    //Section 8: Legal
+    function gen_legal_10_00() {
+        $continuingJurisdiction = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+            margin-bottom:.05pt;margin-left:.5pt;text-align:center;line-height:150%'><u>LEGAL:</u></p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;line-height:150%'><a
+            name=LegalContinuingJurisdiction><b>10.00  </b><u>LEGAL: CONTINUING
+            JURISDICTION</u></a>.&nbsp; Except as otherwise limited by Statute, Court Rule or
+            case authority, the Family Court shall have the ongoing authority and personal
+            and subject matter jurisdiction to make any other just and equitable orders
+            which may be necessary to enforce the intended agreement and specific
+            provisions set forth herein.</p>";
+        echo $continuingJurisdiction;
+        $this->fileContentString .= $continuingJurisdiction;
+    }
+    function gen_legal_10_01() {
+        $enforcement = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=LegalEnforcement><b>10.01</b> <u>LEGAL: ENFORCEMENT</u></a>.&nbsp; A Parent who
+            fails to comply with this <u>Co-Parenting Plan: Agreement Regarding Child
+            Custody, Timesharing, and Support</u> shall be liable to the other Parent for
+            all reasonable legal fees and costs incurred and reasonable damages suffered by
+            the other Parent as a result of noncompliance.&nbsp; The Family Court shall have
+            continuing jurisdiction over the parents and their property to enforce and
+            implement the provisions of the Agreement, to the extent permitted by
+            applicable statutory authority, court rule and/or case law.</p>";
+        echo $enforcement;
+        $this->fileContentString .= $enforcement;
+    }
+    function gen_legal_10_02() {
+        $execution = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=LegalVoluntaryExecution><b>10.02 </b><u>LEGAL: VOLUNTARY EXECUTION</u></a>.&nbsp;
+            Each Parent acknowledges that they have voluntarily executed this <u>Co-Parenting
+            Plan: Agreement Regarding Child Custody, Timesharing, and Support</u> with
+            sufficient knowledge of the facts and the law, and that it is fair and
+            reasonable.&nbsp; Both Parents have been advised to seek independent legal counsel
+            regarding these and all other matters contained herein.</p>";
+        echo $execution;
+        $this->fileContentString .= $execution;
+    }
+
+    function signature() {
+        $signature = new Signature();
+        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+        echo $signatures;
+        $this->fileContentString .= $signatures;
     }
 
     function packageDocument()

@@ -2145,110 +2145,13 @@ to this Agreement or any Child-related issues, both Parents agree that they
 shall engage a mutually selected mediator to help them resolve the issue(s)
 prior to filing a motion for relief with the Family Court.</p>
 
-<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
-margin-bottom:.05pt;margin-left:.5pt;text-align:center;line-height:150%'><u>LEGAL:</u></p>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-margin-left:.5pt;text-align:justify;line-height:150%'><a
-name=LegalContinuingJurisdiction><b>10.00  </b><u>LEGAL: CONTINUING
-JURISDICTION</u></a>.&nbsp; Except as otherwise limited by Statute, Court Rule or
-case authority, the Family Court shall have the ongoing authority and personal
-and subject matter jurisdiction to make any other just and equitable orders
-which may be necessary to enforce the intended agreement and specific
-provisions set forth herein.</p>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalEnforcement><b>10.01</b> <u>LEGAL: ENFORCEMENT</u></a>.&nbsp; A Parent who
-fails to comply with this <u>Co-Parenting Plan: Agreement Regarding Child
-Custody, Timesharing, and Support</u> shall be liable to the other Parent for
-all reasonable legal fees and costs incurred and reasonable damages suffered by
-the other Parent as a result of noncompliance.&nbsp; The Family Court shall have
-continuing jurisdiction over the parents and their property to enforce and
-implement the provisions of the Agreement, to the extent permitted by
-applicable statutory authority, court rule and/or case law.</p>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
-name=LegalVoluntaryExecution><b>10.02 </b><u>LEGAL: VOLUNTARY EXECUTION</u></a>.&nbsp;
-Each Parent acknowledges that they have voluntarily executed this <u>Co-Parenting
-Plan: Agreement Regarding Child Custody, Timesharing, and Support</u> with
-sufficient knowledge of the facts and the law, and that it is fair and
-reasonable.&nbsp; Both Parents have been advised to seek independent legal counsel
-regarding these and all other matters contained herein.</p>
 
-<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
-margin-bottom:8.0pt;margin-left:0in;text-align:center;text-indent:0in;
-line-height:150%'><span style='font-size:16.0pt;line-height:150%'>[SIGNATURE
-PAGE TO FOLLOW]</span></p>
 
-<span style='font-size:12.0pt;line-height:150%;font-family:"Bookman Old Style",serif;
-color:black'><br clear=all style='page-break-before:always'>
-</span>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;</p>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
-margin-left:-.25pt;text-align:justify;text-indent:0in;line-height:107%'>APPROVED
-AS TO FORM AND CONTENT:</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:5.8pt;
-margin-left:-.25pt;text-align:justify;text-indent:0in;line-height:normal'>&nbsp;</p>
-
-<p class=MsoNormal style='margin:0in;text-align:justify;text-indent:0in;
-line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin:0in;text-align:justify;text-indent:0in;
-line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <?php echo $varName; ?></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> <?php echo $parentAName; ?></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $parentBName; ?></p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Residential
-Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>E-Mail
-Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-Mail Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>SSN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX- <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX- <?php echo $varName; ?></p>
-
-<p class=MsoNormal style='margin:0in;text-align:justify;text-indent:0in;
-line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin:0in;text-align:justify;text-indent:0in;
-line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-margin-left:0in;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
-
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Date:  <?php echo $varName; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date:
- <?php echo $varName; ?></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:2.2pt;margin-bottom:.15pt;
 margin-left:.5pt;text-align:justify;line-height:107%'><span style='font-size:

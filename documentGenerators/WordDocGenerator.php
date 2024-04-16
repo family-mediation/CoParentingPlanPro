@@ -256,7 +256,27 @@ class wordDocGenerator extends documentGenerator
 	function gen_other_9_14() {}
 	function gen_other_9_15() {}
 	function gen_other_9_16() {}
-	//End of other section
+
+    //Section 8: Legal
+    function gen_legal_10_00()
+    {
+        // TODO: Implement gen_legal_10_00() method.
+    }
+    function gen_legal_10_01()
+    {
+        // TODO: Implement gen_legal_10_01() method.
+    }
+    function gen_legal_10_02()
+    {
+        // TODO: Implement gen_legal_10_02() method.
+    }
+
+    function signature()
+    {
+        // TODO: Implement signature() method.
+    }
+
+    //End of other section
 	function packageDocument()
 	{
 		// Take the template.zip copy it and rename it in the downloads folder
