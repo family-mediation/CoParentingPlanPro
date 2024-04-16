@@ -647,19 +647,772 @@ class wordDocGenerator extends documentGenerator
     } // End of section 4: Physical custody and Timesharing
 
 	//Communication section
-	function gen_communication_7() {}
-	function gen_communication_7_01() {}
-	function gen_communication_7_02() {}
-	function gen_communication_7_03() {}
-	function gen_communication_7_04() {}
-	function gen_communication_7_05() {}
-	function gen_communication_7_06() {}
-	function gen_communication_7_06a() {}
-	function gen_communication_7_07() {}
-	function gen_communication_7_08() {}
-	function gen_communication_7_09() {}
-	function gen_communication_7_10() {}
-	function gen_communication_7_11() {}
+	function gen_communication_7() 
+	{
+		$snippet = "<w:p w14:paraId='3D84B06F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='69' w:name='Communication'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.00</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='69'/>
+		<w:r>
+			<w:t>.  Parents agree and understand that communication between Co-Parents is critical to their Child(ren)’s well-being.  Parents shall work together to agree on what information needs to be communicated to the other Parent in a timely manner and, at a minimum agree, that the following shall be communicated:</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='26715F81' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>A child is sick.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='66698EC9' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>A child is missing school.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='7A979453' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>A child will be spending the night somewhere other than the custodial parent’s home.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='24223628' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>A pet belonging to a child is missing, dying, or new.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='4F8455B3' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>An individual, other than the parent or subject child(ren), is moving into the custodial parent’s home or property (includes long-term tenants).</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='22D8A492' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>An individual other than a parent is transporting a child (those authorized to transport the Child(ren) shall be agreed upon in advance in writing).</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='6C2E4822' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:lastRenderedPageBreak/>
+			<w:t>An individual other than a parent is caring a child when the custodial parent is not present (those authorized to care for the children shall be agreed upon in advance in writing).</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='46922B0D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='1'/>
+				<w:numId w:val='4'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:tabs>
+				<w:tab w:val='left' w:pos='1080'/>
+			</w:tabs>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='720'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t xml:space='preserve'>Discipline of a child during one parent’s timesharing day which may affect the other parent’s timesharing.  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_01() 
+	{
+		$snippet = "<w:p w14:paraId='708A5E5F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='70' w:name='CommunicationEmailOnly'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.01</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: E-MAIL ONLY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='70'/>
+		<w:r>
+			<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail.  The Parents may utilize text or telephone calls in </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>an emergency situation</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail.  Both Parents shall check their e-mail at least once daily and shall respond to messages or other items needing attention (</w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>i.e.</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+
+	function gen_communication_7_02() 
+	{
+		$snippet = "<w:p w14:paraId='07535BC0' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='71' w:name='CommunicationEmailandTextOnly'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.02</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: E-MAIL AND TEXT ONLY</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='71'/>
+		<w:r>
+			<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail and text.  The Parents may utilize telephone calls in </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>an emergency situation</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail or text.  Both Parents shall check their e-mail and texts at least once daily and shall respond to messages or other items needing attention (</w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>i.e.</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_03() 
+	{
+		$snippet = "<w:p w14:paraId='23F38455' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='72' w:name='CommunicationOurFamilyWizard'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.03</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: OUR FAMILY WIZARD OR OTHER MUTUALLY AGREED UPON PARENTING COMMUNICATION APPLICATION</w:t>
+		</w:r>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='72'/>
+		<w:r>
+			<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application.  Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_04() 
+	{
+		$snippet = "<w:p w14:paraId='50287177' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='73' w:name='CommunicationMonthlyConference'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:lastRenderedPageBreak/>
+			<w:t>7.04</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: MONTHLY CONFERENCE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='73'/>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren).  Conferences shall be on the first <span style='background:yellow'>" . $this->responses["insertmonthly"] . "</span></w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>_  [</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'>insert day of the week] of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_05() 
+	{
+		$snippet = "<w:p w14:paraId='3A95D219' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='74' w:name='CommunicationSemiAnnualConference'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.05</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: SEMI-ANNUAL CONFERENCE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='74'/>
+		<w:r>
+			<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than <span sytle='background:yellow'>" . $this->responses["semidate1"] . "</span> [insert date] and <span sytle='background:yellow'>" . $this->responses["semidate2"] . "</span> [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_06() 
+	{
+		$snippet = "<w:p w14:paraId='20A9EA31' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='75' w:name='CommunicationAnnualConference'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.06</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CO-PARENTS: ANNUAL CONFERENCE</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='75'/>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_06a() 
+	{
+		$snippet = "<w:p w14:paraId='318A1CDD' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:t>Parents shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annuldate"] . "</span> [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_07() 
+	{
+		$snippet = "<w:p w14:paraId='1A821391' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='76' w:name='CommunicationUnlimited'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.07</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CHILD(REN) AND NON-CUSTODIAL PARENT: UNLIMITED</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='76'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>During the regular parenting time schedule, the child may contact each parent whenever they wish.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_08() 
+	{
+		$snippet = "<w:p w14:paraId='0B356DE2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='77' w:name='CommunicationSpecific'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.08</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION BETWEEN CHILD(REN) AND NON-CUSTODIAL PARENT: SPECIFIC</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='77'/>
+		<w:r>
+			<w:t xml:space='preserve'>. </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>During the regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B and Parent B may call the child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_09() 
+	{
+		$snippet = "<w:p w14:paraId='1BC5202A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='78' w:name='CommunicationExchangeofContactInfo'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:lastRenderedPageBreak/>
+			<w:t xml:space='preserve'>7.08 </w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION:  EXCHANGE OF CONTACT INFORMATION</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='78'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>Parents shall provide to the other Parent with updated telephone number(s), email address, and home address. Parents agree that if this contact information changes, they shall provide the new contact information to the other Parent immediately.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_10() 
+	{
+		$snippet = "<w:p w14:paraId='746FB369' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='79' w:name='CommunicationSchedulingExtracurricular'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.09</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION: SCHEDULING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='79'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  Both Parents understand that reasonable extracurricular activities are healthy and appropriate outlets for our Child(ren).  Both Parents understand that selecting extracurricular activities for the Child(ren) is a legal custody decision. </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>Neither of us will schedule extra-curricular activities during the time the Child(ren) is to be living with or in the care of the other </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>Parent, unless</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> the other Parent agrees.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t xml:space='preserve'>  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>The other Parent shall not unreasonably withhold their agreement.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
+	function gen_communication_7_11() 
+	{
+		$snippet = "<w:p w14:paraId='7C42C045' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='80' w:name='CommunicationSelectingExtracurricular'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>7.10</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>COMMUNICATION: SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='80'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>Each Parent may select and pay for one extra-curricular activity that occurs no more than once a week for each Child, and the other Parent shall be expected to take each Child to that activity and support the Child’s participation during the time that the Child is in their care.</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+		$this->fileContentString .= $snippet;
+	}
 
 	// End of Communication
 
@@ -2568,23 +3321,948 @@ class wordDocGenerator extends documentGenerator
 	} //end of child support section 6
 
 	//Other Section
-	function gen_other_9_00() {}
-	function gen_other_9_01() {}
-	function gen_other_9_02() {}
-	function gen_other_9_03() {}
-	function gen_other_9_04() {}
-	function gen_other_9_05() {}
-	function gen_other_9_06() {}
-	function gen_other_9_07() {}
-	function gen_other_9_08() {}
-	function gen_other_9_09() {}
-	function gen_other_9_10() {}
-	function gen_other_9_11() {}
-	function gen_other_9_12() {}
-	function gen_other_9_13() {}
-	function gen_other_9_14() {}
-	function gen_other_9_15() {}
-	function gen_other_9_16() {}
+	function gen_other_9_00() 
+	{
+		$snippet = "<w:p w14:paraId='587EA373' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='36' w:firstLine='0'/>
+			<w:jc w:val='center'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES:</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='0D515AEE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='128' w:name='OtherIssuesCoParentingCounseling'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.00</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: CO-PARENT COUNSELING</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='128'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  Parents agree to engage<span style='background:yellow'>" . $this->responses["therapistInput9.00"] . "</span> (name), or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
+		</w:r>
+		<w:r>
+			<w:lastRenderedPageBreak/>
+			<w:t>parenting the Child(ren).  Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_01() 
+	{
+		$snippet = "<w:p w14:paraId='051A225F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='129' w:name='OtherIssuesChildFocusedTherapist'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.01</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: CHILD-FOCUSED THERAPIST</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='129'/>
+		<w:r>
+			<w:t>.  Parents agree to <span style='background:yellow'>" . $this->responses["therapistInput9.01"] . "</span> (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_02() 
+	{
+		$snippet = "<w:p w14:paraId='56A55C0B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='130' w:name='OtherIssuesSocialMediaBetweenParents'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.02</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: SOCIAL MEDIA BETWEEN PARENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='130'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  Neither Parent shall post any pictures of the other Parent on social media nor make any derogatory comment about the other Parent on social media.  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_03() 
+	{
+		$snippet = "<w:p w14:paraId='20C9016B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='131' w:name='OtherIssuesSocialMediaForChild'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.03</w:t>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: SOCIAL MEDIA FOR CHILD(REN</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='131'/>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>)</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>.  Parents agree that none of their Child(ren) shall have access to any social media platform until they reach thirteen (13) years of age, and thereafter both Parents shall monitor any Child’s social media usage to ensure that it is safe and does not cause embarrassment to either Parent or the Child. </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_04() 
+	{
+		$snippet = "<w:p w14:paraId='5A481D2B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='132' w:name='OtherIssuesJointTeacherMeeting'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.04</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: JOINT PARENT-TEACHER MEETINGS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='132'/>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>  Parents agree that it is in their Child(ren)’s best interests that they both attend parent-teacher meetings together.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_05() 
+	{
+		$snippet = "<w:p w14:paraId='1B93D669' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='133' w:name='OtherIssuesSeperateTeacherMeeting'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.05</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: SEPARATE PARENT-TEACHER MEETINGS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='133'/>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>  Parents agree </w:t>
+		</w:r>
+		<w:r>
+			<w:t>that they</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> will each arrange our own separate parent-teacher meetings.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_06() 
+	{
+		$snippet = "<w:p w14:paraId='1195412E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='134' w:name='OtherIssuesOneParentTeacherMeeting'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>06</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: ONE PARENT TO ATTEND PARENT-TEACHER MEETINGS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='134'/>
+		<w:r>
+			<w:t>.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>Parent A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the Child(ren)'s progress.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_07() 
+	{
+		$snippet = "<w:p w14:paraId='25F23CAE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='135' w:name='OtherIssuesReportCard'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:lastRenderedPageBreak/>
+			<w:t>9.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>07</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: REPORT CARDS FOR THE CHILD(REN</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='135'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>)</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>.  Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_08() 
+	{
+		$snippet = "<w:p w14:paraId='590EB72D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='136' w:name='OtherIssuesJointAttendance'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>08</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: JOINT ATTENDANCE AT SCHOOL AND EXTRACURRICULAR EVENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='136'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>.  Both Parents may attend school events and extra-curricular activities.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_09() 
+	{
+		$snippet = "<w:p w14:paraId='24961CA1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:i/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='137' w:name='_heading=h.30j0zll' w:colFirst='0' w:colLast='0'/>
+		<w:bookmarkStart w:id='138' w:name='OtherIssuesOneParentExtracurricular'/>
+		<w:bookmarkEnd w:id='137'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>09</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: CUSTODIAL PARENT TO ATTEND SCHOOL AND EXTRACURRICULAR EVENTS</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='138'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>The Parent with whom the Child(ren) is/are residing at the time of the school event and extracurricular activity will be the sole Parent to attend these events.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_10() 
+	{
+		$snippet = "<w:p w14:paraId='2DD519D1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='139' w:name='OtherIssuesAlternateAttendance'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.10</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: ALTERNATE ATTENDANCE AT SCHOOL AND EXTRACURRICULAR EVENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='139'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>.  Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_11() 
+	{
+		$snippet = "<w:p w14:paraId='634C2BC8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='140' w:name='OtherIssuesDocuments'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.11</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: DOCUMENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='140'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span>/B will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and [insert any other relevant documents] at their home, and these documents will be made available to <span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span>/A as needed. Both Parents shall have copies of </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>all of</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> the important documents.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_12() 
+	{
+		$snippet = "<w:p w14:paraId='7C389515' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='141' w:name='OtherIssuesJointConsentPassport'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.12</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: JOINT AUTHORITY TO CONSENT FOR PASSPORT</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='141'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>Parent A and Parent B must both consent for the purposes of a passport application for any Child.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_13() 
+	{
+		$snippet = "<w:p w14:paraId='21BC4962' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='142' w:name='OtherIssuesSoleConsentPassport'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.13</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: SOLE AUTHORITY TO CONSENT FOR PASSPORT</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='142'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>Parent <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_14() 
+	{
+		$snippet = "<w:p w14:paraId='4F57E6BA' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+		</w:pPr>
+		<w:bookmarkStart w:id='143' w:name='OtherIssuesNewIntimatePartnerLD'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.14</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: NEW INTIMATE PARTNER PROTOCOLS (LESS DETAILED)</w:t>
+		</w:r>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='143'/>
+		<w:r>
+			<w:t xml:space='preserve'>Both parents agree that they shall not introduce any of their minor children to a new significant other or intimate partner until (a) they have been in an intimate dating relationship for six (6) months or longer and (b) the other parent has been given an opportunity to meet that significant other/intimate partner first.  Parents shall be guided by the children’s best interests and conflict </w:t>
+		</w:r>
+		<w:r>
+			<w:lastRenderedPageBreak/>
+			<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner.  This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_15() 
+	{
+		$snippet = "<w:p w14:paraId='7A3B5B43' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='144' w:name='OtherIssuesNewIntimatePartnerMD'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.15</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: NEW INTIMATE PARTNER PROTOCOLS (MORE DETAILED)</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='144'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  Given that both parents will likely engage in new intimate partner relationships in the future, it is their intent that the children’s well-being, </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>comfort</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> and stability remain the highest priority.  Both parents agree to be respectful of one another and guided by the following concepts and protocols: </w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='5229168B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t>Take an honest look at the relationship.  If you are just having fun enjoying a new person’s company but know there is no long-term potential, it is probably best not to introduce the children to a new intimate partner.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='0D52C06B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t xml:space='preserve'>Your relationship shall be well-established and stable prior to initiating these new intimate partner protocols.  The Parents shall discuss the appropriate timing and circumstances in which the children should formally meet a new intimate partner and be told that the nature of the relationship is romantic.  It is understood that the children may </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>come into contact with</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> the new intimate partner in advance, but the actual introduction of this new person as a romantic relationship shall not occur before the Parents are able to discuss the circumstances in co-parent counseling.  </w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='3AAC8E41' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t xml:space='preserve'>The other parent shall be notified in advance of the children and given the opportunity to meet the new intimate partner prior to the </w:t>
+		</w:r>
+		<w:r>
+			<w:lastRenderedPageBreak/>
+			<w:t xml:space='preserve'>children being introduced to the new intimate partner and told the nature of the relationship is romantic.  </w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='08DA3519' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t>Parents shall use best practices and judgment when engaging in appropriate public displays of affection with their new intimate partner in front of any of the children.  Parents shall further check in with the children to gauge their comfort with the new intimate partner.  This may be accomplished within a therapeutic process (</w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>e.g.</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t xml:space='preserve'> check-ins by the co-parent counselor with the child therapist as discussed below). </w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='3633BF9F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t xml:space='preserve'>New intimate partners, and even </w:t>
+		</w:r>
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:t>step-parents</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:t>, shall refrain from disciplining the children unless there is an agreement between both parents otherwise</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+			<w:t>The Parents shall discuss age-appropriate discipline options for the children.</w:t>
+		</w:r>
+	</w:p>
+	<w:p w14:paraId='7A4B11CC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:numPr>
+				<w:ilvl w:val='0'/>
+				<w:numId w:val='1'/>
+			</w:numPr>
+			<w:pBdr>
+				<w:top w:val='nil'/>
+				<w:left w:val='nil'/>
+				<w:bottom w:val='nil'/>
+				<w:right w:val='nil'/>
+				<w:between w:val='nil'/>
+			</w:pBdr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:r>
+			<w:t xml:space='preserve'>In the event there are any problems related to the new intimate partner or these protocols, the Parents shall engage a mental health professional such as a co-parent counselor or family therapist who may also confer with the child therapist to ensure the children’s well-being, comfort and stability remain the highest priority.  </w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
+	function gen_other_9_16() 
+	{
+		$snippet = "<w:p w14:paraId='2CF6B38D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='145' w:name='OtherIssuesAlternativeDisputeResolution'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.16</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: ALTERNATIVE DISPUTE RESOLUTION</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='145'/>
+		<w:r>
+			<w:t>.  If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
+		</w:r>
+	</w:p>";
+		echo $snippet;
+        $this->fileContentString .= $snippet;
+	}
 	//End of other section
 	function packageDocument()
 	{

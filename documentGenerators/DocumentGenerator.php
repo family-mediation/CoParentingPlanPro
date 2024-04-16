@@ -393,7 +393,8 @@ abstract class documentGenerator
 		//Optional communication page2
 		//Communication Between Co-Parents:
 		if (isset($_SESSION['reponses']['commbetweenCP'])) {
-			switch ($_SESSION['reponses']['commbetweenCP']) {
+		  foreach($_SESSION['reponses']['commbetweenCP']as $x) {
+			switch ($x) {
 				case '7.04':
 					$this->gen_communication_7_04();
 					break;
@@ -416,11 +417,13 @@ abstract class documentGenerator
 					$this->gen_communication_7_06a();
 					break;
 			}
-		}
+		  }
+	    }
 
 		//Communication Between Child(ren) and Non-Custodial Parent:
 		if (isset($_SESSION['reponses']['betweenchildparent'])) {
-			switch ($_SESSION['reponses']['betweenchildparent']) {
+		  foreach($_SESSION['reponses']['betweenchildparent'] as $x) {
+			switch ($x) {
 				case '7.07':
 					$this->gen_communication_7_07();
 					break;
@@ -437,11 +440,13 @@ abstract class documentGenerator
 					$this->gen_communication_7_08();
 					break;
 			}
+		  }	
 		}
 
 		//Other Communication:
 		if (isset($_SESSION['reponses']['otherComm'])) {
-			switch ($_SESSION['reponses']['otherComm']) {
+		  foreach($_SESSION['reponses']['otherComm'] as $x) {
+			switch ($x) {
 				case '7.09':
 					$this->gen_communication_7_09();
 					break;
@@ -452,6 +457,7 @@ abstract class documentGenerator
 					$this->gen_communication_7_11();
 					break;
 			}
+		  }
 		}
 
 		/*** Section 6: Child Support ***/

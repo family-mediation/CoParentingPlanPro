@@ -63,7 +63,7 @@
 
               <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
-              <input type="week" name="commbetweenCP" id="insertmonthly"/> unless mutually agreed to otherwise.
+              <input type="text" name="commbetweenCP" id="insertmonthly"/> unless mutually agreed to otherwise.
               </div>
 
               <div>
