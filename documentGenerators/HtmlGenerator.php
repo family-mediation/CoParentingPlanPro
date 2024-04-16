@@ -1314,7 +1314,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: RELOCATION</u></a>.<b>&nbsp; </b>If either Parent intends to relocate
             away from the island of their current residences or outside of the State where
             they currently reside, then the moving Parent shall provide the other Parent at
-            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") [insert number of days] days' notice of their intent to
+            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") days' notice of their intent to
             move.&nbsp; After receiving notice of an intent to relocate, Parents shall meet and
             review this <u>Co-Parenting Plan:</u> <u>Agreement Regarding Child Custody,
             Timesharing, and Support</u> to try to mutually agree on a modified plan they

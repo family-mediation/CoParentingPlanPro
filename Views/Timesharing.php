@@ -371,18 +371,18 @@
                 <div>
                   <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
-                  <label>
+                  <label class="collapse" id="exchangesNeutral">
                     <label hide="true" data-dm->Address
-                      <input type="text" class="form-control" name="exchangesNeutral" value="exchangesNeutral">
+                      <input type="text" class="form-control" name="exchangeAddress">
                     </label>
                   </label>
                 </div>
                 <div>
                   <input id="relocation" type="checkbox" name="relocation" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
                   <label for="relocation">Relocation</label>
-                  <label>
+                  <label class="collapse" id="relocationDays">
                     <label hide="true" data-dm->Days of notice
-                      <input type="text" class="form-control" name="relocationDays" value="relocationDays">
+                      <input type="number" class="form-control" name="relocationDays">
                     </label>
                   </label>
                 </div>
@@ -396,11 +396,11 @@
                 </div>
                 <div>
                   <label for="persons-authorized">
-                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#exchangesNeutral" />
+                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
                     Persons Authorized to Pick Up and Drop Off
-                    <label>
+                    <label class="collapse" id="persons">
                       <label hide="true" data-dm->Person Authorized
-                        <input type="text" class="form-control" name="personsAuthorized" value="personsAuthorized">
+                        <input type="text" class="form-control" name="personsAuthorized">
                       </label>
                     </label>
                   </label>
