@@ -1157,13 +1157,13 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
             TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have the
-            right to take up to " . $this->responses['daysOff'] . "[insert days/weeks] days/weeks of off-island
-            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " [insert number of days] days' notice in writing to the non-traveling parent
+            right to take up to " . $this->responses['daysOff'] . " days/weeks of off-island
+            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " days' notice in writing to the non-traveling parent
             if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
-            State of Hawai�i, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
+            State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
             days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
-            travel, at least   " . $this->responses['daysNotifyOutside'] . " [insert number of days] days prior to departure (or
-              " . $this->responses['dayNotifyHawaii'] . " [insert number of days] days prior to departure for in-state travel),
+            travel, at least   " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
+              " . $this->responses['dayNotifyHawaii'] . " days prior to departure for in-state travel),
             the traveling parent shall provide the non-traveling parent full details
             regarding the trip including: (a) airline; flight number; dates and times of
             each flight leg; (b) the dates and times the traveling parent and the
@@ -1177,10 +1177,10 @@ class HtmlGenerator extends documentGenerator
             border:none'>Parents shall alternate having the first choice for dates for
             off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In even
             years,  " . $this->responses['partyAFirst'] . " shall have first choice for dates of travel so long as they
-            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " by no later than  " . $this->responses['yearsNotify'] . "
+            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " by no later than  " . $this->responses['dateANotify'] . "
             [insert date] of that same year.&nbsp; In odd years, " . $this->responses['partyBFirst'] . " shall have first
             choice for dates of travel so long as they provide the specific dates in
-            writing to " . $this->responses['partyAFirst'] . " by no later than  " . $this->responses['sameYearNotify'] . "[insert date] of that same year.
+            writing to " . $this->responses['partyAFirst'] . " by no later than  " . $this->responses['dateBNotify'] . " of that same year.
             If either parent wishes to take the Child(ren) out of the country or miss any
             school days in order to travel, such a trip shall require the non-traveling
             parent's consent which, if such requests are occasional, shall not be
@@ -1212,7 +1212,7 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyROFR><b>6.06&nbsp; </b><u>PHYSICAL CUSTODY AND TIMESHARING:
             RIGHT OF FIRST REFUSAL</u></a>.<b>&nbsp; </b><span style='color:#333333'>We agree
             that if a Parent is unable to care for the Child(ren) themselves for a period
-            of more than  " . $this->responses['refusalHours'] . "</span> [insert number of hours]<span style='color:#333333'>
+            of more than  " . $this->responses['refusalHours'] . "</span><span style='color:#333333'>
             hours during their time with the Child(ren), they shall notify the other Parent
             and give them the opportunity to spend the period for which childcare is
             required with the Child(ren). </span>If the non-custodial Parent cannot
@@ -1254,7 +1254,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, Parents agree to exchange the child at the following
-            neutral location&nbsp;  " . $this->responses['exchangeAddress'] . " [insert address].</p>";
+            neutral location&nbsp;  " . $this->responses['exchangeAddress'] . ".</p>";
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1280,8 +1280,7 @@ class HtmlGenerator extends documentGenerator
             <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the following people may pick up or drop off the Child(ren):
-             " . $this->responses['personsAuthorized'] . "[insert names of all jointly authorized
-            individuals].</span></p>";
+             " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
         echo $content;
         $this->fileContentString .= $content;
     }
