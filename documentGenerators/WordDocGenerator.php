@@ -5735,22 +5735,165 @@ class wordDocGenerator extends documentGenerator
 	//End of other section
 
     //Section 8: Legal
-    function gen_legal_10_00()
-    {
-        // TODO: Implement gen_legal_10_00() method.
+    function gen_legal_10_00() {
+        $continuingJurisdiction = "<w:p w14:paraId='0F52E631' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='center'/>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+              </w:pPr>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>LEGAL:</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='7A55A197' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+              </w:pPr>
+              <w:bookmarkStart w:id='146' w:name='LegalContinuingJurisdiction'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>10.00</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+                <w:t xml:space='preserve'> </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>LEGAL: CONTINUING JURISDICTION</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='146'/>
+              <w:r>
+                <w:t>. Except as otherwise limited by Statute, Court Rule or case authority, the Family Court shall have the ongoing authority and personal and subject matter jurisdiction to make any other just and equitable orders which may be necessary to
+                  enforce the intended agreement and specific provisions set forth herein.
+                </w:t>
+              </w:r>
+            </w:p>";
+        echo $continuingJurisdiction;
+        $this->fileContentString .= $continuingJurisdiction;
     }
-    function gen_legal_10_01()
-    {
-        // TODO: Implement gen_legal_10_01() method.
+    function gen_legal_10_01() {
+        $enforcement = "<w:p w14:paraId='42251C1C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:tabs>
+                  <w:tab w:val='left' w:pos='1440'/>
+                  <w:tab w:val='right' w:pos='9406'/>
+                </w:tabs>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='147' w:name='LegalEnforcement'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>10.01</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'> </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>LEGAL: ENFORCEMENT</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='147'/>
+              <w:r>
+                <w:t xml:space='preserve'>.  A Parent who fails to comply with this </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>Co-Parenting Plan: Agreement Regarding Child Custody, Timesharing, and Support</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'> </w:t>
+              </w:r>
+              <w:r>
+                <w:lastRenderedPageBreak/>
+                <w:t xml:space='preserve'>shall be liable to the other Parent for all reasonable legal fees and costs incurred and reasonable damages suffered by the other Parent </w:t>
+              </w:r>
+              <w:proofErr w:type='gramStart'/>
+              <w:r>
+                <w:t>as a result of</w:t>
+              </w:r>
+              <w:proofErr w:type='gramEnd'/>
+              <w:r>
+                <w:t xml:space='preserve'> noncompliance.  The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
+              </w:r>
+            </w:p>";
+        echo $enforcement;
+        $this->fileContentString .= $enforcement;
     }
-    function gen_legal_10_02()
-    {
-        // TODO: Implement gen_legal_10_02() method.
+    function gen_legal_10_02() {
+        $execution = "<w:p w14:paraId='24B43A8F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:tabs>
+                  <w:tab w:val='left' w:pos='1440'/>
+                  <w:tab w:val='right' w:pos='9406'/>
+                </w:tabs>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='148' w:name='LegalVoluntaryExecution'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t xml:space='preserve'>10.02 </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>LEGAL: VOLUNTARY EXECUTION</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='148'/>
+              <w:r>
+                <w:t xml:space='preserve'>.  Each Parent acknowledges that they have voluntarily executed this </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>Co-Parenting Plan: Agreement Regarding Child Custody, Timesharing, and Support</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable.  Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
+              </w:r>
+            </w:p>";
+        echo $execution;
+        $this->fileContentString .= $execution;
     }
 
-    function signature()
-    {
-        // TODO: Implement signature() method.
+    function signature() {
+        $signature = new SignatureWord();
+        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+        echo $signatures;
+        $this->fileContentString .= $signatures;
     }
 
     //End of other section
