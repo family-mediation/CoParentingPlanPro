@@ -21,11 +21,11 @@
 
         <div class="container card p-4" id="sameStateInfo" style="display: none;">
           Child support shall be paid by <select id="parentAB1" name="parentAB1">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> to <select id="parentAB2" name="parentAB2">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B" selected>Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>" selected>Parent B</option>
           </select> and calculated pursuant to the State child support guidelines
           worksheet.
         </div>
@@ -36,12 +36,12 @@
         </div>
         <div class="container card p-4" id="mutuAgreedInfo" style="display: none;">
           Child Support shall be paid by <select id="parentAB3" name="parentAB3">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> to
           <select id="parentAB4" name="parentAB4">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B" selected>Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>" selected>Parent B</option>
           </select> by agreement of the Parents in the amount of $<input type="number" name="mutual-1" style="width: 100px;" step="0.01" />/per Child per month
           for a total monthly child support amount of $<input type="number" name="mutual-2" style="width: 100px;" step="0.01" />. Both Parents understand that
           child support is modifiable going forward and at any time either Parent may request that
@@ -99,8 +99,8 @@
           <h4>Health Insurance Premiums</h4>
         </div><br>
         <p><select id="parentAB5" name="parentAB5">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover the Child(ren)'s health insurance premiums in the amount of
           $<input type="number" name="insurancePremium" style="width: 100px;" step="0.01" />
           per month.</p>
@@ -115,8 +115,8 @@
 
         <div class="container card p-4" id="soleInfo" style="display: none;">
           <select id="parentAB6" name="parentAB6">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover 100% of the Child(ren)’s
           uninsured co-pays for health-related expenses premiums in the amount of <br>$<input type="number" name="sole-1" style="width: 100px;" step="0.01" />/per month.
         </div>
@@ -170,8 +170,8 @@
 
         <div class="container card p-4" id="soleECInfo" style="display: none;">
           <select id="parentAB_EC" name="parentAB_EC">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s extracurricular expenses.
         </div>
 
@@ -241,8 +241,8 @@
 
         <div class="container card p-4" id="solePrivateInfo" style="display: none;">
           <select id="parentAB_Priv" name="parentAB_Priv">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s private school expenses.
         </div>
 
@@ -306,8 +306,8 @@
 
         <div class="container card p-4" id="soleHighInfo" style="display: none;">
           <select id="parentAB_High" name="parentAB_High">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover 100% of the Child(ren)'s post-high school education expenses.
         </div>
 
@@ -333,8 +333,8 @@
             EDUCATION EXPENSES</u>. After funds from any 529 accounts held on behalf of a Child
           or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-
           high school education expenses are expended, then <select id="parentAB_Sole529" name="parentAB_Sole529">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall cover 100% of
           the Child(ren)’s remaining post-high school education expenses.
         </div>
@@ -412,8 +412,8 @@
 
         <div class="container card p-4" id="taxSoleInfo" style="display: none;">
           <select id="parentAB_taxSole" name="parentAB_taxSole">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year.
         </div>
 
