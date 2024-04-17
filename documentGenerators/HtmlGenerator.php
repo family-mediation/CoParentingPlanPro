@@ -2756,7 +2756,7 @@ class HtmlGenerator extends documentGenerator
         {
             fwrite($this->fileOutput, $this->fileContentString);
         }
-        include_once($this->fileName . ".html");
+        //include_once($this->fileName . ".html");
         // Zip the folder and rename it to .docx
         // Serve the .docx
         //close the file resource.

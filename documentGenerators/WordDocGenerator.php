@@ -5931,6 +5931,7 @@ class wordDocGenerator extends documentGenerator
         fclose($documentXML);
 		// Zip the folder and rename it to .docx
 		$zipOutput = new ZipArchive;
+		echo "packaging document";
 		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
 		{
 		    $folderRefsToZip = $this->fileName ."/\_rels/.rels";
