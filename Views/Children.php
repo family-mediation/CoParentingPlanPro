@@ -7,12 +7,12 @@
                     <table class="table table-bordered" id="table_field">
                         <tr>
                             <th>Initials</th>
-                            <th>Birth Year</th>
+                            <th>Birthday</th>
                             <th>Add or Remove</th>
                         </tr>
                         <tr>
-                            <td><input class="form-control" type="text" name="child1Initials" required></td>
-                            <td><input class="form-control" type="text" name="child1BirthYears" required></td>
+                            <td><input class="form-control" type="text" name="childInitials" required></td>
+                            <td><input type="date" class="form-control" name="childBirthdays" required></td>
                             <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
                         </tr>
                     </table>
@@ -28,21 +28,16 @@
                       }
 
                       function validateChildForm() {
-                        const initials = document.getElementsByName("child1Initials");
-                        const birthYears = document.getElementsByName("child1BirthYears");
+                        const initials = document.getElementsByName("childInitials");
+                        const birthdays = document.getElementsByName("childBirthdays");
                         const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
-                        const birthYearRegex = /^[0-9]{4}$/;
 
                         for (let i = 0; i < initials.length; i++) {
-                          if (initials[i].value === "" || birthYears[i].value === "") {
+                          if (initials[i].value === "" || birthdays[i].value === "") {
                             return false;
                           }
                           if (!initialRegex.test(initials[i].value)) {
                             alert("Please check format of initials (example: First.Last)");
-                            return false;
-                          }
-                          if (!birthYearRegex.test(birthYears[i].value)) {
-                            alert("Please check format of birth years");
                             return false;
                           }
                         }
@@ -50,6 +45,8 @@
                       }
                     </script>
                     <script>
+                      var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input type="date" class="form-control" name="childBirthdays" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
+
                       // remove max if don't want to have a cap on number of kids to add
                       var max = 5;
 
