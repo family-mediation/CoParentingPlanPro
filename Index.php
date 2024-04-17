@@ -45,6 +45,7 @@ if(!isset($_SESSION['canSeeLegal'])) {
 // create an object that will serve as our database.
 $db = new Database;
 $page = $_GET['page'] ?? 1;
+console_log($_SESSION['responses']);
 switch($page)
 {
     case 1:

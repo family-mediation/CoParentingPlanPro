@@ -2,9 +2,12 @@
 include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
 include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
 include 'timeSharingSchedules/FallSchedules.php';
+include 'timeSharingSchedules/ThanksgivingSchedules.php';
 include 'timeSharingSchedules/WinterSchedules.php';
 include 'timeSharingSchedules/SpringSchedules.php';
 include 'timeSharingSchedules/SummerSchedules.php';
+include 'Signature.php';
+include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -765,13 +768,13 @@ class HtmlGenerator extends documentGenerator
          name=PartiesInformationon<b><span lang=FR>3.00&nbsp; </span></b></a><u><span
          lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
          A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
-         Parent A's residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
+         " .  $this->responses["partyAFirst"] . " residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
           " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT B</u></a>. 
-         Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; Parent B's residence
+         Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; " .  $this->responses["partyBFirst"] . "'s residence
          address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . ", 
           " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
@@ -1038,11 +1041,12 @@ class HtmlGenerator extends documentGenerator
             default:
                 echo "Error in HTML Generator for the variable: schoolThanksgivingBreakSchedule.";
         }
-        // Adding option for parent to see child(ren).
-        $get_time = new ThanksgivingSchedules();
-        $content = $get_time->get_time();
-        echo $content;
-        $this->fileContentString .= $content;
+    }
+    function gen_physical_custody_timesharing_6_02BOptional() {
+        $time_break = new ThanksgivingSchedules();
+        $thanksgiving = $time_break->get_time();
+        echo $thanksgiving;
+        $this->fileContentString .= $thanksgiving;
     }
 
     // Winter Break schedules.
@@ -1064,6 +1068,12 @@ class HtmlGenerator extends documentGenerator
             case "winter-alternate-break":
                 $alternate = new WinterSchedules();
                 $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-split-holiday-break":
+                $split_holiday = new WinterSchedules();
+                $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
                 echo $winter;
                 $this->fileContentString .= $winter;
                 break;
@@ -1113,7 +1123,7 @@ class HtmlGenerator extends documentGenerator
     function gen_physical_custody_timesharing_6_02E(string $type) {
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
-            name=PhysicalCustodySummerBreak><b>6.02E </b><u>SUMMER BREAK</u></a>.&nbsp; The
+            name=PhysicalCustodySummerBreak><b>6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SUMMER BREAK</u></a>.&nbsp; The
             Parents shall share time with the Child(ren) during Summer Break as follows:</p>";
         echo $content;
         $this->fileContentString .= $content;
@@ -1124,9 +1134,9 @@ class HtmlGenerator extends documentGenerator
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
-            case "summer-uniterrupted-break":
+            case "summer-continue-uninterrupted-schedule":
                 $alternate = new SummerSchedules();
-                $summer = $alternate->get_continue_uniterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst']); //need to implement this part, taking in time inputs
+                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
@@ -1140,7 +1150,56 @@ class HtmlGenerator extends documentGenerator
                 echo "Error in HTML Generator for the variable: schoolSummerBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_03() {}
+
+    // Holiday Table.
+    function gen_physical_custody_timesharing_6_03() {
+        $table = new HolidayTable();
+        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
+        echo $holidayTable;
+        $this->fileContentString .= $holidayTable;
+    }
+    // Alternate Yearly.
+    function gen_physical_custody_timesharing_6_03A() {
+        $alt = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;"
+            . $this->responses['partyAFirst'] . " shall have the Child(ren) in even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " shall have the Child(ren)
+            in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
+            beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
+        echo $alt;
+        $this->fileContentString .= $alt;
+    }
+    // Split Every Year.
+    function gen_physical_custody_timesharing_6_03B() {
+        $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
+            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the second half of this holiday/special day in
+            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the first half and
+            " . $this->responses['partyAFirst'] . " shall have the Child(ren) for the second half of this holiday/special
+            day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
+             <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
+        echo $split;
+        $this->fileContentString .= $split;
+    }
+    // Mon/Fri Holidays Attached to a Weekend.
+    function gen_physical_custody_timesharing_6_03C() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
+            HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Every Year with Parent A or Parent B.
+    function gen_physical_custody_timesharing_6_03D() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>EVERY
+            YEAR WITH " . $this->responses['partyAFirst'] . " OR " . $this->responses['partyBFirst'] . "</u></a>.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
 
     // Travel with children checked.
     function gen_physical_custody_timesharing_6_04() {
@@ -1149,13 +1208,13 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
             TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have the
-            right to take up to " . $this->responses['daysOff'] . "[insert days/weeks] days/weeks of off-island
-            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " [insert number of days] days' notice in writing to the non-traveling parent
+            right to take up to " . $this->responses['daysOff'] . " days/weeks of off-island
+            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " days' notice in writing to the non-traveling parent
             if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
-            State of Hawai�i, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
+            State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
             days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
-            travel, at least   " . $this->responses['daysNotifyOutside'] . " [insert number of days] days prior to departure (or
-              " . $this->responses['dayNotifyHawaii'] . " [insert number of days] days prior to departure for in-state travel),
+            travel, at least   " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
+              " . $this->responses['dayNotifyHawaii'] . " days prior to departure for in-state travel),
             the traveling parent shall provide the non-traveling parent full details
             regarding the trip including: (a) airline; flight number; dates and times of
             each flight leg; (b) the dates and times the traveling parent and the
@@ -1169,10 +1228,10 @@ class HtmlGenerator extends documentGenerator
             border:none'>Parents shall alternate having the first choice for dates for
             off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In even
             years,  " . $this->responses['partyAFirst'] . " shall have first choice for dates of travel so long as they
-            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " by no later than  " . $this->responses['yearsNotify'] . "
+            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " by no later than  " . $this->responses['dateANotify'] . "
             [insert date] of that same year.&nbsp; In odd years, " . $this->responses['partyBFirst'] . " shall have first
             choice for dates of travel so long as they provide the specific dates in
-            writing to " . $this->responses['partyAFirst'] . " by no later than  " . $this->responses['sameYearNotify'] . "[insert date] of that same year.
+            writing to " . $this->responses['partyAFirst'] . " by no later than  " . $this->responses['dateBNotify'] . " of that same year.
             If either parent wishes to take the Child(ren) out of the country or miss any
             school days in order to travel, such a trip shall require the non-traveling
             parent's consent which, if such requests are occasional, shall not be
@@ -1204,7 +1263,7 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyROFR><b>6.06&nbsp; </b><u>PHYSICAL CUSTODY AND TIMESHARING:
             RIGHT OF FIRST REFUSAL</u></a>.<b>&nbsp; </b><span style='color:#333333'>We agree
             that if a Parent is unable to care for the Child(ren) themselves for a period
-            of more than  " . $this->responses['refusalHours'] . "</span> [insert number of hours]<span style='color:#333333'>
+            of more than  " . $this->responses['refusalHours'] . "</span><span style='color:#333333'>
             hours during their time with the Child(ren), they shall notify the other Parent
             and give them the opportunity to spend the period for which childcare is
             required with the Child(ren). </span>If the non-custodial Parent cannot
@@ -1246,7 +1305,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, Parents agree to exchange the child at the following
-            neutral location&nbsp;  " . $this->responses['exchangeAddress'] . " [insert address].</p>";
+            neutral location:&nbsp;  " . $this->responses['exchangesNeutral'] . ".</p>";
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1256,7 +1315,7 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhyscialCustodyDelgationPickupDropOff><b>6.10&nbsp; </b><u>PHYSICAL CUSTODY AND
             TIMESHARING:&nbsp; PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.&nbsp;
-            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the Parent who is responsible for the pick-up or drop off may
             delegate another person to pick up or drop off the Child(ren).</span></p>";
@@ -1269,11 +1328,10 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11&nbsp; </b><u>PHYSICAL CUSTODY
             AND TIMESHARING:&nbsp; PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
-            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the following people may pick up or drop off the Child(ren):
-             " . $this->responses['personsAuthorized'] . "[insert names of all jointly authorized
-            individuals].</span></p>";
+             " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1307,7 +1365,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: RELOCATION</u></a>.<b>&nbsp; </b>If either Parent intends to relocate
             away from the island of their current residences or outside of the State where
             they currently reside, then the moving Parent shall provide the other Parent at
-            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") [insert number of days] days' notice of their intent to
+            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") days' notice of their intent to
             move.&nbsp; After receiving notice of an intent to relocate, Parents shall meet and
             review this <u>Co-Parenting Plan:</u> <u>Agreement Regarding Child Custody,
             Timesharing, and Support</u> to try to mutually agree on a modified plan they
@@ -1538,8 +1596,8 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
          NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
-         regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B 
-         and Parent B may call the
+         regular parenting time schedule, " .  $this->responses["partyAFirst"] . " may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with " .  $this->responses["partyBFirst"] . " 
+         and " .  $this->responses["partyBFirst"] . " may call the
          child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with ParentA.
          Calls will normally be no more than 10 minutes.</span></p>";
  
@@ -1655,7 +1713,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <span style='background:yellow'>Parent A</span> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -1670,7 +1728,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <span style='background:yellow'>Parent B</span> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -1681,13 +1739,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <span style='background:yellow'>Parent A</span> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent A </span> is
-        awarded sole legal custody, <span style='background:yellow'>Parent B </span> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> is
+        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " </span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -1703,13 +1761,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <span style='background:yellow'>Parent B</span> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent B </span> is
-        awarded sole legal custody, <span style='background:yellow'>Parent A </span> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " </span> is
+        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -1953,7 +2011,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCUninsuredCoPaysSpR>8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and Parent B shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
         uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span>
         per month.</p>";
         echo $snippet;
@@ -1967,8 +2025,8 @@ class HtmlGenerator extends documentGenerator
         FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per
         calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
         that any Child's uninsured co-pays for health-related expenses paid by either
-        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
-        Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
+        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
+        " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums exceeding the threshold amount.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -1997,7 +2055,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCExtracurricularSpR>8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
         extracurricular expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2055,7 +2113,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPrivateSchoolExpensesSpR>8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
         private school expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2117,7 +2175,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesSpR>8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
         post-high school education expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2147,7 +2205,7 @@ class HtmlGenerator extends documentGenerator
         POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.&nbsp; After funds from any 529 accounts
         held on behalf of a Child or Child(ren), Coverdell accounts or other funds
         ear-marked to pay for a Child's post-high school education expenses are
-        expended, then Parent A shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
+        expended, then " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
         Child(ren)'s remaining post-high school education expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2158,8 +2216,8 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
         PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
-        education expenses shall be paid such that Parent A shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
-        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and Parent B shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
+        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
+        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2225,8 +2283,8 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpA><b>8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO CLAIM THE
-        CHILD(REN</u></a><u>)</u>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span> (Child's
-        Initials) as a dependent for tax purposes every year.&nbsp; Parent B shall be
+        CHILD(REN</u></a><u>)</u>. " .  $this->responses["partyAFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span> (Child's
+        Initials) as a dependent for tax purposes every year.&nbsp; " .  $this->responses["partyBFirst"] . " shall be
         entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span> (Child's Initials) as a dependent for tax purposes every
         year.&nbsp; </p>";
         echo $snippet;
@@ -2237,9 +2295,9 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
-        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. Parent A shall be entitled to
+        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " shall be entitled to
         claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
-        Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
+        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
@@ -2251,8 +2309,8 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsAlternate><b>8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE AUTHORITY TO
-        CLAIM THE CHILD(REN</u></a><u>)</u>. <span style='background:yellow'>Parent A</span> shall be entitled to claim the
-        Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>Parent B</span> shall be
+        CLAIM THE CHILD(REN</u></a><u>)</u>. <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall be entitled to claim the
+        Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall be
         entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
         years.&nbsp; </p>";
         echo $snippet;
@@ -2513,7 +2571,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesJointConsentPassport><b>9.12&nbsp; </b><u>OTHER ISSUES: JOINT
-        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; Parent A and Parent B must both consent for the purposes of a passport application for
+        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; " .  $this->responses["partyAFirst"] . " and " .  $this->responses["partyBFirst"] . " must both consent for the purposes of a passport application for
         any Child.</span></p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2638,6 +2696,56 @@ class HtmlGenerator extends documentGenerator
         prior to filing a motion for relief with the Family Court.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet; 
+    }
+
+    //Section 8: Legal
+    function gen_legal_10_00() {
+        $continuingJurisdiction = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+            margin-bottom:.05pt;margin-left:.5pt;text-align:center;line-height:150%'><u>LEGAL:</u></p>
+            
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;line-height:150%'><a
+            name=LegalContinuingJurisdiction><b>10.00  </b><u>LEGAL: CONTINUING
+            JURISDICTION</u></a>.&nbsp; Except as otherwise limited by Statute, Court Rule or
+            case authority, the Family Court shall have the ongoing authority and personal
+            and subject matter jurisdiction to make any other just and equitable orders
+            which may be necessary to enforce the intended agreement and specific
+            provisions set forth herein.</p>";
+        echo $continuingJurisdiction;
+        $this->fileContentString .= $continuingJurisdiction;
+    }
+    function gen_legal_10_01() {
+        $enforcement = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=LegalEnforcement><b>10.01</b> <u>LEGAL: ENFORCEMENT</u></a>.&nbsp; A Parent who
+            fails to comply with this <u>Co-Parenting Plan: Agreement Regarding Child
+            Custody, Timesharing, and Support</u> shall be liable to the other Parent for
+            all reasonable legal fees and costs incurred and reasonable damages suffered by
+            the other Parent as a result of noncompliance.&nbsp; The Family Court shall have
+            continuing jurisdiction over the parents and their property to enforce and
+            implement the provisions of the Agreement, to the extent permitted by
+            applicable statutory authority, court rule and/or case law.</p>";
+        echo $enforcement;
+        $this->fileContentString .= $enforcement;
+    }
+    function gen_legal_10_02() {
+        $execution = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=LegalVoluntaryExecution><b>10.02 </b><u>LEGAL: VOLUNTARY EXECUTION</u></a>.&nbsp;
+            Each Parent acknowledges that they have voluntarily executed this <u>Co-Parenting
+            Plan: Agreement Regarding Child Custody, Timesharing, and Support</u> with
+            sufficient knowledge of the facts and the law, and that it is fair and
+            reasonable.&nbsp; Both Parents have been advised to seek independent legal counsel
+            regarding these and all other matters contained herein.</p>";
+        echo $execution;
+        $this->fileContentString .= $execution;
+    }
+
+    function signature() {
+        $signature = new Signature();
+        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+        echo $signatures;
+        $this->fileContentString .= $signatures;
     }
 
     function packageDocument()

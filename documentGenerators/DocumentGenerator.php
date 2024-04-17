@@ -50,10 +50,15 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_02();
     public abstract function gen_physical_custody_timesharing_6_02A(string $type);
     public abstract function gen_physical_custody_timesharing_6_02B(string $type);
+    public abstract function gen_physical_custody_timesharing_6_02BOptional();
     public abstract function gen_physical_custody_timesharing_6_02C(string $type);
     public abstract function gen_physical_custody_timesharing_6_02D(string $type);
     public abstract function gen_physical_custody_timesharing_6_02E(string $type);
     public abstract function gen_physical_custody_timesharing_6_03();
+    public abstract function gen_physical_custody_timesharing_6_03A();
+    public abstract function gen_physical_custody_timesharing_6_03B();
+    public abstract function gen_physical_custody_timesharing_6_03C();
+    public abstract function gen_physical_custody_timesharing_6_03D();
     public abstract function gen_physical_custody_timesharing_6_04();
     public abstract function gen_physical_custody_timesharing_6_05();
     public abstract function gen_physical_custody_timesharing_6_06();
@@ -147,6 +152,13 @@ abstract class documentGenerator
 	public abstract function gen_other_9_14();
 	public abstract function gen_other_9_15();
 	public abstract function gen_other_9_16();
+
+    //Section 8: Legal
+    public abstract function gen_legal_10_00();
+    public abstract function gen_legal_10_01();
+    public abstract function gen_legal_10_02();
+
+    public abstract function signature();
 
 	//end of other section
 	public abstract function genFooter();
@@ -296,6 +308,11 @@ abstract class documentGenerator
                     break;
             }
         }
+        if (isset($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional'])) {
+            if ($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional']) {
+                $this->gen_physical_custody_timesharing_6_02BOptional();
+            }
+        }
         if (isset($_SESSION['responses']['schoolWinterBreakSchedule'])) {
             switch ($_SESSION['responses']['schoolWinterBreakSchedule']) {
                 case "winter-split-break":
@@ -306,6 +323,9 @@ abstract class documentGenerator
                     break;
                 case "winter-continue-schedule":
                     $this->gen_physical_custody_timesharing_6_02C("winter-continue-schedule");
+                    break;
+                case "winter-split-holiday-break":
+                    $this->gen_physical_custody_timesharing_6_02C("winter-split-holiday-break");
                     break;
             }
         }
@@ -327,15 +347,20 @@ abstract class documentGenerator
                 case "summer-split-break":
                     $this->gen_physical_custody_timesharing_6_02E("summer-split-break");
                     break;
-                case "summer-uniterrupted-break":
-                    $this->gen_physical_custody_timesharing_6_02E("summer-uniterrupted-break");
+                case "summer-continue-uninterrupted-schedule":
+                    $this->gen_physical_custody_timesharing_6_02E("summer-continue-uninterrupted-schedule");
                     break;
                 case "summer-continue-schedule":
                     $this->gen_physical_custody_timesharing_6_02E("summer-continue-schedule");
                     break;
             }
         }
-        // Page 2 - Holiday Table, need to implement. "PhysicalCustodyHolidaysandSpecialDays" search in template
+        // Page 2 - Holiday Table, need to implement: three choices shown in doc but excel sheet only chooses between parent A and B.
+        $this->gen_physical_custody_timesharing_6_03();
+        $this->gen_physical_custody_timesharing_6_03A();
+        $this->gen_physical_custody_timesharing_6_03B();
+        $this->gen_physical_custody_timesharing_6_03C();
+        $this->gen_physical_custody_timesharing_6_03D();
 
         // Page 3 - Optional checkboxes.
         // Must implement new input data for all:
@@ -692,8 +717,17 @@ abstract class documentGenerator
 		$this->gen_other_9_14();
 		$this->gen_other_9_15();
 		$this->gen_other_9_16();
+
+        // Legal
+        $this->gen_legal_10_00();
+        $this->gen_legal_10_01();
+        $this->gen_legal_10_02();
+
+        $this->signature();
+
 		$this->genFooter();
 		$this->packageDocument();
+
         if($this->fileOutput != false) {
             fclose($this->fileOutput);
         }

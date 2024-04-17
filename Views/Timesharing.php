@@ -4,129 +4,174 @@
       <div id="page0" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Timesharing During the School Year</h3>
-          <div>
-            <p>Please select one:</p>
-            <div class="row justify-content-center">
-              <div class="column p-3">
-                <p>Equal Timesharing Schedules:</p>
-                <div>
-                  <input id="2-2-3" type="radio" name="schoolYearSchedule" value="2-2-3"/>
-                  <label for="2-2-3">2-2-3 Schedule</label>
-                </div>
-                <div>
-                  <input id="2-2-5-5" type="radio" name="schoolYearSchedule" value="2-2-5-5"/>
-                  <label for="2-2-5-5">2-2-5-5 Schedule</label>
-                </div>
-                <div>
-                  <input id="3-4-4-3" type="radio" name="schoolYearSchedule" value="3-4-4-3"/>
-                  <label for="3-4-4-3">3-4-4-3 Schedule</label>
-                </div>
-                <div>
-                  <input id="7-7" type="radio" name="schoolYearSchedule" value="7-7"/>
-                  <label for="7-7">7-7 Schedule</label>
-                </div>
+        <div>
+          <p>Please select one:</p>
+          <div class="row justify-content-center" style="text-align: left;">
+            <div class="column p-3" style="border-style: double; width: 300px">
+              <p>Equal Timesharing Schedules:</p>
+              <div>
+                <input id="2-2-3" type="radio" name="schoolYearSchedule" value="2-2-3" required />
+                <label for="2-2-3">2-2-3 Schedule</label>
               </div>
-              <div class="column p-3">
-                <p>Other Timesharing Schedules:</p>
-                <div>
-                  <input id="8-6" type="radio" name="schoolYearSchedule" value="8-6"/>
-                  <label for="8-6">8-6 Schedule</label>
-                </div>
-                <div>
-                  <input id="10-4" type="radio" name="schoolYearSchedule" value="10-4"/>
-                  <label for="10-4">10-4 Schedule</label>
-                </div>
-                <div>
-                  <input id="ownSchedule" type="radio" name="schoolYearSchedule" value="ownSchedule"/>
-                  <label for="ownSchedule">Design Your Own Schedule</label>
-                </div>
+              <div>
+                <input id="2-2-5-5" type="radio" name="schoolYearSchedule" value="2-2-5-5"/>
+                <label for="2-2-5-5">2-2-5-5 Schedule</label>
+              </div>
+              <div>
+                <input id="3-4-4-3" type="radio" name="schoolYearSchedule" value="3-4-4-3"/>
+                <label for="3-4-4-3">3-4-4-3 Schedule</label>
+              </div>
+              <div>
+                <input id="7-7" type="radio" name="schoolYearSchedule" value="7-7"/>
+                <label for="7-7">7-7 Schedule</label>
+              </div>
+            </div>
+            <div class="column p-3" style="border-style: double; width: 300px">
+              <p>Other Timesharing Schedules:</p>
+              <div>
+                <input id="8-6" type="radio" name="schoolYearSchedule" value="8-6"/>
+                <label for="8-6">8-6 Schedule</label>
+              </div>
+              <div>
+                <input id="10-4" type="radio" name="schoolYearSchedule" value="10-4"/>
+                <label for="10-4">10-4 Schedule</label>
+              </div>
+              <div>
+                <input id="ownSchedule" type="radio" name="schoolYearSchedule" value="ownSchedule"/>
+                <label for="ownSchedule">Design Your Own Schedule</label>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center pt-4 pb-4">
-            <button id="next" onclick="nextHandler()">Next Page</button>
-          </div>
+        </div>
+        <div class="row justify-content-center pt-4 pb-4">
+          <button id="next" onclick="nextHandler()">Next Page</button>
+        </div>
       </div>
       <div id="page1" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Timesharing During the School Breaks</h3>
         <div>
           <div>
-            <p>Please select one:</p>
+            <p>Please select one for each break:</p>
             <div class="row justify-content-center">
-              <div class="column p-3">
-                <p>Fall Break:</p>
-                <div>
-                  <input id="fall-split-break" type="radio" name="schoolFallBreakSchedule" value="fall-split-break"/>
-                  <label for="fall-split-break">Split Break Schedule</label>
+              <div class="row p-3" style="text-align: left;">
+                <div class="column p-3" style="border-style: double; width: 275px">
+                  <p>Fall Break:</p>
+                  <div>
+                    <input id="fall-split-break" type="radio" name="schoolFallBreakSchedule" value="fall-split-break" required/>
+                    <label for="fall-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="fall-alternate-break" type="radio" name="schoolFallBreakSchedule" value="fall-alternate-break"/>
+                    <label for="fall-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="fall-continue-schedule" type="radio" name="schoolFallBreakSchedule" value="fall-continue-schedule"/>
+                    <label for="fall-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="fall-alternate-break" type="radio" name="schoolFallBreakSchedule" value="fall-alternate-break"/>
-                  <label for="fall-alternate-break">Alternate Break Schedule</label>
+                <div class="column p-3" style="border-style: double; width: 275px">
+                  <p>Thanksgiving Break:</p>
+                  <div>
+                    <input id="thanksgiving-split-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-split-break"/>
+                    <label for="thanksgiving-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-alternate-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-alternate-break"/>
+                    <label for="thanksgiving-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-continue-schedule" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-continue-schedule"/>
+                    <label for="thanksgiving-continue-schedule">Continued Schedule</label>
+                  </div>
+                  <div>
+                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakScheduleOptional" value=true/>
+                    <label for="thanksgiving-time-break">Time on Thanksgiving Day</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="fall-continue-schedule" type="radio" name="schoolFallBreakSchedule" value="fall-continue-schedule"/>
-                  <label for="fall-continue-schedule">Continued Schedule</label>
+                <div class="column p-3" style="border-style: double; width: 275px">
+                  <p>Winter Break:</p>
+                  <div>
+                    <input id="winter-split-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-break"/>
+                    <label for="winter-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <label class="flex-label" for="winter-alternate-break">
+                      <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
+                      Alternate Break Schedule
+                    </label>
+
+                  </div>
+                  <div>
+                    <label class="flex-label" for="winter-split-holiday-break">
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
+                      Split Break with Holiday Time Schedule
+                    </label>
+                  </div>
+                  <label class="collapse" id="split-break">
+                    (click again to close window)
+                    <label hide="true" data-dm->Start time Christmas
+                      <input type="time" class="form-control" name="christmasStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time Christmas
+                      <input type="time" class="form-control" name="christmasEnd" required>
+                    </label>
+                    <label hide="true" data-dm->Start time New Years Day
+                      <input type="time" class="form-control" name="newYearsStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time New Years Day
+                      <input type="time" class="form-control" name="newYearsEnd" required>
+                    </label>
+                  </label>
+                  <div>
+                    <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
+                    <label for="winter-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
               </div>
-              <div class="column p-3">
-                <p>Thanksgiving Break:</p>
-                <div>
-                  <input id="thanksgiving-split-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-split-break"/>
-                  <label for="thanksgiving-split-break">Split Break Schedule</label>
+              <div class="row p-3" style="text-align: left;">
+                <div class="column p-3" style="border-style: double; width: 275px">
+                  <p>Spring Break:</p>
+                  <div>
+                    <input id="spring-split-break" type="radio" name="schoolSpringBreakSchedule" value="spring-split-break"/>
+                    <label for="spring-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="spring-alternate-break" type="radio" name="schoolSpringBreakSchedule" value="spring-alternate-break"/>
+                    <label for="spring-alternate-break">Alternate Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="spring-continue-schedule" type="radio" name="schoolSpringBreakSchedule" value="spring-continue-schedule"/>
+                    <label for="spring-continue-schedule">Continued Schedule</label>
+                  </div>
                 </div>
-                <div>
-                  <input id="thanksgiving-alternate-break" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-alternate-break"/>
-                  <label for="thanksgiving-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="thanksgiving-continue-schedule" type="radio" name="schoolThanksgivingBreakSchedule" value="thanksgiving-continue-schedule"/>
-                  <label for="thanksgiving-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Winter Break:</p>
-                <div>
-                  <input id="winter-split-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-break"/>
-                  <label for="winter-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
-                  <label for="winter-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
-                  <label for="winter-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Spring Break:</p>
-                <div>
-                  <input id="spring-split-break" type="radio" name="schoolSpringBreakSchedule" value="spring-split-break"/>
-                  <label for="spring-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="spring-alternate-break" type="radio" name="schoolSpringBreakSchedule" value="spring-alternate-break"/>
-                  <label for="spring-alternate-break">Alternate Break Schedule</label>
-                </div>
-                <div>
-                  <input id="spring-continue-schedule" type="radio" name="schoolSpringBreakSchedule" value="spring-continue-schedule"/>
-                  <label for="spring-continue-schedule">Continued Schedule</label>
-                </div>
-              </div>
-              <div class="column p-3">
-                <p>Summer Break:</p>
-                <div>
-                  <input id="summer-split-break" type="radio" name="schoolSummerBreakSchedule" value="summer-split-break"/>
-                  <label for="summer-split-break">Split Break Schedule</label>
-                </div>
-                <div>
-                  <input id="summer-uniterrupted-break" type="radio" name="schoolSummerBreakSchedule" value="summer-uniterrupted-break"/>
-                  <label for="summer-uniterrupted-break">Uniterrupted Break Schedule</label>
-                </div>
-                <div>
-                  <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>
-                  <label for="summer-continue-schedule">Continued Schedule</label>
+                <div class="column p-3" style="border-style: double; width: 275px">
+                  <p>Summer Break:</p>
+                  <div>
+                    <input id="summer-split-break" type="radio" name="schoolSummerBreakSchedule" value="summer-split-break"/>
+                    <label for="summer-split-break">Split Break Schedule</label>
+                  </div>
+                  <div>
+                    <input id="summer-continue-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-schedule"/>
+                    <label for="summer-continue-schedule">Continued Schedule</label>
+                  </div>
+                  <div>
+                    <label class="flex-label" for="summer-continue-uninterrupted-schedule">
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
+                        Continued Schedule with Option for Uninterrupted Time
+                    </label>
+                    <label class="collapse" id="uninterrupted">
+                      <label>
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                        Exchange date
+                      </label>
+                      <label>
+                        <label hide="true" data-dm->Number of days
+                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
+                        </label>
+                      </label>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,7 +185,7 @@
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Holiday Table</h3>
         <div>
-          <p>Please select one:</p>
+          <p>Please select one per row:</p>
           <div class="row justify-content-center">
             <table class="table table-bordered" id="table_field">
               <tr>
@@ -239,17 +284,17 @@
                 <td><input class="form-control" type="radio" name="nye" ></td>
               </tr>
               <tr>
-                <td>Parent A's Birthday (Insert date)</td>
+                <td>Parent A's Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
               </tr>
               <tr>
-                <td>Parent B's Birthday (Insert date)</td>
+                <td>Parent B's Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
               </tr>
               <tr>
-                <td>Children's Birthday(s) (Insert date)</td>
+                <td>Children's Birthday(s) (<?php echo $_SESSION['responses']['childBirthYears']?>)</td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
               </tr>
@@ -266,19 +311,54 @@
         <div>
           <div>
             <p>Please check all that apply:</p>
-            <div class="row justify-content-center">
-              <div class="column">
+            <div class="row justify-content-center" style="text-align: left">
+              <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" required/>
+                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
                   <label for="travel-with-children">Travel with the Children</label>
+                  <label class="collapse" id="travelChildren">
+                    <label>
+                      <label hide="true" data-dm->Number of days
+                        <input type="number" class="form-control" name="daysOff" value="daysOff">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify
+                        <input type="number" class="form-control" name="daysNotify" value="daysNotify">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify (if traveling in Hawaii)
+                        <input type="number" class="form-control" name="daysNotifyHawaii" value="daysNotifyHawaii">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify (out-of-state)
+                        <input type="number" class="form-control" name="daysNotifyOutside" value="daysNotifyOutside">
+                      </label>
+                    </label>
+                    <label>
+                      <input id="dateANotify" type="date" name="dateANotify" value="dateANotify" /> Date to notify for dates of travel (Parent A)
+                    </label>
+                    <label>
+                      <input id="dateBNotify" type="date" name="dateBNotify" value="dateBNotify" /> Date to notify for dates of travel (Parent B)
+                    </label>
+                  </label>
                 </div>
                 <div>
                   <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time"/>
                   <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
                 </div>
                 <div>
-                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal"/>
+                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
                   <label for="first-refusal">Right of First Refusal</label>
+                  <label class="collapse" id="firstRefusal">
+                    <label>
+                      <label hide="true" data-dm->Number of hours before able to execute right
+                        <input type="number" class="form-control" name="refusalHours" value="refusalHours">
+                      </label>
+                    </label>
+                  </label>
                 </div>
                 <div>
                   <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
@@ -289,30 +369,51 @@
                   <label for="drop-off">Drop Off for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location"/>
+                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
+                  <label class="collapse" id="exchangesNeutral">
+                    <label hide="true" data-dm->Address
+                      <input type="text" class="form-control" name="exchangeAddress">
+                    </label>
+                  </label>
+                </div>
+                <div>
+                  <input id="relocation" type="checkbox" name="relocation" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
+                  <label for="relocation">Relocation</label>
+                  <label class="collapse" id="relocationDays">
+                    <label hide="true" data-dm->Days of notice
+                      <input type="number" class="form-control" name="relocationDays">
+                    </label>
+                  </label>
                 </div>
               </div>
-              <div class="column">
+              <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
-                  <label for="delegate-pick-up">Parental Authority to Delegate Pick-Up and Drop Off</label>
+                  <label for="delegate-pick-up">
+                    <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
+                    Parental Authority to Delegate Pick-Up and Drop Off
+                  </label>
                 </div>
                 <div>
-                  <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized"/>
-                  <label for="persons-authorized">Persons Authorized to Pick Up and Drop Off</label>
+                  <label for="persons-authorized">
+                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
+                    Persons Authorized to Pick Up and Drop Off
+                    <label class="collapse" id="persons">
+                      <label hide="true" data-dm->Person Authorized
+                        <input type="text" class="form-control" name="personsAuthorized">
+                      </label>
+                    </label>
+                  </label>
                 </div>
                 <div>
                   <input id="children-belongings" type="checkbox" name="children-belongings" value="children-belongings"/>
                   <label for="children-belongings">Children's Personal Belongings</label>
                 </div>
                 <div>
-                  <input id="relocation" type="checkbox" name="relocation" value="relocation"/>
-                  <label for="relocation">Relocation</label>
-                </div>
-                <div>
-                  <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
-                  <label for="modify-schedule">Modification of Schedule by Agreement of Both Parties</label>
+                  <label for="modify-schedule">
+                    <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
+                    Modification of Schedule by Agreement of Both Parties
+                  </label>
                 </div>
               </div>
             </div>
