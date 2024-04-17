@@ -219,14 +219,20 @@
 
         <div>
           Definition of Private School Expenses
-          <i class="bi bi-caret-down-square-fill" onclick="privSchoolDefMore()"></i>
+          <!-- tooltip using bootstrap -->
+          <span class="tt" data-bs-placement="top" title="  Private school expenses shall be defined to include all expenses related to a Child's attendance at a
+          private school including, without limitation, application fees/costs, tuition, books,
+          uniforms, school lunches, and before and/or after school care expenses.">
+            <i class="bi bi-info-circle"></i>
+          </span>
+          <!-- <i class="bi bi-info-circle" onclick="privSchoolDefMore()"></i> -->
         </div>
 
-        <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
+        <!-- <div class="container card p-4" id="defPrivSchoolInfo" style="display: none;">
           Private school expenses shall be defined to include all expenses related to a Child's attendance at a
           private school including, without limitation, application fees/costs, tuition, books,
           uniforms, school lunches, and before and/or after school care expenses.
-        </div>
+        </div> -->
 
         <div>
           <input type="radio" name="privateSchool" id="privateSoleResp" value="privateSoleResp" onclick="privateSoleMore()" />
@@ -274,18 +280,24 @@
           <h4>Post-High School Expenses</h4>
         </div><br>
         <!-- <hr><h4>Post-High School Expenses</h4><hr> -->
-
         <div>
           Definition of Post-High School Education Expenses
-          <i class="bi bi-caret-down-square-fill" onclick="postCapDefMore()"></i>
+          <!-- tooltip using bootstrap -->
+          <span class="tt" data-bs-placement="top" title="Private school expenses shall be defined to include all expenses related to a Child’s
+              attendance at any post-high school educational institution (including vocational and
+              trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
+              lunches, and before and/or after school care expenses.">
+            <i class="bi bi-info-circle"></i>
+          </span>
+          <!-- <i class="bi bi-info-circle" onclick="postCapDefMore()"></i> -->
         </div>
 
-        <div class="container card p-4" id="postCapDefInfo" style="display: none;">
+        <!-- <div class="container card p-4" id="postCapDefInfo" style="display: none;">
           Private school expenses shall be defined to include all expenses related to a Child’s
           attendance at any post-high school educational institution (including vocational and
           trade schools), without limitation, application fees/costs, tuition, books, uniforms, school
           lunches, and before and/or after school care expenses.
-        </div>
+        </div> -->
 
         <div>
           <input type="radio" name="postHigh" id="postSoleResp" value="postSoleResp" onclick="postSoleRespMore()" />
@@ -672,14 +684,14 @@
     });
   });
 
-  function privSchoolDefMore() {
-    var b = document.getElementById('defPrivSchoolInfo');
-    if (b.style.display === 'none') {
-      b.style.display = 'block';
-    } else {
-      b.style.display = 'none';
-    }
-  }
+  // function privSchoolDefMore() {
+  //   var b = document.getElementById('defPrivSchoolInfo');
+  //   if (b.style.display === 'none') {
+  //     b.style.display = 'block';
+  //   } else {
+  //     b.style.display = 'none';
+  //   }
+  // }
 
   function privSchoolMutMore() {
     var b = document.getElementById('mutPrivSchoolInfo');
@@ -766,14 +778,14 @@
     });
   });
 
-  function postCapDefMore() {
-    var b = document.getElementById('postCapDefInfo');
-    if (b.style.display === 'none') {
-      b.style.display = 'block';
-    } else {
-      b.style.display = 'none';
-    }
-  }
+  // function postCapDefMore() {
+  //   var b = document.getElementById('postCapDefInfo');
+  //   if (b.style.display === 'none') {
+  //     b.style.display = 'block';
+  //   } else {
+  //     b.style.display = 'none';
+  //   }
+  // }
 
   function postMutualMore() {
     var b = document.getElementById('postMutualInfo');
@@ -1048,4 +1060,9 @@
 
     split1Input.value = split1Value
   }
+
+  const tooltips = document.querySelectorAll('.tt')
+  tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
 </script>

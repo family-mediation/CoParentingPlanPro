@@ -1467,7 +1467,7 @@ class HtmlGenerator extends documentGenerator
          <span style='background:yellow'>E-MAIL ONLY</span></u></a>. 
          Parents shall communicate primarily through e-mail.&nbsp; The
          Parents may utilize text or telephone calls in an emergency situation or in the
-         event a timely response is needed (within 2 � 4 hours).&nbsp; Otherwise, all
+         event a timely response is needed (within 2 - 4 hours).&nbsp; Otherwise, all
          communication shall be via e-mail.&nbsp; Both Parents shall check their e-mail at
          least once daily and shall respond to messages or other items needing attention
          (i.e. switch requests) within 48 hours.&nbsp; If more time is needed to respond, the
