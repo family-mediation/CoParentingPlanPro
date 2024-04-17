@@ -220,7 +220,7 @@
         <div>
           Definition of Private School Expenses
           <!-- tooltip using bootstrap -->
-          <span class="tt" data-bs-placement="top" title="  Private school expenses shall be defined to include all expenses related to a Child's attendance at a
+          <span class="tt" data-bs-placement="top" title="Private school expenses shall be defined to include all expenses related to a Child's attendance at a
           private school including, without limitation, application fees/costs, tuition, books,
           uniforms, school lunches, and before and/or after school care expenses.">
             <i class="bi bi-info-circle"></i>
