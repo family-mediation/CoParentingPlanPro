@@ -1,11 +1,11 @@
 <?php
-include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
-include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
-include 'timeSharingSchedules/FallSchedules.php';
-include 'timeSharingSchedules/ThanksgivingSchedules.php';
-include 'timeSharingSchedules/WinterSchedules.php';
-include 'timeSharingSchedules/SpringSchedules.php';
-include 'timeSharingSchedules/SummerSchedules.php';
+include 'timeSharingSchedulesHtml/EqualTimeSharingSchedules.php';
+include 'timeSharingSchedulesHtml/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedulesHtml/FallSchedules.php';
+include 'timeSharingSchedulesHtml/ThanksgivingSchedules.php';
+include 'timeSharingSchedulesHtml/WinterSchedules.php';
+include 'timeSharingSchedulesHtml/SpringSchedules.php';
+include 'timeSharingSchedulesHtml/SummerSchedules.php';
 include 'Signature.php';
 include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
@@ -1203,7 +1203,6 @@ class HtmlGenerator extends documentGenerator
 
     // Travel with children checked.
     function gen_physical_custody_timesharing_6_04() {
-        //must implement the input - grabbing additional data if the user checks the box
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
@@ -1211,9 +1210,8 @@ class HtmlGenerator extends documentGenerator
             right to take up to " . $this->responses['daysOff'] . " days/weeks of off-island
             travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " days' notice in writing to the non-traveling parent
             if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
-            State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " [insert number of
-            days] days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
-            travel, at least   " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
+            State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
+            travel, at least " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
               " . $this->responses['dayNotifyHawaii'] . " days prior to departure for in-state travel),
             the traveling parent shall provide the non-traveling parent full details
             regarding the trip including: (a) airline; flight number; dates and times of

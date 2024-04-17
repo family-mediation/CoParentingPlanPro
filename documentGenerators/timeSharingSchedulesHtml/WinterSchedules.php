@@ -27,7 +27,6 @@ margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
             the school year schedule during this break.</p>";
     }
 
-    /** NEED TO IMPLEMENT IN CHOICES - pasting the section here though. */
     public function get_split_break_holidays(string $parentAFirst, string $parentBFirst, string $christmas_start, string $christmas_end, string $newYears_start, $newYears_end): string {
         return "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><a
