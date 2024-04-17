@@ -2753,10 +2753,12 @@ class HtmlGenerator extends documentGenerator
         // Take the template.zip copy it and rename it in the downloads folder
         // Take the string and write it to document.xml
         //check to make sure we have a valid file resource.
+
         if($this->fileOutput != false)
         {
             fwrite($this->fileOutput, $this->fileContentString);
         }
+        include_once($this->fileName . ".html");
         // Zip the folder and rename it to .docx
         // Serve the .docx
         //close the file resource.
