@@ -1,11 +1,11 @@
 <?php
 include 'timeSharingSchedulesWordDoc/EqualTimeSharing.php';
-include 'timeSharingSchedulesWordDoc/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedulesWordDoc/OtherTimeSharing.php';
 include 'timeSharingSchedulesWordDoc/Fall.php';
-include 'timeSharingSchedulesWordDoc/ThanksgivingSchedules.php';
-include 'timeSharingSchedulesWordDoc/WinterSchedules.php';
-include 'timeSharingSchedulesWordDoc/SpringSchedules.php';
-include 'timeSharingSchedulesWordDoc/SummerSchedules.php';
+include 'timeSharingSchedulesWordDoc/Thanksgiving.php';
+include 'timeSharingSchedulesWordDoc/Winter.php';
+include 'timeSharingSchedulesWordDoc/Spring.php';
+include 'timeSharingSchedulesWordDoc/Summer.php';
 //include 'Signature.php';
 //include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
@@ -1119,11 +1119,252 @@ class wordDocGenerator extends documentGenerator
                 echo "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_02B(string $type) {}
-    function gen_physical_custody_timesharing_6_02BOptional() {}
-    function gen_physical_custody_timesharing_6_02C(string $type) {}
-    function gen_physical_custody_timesharing_6_02D(string $type) {}
-    function gen_physical_custody_timesharing_6_02E(string $type) {}
+    function gen_physical_custody_timesharing_6_02B(string $type) {
+        $content = "<w:p w14:paraId='26CBBB2C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36' w:firstLine='710'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='35' w:name='PhysicalCustodyThanksgiving'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.02B</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>THANKSGIVING BREAK</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='35'/>
+              <w:r>
+                <w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "thanksgiving-split-break":
+                $split = new Thanksgiving();
+                $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            case "thanksgiving-alternate-break":
+                $alternate = new Thanksgiving();
+                $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            case "thanksgiving-continue-schedule":
+                $continue = new Thanksgiving();
+                $thanksgiving = $continue->get_continue();
+                echo $thanksgiving;
+                $this->fileContentString .= $thanksgiving;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02BOptional() {
+        $time_break = new Thanksgiving();
+        $thanksgiving = $time_break->get_time();
+        echo $thanksgiving;
+        $this->fileContentString .= $thanksgiving;
+    }
+    function gen_physical_custody_timesharing_6_02C(string $type) {
+        $content = "<w:p w14:paraId='1D1CAB3E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36' w:firstLine='710'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='40' w:name='PhysicalCustodyWinterBreak'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t xml:space='preserve'>6.02C </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>WINTER BREAK</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='40'/>
+              <w:r>
+                <w:t>. The Parents shall share time with the Child(ren) during Winter Break as follows:</w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "winter-split-break":
+                $split = new Winter();
+                $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-alternate-break":
+                $alternate = new Winter();
+                $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-split-holiday-break":
+                $split_holiday = new Winter();
+                $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            case "winter-continue-schedule":
+                $continue = new Winter();
+                $winter = $continue->get_continue();
+                echo $winter;
+                $this->fileContentString .= $winter;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02D(string $type) {
+        $content = "<w:p w14:paraId='24192A3F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36' w:firstLine='710'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='45' w:name='PhysicalCustodySpringBreak'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.02D</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>SPRING BREAK</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'>.  </w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='45'/>
+              <w:r>
+                <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Spring Breaks as follows:  </w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "spring-split-break":
+                $split = new Spring();
+                $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            case "spring-alternate-break":
+                $alternate = new Spring();
+                $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            case "spring-continue-schedule":
+                $continue = new Spring();
+                $spring = $continue->get_continue();
+                echo $spring;
+                $this->fileContentString .= $spring;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02E(string $type) {
+        $content = "<w:p w14:paraId='40F3905C' w14:textId='303A9C49' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36' w:firstLine='710'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='49' w:name='PhysicalCustodySummerBreak'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:lastRenderedPageBreak/>
+                <w:t xml:space='preserve'>6.02E </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>S</w:t>
+              </w:r>
+              <w:r w:rsidR='00D72616'>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>UMMER</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t xml:space='preserve'> BREAK</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='49'/>
+              <w:r>
+                <w:t>. The Parents shall share time with the Child(ren) during Summer Break as follows:</w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "summer-split-break":
+                $split = new Summer();
+                $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            case "summer-continue-uninterrupted-schedule":
+                $alternate = new Summer();
+                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            case "summer-continue-schedule":
+                $continue = new Summer();
+                $summer = $continue->get_continue();
+                echo $summer;
+                $this->fileContentString .= $summer;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
+        }
+    }
     function gen_physical_custody_timesharing_6_03() {}
     function gen_physical_custody_timesharing_6_03A() {}
     function gen_physical_custody_timesharing_6_03B() {}
