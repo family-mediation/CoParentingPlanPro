@@ -5756,50 +5756,7 @@
           <w:u w:val="single"/>
         </w:rPr>
       </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:u w:val="single"/>
-        </w:rPr>
-        <w:t>CHILDREN:</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="6F945AB7" w14:textId="77777777" w:rsidR="00505307" w:rsidRDefault="006830FF">
-      <w:pPr>
-        <w:spacing w:after="0" w:line="360" w:lineRule="auto"/>
-        <w:ind w:left="0" w:right="36" w:firstLine="0"/>
-        <w:jc w:val="both"/>
-      </w:pPr>
-      <w:bookmarkStart w:id="12" w:name="ChildrenInformationonChildren"/>
-      <w:r w:rsidRPr="00D52A55">
-        <w:rPr>
-          <w:b/>
-        </w:rPr>
-        <w:t>4.00</w:t>
-      </w:r>
-      <w:r w:rsidRPr="00D52A55">
-        <w:rPr>
-          <w:b/>
-        </w:rPr>
-        <w:tab/>
-      </w:r>
-      <w:r>
-        <w:rPr>
-          <w:u w:val="single"/>
-        </w:rPr>
-        <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-      </w:r>
-      <w:bookmarkEnd w:id="12"/>
-      <w:r>
-        <w:rPr>
-          <w:u w:val="single"/>
-        </w:rPr>
-        <w:t>)</w:t>
-      </w:r>
-      <w:r>
-        <w:t>. The Parents have ____ Child(ren) together as follows: Child A (“____________”) born in ( ___ birth year), Child B (“____________”) born in (birth year), Child C (“____________”) born in ( ___ birth year), Child D (“____________”) born
-          in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child E (“____________”) born in ( ___ birth year) collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
-        </w:t>
-      </w:r>
+
     </w:p>
     <w:p w14:paraId="29690369" w14:textId="77777777" w:rsidR="00505307" w:rsidRDefault="006830FF">
       <w:pPr>

@@ -1,13 +1,13 @@
 <?php
-include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
-include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
-include 'timeSharingSchedules/FallSchedules.php';
-include 'timeSharingSchedules/ThanksgivingSchedules.php';
-include 'timeSharingSchedules/WinterSchedules.php';
-include 'timeSharingSchedules/SpringSchedules.php';
-include 'timeSharingSchedules/SummerSchedules.php';
-include 'Signature.php';
-include 'HolidayTable.php';
+include 'timeSharingSchedulesWordDoc/EqualTimeSharing.php';
+include 'timeSharingSchedulesWordDoc/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedulesWordDoc/Fall.php';
+include 'timeSharingSchedulesWordDoc/ThanksgivingSchedules.php';
+include 'timeSharingSchedulesWordDoc/WinterSchedules.php';
+include 'timeSharingSchedulesWordDoc/SpringSchedules.php';
+include 'timeSharingSchedulesWordDoc/SummerSchedules.php';
+//include 'Signature.php';
+//include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
 {
@@ -25,19 +25,49 @@ class wordDocGenerator extends documentGenerator
 
     // Section 2: Children
     function gen_children_4_00() {
-        $childrenInfo = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
-            margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
-            150%'><u>CHILDREN:</u></p>
-        
-            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
-            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-            name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
-            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: "
-            . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\""
-            . $this->responses["child1Initials"] . "\") born in ("
-            . $this->responses["child1BirthYears"] . "), Child B (\""
-            . $this->responses["child2Initials"] . "\") born in ("
-            . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+        $childrenInfo = "<w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILDREN:</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>4.00</w:t>
+              </w:r>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='12'/>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>)</w:t>
+              </w:r>
+              <w:r>
+                <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
+                </w:t>
+              </w:r>";
         echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
     }
@@ -646,12 +676,449 @@ class wordDocGenerator extends documentGenerator
 	} //end of legal custody section 3
 
     //Section 4: Physical Custody and Timesharing
-    function gen_physical_custody_timesharing_6_00() {}
-    function gen_physical_custody_timesharing_6_01() {}
-    function gen_physical_custody_timesharing_6_01A() {}
-    function gen_physical_custody_timesharing_6_01B() {}
-    function gen_physical_custody_timesharing_6_02() {}
-    function gen_physical_custody_timesharing_6_02A(string $type) {}
+    function gen_physical_custody_timesharing_6_00() {
+        $header = "<w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>PHYSICAL CUSTODY AND TIMESHARING:</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='5B68D0C5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='26' w:name='PhysicalCustodyGlobalPriority'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:lastRenderedPageBreak/>
+                <w:t>6.00</w:t>
+              </w:r>
+              <w:r>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>PHYSICAL CUSTODY AND TIMESHARING: GLOBAL PRIORITY</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='26'/>
+              <w:r>
+                <w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with
+                  the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
+                </w:t>
+              </w:r>
+            </w:p>";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+    function gen_physical_custody_timesharing_6_01() {
+        $header = "<w:p w14:paraId='5F1E00F0' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='27' w:name='PhysicalCustodyDuringSchoolYear'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.01</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>PHYSICAL CUSTODY AND TIMESHARING: TIMESHARING DURING THE SCHOOL YEAR</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'>.  </w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='27'/>
+              <w:r>
+                <w:t>During the school year, parents agree to share time with their children as set forth hereinbelow. Understanding that each individual Child’s developmental stage and needs should be the primary consideration for setting a schedule.
+                  Generally, younger children need more frequent transitions so they do not feel abandoned by either parent, while older children can tolerate longer absences. Each Child’s health, education, special needs, and social, emotional, and physical
+                  well-being must be considered in selecting an appropriate schedule. Schedules may change over time by agreement of the Parents based on the Child(ren)’s needs. Below are suggested templates to be modified and based on each family’s needs.
+                </w:t>
+              </w:r>
+            </w:p>";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+    function gen_physical_custody_timesharing_6_01A() {
+        $content = "<w:p w14:paraId='1D16DC31' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:tab/>
+              </w:r>
+              <w:bookmarkStart w:id='28' w:name='PhysicalCustodyEqual'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.01A</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>EQUAL TIMESHARING SCHEDULES</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='28'/>
+              <w:r>
+                <w:t>. 50/50 schedules can benefit a Child because the Child spends substantial time living with both Parents. This allows the Child(ren) to build close relationships with both Parents and to feel cared for by both Parents. 50/50 schedules
+                  work best when:
+                </w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='110A17F3' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:numPr>
+                  <w:ilvl w:val='0'/>
+                  <w:numId w:val='5'/>
+                </w:numPr>
+                <w:pBdr>
+                  <w:top w:val='nil'/>
+                  <w:left w:val='nil'/>
+                  <w:bottom w:val='nil'/>
+                  <w:right w:val='nil'/>
+                  <w:between w:val='nil'/>
+                </w:pBdr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:t xml:space='preserve'>Parents live </w:t>
+              </w:r>
+              <w:proofErr w:type='gramStart'/>
+              <w:r>
+                <w:t>fairly close</w:t>
+              </w:r>
+              <w:proofErr w:type='gramEnd'/>
+              <w:r>
+                <w:t xml:space='preserve'> to one another, so exchanges are easier;</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='4B457814' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:numPr>
+                  <w:ilvl w:val='0'/>
+                  <w:numId w:val='5'/>
+                </w:numPr>
+                <w:pBdr>
+                  <w:top w:val='nil'/>
+                  <w:left w:val='nil'/>
+                  <w:bottom w:val='nil'/>
+                  <w:right w:val='nil'/>
+                  <w:between w:val='nil'/>
+                </w:pBdr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:t xml:space='preserve'>Parents </w:t>
+              </w:r>
+              <w:proofErr w:type='gramStart'/>
+              <w:r>
+                <w:t>are able to</w:t>
+              </w:r>
+              <w:proofErr w:type='gramEnd'/>
+              <w:r>
+                <w:t xml:space='preserve'> communicate with each other about the Child(ren) without fighting;</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='431C76F3' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:numPr>
+                  <w:ilvl w:val='0'/>
+                  <w:numId w:val='5'/>
+                </w:numPr>
+                <w:pBdr>
+                  <w:top w:val='nil'/>
+                  <w:left w:val='nil'/>
+                  <w:bottom w:val='nil'/>
+                  <w:right w:val='nil'/>
+                  <w:between w:val='nil'/>
+                </w:pBdr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:t xml:space='preserve'>Child(ren) </w:t>
+              </w:r>
+              <w:proofErr w:type='gramStart'/>
+              <w:r>
+                <w:t>is/are able to</w:t>
+              </w:r>
+              <w:proofErr w:type='gramEnd'/>
+              <w:r>
+                <w:t xml:space='preserve'> handle switching between parents’ homes;</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='360C2065' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:numPr>
+                  <w:ilvl w:val='0'/>
+                  <w:numId w:val='5'/>
+                </w:numPr>
+                <w:pBdr>
+                  <w:top w:val='nil'/>
+                  <w:left w:val='nil'/>
+                  <w:bottom w:val='nil'/>
+                  <w:right w:val='nil'/>
+                  <w:between w:val='nil'/>
+                </w:pBdr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:t>Both Parents are committed to putting the Child(ren)’s best interests first;</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='0A438D8C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:numPr>
+                  <w:ilvl w:val='0'/>
+                  <w:numId w:val='5'/>
+                </w:numPr>
+                <w:pBdr>
+                  <w:top w:val='nil'/>
+                  <w:left w:val='nil'/>
+                  <w:bottom w:val='nil'/>
+                  <w:right w:val='nil'/>
+                  <w:between w:val='nil'/>
+                </w:pBdr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:lastRenderedPageBreak/>
+                <w:t>Both Parents agree that the 50/50 schedule is best for their Child(ren).</w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($this->responses["schoolYearSchedule"]) {
+            case "2-2-3":
+                $equalSchedule = new EqualTimeSharing();
+                $schedule = $equalSchedule->get_2_2_3();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "3-4-4-3":
+                $equalSchedule = new EqualTimeSharing();
+                $schedule = $equalSchedule->get_3_4_4_3();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "2-2-5-5":
+                $equalSchedule = new EqualTimeSharing();
+                $schedule = $equalSchedule->get_2_2_5_5();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "7-7":
+                $equalSchedule = new EqualTimeSharing();
+                $schedule = $equalSchedule->get_7_7();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_01B() {
+        $content = "<w:p w14:paraId='03D22859' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+              </w:pPr>
+            </w:p>
+            <w:p w14:paraId='30629F25' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:bookmarkStart w:id='29' w:name='PhysicalCustodyOther'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.01B</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>OTHER TIMESHARING SCHEDULES</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='29'/>
+              <w:r>
+                <w:t>.</w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($this->responses["schoolYearSchedule"]) {
+            case "8-6":
+                $otherSchedule = new OtherTimeSharing();
+                $schedule = $otherSchedule->get_8_6();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "10-4":
+                $otherSchedule = new OtherTimeSharing();
+                $schedule = $otherSchedule->get_10_4();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            case "ownSchedule":
+                $otherSchedule = new OtherTimeSharing();
+                $schedule = $otherSchedule->get_own_schedule();
+                echo $schedule;
+                $this->fileContentString .= $schedule;
+                break;
+            default:
+                echo "Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.";
+        }
+    }
+    function gen_physical_custody_timesharing_6_02() {
+        $content = "<w:p w14:paraId='5767565F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='30' w:name='PhysicalCustodyDuringSchoolBreaks'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.02</w:t>
+              </w:r>
+              <w:r>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>PHYSICAL CUSTODY AND TIMESHARING: TIMESHARING DURING THE SCHOOL BREAKS</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='30'/>
+              <w:r>
+                <w:t>. Unless otherwise agreed by both Parents, school breaks shall be defined as beginning after school on the last day prior to the break and ending at the morning drop off at school on the day school resumes. During their designated school
+                  break time with the Child(ren), either Parent may elect to travel with the Child(ren) per the Travel with the Child(ren) provision hereinbelow.
+                </w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    function gen_physical_custody_timesharing_6_02A(string $type) {
+        $content = "<w:p w14:paraId='32694CA2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+                <w:ind w:right='36' w:firstLine='710'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='31' w:name='PhysicalCustodyFallBreak'/>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>6.02A</w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+                <w:t xml:space='preserve'> </w:t>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>FALL BREAK</w:t>
+              </w:r>
+              <w:r>
+                <w:t xml:space='preserve'>.  </w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='31'/>
+              <w:r>
+                <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Fall Breaks as follows:  </w:t>
+              </w:r>
+            </w:p>";
+        echo $content;
+        $this->fileContentString .= $content;
+        switch ($type) {
+            case "fall-split-break":
+                $split = new Fall();
+                $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            case "fall-alternate-break":
+                $alternate = new Fall();
+                $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            case "fall-continue-schedule":
+                $continue = new Fall();
+                $fall = $continue->get_continue();
+                echo $fall;
+                $this->fileContentString .= $fall;
+                break;
+            default:
+                echo "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
+        }
+    }
     function gen_physical_custody_timesharing_6_02B(string $type) {}
     function gen_physical_custody_timesharing_6_02BOptional() {}
     function gen_physical_custody_timesharing_6_02C(string $type) {}

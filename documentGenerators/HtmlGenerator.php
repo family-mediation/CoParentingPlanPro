@@ -1,11 +1,11 @@
 <?php
-include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
-include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
-include 'timeSharingSchedules/FallSchedules.php';
-include 'timeSharingSchedules/ThanksgivingSchedules.php';
-include 'timeSharingSchedules/WinterSchedules.php';
-include 'timeSharingSchedules/SpringSchedules.php';
-include 'timeSharingSchedules/SummerSchedules.php';
+include 'timeSharingSchedulesHtml/EqualTimeSharingSchedules.php';
+include 'timeSharingSchedulesHtml/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedulesHtml/FallSchedules.php';
+include 'timeSharingSchedulesHtml/ThanksgivingSchedules.php';
+include 'timeSharingSchedulesHtml/WinterSchedules.php';
+include 'timeSharingSchedulesHtml/SpringSchedules.php';
+include 'timeSharingSchedulesHtml/SummerSchedules.php';
 include 'Signature.php';
 include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
