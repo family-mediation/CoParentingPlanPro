@@ -4307,11 +4307,16 @@ class wordDocGenerator extends documentGenerator
 	function packageDocument()
 	{
 		// Take the template.zip copy it and rename it in the downloads folder
-        copy("./Templates/template.zip",$this->fileName);
-        //rename($this->fileName,);
+        copy("./Templates/template.zip",$this->fileName . ".zip");
         // Extract the zip
+        $zip = new ZipArchive;
+        if($zip->open($this->fileName . ".zip"))
+        {
+            $zip->extractTo($this->fileName);
 		// Take the string and write it to document.xml
-		$documentXML = fopen("./documents/document.xml" , "w+");
+		}
+		$zip->close();
+		$documentXML = fopen($this->fileName . "/word/document.xml" , "w+");
         if($documentXML != false)
         {
 		    fwrite( $documentXML, $this->fileContentString);

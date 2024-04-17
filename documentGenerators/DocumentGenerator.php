@@ -6,17 +6,19 @@ abstract class documentGenerator
 	public $fileOutput;
 	public $fileContentString;
 	public $tableOfContentsString;
+	public $fileType;
 
 	// for section 1.00 on coparenting plan to get the day, month and year
 	protected $day;
     protected $month;
     protected $year;
 
-	public function __construct(string $fileName, array $responses)
+	public function __construct(string $fileName, string $fileType, array $responses)
 	{
 		$this->fileName = $fileName;
 		$this->responses = $responses;
-		$this->fileOutput = fopen("./" . $fileName, "w+");
+		$this->$fileType = $fileType;
+		$this->fileOutput = fopen("./" . $fileName . $fileType, "w+");
 	}
 	// Generate the different components.
 	public abstract function genHeader();
