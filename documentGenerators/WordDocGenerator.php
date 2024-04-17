@@ -4794,7 +4794,8 @@ class wordDocGenerator extends documentGenerator
 		<w:bookmarkEnd w:id='127' />
 		<w:r>
 			<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually 
-			agreed upon parenting expense tool or application, or <span style='background:yellow'>$content</span>.</w:t>
+			agreed upon parenting expense tool or application, or <span style='background:yellow'>$content</span>.
+			</w:t>
 		</w:r>
 		<w:r>
 			<w:rPr>
