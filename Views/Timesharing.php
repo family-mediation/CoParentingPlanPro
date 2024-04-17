@@ -85,7 +85,7 @@
                     <label for="thanksgiving-continue-schedule">Continued Schedule</label>
                   </div>
                   <div>
-                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakSchedule" value="thanksgiving-time-break"/>
+                    <input id="thanksgiving-time-break" type="checkbox" name="schoolThanksgivingBreakScheduleOptional" value=true/>
                     <label for="thanksgiving-time-break">Time on Thanksgiving Day</label>
                   </div>
                 </div>
@@ -104,10 +104,25 @@
                   </div>
                   <div>
                     <label class="flex-label" for="winter-split-holiday-break">
-                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break"/>
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
                       Split Break with Holiday Time Schedule
                     </label>
                   </div>
+                  <label class="collapse" id="split-break">
+                    (click again to close window)
+                    <label hide="true" data-dm->Start time Christmas
+                      <input type="time" class="form-control" name="christmasStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time Christmas
+                      <input type="time" class="form-control" name="christmasEnd" required>
+                    </label>
+                    <label hide="true" data-dm->Start time New Years Day
+                      <input type="time" class="form-control" name="newYearsStart" required>
+                    </label>
+                    <label hide="true" data-dm->End time New Years Day
+                      <input type="time" class="form-control" name="newYearsEnd" required>
+                    </label>
+                  </label>
                   <div>
                     <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
                     <label for="winter-continue-schedule">Continued Schedule</label>
@@ -142,8 +157,19 @@
                   </div>
                   <div>
                     <label class="flex-label" for="summer-continue-uninterrupted-schedule">
-                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule"/>
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
                         Continued Schedule with Option for Uninterrupted Time
+                    </label>
+                    <label class="collapse" id="uninterrupted">
+                      <label>
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                        Exchange date
+                      </label>
+                      <label>
+                        <label hide="true" data-dm->Number of days
+                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
+                        </label>
+                      </label>
                     </label>
                   </div>
                 </div>
@@ -288,41 +314,95 @@
             <div class="row justify-content-center" style="text-align: left">
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" />
+                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
                   <label for="travel-with-children">Travel with the Children</label>
+                  <label class="collapse" id="travelChildren">
+                    <label>
+                      <label hide="true" data-dm->Number of days
+                        <input type="number" class="form-control" name="daysOff" value="daysOff">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify
+                        <input type="number" class="form-control" name="daysNotify" value="daysNotify">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify (if traveling in Hawaii)
+                        <input type="number" class="form-control" name="daysNotifyHawaii" value="daysNotifyHawaii">
+                      </label>
+                    </label>
+                    <label>
+                      <label hide="true" data-dm->Days to notify (out-of-state)
+                        <input type="number" class="form-control" name="daysNotifyOutside" value="daysNotifyOutside">
+                      </label>
+                    </label>
+                    <label>
+                      <input id="dateANotify" type="date" name="dateANotify" value="dateANotify" /> Date to notify for dates of travel (Parent A)
+                    </label>
+                    <label>
+                      <input id="dateBNotify" type="date" name="dateBNotify" value="dateBNotify" /> Date to notify for dates of travel (Parent B)
+                    </label>
+                  </label>
                 </div>
                 <div>
                   <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time"/>
                   <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
                 </div>
                 <div>
-                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal"/>
+                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
                   <label for="first-refusal">Right of First Refusal</label>
+                  <label class="collapse" id="firstRefusal">
+                    <label>
+                      <label hide="true" data-dm->Number of hours before able to execute right
+                        <input type="number" class="form-control" name="refusalHours" value="refusalHours">
+                      </label>
+                    </label>
+                  </label>
+                </div>
+                <div>
+                  <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
+                  <label for="pick-up">Pick Up for Non-School Exchange</label>
                 </div>
                 <div>
                   <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>
                   <label for="drop-off">Drop Off for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location"/>
+                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
+                  <label class="collapse" id="exchangesNeutral">
+                    <label hide="true" data-dm->Address
+                      <input type="text" class="form-control" name="exchangeAddress">
+                    </label>
+                  </label>
                 </div>
                 <div>
-                  <input id="relocation" type="checkbox" name="relocation" value="relocation"/>
+                  <input id="relocation" type="checkbox" name="relocation" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
                   <label for="relocation">Relocation</label>
+                  <label class="collapse" id="relocationDays">
+                    <label hide="true" data-dm->Days of notice
+                      <input type="number" class="form-control" name="relocationDays">
+                    </label>
+                  </label>
                 </div>
               </div>
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <label class="flex-label" for="delegate-pick-up">
+                  <label for="delegate-pick-up">
                     <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
                     Parental Authority to Delegate Pick-Up and Drop Off
                   </label>
                 </div>
                 <div>
-                  <label class="flex-label" for="persons-authorized">
-                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized"/>
+                  <label for="persons-authorized">
+                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
                     Persons Authorized to Pick Up and Drop Off
+                    <label class="collapse" id="persons">
+                      <label hide="true" data-dm->Person Authorized
+                        <input type="text" class="form-control" name="personsAuthorized">
+                      </label>
+                    </label>
                   </label>
                 </div>
                 <div>
@@ -330,7 +410,7 @@
                   <label for="children-belongings">Children's Personal Belongings</label>
                 </div>
                 <div>
-                  <label class="flex-label" for="modify-schedule">
+                  <label for="modify-schedule">
                     <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
                     Modification of Schedule by Agreement of Both Parties
                   </label>

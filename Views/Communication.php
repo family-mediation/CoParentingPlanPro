@@ -22,7 +22,7 @@
           </ol>     
         </div>
         
-        <div class="row justify-content-center pt-4 pb-4" name="communication">
+        <div class="row justify-content-center pt-4 pb-4">
           <button id="next0" onclick="showPage('page1')">Next Page</button>
         </div>
       </div>
@@ -31,18 +31,18 @@
           <h1>Pick One:</h1>
 
             <div>
-              <input type="radio" name="communication" id="emailonly"/>
-              <label for="emailonly">E-mail Only</label>
+              <input type="radio" name="commMethod" id="email" value="email" />
+              <label for="email">E-mail Only</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="emailtext"/>
-              <label for="emailtext">E-mail and Text</label>
+              <input type="radio" name="commMethod" id="bothemailtext" value="bothemailtext" />
+              <label for="bothemailtext">E-mail and Text</label>
             </div>
 
             <div>
-              <input type="radio" name="communication" id="wizardmutually"/>
-              <label for="wizardmutually">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
+              <input type="radio" name="commMethod" id="wizardmutual" value="wizardmutual"/>
+              <label for="wizardmutual">Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</label>
             </div>
 
         <div class="row justify-content-center pt-4 pb-4">
@@ -57,51 +57,51 @@
               <h4>Communication Between Co-Parents:</h4>
 
               <div>
-              <input type="checkbox" id="7.04" name="communication" onclick="showParentOptions()" />
+              <input type="checkbox" name="commbetweenCP" id="7.04" value="7.04" onclick="showParentOptions()" />
               <label for="7.04">Monthly Conference</label>
               </div>
 
-              <div class="container card p-4" id="monthly" style="display: none;">
+              <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
-              <input type="week" name="monthly" /> unless mutually agreed to otherwise.
+              <input type="week" name="commbetweenCP" id="insertmonthly"/> unless mutually agreed to otherwise.
               </div>
 
               <div>
-              <input type="checkbox" id="7.05" name="communication" onclick="showParentOptions2()" />
+              <input type="checkbox" name="commbetweenCP" id="7.05" value="7.05" onclick="showParentOptions2()" />
               <lable for="7.05">Semi Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" id="semidate" />(insert date) and <input type="text" id="semidate" />(insert date) every year.
+              <input type="text" name="commbetweenCP" id="semidate1" />(insert date) and <input type="text" name="commbetweenCP" id="semidate2" />(insert date) every year.
               </div>
               
               <div>
-              <input type="checkbox" id="7.06" name="communication" onclick="showParentOptions3()" />
+              <input type="checkbox" name="commbetweenCP" id="7.06" value="7.06" onclick="showParentOptions3()" />
               <lable for="7.06">Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" id="semidate" /> every year.
+              <input type="text" name="commbetweenCP" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
               <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
-              <input type="checkbox" id="7.07" name="communication" />
+              <input type="checkbox" name="betweenchildparent" id="7.07" value="7.07"/>
               <label for="7.07">Unlimited</label>
               </div>
 
               <div>
-              <input type="checkbox" id="7.08" name="communication" onclick="commSpecific()" />
+              <input type="checkbox" id="7.08" name="betweenchildparent" onclick="commSpecific()" />
               <label for="7.08">Specific</label>
               </div>
               
               <div class="container card p-4" id="schedule" style="display: none;">
               During the regular parenting time schedule, Parent A may call the child between 
-              <input type="time" value="09:00" /> and <input type="time" value="17:00" /> when they are with Parent B
-              and Parent B may call the childe between <input type="time" value="09:00" /> and <input type="time" value="17:00" />
+              <input type="time" name="betweenchildparent" id="A9:00" value="09:00" /> and <input type="time" name="betweenchildparent" id="A17:00" value="17:00" /> when they are with Parent B
+              and Parent B may call the childe between <input type="time" name="betweenchildparent" id="B09:00" value="09:00" /> and <input type="time" name="betweenchildparent" id="B17:00" value="17:00" />
               when they are with Parent A.
               </div>
               
@@ -109,17 +109,17 @@
               <br>
               <h4>Communication:</h4>
               <div>
-              <input type="checkbox" id="7.09" name="communication" />
+              <input type="checkbox" name="otherComm" id="7.09" value="7.09" />
               <label for="7.09">Exchange of Contact Information</label>
               </div>
 
               <div>
-              <input type="checkbox" id="7.10" name="communication" />
+              <input type="checkbox" name="otherComm" id="7.10" value="7.10" />
               <label for="7.10">Scheduling Extracurricular Activities for the Child(ren)</label>
               </div>
 
               <div>
-              <input type="checkbox" id="7.11" name="communication" />
+              <input type="checkbox" name="otherComm" id="7.11" value="7.11" />
               <label for="7.11">Selecting Extracurricular Activities for the Child(ren)</label>
               </div>
             
