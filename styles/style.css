@@ -81,3 +81,6 @@ input[type=radio] {
   /* one way to help with spacing */
   margin: 5px;
 }
+.tooltip-inner {
+    max-width: 400px; /* Adjust the width as needed */
+}

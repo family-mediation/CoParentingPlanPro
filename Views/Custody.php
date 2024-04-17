@@ -122,70 +122,104 @@
         <div>
 
           <div>
-            <input type="checkbox" id="5.06" name="legalcustody[]" value="5.06" onclick="moreInfo6()" />
+            <input type="checkbox" id="5.06" name="legalcustody[]" value="5.06" />
             <label for="5.06">Emergency Contacts for the Child(ren)</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="Both Parents shall be listed as the initial emergency contacts for the Child(ren) for any
+            school, extracurricular activity or other event where an emergency contact is requested.">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.06" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.06" style="display: none;">
             Both Parents shall be listed as the initial emergency contacts for the Child(ren) for any
             school, extracurricular activity or other event where an emergency contact is requested.
-          </div>
+          </div> -->
 
           <div>
-            <input type="checkbox" id="5.07" name="legalcustody[]" value="5.07" onclick="moreInfo7()" />
+            <input type="checkbox" id="5.07" name="legalcustody[]" value="5.07" />
             <label for="5.07">Expert Advice when making Legal Custody Decisions</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="Parents shall seek the advice and be guided by subject matter experts
+            when making legal custody decisions on behalf of the Child(ren).">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.07" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.07" style="display: none;">
             Parents shall seek the advice and be guided by subject matter experts
             when making legal custody decisions on behalf of the Child(ren).
-          </div>
+          </div> -->
 
           <div>
-            <input type="checkbox" id="5.08" name="legalcustody[]" value="5.08" onclick="moreInfo8()" />
+            <input type="checkbox" id="5.08" name="legalcustody[]" value="5.08" />
             <label for="5.08">Day-to-Day Decisions</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="During the period when the Child(ren) is or are living with or in the care of a Parent, that Parent can make day-to-
+            day decisions about our child, for example about, doing homework, meals, visiting with
+            their friends, use of computer, etc.">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.08" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.08" style="display: none;">
             During the period when the Child(ren) is or are living with or in the care of a Parent, that Parent can make day-to-
             day decisions about our child, for example about, doing homework, meals, visiting with
             their friends, use of computer, etc.
-          </div>
-
+          </div> -->
 
           <div>
-            <input type="checkbox" id="5.09" name="legalcustody[]" value="5.09" onclick="moreInfo9()" />
+            <input type="checkbox" id="5.09" name="legalcustody[]" value="5.09" />
             <label for="5.09">Emergency Decisions</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="In a health emergency for a Child, the Parent with care of the Child(ren) at that time will make the treatment
+            decision, on the advice of medical personnel. If a Parent makes an emergency health
+            decision for a Child, the Parent who has made the decision must immediately contact
+            the other Parent.">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.09" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.09" style="display: none;">
             In a health emergency for a Child, the Parent with care of the Child(ren) at that time will make the treatment
             decision, on the advice of medical personnel. If a Parent makes an emergency health
             decision for a Child, the Parent who has made the decision must immediately contact
             the other Parent.
-          </div>
+          </div> -->
 
           <div>
-            <input type="checkbox" id="5.10" name="legalcustody[]" value="5.10" onclick="moreInfo10()" />
+            <input type="checkbox" id="5.10" name="legalcustody[]" value="5.10" />
             <label for="5.10">Health Emergency or Death of Other Parent</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="In the event of a Parent’s medical emergency, the other Parent shall assume the major
+            decision-making responsibilities for the Child(ren) until the situation becomes resolved.
+            In the event of the death of one Parent, the other Parent shall care for the Child(ren),
+            but the surviving Parent shall ensure that the Child(ren) has/have continued relations
+            with the relatives of the deceased Parent.">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.10" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.10" style="display: none;">
             In the event of a Parent’s medical emergency, the other Parent shall assume the major
             decision-making responsibilities for the Child(ren) until the situation becomes resolved.
             In the event of the death of one Parent, the other Parent shall care for the Child(ren),
             but the surviving Parent shall ensure that the Child(ren) has/have continued relations
             with the relatives of the deceased Parent.
-          </div>
+          </div> -->
 
           <div>
-            <input type="checkbox" id="5.11" name="legalcustody[]" value="5.11" onclick="moreInfo11()" />
+            <input type="checkbox" id="5.11" name="legalcustody[]" value="5.11" />
             <label for="5.11">Parallel Parenting</label>
+            <!-- tooltip using bootstrap -->
+            <span class="tt" data-bs-placement="top" title="Parents shall disengage from one another and make decisions independently when the Child(ren) is in their care.">
+              <i class="bi bi-info-circle"></i>
+            </span>
           </div>
 
-          <div class="container card p-4" id="more5.11" style="display: none;">
+          <!-- <div class="container card p-4" id="more5.11" style="display: none;">
             Parents shall disengage from one another and make decisions independently when the Child(ren) is in their care.
-          </div>
+          </div> -->
 
         </div>
         <div class="row justify-content-center pt-4 pb-4">
@@ -265,34 +299,38 @@
     });
   });
 
+  // function moreInfo6() {
+  //   var e = document.getElementById('more5.06');
+  //   e.style.display = document.getElementById('5.06').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo6() {
-    var e = document.getElementById('more5.06');
-    e.style.display = document.getElementById('5.06').checked ? 'block' : 'none';
-  }
+  // function moreInfo7() {
+  //   var e = document.getElementById('more5.07');
+  //   e.style.display = document.getElementById('5.07').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo7() {
-    var e = document.getElementById('more5.07');
-    e.style.display = document.getElementById('5.07').checked ? 'block' : 'none';
-  }
+  // function moreInfo8() {
+  //   var e = document.getElementById('more5.08');
+  //   e.style.display = document.getElementById('5.08').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo8() {
-    var e = document.getElementById('more5.08');
-    e.style.display = document.getElementById('5.08').checked ? 'block' : 'none';
-  }
+  // function moreInfo9() {
+  //   var e = document.getElementById('more5.09');
+  //   e.style.display = document.getElementById('5.09').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo9() {
-    var e = document.getElementById('more5.09');
-    e.style.display = document.getElementById('5.09').checked ? 'block' : 'none';
-  }
+  // function moreInfo10() {
+  //   var e = document.getElementById('more5.10');
+  //   e.style.display = document.getElementById('5.10').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo10() {
-    var e = document.getElementById('more5.10');
-    e.style.display = document.getElementById('5.10').checked ? 'block' : 'none';
-  }
+  // function moreInfo11() {
+  //   var e = document.getElementById('more5.11');
+  //   e.style.display = document.getElementById('5.11').checked ? 'block' : 'none';
+  // }
 
-  function moreInfo11() {
-    var e = document.getElementById('more5.11');
-    e.style.display = document.getElementById('5.11').checked ? 'block' : 'none';
-  }
+  const tooltips = document.querySelectorAll('.tt')
+  tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
 </script>
