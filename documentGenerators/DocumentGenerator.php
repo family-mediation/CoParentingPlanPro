@@ -17,7 +17,7 @@ abstract class documentGenerator
 	{
 		$this->fileName = $fileName;
 		$this->responses = $responses;
-		$this->$fileType = $fileType;
+		$this->fileType = $fileType;
 		$this->fileOutput = fopen("./" . $fileName . $fileType, "w+");
 	}
 	// Generate the different components.

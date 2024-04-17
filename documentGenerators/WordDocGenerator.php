@@ -18,7 +18,9 @@ class wordDocGenerator extends documentGenerator
                 <w:document xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14\">
                 <w:body>";
 	}
-    function gen_guiding_principals_statement(){}
+    function gen_guiding_principals_statement()
+    {
+    }
 	function genFooter()
 	{
 		echo "Generating Footer " . $this->fileName . " <br/>";
@@ -39,7 +41,9 @@ class wordDocGenerator extends documentGenerator
 
     // Section 2: Children
     function gen_children_4_00() {
-        $childrenInfo = "<w:r>
+        $childrenInfo = "
+        <w:p>
+        <w:r>
                 <w:rPr>
                   <w:u w:val='single'/>
                 </w:rPr>
@@ -1380,10 +1384,10 @@ class wordDocGenerator extends documentGenerator
         }
     }
     function gen_physical_custody_timesharing_6_03() {
-        $table = new HolidayTableWord();
-        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
-        echo $holidayTable;
-        $this->fileContentString .= $holidayTable;
+        //$table = new HolidayTableWord();
+        //$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], //$this->responses['partyBBirthday'], $this->responses['childBirthdays']);
+        //echo $holidayTable;
+        //$this->fileContentString .= $holidayTable;
     }
     function gen_physical_custody_timesharing_6_03A() {
         $alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -5904,10 +5908,10 @@ class wordDocGenerator extends documentGenerator
     }
 
     function signature() {
-        $signature = new SignatureWord();
-        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
-        echo $signatures;
-        $this->fileContentString .= $signatures;
+        //$signature = new SignatureWord();
+        //$signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+       // echo $signatures;
+       // $this->fileContentString .= $signatures;
     }
 
     //End of other section
@@ -5934,7 +5938,7 @@ class wordDocGenerator extends documentGenerator
 		echo "packaging document";
 		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
 		{
-		    $folderRefsToZip = $this->fileName ."/\_rels/.rels";
+		    $folderRefsToZip = $this->fileName ."/_rels/.rels";
 		    $folderLevel1ToZip = $this->fileName ."/*.*";
 		    $folderLevel2ToZip = $this->fileName ."/*/*.*";
 		    $folderLevel3ToZip = $this->fileName ."/*/*/*.*";
@@ -5948,9 +5952,8 @@ class wordDocGenerator extends documentGenerator
             echo "Failed to write files to zip\n";
 		echo $zipOutput->close();
 
-		//rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
+		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
-
 	}
 
 }
