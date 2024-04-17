@@ -5,13 +5,25 @@ class wordDocGenerator extends documentGenerator
 	function genHeader()
 	{
 		echo "Generating Header " . $this->fileName . " <br/>";
-		$this->fileContentString .= "test test test";
+		$this->fileContentString .= "";
 	}
     function gen_guiding_principals_statement(){}
 	function genFooter()
 	{
 		echo "Generating Footer " . $this->fileName . " <br/>";
-		$this->fileContentString .= "test test test";
+		$this->fileContentString .= "
+		<w:sectPr w:rsidR=\"00505307\">
+                   <w:footerReference w:type=\"even\" r:id=\"rId9\" />
+                   <w:footerReference w:type=\"default\" r:id=\"rId10\" />
+                   <w:footerReference w:type=\"first\" r:id=\"rId11\" />
+                   <w:pgSz w:w=\"12240\" w:h=\"15840\" />
+                   <w:pgMar w:top=\"1440\" w:right=\"1440\" w:bottom=\"1440\" w:left=\"1440\" w:header=\"720\" w:footer=\"720\" w:gutter=\"0\" />
+                   <w:pgNumType w:start=\"1\" />
+                   <w:cols w:space=\"720\" />
+                   <w:titlePg />
+               </w:sectPr>
+           </w:body>
+       </w:document>\" ";
 	}
 
     // Section 2: Children
@@ -4293,10 +4305,12 @@ class wordDocGenerator extends documentGenerator
 	function packageDocument()
 	{
 		// Take the template.zip copy it and rename it in the downloads folder
+        copy("./Templates/template.zip",$this->fileName);
+        // Extract the zip
 		// Take the string and write it to document.xml
         if($this->fileOutput != false)
         {
-		    fwrite($this->fileOutput, $this->fileContentString);
+		   // fwrite($this->fileOutput, $this->fileContentString);
         }
 		// Zip the folder and rename it to .docx
 		// Serve the .docx
