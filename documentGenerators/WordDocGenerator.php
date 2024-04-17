@@ -1,4 +1,13 @@
 <?php
+include 'timeSharingSchedules/EqualTimeSharingSchedules.php';
+include 'timeSharingSchedules/OtherTimeSharingSchedules.php';
+include 'timeSharingSchedules/FallSchedules.php';
+include 'timeSharingSchedules/ThanksgivingSchedules.php';
+include 'timeSharingSchedules/WinterSchedules.php';
+include 'timeSharingSchedules/SpringSchedules.php';
+include 'timeSharingSchedules/SummerSchedules.php';
+include 'Signature.php';
+include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
 {
@@ -15,7 +24,23 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {}
+    function gen_children_4_00() {
+        $childrenInfo = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+            margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
+            150%'><u>CHILDREN:</u></p>
+        
+            <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+            name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
+            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: "
+            . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\""
+            . $this->responses["child1Initials"] . "\") born in ("
+            . $this->responses["child1BirthYears"] . "), Child B (\""
+            . $this->responses["child2Initials"] . "\") born in ("
+            . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+        echo $childrenInfo;
+        $this->fileContentString .= $childrenInfo;
+    }
 
 
     // legal custody section 3
