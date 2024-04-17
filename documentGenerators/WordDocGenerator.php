@@ -4323,7 +4323,25 @@ class wordDocGenerator extends documentGenerator
         }
         fclose($documentXML);
 		// Zip the folder and rename it to .docx
-		// Serve the .docx
+		$zipOutput = new ZipArchive;
+		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
+		{
+		    $folderRefsToZip = $this->fileName ."/\_rels/.rels";
+		    $folderLevel1ToZip = $this->fileName ."/*.*";
+		    $folderLevel2ToZip = $this->fileName ."/*/*.*";
+		    $folderLevel3ToZip = $this->fileName ."/*/*/*.*";
+		    $zipOutput->addGlob($folderRefsToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
+		    $zipOutput->addGlob($folderLevel1ToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
+		    $zipOutput->addGlob($folderLevel2ToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
+		    $zipOutput->addGlob($folderLevel3ToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
+		    echo var_dump($zipOutput);
+		}
+		if ($zipOutput->status != ZIPARCHIVE::ER_OK)
+            echo "Failed to write files to zip\n";
+		echo $zipOutput->close();
+
+		//rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
+		// Cleanup
 
 	}
 
