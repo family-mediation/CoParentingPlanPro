@@ -131,7 +131,7 @@
               <label for="9.16">Alternative Dispute Resolution</label>
               </div>
           <div class="row justify-content-center pt-4 pb-4">
-          <button id="next0" onclick="submit()">Next Page</button>
+          <button id="next0" onclick="submit()">Next Section</button>
         </div>
       </div>
     </div>

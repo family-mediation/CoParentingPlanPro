@@ -205,7 +205,7 @@
         </div>
         <div class="row justify-content-center pt-4 pb-4">
           <button id="previous" onClick="previousHandler()">Previous Page</button> &nbsp;&nbsp;
-          <button id="toChildren" onclick="validateParentBForm() ? submit() : null">Next Page</button>
+          <button id="toChildren" onclick="validateParentBForm() ? submit() : null">Next Section</button>
         </div>
 
 

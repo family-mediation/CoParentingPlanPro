@@ -419,7 +419,7 @@
             </div>
           </div>
           <div class="row justify-content-center pt-4 pb-4">
-            <button id="toCommunication" onclick="submit()">Communication</button>
+            <button id="toCommunication" onclick="submit()">Next Section</button>
           </div>
         </div>
       </div>
