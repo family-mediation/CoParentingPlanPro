@@ -768,13 +768,13 @@ class HtmlGenerator extends documentGenerator
          name=PartiesInformationon<b><span lang=FR>3.00&nbsp; </span></b></a><u><span
          lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
          A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
-         Parent A's residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
+         " .  $this->responses["partyAFirst"] . " residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
           " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=PartiesInformationonParentB><b>3.01</b> <u>PARTIES: INFORMATION ON PARENT B</u></a>. 
-         Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; Parent B's residence
+         Parent B's full legal name is <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>.&nbsp; " .  $this->responses["partyBFirst"] . "'s residence
          address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . ", 
           " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
@@ -1596,8 +1596,8 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
          NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
-         regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B 
-         and Parent B may call the
+         regular parenting time schedule, " .  $this->responses["partyAFirst"] . " may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with " .  $this->responses["partyBFirst"] . " 
+         and " .  $this->responses["partyBFirst"] . " may call the
          child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with ParentA.
          Calls will normally be no more than 10 minutes.</span></p>";
  
@@ -1713,7 +1713,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <span style='background:yellow'>Parent A</span> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -1728,7 +1728,7 @@ class HtmlGenerator extends documentGenerator
         Parents shall share joint legal custody of the Child(ren), provided however,
         that if Parents cannot mutually agree on a legal custody decision for the
         Child(ren) after consulting with the other Parent and the Child(ren), then
-        <span style='background:yellow'>Parent B</span> shall have tie-breaking authority to make the legal custody decision
+        <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -1739,13 +1739,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <span style='background:yellow'>Parent A</span> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent A </span> is
-        awarded sole legal custody, <span style='background:yellow'>Parent B </span> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> is
+        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " </span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -1761,13 +1761,13 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodySole><b>5.02</b>&nbsp; <u>LEGAL CUSTODY: SOLE TO ONE PARENT</u></a>.&nbsp;
-        <span style='background:yellow'>Parent B</span> shall have sole legal custody of the Child(ren).</p>
+        <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall have sole legal custody of the Child(ren).</p>
         
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>Parent B </span> is
-        awarded sole legal custody, <span style='background:yellow'>Parent A </span> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " </span> is
+        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
@@ -2011,7 +2011,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCUninsuredCoPaysSpR>8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and Parent B shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
         uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span>
         per month.</p>";
         echo $snippet;
@@ -2025,8 +2025,8 @@ class HtmlGenerator extends documentGenerator
         FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per
         calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
         that any Child's uninsured co-pays for health-related expenses paid by either
-        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
-        Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
+        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
+        " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums exceeding the threshold amount.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2055,7 +2055,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCExtracurricularSpR>8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
         extracurricular expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2113,7 +2113,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPrivateSchoolExpensesSpR>8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
         private school expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2175,7 +2175,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesSpR>8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
-        Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
+        " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
         post-high school education expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2205,7 +2205,7 @@ class HtmlGenerator extends documentGenerator
         POST-HIGH SCHOOL EDUCATION EXPENSES</u></a>.&nbsp; After funds from any 529 accounts
         held on behalf of a Child or Child(ren), Coverdell accounts or other funds
         ear-marked to pay for a Child's post-high school education expenses are
-        expended, then Parent A shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
+        expended, then " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
         Child(ren)'s remaining post-high school education expenses.</p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2216,8 +2216,8 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
         PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
-        education expenses shall be paid such that Parent A shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
-        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and Parent B shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
+        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
+        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
@@ -2283,8 +2283,8 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpA><b>8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO CLAIM THE
-        CHILD(REN</u></a><u>)</u>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span> (Child's
-        Initials) as a dependent for tax purposes every year.&nbsp; Parent B shall be
+        CHILD(REN</u></a><u>)</u>. " .  $this->responses["partyAFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span> (Child's
+        Initials) as a dependent for tax purposes every year.&nbsp; " .  $this->responses["partyBFirst"] . " shall be
         entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span> (Child's Initials) as a dependent for tax purposes every
         year.&nbsp; </p>";
         echo $snippet;
@@ -2295,9 +2295,9 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
-        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. Parent A shall be entitled to
+        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " shall be entitled to
         claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
-        Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
+        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
@@ -2309,8 +2309,8 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsAlternate><b>8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE AUTHORITY TO
-        CLAIM THE CHILD(REN</u></a><u>)</u>. <span style='background:yellow'>Parent A</span> shall be entitled to claim the
-        Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>Parent B</span> shall be
+        CLAIM THE CHILD(REN</u></a><u>)</u>. <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> shall be entitled to claim the
+        Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>" .  $this->responses["partyBFirst"] . "</span> shall be
         entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
         years.&nbsp; </p>";
         echo $snippet;
@@ -2571,7 +2571,7 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesJointConsentPassport><b>9.12&nbsp; </b><u>OTHER ISSUES: JOINT
-        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; Parent A and Parent B must both consent for the purposes of a passport application for
+        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; " .  $this->responses["partyAFirst"] . " and " .  $this->responses["partyBFirst"] . " must both consent for the purposes of a passport application for
         any Child.</span></p>";
         echo $snippet;
         $this->fileContentString .= $snippet;
