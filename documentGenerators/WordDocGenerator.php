@@ -72,6 +72,10 @@ class wordDocGenerator extends documentGenerator
     function gen_physical_custody_timesharing_6_02D(string $type) {}
     function gen_physical_custody_timesharing_6_02E(string $type) {}
     function gen_physical_custody_timesharing_6_03() {}
+    function gen_physical_custody_timesharing_6_03A() {}
+    function gen_physical_custody_timesharing_6_03B() {}
+    function gen_physical_custody_timesharing_6_03C() {}
+    function gen_physical_custody_timesharing_6_03D() {}
     function gen_physical_custody_timesharing_6_04() {}
     function gen_physical_custody_timesharing_6_05() {}
     function gen_physical_custody_timesharing_6_06() {}

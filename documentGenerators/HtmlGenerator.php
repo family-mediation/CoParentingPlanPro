@@ -7,6 +7,7 @@ include 'timeSharingSchedules/WinterSchedules.php';
 include 'timeSharingSchedules/SpringSchedules.php';
 include 'timeSharingSchedules/SummerSchedules.php';
 include 'Signature.php';
+include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
@@ -1149,7 +1150,56 @@ class HtmlGenerator extends documentGenerator
                 echo "Error in HTML Generator for the variable: schoolSummerBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_03() {}
+
+    // Holiday Table.
+    function gen_physical_custody_timesharing_6_03() {
+        $table = new HolidayTable();
+        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
+        echo $holidayTable;
+        $this->fileContentString .= $holidayTable;
+    }
+    // Alternate Yearly.
+    function gen_physical_custody_timesharing_6_03A() {
+        $alt = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;"
+            . $this->responses['partyAFirst'] . " shall have the Child(ren) in even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " shall have the Child(ren)
+            in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
+            beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
+        echo $alt;
+        $this->fileContentString .= $alt;
+    }
+    // Split Every Year.
+    function gen_physical_custody_timesharing_6_03B() {
+        $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
+            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the second half of this holiday/special day in
+            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the first half and
+            " . $this->responses['partyAFirst'] . " shall have the Child(ren) for the second half of this holiday/special
+            day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
+             <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
+        echo $split;
+        $this->fileContentString .= $split;
+    }
+    // Mon/Fri Holidays Attached to a Weekend.
+    function gen_physical_custody_timesharing_6_03C() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
+            HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
+    // Every Year with Parent A or Parent B.
+    function gen_physical_custody_timesharing_6_03D() {
+        $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>EVERY
+            YEAR WITH " . $this->responses['partyAFirst'] . " OR " . $this->responses['partyBFirst'] . "</u></a>.</p>";
+        echo $content;
+        $this->fileContentString .= $content;
+    }
 
     // Travel with children checked.
     function gen_physical_custody_timesharing_6_04() {
@@ -1255,7 +1305,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, Parents agree to exchange the child at the following
-            neutral location&nbsp;  " . $this->responses['exchangeAddress'] . ".</p>";
+            neutral location:&nbsp;  " . $this->responses['exchangesNeutral'] . ".</p>";
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1265,7 +1315,7 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhyscialCustodyDelgationPickupDropOff><b>6.10&nbsp; </b><u>PHYSICAL CUSTODY AND
             TIMESHARING:&nbsp; PARENTAL AUTHORITY TO DELEGATE PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.&nbsp;
-            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the Parent who is responsible for the pick-up or drop off may
             delegate another person to pick up or drop off the Child(ren).</span></p>";
@@ -1278,7 +1328,7 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11&nbsp; </b><u>PHYSICAL CUSTODY
             AND TIMESHARING:&nbsp; PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
-            <span style='color:#333333'>If it is not possible for " . $this->responses['parentAFirst'] . " or " . $this->responses['parentBFirst'] . " to
+            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the following people may pick up or drop off the Child(ren):
              " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far

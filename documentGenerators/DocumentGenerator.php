@@ -55,6 +55,10 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_02D(string $type);
     public abstract function gen_physical_custody_timesharing_6_02E(string $type);
     public abstract function gen_physical_custody_timesharing_6_03();
+    public abstract function gen_physical_custody_timesharing_6_03A();
+    public abstract function gen_physical_custody_timesharing_6_03B();
+    public abstract function gen_physical_custody_timesharing_6_03C();
+    public abstract function gen_physical_custody_timesharing_6_03D();
     public abstract function gen_physical_custody_timesharing_6_04();
     public abstract function gen_physical_custody_timesharing_6_05();
     public abstract function gen_physical_custody_timesharing_6_06();
@@ -351,7 +355,12 @@ abstract class documentGenerator
                     break;
             }
         }
-        // Page 2 - Holiday Table, need to implement. "PhysicalCustodyHolidaysandSpecialDays" search in template
+        // Page 2 - Holiday Table, need to implement: three choices shown in doc but excel sheet only chooses between parent A and B.
+        $this->gen_physical_custody_timesharing_6_03();
+        $this->gen_physical_custody_timesharing_6_03A();
+        $this->gen_physical_custody_timesharing_6_03B();
+        $this->gen_physical_custody_timesharing_6_03C();
+        $this->gen_physical_custody_timesharing_6_03D();
 
         // Page 3 - Optional checkboxes.
         // Must implement new input data for all:
