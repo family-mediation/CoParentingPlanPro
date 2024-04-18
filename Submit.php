@@ -19,12 +19,18 @@ $wordGen->generateDocument();
 //$calGen = new CalendarGenerator($filePath.'/'.$fileName, ".ics",$src);
 //$calGen->generateDocument();
 //unset($_SESSION['responses']);
-//$documents = new ZipArchive();// add error testing
-//if($documents->open($zipFilePath . ".zip",ZipArchive::CREATE) != true)
-//{
- //   $documents->addGlob($filePath . "/*.*" , [remove_path => $filePath]);
-//  exit("unable to create zip folder ".$zipFilePath . ".zip");
-//}
-//$documents->close();
-echo "<a href=\"".$zipFilePath.".zip\" >Download Your Folder </a>";
+$documents = new ZipArchive();// add error testing
+if($documents->open($zipFilePath . " download.zip",ZipArchive::CREATE))
+{
+    $documents->addGlob($filePath . "/*.*" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
+    echo var_dump($documents);
+    $documents->close();
+}
+else
+{
+ echo var_dump($documents);
+ exit("unable to create zip folder ".$zipFilePath . "download.zip");
+}
+
+echo "<a href=\"".$filePath." download.zip\" >Download Your Folder </a>";
 require_once("views/Footer.php");
