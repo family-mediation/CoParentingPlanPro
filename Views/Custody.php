@@ -88,21 +88,21 @@
           Parents shall share joint legal custody of the Child(ren), provided
           however, that if Parents cannot mutually agree on a legal custody decision for the
           Child(ren), then <select id="parentABW" name="parentABW">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall have tie-breaking authority to make major decisions
           about the Child(ren)'s education and extracurricular activities, after consulting with
           <select id="parentABX" name="parentABX">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> and the Child(ren) and <select id="parentABY" name="parentABY">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> shall have tie-breaking authority to make
           major decisions about the Child(ren)'s health care, language, and spirituality, after
           consulting with <select id="parentABZ" name="parentABZ">
-            <option value="Parent A">Parent A</option>
-            <option value="Parent B">Parent B</option>
+            <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
+            <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
           </select> and the child.
         </div>
 
