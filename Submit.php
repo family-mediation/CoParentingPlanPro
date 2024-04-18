@@ -4,7 +4,7 @@ require_once("documentGenerators/WordDocGenerator.php");
 require_once("documentGenerators/CalendarGenerator.php");
 require_once("views/Header.php");
 $src = $_SESSION['responses'];
-$fileName = $src["partyALast"]." ".$src["partyBLast"];
+$fileName = "Case " . $src["caseNo"]." ". $src["partyALast"]." ".$src["partyBLast"] ;
 $filePath = "./documents/" . $fileName;
 $zipFilePath = $filePath . "/" . $fileName ;
 //later check for E_warning to see if directory already exists.
@@ -23,12 +23,10 @@ $documents = new ZipArchive();// add error testing
 if($documents->open($zipFilePath . " download.zip",ZipArchive::CREATE))
 {
     $documents->addGlob($filePath . "/*.*" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
-    echo var_dump($documents);
     $documents->close();
 }
 else
 {
- echo var_dump($documents);
  exit("unable to create zip folder ".$zipFilePath . "download.zip");
 }
 
