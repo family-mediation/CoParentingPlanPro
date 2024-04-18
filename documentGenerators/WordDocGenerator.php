@@ -24,7 +24,12 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {
+    function gen_children_4_00(int $num)
+    {
+        // TODO: Implement gen_children_4_00() method.
+    }
+
+    function gen_children_4_00_individual(int $childNum, string $letter) {
         $childrenInfo = "<w:r>
                 <w:rPr>
                   <w:u w:val='single'/>
@@ -70,6 +75,9 @@ class wordDocGenerator extends documentGenerator
               </w:r>";
         echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
+    }
+    function gen_children_4_00_last() {
+
     }
 
 

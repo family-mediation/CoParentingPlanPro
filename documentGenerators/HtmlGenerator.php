@@ -807,22 +807,36 @@ class HtmlGenerator extends documentGenerator
 
 
     /** Section 2: Children. */
-    function gen_children_4_00() {
-        $childrenInfo = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+    function gen_children_4_00(int $num) {
+        $header = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
             margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
             150%'><u>CHILDREN:</u></p>
         
             <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
-            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: "
-                . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (\""
+            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: $num Child(ren) together as follows: ";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+
+    function gen_children_4_00_individual(int $childNum, string $letter) {
+        if ($childNum == 1) {
+            $childrenInfo = "Child A (\""
                 . $this->responses["child1Initials"] . "\") born in ("
-                . $this->responses["child1BirthYears"] . "), Child B (\""
-                . $this->responses["child2Initials"] . "\") born in ("
-                . $this->responses["child2BirthYears"] . ") collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+                . $this->responses["child1Birthday"] . ")";
+        } else {
+            $childrenInfo = ", Child $letter (\""
+                . $this->responses["child" . $childNum . "Initials"] . "\") born in ("
+                . $this->responses["child" . $childNum . "Birthday"] . ")";
+        }
         echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
+    }
+    function gen_children_4_00_last() {
+        $endSentence = " collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
+        echo $endSentence;
+        $this->fileContentString .= $endSentence;
     }
 
     /** Section 4: Physical Custody and Timesharing. */

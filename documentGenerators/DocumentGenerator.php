@@ -25,8 +25,9 @@ abstract class documentGenerator
 
 
     // Section 2: Children
-    public abstract function gen_children_4_00();
-
+    public abstract function gen_children_4_00(int $num);
+    public abstract function gen_children_4_00_individual(int $childNum, string $letter);
+    public abstract function gen_children_4_00_last();
 	// Section 3: Legal Custody 
 	public abstract function gen_legal_custody_5_00();
 	public abstract function gen_legal_custody_5_01();
@@ -203,7 +204,33 @@ abstract class documentGenerator
 		}
 
         /** Section 2: Children. */
-        $this->gen_children_4_00();
+        $childNum = 1;
+        for ($i  = 2; $i <= 6; $i++) {
+            if (isset($_SESSION['responses']['child' . $i . 'Initials']) && isset($_SESSION['responses']['child' . $i . 'Birthday'])) {
+                $childNum++;
+            }
+        }
+        $this->gen_children_4_00($childNum);
+        $this->gen_children_4_00_individual(1, "A"); //included by default
+        //cannot put into a for loop since letters will be different:
+        if (($_SESSION['responses']['child2Initials'] != "") && ($_SESSION['responses']['child2Birthday'] != "")) {
+            $this->gen_children_4_00_individual(2, "B");
+        }
+        if (($_SESSION['responses']['child3Initials'] != "") && ($_SESSION['responses']['child3Birthday'] != "")) {
+            $this->gen_children_4_00_individual(3, "C");
+        }
+        if (($_SESSION['responses']['child4Initials'] != "") && ($_SESSION['responses']['child4Birthday'] != "")) {
+            $this->gen_children_4_00_individual(4, "D");
+        }
+        if (($_SESSION['responses']['child5Initials'] != "") && ($_SESSION['responses']['child5Birthday'] != "")) {
+            $this->gen_children_4_00_individual(5, "E");
+        }
+        if (($_SESSION['responses']['child6Initials'] != "") && ($_SESSION['responses']['child6Birthday'] != "")) {
+            $this->gen_children_4_00_individual(6, "F");
+        }
+
+        $this->gen_children_4_00_last();
+
 
 		/*** Section 3: Legal Custody ***/
 		// Legal Custody: page 0 (definition)
