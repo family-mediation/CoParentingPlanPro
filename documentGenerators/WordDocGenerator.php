@@ -248,7 +248,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='17' />
 		<w:r>
-			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then <span style='background:yellow'>Parent A</span> shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent A shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -280,7 +280,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='17' />
 		<w:r>
-			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then <span style='background:yellow'>Parent B</span> shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent B shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -315,7 +315,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='16' />
 		<w:r>
-			<w:t>.<span style='background:yellow'>Parent A</span> shall have sole legal custody of the Child(ren).</w:t>
+			<w:t>.Parent A shall have sole legal custody of the Child(ren).</w:t>
 		</w:r>
 	</w:p>
 	
@@ -343,7 +343,7 @@ class wordDocGenerator extends documentGenerator
 	</w:r>
 	<w:bookmarkEnd w:id='19' />
 	<w:r>
-		<w:t xml:space='preserve'>. Although <span style='background:yellow'>Parent A </span> is awarded sole legal custody, <span style='background:yellow'>Parent B </span> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
+		<w:t xml:space='preserve'>. Although Parent A  is awarded sole legal custody, Parent B  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
@@ -390,7 +390,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='16' />
 		<w:r>
-			<w:t>.<span style='background:yellow'>Parent B</span> shall have sole legal custody of the Child(ren).</w:t>
+			<w:t>.Parent B shall have sole legal custody of the Child(ren).</w:t>
 		</w:r>
 	</w:p>
 	
@@ -418,7 +418,7 @@ class wordDocGenerator extends documentGenerator
 	</w:r>
 	<w:bookmarkEnd w:id='19' />
 	<w:r>
-		<w:t xml:space='preserve'>. Although <span style='background:yellow'>Parent B </span> is awarded sole legal custody, <span style='background:yellow'>Parent A </span> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
+		<w:t xml:space='preserve'>. Although Parent B  is awarded sole legal custody, Parent A  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
@@ -468,14 +468,14 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='18' />
 		<w:r>
-			<w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then <span style='background:yellow'>" . $this->responses["parentABW"] . "</span> shall have tie-breaking authority to make </w:t>
+			<w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then " . $this->responses["parentABW"] . " shall have tie-breaking authority to make </w:t>
 		</w:r>
 		<w:r>
 			<w:rPr>
 				<w:color w:val='333333' />
 			</w:rPr>
-			<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with <span style='background:yellow'>" . $this->responses["parentABX"] . "</span> and the Child(ren) and <span style='background:yellow'>" . $this->responses["parentABY"] . "</span> 
-			shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with <span style='background:yellow'>" . $this->responses["parentABZ"] . "</span> and the child.</w:t>
+			<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with " . $this->responses["parentABX"] . " and the Child(ren) and " . $this->responses["parentABY"] . " 
+			shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with " . $this->responses["parentABZ"] . " and the child.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -1520,7 +1520,7 @@ class wordDocGenerator extends documentGenerator
               </w:r>
               <w:bookmarkEnd w:id='54'/>
               <w:r>
-                <w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</w:t>
+                <w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at ___ am/pm and ending at ___ am/pm.</w:t>
               </w:r>
             </w:p>";
         echo $alt;
@@ -1555,7 +1555,7 @@ class wordDocGenerator extends documentGenerator
               <w:bookmarkEnd w:id='55'/>
               <w:r>
                 <w:t>. Parent A shall have the Child(ren) for the first half and Parent B shall have the Child(ren) for the second half of this holiday/special day in even/odd years. Parent B shall have the Child(ren) for the first half and Parent A shall
-                  have the Child(ren) for the second half of this holiday/special day in even/odd years. A split holiday shall be defined as beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.
+                  have the Child(ren) for the second half of this holiday/special day in even/odd years. A split holiday shall be defined as beginning at ___ am/pm and ending at ___ am/pm.
                 </w:t>
               </w:r>
             </w:p>";
@@ -2654,7 +2654,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 		<w:r>
-			<w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren).  Conferences shall be on the first <span style='background:yellow'>" . $this->responses["insertmonthly"] . "</span></w:t>
+			<w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren).  Conferences shall be on the first " . $this->responses["insertmonthly"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart'/>
 		<w:r>
@@ -2697,7 +2697,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='74'/>
 		<w:r>
-			<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than <span sytle='background:yellow'>" . $this->responses["semidate1"] . "</span> [insert date] and <span sytle='background:yellow'>" . $this->responses["semidate2"] . "</span> [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+			<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than " . $this->responses["semidate1"] . " [insert date] and " . $this->responses["semidate2"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 		</w:r>
 	</w:p>";
 		echo $snippet;
@@ -2753,7 +2753,7 @@ class wordDocGenerator extends documentGenerator
 			</w:rPr>
 		</w:pPr>
 		<w:r>
-			<w:t>Parents shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annuldate"] . "</span> [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
+			<w:t>Parents shall meet and confer annually by no later than " . $this->responses["annuldate"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
 		</w:r>
 		<w:r>
 			<w:rPr>
@@ -2844,7 +2844,7 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:color w:val='333333'/>
 			</w:rPr>
-			<w:t>During the regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B and Parent B may call the child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
+			<w:t>During the regular parenting time schedule, Parent A may call the child between " . $this->responses["A9:00"] . " and " . $this->responses["A17:00"] . " when they are with Parent B and Parent B may call the child between " . $this->responses["B09:00"] . " and " . $this->responses["B17:00"] . " when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
 		</w:r>
 	</w:p>";
 		echo $snippet;
@@ -3084,7 +3084,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='82' />
 		<w:r>
-			<w:t xml:space='preserve'>Child support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB1"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB2"] . "</span> and calculated pursuant to the State child support guidelines worksheet. </w:t>
+			<w:t xml:space='preserve'>Child support shall be paid by " . $this->responses["parentAB1"] . " to " . $this->responses["parentAB2"] . " and calculated pursuant to the State child support guidelines worksheet. </w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3119,8 +3119,8 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='84' />
 		<w:r>
-			<w:t xml:space='preserve'>. Child Support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB3"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB4"] . "</span> by agreement of the Parents in the 
-			amount of <span style='background:yellow'>$" . $this->responses["mutual-1"] . "/per Child</span> per month for a total monthly child support amount of <span style='background:yellow'>$" . $this->responses["mutual-2"] . "</span>. Both Parents understand that child support
+			<w:t xml:space='preserve'>. Child Support shall be paid by " . $this->responses["parentAB3"] . " to " . $this->responses["parentAB4"] . " by agreement of the Parents in the 
+			amount of $" . $this->responses["mutual-1"] . "/per Child per month for a total monthly child support amount of $" . $this->responses["mutual-2"] . ". Both Parents understand that child support
 			is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
 		</w:r>
 		<w:proofErr w:type='spellStart' />
@@ -3359,7 +3359,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>S</w:t>
 		</w:r>
 		<w:r>
-			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB5"] . "</span> shall cover the Child(ren)’s health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</w:t>
+			<w:t>. " . $this->responses["parentAB5"] . " shall cover the Child(ren)’s health insurance premiums in the amount of $" . $this->responses["insurancePremium"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3436,7 +3436,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='91' />
 		<w:r>
-			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB6"] . "</span> shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</w:t>
+			<w:t>. " . $this->responses["parentAB6"] . " shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of $" . $this->responses["sole-1"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3477,8 +3477,8 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='92' />
 		<w:r>
-			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)’s uninsured 
-			co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span> per month.</w:t>
+			<w:t>. Parent A shall cover " . $this->responses["split-1"] . "% and Parent B shall cover " . $this->responses["split-2"] . "% of the Child(ren)’s uninsured 
+			co-pays for health-related expenses premiums in the amount of $" . $this->responses["split-3"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3519,7 +3519,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='93' />
 		<w:r>
-			<w:t xml:space='preserve'>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
+			<w:t xml:space='preserve'>. Each Parent shall cover up to $" . $this->responses["threshold1"] . " per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart' />
 		<w:r>
@@ -3527,7 +3527,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 		<w:r>
-			<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
+			<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds $" . $this->responses["threshold2"] . " per calendar year, then Parent A shall cover " . $this->responses["threshold3"] . "% and Parent B shall cover " . $this->responses["threshold4"] . "% of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3603,7 +3603,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='97' />
 		<w:r>
-			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
+			<w:t>. " . $this->responses["parentAB_EC"] . " shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3648,7 +3648,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='98' />
 		<w:r>
-			<w:t xml:space='preserve'> Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)’s extracurricular expenses.</w:t>
+			<w:t xml:space='preserve'> Parent A shall cover " . $this->responses["splitEC-1"] . "% and Parent B shall cover " . $this->responses["splitEC-2"] . "% of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3814,7 +3814,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='102' />
 		<w:r>
-			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)’s private school expenses.</w:t>
+			<w:t>. " . $this->responses["parentAB_Priv"] . " shall cover 100% of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -3855,7 +3855,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='103' />
 		<w:r>
-			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)’s private school expenses.</w:t>
+			<w:t>. Parent A shall cover " . $this->responses["splitPriv-1"] . "% and Parent B shall cover " . $this->responses["splitPriv-2"] . "% of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4062,7 +4062,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='108' />
 		<w:r>
-			<w:t xml:space='preserve'>.  <span style='background:yellow'>" . $this->responses["parentAB_High"] . "</span> shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
+			<w:t xml:space='preserve'>.  " . $this->responses["parentAB_High"] . " shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4103,7 +4103,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='109' />
 		<w:r>
-			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)’s post-high school education expenses.</w:t>
+			<w:t>. Parent A shall cover " . $this->responses["splitHigh-1"] . "% and Parent B shall cover " . $this->responses["splitHigh-2"] . "% of the Child(ren)’s post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4147,7 +4147,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='110' />
 		<w:r>
-			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then <span style='background:yellow'>" . $this->responses["parentAB_Sole529"] . "</span> shall 
+			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then " . $this->responses["parentAB_Sole529"] . " shall 
 			cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
@@ -4183,8 +4183,8 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='111' />
 		<w:r>
-			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then Parent A shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and 
-			Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the Child(ren)’s remaining post-high school education expenses.</w:t>
+			<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then Parent A shall cover " . $this->responses["split529-1"] . "% and 
+			Parent B shall cover " . $this->responses["split529-2"] . "% of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4225,9 +4225,9 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='112' />
 		<w:r>
-			<w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that Parent A shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a cap 
-			of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and Parent B shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up to a cap 
-			of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </w:t>
+			<w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that Parent A shall cover " . $this->responses["postCap-1"] . "% up to a cap 
+			of $" . $this->responses["postCapA"] . " amount per academic school year and Parent B shall cover " . $this->responses["postCap-2"] . "% up to a cap 
+			of $" . $this->responses["postCapB"] . " amount per academic school year. </w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4439,7 +4439,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>)</w:t>
 		</w:r>
 		<w:r>
-			<w:t xml:space='preserve'>. <span style='background:yellow'>" . $this->responses["parentAB_taxSole"] . "</span> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
+			<w:t xml:space='preserve'>. " . $this->responses["parentAB_taxSole"] . " shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4483,7 +4483,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>)</w:t>
 		</w:r>
 		<w:r>
-			<w:t>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATax"] . "</span></w:t>
+			<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATax"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart' />
 		<w:r>
@@ -4491,7 +4491,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 		<w:r>
-			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span></w:t>
+			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTax"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart' />
 		<w:r>
@@ -4537,7 +4537,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='119' />
 		<w:r>
-			<w:t>. Parent A shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span></w:t>
+			<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATaxAlt"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart' />
 		<w:r>
@@ -4545,7 +4545,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 		<w:r>
-			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span></w:t>
+			<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTaxAlt"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart' />
 		<w:r>
@@ -4674,7 +4674,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='122' />
 		<w:r>
-			<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</w:t>
+			<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within " . $this->responses["timeVal"] . " days.</w:t>
 		</w:r>
 	</w:p>";
         echo $snippet;
@@ -4894,7 +4894,7 @@ class wordDocGenerator extends documentGenerator
 		<w:bookmarkEnd w:id='127' />
 		<w:r>
 			<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually 
-			agreed upon parenting expense tool or application, or <span style='background:yellow'>$content</span>.
+			agreed upon parenting expense tool or application, or $content.
 			</w:t>
 		</w:r>
 		<w:r>
@@ -4954,7 +4954,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='128'/>
 		<w:r>
-			<w:t xml:space='preserve'>.  Parents agree to engage<span style='background:yellow'>" . $this->responses["therapistInput9.00"] . "</span> (name), or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
+			<w:t xml:space='preserve'>.  Parents agree to engage" . $this->responses["therapistInput9.00"] . " (name), or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
 		</w:r>
 		<w:r>
 			<w:lastRenderedPageBreak/>
@@ -4993,7 +4993,7 @@ class wordDocGenerator extends documentGenerator
 		</w:r>
 		<w:bookmarkEnd w:id='129'/>
 		<w:r>
-			<w:t>.  Parents agree to <span style='background:yellow'>" . $this->responses["therapistInput9.01"] . "</span> (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
+			<w:t>.  Parents agree to " . $this->responses["therapistInput9.01"] . " (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
 		</w:r>
 	</w:p>";
 		echo $snippet;
@@ -5214,7 +5214,7 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:color w:val='333333'/>
 			</w:rPr>
-			<w:t>Parent A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the Child(ren)'s progress.</w:t>
+			<w:t>Parent A/B will attend all parent-teacher meetings and will advise " . $this->responses["9.06"] . "/A of the Child(ren)'s progress.</w:t>
 		</w:r>
 	</w:p>";
 		echo $snippet;
@@ -5457,7 +5457,7 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:color w:val='333333'/>
 			</w:rPr>
-			<w:t xml:space='preserve'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span>/B will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and [insert any other relevant documents] at their home, and these documents will be made available to <span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span>/A as needed. Both Parents shall have copies of </w:t>
+			<w:t xml:space='preserve'>" . $this->responses["parentABdoc_Other"] . "/B will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and [insert any other relevant documents] at their home, and these documents will be made available to " . $this->responses["parentABdoc_Other2"] . "/A as needed. Both Parents shall have copies of </w:t>
 		</w:r>
 		<w:proofErr w:type='gramStart'/>
 		<w:r>
@@ -5559,7 +5559,7 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:color w:val='333333'/>
 			</w:rPr>
-			<w:t>Parent <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</w:t>
+			<w:t>Parent " . $this->responses["parentAB_Other3"] . " can apply for the passport for a Child without the consent of " . $this->responses["parentAB_Other4"] . "/A.</w:t>
 		</w:r>
 	</w:p>";
 		echo $snippet;
