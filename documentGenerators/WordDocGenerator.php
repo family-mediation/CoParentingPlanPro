@@ -41,51 +41,105 @@ class wordDocGenerator extends documentGenerator
 
     // Section 2: Children
     function gen_children_4_00() {
-        $childrenInfo = "
-        <w:p>
-        <w:r>
-                <w:rPr>
-                  <w:u w:val='single'/>
-                </w:rPr>
-                <w:t>CHILDREN:</w:t>
-              </w:r>
-            </w:p>
-            <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-              <w:pPr>
-                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
-                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
-                <w:jc w:val='both'/>
-              </w:pPr>
-              <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
-              <w:r w:rsidRPr='00D52A55'>
-                <w:rPr>
-                  <w:b/>
-                </w:rPr>
-                <w:t>4.00</w:t>
-              </w:r>
-              <w:r w:rsidRPr='00D52A55'>
-                <w:rPr>
-                  <w:b/>
-                </w:rPr>
-                <w:tab/>
-              </w:r>
-              <w:r>
-                <w:rPr>
-                  <w:u w:val='single'/>
-                </w:rPr>
-                <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-              </w:r>
-              <w:bookmarkEnd w:id='12'/>
-              <w:r>
-                <w:rPr>
-                  <w:u w:val='single'/>
-                </w:rPr>
-                <w:t>)</w:t>
-              </w:r>
-              <w:r>
-                <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
-                </w:t>
-              </w:r>";
+        // $childrenInfo = "
+        // <w:p>
+        // <w:r>
+        //         <w:rPr>
+        //           <w:u w:val='single'/>
+        //         </w:rPr>
+        //         <w:t>CHILDREN:</w:t>
+        //       </w:r>
+        //     </w:p>
+        //     <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+        //       <w:pPr>
+        //         <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+        //         <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+        //         <w:jc w:val='both'/>
+        //       </w:pPr>
+        //       <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
+        //       <w:r w:rsidRPr='00D52A55'>
+        //         <w:rPr>
+        //           <w:b/>
+        //         </w:rPr>
+        //         <w:t>4.00</w:t>
+        //       </w:r>
+        //       <w:r w:rsidRPr='00D52A55'>
+        //         <w:rPr>
+        //           <w:b/>
+        //         </w:rPr>
+        //         <w:tab/>
+        //       </w:r>
+        //       <w:r>
+        //         <w:rPr>
+        //           <w:u w:val='single'/>
+        //         </w:rPr>
+        //         <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
+        //       </w:r>
+        //       <w:bookmarkEnd w:id='12'/>
+        //       <w:r>
+        //         <w:rPr>
+        //           <w:u w:val='single'/>
+        //         </w:rPr>
+        //         <w:t>)</w:t>
+        //       </w:r>
+        //       <w:r>
+        //         <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
+        //         </w:t>
+        //       </w:r>";
+		$childrenInfo = "<w:p w14:paraId='11EA964A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='46' w:firstLine='0' />
+			<w:jc w:val='center' />
+			<w:rPr>
+				<w:b />
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>CHILDREN:</w:t>
+		</w:r>
+	</w:p>
+	
+	<w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+		<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		<w:ind w:left='0' w:right='36' w:firstLine='0' />
+		<w:jc w:val='both' />
+	</w:pPr>
+	<w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren' />
+	<w:r w:rsidRPr='00D52A55'>
+		<w:rPr>
+			<w:b />
+		</w:rPr>
+		<w:t>4.00</w:t>
+	</w:r>
+	<w:r w:rsidRPr='00D52A55'>
+		<w:rPr>
+			<w:b />
+		</w:rPr>
+		<w:tab />
+	</w:r>
+	<w:r>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
+	</w:r>
+	<w:bookmarkEnd w:id='12' />
+	<w:r>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>)</w:t>
+	</w:r>
+	<w:r>
+		<w:t>. The Parents have ____ Child(ren) together as follows: Child A (“____________”) born in ( ___ birth year), Child B (“____________”) born in (birth year), Child C (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child E (“____________”) born in ( ___ birth year) collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.</w:t>
+	</w:r>
+</w:p>";
         echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
     }
@@ -695,43 +749,89 @@ class wordDocGenerator extends documentGenerator
 
     //Section 4: Physical Custody and Timesharing
     function gen_physical_custody_timesharing_6_00() {
-        $header = "<w:r>
-                <w:rPr>
-                  <w:u w:val='single'/>
-                </w:rPr>
-                <w:t>PHYSICAL CUSTODY AND TIMESHARING:</w:t>
-              </w:r>
-            </w:p>
-            <w:p w14:paraId='5B68D0C5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-              <w:pPr>
-                <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
-                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
-                <w:jc w:val='both'/>
-              </w:pPr>
-              <w:bookmarkStart w:id='26' w:name='PhysicalCustodyGlobalPriority'/>
-              <w:r>
-                <w:rPr>
-                  <w:b/>
-                </w:rPr>
-                <w:lastRenderedPageBreak/>
-                <w:t>6.00</w:t>
-              </w:r>
-              <w:r>
-                <w:tab/>
-              </w:r>
-              <w:r>
-                <w:rPr>
-                  <w:u w:val='single'/>
-                </w:rPr>
-                <w:t>PHYSICAL CUSTODY AND TIMESHARING: GLOBAL PRIORITY</w:t>
-              </w:r>
-              <w:bookmarkEnd w:id='26'/>
-              <w:r>
-                <w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with
-                  the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
-                </w:t>
-              </w:r>
-            </w:p>";
+        // $header = "<w:r>
+        //         <w:rPr>
+        //           <w:u w:val='single'/>
+        //         </w:rPr>
+        //         <w:t>PHYSICAL CUSTODY AND TIMESHARING:</w:t>
+        //       </w:r>
+        //     </w:p>
+        //     <w:p w14:paraId='5B68D0C5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+        //       <w:pPr>
+        //         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+        //         <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+        //         <w:jc w:val='both'/>
+        //       </w:pPr>
+        //       <w:bookmarkStart w:id='26' w:name='PhysicalCustodyGlobalPriority'/>
+        //       <w:r>
+        //         <w:rPr>
+        //           <w:b/>
+        //         </w:rPr>
+        //         <w:lastRenderedPageBreak/>
+        //         <w:t>6.00</w:t>
+        //       </w:r>
+        //       <w:r>
+        //         <w:tab/>
+        //       </w:r>
+        //       <w:r>
+        //         <w:rPr>
+        //           <w:u w:val='single'/>
+        //         </w:rPr>
+        //         <w:t>PHYSICAL CUSTODY AND TIMESHARING: GLOBAL PRIORITY</w:t>
+        //       </w:r>
+        //       <w:bookmarkEnd w:id='26'/>
+        //       <w:r>
+        //         <w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with
+        //           the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
+        //         </w:t>
+        //       </w:r>
+        //     </w:p>";
+		$header = "<w:p w14:paraId='4A8E97F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='center' />
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>PHYSICAL CUSTODY AND TIMESHARING:</w:t>
+		</w:r>
+	</w:p>
+	
+	<w:p w14:paraId='5B68D0C5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+		<w:ind w:left='0' w:right='36' w:firstLine='0' />
+		<w:jc w:val='both' />
+	</w:pPr>
+	<w:bookmarkStart w:id='26' w:name='PhysicalCustodyGlobalPriority' />
+	<w:r>
+		<w:rPr>
+			<w:b />
+		</w:rPr>
+		<w:lastRenderedPageBreak />
+		<w:t>6.00</w:t>
+	</w:r>
+	<w:r>
+		<w:tab />
+	</w:r>
+	<w:r>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>PHYSICAL CUSTODY AND TIMESHARING: GLOBAL PRIORITY</w:t>
+	</w:r>
+	<w:bookmarkEnd w:id='26' />
+	<w:r>
+		<w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with 
+		the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.</w:t>
+	</w:r>
+</w:p>";
         echo $header;
         $this->fileContentString .= $header;
     }
