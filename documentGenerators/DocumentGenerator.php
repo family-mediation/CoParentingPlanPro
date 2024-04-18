@@ -444,38 +444,24 @@ abstract class documentGenerator
 
 		//Optional communication page2
 		//Communication Between Co-Parents:
-		if (isset($_SESSION['reponses']['commbetweenCP'])) {
-		  foreach($_SESSION['reponses']['commbetweenCP']as $x) {
-			switch ($x) {
+		if (isset($_SESSION['responses']['commbetweenCP'])) {
+			switch ($_SESSION['responses']['commbetweenCP']) {
 				case '7.04':
-					$this->gen_communication_7_04();
-					break;
-				case 'insertmonthly':
 					$this->gen_communication_7_04();
 					break;
 				case '7.05':
 					$this->gen_communication_7_05();
 					break;
-				case 'semidate1':
-					$this->gen_communication_7_05();
-					break;
-				case 'semidate2':
-					$this->gen_communication_7_05();
-					break;
 				case '7.06':
-					$this->gen_communication_7_06();
-					break;
-				case 'annualdate':
 					$this->gen_communication_7_06a();
 					break;
 			}
-		  }
-	    }
+		}
 
+		
 		//Communication Between Child(ren) and Non-Custodial Parent:
-		if (isset($_SESSION['reponses']['betweenchildparent'])) {
-		  foreach($_SESSION['reponses']['betweenchildparent'] as $x) {
-			switch ($x) {
+		if (isset($_SESSION['responses']['betweenchildparent'])) {
+			switch ($_SESSION['responses']['betweenchildparent']) {
 				case '7.07':
 					$this->gen_communication_7_07();
 					break;
@@ -492,13 +478,11 @@ abstract class documentGenerator
 					$this->gen_communication_7_08();
 					break;
 			}
-		  }	
 		}
 
 		//Other Communication:
 		if (isset($_SESSION['reponses']['otherComm'])) {
-		  foreach($_SESSION['reponses']['otherComm'] as $x) {
-			switch ($x) {
+		  switch($_SESSION['reponses']['otherComm']) {
 				case '7.09':
 					$this->gen_communication_7_09();
 					break;
@@ -508,7 +492,6 @@ abstract class documentGenerator
 				case '7.11':
 					$this->gen_communication_7_11();
 					break;
-			}
 		  }
 		}
 
@@ -699,10 +682,21 @@ abstract class documentGenerator
 			}
 		}
 
-		$this->gen_other_9_02();
-		$this->gen_other_9_03();
-		$this->gen_other_9_04();
-		$this->gen_other_9_05();
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.02") {
+			$this->gen_other_9_02();
+		}
+		
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.03") {
+			$this->gen_other_9_03();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.04") {
+			$this->gen_other_9_04();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.05") {
+			$this->gen_other_9_05();
+		}
 
 		if (isset($_SESSION['responses']['other'])) {
 			switch ($_SESSION['responses']['other']) {
@@ -712,10 +706,22 @@ abstract class documentGenerator
 			}
 		}
 
-		$this->gen_other_9_07();
-		$this->gen_other_9_08();
-		$this->gen_other_9_09();
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.07") {
+			$this->gen_other_9_07();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.08") {
+			$this->gen_other_9_08();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.09") {
+			$this->gen_other_9_09();
+		}
+
 		$this->gen_other_9_10();
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.10") {
+			$this->gen_other_9_10();
+		}
 
 		if (isset($_SESSION['responses']['other'])) {
 			switch ($_SESSION['responses']['other']) {
@@ -728,7 +734,9 @@ abstract class documentGenerator
 			}
 		}
 
-		$this->gen_other_9_12();
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.12") {
+			$this->gen_other_9_12();
+		}
 
 		if (isset($_SESSION['responses']['other'])) {
 			switch ($_SESSION['responses']['other']) {
@@ -741,9 +749,17 @@ abstract class documentGenerator
 			}
 		}
 
-		$this->gen_other_9_14();
-		$this->gen_other_9_15();
-		$this->gen_other_9_16();
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.14") {
+			$this->gen_other_9_14();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.15") {
+			$this->gen_other_9_15();
+		}
+
+		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.16") {
+			$this->gen_other_9_16();
+		}
 
         // Legal
         $this->gen_legal_10_00();
