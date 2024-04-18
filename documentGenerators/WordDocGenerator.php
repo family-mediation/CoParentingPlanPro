@@ -24,8 +24,8 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {
-        $childrenInfo = "<w:r>
+    function gen_children_4_00(int $num) {
+        $header = "<w:r>
                 <w:rPr>
                   <w:u w:val='single'/>
                 </w:rPr>
@@ -65,11 +65,27 @@ class wordDocGenerator extends documentGenerator
                 <w:t>)</w:t>
               </w:r>
               <w:r>
-                <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
+                <w:t>. The Parents have $num Child(ren) together as follows: ";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+
+    function gen_children_4_00_individual(int $childNum, string $letter) {
+        if ($childNum == 1) {
+            $childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . ")";
+        } else {
+            $childrenInfo = ", Child $letter (“"
+                . $this->responses["child" . $childNum . "BirthYears"] . "”) born in ("
+                . $this->responses["child" . $childNum . "BirthYears"] . ")";
+        }
+        echo $childrenInfo;
+    }
+    function gen_children_4_00_last() {
+        $endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
                 </w:t>
               </w:r>";
-        echo $childrenInfo;
-        $this->fileContentString .= $childrenInfo;
+        echo $endSentence;
+        $this->fileContentString .= $endSentence;
     }
 
 

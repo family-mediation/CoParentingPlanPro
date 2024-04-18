@@ -284,21 +284,118 @@
                 <td><input class="form-control" type="radio" name="nye" ></td>
               </tr>
               <tr>
-                <td>Parent A's Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
+                <td><?php echo $_SESSION['responses']['partyAFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
               </tr>
               <tr>
-                <td>Parent B's Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
+                <td><?php echo $_SESSION['responses']['partyBFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
               </tr>
               <tr>
-                <td>Children's Birthday(s) (<?php echo $_SESSION['responses']['childBirthYears']?>)</td>
+                <td><?php echo $_SESSION['responses']['child1Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child1Birthday']?>)</td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
+              </tr>
+              <tr id="child2" hidden>
+                <td><?php echo $_SESSION['responses']['child2Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child2Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child2" ></td>
+                <td><input class="form-control" type="radio" name="child2" ></td>
+              </tr>
+              <tr id="child3" hidden>
+                <td><?php echo $_SESSION['responses']['child3Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child3Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child3" ></td>
+                <td><input class="form-control" type="radio" name="child3" ></td>
+              </tr>
+              <tr id="child4" hidden>
+                <td><?php echo $_SESSION['responses']['child4Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child4Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child4" ></td>
+                <td><input class="form-control" type="radio" name="child4" ></td>
+              </tr>
+              <tr id="child5" hidden>
+                <td><?php echo $_SESSION['responses']['child5Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child5Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child5" ></td>
+                <td><input class="form-control" type="radio" name="child5" ></td>
+              </tr>
+              <tr id="child6" hidden>
+                <td><?php echo $_SESSION['responses']['child6Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child6Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child6" ></td>
+                <td><input class="form-control" type="radio" name="child6" ></td>
               </tr>
             </table>
+
+            <?php
+            if ($_SESSION['responses']['child2Initials'] != "") {
+                $existence2 = "true";
+            } else {
+                $existence2 = "false";
+            }?>
+            <script>
+              const child2Existence = <?php echo $existence2 ?>;
+              if (child2Existence === true) {
+                let child2 = document.getElementById("child2");
+                child2.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child3Initials'] !== "") {
+                $existence3 = "true";
+            } else {
+                $existence3 = "false";
+            }?>
+            <script>
+              const child3Existence = <?php echo $existence3 ?>;
+              if (child3Existence === true) {
+                let child3 = document.getElementById("child3");
+                child3.removeAttribute("hidden");
+              }
+            </script>
+
+              <?php
+              if ($_SESSION['responses']['child4Initials'] != "") {
+                  $existence4 = "true";
+              } else {
+                  $existence4 = "false";
+              }?>
+            <script>
+              const child4Existence = <?php echo $existence4 ?>;
+              if (child4Existence === true) {
+                let child4 = document.getElementById("child4");
+                child4.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child5Initials'] !== "") {
+                $existence5 = "true";
+            } else {
+                $existence5 = "false";
+            }?>
+            <script>
+              const child5Existence = <?php echo $existence5 ?>;
+              if (child5Existence === true) {
+                let child5 = document.getElementById("child5");
+                child5.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child6Initials'] !== "") {
+                $existence6 = "true";
+            } else {
+                $existence6 = "false";
+            }?>
+            <script>
+              const child6Existence = <?php echo $existence6 ?>;
+              if (child6Existence === true) {
+                let child6 = document.getElementById("child6");
+                child6.removeAttribute("hidden");
+              }
+            </script>
+
+
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
