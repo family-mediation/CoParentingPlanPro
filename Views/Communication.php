@@ -68,7 +68,7 @@
 
               <div>
               <input type="checkbox" name="commbetweenCP[]" id="7.05" value="7.05" onclick="showParentOptions2()" />
-              <lable for="7.05">Semi Annual Conference</lable>
+              <label for="7.05">Semi Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="semi" style="display: none;">
@@ -78,7 +78,7 @@
               
               <div>
               <input type="checkbox" name="commbetweenCP[]" id="7.06" value="7.06" onclick="showParentOptions3()" />
-              <lable for="7.06">Annual Conference</lable>
+              <label for="7.06">Annual Conference</lable>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">

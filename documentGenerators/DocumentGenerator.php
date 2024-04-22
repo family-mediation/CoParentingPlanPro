@@ -419,8 +419,8 @@ abstract class documentGenerator
 
 		//Optional communication page2
 		//Communication Between Co-Parents:
-		if (isset($_SESSION['reponses']['commbetweenCP'])) {
-		  foreach($_SESSION['reponses']['commbetweenCP']as $x) {
+		if (isset($_SESSION['responses']['commbetweenCP'])) {
+		  foreach($_SESSION['responses']['commbetweenCP']as $x) {
 			switch ($x) {
 				case '7.04':
 					$this->gen_communication_7_04();
@@ -448,8 +448,8 @@ abstract class documentGenerator
 	    }
 
 		//Communication Between Child(ren) and Non-Custodial Parent:
-		if (isset($_SESSION['reponses']['betweenchildparent'])) {
-		  foreach($_SESSION['reponses']['betweenchildparent'] as $x) {
+		if (isset($_SESSION['responses']['betweenchildparent'])) {
+		  foreach($_SESSION['responses']['betweenchildparent'] as $x) {
 			switch ($x) {
 				case '7.07':
 					$this->gen_communication_7_07();
@@ -471,8 +471,8 @@ abstract class documentGenerator
 		}
 
 		//Other Communication:
-		if (isset($_SESSION['reponses']['otherComm'])) {
-		  foreach($_SESSION['reponses']['otherComm'] as $x) {
+		if (isset($_SESSION['responses']['otherComm'])) {
+		  foreach($_SESSION['responses']['otherComm'] as $x) {
 			switch ($x) {
 				case '7.09':
 					$this->gen_communication_7_09();
