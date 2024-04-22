@@ -1720,8 +1720,8 @@ class HtmlGenerator extends documentGenerator
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=LegalCustodyAccesstoInformation><b>5.05</b>&nbsp; <u>LEGAL CUSTODY: ACCESS TO
-        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyAFirst"] . "</span> is
-        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " </span> shall have free and unrestricted access
+        INFORMATION FOR PARENT WITHOUT LEGAL CUSTODY</u></a>.&nbsp; Although <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . "</span> is
+        awarded sole legal custody, <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " </span> shall have free and unrestricted access
         to all information pertaining to the Child(ren).&nbsp; The Parent who does not have
         legal custody may independently contact any provider serving the Child(ren)
         including education, health-related, extracurricular, etc. and access any and
