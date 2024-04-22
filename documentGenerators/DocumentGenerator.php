@@ -425,6 +425,7 @@ abstract class documentGenerator
             $this->gen_physical_custody_timesharing_6_14();
         }
 
+
 		/***Communication (supposed to be section 5, but 7 according to index of plan) ***/
 		//Communication: explanation page 0 
 		$this->gen_communication_7();
@@ -445,7 +446,8 @@ abstract class documentGenerator
 		//Optional communication page2
 		//Communication Between Co-Parents:
 		if (isset($_SESSION['responses']['commbetweenCP'])) {
-			switch ($_SESSION['responses']['commbetweenCP']) {
+		  foreach($_SESSION['responses']['commbetweenCP']as $x) {
+			switch ($x) {
 				case '7.04':
 					$this->gen_communication_7_04();
 					break;
@@ -453,36 +455,31 @@ abstract class documentGenerator
 					$this->gen_communication_7_05();
 					break;
 				case '7.06':
+					$this->gen_communication_7_06();
 					$this->gen_communication_7_06a();
 					break;
 			}
-		}
+		  }
+	    }
 
-		
 		//Communication Between Child(ren) and Non-Custodial Parent:
 		if (isset($_SESSION['responses']['betweenchildparent'])) {
-			switch ($_SESSION['responses']['betweenchildparent']) {
+		  foreach($_SESSION['responses']['betweenchildparent'] as $x) {
+			switch ($x) {
 				case '7.07':
 					$this->gen_communication_7_07();
 					break;
-				case 'A9:00':
-					$this->gen_communication_7_08();
-					break;
-				case 'A17:00':
-					$this->gen_communication_7_08();
-					break;
-				case 'B9:00':
-					$this->gen_communication_7_08();
-					break;
-				case 'B17:00':
+				case '7.08':
 					$this->gen_communication_7_08();
 					break;
 			}
+		  }	
 		}
 
 		//Other Communication:
-		if (isset($_SESSION['reponses']['otherComm'])) {
-		  switch($_SESSION['reponses']['otherComm']) {
+		if (isset($_SESSION['responses']['otherComm'])) {
+		  foreach($_SESSION['responses']['otherComm'] as $x) {
+			switch ($x) {
 				case '7.09':
 					$this->gen_communication_7_09();
 					break;
@@ -492,6 +489,7 @@ abstract class documentGenerator
 				case '7.11':
 					$this->gen_communication_7_11();
 					break;
+			}
 		  }
 		}
 

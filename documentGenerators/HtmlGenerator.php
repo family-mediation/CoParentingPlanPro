@@ -1531,7 +1531,7 @@ class HtmlGenerator extends documentGenerator
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parents
-         shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annuldate"] . "</span> every
+         shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annualdate"] . "</span> every
          year.&nbsp; Meetings may be via in-person, video conference or telephone calls, as
          mutually agreed by the Parents.&nbsp; This requirement for annual conferences
          between Parents shall end upon each child's eighteenth (18th) birthday, or as
@@ -1573,7 +1573,7 @@ class HtmlGenerator extends documentGenerator
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=CommunicationExchangeofContactInfo><b>7.08 </b> <u>COMMUNICATION:&nbsp;
+         name=CommunicationExchangeofContactInfo><b>7.09 </b> <u>COMMUNICATION:&nbsp;
          EXCHANGE OF CONTACT INFORMATION</u></a>.&nbsp; <span style='color:#333333'>Parents
          shall provide to the other Parent with updated telephone number(s), email
          address, and home address. Parents agree that if this contact information
@@ -1588,7 +1588,7 @@ class HtmlGenerator extends documentGenerator
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=CommunicationSchedulingExtracurricular><b>7.09&nbsp; </b><u>COMMUNICATION:
+         name=CommunicationSchedulingExtracurricular><b>7.10&nbsp; </b><u>COMMUNICATION:
          SCHEDULING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u></a>.&nbsp; Both Parents
          understand that reasonable extracurricular activities are healthy and
          appropriate outlets for our Child(ren).&nbsp; Both Parents understand that selecting
@@ -1606,7 +1606,7 @@ class HtmlGenerator extends documentGenerator
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=CommunicationSelectingExtracurricular><b>7.10</b>&nbsp; <u>COMMUNICATION:
+         name=CommunicationSelectingExtracurricular><b>7.11</b>&nbsp; <u>COMMUNICATION:
          SELECTING EXTRACURRICULAR ACTIVITIES FOR THE CHILD(REN)</u>.&nbsp; </a><span
          style='color:#333333'>Each Parent may select and pay for one extra-curricular
          activity that occurs no more than once a week for each Child, and the other
