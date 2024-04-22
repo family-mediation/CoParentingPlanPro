@@ -206,7 +206,8 @@ abstract class documentGenerator
         /** Section 2: Children. */
         $childNum = 1;
         for ($i  = 2; $i <= 6; $i++) {
-            if (isset($_SESSION['responses']['child' . $i . 'Initials']) && isset($_SESSION['responses']['child' . $i . 'Birthday'])) {
+            if (($_SESSION['responses']['child' . $i . 'Initials'] != "") && ($_SESSION['responses']['child' . $i . 'Birthday'] != "")) {
+                console_log($_SESSION['responses']['child' . $i . 'Initials']);
                 $childNum++;
             }
         }
