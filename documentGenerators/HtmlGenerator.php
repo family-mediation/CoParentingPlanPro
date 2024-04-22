@@ -12,7 +12,7 @@ require_once("DocumentGenerator.php");
 class HtmlGenerator extends documentGenerator
 {
     function genHeader()
-    {
+    {   // everything in $headerString are mandatory and some are part of the table of contents. removed guiding principles
         $headerString = "
 	    <html>
          <meta http-equiv=Content-Type content=\"text/html; charset=windows-1252\">
@@ -45,23 +45,6 @@ class HtmlGenerator extends documentGenerator
          Not Intend to Seek Family Court Approval</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         name=GuidingPrinciplesResponsibilitiestoChild></a><a
-         href=\"#GuidingPrinciplesResponsibilitiestoChild\">2.00&nbsp;&nbsp; Guiding Principles.
-         Responsibilities to Our Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#GuidingPrinciplesResponsibilitiestoCoPar\">2.01&nbsp;&nbsp; Guiding Principles.&nbsp;
-         Responsibilities to Our Co-Parent</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#GuidingPrinciplesNewIntimatePartners\">2.02&nbsp;&nbsp; Guiding Principles.&nbsp;
-         Statement About New Intimate Partners</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#GuidingPrinciplesProtectionFromDisputes\">2.03&nbsp;&nbsp; Guiding Principles.&nbsp;
-         Protection from Parental Disputes</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PartiesInformationon" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
          on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span></a></p>
 
@@ -74,47 +57,9 @@ class HtmlGenerator extends documentGenerator
          Child(ren)</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyDefinition\">5.00&nbsp;&nbsp; Legal Custody: Definition</a> </p>
+         href=\"#LegalCustodyDefinition\">5.00&nbsp;&nbsp; Legal Custody: Definition</a> </p>";
 
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyJoint\">5.01&nbsp;&nbsp; Legal Custody: Joint to Both Parents</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodySole\">5.02&nbsp;&nbsp; Legal Custody: Sole to One Parent</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyParentsConsultOneAuthority\">5.03&nbsp;&nbsp; Legal Custody: Parents
-         Must Consult but One Parent has Tie-Breaking Authority</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyParentsConsultDivofAuthority\">5.04&nbsp;&nbsp; Legal Custody: Parents
-         Must Consult but there is a Division of Authority</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyAccesstoInformation\">5.05&nbsp;&nbsp; Legal Custody: Access to
-         Information for Parent Without Legal Custody</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyEmergencyContact\">5.06&nbsp;&nbsp; Legal Custody: Emergency Contacts
-         for the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyExpertAdvice\">5.07&nbsp;&nbsp; Legal Custody: Expert Advice When
-         Making Legal Custody Decisions</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyDaytoDay\">5.08&nbsp;&nbsp; Legal Custody: Day-to-Day Decisions</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyEmergencyDecisions\">5.09&nbsp;&nbsp; Legal Custody: Emergency
-         Decisions</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyHealthEmergencyDeathofParent\">5.10&nbsp;&nbsp; Legal Custody: Health
-         Emergency or Death of the Other Parent</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalCustodyParallelParenting\">5.11&nbsp;&nbsp; Legal Custody: Parallel Parenting</a></p>
+         $header1String = "
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PhysicalCustodyGlobalPriority\">6.00&nbsp;&nbsp; Physical Custody and Timesharing:
@@ -779,7 +724,8 @@ class HtmlGenerator extends documentGenerator
           " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
         echo $headerString;
-        $this->fileContentString .= $headerString;
+        $this->tableOfContentsString .= $headerString;
+        //$this->fileContentString .= $headerString;
     }
     function genFooter()
     {
@@ -1712,6 +1658,12 @@ class HtmlGenerator extends documentGenerator
         significant decisions together and encourage input from Child(ren). If Parents
         cannot come to an agreement about a major decision, they shall use the dispute
         resolution process set out in this document.</span></p>";
+        
+        // table of content snippet 
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyJoint\">5.01&nbsp;&nbsp; Legal Custody: Joint to Both Parents</a> </p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1727,6 +1679,12 @@ class HtmlGenerator extends documentGenerator
         Child(ren) after consulting with the other Parent and the Child(ren), then
         <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyParentsConsultOneAuthority\">5.03&nbsp;&nbsp; Legal Custody: Parents
+        Must Consult but One Parent has Tie-Breaking Authority</a></p>";
+        $this -> tableOfContentsString .=$toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1742,6 +1700,12 @@ class HtmlGenerator extends documentGenerator
         Child(ren) after consulting with the other Parent and the Child(ren), then
         <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</span> shall have tie-breaking authority to make the legal custody decision
         in the event of an impasse.</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyParentsConsultOneAuthority\">5.03&nbsp;&nbsp; Legal Custody: Parents
+        Must Consult but One Parent has Tie-Breaking Authority</a></p>";
+        $this -> tableOfContentsString .=$toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1764,6 +1728,15 @@ class HtmlGenerator extends documentGenerator
         all records or information.&nbsp; The Parent with legal custody shall have an
         affirmative duty to inform the other Parent of any new providers working with
         the Child(ren).</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodySole\">5.02&nbsp;&nbsp; Legal Custody: Sole to One Parent</a></p>
+        
+        <p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyAccesstoInformation\">5.05&nbsp;&nbsp; Legal Custody: Access to
+        Information for Parent Without Legal Custody</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1786,6 +1759,15 @@ class HtmlGenerator extends documentGenerator
         all records or information.&nbsp; The Parent with legal custody shall have an
         affirmative duty to inform the other Parent of any new providers working with
         the Child(ren).</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodySole\">5.02&nbsp;&nbsp; Legal Custody: Sole to One Parent</a></p>
+        
+        <p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyAccesstoInformation\">5.05&nbsp;&nbsp; Legal Custody: Access to
+        Information for Parent Without Legal Custody</a></p>";
+        $this->tableOfContentsString .= $toc;
+        
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1804,6 +1786,12 @@ class HtmlGenerator extends documentGenerator
         shall have tie-breaking authority to make major decisions about the Child(ren)'s
         health care, language, and spirituality, after consulting with  <span style='background:yellow'>" . $this->responses["parentABZ"] . "</span> and the
         child.</span></p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyParentsConsultDivofAuthority\">5.04&nbsp;&nbsp; Legal Custody: Parents
+        Must Consult but there is a Division of Authority</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1817,6 +1805,12 @@ class HtmlGenerator extends documentGenerator
         the initial emergency contacts for the Child(ren) for any school,
         extracurricular activity or other event where an emergency contact is
         requested.</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyEmergencyContact\">5.06&nbsp;&nbsp; Legal Custody: Emergency Contacts
+        for the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1829,6 +1823,12 @@ class HtmlGenerator extends documentGenerator
         MAKING LEGAL CUSTODY DECISIONS</u>. </a>&nbsp;Parents shall seek the advice and be
         guided by subject matter experts when making legal custody decisions on behalf
         of the Child(ren). </p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyExpertAdvice\">5.07&nbsp;&nbsp; Legal Custody: Expert Advice When
+        Making Legal Custody Decisions</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1842,6 +1842,11 @@ class HtmlGenerator extends documentGenerator
         living with or in the care of a Parent, that Parent can make day-to-day
         decisions about our child, for example about, doing homework, meals, visiting
         with their friends, use of computer, etc.</span></p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyDaytoDay\">5.08&nbsp;&nbsp; Legal Custody: Day-to-Day Decisions</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1856,6 +1861,12 @@ class HtmlGenerator extends documentGenerator
         treatment decision, on the advice of medical personnel. If a Parent makes an
         emergency health decision for a Child, the Parent who has made the decision must
         immediately contact the other Parent.</span></p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyEmergencyDecisions\">5.09&nbsp;&nbsp; Legal Custody: Emergency
+        Decisions</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1872,6 +1883,12 @@ class HtmlGenerator extends documentGenerator
         the event of the death of one Parent, the other Parent shall care for the Child(ren),
         but the surviving Parent shall ensure that the Child(ren) has/have continued
         relations with the relatives of the deceased Parent.</span></p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyHealthEmergencyDeathofParent\">5.10&nbsp;&nbsp; Legal Custody: Health
+        Emergency or Death of the Other Parent</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
     }
@@ -1884,6 +1901,11 @@ class HtmlGenerator extends documentGenerator
         style='color:#333333'>&nbsp; </span><u>LEGAL CUSTODY: PARALLEL PARENTING</u>.&nbsp; <span
         style='color:#333333'>Parents shall disengage from one another and make
         decisions independently when the Child(ren) is in their care.</span></p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalCustodyParallelParenting\">5.11&nbsp;&nbsp; Legal Custody: Parallel Parenting</a></p>";
+        $this->tableOfContentsString .= $toc;
+        
         echo $snippet;
         $this->fileContentString .= $snippet;
     }  // end of legal custody
@@ -2767,6 +2789,7 @@ class HtmlGenerator extends documentGenerator
         //check to make sure we have a valid file resource.
         if($this->fileOutput != false)
         {
+            fwrite($this->fileOutput, $this->tableOfContentsString); // print table of contents first 
             fwrite($this->fileOutput, $this->fileContentString);
         }
         // Zip the folder and rename it to .docx
