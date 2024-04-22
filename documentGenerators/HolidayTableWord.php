@@ -1,6 +1,6 @@
 <?php
 class HolidayTableWord {
-    public function getHolidayTable(string $parentABirthday, string $parentBBirthday, string $childBirthday): string {
+    public function getHolidayTable(string $parentABirthday, string $parentBBirthday): string {
         return "<w:p w14:paraId='56C2C2E5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
       <w:pPr>
         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -493,8 +493,12 @@ class HolidayTableWord {
             </w:r>
           </w:p>
         </w:tc>
-      </w:tr>
-      <w:tr w:rsidR='00505307' w14:paraId='601CB9F9' w14:textId='77777777'>
+      </w:tr>";
+    }
+    
+    public function getChildren(string $childXInitials, string $childXBirthday): string
+    {
+        return "<w:tr w:rsidR='00505307' w14:paraId='601CB9F9' w14:textId='77777777'>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w='9350' w:type='dxa'/>
@@ -506,12 +510,15 @@ class HolidayTableWord {
               <w:jc w:val='both'/>
             </w:pPr>
             <w:r>
-              <w:t>Child(ren)’s Birthday(s) [$childBirthday]</w:t>
+              <w:t>$childXInitials ’s Birthday(s) [$childXBirthday]</w:t>
             </w:r>
           </w:p>
         </w:tc>
-      </w:tr>
-      <w:tr w:rsidR='00505307' w14:paraId='24CEA8D2' w14:textId='77777777'>
+      </w:tr>";
+    }
+
+    public function getEnd(): string {
+      return "<w:tr w:rsidR='00505307' w14:paraId='24CEA8D2' w14:textId='77777777'>
         <w:tc>
           <w:tcPr>
             <w:tcW w:w='9350' w:type='dxa'/>
