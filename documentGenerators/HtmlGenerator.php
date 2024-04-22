@@ -61,23 +61,6 @@ class HtmlGenerator extends documentGenerator
 
          $header1String = "
 
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyWinterBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Winter Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyWinterBreakSB\">6.02C (i) Split Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyWinterBreakAB\">6.02C (ii) Alternate Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyWinterBreakSBwithHoliday\">6.02C (iii) Split Break with
-         Holiday Time</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyWinterBreakContinueSched\">6.02C (iv) Continue Schedule
-         During the School Year</a></p>
-
          <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
          href=\"#PhysicalCustodySpringBreak\">6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Break</a></p>
 
@@ -1036,28 +1019,51 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyWinterBreak><b>6.02C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>WINTER BREAK</u></a>.&nbsp;
             The Parents shall share time with the Child(ren) during Winter Break as
             follows:</p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyWinterBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Winter Break</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "winter-split-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyWinterBreakSB\">6.02C (i) Split Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split = new WinterSchedules();
-                $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-alternate-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyWinterBreakAB\">6.02C (ii) Alternate Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $alternate = new WinterSchedules();
-                $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-split-holiday-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyWinterBreakSBwithHoliday\">6.02C (iii) Split Break with
+                Holiday Time</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split_holiday = new WinterSchedules();
-                $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
+                $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
                 echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-continue-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyWinterBreakContinueSched\">6.02C (iv) Continue Schedule
+                During the School Year</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $continue = new WinterSchedules();
                 $winter = $continue->get_continue();
                 echo $winter;
