@@ -62,41 +62,6 @@ class HtmlGenerator extends documentGenerator
          $header1String = "
 
          <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySpringBreak\">6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySpringBreakSB\">6.02D (i) Split Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySpringBreakAB\">6.02D (ii) Alternate Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySpringBreakContinueSched\">6.02D (iii) Continue Scheduling
-         During the School Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySummerBreak\">6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Summer Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySummerBreakSB\">6.02E (i) Split Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySummerBreakContSched\">6.02E (ii) Continue Schedule During
-         the School Year</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodySummerBreakContSchedUnint\">6.02E (iii) Continue Schedule
-         During the School Year with Option for Uninterrupted Time</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyHolidaysandSpecialDays\">6.03&nbsp;&nbsp; Physical Custody and
-         Timesharing: Holidays and Special Days</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyHolidaysAltYearly\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate
-         Yearly</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
          href=\"#PhysicalCustodyHolidaysSplitEveryYear\">6.03B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Every Year</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
@@ -1079,22 +1044,40 @@ class HtmlGenerator extends documentGenerator
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
             name=PhysicalCustodySpringBreak><b>6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPRING BREAK</u>.&nbsp; </a>The Parents shall share time with the Child(ren) during Spring Breaks as follows:&nbsp; </p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodySpringBreak\">6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Break</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "spring-split-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySpringBreakSB\">6.02D (i) Split Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split = new SpringSchedules();
-                $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-alternate-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySpringBreakAB\">6.02D (ii) Alternate Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $alternate = new SpringSchedules();
-                $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-continue-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySpringBreakContinueSched\">6.02D (iii) Continue Scheduling
+                During the School Year</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $continue = new SpringSchedules();
                 $spring = $continue->get_continue();
                 echo $spring;
@@ -1111,22 +1094,41 @@ class HtmlGenerator extends documentGenerator
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
             name=PhysicalCustodySummerBreak><b>6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SUMMER BREAK</u></a>.&nbsp; The
             Parents shall share time with the Child(ren) during Summer Break as follows:</p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodySummerBreak\">6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Summer Break</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "summer-split-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySummerBreakSB\">6.02E (i) Split Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split = new SummerSchedules();
-                $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-uninterrupted-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySummerBreakContSchedUnint\">6.02E (iii) Continue Schedule
+                During the School Year with Option for Uninterrupted Time</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $alternate = new SummerSchedules();
                 $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodySummerBreakContSched\">6.02E (ii) Continue Schedule During
+                the School Year</a> </p>";
+                $this->tableOfContentsString .= $toc;
+
                 $continue = new SummerSchedules();
                 $summer = $continue->get_continue();
                 echo $summer;
@@ -1139,6 +1141,11 @@ class HtmlGenerator extends documentGenerator
 
     // Holiday Table.
     function gen_physical_custody_timesharing_6_03() {
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyHolidaysandSpecialDays\">6.03&nbsp;&nbsp; Physical Custody and
+        Timesharing: Holidays and Special Days</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         $table = new HolidayTable();
         $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
         echo $holidayTable;
@@ -1146,6 +1153,11 @@ class HtmlGenerator extends documentGenerator
     }
     // Alternate Yearly.
     function gen_physical_custody_timesharing_6_03A() {
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyHolidaysAltYearly\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate
+        Yearly</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         $alt = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;"

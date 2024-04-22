@@ -183,26 +183,6 @@ abstract class documentGenerator
 		}
 		$this->genHeader();
 
-		//the logic for the tree goes Here its a work in progress hence the if false.
-		if (false) {
-			switch ($responses["legalCustody"]) {
-				case 'joint':
-					break;
-				case 'soleA':
-					break;
-				case 'soleB':
-					break;
-				case 'tieBreakA':
-					break;
-				case 'tieBreakB':
-					break;
-				case 'divisionA':
-					break;
-				case 'divisionB':
-					break;
-			}
-		}
-
         /** Section 2: Children. */
         $childNum = 1;
         for ($i  = 2; $i <= 6; $i++) {
