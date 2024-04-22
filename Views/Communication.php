@@ -63,27 +63,27 @@
 
               <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
-              <input type="text" name="commbetweenCP[]" id="insertmonthly"/> unless mutually agreed to otherwise.
+              <input type="text" name="insertmonthly" id="insertmonthly"/> unless mutually agreed to otherwise.
               </div>
 
               <div>
               <input type="checkbox" name="commbetweenCP[]" id="7.05" value="7.05" onclick="showParentOptions2()" />
-              <label for="7.05">Semi Annual Conference</lable>
+              <label for="7.05">Semi Annual Conference</label>
               </div>
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" name="commbetweenCP[]" id="semidate1" />(insert date) and <input type="text" name="commbetweenCP[]" id="semidate2" />(insert date) every year.
+              <input type="text" name="semidate1" id="semidate1" />(insert date) and <input type="text" name="semidate2" id="semidate2" />(insert date) every year.
               </div>
               
               <div>
               <input type="checkbox" name="commbetweenCP[]" id="7.06" value="7.06" onclick="showParentOptions3()" />
-              <label for="7.06">Annual Conference</lable>
+              <label for="7.06">Annual Conference</label>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" name="commbetweenCP[]" id="annualdate" /> every year.
+              <input type="text" name="annualdate" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
