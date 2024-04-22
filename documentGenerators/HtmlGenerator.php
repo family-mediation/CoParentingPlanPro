@@ -62,55 +62,6 @@ class HtmlGenerator extends documentGenerator
          $header1String = "
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyDuringSchoolYear\">6.01&nbsp;&nbsp; Physical Custody and
-         Timesharing: Timesharing During the School Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyEqual\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equal Timesharing
-         Schedules</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyOther\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other Timesharing
-         Schedules</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyDuringSchoolBreaks\">6.02&nbsp;&nbsp; Physical Custody and
-         Timesharing: Timesharing During the School Breaks</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyFallBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fall Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         name=\"_heading=h.hcavjzxvdgkz\"></a><a href=\"#PhysicalCustodyFallBreakSB\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A(i)
-         Split Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         name=\"_heading=h.ptfvl3aera8c\"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyFallBreakAB\">6.02A(ii) Alternate Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         name=\"_heading=h.q5n0t569stji\"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyFallBreakContinueSchedule\">6.02A(iii) Continue Schedule
-         During the School Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyThanksgiving\">6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thanksgiving Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyThanksgivingSB\">6.02B (i) Split Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyThanksgivingAB\">6.02B (ii) Alternate Break</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyThanksgivingTimeonDay\">6.02B (iii) Time on Thanksgiving
-         Day</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyThanksgivingContinueSched\">6.02B (iv) Continue Schedule
-         During the School Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PhysicalCustodyWinterBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Winter Break</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
@@ -514,8 +465,9 @@ class HtmlGenerator extends documentGenerator
          href=\"#LegalEnforcement\">10.01 Legal: Enforcement</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalVoluntaryExecution\">10.02 Legal: Voluntary Execution</a></p>
+         href=\"#LegalVoluntaryExecution\">10.02 Legal: Voluntary Execution</a></p>";
 
+         $header2String = "
          <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;</p>
 
          <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal;
@@ -720,8 +672,9 @@ class HtmlGenerator extends documentGenerator
           " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
         echo $headerString;
+        echo $header2String;
         $this->tableOfContentsString .= $headerString;
-        //$this->fileContentString .= $headerString;
+        $this->fileContentString .= $header2String;
     }
     function genFooter()
     {
@@ -824,6 +777,8 @@ class HtmlGenerator extends documentGenerator
         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
         href=\"#PhysicalCustodyDuringSchoolYear\">6.01&nbsp;&nbsp; Physical Custody and
         Timesharing: Timesharing During the School Year</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $header;
         $this->fileContentString .= $header;
     }
@@ -867,6 +822,12 @@ class HtmlGenerator extends documentGenerator
             border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
             style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Both
             Parents agree that the 50/50 schedule is best for their Child(ren).</p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyEqual\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equal Timesharing
+        Schedules</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
@@ -903,8 +864,13 @@ class HtmlGenerator extends documentGenerator
     function gen_physical_custody_timesharing_6_01B() {
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-            name=PhysicalCustodyOther>6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>OTHER TIMESHARING SCHEDULES</u>.</p>
-            ";
+            name=PhysicalCustodyOther>6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>OTHER TIMESHARING SCHEDULES</u>.</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyOther\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.01B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other Timesharing
+        Schedules</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
@@ -940,6 +906,12 @@ class HtmlGenerator extends documentGenerator
             school on the day school resumes.&nbsp; During their designated school break time
             with the Child(ren), either Parent may elect to travel with the Child(ren) per
             the Travel with the Child(ren) provision hereinbelow.</p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyDuringSchoolBreaks\">6.02&nbsp;&nbsp; Physical Custody and
+        Timesharing: Timesharing During the School Breaks</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -950,22 +922,43 @@ class HtmlGenerator extends documentGenerator
             margin-left:.5pt;text-align:justify;text-indent:35.5pt;line-height:150%'><a
             name=PhysicalCustodyFallBreak><b>6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </b><u>FALL BREAK</u>.&nbsp; </a>The
             Parents shall share time with the Child(ren) during Fall Breaks as follows:&nbsp; </p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyFallBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fall Break</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "fall-split-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+                name=\"_heading=h.hcavjzxvdgkz\"></a><a href=\"#PhysicalCustodyFallBreakSB\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A(i)
+                Split Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split = new FallSchedules();
-                $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-alternate-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+                name=\"_heading=h.ptfvl3aera8c\"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyFallBreakAB\">6.02A(ii) Alternate Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $alternate = new FallSchedules();
-                $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-continue-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+                name=\"_heading=h.q5n0t569stji\"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyFallBreakContinueSchedule\">6.02A(iii) Continue Schedule
+                During the School Year</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $continue = new FallSchedules();
                 $fall = $continue->get_continue();
                 echo $fall;
@@ -983,22 +976,39 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyThanksgiving><b>6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>THANKSGIVING BREAK</u></a>.&nbsp;
             The Parents shall share time with the Child(ren) during Thanksgiving Breaks as
             follows:&nbsp; </p>";
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodyThanksgiving\">6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thanksgiving Break</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "thanksgiving-split-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyThanksgivingSB\">6.02B (i) Split Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $split = new ThanksgivingSchedules();
-                $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-alternate-break":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyThanksgivingAB\">6.02B (ii) Alternate Break</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $alternate = new ThanksgivingSchedules();
-                $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+                $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
                 echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-continue-schedule":
+                $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                href=\"#PhysicalCustodyThanksgivingContinueSched\">6.02B (iv) Continue Schedule
+                During the School Year</a></p>";
+                $this->tableOfContentsString .= $toc;
+
                 $continue = new ThanksgivingSchedules();
                 $thanksgiving = $continue->get_continue();
                 echo $thanksgiving;
@@ -1009,6 +1019,10 @@ class HtmlGenerator extends documentGenerator
         }
     }
     function gen_physical_custody_timesharing_6_02BOptional() {
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodyThanksgivingTimeonDay\">6.02B (iii) Time on Thanksgiving Day</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         $time_break = new ThanksgivingSchedules();
         $thanksgiving = $time_break->get_time();
         echo $thanksgiving;
