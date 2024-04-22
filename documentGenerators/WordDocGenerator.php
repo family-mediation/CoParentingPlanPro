@@ -6049,9 +6049,13 @@ class wordDocGenerator extends documentGenerator
 		    $zipOutput->addGlob($folderLevel3ToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
 		}
 		if ($zipOutput->status != ZIPARCHIVE::ER_OK)
-            
-		$zipOutput->close();
-
+		{
+             exit("unable to create zip folder ".$zipFilePath . "download.zip");
+        }
+        else
+        {
+           		$zipOutput->close();
+        }
 		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
 	}
