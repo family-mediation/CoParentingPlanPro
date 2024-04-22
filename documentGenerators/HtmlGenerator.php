@@ -62,10 +62,6 @@ class HtmlGenerator extends documentGenerator
          $header1String = "
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyGlobalPriority\">6.00&nbsp;&nbsp; Physical Custody and Timesharing:
-         Global Priority</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#PhysicalCustodyDuringSchoolYear\">6.01&nbsp;&nbsp; Physical Custody and
          Timesharing: Timesharing During the School Year</a></p>
 
@@ -800,6 +796,12 @@ class HtmlGenerator extends documentGenerator
             Days; (2) Travel and Uninterrupted Time with the Child(ren); (3) Timesharing
             with the Child(ren) During School Breaks, and (4) Timesharing with the
             Child(ren) During the School Year.</p>";
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyGlobalPriority\">6.00&nbsp;&nbsp; Physical Custody and Timesharing:
+        Global Priority</a></p>";
+        $this->tableOfContentsString .= $toc;
+
         echo $header;
         $this->fileContentString .= $header;
     }
@@ -818,6 +820,10 @@ class HtmlGenerator extends documentGenerator
             Schedules may change over time by agreement of the Parents based on the
             Child(ren)'s needs.&nbsp; Below are suggested templates to be modified and based on each
             family's needs.</p>";
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyDuringSchoolYear\">6.01&nbsp;&nbsp; Physical Custody and
+        Timesharing: Timesharing During the School Year</a></p>";
         echo $header;
         $this->fileContentString .= $header;
     }
@@ -860,7 +866,7 @@ class HtmlGenerator extends documentGenerator
             margin-left:2.0in;text-align:justify;text-indent:-.25in;line-height:150%;
             border:none'><span style='font-family:\"Noto Sans Symbols\"'>&#9679;<span
             style='font:7.0pt \"Times New Roman\"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Both
-            Parents agree that best for their Child(ren).</p>";
+            Parents agree that the 50/50 schedule is best for their Child(ren).</p>";
         echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
