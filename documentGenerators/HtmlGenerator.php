@@ -1147,8 +1147,19 @@ class HtmlGenerator extends documentGenerator
         $this->tableOfContentsString .= $toc;
 
         $table = new HolidayTable();
-        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
+        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
+        for ($i = 2; $i <= 6; $i++) {
+            $initials = $this->responses['child' . $i . 'Initials'];
+            $birthday = $this->responses['child' . $i . 'Birthday'];
+            if ($initials != "" && $birthday != "") {
+                $childrenRows .= $table->getChildren($initials, $birthday);
+            }
+        }
+        $end = $table->getEnd();
         echo $holidayTable;
+        echo $childrenRows;
+        echo $end;
         $this->fileContentString .= $holidayTable;
     }
     // Alternate Yearly.
