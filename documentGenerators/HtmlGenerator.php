@@ -1119,7 +1119,7 @@ class HtmlGenerator extends documentGenerator
                 $this->tableOfContentsString .= $toc;
 
                 $alternate = new SummerSchedules();
-                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
+                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); 
                 echo $summer;
                 $this->fileContentString .= $summer;
                 break;

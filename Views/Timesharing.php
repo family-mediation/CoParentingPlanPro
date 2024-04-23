@@ -100,29 +100,27 @@
                       <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
                       Alternate Break Schedule
                     </label>
-
                   </div>
                   <div>
                     <label class="flex-label" for="winter-split-holiday-break">
-                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" onclick="winterHolidayMore()"/>
                       Split Break with Holiday Time Schedule
                     </label>
                   </div>
-                  <label class="collapse" id="split-break">
-                    (click again to close window)
-                    <label hide="true" data-dm->Start time Christmas
+                  <div class="container card p-4" id="split-break" style="display: none;">
+                    <label>Start time Christmas
                       <input type="time" class="form-control" name="christmasStart" required>
                     </label>
-                    <label hide="true" data-dm->End time Christmas
+                    <label>End time Christmas
                       <input type="time" class="form-control" name="christmasEnd" required>
                     </label>
-                    <label hide="true" data-dm->Start time New Years Day
+                    <label>Start time New Years Day
                       <input type="time" class="form-control" name="newYearsStart" required>
                     </label>
-                    <label hide="true" data-dm->End time New Years Day
+                    <label>End time New Years Day
                       <input type="time" class="form-control" name="newYearsEnd" required>
                     </label>
-                  </label>
+                  </div>
                   <div>
                     <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
                     <label for="winter-continue-schedule">Continued Schedule</label>
@@ -157,20 +155,20 @@
                   </div>
                   <div>
                     <label class="flex-label" for="summer-continue-uninterrupted-schedule">
-                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" onclick="summerBreakMore()"/>
                         Continued Schedule with Option for Uninterrupted Time
                     </label>
-                    <label class="collapse" id="uninterrupted">
+                    <div class="container card p-4" id="uninterrupted" style="display: none;">
                       <label>
-                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
                         Exchange date
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                      </label><br><br>
+                      <label>Both parents shall have the option to take <div style="display: inline-flex;"><input type="number" class="form-control" name="summerDaysUninterrupted" style="width: 100px; margin-right: 10px;" value="numDaysUninterrupted" required> <select id="summerDayOrWeek" name="summerDayOrWeek">
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
+                      </select></div> of uninterrupted time with the Child(ren)
                       </label>
-                      <label>
-                        <label hide="true" data-dm->Number of days
-                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
-                        </label>
-                      </label>
-                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,6 +179,32 @@
           </div>
         </div>
       </div>
+      <script> 
+        // hide popup when option for "winter break -> split break with holiday time schedule" is not selected 
+        function winterHolidayMore() {
+          var a = document.getElementById('split-break');
+          a.style.display = document.getElementById('winter-split-holiday-break').checked ? 'block' : 'none';
+        }
+        var radioButtonsX = document.querySelectorAll('input[type="radio"][name="schoolWinterBreakSchedule"]');
+        radioButtonsX.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            winterHolidayMore();
+          });
+        }); 
+
+        // hide popup when option for "summer break -> continued schedule w/option for uninterrupted time" is not selected  
+        function summerBreakMore() {
+          var a = document.getElementById('uninterrupted');
+          a.style.display = document.getElementById('summer-continue-uninterrupted-schedule').checked ? 'block' : 'none';
+        }
+        var radioButtonsY = document.querySelectorAll('input[type="radio"][name="schoolSummerBreakSchedule"]');
+        radioButtonsY.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            summerBreakMore();
+          });
+        }); 
+      </script>
+      
       <div id="page2" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Holiday Table</h3>

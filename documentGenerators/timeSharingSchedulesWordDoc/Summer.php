@@ -88,7 +88,7 @@ class Summer {
     }
 
     /** Haven't implemented this choice fully - need to collect dates (replaced Alternate schedule). */
-    public function get_continue_uninterrupted(string $parentAFirst, string $parentBFirst, string $days_weeks, string $no_later_than): string {
+    public function get_continue_uninterrupted(string $parentAFirst, string $parentALast, string $parentBFirst, string $parentBLast, string $days_weeks, string $summerDayWeek, string $no_later_than): string {
         return "<w:p w14:paraId='7C25F206' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -116,7 +116,7 @@ class Summer {
       </w:r>
       <w:bookmarkEnd w:id='52'/>
       <w:r>
-        <w:t xml:space='preserve'>.  Parents shall continue the normal during the school year schedule during this break provided however that both parents shall have the option to take $days_weeks days/weeks of uninterrupted time with the Child(ren) every summer.  Parents shall select and exchange their dates for uninterrupted time with the Child(ren) by no later than $no_later_than of the same year.  In even years, $parentAFirst shall have the first choice of dates for uninterrupted time during the Summer Break.  In odd years, $parentBFirst shall have the first choice of dates for uninterrupted time during the Summer Break.  </w:t>
+        <w:t xml:space='preserve'>.  Parents shall continue the normal during the school year schedule during this break provided however that both parents shall have the option to take $days_weeks $summerDayWeek of uninterrupted time with the Child(ren) every summer.  Parents shall select and exchange their dates for uninterrupted time with the Child(ren) by no later than $no_later_than of the same year.  In even years, $parentAFirst $parentALast shall have the first choice of dates for uninterrupted time during the Summer Break.  In odd years, $parentBFirst $parentBLast shall have the first choice of dates for uninterrupted time during the Summer Break.  </w:t>
       </w:r>
     </w:p>";
     }
