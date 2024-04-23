@@ -100,29 +100,27 @@
                       <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
                       Alternate Break Schedule
                     </label>
-
                   </div>
                   <div>
                     <label class="flex-label" for="winter-split-holiday-break">
-                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" onclick="winterHolidayMore()"/>
                       Split Break with Holiday Time Schedule
                     </label>
                   </div>
-                  <label class="collapse" id="split-break">
-                    (click again to close window)
-                    <label hide="true" data-dm->Start time Christmas
+                  <div class="container card p-4" id="split-break" style="display: none;">
+                    <label>Start time Christmas
                       <input type="time" class="form-control" name="christmasStart" required>
                     </label>
-                    <label hide="true" data-dm->End time Christmas
+                    <label>End time Christmas
                       <input type="time" class="form-control" name="christmasEnd" required>
                     </label>
-                    <label hide="true" data-dm->Start time New Years Day
+                    <label>Start time New Years Day
                       <input type="time" class="form-control" name="newYearsStart" required>
                     </label>
-                    <label hide="true" data-dm->End time New Years Day
+                    <label>End time New Years Day
                       <input type="time" class="form-control" name="newYearsEnd" required>
                     </label>
-                  </label>
+                  </div>
                   <div>
                     <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
                     <label for="winter-continue-schedule">Continued Schedule</label>
@@ -157,20 +155,20 @@
                   </div>
                   <div>
                     <label class="flex-label" for="summer-continue-uninterrupted-schedule">
-                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" onclick="summerBreakMore()"/>
                         Continued Schedule with Option for Uninterrupted Time
                     </label>
-                    <label class="collapse" id="uninterrupted">
+                    <div class="container card p-4" id="uninterrupted" style="display: none;">
                       <label>
-                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
                         Exchange date
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                      </label><br><br>
+                      <label>Both parents shall have the option to take <div style="display: inline-flex;"><input type="number" class="form-control" name="summerDaysUninterrupted" style="width: 100px; margin-right: 10px;" value="numDaysUninterrupted" required> <select id="summerDayOrWeek" name="summerDayOrWeek">
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
+                      </select></div> of uninterrupted time with the Child(ren)
                       </label>
-                      <label>
-                        <label hide="true" data-dm->Number of days
-                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
-                        </label>
-                      </label>
-                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,6 +179,32 @@
           </div>
         </div>
       </div>
+      <script> 
+        // hide popup when option for "winter break -> split break with holiday time schedule" is not selected 
+        function winterHolidayMore() {
+          var a = document.getElementById('split-break');
+          a.style.display = document.getElementById('winter-split-holiday-break').checked ? 'block' : 'none';
+        }
+        var radioButtonsX = document.querySelectorAll('input[type="radio"][name="schoolWinterBreakSchedule"]');
+        radioButtonsX.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            winterHolidayMore();
+          });
+        }); 
+
+        // hide popup when option for "summer break -> continued schedule w/option for uninterrupted time" is not selected  
+        function summerBreakMore() {
+          var a = document.getElementById('uninterrupted');
+          a.style.display = document.getElementById('summer-continue-uninterrupted-schedule').checked ? 'block' : 'none';
+        }
+        var radioButtonsY = document.querySelectorAll('input[type="radio"][name="schoolSummerBreakSchedule"]');
+        radioButtonsY.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            summerBreakMore();
+          });
+        }); 
+      </script>
+      
       <div id="page2" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Holiday Table</h3>
@@ -284,21 +308,118 @@
                 <td><input class="form-control" type="radio" name="nye" ></td>
               </tr>
               <tr>
-                <td>Parent A's Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
+                <td><?php echo $_SESSION['responses']['partyAFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
                 <td><input class="form-control" type="radio" name="partyA" ></td>
               </tr>
               <tr>
-                <td>Parent B's Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
+                <td><?php echo $_SESSION['responses']['partyBFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
                 <td><input class="form-control" type="radio" name="partyB" ></td>
               </tr>
               <tr>
-                <td>Children's Birthday(s) (<?php echo $_SESSION['responses']['childBirthYears']?>)</td>
+                <td><?php echo $_SESSION['responses']['child1Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child1Birthday']?>)</td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
                 <td><input class="form-control" type="radio" name="child1" ></td>
+              </tr>
+              <tr id="child2" hidden>
+                <td><?php echo $_SESSION['responses']['child2Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child2Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child2" ></td>
+                <td><input class="form-control" type="radio" name="child2" ></td>
+              </tr>
+              <tr id="child3" hidden>
+                <td><?php echo $_SESSION['responses']['child3Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child3Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child3" ></td>
+                <td><input class="form-control" type="radio" name="child3" ></td>
+              </tr>
+              <tr id="child4" hidden>
+                <td><?php echo $_SESSION['responses']['child4Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child4Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child4" ></td>
+                <td><input class="form-control" type="radio" name="child4" ></td>
+              </tr>
+              <tr id="child5" hidden>
+                <td><?php echo $_SESSION['responses']['child5Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child5Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child5" ></td>
+                <td><input class="form-control" type="radio" name="child5" ></td>
+              </tr>
+              <tr id="child6" hidden>
+                <td><?php echo $_SESSION['responses']['child6Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child6Birthday']?>)</td>
+                <td><input class="form-control" type="radio" name="child6" ></td>
+                <td><input class="form-control" type="radio" name="child6" ></td>
               </tr>
             </table>
+
+            <?php
+            if ($_SESSION['responses']['child2Initials'] != "") {
+                $existence2 = "true";
+            } else {
+                $existence2 = "false";
+            }?>
+            <script>
+              const child2Existence = <?php echo $existence2 ?>;
+              if (child2Existence === true) {
+                let child2 = document.getElementById("child2");
+                child2.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child3Initials'] !== "") {
+                $existence3 = "true";
+            } else {
+                $existence3 = "false";
+            }?>
+            <script>
+              const child3Existence = <?php echo $existence3 ?>;
+              if (child3Existence === true) {
+                let child3 = document.getElementById("child3");
+                child3.removeAttribute("hidden");
+              }
+            </script>
+
+              <?php
+              if ($_SESSION['responses']['child4Initials'] != "") {
+                  $existence4 = "true";
+              } else {
+                  $existence4 = "false";
+              }?>
+            <script>
+              const child4Existence = <?php echo $existence4 ?>;
+              if (child4Existence === true) {
+                let child4 = document.getElementById("child4");
+                child4.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child5Initials'] !== "") {
+                $existence5 = "true";
+            } else {
+                $existence5 = "false";
+            }?>
+            <script>
+              const child5Existence = <?php echo $existence5 ?>;
+              if (child5Existence === true) {
+                let child5 = document.getElementById("child5");
+                child5.removeAttribute("hidden");
+              }
+            </script>
+
+            <?php
+            if ($_SESSION['responses']['child6Initials'] !== "") {
+                $existence6 = "true";
+            } else {
+                $existence6 = "false";
+            }?>
+            <script>
+              const child6Existence = <?php echo $existence6 ?>;
+              if (child6Existence === true) {
+                let child6 = document.getElementById("child6");
+                child6.removeAttribute("hidden");
+              }
+            </script>
+
+
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">

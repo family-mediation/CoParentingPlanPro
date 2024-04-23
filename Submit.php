@@ -29,6 +29,7 @@ else
 {
  exit("unable to create zip folder ".$zipFilePath . "download.zip");
 }
-
+require_once($filePath ."/" .$fileName . ".html");
 echo "<a href=\"".$zipFilePath." download.zip\" >Download Your Folder </a>";
+
 require_once("views/Footer.php");

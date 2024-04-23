@@ -94,14 +94,14 @@
               </div>
 
               <div>
-              <input type="checkbox" id="7.08" name="betweenchildparent[]" onclick="commSpecific()" />
+              <input type="checkbox" id="7.08" name="betweenchildparent[]" value="7.08" onclick="commSpecific()" />
               <label for="7.08">Specific</label>
               </div>
               
               <div class="container card p-4" id="schedule" style="display: none;">
               During the regular parenting time schedule, Parent A may call the child between 
-              <input type="time" name="betweenchildparent[]" id="A9:00" value="09:00" /> and <input type="time" name="betweenchildparent[]" id="A17:00" value="17:00" /> when they are with Parent B
-              and Parent B may call the childe between <input type="time" name="betweenchildparent[]" id="B09:00" value="09:00" /> and <input type="time" name="betweenchildparent[]" id="B17:00" value="17:00" />
+              <input type="time" name="A9:00" id="A9:00" value="09:00" /> and <input type="time" name="A17:00" id="A17:00" value="17:00" /> when they are with Parent B
+              and Parent B may call the childe between <input type="time" name="B09:00" id="B09:00" value="09:00" /> and <input type="time" name="B17:00" id="B17:00" value="17:00" />
               when they are with Parent A.
               </div>
               
