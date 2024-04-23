@@ -14,6 +14,338 @@ class wordDocGenerator extends documentGenerator
 	function genHeader()
 	{
 		echo "Generating Header " . $this->fileName . " <br/>";
+		$headerString = "<w:p w14:paraId='75F50D4E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+	  </w:p>
+	  <w:p w14:paraId='550C50D0' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		  <w:jc w:val='center'/>
+		</w:pPr>
+		<w:r>
+		  <w:t>INDEX TO CO-PARENTING PLAN:</w:t>
+		</w:r>
+	  </w:p>
+	  <w:p w14:paraId='54850F8E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		  <w:jc w:val='center'/>
+		</w:pPr>
+		<w:r>
+		  <w:t>AGREEMENT REGARDING CHILD CUSTODY, TIMESHARING AND SUPPORT</w:t>
+		</w:r>
+	  </w:p>
+	  <w:p w14:paraId='0FB2AC2E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+	  </w:p>
+	  <w:p w14:paraId='54842246' w14:textId='0A903A5C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='IntroductionParentsDesire' w:history='1'>
+		  <w:r w:rsidR='00D52A55' w:rsidRPr='00D52A55'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>1.01</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D52A55' w:rsidRPr='00D52A55'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Introduction: Parents’ Desire to Effect Complete Agreement</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='6C23AECB' w14:textId='50BD981D' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='IntroductionParentstoSeekFamilyCourt' w:history='1'>
+		  <w:r w:rsidR='00D52A55' w:rsidRPr='00D52A55'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>1.02</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D52A55' w:rsidRPr='00D52A55'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Introduction: Parents to Seek Family Court Approval</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='2FF59A02' w14:textId='3EF47409' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='IntroductionParentsDoNotSeekFamilyCourt' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>1.03</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Introduction: Parents Do Not Intend to Seek Family Court Approval</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:bookmarkStart w:id=0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
+	  <w:p w14:paraId='7C2206BB' w14:textId='2234CAEB' w:rsidR='00505307' w:rsidRDefault='00D72616'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:fldChar w:fldCharType='begin'/>
+		</w:r>
+		<w:r>
+		  <w:instrText>HYPERLINK \l 'GuidingPrinciplesResponsibilitiestoChild'</w:instrText>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='separate'/>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:t>2.00</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:tab/>
+		  <w:t>Guiding Principles. Responsibilities to Our Child(ren)</w:t>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='end'/>
+		</w:r>
+	  </w:p>
+	  <w:bookmarkEnd w:id='0'/>
+	  <w:p w14:paraId='40692321' w14:textId='5CAB8703' w:rsidR='00505307' w:rsidRDefault='00D72616'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:fldChar w:fldCharType='begin'/>
+		</w:r>
+		<w:r>
+		  <w:instrText>HYPERLINK \l 'GuidingPrinciplesResponsibilitiestoCoPar'</w:instrText>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='separate'/>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:t>2.01</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:tab/>
+		  <w:t>Guiding Principles. Responsibilities to Our Co-Parent</w:t>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='end'/>
+		</w:r>
+	  </w:p>
+	  <w:p w14:paraId='1C7571BF' w14:textId='70A0AAE8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='GuidingPrinciplesNewIntimatePartners' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>2.02</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Guiding Principles. Statement About New Intimate Partners</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='60996E2C' w14:textId='559816F4' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='GuidingPrinciplesProtectionFromDisputes' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>2.03</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Guiding Principles. Protection from Parental Disputes</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='00D72616'>
+		  <w:t xml:space='preserve'> </w:t>
+		</w:r>
+	  </w:p>
+	  <w:p w14:paraId='79247A41' w14:textId='3CCF4C5B' w:rsidR='00505307' w:rsidRPr='006830FF' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		  <w:rPr>
+			<w:lang w:val='fr-FR'/>
+		  </w:rPr>
+		</w:pPr>
+		<w:hyperlink w:anchor='PartiesInformationonParentA' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t>3.00</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:tab/>
+		  </w:r>
+		  <w:proofErr w:type='gramStart'/>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t>Parties:</w:t>
+		  </w:r>
+		  <w:proofErr w:type='gramEnd'/>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> Information on Parent A</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='0772FB84' w14:textId='7CC1D206' w:rsidR='00505307' w:rsidRPr='006830FF' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		  <w:rPr>
+			<w:lang w:val='fr-FR'/>
+		  </w:rPr>
+		</w:pPr>
+		<w:hyperlink w:anchor='PartiesInformationonParentB' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t>3.01</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:tab/>
+		  </w:r>
+		  <w:proofErr w:type='gramStart'/>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t>Parties:</w:t>
+		  </w:r>
+		  <w:proofErr w:type='gramEnd'/>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='006830FF'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			  <w:lang w:val='fr-FR'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> Information on Parent B</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='612799A5' w14:textId='38DED946' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='ChildrenInformationonChildren' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>4.00</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Children: Information on the Child(ren)</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='473E2C9A' w14:textId='13DB100F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='LegalCustodyDefinition' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>5.00</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Legal Custody: Definition</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='00D72616'>
+		  <w:t xml:space='preserve'> </w:t>
+		</w:r>
+	  </w:p>";
+		$this->tableOfContentsString .= $headerString;
 		$this->fileContentString .= "test test test";
 	}
     function gen_guiding_principals_statement(){}
@@ -163,6 +495,34 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents agree they shall make significant decisions together and encourage input from Child(ren). If Parents cannot come to an agreement about a major decision, they shall use the dispute resolution process set out in this document.</w:t>
 		</w:r>
 	</w:p>";
+
+	// This separated part is xml table content.
+	$tableCon = "<w:p w14:paraId='3741EBBC' w14:textId='3ADA358B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyJoint' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.01</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Joint to Both Parents</w:t>
+        </w:r>
+      </w:hyperlink>
+      <w:r w:rsidR='00D72616'>
+        <w:t xml:space='preserve'> </w:t>
+      </w:r>
+    </w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -195,6 +555,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then <span style='background:yellow'>Parent A</span> shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyParentsConsultOneAuthority' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.03</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Parents Must Consult but One Parent has Tie-Breaking Authority</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -227,6 +611,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then <span style='background:yellow'>Parent B</span> shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyParentsConsultOneAuthority' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.03</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Parents Must Consult but One Parent has Tie-Breaking Authority</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -302,6 +710,30 @@ class wordDocGenerator extends documentGenerator
 		<w:t>with legal custody shall have an affirmative duty to inform the other Parent of any new providers working with the Child(ren).</w:t>
 	</w:r>
 </w:p>";
+
+		$tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='LegalCustodySole' w:history='1'>
+			<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+				<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>5.02</w:t>
+			</w:r>
+			<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+				<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Legal Custody: Sole to One Parent</w:t>
+			</w:r>
+		</w:hyperlink>
+		</w:p>";
+		$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -377,6 +809,52 @@ class wordDocGenerator extends documentGenerator
 		<w:t>with legal custody shall have an affirmative duty to inform the other Parent of any new providers working with the Child(ren).</w:t>
 	</w:r>
 </w:p>";
+
+$tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodySole' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.02</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Sole to One Parent</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>
+	
+	<w:p w14:paraId='642CCA55' w14:textId='2A47A141' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyAccesstoInformation' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.05</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Access to Information for Parent Without Legal Custody</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+		$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -422,6 +900,30 @@ class wordDocGenerator extends documentGenerator
 			shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with <span style='background:yellow'>" . $this->responses["parentABZ"] . "</span> and the child.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='5B86F9DF' w14:textId='7EFA53B1' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyParentsConsultDivofAuthority' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.04</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Parents Must Consult but there is a Division of Authority</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -471,6 +973,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> or other event where an emergency contact is requested.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='255B156B' w14:textId='4EC938DE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyEmergencyContact' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.06</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Emergency Contacts for the Child(ren)</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -506,6 +1032,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Parents shall seek the advice and be guided by subject matter experts when making legal custody decisions on behalf of the Child(ren). </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='32516AFC' w14:textId='03D28050' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyExpertAdvice' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.07</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Expert Advice When Making Legal Custody Decisions</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -550,6 +1100,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>During the period when the Child(ren) is or are living with or in the care of a Parent, that Parent can make day-to-day decisions about our child, for example about, doing homework, meals, visiting with their friends, use of computer, etc.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='78821977' w14:textId='5AF1EDE8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyDaytoDay' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.08</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Day-to-Day Decisions</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -594,6 +1168,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>In a health emergency for a Child, the Parent with care of the Child(ren) at that time will make the treatment decision, on the advice of medical personnel. If a Parent makes an emergency health decision for a Child, the Parent who has made the decision must immediately contact the other Parent.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='3217D4DB' w14:textId='6A705D40' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyEmergencyDecisions' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.09</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Emergency Decisions</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -642,6 +1240,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>In the event of a Parent’s medical emergency, the other Parent shall assume the major decision-making responsibilities for the Child(ren) until the situation becomes resolved. In the event of the death of one Parent, the other Parent shall care for the Child(ren), but the surviving Parent shall ensure that the Child(ren) has/have continued relations with the relatives of the deceased Parent.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='574D9B51' w14:textId='38DB855D' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyHealthEmergencyDeathofParent' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.10</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Health Emergency or Death of the Other Parent</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -687,6 +1309,30 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents shall disengage from one another and make decisions independently when the Child(ren) is in their care.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='574C5062' w14:textId='532F38AC' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='LegalCustodyParallelParenting' w:history='1'>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>5.11</w:t>
+        </w:r>
+        <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Legal Custody: Parallel Parenting</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+	$this -> tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	} //end of legal custody section 3
@@ -730,6 +1376,9 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			//Tags don't match; starts from <w:r>, but ends with </w:p>.
+
         echo $header;
         $this->fileContentString .= $header;
     }
@@ -771,6 +1420,30 @@ class wordDocGenerator extends documentGenerator
               </w:r>
             </w:p>";
         echo $header;
+
+		$tableCon = "<w:p w14:paraId='20E76241' w14:textId='262935A3' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='PhysicalCustodyDuringSchoolYear' w:history='1'>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>6.01</w:t>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Physical Custody and Timesharing: Timesharing During the School Year</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+		$this -> tableOfContentsString .= $tableCon;
+
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01A() {
@@ -939,6 +1612,37 @@ class wordDocGenerator extends documentGenerator
                 <w:t>Both Parents agree that the 50/50 schedule is best for their Child(ren).</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='67B11414' w14:textId='5346EF87' w:rsidR='00505307' w:rsidRDefault='00FC64E6' w:rsidP='00E616E1'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0' w:firstLine='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='PhysicalCustodyEqual' w:history='1'>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>6.01A</w:t>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Equal Timesharing Schedules</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+			$this -> tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
@@ -1017,6 +1721,48 @@ class wordDocGenerator extends documentGenerator
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='0F5C3383' w14:textId='28BC6900' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+      <w:pPr>
+        <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='0'/>
+      </w:pPr>
+      <w:hyperlink w:anchor='PhysicalCustodyOther' w:history='1'>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+        </w:r>
+        <w:r w:rsidR='00E616E1'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:t>6.01B</w:t>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+        </w:r>
+        <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+          <w:rPr>
+            <w:rStyle w:val='Hyperlink'/>
+          </w:rPr>
+          <w:tab/>
+          <w:t>Other Timesharing Schedules</w:t>
+        </w:r>
+      </w:hyperlink>
+    </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
@@ -1072,11 +1818,37 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='5F30DFCF' w14:textId='2431E583' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyDuringSchoolBreaks' w:history='1'>
+				<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02</w:t>
+				</w:r>
+				<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Timesharing During the School Breaks</w:t>
+				</w:r>
+			</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_02A(string $type) {
-        $content = "<w:p w14:paraId='32694CA2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+        $content = "<w:bookmarkStart w:id='1' w:name='_heading=h.hcavjzxvdgkz' w:colFirst='0' w:colLast='0'/>
+		<w:bookmarkEnd w:id='1'/>
+		<w:p w14:paraId='32694CA2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
               <w:pPr>
                 <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
                 <w:ind w:right='36' w:firstLine='710'/>
@@ -1110,6 +1882,100 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Fall Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='71070361' w14:textId='5F14E4FD' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreak' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00E616E1'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Fall Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+		  
+		  <w:p w14:paraId='30F97A26' w14:textId='35F9AA68' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:bookmarkStart w:id='2' w:name='_heading=h.ptfvl3aera8c' w:colFirst='0' w:colLast='0'/>
+			<w:bookmarkEnd w:id='2'/>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+				<w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreakAB' w:history='1'>
+				<w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A(ii) Alternate Break</w:t>
+				</w:r>
+			</w:hyperlink>
+			</w:p>
+			<w:p w14:paraId='6DCFBFE5' w14:textId='460B17D8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:bookmarkStart w:id='3' w:name='_heading=h.q5n0t569stji' w:colFirst='0' w:colLast='0'/>
+			<w:bookmarkEnd w:id='3'/>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+				<w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreakContinueSchedule' w:history='1'>
+				<w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A(iii) Continue Schedule During the School Year</w:t>
+				</w:r>
+			</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $tableCon;
+			//6.02(i) is missing in document.xml
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
@@ -1166,6 +2032,152 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='5601A7F4' w14:textId='329E9EEC' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgiving' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Thanksgiving Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='18952DE9' w14:textId='0A439B54' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='2E0EF732' w14:textId='5EAAA5F4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='0F2E11CF' w14:textId='53AD6392' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingTimeonDay' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (iii) Time on Thanksgiving Day</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='756DE11A' w14:textId='3DD1C164' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (iv) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
@@ -1228,6 +2240,159 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. The Parents shall share time with the Child(ren) during Winter Break as follows:</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='13619769' w14:textId='32F4DBA4' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreak' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00E616E1'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Winter Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='21FA5F74' w14:textId='769AF2E6' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='1D2CA37C' w14:textId='316556F8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='54888451' w14:textId='17C633D9' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSBwithHoliday' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (iii) Split Break with Holiday Time</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='14490114' w14:textId='29BFD7D0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:lastRenderedPageBreak/>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (iv) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
@@ -1293,6 +2458,128 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Spring Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='4FBB1416' w14:textId='3FC70115' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreak' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Spring Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='56FE7631' w14:textId='50815726' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='7B092CB5' w14:textId='0CF92273' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='2A052613' w14:textId='4CAB60DB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (iii) Continue Scheduling During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
@@ -1356,6 +2643,131 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. The Parents shall share time with the Child(ren) during Summer Break as follows:</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='2292665E' w14:textId='65AF8B8C' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreak' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Summer Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='656DF837' w14:textId='1A895978' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r>
+			  <w:t xml:space='preserve'> </w:t>
+			</w:r>
+		  </w:p>
+
+		  <w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSchedUnint' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
@@ -1421,6 +2833,70 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='7553B9ED' w14:textId='1E13F7FE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyHolidaysandSpecialDays' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.03</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Holidays and Special Days</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>
+
+		  <w:p w14:paraId='2810ADEA' w14:textId='02BCD5B7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyHolidaysAltYearly' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00E616E1'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.03A</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Alternate Yearly</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $tableCon;
+
         echo $alt;
         $this->fileContentString .= $alt;
     }
@@ -1457,6 +2933,41 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = " <w:p w14:paraId='22ECA461' w14:textId='215F7040' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyHolidaysSplitEveryYear' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.03B</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Split Every Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
         echo $split;
         $this->fileContentString .= $split;
     }
@@ -1498,6 +3009,42 @@ class wordDocGenerator extends documentGenerator
               </w:r>
             </w:p>
             <w:bookmarkEnd w:id='56'/>";
+
+			$tableCon = " <w:p w14:paraId='6B6AE3D2' w14:textId='65620584' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyHolidaysMonFri' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.03C</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Monday/Friday Holidays Attached to a Weekend</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1535,6 +3082,42 @@ class wordDocGenerator extends documentGenerator
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='7EB2CD2C' w14:textId='7C7A879E' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyHolidaysEveryYearWithAorB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.03D</w:t>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Every Year with Parent A or Parent B</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1621,6 +3204,30 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'> travel, such a trip shall require the non-traveling parent’s consent which, if such requests are occasional, shall not be unreasonably withheld. Parents agree that off-island travel shall not negatively impact the Child(ren)’s education.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='2C7601C1' w14:textId='4E0604C0' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyTravelwithChild' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.04</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Travel with the Child(ren)</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1677,6 +3284,30 @@ class wordDocGenerator extends documentGenerator
                 <w:t>schedule. If the change in the schedule results in the Child(ren) missing considerable time with the accommodating parent, reasonable “make-up time” will be arranged by the Parents.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='462E0AD3' w14:textId='7F13F3A8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyRescheduling' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.05</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Rescheduling and Make-Up Time</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1735,6 +3366,30 @@ class wordDocGenerator extends documentGenerator
                 <w:t>If the non-custodial Parent cannot accommodate the request, the custodial Parent is responsible for arranging and paying for alternate childcare and will inform the other Parent of who will be caring for the Child(ren).</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='6F6225F4' w14:textId='21275422' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyROFR' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.06</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Right of First Refusal</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1771,6 +3426,52 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.07</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:t xml:space='preserve'>. </w:t>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.08</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:t>.</w:t>
+			</w:r>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+			//weird indent in table between 6.07 and 6.08
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1808,6 +3509,51 @@ class wordDocGenerator extends documentGenerator
                 <w:tab/>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.07</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:t xml:space='preserve'>. </w:t>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.08</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:t>.</w:t>
+			</w:r>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1856,6 +3602,30 @@ class wordDocGenerator extends documentGenerator
                 <w:t>" . $this->responses['exchangesNeutral'] . ".</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='5981A926' w14:textId='4A26E196' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyNeutralLocation' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.09</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Exchanges at a Neutral Location.</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1913,6 +3683,30 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='5E42FEF4' w14:textId='5716C793' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyDelgationPickupDropOff' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.10</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Parental Authority to Delegate Pick-Up and Drop Off the Child(ren)</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -1963,6 +3757,30 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>"; //only one person has been implemented so far
+
+			$tableCon = "<w:p w14:paraId='4B3BC2E9' w14:textId='039B4002' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyAuthorizatioPickupDropOff' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.11</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t xml:space='preserve'> Physical Custody and Timesharing: Persons Authorized to Pick Up and Drop Off the Child(ren)</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -2017,6 +3835,33 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='4EB1508A' w14:textId='1ADBDBE8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyChildBelongings' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.12</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Child(ren)’s Personal Belongings</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:tab/>
+			</w:r>
+		  </w:p>";
+		$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -2093,6 +3938,33 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>an agreement, the Child(ren) shall remain with the non-moving parent until Parents are able to mutually agree or further order of the Court.  </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='036BAD8E' w14:textId='0E4386DB' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyRelocation' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.13</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Relocation</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r w:rsidR='00EF5343'>
+			  <w:tab/>
+			</w:r>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     }
@@ -2127,6 +3999,30 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='54EDD7E2' w14:textId='5BE5FBAD' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:hyperlink w:anchor='PhyscialCustodyModofSchedule' w:history='1'>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.14</w:t>
+			  </w:r>
+			  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Modification of Schedule by Agreement of Both Parents</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $content;
         $this->fileContentString .= $content;
     } // End of section 4: Physical custody and Timesharing
