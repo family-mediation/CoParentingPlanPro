@@ -22,9 +22,6 @@ abstract class documentGenerator
 	}
 	// Generate the different components.
 	public abstract function genHeader();
-	public abstract function gen_guiding_principals_statement();
-
-
 
     // Section 2: Children
     public abstract function gen_children_4_00(int $num);

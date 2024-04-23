@@ -59,362 +59,6 @@ class HtmlGenerator extends documentGenerator
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
          href=\"#LegalCustodyDefinition\">5.00&nbsp;&nbsp; Legal Custody: Definition</a> </p>";
 
-         $header1String = "
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyHolidaysSplitEveryYear\">6.03B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Every Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyHolidaysMonFri\">6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monday/Friday Holidays
-         Attached to a Weekend</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#PhysicalCustodyHolidaysEveryYearWithAorB\">6.03D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Every Year with
-         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " or " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyTravelwithChild\">6.04&nbsp;&nbsp; Physical Custody and Timesharing:
-         Travel with the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyRescheduling\">6.05&nbsp;&nbsp; Physical Custody and Timesharing:
-         Rescheduling and Make-Up Time</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyROFR\">6.06&nbsp;&nbsp; Physical Custody and Timesharing: Right of
-         First Refusal</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhysicalCustodyPickupNonSchool\">6.07&nbsp;&nbsp; Physical Custody and Timesharing:
-         Pick-Up for Non-School Exchanges</a>. <a href=\"#PhysicalCustodyDropOffNonSchool\">6.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Physical
-         Custody and Timesharing: Drop Off for Non-School Exchanges</a>.</p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyNeutralLocation\">6.09&nbsp;&nbsp; Physical Custody and Timesharing:
-         Exchanges at a Neutral Location.</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyDelgationPickupDropOff\">6.10&nbsp;&nbsp; Physical Custody and
-         Timesharing: Parental Authority to Delegate Pick-Up and Drop Off the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyAuthorizatioPickupDropOff\">6.11&nbsp;&nbsp;  Physical Custody and
-         Timesharing: Persons Authorized to Pick Up and Drop Off the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyChildBelongings\">6.12&nbsp;&nbsp; Physical Custody and Timesharing:
-         Child(ren)'s Personal Belongings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyRelocation\">6.13&nbsp;&nbsp; Physical Custody and Timesharing:
-         Relocation</a>&nbsp;&nbsp;&nbsp; </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PhyscialCustodyModofSchedule\">6.14&nbsp;&nbsp; Physical Custody and Timesharing:
-         Modification of Schedule by Agreement of Both Parents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#Communication\">7.00&nbsp;&nbsp; Communication</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationEmailOnly\">7.01&nbsp;&nbsp; Communication Between Co-Parents: E-mail
-         Only</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationEmailandTextOnly\">7.02&nbsp;&nbsp; Communication Between Co-Parents:
-         E-mail and Text Only</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationOurFamilyWizard\">7.03&nbsp;&nbsp; Communication Between Co-Parents:
-         Our Family Wizard or Other Mutually Agreed Upon Parenting Communication
-         Application</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationMonthlyConference\">7.04&nbsp;&nbsp; Communication Between Co-Parents:
-         Monthly Conference</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationSemiAnnualConference\">7.05&nbsp;&nbsp; Communication Between
-         Co-Parents: Semi Annual Conference</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationAnnualConference\">7.06 &nbsp; Communication Between Co-Parents:
-         Annual Conference</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationUnlimited\">7.07&nbsp;&nbsp; Communication Between Child(ren) and
-         Non-Custodial Parent: Unlimited</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationSpecific\">7.08&nbsp;&nbsp; Communication Between Child(ren) and
-         Non-Custodial Parent: Specific</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationExchangeofContactInfo\">7.09&nbsp;&nbsp; Communication: Exchange of
-         Contact Information</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationSchedulingExtracurricular\">7.10&nbsp;&nbsp; Communication: Scheduling
-         Extracurricular Activities for the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#CommunicationSelectingExtracurricular\">7.11&nbsp;&nbsp; Communication: Selecting
-         Extracurricular Activities for the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCMonthlyUnderLaw\">8.00&nbsp;&nbsp; Support of the Child(ren): Child Support
-         Guidelines Amount Under the Law</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCChildSupportSameState\">8.01&nbsp;&nbsp; Support of the Child(ren): Child
-         Support Guidelines Amount When Parents Reside in the Same State</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCChildSupportDifferentState\">8.02&nbsp;&nbsp; Support of the Child(ren): Child
-         Support Guidelines Amount When Parents Reside in Different States</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCChildSupportAgreedAlternative\">8.03&nbsp;&nbsp; Support of the Child(ren):
-         Mutually Agreed Upon Amount Alternative</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCChildSupportNoAgreement\">8.04&nbsp;&nbsp; Support of the Child(ren): No
-         Agreement of the Parties Re Monthly Child Support Amount and/or Jurisdiction</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCChildSupportAccountAlternative\">8.05&nbsp;&nbsp; Support of the Child(ren):
-         Child Support Account Alternative</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SocDirectPayment\">8.06&nbsp;&nbsp; Support of the Child(ren): Direct Payment of
-         the Child Support</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCThroughStateAgency\">8.07&nbsp;&nbsp; Support of the Child(ren): Payment of
-         Child Support Through the State Child Support Enforcement Agency</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCHealthInsurance\">8.08&nbsp;&nbsp; Support of the Child(ren): Health Insurance
-         Premiums</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCUninsuredCoPays\">8.09&nbsp;&nbsp; Support of the Child(ren): Uninsured Co-Pays
-         for Health-Related Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCUninsuredCoPaysSR\">8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCUninsuredCoPaysSpR\">8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCUninsuredCoPaysThresholdAmount\">8.09C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Responsibility for
-         Threshold Amount</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCUninsuredCoPaysRecbyProvider\">8.09D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Uninsured
-         Health-Related Expenses: Recommended by Providers</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCUninsuredCoPaysAgreementbyParents\">8.09E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of
-         Uninsured Health-Related Expenses: Mutual Agreement of the Parents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCExtracurricular\">8.10&nbsp;&nbsp; Support of the Child(ren): Extracurricular
-         Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCExtracurricularSR\">8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCExtracurricularSpR\">8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCExtracurricularSelection\">8.10C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selecting Extracurricular
-         Activities for the Child(ren) Pursuant to 7.10 Hereinabove</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCExtracurricularMutualAgreement\">8.10D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extracurricular
-         Activities Must Be Mutually Agreed Upon</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCPrivateSchoolExpenses\">8.11&nbsp;&nbsp; Support of the Child(ren): Private
-         School Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPrivateSchoolExpensesSR\">8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPrivateSchoolExpensesSpR\">8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPrivateSchoolExpensesDefinition\">8.11C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Private
-         School Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPrivateSchoolExpensesMutualAgreement\">8.11D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement
-         of Parents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPrivateSchoolExpensesReserve\">8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCPostSchoolExpenses\">8.12&nbsp;&nbsp; Support of the Child(ren): Post-High
-         School Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesSR\">8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesSpR\">8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesSRFundsfromchildacc\">8.12C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole
-         Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
-         Children, Coverdell Accounts of Other Funds</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesSpRFundsfromchildac\">8.12D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split
-         Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
-         Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child's
-         Post-High School Education Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesCap\">8.12E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cap on Payment by Each Parent
-         per Academic School Year</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesDef\">8.12F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Post-High School
-         Education Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesMutualAgreement\">8.12G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement of
-         Parents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCPostSchoolExpensesReserve\">8.12H &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#SoCDependents\">8.13&nbsp;&nbsp; Support of the Child(ren): Claiming the Child(ren)
-         as a Dependent for Tax Purposes</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCDependentsSA\">8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Authority to Claim the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCDependentsSpA\">8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim the Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCDependentsSpAthenAlternate\">8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim
-         the Child(ren) then Alternate</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCDependentsAlternate\">8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate Authority to Claim the
-         Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
-         href=\"#SoCProtocolsforReimbursment\">8.14&nbsp;&nbsp; Support of the Child(ren): Protocols
-         for Reimbursement of Child-Related Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentTimeframe\">8.14A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Timeframe for
-         Reimbursement of Child-Related Expenses and Reimbursement</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentMonthly\">8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly Calculation
-         of Child-Related Expenses and Reimbursement</a> </p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentQuarterly\">8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quarterly
-         Calculation of Child-Related Expenses and Reimbursement</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentAnnual\">8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Annual Calculation of
-         Child-Related Expenses and Reimbursement</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentDocumentation\">8.14E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Documentation
-         Required for Reimbursement of Child-Related Expenses</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-         href=\"#SoCProtocolsforReimbursmentMethod\">8.14F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reimbursement Method</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesCoParentingCounseling\">9.00&nbsp;&nbsp; Other Issues:&nbsp; Co-Parent
-         Counseling</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesChildFocusedTherapist\">9.01&nbsp;&nbsp; Other Issues:&nbsp; Child-Focused
-         Therapist</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesSocialMediaBetweenParents\">9.02&nbsp;&nbsp; Other Issues:&nbsp; Social Media
-         Between Parents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesSocialMediaForChild\">9.03&nbsp;&nbsp; Other Issues:&nbsp; Social Media For
-         Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesJointTeacherMeeting\">9.04&nbsp;&nbsp; Other Issues:&nbsp; Joint
-         Parent-Teacher Meetings</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesSeperateTeacherMeeting\">9.05&nbsp;&nbsp; Other Issues:&nbsp; Separate
-         Parent-Teacher Meetings</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesOneParentTeacherMeeting\">9.06&nbsp;&nbsp; Other Issues:&nbsp; One Parent to
-         Attend Parent-Teacher Meetings</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesReportCard\">9.07&nbsp;&nbsp; Other Issues:&nbsp; Report Cards for the
-         Child(ren)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesJointAttendance\">9.08&nbsp;&nbsp; Other Issues:&nbsp; Joint Attendance at
-         School and Extracurricular Events</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesOneParentExtracurricular\">9.09&nbsp;&nbsp; Other Issues:&nbsp; Custodial
-         Parent to Attend School and Extracurricular Events</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesAlternateAttendance\">9.10&nbsp;&nbsp; Other Issues:&nbsp; Alternate
-         Attendance at School and Extracurricular Events</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesDocuments\">9.11&nbsp;&nbsp; Other Issues: Documents</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesJointConsentPassport\">9.12&nbsp;&nbsp; Other Issues: Joint Authority to
-         Consent for Passport</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesSoleConsentPassport\">9.13&nbsp;&nbsp; Other Issues: Sole Authority to
-         Consent for Passport</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesNewIntimatePartnerLD\">9.14&nbsp;&nbsp; Other Issues: New Intimate
-         Partner Protocols (Less Detailed)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesNewIntimatePartnerMD\">9.15&nbsp;&nbsp; Other Issues: New Intimate
-         Partner Protocols (More Detailed)</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#OtherIssuesAlternativeDisputeResolution\">9.16&nbsp;&nbsp; Other Issues:
-         Alternative Dispute Resolution</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalContinuingJurisdiction\">10.00 Legal: Continuing Jurisdiction</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalEnforcement\">10.01 Legal: Enforcement</a></p>
-
-         <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#LegalVoluntaryExecution\">10.02 Legal: Voluntary Execution</a></p>";
-
          $header2String = "
          <p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;</p>
 
@@ -634,17 +278,6 @@ class HtmlGenerator extends documentGenerator
         ";
         
         $this->fileContentString .= $footerString;
-    }
-
-    /**
-     * Guiding Principals statement.
-     * @return void - concats to the output content string
-     */
-    function gen_guiding_principals_statement()
-    {
-        $guidingPrincipals = "from co-parenting plan template.php: RESPONSIBILITIES TO OUR CHILD(REN)";
-        
-        $this->fileContentString .= $guidingPrincipals;
     }
 
 
@@ -1157,13 +790,18 @@ class HtmlGenerator extends documentGenerator
         $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
-            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the second half of this holiday/special day in
-            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " shall have the Child(ren) for the first half and
+            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren) for the second half of this holiday/special day in
+            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . " shall have the Child(ren) for the first half and
             " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the second half of this holiday/special
             day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
              <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
         
         $this->fileContentString .= $split;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodyHolidaysSplitEveryYear\">6.03B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Every Year</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Mon/Fri Holidays Attached to a Weekend.
     function gen_physical_custody_timesharing_6_03C() {
@@ -1172,6 +810,12 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
             HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>";
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodyHolidaysMonFri\">6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monday/Friday Holidays
+        Attached to a Weekend</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Every Year with Parent A or Parent B.
     function gen_physical_custody_timesharing_6_03D() {
@@ -1180,6 +824,12 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>EVERY
             YEAR WITH " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " OR " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</u></a>.</p>";
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#PhysicalCustodyHolidaysEveryYearWithAorB\">6.03D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Every Year with
+        " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " or " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
 
     // Travel with children checked.
@@ -1218,6 +868,12 @@ class HtmlGenerator extends documentGenerator
             negatively impact the Child(ren)'s education.</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyTravelwithChild\">6.04&nbsp;&nbsp; Physical Custody and Timesharing:
+        Travel with the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
 
     // Rescheduling and Make-Up time checked.
@@ -1234,6 +890,12 @@ class HtmlGenerator extends documentGenerator
             parent, reasonable make-up time will be arranged by the Parents.</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyRescheduling\">6.05&nbsp;&nbsp; Physical Custody and Timesharing:
+        Rescheduling and Make-Up Time</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Right of first refusal checked.
     function gen_physical_custody_timesharing_6_06() {
@@ -1251,6 +913,11 @@ class HtmlGenerator extends documentGenerator
             caring for the Child(ren).</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyROFR\">6.06&nbsp;&nbsp; Physical Custody and Timesharing: Right of
+        First Refusal</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // Pick-up, non-school.
     function gen_physical_custody_timesharing_6_07() {
@@ -1263,6 +930,12 @@ class HtmlGenerator extends documentGenerator
             time shall pick-up the Child(ren) from the other Parent.</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyPickupNonSchool\">6.07&nbsp;&nbsp; Physical Custody and Timesharing:
+        Pick-Up for Non-School Exchanges</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Drop-off, non-school.
     function gen_physical_custody_timesharing_6_08() {
@@ -1275,6 +948,11 @@ class HtmlGenerator extends documentGenerator
             custodial time shall drop off the Child(ren) to the other Parent. &nbsp;&nbsp;&nbsp; </p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhysicalCustodyDropOffNonSchool\">6.08&nbsp;&nbsp; Physical
+        Custody and Timesharing: Drop Off for Non-School Exchanges</a></p>"; 
+        $this->tableOfContentsString .= $toc;
     }
     // Exchanges, neutral location.
     function gen_physical_custody_timesharing_6_09() {
@@ -1287,6 +965,12 @@ class HtmlGenerator extends documentGenerator
             neutral location:&nbsp;  " . $this->responses['exchangesNeutral'] . ".</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyNeutralLocation\">6.09&nbsp;&nbsp; Physical Custody and Timesharing:
+        Exchanges at a Neutral Location.</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Delegate Pick up and Drop off.
     function gen_physical_custody_timesharing_6_10() {
@@ -1300,6 +984,12 @@ class HtmlGenerator extends documentGenerator
             delegate another person to pick up or drop off the Child(ren).</span></p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyDelgationPickupDropOff\">6.10&nbsp;&nbsp; Physical Custody and
+        Timesharing: Parental Authority to Delegate Pick-Up and Drop Off the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Persons authorized to pick up/drop off.
     function gen_physical_custody_timesharing_6_11() {
@@ -1313,6 +1003,12 @@ class HtmlGenerator extends documentGenerator
              " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyAuthorizatioPickupDropOff\">6.11&nbsp;&nbsp;  Physical Custody and
+        Timesharing: Persons Authorized to Pick Up and Drop Off the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Children's personal belongings.
     function gen_physical_custody_timesharing_6_12() {
@@ -1335,6 +1031,12 @@ class HtmlGenerator extends documentGenerator
             and forth.</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyChildBelongings\">6.12&nbsp;&nbsp; Physical Custody and Timesharing:
+        Child(ren)'s Personal Belongings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     // Relocation.
     function gen_physical_custody_timesharing_6_13() {
@@ -1354,6 +1056,11 @@ class HtmlGenerator extends documentGenerator
             </p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyRelocation\">6.13&nbsp;&nbsp; Physical Custody and Timesharing:
+        Relocation</a>&nbsp;&nbsp;&nbsp; </p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_physical_custody_timesharing_6_14() {
         $content = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
@@ -1369,6 +1076,11 @@ class HtmlGenerator extends documentGenerator
             agreement of the Parents in writing (text or e-mail is sufficient).</p>";
         
         $this->fileContentString .= $content;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#PhyscialCustodyModofSchedule\">6.14&nbsp;&nbsp; Physical Custody and Timesharing:
+        Modification of Schedule by Agreement of Both Parents</a></p>";
+        $this->tableOfContentsString .= $toc;
     } // End of section 4: Physical custody and Timesharing
 
 
@@ -1433,9 +1145,12 @@ class HtmlGenerator extends documentGenerator
          border:none'>h.<span style='font:7.0pt'>&nbsp;&nbsp; </span>Discipline
          of a child during one parent's timesharing day which may affect the other
          parent's timesharing.&nbsp; </p>";
- 
          
          $this->fileContentString .= $definition;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#Communication\">7.00&nbsp;&nbsp; Communication</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      //Communication method page1
@@ -1455,8 +1170,12 @@ class HtmlGenerator extends documentGenerator
          receiving parent shall acknowledge the message and provide a timeline in which
          a response shall be provided.</p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationEmailOnly\">7.01&nbsp;&nbsp; Communication Between Co-Parents: E-mail
+         Only</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_02()
@@ -1466,7 +1185,7 @@ class HtmlGenerator extends documentGenerator
          name=CommunicationEmailandTextOnly><b>7.02</b>&nbsp; <u>COMMUNICATION BETWEEN
          CO-PARENTS: <span style='background:yellow'>E-MAIL AND TEXT ONLY</span></u></a>. 
          Parents shall communicate primarily through e-mail and text.&nbsp; The Parents may utilize telephone calls in an
-         emergency situation or in the event a timely response is needed (within 2 � 4
+         emergency situation or in the event a timely response is needed (within 2 - 4
          hours).&nbsp; Otherwise, all communication shall be via e-mail or text.&nbsp; Both
          Parents shall check their e-mail and texts at least once daily and shall
          respond to messages or other items needing attention (i.e. switch requests)
@@ -1474,8 +1193,12 @@ class HtmlGenerator extends documentGenerator
          acknowledge the message and provide a timeline in which a response shall be
          provided.</p>";
          
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationEmailandTextOnly\">7.02&nbsp;&nbsp; Communication Between Co-Parents:
+         E-mail and Text Only</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_03()
@@ -1491,8 +1214,13 @@ class HtmlGenerator extends documentGenerator
          of the date the last party signs this Agreement and shall maintain an account
          with said program.</p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationOurFamilyWizard\">7.03&nbsp;&nbsp; Communication Between Co-Parents:
+         Our Family Wizard or Other Mutually Agreed Upon Parenting Communication
+         Application</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      //communication between co-parents
@@ -1511,8 +1239,12 @@ class HtmlGenerator extends documentGenerator
          Parents shall end upon each child's eighteenth (18th) birthday, or as mutually
          agreed by the Parents.&nbsp; </p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationMonthlyConference\">7.04&nbsp;&nbsp; Communication Between Co-Parents:
+         Monthly Conference</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_05()
@@ -1521,14 +1253,18 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSemiAnnualConference><b>7.05&nbsp; </b><u>COMMUNICATION BETWEEN
          CO-PARENTS: SEMI-ANNUAL CONFERENCE</u></a>. Parents shall meet and confer twice
-         annually by no later than <span sytle='background:yellow'>" . $this->responses["semidate1"] . "</span> and <span sytle='background:yellow'>" . $this->responses["semidate2"] . "</span>
+         annually by no later than <span style='background:yellow'>" . $this->responses["semidate1"] . "</span> and <span style='background:yellow'>" . $this->responses["semidate2"] . "</span>
          every year.&nbsp; Meetings may be via in-person, video conference or telephone
          calls, as mutually agreed by the Parents.&nbsp; This requirement for bi-annual
          conferences between Parents shall end upon each child's eighteenth (18th)
          birthday, or as mutually agreed by the Parents.&nbsp; </p>";
- 
-         
+          
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationSemiAnnualConference\">7.05&nbsp;&nbsp; Communication Between
+         Co-Parents: Semi Annual Conference</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_06()
@@ -1538,8 +1274,12 @@ class HtmlGenerator extends documentGenerator
          name=CommunicationAnnualConference><b>7.06&nbsp; </b><u>COMMUNICATION BETWEEN
          CO-PARENTS: ANNUAL CONFERENCE</u></a>.</p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationAnnualConference\">7.06 &nbsp; Communication Between Co-Parents:
+         Annual Conference</a> </p>";
+         $this->tableOfContentsString .= $toc;
      }
      
      function gen_communication_7_06a()
@@ -1552,8 +1292,10 @@ class HtmlGenerator extends documentGenerator
          between Parents shall end upon each child's eighteenth (18th) birthday, or as
          mutually agreed by the Parents.<u> </u></p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_07()
@@ -1565,8 +1307,12 @@ class HtmlGenerator extends documentGenerator
          the regular parenting time schedule, the child may contact each parent whenever
          they wish.</span></p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationUnlimited\">7.07&nbsp;&nbsp; Communication Between Child(ren) and
+         Non-Custodial Parent: Unlimited</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_08()
@@ -1580,8 +1326,12 @@ class HtmlGenerator extends documentGenerator
          child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ".
          Calls will normally be no more than 10 minutes.</span></p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationSpecific\">7.08&nbsp;&nbsp; Communication Between Child(ren) and
+         Non-Custodial Parent: Specific</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_09()
@@ -1594,9 +1344,14 @@ class HtmlGenerator extends documentGenerator
          address, and home address. Parents agree that if this contact information
          changes, they shall provide the new contact information to the other Parent
          immediately.</span></p>";
- 
          
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationExchangeofContactInfo\">7.09&nbsp;&nbsp; Communication: Exchange of
+         Contact Information</a></p>
+";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_10()
@@ -1613,8 +1368,12 @@ class HtmlGenerator extends documentGenerator
          Parent, unless the other Parent agrees.</span><b>&nbsp; </b><span style='color:#333333'>The
          other Parent shall not unreasonably withhold their agreement.</span></p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationSchedulingExtracurricular\">7.10&nbsp;&nbsp; Communication: Scheduling
+         Extracurricular Activities for the Child(ren)</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
  
      function gen_communication_7_11()
@@ -1628,8 +1387,12 @@ class HtmlGenerator extends documentGenerator
          Parent shall be expected to take each Child to that activity and support the
          Child's participation during the time that the Child is in their care.</span>&nbsp; </p>";
  
-         
          $this -> fileContentString .= $snippet;
+
+         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#CommunicationSelectingExtracurricular\">7.11&nbsp;&nbsp; Communication: Selecting
+         Extracurricular Activities for the Child(ren)</a></p>";
+         $this->tableOfContentsString .= $toc;
      }
 
      // End of Communication
@@ -1937,6 +1700,11 @@ class HtmlGenerator extends documentGenerator
         shall be bound by and follow the Uniform Interstate Family Support Act.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCMonthlyUnderLaw\">8.00&nbsp;&nbsp; Support of the Child(ren): Child Support
+        Guidelines Amount Under the Law</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // same state 
     function gen_child_support_8_01()
@@ -1948,6 +1716,11 @@ class HtmlGenerator extends documentGenerator
         calculated pursuant to the State child support guidelines worksheet. </p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCChildSupportSameState\">8.01&nbsp;&nbsp; Support of the Child(ren): Child
+        Support Guidelines Amount When Parents Reside in the Same State</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // mutually agreed upon amount alternative 
     function gen_child_support_8_03()
@@ -1965,6 +1738,11 @@ class HtmlGenerator extends documentGenerator
         Child Support Enforcement Agency.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCChildSupportAgreedAlternative\">8.03&nbsp;&nbsp; Support of the Child(ren):
+        Mutually Agreed Upon Amount Alternative</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // no agreement of the parents 
     function gen_child_support_8_04()
@@ -1984,6 +1762,11 @@ class HtmlGenerator extends documentGenerator
         agreements regarding physical custody and timesharing. </b></p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCChildSupportNoAgreement\">8.04&nbsp;&nbsp; Support of the Child(ren): No
+        Agreement of the Parties Re Monthly Child Support Amount and/or Jurisdiction</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // child support account alternative 
     // *** per Kristin, will add some text to this section & get back to us ***
@@ -1997,6 +1780,11 @@ class HtmlGenerator extends documentGenerator
         style='background:yellow'>.&nbsp; Parents agree that " . $this->responses["accountAlternative"] . "</span></p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCChildSupportAccountAlternative\">8.05&nbsp;&nbsp; Support of the Child(ren):
+        Child Support Account Alternative</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // payment -> pick only one -> direct payment 
     function gen_child_support_8_06()
@@ -2007,6 +1795,11 @@ class HtmlGenerator extends documentGenerator
         OF CHILD SUPPORT</u>.</a></p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SocDirectPayment\">8.06&nbsp;&nbsp; Support of the Child(ren): Direct Payment of
+        the Child Support</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // payment -> pick only one -> payment of child support through support enforcement agency 
     function gen_child_support_8_07()
@@ -2017,6 +1810,11 @@ class HtmlGenerator extends documentGenerator
         OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCThroughStateAgency\">8.07&nbsp;&nbsp; Support of the Child(ren): Payment of
+        Child Support Through the State Child Support Enforcement Agency</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // health insurance premiums 
     function gen_child_support_8_08()
@@ -2028,6 +1826,11 @@ class HtmlGenerator extends documentGenerator
         health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCHealthInsurance\">8.08&nbsp;&nbsp; Support of the Child(ren): Health Insurance
+        Premiums</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // header for uninsured co-pays for health-related expenses
     function gen_child_support_8_09()
@@ -2038,6 +1841,11 @@ class HtmlGenerator extends documentGenerator
         CO-PAYS FOR HEALTH-RELATED EXPENSES</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCUninsuredCoPays\">8.09&nbsp;&nbsp; Support of the Child(ren): Uninsured Co-Pays
+        for Health-Related Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_09A() //uninsured co-pays for health-related expenses -> sole responsibility
     {
@@ -2048,6 +1856,11 @@ class HtmlGenerator extends documentGenerator
         health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCUninsuredCoPaysSR\">8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a> </p>";
+        $this->tableOfContentsString .= $toc;
+
     }
     function gen_child_support_8_09B() //split responsibility
     {
@@ -2059,6 +1872,10 @@ class HtmlGenerator extends documentGenerator
         per month.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCUninsuredCoPaysSpR\">8.09B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_09C() //responsibility for threshold amount
     {
@@ -2073,6 +1890,11 @@ class HtmlGenerator extends documentGenerator
         health-related expenses premiums exceeding the threshold amount.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCUninsuredCoPaysThresholdAmount\">8.09C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Responsibility for
+        Threshold Amount</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // header for Extracurricular Expenses 
     function gen_child_support_8_10()
@@ -2083,6 +1905,11 @@ class HtmlGenerator extends documentGenerator
         EXTRACURRICULAR EXPENSES</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCExtracurricular\">8.10&nbsp;&nbsp; Support of the Child(ren): Extracurricular
+        Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_10A() // extracurricular expenses -> sole responsibility 
     {
@@ -2092,6 +1919,10 @@ class HtmlGenerator extends documentGenerator
         <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)'s extracurricular expenses.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCExtracurricularSR\">8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_10B() // split responsibility
     {
@@ -2102,6 +1933,10 @@ class HtmlGenerator extends documentGenerator
         extracurricular expenses.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCExtracurricularSpR\">8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_10C() // pursuant to 7.10 hereinabove 
     {
@@ -2119,6 +1954,11 @@ class HtmlGenerator extends documentGenerator
         for the Child to participate</span>.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCExtracurricularSelection\">8.10C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selecting Extracurricular
+        Activities for the Child(ren) Pursuant to 7.10 Hereinabove</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_10D() // mutually agreed upon
     {
@@ -2131,6 +1971,12 @@ class HtmlGenerator extends documentGenerator
         selecting mutually agreed upon extracurricular activities.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCExtracurricularMutualAgreement\">8.10D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extracurricular
+        Activities Must Be Mutually Agreed Upon</a></p>
+";
+        $this->tableOfContentsString .= $toc;
     }
     // header for private school expenses 
     function gen_child_support_8_11()
@@ -2141,6 +1987,11 @@ class HtmlGenerator extends documentGenerator
         PRIVATE SCHOOL EXPENSES</u>.</a></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCPrivateSchoolExpenses\">8.11&nbsp;&nbsp; Support of the Child(ren): Private
+        School Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_11A() // sole
     {
@@ -2150,6 +2001,10 @@ class HtmlGenerator extends documentGenerator
         <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)'s private school expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPrivateSchoolExpensesSR\">8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_11B() // split
     {
@@ -2160,6 +2015,10 @@ class HtmlGenerator extends documentGenerator
         private school expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPrivateSchoolExpensesSpR\">8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_11C() // definition
     {
@@ -2172,6 +2031,11 @@ class HtmlGenerator extends documentGenerator
         uniforms, school lunches, and before and/or after school care expenses.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPrivateSchoolExpensesDefinition\">8.11C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Private
+        School Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_11D() // mutual agreement of parents
     {
@@ -2183,6 +2047,11 @@ class HtmlGenerator extends documentGenerator
         approve the enrollment of any Child in a private school.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPrivateSchoolExpensesMutualAgreement\">8.11D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement
+        of Parents</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_11E() // reserve
     {
@@ -2192,6 +2061,10 @@ class HtmlGenerator extends documentGenerator
         Parents shall reserve the issue of private school expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPrivateSchoolExpensesReserve\">8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // header for post-high school expenses 
     function gen_child_support_8_12()
@@ -2202,6 +2075,11 @@ class HtmlGenerator extends documentGenerator
         SCHOOL EDUCATION EXPENSES</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCPostSchoolExpenses\">8.12&nbsp;&nbsp; Support of the Child(ren): Post-High
+        School Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12A() // sole
     {
@@ -2212,6 +2090,10 @@ class HtmlGenerator extends documentGenerator
         expenses.&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesSR\">8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12B() // split
     {
@@ -2222,6 +2104,10 @@ class HtmlGenerator extends documentGenerator
         post-high school education expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesSpR\">8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Responsibility</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12C() // sole after 529 
     {
@@ -2237,6 +2123,13 @@ class HtmlGenerator extends documentGenerator
         post-high school education expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesSRFundsfromchildacc\">8.12C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole
+        Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
+        Children, Coverdell Accounts of Other Funds</a></p>
+";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12D() // split after 529
     {
@@ -2252,6 +2145,13 @@ class HtmlGenerator extends documentGenerator
         Child(ren)'s remaining post-high school education expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesSpRFundsfromchildac\">8.12D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split
+        Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or
+        Children, Coverdell Accounts of Other Funds Ear-Marked to Pay for a Child's
+        Post-High School Education Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12E() // cap on payment
     {
@@ -2264,6 +2164,12 @@ class HtmlGenerator extends documentGenerator
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesCap\">8.12E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cap on Payment by Each Parent
+        per Academic School Year</a></p>
+";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12F() // definition
     {
@@ -2277,6 +2183,11 @@ class HtmlGenerator extends documentGenerator
         and before and/or after school care expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesDef\">8.12F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Definition of Post-High School
+        Education Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12G() // mutual agreement
     {
@@ -2290,6 +2201,11 @@ class HtmlGenerator extends documentGenerator
         educational institution.<b>&nbsp; </b></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesMutualAgreement\">8.12G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mutual Agreement of
+        Parents</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_12H() // reserve
     {
@@ -2300,6 +2216,10 @@ class HtmlGenerator extends documentGenerator
         expenses.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCPostSchoolExpensesReserve\">8.12H &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserve</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // header for claiming the child(ren) as a dependent for tax purposes 
     function gen_child_support_8_13()
@@ -2310,6 +2230,11 @@ class HtmlGenerator extends documentGenerator
         CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#SoCDependents\">8.13&nbsp;&nbsp; Support of the Child(ren): Claiming the Child(ren)
+        as a Dependent for Tax Purposes</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_13A() // sole    
     {
@@ -2320,6 +2245,10 @@ class HtmlGenerator extends documentGenerator
         as a dependent for tax purposes every year.&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCDependentsSA\">8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sole Authority to Claim the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_13B() // split     
     {
@@ -2332,6 +2261,10 @@ class HtmlGenerator extends documentGenerator
         year.&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCDependentsSpA\">8.13B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim the Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_13C() // split then alternate
     {
@@ -2346,6 +2279,11 @@ class HtmlGenerator extends documentGenerator
         Child.&nbsp;&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCDependentsSpAthenAlternate\">8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Split Authority to Claim
+        the Child(ren) then Alternate</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_13D() // alternate authority
     {
@@ -2358,6 +2296,11 @@ class HtmlGenerator extends documentGenerator
         years.&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCDependentsAlternate\">8.13D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternate Authority to Claim the
+        Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // header for protocols for reimbursement -> radio buttons
     function gen_child_support_8_14()
@@ -2368,6 +2311,11 @@ class HtmlGenerator extends documentGenerator
         PROTOCOLS FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:normal'><a
+        href=\"#SoCProtocolsforReimbursment\">8.14&nbsp;&nbsp; Support of the Child(ren): Protocols
+        for Reimbursement of Child-Related Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_14A() // timeframe
     {
@@ -2379,6 +2327,11 @@ class HtmlGenerator extends documentGenerator
         reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentTimeframe\">8.14A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Timeframe for
+        Reimbursement of Child-Related Expenses and Reimbursement</a> </p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_14B() // monthly
     {
@@ -2389,6 +2342,11 @@ class HtmlGenerator extends documentGenerator
         calculate child-related expenses and reimburse each other on a monthly basis.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentMonthly\">8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly Calculation
+        of Child-Related Expenses and Reimbursement</a> </p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_14C() // quarterly
     {
@@ -2399,6 +2357,11 @@ class HtmlGenerator extends documentGenerator
         calculate child-related expenses and reimburse each other on a quarterly basis.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentQuarterly\">8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quarterly
+        Calculation of Child-Related Expenses and Reimbursement</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_child_support_8_14D() // annual
     {
@@ -2409,6 +2372,11 @@ class HtmlGenerator extends documentGenerator
         calculate child-related expenses and reimburse each other on an annual basis.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentAnnual\">8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Annual Calculation of
+        Child-Related Expenses and Reimbursement</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     // protocols for reimbursement -> optional 
     function gen_child_support_8_14E() // documentation required
@@ -2421,24 +2389,39 @@ class HtmlGenerator extends documentGenerator
         order to receive reimbursement from the other Parent.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentDocumentation\">8.14E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Documentation
+        Required for Reimbursement of Child-Related Expenses</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     // protocols for reimbursement -> reimbursement method      
     function gen_child_support_8_14F() // reimbursement method
     {
-        $content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, show a blank line instead of displaying nothing
+        $content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, do not output the "or ___" part
         if (empty($content)) {
-            $content = "________";
+            $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=SoCProtocolsforReimbursmentMethod><b>8.14F </b><u>REIMBURSEMENT METHOD</u></a>.
+            Parents shall use the following method to reimburse each other for
+            child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
+            or other mutually agreed upon parenting expense tool or application.<b>&nbsp;&nbsp;&nbsp; </b></p>";
+        } else {
+            $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+            name=SoCProtocolsforReimbursmentMethod><b>8.14F </b><u>REIMBURSEMENT METHOD</u></a>.
+            Parents shall use the following method to reimburse each other for
+            child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
+            or other mutually agreed upon parenting expense tool or application, or
+            <span style='background:yellow'>$content</span>.<b>&nbsp;&nbsp;&nbsp; </b></p>";
         }
-        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-        name=SoCProtocolsforReimbursmentMethod><b>8.14F </b><u>REIMBURSEMENT METHOD</u></a>.
-        Parents shall use the following method to reimburse each other for
-        child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
-        or other mutually agreed upon parenting expense tool or application, or
-        <span style='background:yellow'>$content</span>.<b>&nbsp;&nbsp;&nbsp; </b></p>";
-        
+ 
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href=\"#SoCProtocolsforReimbursmentMethod\">8.14F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reimbursement Method</a></p>";
+        $this->tableOfContentsString .= $toc;
     }   // end of child support
 
     //Other section
@@ -2458,6 +2441,11 @@ class HtmlGenerator extends documentGenerator
         upon the mutual agreement of both Parents.</p>";
         
         $this->fileContentString .= $header;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesCoParentingCounseling\">9.00&nbsp;&nbsp; Other Issues:&nbsp; Co-Parent
+        Counseling</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_01()
@@ -2479,6 +2467,11 @@ class HtmlGenerator extends documentGenerator
         consent.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesChildFocusedTherapist\">9.01&nbsp;&nbsp; Other Issues:&nbsp; Child-Focused
+        Therapist</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_02() 
@@ -2491,6 +2484,11 @@ class HtmlGenerator extends documentGenerator
         Parent on social media.&nbsp; </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesSocialMediaBetweenParents\">9.02&nbsp;&nbsp; Other Issues:&nbsp; Social Media
+        Between Parents</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     
     function gen_other_9_03()
@@ -2505,6 +2503,11 @@ class HtmlGenerator extends documentGenerator
         either Parent or the Child. </p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesSocialMediaForChild\">9.03&nbsp;&nbsp; Other Issues:&nbsp; Social Media For
+        Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_04()
@@ -2517,6 +2520,11 @@ class HtmlGenerator extends documentGenerator
         parent-teacher meetings together.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesJointTeacherMeeting\">9.04&nbsp;&nbsp; Other Issues:&nbsp; Joint
+        Parent-Teacher Meetings</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_05()
@@ -2529,6 +2537,11 @@ class HtmlGenerator extends documentGenerator
         parent-teacher meetings.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesSeperateTeacherMeeting\">9.05&nbsp;&nbsp; Other Issues:&nbsp; Separate
+        Parent-Teacher Meetings</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_06()
@@ -2542,6 +2555,11 @@ class HtmlGenerator extends documentGenerator
         Child(ren)'s progress.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesOneParentTeacherMeeting\">9.06&nbsp;&nbsp; Other Issues:&nbsp; One Parent to
+        Attend Parent-Teacher Meetings</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_07()
@@ -2555,6 +2573,11 @@ class HtmlGenerator extends documentGenerator
         notify the school authorities to provide separate report cards.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesReportCard\">9.07&nbsp;&nbsp; Other Issues:&nbsp; Report Cards for the
+        Child(ren)</a></p>";
+        $this->tableOfContentsString .= $toc;
     } 
     
     function gen_other_9_08()
@@ -2567,6 +2590,11 @@ class HtmlGenerator extends documentGenerator
         may attend school events and extra-curricular activities.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+         href=\"#OtherIssuesJointAttendance\">9.08&nbsp;&nbsp; Other Issues:&nbsp; Joint Attendance at
+         School and Extracurricular Events</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_09()
@@ -2581,6 +2609,11 @@ class HtmlGenerator extends documentGenerator
         Parent to attend these events.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesOneParentExtracurricular\">9.09&nbsp;&nbsp; Other Issues:&nbsp; Custodial
+        Parent to Attend School and Extracurricular Events</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_10()
@@ -2593,6 +2626,11 @@ class HtmlGenerator extends documentGenerator
         attending the Child(ren)'s school events and extracurricular activities.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesAlternateAttendance\">9.10&nbsp;&nbsp; Other Issues:&nbsp; Alternate
+        Attendance at School and Extracurricular Events</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_11()
@@ -2607,6 +2645,10 @@ class HtmlGenerator extends documentGenerator
         important documents.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesDocuments\">9.11&nbsp;&nbsp; Other Issues: Documents</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_12()
@@ -2618,6 +2660,11 @@ class HtmlGenerator extends documentGenerator
         any Child.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesJointConsentPassport\">9.12&nbsp;&nbsp; Other Issues: Joint Authority to
+        Consent for Passport</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_13()
@@ -2629,6 +2676,11 @@ class HtmlGenerator extends documentGenerator
         <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</span></p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesSoleConsentPassport\">9.13&nbsp;&nbsp; Other Issues: Sole Authority to
+        Consent for Passport</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_14()
@@ -2653,6 +2705,11 @@ class HtmlGenerator extends documentGenerator
         process.</p>";
         
         $this->fileContentString .= $snippet;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesNewIntimatePartnerLD\">9.14&nbsp;&nbsp; Other Issues: New Intimate
+        Partner Protocols (Less Detailed)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_15()
@@ -2726,6 +2783,11 @@ class HtmlGenerator extends documentGenerator
         highest priority.&nbsp; </p>";
         
         $this->fileContentString .= $snippet; 
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesNewIntimatePartnerMD\">9.15&nbsp;&nbsp; Other Issues: New Intimate
+        Partner Protocols (More Detailed)</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function gen_other_9_16()
@@ -2739,6 +2801,11 @@ class HtmlGenerator extends documentGenerator
         prior to filing a motion for relief with the Family Court.</p>";
         
         $this->fileContentString .= $snippet; 
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#OtherIssuesAlternativeDisputeResolution\">9.16&nbsp;&nbsp; Other Issues:
+        Alternative Dispute Resolution</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     //Section 8: Legal
@@ -2756,6 +2823,10 @@ class HtmlGenerator extends documentGenerator
             provisions set forth herein.</p>";
         
         $this->fileContentString .= $continuingJurisdiction;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalContinuingJurisdiction\">10.00 Legal: Continuing Jurisdiction</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_legal_10_01() {
         $enforcement = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
@@ -2770,6 +2841,10 @@ class HtmlGenerator extends documentGenerator
             applicable statutory authority, court rule and/or case law.</p>";
         
         $this->fileContentString .= $enforcement;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalEnforcement\">10.01 Legal: Enforcement</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
     function gen_legal_10_02() {
         $execution = "<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
@@ -2782,6 +2857,10 @@ class HtmlGenerator extends documentGenerator
             regarding these and all other matters contained herein.</p>";
         
         $this->fileContentString .= $execution;
+        
+        $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
+        href=\"#LegalVoluntaryExecution\">10.02 Legal: Voluntary Execution</a></p>";
+        $this->tableOfContentsString .= $toc;
     }
 
     function signature() {
