@@ -13,17 +13,15 @@ class wordDocGenerator extends documentGenerator
 {
 	function genHeader()
 	{
-		echo "Generating Header " . $this->fileName . " <br/>";
+		
 		$this->fileContentString .= "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>
                 <w:document xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" mc:Ignorable=\"w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14\">
                 <w:body>";
 	}
-    function gen_guiding_principals_statement()
-    {
-    }
+  
 	function genFooter()
 	{
-		echo "Generating Footer " . $this->fileName . " <br/>";
+		
 		$this->fileContentString .= "
 		<w:sectPr w:rsidR=\"00505307\">
                    <w:footerReference w:type=\"even\" r:id=\"rId9\" />
@@ -40,108 +38,66 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {
-        // $childrenInfo = "
-        // <w:p>
-        // <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>CHILDREN:</w:t>
-        //       </w:r>
-        //     </w:p>
-        //     <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-        //       <w:pPr>
-        //         <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
-        //         <w:ind w:left='0' w:right='36' w:firstLine='0'/>
-        //         <w:jc w:val='both'/>
-        //       </w:pPr>
-        //       <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
-        //       <w:r w:rsidRPr='00D52A55'>
-        //         <w:rPr>
-        //           <w:b/>
-        //         </w:rPr>
-        //         <w:t>4.00</w:t>
-        //       </w:r>
-        //       <w:r w:rsidRPr='00D52A55'>
-        //         <w:rPr>
-        //           <w:b/>
-        //         </w:rPr>
-        //         <w:tab/>
-        //       </w:r>
-        //       <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-        //       </w:r>
-        //       <w:bookmarkEnd w:id='12'/>
-        //       <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>)</w:t>
-        //       </w:r>
-        //       <w:r>
-        //         <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
-        //         </w:t>
-        //       </w:r>";
-		$childrenInfo = "<w:p w14:paraId='11EA964A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-			<w:ind w:left='0' w:right='46' w:firstLine='0' />
-			<w:jc w:val='center' />
-			<w:rPr>
-				<w:b />
-				<w:u w:val='single' />
-			</w:rPr>
-		</w:pPr>
-		<w:r>
-			<w:rPr>
-				<w:u w:val='single' />
-			</w:rPr>
-			<w:t>CHILDREN:</w:t>
-		</w:r>
-	</w:p>
-	
-	<w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-		<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		<w:ind w:left='0' w:right='36' w:firstLine='0' />
-		<w:jc w:val='both' />
-	</w:pPr>
-	<w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren' />
-	<w:r w:rsidRPr='00D52A55'>
-		<w:rPr>
-			<w:b />
-		</w:rPr>
-		<w:t>4.00</w:t>
-	</w:r>
-	<w:r w:rsidRPr='00D52A55'>
-		<w:rPr>
-			<w:b />
-		</w:rPr>
-		<w:tab />
-	</w:r>
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-	</w:r>
-	<w:bookmarkEnd w:id='12' />
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>)</w:t>
-	</w:r>
-	<w:r>
-		<w:t>. The Parents have ____ Child(ren) together as follows: Child A (“____________”) born in ( ___ birth year), Child B (“____________”) born in (birth year), Child C (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child E (“____________”) born in ( ___ birth year) collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.</w:t>
-	</w:r>
-</w:p>";
-        echo $childrenInfo;
-        $this->fileContentString .= $childrenInfo;
+
+    function gen_children_4_00(int $num) {
+        $header = "<w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILDREN:</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>4.00</w:t>
+              </w:r>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='12'/>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>)</w:t>
+              </w:r>
+              <w:r>
+                <w:t>. The Parents have $num Child(ren) together as follows: ";
+        $this->fileContentString .= $header;
+    }
+
+    function gen_children_4_00_individual(int $childNum, string $letter) {
+        if ($childNum == 1) {
+            $childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . ")";
+        } else {
+            $childrenInfo = ", Child $letter (“"
+                . $this->responses["child" . $childNum . "BirthYears"] . "”) born in ("
+                . $this->responses["child" . $childNum . "BirthYears"] . ")";
+        }
+    }
+    function gen_children_4_00_last() {
+        $endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
+                </w:t>
+              </w:r>";
+        $this->fileContentString .= $endSentence;
     }
 
 
@@ -181,7 +137,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>eighteen (18) years of age, and decisions involving a child’s travel to any distance beyond the jurisdiction of the United States for any period of time. </w:t>
 		</w:r>
 	</w:p>";
-        echo $definition;
+        
         $this->fileContentString .= $definition;
 	}
 	function gen_legal_custody_5_01()
@@ -219,7 +175,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents agree they shall make significant decisions together and encourage input from Child(ren). If Parents cannot come to an agreement about a major decision, they shall use the dispute resolution process set out in this document.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_03A()
@@ -251,7 +207,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent A shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_03B()
@@ -283,7 +239,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent B shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_05A()
@@ -358,7 +314,7 @@ class wordDocGenerator extends documentGenerator
 		<w:t>with legal custody shall have an affirmative duty to inform the other Parent of any new providers working with the Child(ren).</w:t>
 	</w:r>
 </w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_05B()
@@ -433,7 +389,7 @@ class wordDocGenerator extends documentGenerator
 		<w:t>with legal custody shall have an affirmative duty to inform the other Parent of any new providers working with the Child(ren).</w:t>
 	</w:r>
 </w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_04()
@@ -478,7 +434,7 @@ class wordDocGenerator extends documentGenerator
 			shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with " . $this->responses["parentABZ"] . " and the child.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_06()
@@ -527,7 +483,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> or other event where an emergency contact is requested.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_07()
@@ -562,7 +518,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Parents shall seek the advice and be guided by subject matter experts when making legal custody decisions on behalf of the Child(ren). </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_08()
@@ -606,7 +562,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>During the period when the Child(ren) is or are living with or in the care of a Parent, that Parent can make day-to-day decisions about our child, for example about, doing homework, meals, visiting with their friends, use of computer, etc.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_09()
@@ -650,7 +606,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>In a health emergency for a Child, the Parent with care of the Child(ren) at that time will make the treatment decision, on the advice of medical personnel. If a Parent makes an emergency health decision for a Child, the Parent who has made the decision must immediately contact the other Parent.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_10()
@@ -698,7 +654,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>In the event of a Parent’s medical emergency, the other Parent shall assume the major decision-making responsibilities for the Child(ren) until the situation becomes resolved. In the event of the death of one Parent, the other Parent shall care for the Child(ren), but the surviving Parent shall ensure that the Child(ren) has/have continued relations with the relatives of the deceased Parent.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_legal_custody_5_11()
@@ -743,7 +699,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents shall disengage from one another and make decisions independently when the Child(ren) is in their care.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	} //end of legal custody section 3
 
@@ -832,7 +788,7 @@ class wordDocGenerator extends documentGenerator
 		the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.</w:t>
 	</w:r>
 </w:p>";
-        echo $header;
+        
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01() {
@@ -872,7 +828,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $header;
+        
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01A() {
@@ -1041,35 +997,35 @@ class wordDocGenerator extends documentGenerator
                 <w:t>Both Parents agree that the 50/50 schedule is best for their Child(ren).</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "2-2-3":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_2_2_3();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "3-4-4-3":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_3_4_4_3();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "2-2-5-5":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_2_2_5_5();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "7-7":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_7_7();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_01B() {
@@ -1119,29 +1075,29 @@ class wordDocGenerator extends documentGenerator
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "8-6":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_8_6();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "10-4":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_10_4();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "ownSchedule":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_own_schedule();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02() {
@@ -1174,7 +1130,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_02A(string $type) {
@@ -1212,29 +1168,29 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Fall Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($type) {
             case "fall-split-break":
                 $split = new Fall();
                 $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $fall;
+                
                 $this->fileContentString .= $fall;
                 break;
             case "fall-alternate-break":
                 $alternate = new Fall();
                 $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $fall;
+                
                 $this->fileContentString .= $fall;
                 break;
             case "fall-continue-schedule":
                 $continue = new Fall();
                 $fall = $continue->get_continue();
-                echo $fall;
+                
                 $this->fileContentString .= $fall;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02B(string $type) {
@@ -1268,35 +1224,35 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($type) {
             case "thanksgiving-split-break":
                 $split = new Thanksgiving();
                 $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $thanksgiving;
+                
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-alternate-break":
                 $alternate = new Thanksgiving();
                 $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $thanksgiving;
+                
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-continue-schedule":
                 $continue = new Thanksgiving();
                 $thanksgiving = $continue->get_continue();
-                echo $thanksgiving;
+                
                 $this->fileContentString .= $thanksgiving;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02BOptional() {
         $time_break = new Thanksgiving();
         $thanksgiving = $time_break->get_time();
-        echo $thanksgiving;
+        
         $this->fileContentString .= $thanksgiving;
     }
     function gen_physical_custody_timesharing_6_02C(string $type) {
@@ -1330,35 +1286,35 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. The Parents shall share time with the Child(ren) during Winter Break as follows:</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($type) {
             case "winter-split-break":
                 $split = new Winter();
                 $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $winter;
+                
                 $this->fileContentString .= $winter;
                 break;
             case "winter-alternate-break":
                 $alternate = new Winter();
                 $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $winter;
+                
                 $this->fileContentString .= $winter;
                 break;
             case "winter-split-holiday-break":
                 $split_holiday = new Winter();
                 $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
-                echo $winter;
+                
                 $this->fileContentString .= $winter;
                 break;
             case "winter-continue-schedule":
                 $continue = new Winter();
                 $winter = $continue->get_continue();
-                echo $winter;
+                
                 $this->fileContentString .= $winter;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02D(string $type) {
@@ -1395,29 +1351,29 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Spring Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($type) {
             case "spring-split-break":
                 $split = new Spring();
                 $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $spring;
+                
                 $this->fileContentString .= $spring;
                 break;
             case "spring-alternate-break":
                 $alternate = new Spring();
                 $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $spring;
+                
                 $this->fileContentString .= $spring;
                 break;
             case "spring-continue-schedule":
                 $continue = new Spring();
                 $spring = $continue->get_continue();
-                echo $spring;
+                
                 $this->fileContentString .= $spring;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02E(string $type) {
@@ -1458,36 +1414,43 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. The Parents shall share time with the Child(ren) during Summer Break as follows:</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
         switch ($type) {
             case "summer-split-break":
                 $split = new Summer();
                 $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-uninterrupted-schedule":
                 $alternate = new Summer();
-                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
-                echo $summer;
+                $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-schedule":
                 $continue = new Summer();
                 $summer = $continue->get_continue();
-                echo $summer;
+                
                 $this->fileContentString .= $summer;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_03() {
-        //$table = new HolidayTableWord();
-        //$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], //$this->responses['partyBBirthday'], $this->responses['childBirthdays']);
-        //echo $holidayTable;
-        //$this->fileContentString .= $holidayTable;
+
+        $table = new HolidayTableWord();
+        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
+        for ($i = 2; $i <= 6; $i++) {
+            $initials = $this->responses['child' . $i . 'Initials'];
+            $birthday = $this->responses['child' . $i . 'Birthday'];
+            if ($initials != "" && $birthday != "") {
+                $childrenRows .= $table->getChildren($initials, $birthday);
+            }
+        }
+        $end = $table->getEnd();
+        $this->fileContentString .= $holidayTable;
     }
     function gen_physical_custody_timesharing_6_03A() {
         $alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -1523,7 +1486,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at ___ am/pm and ending at ___ am/pm.</w:t>
               </w:r>
             </w:p>";
-        echo $alt;
+        
         $this->fileContentString .= $alt;
     }
     function gen_physical_custody_timesharing_6_03B() {
@@ -1559,7 +1522,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $split;
+        
         $this->fileContentString .= $split;
     }
     function gen_physical_custody_timesharing_6_03C() {
@@ -1600,7 +1563,7 @@ class wordDocGenerator extends documentGenerator
               </w:r>
             </w:p>
             <w:bookmarkEnd w:id='56'/>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_03D() {
@@ -1637,7 +1600,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_04() {
@@ -1723,7 +1686,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'> travel, such a trip shall require the non-traveling parent’s consent which, if such requests are occasional, shall not be unreasonably withheld. Parents agree that off-island travel shall not negatively impact the Child(ren)’s education.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_05() {
@@ -1779,7 +1742,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t>schedule. If the change in the schedule results in the Child(ren) missing considerable time with the accommodating parent, reasonable “make-up time” will be arranged by the Parents.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_06() {
@@ -1837,7 +1800,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t>If the non-custodial Parent cannot accommodate the request, the custodial Parent is responsible for arranging and paying for alternate childcare and will inform the other Parent of who will be caring for the Child(ren).</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_07() {
@@ -1873,7 +1836,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_08() {
@@ -1910,7 +1873,7 @@ class wordDocGenerator extends documentGenerator
                 <w:tab/>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_09() {
@@ -1958,7 +1921,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t>" . $this->responses['exchangesNeutral'] . ".</w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_10() {
@@ -2015,7 +1978,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_11() {
@@ -2065,7 +2028,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>"; //only one person has been implemented so far
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_12() {
@@ -2119,7 +2082,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_13() {
@@ -2195,7 +2158,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'>an agreement, the Child(ren) shall remain with the non-moving parent until Parents are able to mutually agree or further order of the Court.  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_14() {
@@ -2229,7 +2192,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     } // End of section 4: Physical custody and Timesharing
 
@@ -2483,7 +2446,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>Discipline of a child during one parent’s timesharing day which may affect the other parent’s timesharing.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_01() 
@@ -2531,7 +2494,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 
@@ -2580,7 +2543,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_03() 
@@ -2618,7 +2581,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application.  Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_04() 
@@ -2665,7 +2628,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>insert day of the week] of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_05() 
@@ -2700,7 +2663,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than " . $this->responses["semidate1"] . " [insert date] and " . $this->responses["semidate2"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_06() 
@@ -2738,7 +2701,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_06a() 
@@ -2762,7 +2725,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_07() 
@@ -2806,7 +2769,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>During the regular parenting time schedule, the child may contact each parent whenever they wish.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_08() 
@@ -2847,7 +2810,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>During the regular parenting time schedule, Parent A may call the child between " . $this->responses["A9:00"] . " and " . $this->responses["A17:00"] . " when they are with Parent B and Parent B may call the child between " . $this->responses["B09:00"] . " and " . $this->responses["B17:00"] . " when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_09() 
@@ -2886,7 +2849,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents shall provide to the other Parent with updated telephone number(s), email address, and home address. Parents agree that if this contact information changes, they shall provide the new contact information to the other Parent immediately.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_10() 
@@ -2956,7 +2919,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>The other Parent shall not unreasonably withhold their agreement.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_11() 
@@ -2997,7 +2960,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
 		$this->fileContentString .= $snippet;
 	}
 
@@ -3043,7 +3006,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Each State has Child Support Guidelines used to calculate monthly child support. Each parent shall be bound by and follow the Uniform Interstate Family Support Act.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_01()
@@ -3087,7 +3050,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>Child support shall be paid by " . $this->responses["parentAB1"] . " to " . $this->responses["parentAB2"] . " and calculated pursuant to the State child support guidelines worksheet. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_03()
@@ -3132,7 +3095,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Order for Income Withholding (or similar order) via the State Child Support Enforcement Agency.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_04()
@@ -3193,7 +3156,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> and timesharing with the Child(ren) impacts the calculation of child support. If the child support amount if going to be litigated through the Family Court or administratively through the State Child Support Enforcement Agency, Parents are hereby advised to seek independent legal counsel before making any agreements regarding physical custody and timesharing. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_05()
@@ -3238,11 +3201,11 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:highlight w:val='yellow' />
 			</w:rPr>
-			<w:t>that</w:t>
+			<w:t>that " . $this->responses["accountAlternative"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_06()
@@ -3279,7 +3242,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_07()
@@ -3318,7 +3281,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_08()
@@ -3362,7 +3325,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. " . $this->responses["parentAB5"] . " shall cover the Child(ren)’s health insurance premiums in the amount of $" . $this->responses["insurancePremium"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09()
@@ -3398,7 +3361,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09A()
@@ -3439,7 +3402,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. " . $this->responses["parentAB6"] . " shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of $" . $this->responses["sole-1"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09B()
@@ -3481,7 +3444,7 @@ class wordDocGenerator extends documentGenerator
 			co-pays for health-related expenses premiums in the amount of $" . $this->responses["split-3"] . " per month.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_09C()
@@ -3530,7 +3493,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds $" . $this->responses["threshold2"] . " per calendar year, then Parent A shall cover " . $this->responses["threshold3"] . "% and Parent B shall cover " . $this->responses["threshold4"] . "% of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10()
@@ -3565,7 +3528,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10A()
@@ -3606,7 +3569,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. " . $this->responses["parentAB_EC"] . " shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10B()
@@ -3651,7 +3614,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Parent A shall cover " . $this->responses["splitEC-1"] . "% and Parent B shall cover " . $this->responses["splitEC-2"] . "% of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10C()
@@ -3701,7 +3664,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_10D()
@@ -3742,7 +3705,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall only be responsible for paying for extracurricular activities that are mutually agreed upon by both Parents. Parents agree to consult and be guided by the Child’s preferences in selecting mutually agreed upon extracurricular activities.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11()
@@ -3776,7 +3739,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11A()
@@ -3817,7 +3780,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. " . $this->responses["parentAB_Priv"] . " shall cover 100% of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11B()
@@ -3858,7 +3821,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parent A shall cover " . $this->responses["splitPriv-1"] . "% and Parent B shall cover " . $this->responses["splitPriv-2"] . "% of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11C()
@@ -3899,7 +3862,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at a private school including, without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11D()
@@ -3946,7 +3909,7 @@ class wordDocGenerator extends documentGenerator
 			<w:tab />
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_11E()
@@ -3992,7 +3955,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall reserve the issue of private school expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12()
@@ -4027,7 +3990,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12A()
@@ -4065,7 +4028,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>.  " . $this->responses["parentAB_High"] . " shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12B()
@@ -4106,7 +4069,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parent A shall cover " . $this->responses["splitHigh-1"] . "% and Parent B shall cover " . $this->responses["splitHigh-2"] . "% of the Child(ren)’s post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12C()
@@ -4151,7 +4114,7 @@ class wordDocGenerator extends documentGenerator
 			cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12D()
@@ -4187,7 +4150,7 @@ class wordDocGenerator extends documentGenerator
 			Parent B shall cover " . $this->responses["split529-2"] . "% of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12E()
@@ -4230,7 +4193,7 @@ class wordDocGenerator extends documentGenerator
 			of $" . $this->responses["postCapB"] . " amount per academic school year. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12F()
@@ -4263,7 +4226,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at any post-high school educational institution (including vocational and trade schools), without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12G()
@@ -4318,7 +4281,7 @@ class wordDocGenerator extends documentGenerator
 			<w:tab />
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_12H()
@@ -4363,7 +4326,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Parents shall reserve the issue of post-high school educational school expenses.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13()
@@ -4398,7 +4361,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13A()
@@ -4442,7 +4405,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>. " . $this->responses["parentAB_taxSole"] . " shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13B()
@@ -4502,7 +4465,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13C()
@@ -4556,7 +4519,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. Once the older Child is no longer eligible to be claimed for tax purposes, then the Parents shall alternate claiming the younger Child. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_13D()
@@ -4604,7 +4567,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>in even years. Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14()
@@ -4639,7 +4602,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14A()
@@ -4677,7 +4640,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within " . $this->responses["timeVal"] . " days.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14B()
@@ -4726,7 +4689,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14C()
@@ -4767,7 +4730,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> Parents shall calculate child-related expenses and reimburse each other on a quarterly basis.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14D()
@@ -4808,7 +4771,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parents shall calculate child-related expenses and reimburse each other on an annual basis.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14E()
@@ -4851,7 +4814,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> receive reimbursement from the other Parent.</w:t>
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	}
 	function gen_child_support_8_14F()
@@ -4904,7 +4867,7 @@ class wordDocGenerator extends documentGenerator
 			<w:tab />
 		</w:r>
 	</w:p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
 	} //end of child support section 6
 
@@ -4961,7 +4924,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>parenting the Child(ren).  Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_01() 
@@ -4996,7 +4959,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.  Parents agree to " . $this->responses["therapistInput9.01"] . " (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_02() 
@@ -5031,7 +4994,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>.  Neither Parent shall post any pictures of the other Parent on social media nor make any derogatory comment about the other Parent on social media.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_03() 
@@ -5069,7 +5032,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>.  Parents agree that none of their Child(ren) shall have access to any social media platform until they reach thirteen (13) years of age, and thereafter both Parents shall monitor any Child’s social media usage to ensure that it is safe and does not cause embarrassment to either Parent or the Child. </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_04() 
@@ -5113,7 +5076,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>  Parents agree that it is in their Child(ren)’s best interests that they both attend parent-teacher meetings together.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_05() 
@@ -5166,7 +5129,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> will each arrange our own separate parent-teacher meetings.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_06() 
@@ -5217,7 +5180,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parent A/B will attend all parent-teacher meetings and will advise " . $this->responses["9.06"] . "/A of the Child(ren)'s progress.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_07() 
@@ -5271,7 +5234,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.  Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_08() 
@@ -5320,7 +5283,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.  Both Parents may attend school events and extra-curricular activities.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_09() 
@@ -5377,7 +5340,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>The Parent with whom the Child(ren) is/are residing at the time of the school event and extracurricular activity will be the sole Parent to attend these events.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_10() 
@@ -5419,7 +5382,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.  Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_11() 
@@ -5474,7 +5437,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'> the important documents.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_12() 
@@ -5518,7 +5481,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parent A and Parent B must both consent for the purposes of a passport application for any Child.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_13() 
@@ -5562,7 +5525,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>Parent " . $this->responses["parentAB_Other3"] . " can apply for the passport for a Child without the consent of " . $this->responses["parentAB_Other4"] . "/A.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_14() 
@@ -5607,7 +5570,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner.  This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_15() 
@@ -5813,7 +5776,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t xml:space='preserve'>In the event there are any problems related to the new intimate partner or these protocols, the Parents shall engage a mental health professional such as a co-parent counselor or family therapist who may also confer with the child therapist to ensure the children’s well-being, comfort and stability remain the highest priority.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	function gen_other_9_16() 
@@ -5848,7 +5811,7 @@ class wordDocGenerator extends documentGenerator
 			<w:t>.  If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
+		
         $this->fileContentString .= $snippet;
 	}
 	//End of other section
@@ -5907,7 +5870,7 @@ class wordDocGenerator extends documentGenerator
                 </w:t>
               </w:r>
             </w:p>";
-        echo $continuingJurisdiction;
+        
         $this->fileContentString .= $continuingJurisdiction;
     }
     function gen_legal_10_01() {
@@ -5963,7 +5926,7 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'> noncompliance.  The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
               </w:r>
             </w:p>";
-        echo $enforcement;
+        
         $this->fileContentString .= $enforcement;
     }
     function gen_legal_10_02() {
@@ -6004,14 +5967,14 @@ class wordDocGenerator extends documentGenerator
                 <w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable.  Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
               </w:r>
             </w:p>";
-        echo $execution;
+        
         $this->fileContentString .= $execution;
     }
 
     function signature() {
         //$signature = new SignatureWord();
         //$signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
-       // echo $signatures;
+       // 
        // $this->fileContentString .= $signatures;
     }
 
@@ -6049,9 +6012,13 @@ class wordDocGenerator extends documentGenerator
 		    $zipOutput->addGlob($folderLevel3ToZip ,ZipArchive::CM_DEFLATE,['remove_path' => $this->fileName]);
 		}
 		if ($zipOutput->status != ZIPARCHIVE::ER_OK)
-            echo "Failed to write files to zip\n";
-		$zipOutput->close();
-
+		{
+             exit("unable to create zip folder ".$zipFilePath . "download.zip");
+        }
+        else
+        {
+           		$zipOutput->close();
+        }
 		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
 	}

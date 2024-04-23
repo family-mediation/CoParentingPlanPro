@@ -1,23 +1,41 @@
 <div class="text-center">
     <form method="post" class="" locale="ENGLISH" action=".\?page=3">
          <div id="mainForm">
-            <div id="page0" class="container p-4">
-                <H1>Children</H1>
+            <div id="page0" class="container card p-4">
+              <H1>Children</H1>
+              <div class="row justify-content-center">
                 <div class="input-field">
-                    <table class="table table-bordered" id="table_field">
+                    <table class="table table-bordered" id="table_field" style="width: 500px">
                         <tr>
                             <th>Initials</th>
                             <th>Birthday</th>
-                            <th>Add or Remove</th>
                         </tr>
                         <tr>
-                            <td><input class="form-control" type="text" name="childInitials" required></td>
-                            <td><input type="date" class="form-control" name="childBirthdays" required></td>
-                            <td><input class="btn btn-warning" type="button" name="add" id="add" value="Add"></td>
+                            <td><input class="form-control" type="text" name="child1Initials" required></td>
+                            <td><input type="date" class="form-control" name="child1Birthday" required></td>
+                        </tr>
+                        <tr>
+                          <td><input class="form-control" type="text" name="child2Initials"></td>
+                          <td><input type="date" class="form-control" name="child2Birthday"></td>
+                        </tr>
+                        <tr>
+                          <td><input class="form-control" type="text" name="child3Initials"></td>
+                          <td><input type="date" class="form-control" name="child3Birthday"></td>
+                        </tr>
+                        <tr>
+                          <td><input class="form-control" type="text" name="child4Initials"></td>
+                          <td><input type="date" class="form-control" name="child4Birthday"></td>
+                        </tr>
+                        <tr>
+                          <td><input class="form-control" type="text" name="child5Initials"></td>
+                          <td><input type="date" class="form-control" name="child5Birthday"></td>
+                        </tr>
+                        <tr>
+                          <td><input class="form-control" type="text" name="child6Initials"></td>
+                          <td><input type="date" class="form-control" name="child6Birthday"></td>
                         </tr>
                     </table>
                     <div class="row justify-content-center pt-4 pb-4">
-                        <!-- <button id="previous" onClick="previousHandler()">Previous Page</button>&nbsp;&nbsp; -->
                         <button id="generate" onClick="validateChildForm() ? submitForm() : null" class="" name="generatePlan" type="button" value="Generate Plan">Next Section</button>
                     </div>
 
@@ -28,8 +46,8 @@
                       }
 
                       function validateChildForm() {
-                        const initials = document.getElementsByName("childInitials");
-                        const birthdays = document.getElementsByName("childBirthdays");
+                        const initials = document.getElementsByName("child1Initials");
+                        const birthdays = document.getElementsByName("child1Birthday");
                         const initialRegex = /^[a-zA-Z]+\.[a-zA-Z]$/;
 
                         for (let i = 0; i < initials.length; i++) {
@@ -44,26 +62,8 @@
                         return true;
                       }
                     </script>
-                    <script>
-                      var html = '<tr><td><input class="form-control" type="text" name="childInitials" required></td><td><input type="date" class="form-control" name="childBirthdays" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
-
-                      // remove max if don't want to have a cap on number of kids to add
-                      var max = 5;
-
-                      var x = 2;
-                      $("#add").click(function() {
-                        if (x <= max) {
-                          var html = '<tr><td><input class="form-control" type="text" name="child'+ x +'Initials" required></td><td><input class="form-control" type="text" name="child'+ x +'BirthYears" required></td><td><input class="btn btn-danger" type="button" name="remove" id="remove" value="Remove"></td></tr>';
-                          $("#table_field").append(html);
-                          x++;
-                        }
-                      });
-                      $("#table_field").on('click', '#remove', function() {
-                        $(this).closest('tr').remove();
-                        x--;
-                      });
-                    </script>
                 </div>
+              </div>
             </div>
         </div>
     </form>

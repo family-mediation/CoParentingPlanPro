@@ -1,6 +1,6 @@
 <?php
 class HolidayTable {
-    public function getHolidayTable(string $parentABirthday, string $parentBBirthday, string $childBirthday): string {
+    public function getHolidayTable(string $parentABirthday, string $parentBBirthday): string {
         return "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:1.5in;line-height:150%'><u><span
              style='text-decoration:none'>&nbsp;</span></u></p>
@@ -186,16 +186,22 @@ class HolidayTable {
               margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parent
               B's Birthday [$parentBBirthday]</p>
               </td>
-             </tr>
-             <tr>
+             </tr>";
+    }
+
+    public function getChildren(string $childXInitials, string $childXBirthday): string {
+        return "<tr>
               <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
               border-top:none;padding:0in 5.4pt 0in 5.4pt'>
               <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
-              margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Child(ren)'s
-              Birthday(s) [$childBirthday]</p>
+              margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>$childXInitials's
+              Birthday [$childXBirthday]</p>
               </td>
-             </tr>
-             <tr>
+             </tr>";
+    }
+
+    public function getEnd(): string {
+        return "<tr>
               <td width=623 valign=top style='width:467.5pt;border:solid black 1.0pt;
               border-top:none;padding:0in 5.4pt 0in 5.4pt'>
               <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
