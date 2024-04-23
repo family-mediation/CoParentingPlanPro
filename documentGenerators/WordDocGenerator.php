@@ -40,108 +40,69 @@ class wordDocGenerator extends documentGenerator
 	}
 
     // Section 2: Children
-    function gen_children_4_00() {
-        // $childrenInfo = "
-        // <w:p>
-        // <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>CHILDREN:</w:t>
-        //       </w:r>
-        //     </w:p>
-        //     <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-        //       <w:pPr>
-        //         <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
-        //         <w:ind w:left='0' w:right='36' w:firstLine='0'/>
-        //         <w:jc w:val='both'/>
-        //       </w:pPr>
-        //       <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
-        //       <w:r w:rsidRPr='00D52A55'>
-        //         <w:rPr>
-        //           <w:b/>
-        //         </w:rPr>
-        //         <w:t>4.00</w:t>
-        //       </w:r>
-        //       <w:r w:rsidRPr='00D52A55'>
-        //         <w:rPr>
-        //           <w:b/>
-        //         </w:rPr>
-        //         <w:tab/>
-        //       </w:r>
-        //       <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-        //       </w:r>
-        //       <w:bookmarkEnd w:id='12'/>
-        //       <w:r>
-        //         <w:rPr>
-        //           <w:u w:val='single'/>
-        //         </w:rPr>
-        //         <w:t>)</w:t>
-        //       </w:r>
-        //       <w:r>
-        //         <w:t>. The Parents have " . $this->responses["numChildren"] . " Child(ren) together as follows: Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . "), Child B (“". $this->responses["child2BirthYears"] . "”) born in (". $this->responses["child2BirthYears"] . "), collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
-        //         </w:t>
-        //       </w:r>";
-		$childrenInfo = "<w:p w14:paraId='11EA964A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-			<w:ind w:left='0' w:right='46' w:firstLine='0' />
-			<w:jc w:val='center' />
-			<w:rPr>
-				<w:b />
-				<w:u w:val='single' />
-			</w:rPr>
-		</w:pPr>
-		<w:r>
-			<w:rPr>
-				<w:u w:val='single' />
-			</w:rPr>
-			<w:t>CHILDREN:</w:t>
-		</w:r>
-	</w:p>
-	
-	<w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-		<w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		<w:ind w:left='0' w:right='36' w:firstLine='0' />
-		<w:jc w:val='both' />
-	</w:pPr>
-	<w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren' />
-	<w:r w:rsidRPr='00D52A55'>
-		<w:rPr>
-			<w:b />
-		</w:rPr>
-		<w:t>4.00</w:t>
-	</w:r>
-	<w:r w:rsidRPr='00D52A55'>
-		<w:rPr>
-			<w:b />
-		</w:rPr>
-		<w:tab />
-	</w:r>
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
-	</w:r>
-	<w:bookmarkEnd w:id='12' />
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>)</w:t>
-	</w:r>
-	<w:r>
-		<w:t>. The Parents have ____ Child(ren) together as follows: Child A (“____________”) born in ( ___ birth year), Child B (“____________”) born in (birth year), Child C (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child D (“____________”) born in ( ___ birth year), Child E (“____________”) born in ( ___ birth year) collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.</w:t>
-	</w:r>
-</w:p>";
-        
-        $this->fileContentString .= $childrenInfo;
+
+    function gen_children_4_00(int $num) {
+        $header = "<w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILDREN:</w:t>
+              </w:r>
+            </w:p>
+            <w:p w14:paraId='6F945AB7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+              <w:pPr>
+                <w:spacing w:after='0' w:line='360' w:lineRule='auto'/>
+                <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+                <w:jc w:val='both'/>
+              </w:pPr>
+              <w:bookmarkStart w:id='12' w:name='ChildrenInformationonChildren'/>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:t>4.00</w:t>
+              </w:r>
+              <w:r w:rsidRPr='00D52A55'>
+                <w:rPr>
+                  <w:b/>
+                </w:rPr>
+                <w:tab/>
+              </w:r>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>CHILD(REN): INFORMATION ON CHILD(REN</w:t>
+              </w:r>
+              <w:bookmarkEnd w:id='12'/>
+              <w:r>
+                <w:rPr>
+                  <w:u w:val='single'/>
+                </w:rPr>
+                <w:t>)</w:t>
+              </w:r>
+              <w:r>
+                <w:t>. The Parents have $num Child(ren) together as follows: ";
+        echo $header;
+        $this->fileContentString .= $header;
+    }
+
+    function gen_children_4_00_individual(int $childNum, string $letter) {
+        if ($childNum == 1) {
+            $childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . ")";
+        } else {
+            $childrenInfo = ", Child $letter (“"
+                . $this->responses["child" . $childNum . "BirthYears"] . "”) born in ("
+                . $this->responses["child" . $childNum . "BirthYears"] . ")";
+        }
+        echo $childrenInfo;
+    }
+    function gen_children_4_00_last() {
+        $endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
+                </w:t>
+              </w:r>";
+        echo $endSentence;
+        $this->fileContentString .= $endSentence;
     }
 
 
@@ -1484,10 +1445,22 @@ class wordDocGenerator extends documentGenerator
         }
     }
     function gen_physical_custody_timesharing_6_03() {
-        //$table = new HolidayTableWord();
-        //$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], //$this->responses['partyBBirthday'], $this->responses['childBirthdays']);
-        //
-        //$this->fileContentString .= $holidayTable;
+
+        $table = new HolidayTableWord();
+        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
+        for ($i = 2; $i <= 6; $i++) {
+            $initials = $this->responses['child' . $i . 'Initials'];
+            $birthday = $this->responses['child' . $i . 'Birthday'];
+            if ($initials != "" && $birthday != "") {
+                $childrenRows .= $table->getChildren($initials, $birthday);
+            }
+        }
+        $end = $table->getEnd();
+        echo $holidayTable;
+        echo $childrenRows;
+        echo $end;
+        $this->fileContentString .= $holidayTable;
     }
     function gen_physical_custody_timesharing_6_03A() {
         $alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
