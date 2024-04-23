@@ -14,7 +14,22 @@ class wordDocGenerator extends documentGenerator
 	function genHeader()
 	{
 		echo "Generating Header " . $this->fileName . " <br/>";
-		$headerString = "<w:p w14:paraId='75F50D4E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+		$headerString = "
+		<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+		<w:document xmlns:wpc='http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas' xmlns:cx='http://schemas.microsoft.com/office/drawing/2014/chartex' xmlns:cx1='http://schemas.microsoft.com/office/drawing/2015/9/8/chartex'
+            xmlns:cx2='http://schemas.microsoft.com/office/drawing/2015/10/21/chartex' xmlns:cx3='http://schemas.microsoft.com/office/drawing/2016/5/9/chartex' xmlns:cx4='http://schemas.microsoft.com/office/drawing/2016/5/10/chartex'
+            xmlns:cx5='http://schemas.microsoft.com/office/drawing/2016/5/11/chartex' xmlns:cx6='http://schemas.microsoft.com/office/drawing/2016/5/12/chartex' xmlns:cx7='http://schemas.microsoft.com/office/drawing/2016/5/13/chartex'
+            xmlns:cx8='http://schemas.microsoft.com/office/drawing/2016/5/14/chartex' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' xmlns:aink='http://schemas.microsoft.com/office/drawing/2016/ink'
+            xmlns:am3d='http://schemas.microsoft.com/office/drawing/2017/model3d' xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:oel='http://schemas.microsoft.com/office/2019/extlst'
+            xmlns:r='http://schemas.openxmlformats.org/officeDocument/2006/relationships' xmlns:m='http://schemas.openxmlformats.org/officeDocument/2006/math' xmlns:v='urn:schemas-microsoft-com:vml'
+            xmlns:wp14='http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing' xmlns:wp='http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing' xmlns:w10='urn:schemas-microsoft-com:office:word'
+            xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' xmlns:w14='http://schemas.microsoft.com/office/word/2010/wordml' xmlns:w15='http://schemas.microsoft.com/office/word/2012/wordml'
+            xmlns:w16cex='http://schemas.microsoft.com/office/word/2018/wordml/cex' xmlns:w16cid='http://schemas.microsoft.com/office/word/2016/wordml/cid' xmlns:w16='http://schemas.microsoft.com/office/word/2018/wordml'
+            xmlns:w16sdtdh='http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash' xmlns:w16se='http://schemas.microsoft.com/office/word/2015/wordml/symex' xmlns:wpg='http://schemas.microsoft.com/office/word/2010/wordprocessingGroup'
+            xmlns:wpi='http://schemas.microsoft.com/office/word/2010/wordprocessingInk' xmlns:wne='http://schemas.microsoft.com/office/word/2006/wordml' xmlns:wps='http://schemas.microsoft.com/office/word/2010/wordprocessingShape'
+            mc:Ignorable='w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14'>
+  		<w:body>
+		<w:p w14:paraId='75F50D4E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 		  <w:ind w:left='0' w:right='0'/>
@@ -352,7 +367,13 @@ class wordDocGenerator extends documentGenerator
 	function genFooter()
 	{
 		echo "Generating Footer " . $this->fileName . " <br/>";
-		$this->fileContentString .= "test test test";
+		$footerString = "
+        </w:body>
+
+        </w:document>
+        ";
+        echo $footerString;
+		$this->fileContentString .= $footerString;
 	}
 
     // Section 2: Children
@@ -4277,6 +4298,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>Discipline of a child during one parent’s timesharing day which may affect the other parent’s timesharing.  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='437FD4E4' w14:textId='4B223E1B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='Communication' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.00</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4325,6 +4370,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='1A16F5DD' w14:textId='1C116F79' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationEmailOnly' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.01</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: E-mail Only</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4374,6 +4443,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='7DE2DA40' w14:textId='070AC226' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationEmailandTextOnly' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.02</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: E-mail and Text Only</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4412,6 +4505,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application.  Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='02DBC795' w14:textId='2A5AF3DB' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationOurFamilyWizard' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.03</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: Our Family Wizard or Other Mutually Agreed Upon Parenting Communication Application</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4459,6 +4576,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>insert day of the week] of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='44845C32' w14:textId='54627EA4' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationMonthlyConference' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.04</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: Monthly Conference</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4494,6 +4635,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than <span sytle='background:yellow'>" . $this->responses["semidate1"] . "</span> [insert date] and <span sytle='background:yellow'>" . $this->responses["semidate2"] . "</span> [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='24D1C56E' w14:textId='76FC6CB7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationSemiAnnualConference' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.05</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: Semi Annual Conference</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4532,6 +4697,33 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='1E8FE095' w14:textId='68EA3C87' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationAnnualConference' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>7.06 </w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Co-Parents: Annual Conference</w:t>
+		</w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='0024078B'>
+		<w:t xml:space='preserve'> </w:t>
+		</w:r>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4600,6 +4792,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>During the regular parenting time schedule, the child may contact each parent whenever they wish.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='10A782E2' w14:textId='0C1B980B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationUnlimited' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.07</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Child(ren) and Non-Custodial Parent: Unlimited</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4641,6 +4857,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>During the regular parenting time schedule, Parent A may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with Parent B and Parent B may call the child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='0554C7E9' w14:textId='419C7A55' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationSpecific' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.08</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication Between Child(ren) and Non-Custodial Parent: Specific</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4680,6 +4920,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>Parents shall provide to the other Parent with updated telephone number(s), email address, and home address. Parents agree that if this contact information changes, they shall provide the new contact information to the other Parent immediately.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='2085E4C7' w14:textId='04336079' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationExchangeofContactInfo' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.09</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication: Exchange of Contact Information</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4750,6 +5014,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>The other Parent shall not unreasonably withhold their agreement.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='4BA6636F' w14:textId='5CCB6274' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationSchedulingExtracurricular' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.10</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication: Scheduling Extracurricular Activities for the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4791,6 +5079,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='49417B8E' w14:textId='358D17BA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='CommunicationSelectingExtracurricular' w:history='1'>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>7.11</w:t>
+		</w:r>
+		<w:r w:rsidR='0024078B' w:rsidRPr='0024078B'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Communication: Selecting Extracurricular Activities for the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
@@ -4837,6 +5149,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> Each State has Child Support Guidelines used to calculate monthly child support. Each parent shall be bound by and follow the Uniform Interstate Family Support Act.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='702DD571' w14:textId='70495F34' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCMonthlyUnderLaw' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.00</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Child Support Guidelines Amount Under the Law</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -4881,6 +5217,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>Child support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB1"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB2"] . "</span> and calculated pursuant to the State child support guidelines worksheet. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCChildSupportSameState' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.01</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Child Support Guidelines Amount When Parents Reside in the Same State</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -4926,6 +5286,53 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> Order for Income Withholding (or similar order) via the State Child Support Enforcement Agency.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='3B6E6235' w14:textId='6132329F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCChildSupportDifferentState' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.02</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Child Support Guidelines Amount When Parents Reside in Different States</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>
+	
+  <w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCChildSupportAgreedAlternative' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.03</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Mutually Agreed Upon Amount Alternative</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+	//Put both 8.02 and 8.03 
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -4987,6 +5394,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> and timesharing with the Child(ren) impacts the calculation of child support. If the child support amount if going to be litigated through the Family Court or administratively through the State Child Support Enforcement Agency, Parents are hereby advised to seek independent legal counsel before making any agreements regarding physical custody and timesharing. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='4B161A4D' w14:textId='71DB9B0A' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCChildSupportNoAgreement' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.04</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): No Agreement of the Parties Re Monthly Child Support Amount and/or Jurisdiction</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5036,6 +5467,23 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='29FBC8DA' w14:textId='6561EE79' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCChildSupportAccountAlternative' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.05 Support of the Child(ren): Child Support Account Alternative</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5073,6 +5521,23 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SocDirectPayment' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.06 Support of the Child(ren): Direct Payment of the Child Support</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5112,6 +5577,23 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='4A046E1A' w14:textId='29630DCC' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCThroughStateAgency' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.07 Support of the Child(ren): Payment of Child Support Through the State Child Support Enforcement Agency</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5156,6 +5638,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB5"] . "</span> shall cover the Child(ren)’s health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCHealthInsurance' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.08</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Health Insurance Premiums</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5192,6 +5698,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='614302AC' w14:textId='35D513A0' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCUninsuredCoPays' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Uninsured Co-Pays for Health-Related Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5233,6 +5763,45 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB6"] . "</span> shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCUninsuredCoPaysSR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Sole Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+		<w:r>
+		<w:t xml:space='preserve'> </w:t>
+		</w:r>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5275,6 +5844,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span> per month.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCUninsuredCoPaysSpR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5324,6 +5929,110 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then Parent A shall cover <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCUninsuredCoPaysThresholdAmount' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Responsibility for Threshold Amount</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>
+	
+		<w:p w14:paraId='605C7136' w14:textId='104B8D8A' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCUninsuredCoPaysRecbyProvider' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Definition of Uninsured Health-Related Expenses: Recommended by Providers</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>
+	
+	<w:p w14:paraId='55700CFE' w14:textId='7140CB63' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCUninsuredCoPaysAgreementbyParents' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.09E</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Definition of Uninsured Health-Related Expenses: Mutual Agreement of the Parents</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5359,6 +6068,23 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='46AF528D' w14:textId='27F74889' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCExtracurricular' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.10 Support of the Child(ren): Extracurricular Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5400,6 +6126,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCExtracurricularSR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.10A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Sole Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5445,6 +6207,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> Parent A shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)’s extracurricular expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCExtracurricularSpR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.10B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5495,6 +6293,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='6FC343D3' w14:textId='030E034B' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCExtracurricularSelection' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.10C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Selecting Extracurricular Activities for the Child(ren) Pursuant to 7.10 Hereinabove</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5536,6 +6370,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Parents shall only be responsible for paying for extracurricular activities that are mutually agreed upon by both Parents. Parents agree to consult and be guided by the Child’s preferences in selecting mutually agreed upon extracurricular activities.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='310DDEA1' w14:textId='2C68D17D' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCExtracurricularMutualAgreement' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.10D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Extracurricular Activities Must Be Mutually Agreed Upon</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5570,6 +6440,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpenses' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Private School Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5611,6 +6505,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpensesSR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Sole Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5652,6 +6582,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)’s private school expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpensesSpR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5693,6 +6659,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at a private school including, without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='780CA74D' w14:textId='1B6EE2A0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpensesDefinition' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Definition of Private School Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5740,6 +6742,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:tab />
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='187B3720' w14:textId='22503B53' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpensesMutualAgreement' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Mutual Agreement of Parents</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5786,6 +6824,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Parents shall reserve the issue of private school expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='49FE8DBB' w14:textId='1E17DAB7' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPrivateSchoolExpensesReserve' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.11E</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Reserve</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5821,6 +6895,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='4590273C' w14:textId='76BF38BF' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCPostSchoolExpenses' w:history='1'>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12</w:t>
+		</w:r>
+		<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Post-High School Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5859,6 +6957,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>.  <span style='background:yellow'>" . $this->responses["parentAB_High"] . "</span> shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='463DFCA4' w14:textId='6D96CAE1' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesSR' w:history='1'>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00D305A5'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Sole Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5900,6 +7034,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Parent A shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and Parent B shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)’s post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesSpR' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Responsibility</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5945,6 +7115,54 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesSRFundsfromchildacc' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t xml:space='preserve'>Sole Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of </w:t>
+		</w:r>
+		<w:r w:rsidR='00E616E1' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>Other</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> Funds</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -5981,6 +7199,54 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			Parent B shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the Child(ren)’s remaining post-high school education expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesSpRFundsfromchildac' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t xml:space='preserve'>Split Responsibility After Funds from Any 529 Accounts held on Behalf of a Child or Children, Coverdell Accounts of </w:t>
+		</w:r>
+		<w:r w:rsidR='00E616E1' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>Other</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> Funds Ear-Marked to Pay for a Child’s Post-High School Education Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6024,6 +7290,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesCap' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12E</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Cap on Payment by Each Parent per Academic School Year</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6057,6 +7359,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Private school expenses shall be defined to include all expenses related to a Child’s attendance at any post-high school educational institution (including vocational and trade schools), without limitation, application fees/costs, tuition, books, uniforms, school lunches, and before and/or after school care expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='7C893177' w14:textId='4D6C0F72' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesDef' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12F</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Definition of Post-High School Education Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6112,6 +7450,45 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:tab />
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='363B8DAE' w14:textId='4D423F75' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		<w:rPr>
+			<w:b/>
+		</w:rPr>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesMutualAgreement' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.12G</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Mutual Agreement of Parents</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6157,6 +7534,36 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Parents shall reserve the issue of post-high school educational school expenses.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='25B711F9' w14:textId='25570154' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCPostSchoolExpensesReserve' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t xml:space='preserve'>8.12H </w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Reserve</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6192,6 +7599,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='7B39350D' w14:textId='46423AD8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCDependents' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.13</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Claiming the Child(ren) as a Dependent for Tax Purposes</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6236,6 +7667,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>. <span style='background:yellow'>" . $this->responses["parentAB_taxSole"] . "</span> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCDependentsSA' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.13A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Sole Authority to Claim the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6296,6 +7763,43 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='2D4E2B97' w14:textId='298C2014' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:lastRenderedPageBreak/>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCDependentsSpA' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.13B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Authority to Claim the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6350,6 +7854,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. Once the older Child is no longer eligible to be claimed for tax purposes, then the Parents shall alternate claiming the younger Child. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='2AEB034B' w14:textId='049FDB31' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCDependentsSpAthenAlternate' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.13C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Split Authority to Claim the Child(ren) then Alternate</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6398,6 +7938,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>in even years. Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCDependentsAlternate' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.13D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Alternate Authority to Claim the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6433,6 +8009,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='73F47652' w14:textId='5F068939' w:rsidR='00505307' w:rsidRDefault='00FC64E6' w:rsidP='00E616E1'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0' w:firstLine='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursment' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Support of the Child(ren): Protocols for Reimbursement of Child-Related Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6471,6 +8071,45 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentTimeframe' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14A</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Timeframe for Reimbursement of Child-Related Expenses and Reimbursement</w:t>
+		</w:r>
+		</w:hyperlink>
+		<w:r>
+		<w:t xml:space='preserve'> </w:t>
+		</w:r>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6520,6 +8159,45 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='42FF5BC3' w14:textId='28E01CEF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentMonthly' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14B</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Monthly Calculation of Child-Related Expenses and Reimbursement</w:t>
+		</w:r>
+		</w:hyperlink>
+		<w:r>
+		<w:t xml:space='preserve'> </w:t>
+		</w:r>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6561,6 +8239,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> Parents shall calculate child-related expenses and reimburse each other on a quarterly basis.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='597031A3' w14:textId='7AEC5A9C' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentQuarterly' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14C</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Quarterly Calculation of Child-Related Expenses and Reimbursement</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6602,6 +8316,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>Parents shall calculate child-related expenses and reimburse each other on an annual basis.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='402D2656' w14:textId='3D787A27' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentAnnual' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14D</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Annual Calculation of Child-Related Expenses and Reimbursement</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6645,6 +8395,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> receive reimbursement from the other Parent.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='1F248F34' w14:textId='26D54941' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentDocumentation' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14E</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Documentation Required for Reimbursement of Child-Related Expenses</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6697,6 +8483,42 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:tab />
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='SoCProtocolsforReimbursmentMethod' w:history='1'>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>8.14F</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Reimbursement Method</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
         echo $snippet;
         $this->fileContentString .= $snippet;
 	} //end of child support section 6
@@ -6754,6 +8576,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>parenting the Child(ren).  Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='2300015A' w14:textId='125E7276' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesCoParentingCounseling' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.00</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Co-Parent Counseling</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6789,6 +8635,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.  Parents agree to <span style='background:yellow'>" . $this->responses["therapistInput9.01"] . "</span> (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesChildFocusedTherapist' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.01</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Child-Focused Therapist</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6824,6 +8694,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>.  Neither Parent shall post any pictures of the other Parent on social media nor make any derogatory comment about the other Parent on social media.  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='12CD9324' w14:textId='2F5749CC' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesSocialMediaBetweenParents' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.02</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Social Media Between Parents</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6862,6 +8756,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>.  Parents agree that none of their Child(ren) shall have access to any social media platform until they reach thirteen (13) years of age, and thereafter both Parents shall monitor any Child’s social media usage to ensure that it is safe and does not cause embarrassment to either Parent or the Child. </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='7392834C' w14:textId='64C87E0B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesSocialMediaForChild' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.03</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Social Media For Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6906,6 +8824,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>  Parents agree that it is in their Child(ren)’s best interests that they both attend parent-teacher meetings together.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='56C3F5CA' w14:textId='0DBD847A' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesJointTeacherMeeting' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.04</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Joint Parent-Teacher Meetings</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -6959,6 +8901,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> will each arrange our own separate parent-teacher meetings.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='36B937E6' w14:textId='4DD2B156' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesSeperateTeacherMeeting' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.05</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Separate Parent-Teacher Meetings</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7010,6 +8976,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>Parent A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the Child(ren)'s progress.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesOneParentTeacherMeeting' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.06</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: One Parent to Attend Parent-Teacher Meetings</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7064,6 +9054,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.  Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='406AA414' w14:textId='78AF25A1' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesReportCard' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.07</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Report Cards for the Child(ren)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7113,6 +9127,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.  Both Parents may attend school events and extra-curricular activities.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='562564DD' w14:textId='2FB7B2F2' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesJointAttendance' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.08</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Joint Attendance at School and Extracurricular Events</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7170,6 +9208,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>The Parent with whom the Child(ren) is/are residing at the time of the school event and extracurricular activity will be the sole Parent to attend these events.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='739B44B4' w14:textId='397228A3' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesOneParentExtracurricular' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.09</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Custodial Parent to Attend School and Extracurricular Events</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7212,6 +9274,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.  Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='26A7A61A' w14:textId='776E4B21' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesAlternateAttendance' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.10</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Alternate Attendance at School and Extracurricular Events</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7267,6 +9353,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'> the important documents.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='089BFEE7' w14:textId='1D519E9C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesDocuments' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.11</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Documents</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7311,6 +9421,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>Parent A and Parent B must both consent for the purposes of a passport application for any Child.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='638E9405' w14:textId='366FE802' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesJointConsentPassport' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.12</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Joint Authority to Consent for Passport</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7355,6 +9489,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>Parent <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesSoleConsentPassport' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.13</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Sole Authority to Consent for Passport</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7400,6 +9558,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner.  This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = " <w:p w14:paraId='51895F18' w14:textId='05A7E18F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesNewIntimatePartnerLD' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.14</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: New Intimate Partner Protocols (Less Detailed)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7606,6 +9788,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t xml:space='preserve'>In the event there are any problems related to the new intimate partner or these protocols, the Parents shall engage a mental health professional such as a co-parent counselor or family therapist who may also confer with the child therapist to ensure the children’s well-being, comfort and stability remain the highest priority.  </w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='1E11FF73' w14:textId='315BD30E' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesNewIntimatePartnerMD' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.15</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: New Intimate Partner Protocols (More Detailed)</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7641,6 +9847,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 			<w:t>.  If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
 		</w:r>
 	</w:p>";
+
+	$tableCon = "<w:p w14:paraId='3381AF8D' w14:textId='0D6C31F2' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='OtherIssuesAlternativeDisputeResolution' w:history='1'>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>9.16</w:t>
+		</w:r>
+		<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+			<w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Other Issues: Alternative Dispute Resolution</w:t>
+		</w:r>
+		</w:hyperlink>
+	</w:p>";
+	$this->tableOfContentsString .= $tableCon;
+
 		echo $snippet;
         $this->fileContentString .= $snippet;
 	}
@@ -7700,6 +9930,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
                 </w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='113886B9' w14:textId='062CA6FF' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+				<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+				</w:pPr>
+				<w:hyperlink w:anchor='LegalContinuingJurisdiction' w:history='1'>
+				<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+					<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+					</w:rPr>
+					<w:t>10.00</w:t>
+				</w:r>
+				<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+					<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+					</w:rPr>
+					<w:tab/>
+					<w:t>Legal: Continuing Jurisdiction</w:t>
+				</w:r>
+				</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $continuingJurisdiction;
         $this->fileContentString .= $continuingJurisdiction;
     }
@@ -7756,6 +10010,30 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
                 <w:t xml:space='preserve'> noncompliance.  The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='40951A29' w14:textId='7BA09668' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+				<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+				</w:pPr>
+				<w:hyperlink w:anchor='LegalEnforcement' w:history='1'>
+				<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+					<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+					</w:rPr>
+					<w:t>10.01</w:t>
+				</w:r>
+				<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+					<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+					</w:rPr>
+					<w:tab/>
+					<w:t>Legal: Enforcement</w:t>
+				</w:r>
+				</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $enforcement;
         $this->fileContentString .= $enforcement;
     }
@@ -7797,6 +10075,23 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
                 <w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable.  Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
               </w:r>
             </w:p>";
+
+			$tableCon = "<w:p w14:paraId='33195E27' w14:textId='517DE0D7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+				<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+				</w:pPr>
+				<w:hyperlink w:anchor='LegalVoluntaryExecution' w:history='1'>
+				<w:r w:rsidR='00C16882' w:rsidRPr='00C16882'>
+					<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+					</w:rPr>
+					<w:t>10.02 Legal: Voluntary Execution</w:t>
+				</w:r>
+				</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $tableCon;
+
         echo $execution;
         $this->fileContentString .= $execution;
     }
