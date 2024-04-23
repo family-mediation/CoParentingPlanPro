@@ -69,8 +69,14 @@
 
 
         <div>
-          <input type="radio" name="childSupport" id="alternative" value="alternative" />
+          <input type="radio" name="childSupport" id="alternative" value="alternative" onclick="alternativeMore()" />
           <label for="alternative">Child Support Account Alternative</label>
+        </div>
+
+        <div class="container card p-4" id="alternativeInfo" style="display: none;">
+          <label style="width: 800px">Parents agree that
+            <textarea name="accountAlternative" class="form-control"></textarea>
+          </label>
         </div>
 
         <br>
@@ -569,6 +575,18 @@
   radioButtonsB.forEach(function(radioButton3) {
     radioButton3.addEventListener('change', function() {
       noAgreeMore();
+    });
+  });
+
+  function alternativeMore() {
+    var am = document.getElementById('alternativeInfo');
+    am.style.display = document.getElementById('alternative').checked ? 'block' : 'none';
+  }
+
+  var radioButtonsAM = document.querySelectorAll('input[type="radio"][name="childSupport"]');
+  radioButtonsAM.forEach(function(radioButton3) {
+    radioButton3.addEventListener('change', function() {
+      alternativeMore();
     });
   });
 

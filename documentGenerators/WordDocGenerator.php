@@ -3203,7 +3203,7 @@ class wordDocGenerator extends documentGenerator
 			<w:rPr>
 				<w:highlight w:val='yellow' />
 			</w:rPr>
-			<w:t>that</w:t>
+			<w:t>that " . $this->responses["accountAlternative"] . "</w:t>
 		</w:r>
 		<w:proofErr w:type='gramEnd' />
 	</w:p>";

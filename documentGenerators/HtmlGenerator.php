@@ -1994,7 +1994,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCChildSupportAccountAlternative><b><span style='background:yellow'>8.05 </span></b><u><span
         style='background:yellow'>SUPPO</span></u></a><u><span style='background:yellow'>RT
         OF THE CHILD(REN): CHILD SUPPORT ACCOUNT ALTERNATIVE</span></u><span
-        style='background:yellow'>.&nbsp; Parents agree that</span></p>";
+        style='background:yellow'>.&nbsp; Parents agree that " . $this->responses["accountAlternative"] . "</span></p>";
         
         $this->fileContentString .= $snippet;
     }
