@@ -619,10 +619,9 @@ class HtmlGenerator extends documentGenerator
          address is <span style='background:yellow'>" . $this->responses["partyBResidence"] . ", 
           " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>";
 
-        echo $headerString;
-        echo $header2String;
         $this->tableOfContentsString .= $headerString;
         $this->fileContentString .= $header2String;
+        
     }
     function genFooter()
     {
@@ -633,7 +632,7 @@ class HtmlGenerator extends documentGenerator
 
         </html>
         ";
-        echo $footerString;
+        
         $this->fileContentString .= $footerString;
     }
 
@@ -644,7 +643,7 @@ class HtmlGenerator extends documentGenerator
     function gen_guiding_principals_statement()
     {
         $guidingPrincipals = "from co-parenting plan template.php: RESPONSIBILITIES TO OUR CHILD(REN)";
-        echo $guidingPrincipals;
+        
         $this->fileContentString .= $guidingPrincipals;
     }
 
@@ -667,6 +666,7 @@ class HtmlGenerator extends documentGenerator
         if ($childNum == 1) {
             $childrenInfo = "Child A (\""
                 . $this->responses["child1Initials"] . "\") born in ("
+
                 . $this->responses["child1Birthday"] . ")";
         } else {
             $childrenInfo = ", Child $letter (\""
@@ -702,8 +702,7 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodyGlobalPriority\">6.00&nbsp;&nbsp; Physical Custody and Timesharing:
         Global Priority</a></p>";
         $this->tableOfContentsString .= $toc;
-
-        echo $header;
+        
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01() {
@@ -727,7 +726,6 @@ class HtmlGenerator extends documentGenerator
         Timesharing: Timesharing During the School Year</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $header;
         $this->fileContentString .= $header;
     }
 
@@ -776,35 +774,34 @@ class HtmlGenerator extends documentGenerator
         Schedules</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "2-2-3":
                 $equalSchedule = new EqualTimeSharingSchedules();
                 $schedule = $equalSchedule->get_2_2_3();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "3-4-4-3":
                 $equalSchedule = new EqualTimeSharingSchedules();
                 $schedule = $equalSchedule->get_3_4_4_3();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "2-2-5-5":
                 $equalSchedule = new EqualTimeSharingSchedules();
                 $schedule = $equalSchedule->get_2_2_5_5();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "7-7":
                 $equalSchedule = new EqualTimeSharingSchedules();
                 $schedule = $equalSchedule->get_7_7();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolYearSchedule - equal schedules.";
+                
         }
     }
 
@@ -819,29 +816,28 @@ class HtmlGenerator extends documentGenerator
         Schedules</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "8-6":
                 $otherSchedule = new OtherTimeSharingSchedules();
                 $schedule = $otherSchedule->get_8_6();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "10-4":
                 $otherSchedule = new OtherTimeSharingSchedules();
                 $schedule = $otherSchedule->get_10_4();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             case "ownSchedule":
                 $otherSchedule = new OtherTimeSharingSchedules();
                 $schedule = $otherSchedule->get_own_schedule();
-                echo $schedule;
+                
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolYearSchedule - other schedules.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02() {
@@ -860,7 +856,6 @@ class HtmlGenerator extends documentGenerator
         Timesharing: Timesharing During the School Breaks</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
     }
 
@@ -875,7 +870,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodyFallBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fall Break</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "fall-split-break":
@@ -909,11 +903,11 @@ class HtmlGenerator extends documentGenerator
 
                 $continue = new FallSchedules();
                 $fall = $continue->get_continue();
-                echo $fall;
+                
                 $this->fileContentString .= $fall;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolFallBreakSchedule.";
+                
         }
     }
 
@@ -928,7 +922,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodyThanksgiving\">6.02B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thanksgiving Break</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "thanksgiving-split-break":
@@ -938,7 +931,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split = new ThanksgivingSchedules();
                 $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-alternate-break":
@@ -948,7 +940,6 @@ class HtmlGenerator extends documentGenerator
 
                 $alternate = new ThanksgivingSchedules();
                 $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-continue-schedule":
@@ -959,11 +950,11 @@ class HtmlGenerator extends documentGenerator
 
                 $continue = new ThanksgivingSchedules();
                 $thanksgiving = $continue->get_continue();
-                echo $thanksgiving;
+                
                 $this->fileContentString .= $thanksgiving;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolThanksgivingBreakSchedule.";
+                
         }
     }
     function gen_physical_custody_timesharing_6_02BOptional() {
@@ -973,7 +964,7 @@ class HtmlGenerator extends documentGenerator
 
         $time_break = new ThanksgivingSchedules();
         $thanksgiving = $time_break->get_time();
-        echo $thanksgiving;
+        
         $this->fileContentString .= $thanksgiving;
     }
 
@@ -989,7 +980,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodyWinterBreak\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.02C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Winter Break</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "winter-split-break":
@@ -999,7 +989,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split = new WinterSchedules();
                 $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-alternate-break":
@@ -1009,7 +998,6 @@ class HtmlGenerator extends documentGenerator
 
                 $alternate = new WinterSchedules();
                 $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-split-holiday-break":
@@ -1020,7 +1008,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split_holiday = new WinterSchedules();
                 $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-continue-schedule":
@@ -1031,11 +1018,11 @@ class HtmlGenerator extends documentGenerator
 
                 $continue = new WinterSchedules();
                 $winter = $continue->get_continue();
-                echo $winter;
+                
                 $this->fileContentString .= $winter;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolWinterBreakSchedule.";
+                
         }
     }
 
@@ -1049,7 +1036,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodySpringBreak\">6.02D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Break</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "spring-split-break":
@@ -1059,7 +1045,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split = new SpringSchedules();
                 $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-alternate-break":
@@ -1069,7 +1054,6 @@ class HtmlGenerator extends documentGenerator
 
                 $alternate = new SpringSchedules();
                 $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-continue-schedule":
@@ -1080,11 +1064,11 @@ class HtmlGenerator extends documentGenerator
 
                 $continue = new SpringSchedules();
                 $spring = $continue->get_continue();
-                echo $spring;
+                
                 $this->fileContentString .= $spring;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolSpringBreakSchedule.";
+                
         }
     }
 
@@ -1099,7 +1083,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#PhysicalCustodySummerBreak\">6.02E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Summer Break</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "summer-split-break":
@@ -1109,7 +1092,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split = new SummerSchedules();
                 $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-uninterrupted-schedule":
@@ -1120,7 +1102,6 @@ class HtmlGenerator extends documentGenerator
 
                 $alternate = new SummerSchedules();
                 $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); 
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-schedule":
@@ -1131,11 +1112,11 @@ class HtmlGenerator extends documentGenerator
 
                 $continue = new SummerSchedules();
                 $summer = $continue->get_continue();
-                echo $summer;
+                
                 $this->fileContentString .= $summer;
                 break;
             default:
-                echo "Error in HTML Generator for the variable: schoolSummerBreakSchedule.";
+                
         }
     }
 
@@ -1147,6 +1128,7 @@ class HtmlGenerator extends documentGenerator
         $this->tableOfContentsString .= $toc;
 
         $table = new HolidayTable();
+
         $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
         $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
         for ($i = 2; $i <= 6; $i++) {
@@ -1175,7 +1157,7 @@ class HtmlGenerator extends documentGenerator
             . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) in even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren)
             in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
             beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
-        echo $alt;
+        
         $this->fileContentString .= $alt;
     }
     // Split Every Year.
@@ -1188,7 +1170,7 @@ class HtmlGenerator extends documentGenerator
             " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the second half of this holiday/special
             day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
              <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
-        echo $split;
+        
         $this->fileContentString .= $split;
     }
     // Mon/Fri Holidays Attached to a Weekend.
@@ -1197,7 +1179,7 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
             HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Every Year with Parent A or Parent B.
@@ -1244,7 +1226,7 @@ class HtmlGenerator extends documentGenerator
             parent's consent which, if such requests are occasional, shall not be
             unreasonably withheld. Parents agree that off-island travel shall not
             negatively impact the Child(ren)'s education.</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
 
@@ -1260,7 +1242,7 @@ class HtmlGenerator extends documentGenerator
             request for a change in the </span>schedule. If the change in the schedule
             results in the Child(ren) missing considerable time with the accommodating
             parent, reasonable make-up time will be arranged by the Parents.</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Right of first refusal checked.
@@ -1277,7 +1259,7 @@ class HtmlGenerator extends documentGenerator
             accommodate the request, the custodial Parent is responsible for arranging and
             paying for alternate childcare and will inform the other Parent of who will be
             caring for the Child(ren).</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Pick-up, non-school.
@@ -1289,7 +1271,7 @@ class HtmlGenerator extends documentGenerator
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, then the Parents receiving the Child(ren) for custodial
             time shall pick-up the Child(ren) from the other Parent.</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Drop-off, non-school.
@@ -1301,7 +1283,7 @@ class HtmlGenerator extends documentGenerator
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, then the Parents relinquishing the Child(ren) for
             custodial time shall drop off the Child(ren) to the other Parent. &nbsp;&nbsp;&nbsp; </p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Exchanges, neutral location.
@@ -1313,7 +1295,7 @@ class HtmlGenerator extends documentGenerator
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, Parents agree to exchange the child at the following
             neutral location:&nbsp;  " . $this->responses['exchangesNeutral'] . ".</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Delegate Pick up and Drop off.
@@ -1326,7 +1308,7 @@ class HtmlGenerator extends documentGenerator
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the Parent who is responsible for the pick-up or drop off may
             delegate another person to pick up or drop off the Child(ren).</span></p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Persons authorized to pick up/drop off.
@@ -1339,7 +1321,7 @@ class HtmlGenerator extends documentGenerator
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the following people may pick up or drop off the Child(ren):
              " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Children's personal belongings.
@@ -1361,7 +1343,7 @@ class HtmlGenerator extends documentGenerator
             homes. Parents will each have toiletries, pajamas and as many belongings as
             possible for the Child(ren) in their homes. These items will not travel back
             and forth.</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     // Relocation.
@@ -1380,7 +1362,7 @@ class HtmlGenerator extends documentGenerator
             cannot reach an agreement, the Child(ren) shall remain with the non-moving
             parent until Parents are able to mutually agree or further order of the Court.&nbsp;
             </p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_14() {
@@ -1395,7 +1377,7 @@ class HtmlGenerator extends documentGenerator
             reasonable under the circumstances, mutually agreed to, and deemed in the best
             interest of the Child(ren).&nbsp; The foregoing schedule may be modified upon mutual
             agreement of the Parents in writing (text or e-mail is sufficient).</p>";
-        echo $content;
+        
         $this->fileContentString .= $content;
     } // End of section 4: Physical custody and Timesharing
 
@@ -1462,7 +1444,7 @@ class HtmlGenerator extends documentGenerator
          of a child during one parent's timesharing day which may affect the other
          parent's timesharing.&nbsp; </p>";
  
-         echo $definition;
+         
          $this->fileContentString .= $definition;
      }
  
@@ -1483,7 +1465,7 @@ class HtmlGenerator extends documentGenerator
          receiving parent shall acknowledge the message and provide a timeline in which
          a response shall be provided.</p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1502,7 +1484,7 @@ class HtmlGenerator extends documentGenerator
          acknowledge the message and provide a timeline in which a response shall be
          provided.</p>";
          
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1519,7 +1501,7 @@ class HtmlGenerator extends documentGenerator
          of the date the last party signs this Agreement and shall maintain an account
          with said program.</p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1539,7 +1521,7 @@ class HtmlGenerator extends documentGenerator
          Parents shall end upon each child's eighteenth (18th) birthday, or as mutually
          agreed by the Parents.&nbsp; </p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1555,7 +1537,7 @@ class HtmlGenerator extends documentGenerator
          conferences between Parents shall end upon each child's eighteenth (18th)
          birthday, or as mutually agreed by the Parents.&nbsp; </p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1566,7 +1548,7 @@ class HtmlGenerator extends documentGenerator
          name=CommunicationAnnualConference><b>7.06&nbsp; </b><u>COMMUNICATION BETWEEN
          CO-PARENTS: ANNUAL CONFERENCE</u></a>.</p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
      
@@ -1580,7 +1562,7 @@ class HtmlGenerator extends documentGenerator
          between Parents shall end upon each child's eighteenth (18th) birthday, or as
          mutually agreed by the Parents.<u> </u></p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1593,7 +1575,7 @@ class HtmlGenerator extends documentGenerator
          the regular parenting time schedule, the child may contact each parent whenever
          they wish.</span></p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1608,7 +1590,7 @@ class HtmlGenerator extends documentGenerator
          child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ".
          Calls will normally be no more than 10 minutes.</span></p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1623,7 +1605,7 @@ class HtmlGenerator extends documentGenerator
          changes, they shall provide the new contact information to the other Parent
          immediately.</span></p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1641,7 +1623,7 @@ class HtmlGenerator extends documentGenerator
          Parent, unless the other Parent agrees.</span><b>&nbsp; </b><span style='color:#333333'>The
          other Parent shall not unreasonably withhold their agreement.</span></p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
  
@@ -1656,7 +1638,7 @@ class HtmlGenerator extends documentGenerator
          Parent shall be expected to take each Child to that activity and support the
          Child's participation during the time that the Child is in their care.</span>&nbsp; </p>";
  
-         echo $snippet;
+         
          $this -> fileContentString .= $snippet;
      }
 
@@ -1693,7 +1675,7 @@ class HtmlGenerator extends documentGenerator
         personal property while a child is under eighteen (18) years of age, and
         decisions involving a child's travel to any distance beyond the jurisdiction of
         the United States for any period of time.&nbsp;</p>";
-        echo $definition;
+        
         $this->fileContentString .= $definition;
     }
     // joint to both parents 
@@ -1713,7 +1695,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#LegalCustodyJoint\">5.01&nbsp;&nbsp; Legal Custody: Joint to Both Parents</a> </p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // joint to both parents -> tie-breaking authority to parent A
@@ -1734,7 +1715,6 @@ class HtmlGenerator extends documentGenerator
         Must Consult but One Parent has Tie-Breaking Authority</a></p>";
         $this -> tableOfContentsString .=$toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // joint to both parents -> tie-breaking authority to parent B 
@@ -1755,7 +1735,6 @@ class HtmlGenerator extends documentGenerator
         Must Consult but One Parent has Tie-Breaking Authority</a></p>";
         $this -> tableOfContentsString .=$toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // sole to parent A
@@ -1786,7 +1765,6 @@ class HtmlGenerator extends documentGenerator
         Information for Parent Without Legal Custody</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // sole to parent B
@@ -1817,7 +1795,6 @@ class HtmlGenerator extends documentGenerator
         Information for Parent Without Legal Custody</a></p>";
         $this->tableOfContentsString .= $toc;
         
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // parents must consult but there is a division of authority 
@@ -1841,7 +1818,6 @@ class HtmlGenerator extends documentGenerator
         Must Consult but there is a Division of Authority</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // emergency contacts for the child(ren) 
@@ -1860,7 +1836,6 @@ class HtmlGenerator extends documentGenerator
         for the Child(ren)</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // expert advice when making legal custody decisions 
@@ -1878,7 +1853,6 @@ class HtmlGenerator extends documentGenerator
         Making Legal Custody Decisions</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // day-to-day decisions
@@ -1896,7 +1870,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#LegalCustodyDaytoDay\">5.08&nbsp;&nbsp; Legal Custody: Day-to-Day Decisions</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // emergency decisions 
@@ -1916,7 +1889,6 @@ class HtmlGenerator extends documentGenerator
         Decisions</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // health emergency or death of other parent
@@ -1938,7 +1910,6 @@ class HtmlGenerator extends documentGenerator
         Emergency or Death of the Other Parent</a></p>";
         $this->tableOfContentsString .= $toc;
 
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }
     // parallel parenting 
@@ -1955,7 +1926,6 @@ class HtmlGenerator extends documentGenerator
         href=\"#LegalCustodyParallelParenting\">5.11&nbsp;&nbsp; Legal Custody: Parallel Parenting</a></p>";
         $this->tableOfContentsString .= $toc;
         
-        echo $snippet;
         $this->fileContentString .= $snippet;
     }  // end of legal custody
 
@@ -1975,7 +1945,7 @@ class HtmlGenerator extends documentGenerator
         CHILD(REN): MONTHLY CHILD SUPPORT AMOUNT UNDER THE LAW</u>.</a>&nbsp; Each State has
         Child Support Guidelines used to calculate monthly child support. Each parent
         shall be bound by and follow the Uniform Interstate Family Support Act.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // same state 
@@ -1986,7 +1956,7 @@ class HtmlGenerator extends documentGenerator
         CHILD(REN): CHILD SUPPORT GUIDELINES AMOUNT WHEN PARENTS RESIDE IN THE SAME
         STATE</u>.&nbsp; </a>Child support shall be paid by <span style='background:yellow'>" . $this->responses["parentAB1"] . "</span> to <span style='background:yellow'>" . $this->responses["parentAB2"] . "</span> and
         calculated pursuant to the State child support guidelines worksheet. </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // mutually agreed upon amount alternative 
@@ -2003,7 +1973,7 @@ class HtmlGenerator extends documentGenerator
         support be calculated pursuant to their State guidelines and ordered to be paid
         pursuant to and Order for Income Withholding (or similar order) via the State
         Child Support Enforcement Agency.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // no agreement of the parents 
@@ -2022,7 +1992,7 @@ class HtmlGenerator extends documentGenerator
         or administratively through the State Child Support Enforcement Agency, Parents
         are hereby advised to seek independent legal counsel before making any
         agreements regarding physical custody and timesharing. </b></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // child support account alternative 
@@ -2035,7 +2005,7 @@ class HtmlGenerator extends documentGenerator
         style='background:yellow'>SUPPO</span></u></a><u><span style='background:yellow'>RT
         OF THE CHILD(REN): CHILD SUPPORT ACCOUNT ALTERNATIVE</span></u><span
         style='background:yellow'>.&nbsp; Parents agree that</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // payment -> pick only one -> direct payment 
@@ -2045,7 +2015,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SocDirectPayment><b>8.06&nbsp; </b><u>SUPPORT OF THE CHILD(REN): DIRECT PAYMENT
         OF CHILD SUPPORT</u>.</a></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // payment -> pick only one -> payment of child support through support enforcement agency 
@@ -2055,7 +2025,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCThroughStateAgency><b>8.07&nbsp; </b><u>SUPPORT OF THE CHILD(REN): PAYMENT
         OF CHILD SUPPORT THROUGH THE STATE CHILD SUPPORT ENFORCEMENT AGENCY</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // health insurance premiums 
@@ -2066,7 +2036,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCHealthInsurance><b>8.08&nbsp; </b><u>SUPPORT OF THE CHILD(REN): HEALTH
         INSURANCE PREMIUM</u></a><u>S</u>.&nbsp;&nbsp;<span style='background:yellow'>" . $this->responses["parentAB5"] . "</span> shall cover the Child(ren)'s
         health insurance premiums in the amount of <span style='background:yellow'>$" . $this->responses["insurancePremium"] . "</span> per month.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for uninsured co-pays for health-related expenses
@@ -2076,7 +2046,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCUninsuredCoPays><b>8.09&nbsp; </b><u>SUPPORT OF THE CHILD(REN): UNINSURED
         CO-PAYS FOR HEALTH-RELATED EXPENSES</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_09A() //uninsured co-pays for health-related expenses -> sole responsibility
@@ -2086,7 +2056,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCUninsuredCoPaysSR><b>8.09A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
         <span style='background:yellow'>" . $this->responses["parentAB6"] . "</span> shall cover 100% of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["sole-1"] . "</span> per month.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_09B() //split responsibility
@@ -2097,7 +2067,7 @@ class HtmlGenerator extends documentGenerator
         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["split-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover  <span style='background:yellow'>" . $this->responses["split-2"] . "%</span> of the Child(ren)'s
         uninsured co-pays for health-related expenses premiums in the amount of <span style='background:yellow'>$" . $this->responses["split-3"] . "</span>
         per month.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_09C() //responsibility for threshold amount
@@ -2111,7 +2081,7 @@ class HtmlGenerator extends documentGenerator
         parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
         " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums exceeding the threshold amount.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for Extracurricular Expenses 
@@ -2121,7 +2091,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCExtracurricular><b>8.10&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
         EXTRACURRICULAR EXPENSES</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_10A() // extracurricular expenses -> sole responsibility 
@@ -2130,7 +2100,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCExtracurricularSR><b>8.10A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
         <span style='background:yellow'>" . $this->responses["parentAB_EC"] . "</span> shall cover 100% of the Child(ren)'s extracurricular expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_10B() // split responsibility
@@ -2140,7 +2110,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCExtracurricularSpR>8.10B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitEC-2"] . "%</span> of the Child(ren)'s
         extracurricular expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_10C() // pursuant to 7.10 hereinabove 
@@ -2157,7 +2127,7 @@ class HtmlGenerator extends documentGenerator
         shall pay for 100% of their selected extracurricular activity, which shall
         include supplies, uniforms, travel out-of-state, and other expenses required
         for the Child to participate</span>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_10D() // mutually agreed upon
@@ -2169,7 +2139,7 @@ class HtmlGenerator extends documentGenerator
         for paying for extracurricular activities that are mutually agreed upon by both
         Parents.&nbsp; Parents agree to consult and be guided by the Child's preferences in
         selecting mutually agreed upon extracurricular activities.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for private school expenses 
@@ -2179,7 +2149,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCPrivateSchoolExpenses><b>8.11</b>&nbsp; <u>SUPPORT OF THE CHILD(REN):
         PRIVATE SCHOOL EXPENSES</u>.</a></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_11A() // sole
@@ -2188,7 +2158,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPrivateSchoolExpensesSR><b>8.11A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
         <span style='background:yellow'>" . $this->responses["parentAB_Priv"] . "</span> shall cover 100% of the Child(ren)'s private school expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_11B() // split
@@ -2198,7 +2168,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCPrivateSchoolExpensesSpR>8.11B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitPriv-2"] . "%</span> of the Child(ren)'s
         private school expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_11C() // definition
@@ -2210,7 +2180,7 @@ class HtmlGenerator extends documentGenerator
         include all expenses related to a Child's attendance at a private school
         including, without limitation, application fees/costs, tuition, books,
         uniforms, school lunches, and before and/or after school care expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_11D() // mutual agreement of parents
@@ -2221,7 +2191,7 @@ class HtmlGenerator extends documentGenerator
         AGREEMENT OF PARENTS</u>.&nbsp; Either Parent may apply for a Child to attend
         private school but unless one parent has sole legal custody, both Parents must
         approve the enrollment of any Child in a private school.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_11E() // reserve
@@ -2230,7 +2200,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPrivateSchoolExpensesReserve>8.11E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
         Parents shall reserve the issue of private school expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for post-high school expenses 
@@ -2240,7 +2210,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCPostSchoolExpenses><b>8.12&nbsp; </b><u>SUPPORT OF THE CHILD(REN): POST-HIGH
         SCHOOL EDUCATION EXPENSES</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12A() // sole
@@ -2250,7 +2220,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCPostSchoolExpensesSR><b>8.12A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE RESPONSIBILITY</u></a>.
         <span style='background:yellow'>" . $this->responses["parentAB_High"] . "</span> shall cover 100% of the Child(ren)'s post-high school education
         expenses.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12B() // split
@@ -2260,7 +2230,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCPostSchoolExpensesSpR>8.12B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>SPLIT RESPONSIBILITY</u>.
         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["splitHigh-2"] . "%</span> of the Child(ren)'s
         post-high school education expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12C() // sole after 529 
@@ -2275,7 +2245,7 @@ class HtmlGenerator extends documentGenerator
         ear-marked to pay for a Child's post-high school education expenses are
         expended, then <span style='background:yellow'>" . $this->responses["parentAB_Sole529"] . "</span> shall cover 100% of the Child(ren)'s remaining
         post-high school education expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12D() // split after 529
@@ -2290,7 +2260,7 @@ class HtmlGenerator extends documentGenerator
         ear-marked to pay for a Child's post-high school education expenses are
         expended, then " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-1"] . "%</span> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["split529-2"] . "%</span> of the
         Child(ren)'s remaining post-high school education expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12E() // cap on payment
@@ -2302,7 +2272,7 @@ class HtmlGenerator extends documentGenerator
         education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
         cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12F() // definition
@@ -2315,7 +2285,7 @@ class HtmlGenerator extends documentGenerator
         educational institution (including vocational and trade schools), without
         limitation, application fees/costs, tuition, books, uniforms, school lunches,
         and before and/or after school care expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12G() // mutual agreement
@@ -2328,7 +2298,7 @@ class HtmlGenerator extends documentGenerator
         but in order for the other Parent to be financially responsible, both Parents
         must approve the enrollment of any Child or Adult Child in a post-high school
         educational institution.<b>&nbsp; </b></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_12H() // reserve
@@ -2338,7 +2308,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCPostSchoolExpensesReserve>8.12H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></b><u>RESERVE</u>.&nbsp;
         Parents shall reserve the issue of post-high school educational school
         expenses.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for claiming the child(ren) as a dependent for tax purposes 
@@ -2348,7 +2318,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCDependents><b>8.13&nbsp; </b><u>SUPPORT OF THE CHILD(REN): CLAIMING THE
         CHILD(REN) AS A DEPENDENT FOR TAX PURPOSES</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_13A() // sole    
@@ -2358,7 +2328,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCDependentsSA><b>8.13A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SOLE AUTHORITY TO CLAIM THE
         CHILD(REN</u></a><u>)</u>.  <span style='background:yellow'>" . $this->responses["parentAB_taxSole"] . "</span> shall be entitled to claim any Child(ren)
         as a dependent for tax purposes every year.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_13B() // split     
@@ -2370,7 +2340,7 @@ class HtmlGenerator extends documentGenerator
         Initials) as a dependent for tax purposes every year.&nbsp; " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall be
         entitled to claim <span style='background:yellow'>" . $this->responses["partyBTax"] . "</span> (Child's Initials) as a dependent for tax purposes every
         year.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_13C() // split then alternate
@@ -2384,7 +2354,7 @@ class HtmlGenerator extends documentGenerator
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_13D() // alternate authority
@@ -2396,7 +2366,7 @@ class HtmlGenerator extends documentGenerator
         Child(ren) as dependent(s) for tax purposes in even years.&nbsp; <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</span> shall be
         entitled to claim the Child(ren) as dependent(s) for tax purposes in odd
         years.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // header for protocols for reimbursement -> radio buttons
@@ -2406,7 +2376,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
         name=SoCProtocolsforReimbursment><b>8.14&nbsp; </b><u>SUPPORT OF THE CHILD(REN):
         PROTOCOLS FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_14A() // timeframe
@@ -2417,7 +2387,7 @@ class HtmlGenerator extends documentGenerator
         REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; Upon a request in writing
         (text or email is ok) from a Parent for reimbursement, the other Parent shall
         reimburse the requesting Parent within <span style='background:yellow'>" . $this->responses["timeVal"] . "</span> days.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_14B() // monthly
@@ -2427,7 +2397,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCProtocolsforReimbursmentMonthly><b>8.14B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONTHLY
         CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u></a>.&nbsp; Parents shall
         calculate child-related expenses and reimburse each other on a monthly basis.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_14C() // quarterly
@@ -2437,7 +2407,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCProtocolsforReimbursmentQuarterly><b>8.14C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>QUARTERLY
         CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.</a>&nbsp; Parents shall
         calculate child-related expenses and reimburse each other on a quarterly basis.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     function gen_child_support_8_14D() // annual
@@ -2447,7 +2417,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCProtocolsforReimbursmentAnnual><b>8.14D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ANNUAL
         CALCULATION OF CHILD-RELATED EXPENSES AND REIMBURSEMENT</u>.&nbsp; </a>Parents shall
         calculate child-related expenses and reimburse each other on an annual basis.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     // protocols for reimbursement -> optional 
@@ -2459,7 +2429,7 @@ class HtmlGenerator extends documentGenerator
         REQUIRED FOR REIMBURSEMENT OF CHILD-RELATED EXPENSES</u></a>.&nbsp; A requesting
         Parent shall include written documentation proving the child-related expense in
         order to receive reimbursement from the other Parent.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2477,7 +2447,7 @@ class HtmlGenerator extends documentGenerator
         child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard
         or other mutually agreed upon parenting expense tool or application, or
         <span style='background:yellow'>$content</span>.<b>&nbsp;&nbsp;&nbsp; </b></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }   // end of child support
 
@@ -2496,7 +2466,7 @@ class HtmlGenerator extends documentGenerator
         Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
         Parents shall continue in Co-Parent Counseling until clinically discharged or
         upon the mutual agreement of both Parents.</p>";
-        echo $header;
+        
         $this->fileContentString .= $header;
     }
 
@@ -2517,7 +2487,7 @@ class HtmlGenerator extends documentGenerator
         Child(ren).&nbsp; Unless they have sole legal custody of the Child(ren), neither
         Parent may unilaterally terminate child therapy without the other Parent's
         consent.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2529,7 +2499,7 @@ class HtmlGenerator extends documentGenerator
         MEDIA BETWEEN PARENTS</u></a>.&nbsp; Neither Parent shall post any pictures of the
         other Parent on social media nor make any derogatory comment about the other
         Parent on social media.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
     
@@ -2543,7 +2513,7 @@ class HtmlGenerator extends documentGenerator
         years of age, and thereafter both Parents shall monitor any Child's social
         media usage to ensure that it is safe and does not cause embarrassment to
         either Parent or the Child. </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2555,7 +2525,7 @@ class HtmlGenerator extends documentGenerator
         PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree
         that it is in their Child(ren)'s best interests that they both attend
         parent-teacher meetings together.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2567,7 +2537,7 @@ class HtmlGenerator extends documentGenerator
         PARENT-TEACHER MEETINGS</u></a>.<span style='color:#333333'>&nbsp; Parents agree </span>that
         they<span style='color:#333333'> will each arrange our own separate
         parent-teacher meetings.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2580,7 +2550,7 @@ class HtmlGenerator extends documentGenerator
         PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.&nbsp; <span style='color:#333333'>Parent
         A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the
         Child(ren)'s progress.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2593,7 +2563,7 @@ class HtmlGenerator extends documentGenerator
         style='color:#333333'>)</span></u><span style='color:#333333'>.&nbsp; Both Parents
         will be provided with separate report cards for the Child(ren). Parents shall
         notify the school authorities to provide separate report cards.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     } 
     
@@ -2605,7 +2575,7 @@ class HtmlGenerator extends documentGenerator
         style='color:#333333'>&nbsp; <u>OTHER ISSUES: JOINT ATTENDANCE AT SCHOOL AND
         EXTRACURRICULAR EVENTS</u></span><span style='color:#333333'>.&nbsp; Both Parents
         may attend school events and extra-curricular activities.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2619,7 +2589,7 @@ class HtmlGenerator extends documentGenerator
         style='color:#333333'>The Parent with whom the Child(ren) is/are residing at
         the time of the school event and extracurricular activity will be the sole
         Parent to attend these events.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2631,7 +2601,7 @@ class HtmlGenerator extends documentGenerator
         #333333'>OTHER ISSUES: ALTERNATE ATTENDANCE AT SCHOOL AND EXTRACURRICULAR
         EVENTS</span></u><span style='color:#333333'>.&nbsp; Parent shall alternate
         attending the Child(ren)'s school events and extracurricular activities.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2645,7 +2615,7 @@ class HtmlGenerator extends documentGenerator
         any other relevant documents] at their home, and these documents will be made
         available to<span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span>/A as needed. Both Parents shall have copies of all of the
         important documents.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2656,7 +2626,7 @@ class HtmlGenerator extends documentGenerator
         name=OtherIssuesJointConsentPassport><b>9.12&nbsp; </b><u>OTHER ISSUES: JOINT
         AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " must both consent for the purposes of a passport application for
         any Child.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2667,7 +2637,7 @@ class HtmlGenerator extends documentGenerator
         name=OtherIssuesSoleConsentPassport><b>9.13&nbsp; </b><u>OTHER ISSUES: SOLE
         AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'>Parent
         <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</span></p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2691,7 +2661,7 @@ class HtmlGenerator extends documentGenerator
         This plan is subject to further review based on the best interests of the
         children and their observed reactions and behaviors throughout any introduction
         process.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet;
     }
 
@@ -2764,7 +2734,7 @@ class HtmlGenerator extends documentGenerator
         co-parent counselor or family therapist who may also confer with the child
         therapist to ensure the children's well-being, comfort and stability remain the
         highest priority.&nbsp; </p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet; 
     }
 
@@ -2777,7 +2747,7 @@ class HtmlGenerator extends documentGenerator
         to this Agreement or any Child-related issues, both Parents agree that they
         shall engage a mutually selected mediator to help them resolve the issue(s)
         prior to filing a motion for relief with the Family Court.</p>";
-        echo $snippet;
+        
         $this->fileContentString .= $snippet; 
     }
 
@@ -2794,7 +2764,7 @@ class HtmlGenerator extends documentGenerator
             and subject matter jurisdiction to make any other just and equitable orders
             which may be necessary to enforce the intended agreement and specific
             provisions set forth herein.</p>";
-        echo $continuingJurisdiction;
+        
         $this->fileContentString .= $continuingJurisdiction;
     }
     function gen_legal_10_01() {
@@ -2808,7 +2778,7 @@ class HtmlGenerator extends documentGenerator
             continuing jurisdiction over the parents and their property to enforce and
             implement the provisions of the Agreement, to the extent permitted by
             applicable statutory authority, court rule and/or case law.</p>";
-        echo $enforcement;
+        
         $this->fileContentString .= $enforcement;
     }
     function gen_legal_10_02() {
@@ -2820,14 +2790,14 @@ class HtmlGenerator extends documentGenerator
             sufficient knowledge of the facts and the law, and that it is fair and
             reasonable.&nbsp; Both Parents have been advised to seek independent legal counsel
             regarding these and all other matters contained herein.</p>";
-        echo $execution;
+        
         $this->fileContentString .= $execution;
     }
 
     function signature() {
         $signature = new Signature();
         $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
-        echo $signatures;
+        
         $this->fileContentString .= $signatures;
     }
 
@@ -2836,11 +2806,13 @@ class HtmlGenerator extends documentGenerator
         // Take the template.zip copy it and rename it in the downloads folder
         // Take the string and write it to document.xml
         //check to make sure we have a valid file resource.
+
         if($this->fileOutput != false)
         {
             fwrite($this->fileOutput, $this->tableOfContentsString); // print table of contents first 
             fwrite($this->fileOutput, $this->fileContentString);
         }
+        //include_once($this->fileName . ".html");
         // Zip the folder and rename it to .docx
         // Serve the .docx
         //close the file resource.

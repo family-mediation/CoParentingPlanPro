@@ -6,17 +6,19 @@ abstract class documentGenerator
 	public $fileOutput;
 	public $fileContentString;
 	public $tableOfContentsString;
+	public $fileType;
 
 	// for section 1.00 on coparenting plan to get the day, month and year
 	protected $day;
     protected $month;
     protected $year;
 
-	public function __construct(string $fileName, array $responses)
+	public function __construct(string $fileName, string $fileType, array $responses)
 	{
 		$this->fileName = $fileName;
 		$this->responses = $responses;
-		$this->fileOutput = fopen("./" . $fileName, "w+");
+		$this->fileType = $fileType;
+		$this->fileOutput = fopen("./" . $fileName . $fileType, "w+");
 	}
 	// Generate the different components.
 	public abstract function genHeader();
@@ -168,9 +170,9 @@ abstract class documentGenerator
 	public function generateDocument()
 	{
 		// for section 1.00 on coparenting plan
-		if (isset($_SESSION['responses']['date1'])) {
+		if (isset($this->responses['date1'])) {
 			// get the date from the session
-			$dateString = $_SESSION['responses']['date1'];
+			$dateString = $this->responses['date1'];
 
 			// parse the date string
 			$dateComponents = date_parse($dateString);
@@ -219,31 +221,31 @@ abstract class documentGenerator
 
 		// Legal Custody: page 1
 		// joint to both parents -> tie-breaking authority to parent A or B
-		if (isset($_SESSION['responses']['custody']) && $_SESSION['responses']['custody'] == "joint") {
+		if (isset($this->responses['custody']) && $this->responses['custody'] == "joint") {
 			$this->gen_legal_custody_5_01();
-			if (isset($_SESSION['responses']['tieBreakingAuthority']) && $_SESSION['responses']['tieBreakingAuthority'] == "tieBreakA") {
+			if (isset($this->responses['tieBreakingAuthority']) && $this->responses['tieBreakingAuthority'] == "tieBreakA") {
 				$this->gen_legal_custody_5_03A();
 			}
-			if (isset($_SESSION['responses']['tieBreakingAuthority']) && $_SESSION['responses']['tieBreakingAuthority'] == "tieBreakB") {
+			if (isset($this->responses['tieBreakingAuthority']) && $this->responses['tieBreakingAuthority'] == "tieBreakB") {
 				$this->gen_legal_custody_5_03B();
 			}
 		}
 		// sole to parent A
-		if (isset($_SESSION['responses']['custody']) && $_SESSION['responses']['custody'] == "soleA") {
+		if (isset($this->responses['custody']) && $this->responses['custody'] == "soleA") {
 			$this->gen_legal_custody_5_05A();
 		}
 		// sole to parent B
-		if (isset($_SESSION['responses']['custody']) && $_SESSION['responses']['custody'] == "soleB") {
+		if (isset($this->responses['custody']) && $this->responses['custody'] == "soleB") {
 			$this->gen_legal_custody_5_05B();
 		}
 		// parent must consult but there is a division of authority 
-		if (isset($_SESSION['responses']['custody']) && $_SESSION['responses']['custody'] == "divisionAuth") {
+		if (isset($this->responses['custody']) && $this->responses['custody'] == "divisionAuth") {
 			$this->gen_legal_custody_5_04();
 		}
 
 		// Legal Custody: page 2 (optional)
-		if (isset($_SESSION['responses']['legalcustody'])) {
-			foreach ($_SESSION['responses']['legalcustody'] as $x) {
+		if (isset($this->responses['legalcustody'])) {
+			foreach ($this->responses['legalcustody'] as $x) {
 				switch ($x) {
 					case '5.06': // emergency contacts for the child(ren) 
 						$this->gen_legal_custody_5_06();
@@ -271,8 +273,8 @@ abstract class documentGenerator
         $this->gen_physical_custody_timesharing_6_00();
         $this->gen_physical_custody_timesharing_6_01();
         // Page 0.
-        if (isset($_SESSION['responses']['schoolYearSchedule'])) {
-            switch ($_SESSION['responses']['schoolYearSchedule']) {
+        if (isset($this->responses['schoolYearSchedule'])) {
+            switch ($this->responses['schoolYearSchedule']) {
                 // Equal Timesharing schedules.
                 case "2-2-3":
                 case "3-4-4-3":
@@ -290,8 +292,8 @@ abstract class documentGenerator
         }
         // Page 1.
         $this->gen_physical_custody_timesharing_6_02();
-        if (isset($_SESSION['responses']['schoolFallBreakSchedule'])) {
-            switch ($_SESSION['responses']['schoolFallBreakSchedule']) {
+        if (isset($this->responses['schoolFallBreakSchedule'])) {
+            switch ($this->responses['schoolFallBreakSchedule']) {
                 case "fall-split-break":
                     $this->gen_physical_custody_timesharing_6_02A("fall-split-break");
                     break;
@@ -303,8 +305,8 @@ abstract class documentGenerator
                     break;
             }
         }
-        if (isset($_SESSION['responses']['schoolThanksgivingBreakSchedule'])) {
-            switch ($_SESSION['responses']['schoolThanksgivingBreakSchedule']) {
+        if (isset($this->responses['schoolThanksgivingBreakSchedule'])) {
+            switch ($this->responses['schoolThanksgivingBreakSchedule']) {
                 case "thanksgiving-split-break":
                     $this->gen_physical_custody_timesharing_6_02B("thanksgiving-split-break");
                     break;
@@ -316,13 +318,13 @@ abstract class documentGenerator
                     break;
             }
         }
-        if (isset($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional'])) {
-            if ($_SESSION['responses']['schoolThanksgivingBreakScheduleOptional']) {
+        if (isset($this->responses['schoolThanksgivingBreakScheduleOptional'])) {
+            if ($this->responses['schoolThanksgivingBreakScheduleOptional']) {
                 $this->gen_physical_custody_timesharing_6_02BOptional();
             }
         }
-        if (isset($_SESSION['responses']['schoolWinterBreakSchedule'])) {
-            switch ($_SESSION['responses']['schoolWinterBreakSchedule']) {
+        if (isset($this->responses['schoolWinterBreakSchedule'])) {
+            switch ($this->responses['schoolWinterBreakSchedule']) {
                 case "winter-split-break":
                     $this->gen_physical_custody_timesharing_6_02C("winter-split-break");
                     break;
@@ -337,8 +339,8 @@ abstract class documentGenerator
                     break;
             }
         }
-        if (isset($_SESSION['responses']['schoolSpringBreakSchedule'])) {
-            switch ($_SESSION['responses']['schoolSpringBreakSchedule']) {
+        if (isset($this->responses['schoolSpringBreakSchedule'])) {
+            switch ($this->responses['schoolSpringBreakSchedule']) {
                 case "spring-split-break":
                     $this->gen_physical_custody_timesharing_6_02D("spring-split-break");
                     break;
@@ -350,8 +352,8 @@ abstract class documentGenerator
                     break;
             }
         }
-        if (isset($_SESSION['responses']['schoolSummerBreakSchedule'])) {
-            switch ($_SESSION['responses']['schoolSummerBreakSchedule']) {
+        if (isset($this->responses['schoolSummerBreakSchedule'])) {
+            switch ($this->responses['schoolSummerBreakSchedule']) {
                 case "summer-split-break":
                     $this->gen_physical_custody_timesharing_6_02E("summer-split-break");
                     break;
@@ -372,37 +374,37 @@ abstract class documentGenerator
 
         // Page 3 - Optional checkboxes.
         // Must implement new input data for all:
-        if (isset($_SESSION['responses']['travel-with-children'])) {
+        if (isset($this->responses['travel-with-children'])) {
             $this->gen_physical_custody_timesharing_6_04();
         }
-        if (isset($_SESSION['responses']['reschedule-make-up-time'])) {
+        if (isset($this->responses['reschedule-make-up-time'])) {
             $this->gen_physical_custody_timesharing_6_05();
         }
-        if (isset($_SESSION['responses']['first-refusal'])) {
+        if (isset($this->responses['first-refusal'])) {
             $this->gen_physical_custody_timesharing_6_06();
         }
-        if (isset($_SESSION['responses']['pick-up'])) {
+        if (isset($this->responses['pick-up'])) {
             $this->gen_physical_custody_timesharing_6_07();
         }
-        if (isset($_SESSION['responses']['drop-off'])) {
+        if (isset($this->responses['drop-off'])) {
             $this->gen_physical_custody_timesharing_6_08();
         }
-        if (isset($_SESSION['responses']['exchanges-neutral-location'])) {
+        if (isset($this->responses['exchanges-neutral-location'])) {
             $this->gen_physical_custody_timesharing_6_09();
         }
-        if (isset($_SESSION['responses']['delegate-pick-up'])) {
+        if (isset($this->responses['delegate-pick-up'])) {
             $this->gen_physical_custody_timesharing_6_10();
         }
-        if (isset($_SESSION['responses']['persons-authorized'])) {
+        if (isset($this->responses['persons-authorized'])) {
             $this->gen_physical_custody_timesharing_6_11();
         }
-        if (isset($_SESSION['responses']['children-belongings'])) {
+        if (isset($this->responses['children-belongings'])) {
             $this->gen_physical_custody_timesharing_6_12();
         }
-        if (isset($_SESSION['responses']['relocation'])) {
+        if (isset($this->responses['relocation'])) {
             $this->gen_physical_custody_timesharing_6_13();
         }
-        if (isset($_SESSION['responses']['modify-schedule'])) {
+        if (isset($this->responses['modify-schedule'])) {
             $this->gen_physical_custody_timesharing_6_14();
         }
 
@@ -412,15 +414,15 @@ abstract class documentGenerator
 		$this->gen_communication_7();
 
 		//Communication method page 1 
-		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "email") {
+		if (isset($this->responses['commMethod']) && $this->responses['commMethod'] == "email") {
 			$this->gen_communication_7_01();
 		}
 
-		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "bothemailtext") {
+		if (isset($this->responses['commMethod']) && $this->responses['commMethod'] == "bothemailtext") {
 			$this->gen_communication_7_02();
 		}
 
-		if (isset($_SESSION['responses']['commMethod']) && $_SESSION['responses']['commMethod'] == "wizardmutual") {
+		if (isset($this->responses['commMethod']) && $this->responses['commMethod'] == "wizardmutual") {
 			$this->gen_communication_7_03();
 		}
 
@@ -480,8 +482,8 @@ abstract class documentGenerator
 		$this->gen_child_support_8_00();
 
 		// page 0 -> pick only one 
-		if (isset($_SESSION['responses']['childSupport'])) {
-			switch ($_SESSION['responses']['childSupport']) {
+		if (isset($this->responses['childSupport'])) {
+			switch ($this->responses['childSupport']) {
 				case 'sameState':
 					$this->gen_child_support_8_01();
 					break;
@@ -497,8 +499,8 @@ abstract class documentGenerator
 			}
 		}
 		// page 0 -> payment 
-		if (isset($_SESSION['responses']['payment'])) {
-			switch ($_SESSION['responses']['payment']) {
+		if (isset($this->responses['payment'])) {
+			switch ($this->responses['payment']) {
 				case 'directPay':
 					$this->gen_child_support_8_06();
 					break;
@@ -511,9 +513,9 @@ abstract class documentGenerator
 		$this->gen_child_support_8_08();
 
 		// page 1 -> uninsured co-pays for health-related expenses 
-		if (isset($_SESSION['responses']['insurance'])) {
+		if (isset($this->responses['insurance'])) {
 			$this->gen_child_support_8_09(); //header
-			switch ($_SESSION['responses']['insurance']) {
+			switch ($this->responses['insurance']) {
 				case 'soleResp':
 					$this->gen_child_support_8_09A();
 					break;
@@ -526,9 +528,9 @@ abstract class documentGenerator
 			}
 		}
 		// page 2 -> extracurricular expenses 
-		if (isset($_SESSION['responses']['extraCurr'])) {
+		if (isset($this->responses['extraCurr'])) {
 			$this->gen_child_support_8_10(); //header
-			switch ($_SESSION['responses']['extraCurr']) {
+			switch ($this->responses['extraCurr']) {
 				case 'extraSoleResp':
 					$this->gen_child_support_8_10A();
 					break;
@@ -545,9 +547,9 @@ abstract class documentGenerator
 		}
 		// page 2 -> private school expenses 
 		// per Kristin, include "8.11C Definition" with sole, split & mutual only  
-		if (isset($_SESSION['responses']['privateSchool'])) {
+		if (isset($this->responses['privateSchool'])) {
 			$this->gen_child_support_8_11(); //header
-			switch ($_SESSION['responses']['privateSchool']) {
+			switch ($this->responses['privateSchool']) {
 				case 'privateSoleResp':
 					$this->gen_child_support_8_11A();
 					$this->gen_child_support_8_11C();
@@ -567,9 +569,9 @@ abstract class documentGenerator
 		}
 		// page 2 -> post-high school expenses
 		// per Kristin, include "8.12F Definition" with everything except for Reserve   
-		if (isset($_SESSION['responses']['postHigh'])) {
+		if (isset($this->responses['postHigh'])) {
 			$this->gen_child_support_8_12(); //header
-			switch ($_SESSION['responses']['postHigh']) {
+			switch ($this->responses['postHigh']) {
 				case 'postSoleResp':
 					$this->gen_child_support_8_12A();
 					$this->gen_child_support_8_12F();
@@ -601,9 +603,9 @@ abstract class documentGenerator
 		}
 
 		// page 3 -> claiming the child(ren) as a dependent for tax purposes 
-		if (isset($_SESSION['responses']['taxPurpose'])) {
+		if (isset($this->responses['taxPurpose'])) {
 			$this->gen_child_support_8_13(); //header
-			switch ($_SESSION['responses']['taxPurpose']) {
+			switch ($this->responses['taxPurpose']) {
 				case 'taxSole':
 					$this->gen_child_support_8_13A();
 					break;
@@ -619,9 +621,9 @@ abstract class documentGenerator
 			}
 		}
 		// page 3 -> protocols for reimbursement of child-related expenses -> radio buttons 
-		if (isset($_SESSION['responses']['protocols'])) {
+		if (isset($this->responses['protocols'])) {
 			$this->gen_child_support_8_14(); //header
-			switch ($_SESSION['responses']['protocols']) {
+			switch ($this->responses['protocols']) {
 				case 'timeframe':
 					$this->gen_child_support_8_14A();
 					break;
@@ -637,7 +639,7 @@ abstract class documentGenerator
 			}
 		}
 		// page 3 -> protocols for reimbursement of child-related expenses -> optional
-		if (isset($_SESSION['responses']['childSupportRei']) && $_SESSION['responses']['childSupportRei'] == "8.14e") {
+		if (isset($this->responses['childSupportRei']) && $this->responses['childSupportRei'] == "8.14e") {
 			$this->gen_child_support_8_14E();
 		}
 		// page 3 -> protocols for reimbursement of child-related expenses -> reimbursement method 
@@ -645,16 +647,16 @@ abstract class documentGenerator
 
 
 		//Section 8 Other section
-		if (isset($_SESSION['responses']['counseling'])) {
-			switch ($_SESSION['responses']['counseling']) {
+		if (isset($this->responses['counseling'])) {
+			switch ($this->responses['counseling']) {
 				case 'therapistInput9.00':
 					$this->gen_other_9_00();
 					break;
 			}
 		}
 
-		if (isset($_SESSION['responses']['childfocused'])) {
-			switch ($_SESSION['responses']['childfocused']) {
+		if (isset($this->responses['childfocused'])) {
+			switch ($this->responses['childfocused']) {
 				case 'therapistInput9.01':
 					$this->gen_other_9_01();
 					break;
@@ -677,8 +679,8 @@ abstract class documentGenerator
 			$this->gen_other_9_05();
 		}
 
-		if (isset($_SESSION['responses']['other'])) {
-			switch ($_SESSION['responses']['other']) {
+		if (isset($this->responses['other'])) {
+			switch ($this->responses['other']) {
 				case 'parentAB_Other':
 					$this->gen_other_9_06();
 					break;
@@ -702,8 +704,8 @@ abstract class documentGenerator
 			$this->gen_other_9_10();
 		}
 
-		if (isset($_SESSION['responses']['other'])) {
-			switch ($_SESSION['responses']['other']) {
+		if (isset($this->responses['other'])) {
+			switch ($this->responses['other']) {
 				case 'parentABdoc_Other':
 					$this->gen_other_9_11();
 					break;
@@ -717,8 +719,8 @@ abstract class documentGenerator
 			$this->gen_other_9_12();
 		}
 
-		if (isset($_SESSION['responses']['other'])) {
-			switch ($_SESSION['responses']['other']) {
+		if (isset($this->responses['other'])) {
+			switch ($this->responses['other']) {
 				case 'parentABdoc_Other3':
 					$this->gen_other_9_13();
 					break;
