@@ -658,7 +658,6 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
             CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: $num Child(ren) together as follows: ";
-        echo $header;
         $this->fileContentString .= $header;
     }
 
@@ -673,12 +672,10 @@ class HtmlGenerator extends documentGenerator
                 . $this->responses["child" . $childNum . "Initials"] . "\") born in ("
                 . $this->responses["child" . $childNum . "Birthday"] . ")";
         }
-        echo $childrenInfo;
         $this->fileContentString .= $childrenInfo;
     }
     function gen_children_4_00_last() {
         $endSentence = " collectively hereinafter referred to as the Child(ren) or individually referred to using their initials.</p>";
-        echo $endSentence;
         $this->fileContentString .= $endSentence;
     }
 
@@ -880,7 +877,6 @@ class HtmlGenerator extends documentGenerator
 
                 $split = new FallSchedules();
                 $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-alternate-break":
@@ -891,7 +887,6 @@ class HtmlGenerator extends documentGenerator
 
                 $alternate = new FallSchedules();
                 $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
-                echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-continue-schedule":
@@ -1139,9 +1134,6 @@ class HtmlGenerator extends documentGenerator
             }
         }
         $end = $table->getEnd();
-        echo $holidayTable;
-        echo $childrenRows;
-        echo $end;
         $this->fileContentString .= $holidayTable;
     }
     // Alternate Yearly.
@@ -1179,7 +1171,6 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysMonFri><b>6.03C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>MONDAY/FRIDAY
             HOLIDAYS ATTACHED TO A WEEKEND</u>.</a></p>";
-        
         $this->fileContentString .= $content;
     }
     // Every Year with Parent A or Parent B.
@@ -1188,7 +1179,6 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysEveryYearWithAorB><b>6.03D</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>EVERY
             YEAR WITH " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " OR " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</u></a>.</p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
 
