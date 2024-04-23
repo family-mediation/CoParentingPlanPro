@@ -83,7 +83,6 @@ class wordDocGenerator extends documentGenerator
               </w:r>
               <w:r>
                 <w:t>. The Parents have $num Child(ren) together as follows: ";
-        echo $header;
         $this->fileContentString .= $header;
     }
 
@@ -95,13 +94,11 @@ class wordDocGenerator extends documentGenerator
                 . $this->responses["child" . $childNum . "BirthYears"] . "”) born in ("
                 . $this->responses["child" . $childNum . "BirthYears"] . ")";
         }
-        echo $childrenInfo;
     }
     function gen_children_4_00_last() {
         $endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
                 </w:t>
               </w:r>";
-        echo $endSentence;
         $this->fileContentString .= $endSentence;
     }
 
@@ -1425,13 +1422,11 @@ class wordDocGenerator extends documentGenerator
             case "summer-split-break":
                 $split = new Summer();
                 $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-uninterrupted-schedule":
                 $alternate = new Summer();
                 $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-schedule":
@@ -1457,9 +1452,6 @@ class wordDocGenerator extends documentGenerator
             }
         }
         $end = $table->getEnd();
-        echo $holidayTable;
-        echo $childrenRows;
-        echo $end;
         $this->fileContentString .= $holidayTable;
     }
     function gen_physical_custody_timesharing_6_03A() {
