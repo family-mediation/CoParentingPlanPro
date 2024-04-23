@@ -371,39 +371,78 @@ abstract class documentGenerator
 
         // Page 3 - Optional checkboxes.
         // Must implement new input data for all:
-        if (isset($this->responses['travel-with-children'])) {
-            $this->gen_physical_custody_timesharing_6_04();
-        }
-        if (isset($this->responses['reschedule-make-up-time'])) {
-            $this->gen_physical_custody_timesharing_6_05();
-        }
-        if (isset($this->responses['first-refusal'])) {
-            $this->gen_physical_custody_timesharing_6_06();
-        }
-        if (isset($this->responses['pick-up'])) {
-            $this->gen_physical_custody_timesharing_6_07();
-        }
-        if (isset($this->responses['drop-off'])) {
-            $this->gen_physical_custody_timesharing_6_08();
-        }
-        if (isset($this->responses['exchanges-neutral-location'])) {
-            $this->gen_physical_custody_timesharing_6_09();
-        }
-        if (isset($this->responses['delegate-pick-up'])) {
-            $this->gen_physical_custody_timesharing_6_10();
-        }
-        if (isset($this->responses['persons-authorized'])) {
-            $this->gen_physical_custody_timesharing_6_11();
-        }
-        if (isset($this->responses['children-belongings'])) {
-            $this->gen_physical_custody_timesharing_6_12();
-        }
-        if (isset($this->responses['relocation'])) {
-            $this->gen_physical_custody_timesharing_6_13();
-        }
-        if (isset($this->responses['modify-schedule'])) {
-            $this->gen_physical_custody_timesharing_6_14();
-        }
+		if (isset($this->responses['physicalOptional'])) {
+			foreach ($this->responses['physicalOptional'] as $x) {
+				switch ($x) {
+					case 'travel-with-children':
+						$this->gen_physical_custody_timesharing_6_04();
+						break;
+					case 'reschedule-make-up-time':
+						$this->gen_physical_custody_timesharing_6_05();
+						break;
+					case 'first-refusal':
+						$this->gen_physical_custody_timesharing_6_06();
+						break;
+					case 'pick-up':
+						$this->gen_physical_custody_timesharing_6_07();
+						break;
+					case 'drop-off':
+						$this->gen_physical_custody_timesharing_6_08();
+						break;
+					case 'exchanges-neutral-location':
+						$this->gen_physical_custody_timesharing_6_09();
+						break;
+					case 'delegate-pick-up':
+						$this->gen_physical_custody_timesharing_6_10();
+						break;
+					case 'persons-authorized':
+						$this->gen_physical_custody_timesharing_6_11();
+						break;
+					case 'children-belongings':
+						$this->gen_physical_custody_timesharing_6_12();
+						break;
+					case 'relocation':
+						$this->gen_physical_custody_timesharing_6_13();
+						break;
+					case 'modify-schedule':
+						$this->gen_physical_custody_timesharing_6_14();
+						break;
+				}
+			}
+		}
+        // if (isset($this->responses['travel-with-children'])) {
+        //     $this->gen_physical_custody_timesharing_6_04();
+        // }
+        // if (isset($this->responses['reschedule-make-up-time'])) {
+        //     $this->gen_physical_custody_timesharing_6_05();
+        // }
+        // if (isset($this->responses['first-refusal'])) {
+        //     $this->gen_physical_custody_timesharing_6_06();
+        // }
+        // if (isset($this->responses['pick-up'])) {
+        //     $this->gen_physical_custody_timesharing_6_07();
+        // }
+        // if (isset($this->responses['drop-off'])) {
+        //     $this->gen_physical_custody_timesharing_6_08();
+        // }
+        // if (isset($this->responses['exchanges-neutral-location'])) {
+        //     $this->gen_physical_custody_timesharing_6_09();
+        // }
+        // if (isset($this->responses['delegate-pick-up'])) {
+        //     $this->gen_physical_custody_timesharing_6_10();
+        // }
+        // if (isset($this->responses['persons-authorized'])) {
+        //     $this->gen_physical_custody_timesharing_6_11();
+        // }
+        // if (isset($this->responses['children-belongings'])) {
+        //     $this->gen_physical_custody_timesharing_6_12();
+        // }
+        // if (isset($this->responses['relocation'])) {
+        //     $this->gen_physical_custody_timesharing_6_13();
+        // }
+        // if (isset($this->responses['modify-schedule'])) {
+        //     $this->gen_physical_custody_timesharing_6_14();
+        // }
 
 
 		/***Communication (supposed to be section 5, but 7 according to index of plan) ***/

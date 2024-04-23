@@ -219,8 +219,8 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>1.00 </b>THIS
-         AGREEMENT is made and <span style='background:white'>entered this <span style='background:yellow'>" . $this->day . " (day) day
-         of " . $this->month . " (month), " . $this->year . " (year)</span></span>, by and between <span style='background:yellow'>PARENT A</span> and <span style='background:yellow'>PARENT B</span>
+         AGREEMENT is made and <span style='background:white'>entered this <span style='background:yellow'>" . $this->day . " (day)
+         of " . $this->month . " (month), " . $this->year . " (year)</span></span>, by and between <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span> and <span style='background:yellow'>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</span>
          (collectively hereinafter referred to as 'Parents') and applies to the
          Child(ren) named below in Paragraph 3.00.</p>
 
@@ -234,7 +234,7 @@ class HtmlGenerator extends documentGenerator
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%;border:
          none'><a name=IntroductionParentstoSeekFamilyCourt><b>1.02</b> </a>WHEREAS,
          parents intend to seek approval of their Agreement from the Family Court of the
-         <span style='background:yellow'>" . $this->responses["court"] . "</span> Circuit of the State of Hawaii hereinafter referred to as
+         <span style='background:yellow'>" . $this->responses["court"] . "</span> Circuit of the State of <span style='background:yellow'>Hawaii</span> hereinafter referred to as
          the 'Family Court';</p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
@@ -290,20 +290,20 @@ class HtmlGenerator extends documentGenerator
             <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:0in;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=ChildrenInformationonChildren><b>4.00&nbsp; </b><u>CHILD(REN): INFORMATION ON
-            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: $num Child(ren) together as follows: ";
+            CHILD(REN</u></a><u>)</u>.&nbsp; The Parents have: <span style='background:yellow'>$num</span> Child(ren) together as follows: ";
         $this->fileContentString .= $header;
     }
 
     function gen_children_4_00_individual(int $childNum, string $letter) {
         if ($childNum == 1) {
-            $childrenInfo = "Child A (\""
-                . $this->responses["child1Initials"] . "\") born in ("
+            $childrenInfo = "Child A (<span style='background:yellow'>\""
+                . $this->responses["child1Initials"] . "\"</span>) born in (<span style='background:yellow'>"
 
-                . $this->responses["child1Birthday"] . ")";
+                . $this->responses["child1Birthday"] . "</span>)";
         } else {
-            $childrenInfo = ", Child $letter (\""
-                . $this->responses["child" . $childNum . "Initials"] . "\") born in ("
-                . $this->responses["child" . $childNum . "Birthday"] . ")";
+            $childrenInfo = ", Child $letter (<span style='background:yellow'>\""
+                . $this->responses["child" . $childNum . "Initials"] . "\"</span>) born in (<span style='background:yellow'>"
+                . $this->responses["child" . $childNum . "Birthday"] . "</span>)";
         }
         $this->fileContentString .= $childrenInfo;
     }
@@ -843,7 +843,7 @@ class HtmlGenerator extends documentGenerator
             if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
             State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
             travel, at least " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
-              " . $this->responses['dayNotifyHawaii'] . " days prior to departure for in-state travel),
+              " . $this->responses['daysNotifyHawaii'] . " days prior to departure for in-state travel),
             the traveling parent shall provide the non-traveling parent full details
             regarding the trip including: (a) airline; flight number; dates and times of
             each flight leg; (b) the dates and times the traveling parent and the

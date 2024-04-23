@@ -435,7 +435,7 @@
             <div class="row justify-content-center" style="text-align: left">
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
+                  <input id="travel-with-children" type="checkbox" name="physicalOptional[]" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
                   <label for="travel-with-children">Travel with the Children</label>
                   <label class="collapse" id="travelChildren">
                     <label>
@@ -467,11 +467,11 @@
                   </label>
                 </div>
                 <div>
-                  <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time"/>
+                  <input id="reschedule-make-up-time" type="checkbox" name="physicalOptional[]" value="reschedule-make-up-time"/>
                   <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
                 </div>
                 <div>
-                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
+                  <input id="first-refusal" type="checkbox" name="physicalOptional[]" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
                   <label for="first-refusal">Right of First Refusal</label>
                   <label class="collapse" id="firstRefusal">
                     <label>
@@ -482,15 +482,15 @@
                   </label>
                 </div>
                 <div>
-                  <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
+                  <input id="pick-up" type="checkbox" name="physicalOptional[]" value="pick-up"/>
                   <label for="pick-up">Pick Up for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>
+                  <input id="drop-off" type="checkbox" name="physicalOptional[]" value="drop-off"/>
                   <label for="drop-off">Drop Off for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
+                  <input id="exchanges-neutral-location" type="checkbox" name="physicalOptional[]" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
                   <label class="collapse" id="exchangesNeutral">
                     <label hide="true" data-dm->Address
@@ -499,7 +499,7 @@
                   </label>
                 </div>
                 <div>
-                  <input id="relocation" type="checkbox" name="relocation" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
+                  <input id="relocation" type="checkbox" name="physicalOptional[]" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
                   <label for="relocation">Relocation</label>
                   <label class="collapse" id="relocationDays">
                     <label hide="true" data-dm->Days of notice
@@ -511,13 +511,13 @@
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
                   <label for="delegate-pick-up">
-                    <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
+                    <input id="delegate-pick-up" type="checkbox" name="physicalOptional[]" value="delegate-pick-up"/>
                     Parental Authority to Delegate Pick-Up and Drop Off
                   </label>
                 </div>
                 <div>
                   <label for="persons-authorized">
-                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
+                    <input id="persons-authorized" type="checkbox" name="physicalOptional[]" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
                     Persons Authorized to Pick Up and Drop Off
                     <label class="collapse" id="persons">
                       <label hide="true" data-dm->Person Authorized
@@ -527,12 +527,12 @@
                   </label>
                 </div>
                 <div>
-                  <input id="children-belongings" type="checkbox" name="children-belongings" value="children-belongings"/>
+                  <input id="children-belongings" type="checkbox" name="physicalOptional[]" value="children-belongings"/>
                   <label for="children-belongings">Children's Personal Belongings</label>
                 </div>
                 <div>
                   <label for="modify-schedule">
-                    <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
+                    <input id="modify-schedule" type="checkbox" name="physicalOptional[]" value="modify-schedule"/>
                     Modification of Schedule by Agreement of Both Parties
                   </label>
                 </div>
