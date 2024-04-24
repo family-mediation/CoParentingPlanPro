@@ -1,7 +1,7 @@
 <?php
 
 class Signature {
-    public function getSignature(string $parentAName, string $parentBName, string $addressA, string $addressB, string $partyAEmail, string $partyBEmail, int $ssnA, int $ssnB, string $dateA, string $dateB): string {
+    public function getSignature(string $parentAName, string $parentALastName, string $parentBName, string $parentBLastName, string $addressA, string $cityA, string $stateA, string $zipA, string $addressB, string $cityB, string $stateB, string $zipB, string $partyAEmail, string $partyBEmail, int $ssnA, int $ssnB, string $dateA, string $dateB, string $cellA, string $cellB): string {
         return "<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
             margin-bottom:8.0pt;margin-left:0in;text-align:center;text-indent:0in;
             line-height:150%'><span style='font-size:16.0pt;line-height:150%'>[SIGNATURE
@@ -34,16 +34,16 @@ class Signature {
             margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
             
             <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Name: $parentAName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: $parentBName</p>
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Name: $parentAName $parentALastName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name: $parentBName $parentBLastName</p>
             
             <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
-            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> $parentAName </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $parentBName</p>
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'> $parentAName $parentALastName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$parentBName $parentBLastName</p>
             
-            <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            <br><p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
             margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>Residential
-            Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
             
-            $addressA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$addressB
+            $addressA, $cityA, $stateA, $zipA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$addressB, $cityB, $stateB, $zipB
             <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
             margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
             
@@ -61,7 +61,23 @@ class Signature {
             
             <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
             margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+
+            <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>
+            Cell Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cell Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            $cellA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cellB
+
+
+
+
+            <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
             
+            <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+            margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+
             <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
             margin-left:-.75pt;text-align:justify;text-indent:0in;line-height:107%'>SSN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX-$ssnA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XXX-XX-$ssnB</p>
             

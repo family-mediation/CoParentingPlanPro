@@ -2278,7 +2278,7 @@ class HtmlGenerator extends documentGenerator
         name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
         CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " shall be entitled to
         claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
-        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span>(Child's Initials) as a dependent for
+        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span> (Child's Initials) as a dependent for
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
@@ -2881,7 +2881,7 @@ class HtmlGenerator extends documentGenerator
 
     function signature() {
         $signature = new Signature();
-        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['partyAResidence'], $this->responses['partyACity'], $this->responses['partyAState'], $this->responses['partyAZip'], $this->responses['partyBResidence'], $this->responses['partyBCity'], $this->responses['partyBState'], $this->responses['partyBZip'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned'], $this->responses['partyACell'], $this->responses['partyBCell']);
         
         $this->fileContentString .= $signatures;
     }
