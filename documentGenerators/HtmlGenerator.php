@@ -838,12 +838,12 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhysicalCustodyTravelwithChild><b>6.04&nbsp; </b><u>PHYSICAL CUSTODY AND
             TIMESHARING: TRAVEL WITH THE CHILD(REN)</u>.&nbsp; </a>Each parent shall have the
-            right to take up to " . $this->responses['daysOff'] . " days/weeks of off-island
-            travel with the Child(ren) every year. The traveling parent shall provide" . $this->responses['daysNotify'] . " days' notice in writing to the non-traveling parent
+            right to take up to <span style='background:yellow'>" . $this->responses['daysOff'] . " " . $this->responses['travelDayOrWeek'] . "</span> of off-island
+            travel with the Child(ren) every year. The traveling parent shall provide <span style='background:yellow'>" . $this->responses['daysNotify'] . "</span> days' notice in writing to the non-traveling parent
             if the trip is outside of the State of Hawaii.&nbsp; If the trip is within the
-            State of Hawaii, the traveling parent shall provide   " . $this->responses['daysNotifyHawaii'] . " days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
-            travel, at least " . $this->responses['daysNotifyOutside'] . " days prior to departure (or
-              " . $this->responses['daysNotifyHawaii'] . " days prior to departure for in-state travel),
+            State of Hawaii, the traveling parent shall provide <span style='background:yellow'>" . $this->responses['daysNotifyHawaii'] . "</span> days' notice in writing to the non-traveling parent.&nbsp; For out-of-state
+            travel, at least <span style='background:yellow'>" . $this->responses['daysNotifyOutside'] . "</span> days prior to departure (or
+            <span style='background:yellow'>" . $this->responses['daysNotifyHawaii'] . "</span> days prior to departure for in-state travel),
             the traveling parent shall provide the non-traveling parent full details
             regarding the trip including: (a) airline; flight number; dates and times of
             each flight leg; (b) the dates and times the traveling parent and the
@@ -855,12 +855,12 @@ class HtmlGenerator extends documentGenerator
             <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%;
             border:none'>Parents shall alternate having the first choice for dates for
-            off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In even
-            years,  " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have first choice for dates of travel so long as they
-            provide those specific dates in writing to  " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " by no later than  " . $this->responses['dateANotify'] . "
-            [insert date] of that same year.&nbsp; In odd years, " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have first
+            off-island travel during the Child(ren)'s summer vacations each year.&nbsp; In <span style='background:yellow'>even</span>
+            years, <span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have first choice for dates of travel so long as they
+            provide those specific dates in writing to <span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> by no later than <span style='background:yellow'>" . $this->responses['dateANotify'] . "</span>
+            of that same year.&nbsp; In <span style='background:yellow'>odd</span> years, <span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> shall have first
             choice for dates of travel so long as they provide the specific dates in
-            writing to " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " by no later than  " . $this->responses['dateBNotify'] . " of that same year.
+            writing to <span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> by no later than <span style='background:yellow'>" . $this->responses['dateBNotify'] . "</span> of that same year.
             If either parent wishes to take the Child(ren) out of the country or miss any
             school days in order to travel, such a trip shall require the non-traveling
             parent's consent which, if such requests are occasional, shall not be
@@ -904,7 +904,7 @@ class HtmlGenerator extends documentGenerator
             name=PhysicalCustodyROFR><b>6.06&nbsp; </b><u>PHYSICAL CUSTODY AND TIMESHARING:
             RIGHT OF FIRST REFUSAL</u></a>.<b>&nbsp; </b><span style='color:#333333'>We agree
             that if a Parent is unable to care for the Child(ren) themselves for a period
-            of more than  " . $this->responses['refusalHours'] . "</span><span style='color:#333333'>
+            of more than <span style='background:yellow'>" . $this->responses['refusalHours'] . "</span></span><span style='color:#333333'>
             hours during their time with the Child(ren), they shall notify the other Parent
             and give them the opportunity to spend the period for which childcare is
             required with the Child(ren). </span>If the non-custodial Parent cannot
@@ -962,7 +962,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: EXCHANGES AT A NEUTRAL LOCATION</u>.&nbsp; </a>If possible, exchanges
             shall occur at school provided however, that if exchanges are not during school
             pick-ups or drop offs, Parents agree to exchange the child at the following
-            neutral location:&nbsp;  " . $this->responses['exchangesNeutral'] . ".</p>";
+            neutral location:&nbsp; <span style='background:yellow'>" . $this->responses['exchangeAddress'] . "</span>.</p>";
         
         $this->fileContentString .= $content;
 
@@ -997,10 +997,10 @@ class HtmlGenerator extends documentGenerator
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
             name=PhyscialCustodyAuthorizatioPickupDropOff><b>6.11&nbsp; </b><u>PHYSICAL CUSTODY
             AND TIMESHARING:&nbsp; PERSONS AUTHORIZED TO PICK-UP AND DROP OFF THE CHILD(REN</u></a><u>)</u>.
-            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " or " . $this->responses['partyBFirst'] . " to
+            <span style='color:#333333'>If it is not possible for " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " or " . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . " to
             pick up or drop off the Child(ren) as provided for in the parenting time
             arrangement, the following people may pick up or drop off the Child(ren):
-             " . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
+            <span style='background:yellow'>" . $this->responses['personsAuthorized'] . ".</span></p>"; //only one person has been implemented so far
         
         $this->fileContentString .= $content;
 
@@ -1024,7 +1024,7 @@ class HtmlGenerator extends documentGenerator
             to be clear about where the Child(ren) may take these items and communicate
             this directly to the other Parent.&nbsp; </span>Child(ren) may take personal items
             (for example, clothing, toys, sports equipment, cell phone, regardless of which
-            Parent purchased these items), between the homes of " . $this->responses['parentAFirst'] . " and " . $this->responses['parentBFirst'] . ".
+            Parent purchased these items), between the homes of " . $this->responses['partyAFirst'] . " " . $this->responses['partyALast'] . " and " . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . ".
             Parents will not restrict the Child(ren)'s ability to take these items between
             homes. Parents will each have toiletries, pajamas and as many belongings as
             possible for the Child(ren) in their homes. These items will not travel back
@@ -1046,7 +1046,7 @@ class HtmlGenerator extends documentGenerator
             TIMESHARING: RELOCATION</u></a>.<b>&nbsp; </b>If either Parent intends to relocate
             away from the island of their current residences or outside of the State where
             they currently reside, then the moving Parent shall provide the other Parent at
-            least  " . $this->responses['relocationDays'] . " ( " . $this->responses['relocationDays'] . ") days' notice of their intent to
+            least <span style='background:yellow'>" . $this->responses['relocationDays'] . "</span> days' notice of their intent to
             move.&nbsp; After receiving notice of an intent to relocate, Parents shall meet and
             review this <u>Co-Parenting Plan:</u> <u>Agreement Regarding Child Custody,
             Timesharing, and Support</u> to try to mutually agree on a modified plan they
@@ -1232,8 +1232,8 @@ class HtmlGenerator extends documentGenerator
          CO-PARENTS: <span style='background:yellow'>MONTHLY CONFERENCE</span></u></a>. Parents shall meet monthly to discuss
          the children's development and needs including education, health, well-being,
          extracurricular activities, scheduling issues, travel and any other issues
-         pertaining to their child(ren).&nbsp; Conferences shall be on the first  <span style='background:yellow'>" . $this->responses["insertmonthly"] . "</span>&nbsp;
-         [insert day of the week] of each month unless mutually agreed to otherwise.
+         pertaining to their child(ren).&nbsp; Conferences shall be on the first <span style='background:yellow'>" . $this->responses["insertmonthly"] . "</span> 
+         of each month unless mutually agreed to otherwise.
          Meetings may be via in-person, video conference or telephone calls, as mutually
          agreed by the Parents.&nbsp; This requirement for monthly conferences between
          Parents shall end upon each child's eighteenth (18th) birthday, or as mutually
@@ -1286,7 +1286,7 @@ class HtmlGenerator extends documentGenerator
      {
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>Parents
-         shall meet and confer annually by no later than <span syle='background:yellow'>" . $this->responses["annualdate"] . "</span> every
+         shall meet and confer annually by no later than <span style='background:yellow'>" . $this->responses["annualdate"] . "</span> every
          year.&nbsp; Meetings may be via in-person, video conference or telephone calls, as
          mutually agreed by the Parents.&nbsp; This requirement for annual conferences
          between Parents shall end upon each child's eighteenth (18th) birthday, or as
@@ -1316,14 +1316,19 @@ class HtmlGenerator extends documentGenerator
      }
  
      function gen_communication_7_08()
-     {
+     {   // convert output from military time 
+         $time1 = date("h:i A", strtotime($this->responses["A9:00"]));
+         $time2 = date("h:i A", strtotime($this->responses["A17:00"]));
+         $time3 = date("h:i A", strtotime($this->responses["B09:00"]));
+         $time4 = date("h:i A", strtotime($this->responses["B17:00"]));
+         
          $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
          name=CommunicationSpecific><b>7.08&nbsp; </b><u>COMMUNICATION BETWEEN CHILD(REN) AND
          NON-CUSTODIAL PARENT: SPECIFIC</u></a>. <span style='color:#333333'>During the
-         regular parenting time schedule, " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " may call the child between <span syle='background:yellow'>" . $this->responses["A9:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["A17:00"] . "</span> when they are with " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "  
+         regular parenting time schedule, " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " may call the child between <span style='background:yellow'>$time1</span> and <span style='background:yellow'>$time2</span> when they are with " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "  
          and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "  may call the
-         child between <span syle='background:yellow'>" . $this->responses["B09:00"] . "</span> and <span syle='background:yellow'>" . $this->responses["B17:00"] . "</span> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ".
+         child between <span style='background:yellow'>$time3</span> and <span style='background:yellow'>$time4</span> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ".
          Calls will normally be no more than 10 minutes.</span></p>";
  
          $this -> fileContentString .= $snippet;

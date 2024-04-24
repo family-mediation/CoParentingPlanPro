@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="./?page=5">
+  <form method="post" class="" locale="ENGLISH" action="./?page=5" onsubmit="return false;">
     <div id="mainForm">
       <div id="page0" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
+          <button id="next0" onclick="showPage('page1')">Next Page</button>
         </div>
       </div>
       <div id="page1" class="container card p-4">
@@ -175,7 +175,8 @@
             </div>
           </div>
           <div class="row justify-content-center pt-4 pb-4">
-            <button id="another" onclick="nextHandler()">Next Page</button>
+          <button id="previous1" onClick="showPage('page0')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next1" onclick="showPage('page2')">Next Page</button>
           </div>
         </div>
       </div>
@@ -423,8 +424,8 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
-        </div>
+          <button id="previous2" onclick="showPage('page1')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next2" onclick="showPage('page3')">Next Page</button>        </div>
       </div>
       <div id="page3" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
@@ -439,7 +440,9 @@
                   <label for="travel-with-children">Travel with the Children</label>
                   <label class="collapse" id="travelChildren">
                     <label>
-                      <label hide="true" data-dm->Number of days
+                      <label hide="true" data-dm->Number of <select id="travelDayOrWeek" name="travelDayOrWeek" style="margin-bottom: 10px;">
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
                         <input type="number" class="form-control" name="daysOff" value="daysOff">
                       </label>
                     </label>
@@ -498,15 +501,6 @@
                     </label>
                   </label>
                 </div>
-                <div>
-                  <input id="relocation" type="checkbox" name="physicalOptional[]" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
-                  <label for="relocation">Relocation</label>
-                  <label class="collapse" id="relocationDays">
-                    <label hide="true" data-dm->Days of notice
-                      <input type="number" class="form-control" name="relocationDays">
-                    </label>
-                  </label>
-                </div>
               </div>
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
@@ -531,6 +525,15 @@
                   <label for="children-belongings">Children's Personal Belongings</label>
                 </div>
                 <div>
+                  <input id="relocation" type="checkbox" name="physicalOptional[]" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
+                  <label for="relocation">Relocation</label>
+                  <label class="collapse" id="relocationDays">
+                    <label hide="true" data-dm->Days of notice
+                      <input type="number" class="form-control" name="relocationDays">
+                    </label>
+                  </label>
+                </div>
+                <div>
                   <label for="modify-schedule">
                     <input id="modify-schedule" type="checkbox" name="physicalOptional[]" value="modify-schedule"/>
                     Modification of Schedule by Agreement of Both Parties
@@ -540,10 +543,22 @@
             </div>
           </div>
           <div class="row justify-content-center pt-4 pb-4">
-            <button id="toCommunication" onclick="submit()">Next Section</button>
+          <button id="previous3" onClick="showPage('page2')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next3" onclick="submit()">Next Section</button>
           </div>
         </div>
       </div>
     </div>
   </form>
 </div>
+
+<script>
+    // for the page buttons 
+    function showPage(pageId) {
+    document.getElementById("page0").style.display = "none";
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+    document.getElementById(pageId).style.display = "block";
+  }
+</script>

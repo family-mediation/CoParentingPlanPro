@@ -2,7 +2,7 @@
   <form method="post" class="" locale="ENGLISH" action="./?page=6" onsubmit="return false;">
     <div id="mainForm">
       <div id="page0" class="container card p-4">
-        <h1>COMMUNICATION</h1>
+        <h1>Communication</h1>
         <div class="form-group row p-3" name="communication">
           <p>Parents agree and understand that communication between Co-Parents is critical to their Child(ren)’s well-being.  
             Parents shall work together to agree on what information needs to be communicated to the other Parent in a timely manner and, 
@@ -73,7 +73,7 @@
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" name="semidate1" id="semidate1" />(insert date) and <input type="text" name="semidate2" id="semidate2" />(insert date) every year.
+              <input type="date" name="semidate1" id="semidate1" /> and <input type="date" name="semidate2" id="semidate2" /> every year.
               </div>
               
               <div>
@@ -83,18 +83,18 @@
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" name="annualdate" id="annualdate" /> every year.
+              <input type="date" name="annualdate" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
               <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
-              <input type="checkbox" name="betweenchildparent[]" id="7.07" value="7.07"/>
+              <input type="checkbox" name="commbetweenCP[]" id="7.07" value="7.07"/>
               <label for="7.07">Unlimited</label>
               </div>
 
               <div>
-              <input type="checkbox" id="7.08" name="betweenchildparent[]" value="7.08" onclick="commSpecific()" />
+              <input type="checkbox" id="7.08" name="commbetweenCP[]" value="7.08" onclick="commSpecific()" />
               <label for="7.08">Specific</label>
               </div>
               
@@ -109,17 +109,17 @@
               <br>
               <h4>Communication:</h4>
               <div>
-              <input type="checkbox" name="otherComm[]" id="7.09" value="7.09" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.09" value="7.09" />
               <label for="7.09">Exchange of Contact Information</label>
               </div>
 
               <div>
-              <input type="checkbox" name="otherComm[]" id="7.10" value="7.10" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.10" value="7.10" />
               <label for="7.10">Scheduling Extracurricular Activities for the Child(ren)</label>
               </div>
 
               <div>
-              <input type="checkbox" name="otherComm[]" id="7.11" value="7.11" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.11" value="7.11" />
               <label for="7.11">Selecting Extracurricular Activities for the Child(ren)</label>
               </div>
             
