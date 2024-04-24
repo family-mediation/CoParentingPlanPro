@@ -670,100 +670,158 @@ abstract class documentGenerator
 
 
 		//Section 8 Other section
-		if (isset($this->responses['counseling'])) {
-			switch ($this->responses['counseling']) {
-				case 'therapistInput9.00':
-					$this->gen_other_9_00();
-					break;
+		if (isset($_SESSION['responses']['other'])) {
+			foreach($_SESSION['responses']['other'] as $x) {
+			  switch ($x) {
+				  case '9.00':
+					  $this->gen_other_9_00();
+					  break;
+				  case '9.01':
+					  $this->gen_other_9_01();
+					  break;
+				  case '9.02':
+					  $this->gen_other_9_02();
+					  break;
+				  case '9.03':
+					  $this->gen_other_9_03();
+					  break;
+				  case '9.04':
+					  $this->gen_other_9_04();
+					  break;
+				  case '9.05':
+					  $this->gen_other_9_05();
+					  break;
+				  case '9.06':
+					  $this->gen_other_9_06();
+					  break;
+				  case '9.07':
+					  $this->gen_other_9_07();
+					  break;
+				  case '9.08':
+					  $this->gen_other_9_08();
+					  break;
+				  case '9.09':
+					  $this->gen_other_9_09();
+					  break;
+				  case '9.10':
+					  $this->gen_other_9_10();
+					  break;
+					case '9.11':
+					  $this->gen_other_9_11();
+					  break;
+					case '9.12':
+					  $this->gen_other_9_12();
+					  break;
+					case '9.13':
+					  $this->gen_other_9_13();
+					  break;
+					case '9.14':
+					  $this->gen_other_9_14();
+					  break;
+					case '9.15':
+					  $this->gen_other_9_15();
+					  break;
+					case '9.16':
+					  $this->gen_other_9_16();
+					  break;
+			  }
 			}
-		}
+		  }
+  
+		// if (isset($this->responses['counseling'])) {
+		// 	switch ($this->responses['counseling']) {
+		// 		case 'therapistInput9.00':
+		// 			$this->gen_other_9_00();
+		// 			break;
+		// 	}
+		// }
 
-		if (isset($this->responses['childfocused'])) {
-			switch ($this->responses['childfocused']) {
-				case 'therapistInput9.01':
-					$this->gen_other_9_01();
-					break;
-			}
-		}
+		// if (isset($this->responses['childfocused'])) {
+		// 	switch ($this->responses['childfocused']) {
+		// 		case 'therapistInput9.01':
+		// 			$this->gen_other_9_01();
+		// 			break;
+		// 	}
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.02") {
-			$this->gen_other_9_02();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.02") {
+		// 	$this->gen_other_9_02();
+		// }
 		
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.03") {
-			$this->gen_other_9_03();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.03") {
+		// 	$this->gen_other_9_03();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.04") {
-			$this->gen_other_9_04();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.04") {
+		// 	$this->gen_other_9_04();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.05") {
-			$this->gen_other_9_05();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.05") {
+		// 	$this->gen_other_9_05();
+		// }
 
-		if (isset($this->responses['other'])) {
-			switch ($this->responses['other']) {
-				case 'parentAB_Other':
-					$this->gen_other_9_06();
-					break;
-			}
-		}
+		// if (isset($this->responses['other'])) {
+		// 	switch ($this->responses['other']) {
+		// 		case 'parentAB_Other':
+		// 			$this->gen_other_9_06();
+		// 			break;
+		// 	}
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.07") {
-			$this->gen_other_9_07();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.07") {
+		// 	$this->gen_other_9_07();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.08") {
-			$this->gen_other_9_08();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.08") {
+		// 	$this->gen_other_9_08();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.09") {
-			$this->gen_other_9_09();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.09") {
+		// 	$this->gen_other_9_09();
+		// }
 
-		$this->gen_other_9_10();
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.10") {
-			$this->gen_other_9_10();
-		}
+		// $this->gen_other_9_10();
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.10") {
+		// 	$this->gen_other_9_10();
+		// }
 
-		if (isset($this->responses['other'])) {
-			switch ($this->responses['other']) {
-				case 'parentABdoc_Other':
-					$this->gen_other_9_11();
-					break;
-				case 'parentABdoc_Other2':
-					$this->gen_other_9_11();
-					break;
-			}
-		}
+		// if (isset($this->responses['other'])) {
+		// 	switch ($this->responses['other']) {
+		// 		case 'parentABdoc_Other':
+		// 			$this->gen_other_9_11();
+		// 			break;
+		// 		case 'parentABdoc_Other2':
+		// 			$this->gen_other_9_11();
+		// 			break;
+		// 	}
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.12") {
-			$this->gen_other_9_12();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.12") {
+		// 	$this->gen_other_9_12();
+		// }
 
-		if (isset($this->responses['other'])) {
-			switch ($this->responses['other']) {
-				case 'parentABdoc_Other3':
-					$this->gen_other_9_13();
-					break;
-				case 'parentABdoc_Other4':
-					$this->gen_other_9_13();
-					break;
-			}
-		}
+		// if (isset($this->responses['other'])) {
+		// 	switch ($this->responses['other']) {
+		// 		case 'parentABdoc_Other3':
+		// 			$this->gen_other_9_13();
+		// 			break;
+		// 		case 'parentABdoc_Other4':
+		// 			$this->gen_other_9_13();
+		// 			break;
+		// 	}
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.14") {
-			$this->gen_other_9_14();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.14") {
+		// 	$this->gen_other_9_14();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.15") {
-			$this->gen_other_9_15();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.15") {
+		// 	$this->gen_other_9_15();
+		// }
 
-		if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.16") {
-			$this->gen_other_9_16();
-		}
+		// if (isset($_SESSION['responses']['other']) && $_SESSION['responses']['other'] == "9.16") {
+		// 	$this->gen_other_9_16();
+		// }
 
         // Legal
         $this->gen_legal_10_00();

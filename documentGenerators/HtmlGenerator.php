@@ -2439,7 +2439,7 @@ class HtmlGenerator extends documentGenerator
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
-        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>" . $this->responses["therapistInput9.00"] . "</span>(name), or
+        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>  " . $this->responses["therapistInput1"] .  "</span>, or
         other mutually selected licensed mental health professional, as a Co-Parent
         Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
         Parents shall continue in Co-Parent Counseling until clinically discharged or
@@ -2459,7 +2459,7 @@ class HtmlGenerator extends documentGenerator
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesChildFocusedTherapist><b>9.01&nbsp; </b><u>OTHER ISSUES:
         CHILD-FOCUSED THERAPIST</u></a>.&nbsp; Parents agree to
-        engage <span style='background:yellow'>" . $this->responses["therapistInput9.01"] . "</span>(name), or other mutually selected licensed mental
+        engage <span style='background:yellow'>" . $this->responses["therapistInput2"] . "</span>, or other mutually selected licensed mental
         health professional, as a Child-Focused Therapist for Child(ren).&nbsp; Both parents
         shall have access to the child therapist and shall participate in therapy and/or
         engage with the Child-Focused Therapist at the therapist's discretion.&nbsp; Parents
@@ -2555,8 +2555,8 @@ class HtmlGenerator extends documentGenerator
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesOneParentTeacherMeeting><b>9.</b></a><b><span style='color:
         #333333'>06</span></b><span style='color:#333333'>&nbsp; </span><u>OTHER ISSUES: ONE
-        PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.&nbsp; <span style='color:#333333'>Parent
-        A/B will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["9.06"] . "</span>/A of the
+        PARENT TO ATTEND PARENT-TEACHER MEETINGS</u>.&nbsp; <span style='color:#333333'>
+        <span style='background:yellow'>" . $this->responses["parentAB_Other"] . "</span> will attend all parent-teacher meetings and will advise <span style='background:yellow'>" . $this->responses["parentAB_Other1"] . "</span> of the
         Child(ren)'s progress.</span></p>";
         
         $this->fileContentString .= $snippet;
@@ -2640,15 +2640,26 @@ class HtmlGenerator extends documentGenerator
 
     function gen_other_9_11()
     {
-        $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
-        margin-left:.5pt;text-align:justify;line-height:150%'><a
-        name=OtherIssuesDocuments><b>9.11&nbsp; </b><u>OTHER ISSUES: DOCUMENTS</u></a>.&nbsp; <span
-        style='color:#333333'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span>/B will keep the original passport issued in the
-        Child(ren)'s name, their social security card, birth certificate, and [insert
-        any other relevant documents] at their home, and these documents will be made
-        available to<span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span>/A as needed. Both Parents shall have copies of all of the
-        important documents.</span></p>";
-        
+
+        $content = $this->responses["otherDocuments"]; // if user doesn't enter anything, do not output the "and [insert any other relevant documents]" part
+        if (empty($content)) {
+            $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;line-height:150%'><a
+            name=OtherIssuesDocuments><b>9.11&nbsp; </b><u>OTHER ISSUES: DOCUMENTS</u></a>.&nbsp; <span
+            style='color:#333333'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span> will keep the original passport issued in the
+            Child(ren)'s name, their social security card, and birth certificate at their home, and these documents will be made
+            available to <span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span> as needed. Both Parents shall have copies of all of the
+            important documents.</span></p>";
+        } else {
+            $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+            margin-left:.5pt;text-align:justify;line-height:150%'><a
+            name=OtherIssuesDocuments><b>9.11&nbsp; </b><u>OTHER ISSUES: DOCUMENTS</u></a>.&nbsp; <span
+            style='color:#333333'><span style='background:yellow'>" . $this->responses["parentABdoc_Other"] . "</span> will keep the original passport issued in the
+            Child(ren)'s name, their social security card, birth certificate, and <span style='background:yellow'>$content</span> at their home, and these documents will be made
+            available to <span style='background:yellow'>" . $this->responses["parentABdoc_Other2"] . "</span> as needed. Both Parents shall have copies of all of the
+            important documents.</span></p>";
+        }
+
         $this->fileContentString .= $snippet;
         
         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
@@ -2677,8 +2688,8 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesSoleConsentPassport><b>9.13&nbsp; </b><u>OTHER ISSUES: SOLE
-        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'>Parent
-        <span style='background:yellow'>" . $this->responses["parentAB_Other3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>/A.</span></p>";
+        AUTHORITY TO CONSENT FOR PASSPORT</u></a>.&nbsp; <span style='color:#333333'>
+        <span style='background:yellow'>" . $this->responses["parentABOther3"] . "</span> can apply for the passport for a Child without the consent of <span style='background:yellow'>" . $this->responses["parentAB_Other4"] . "</span>.</span></p>";
         
         $this->fileContentString .= $snippet;
         
