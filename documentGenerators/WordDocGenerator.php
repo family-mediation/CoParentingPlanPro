@@ -2789,7 +2789,7 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			break;
 		case "summer-continue-uninterrupted-schedule":
 			$alternate = new Summer();
-			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
+			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
 			 $summer;
 			$this->fileContentString .= $summer;
 			break;
