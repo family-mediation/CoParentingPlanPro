@@ -10082,7 +10082,7 @@ function gen_legal_10_02() {
 		$zip->close();
 		$documentXML = fopen($this->fileName . "/word/document.xml" , "w+");
         if($documentXML != false)
-        {
+        {   fwrite( $documentXML, $this->tableOfContentsString); 
 		    fwrite( $documentXML, $this->fileContentString);
         }
         fclose($documentXML);
