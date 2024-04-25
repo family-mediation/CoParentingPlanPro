@@ -2809,7 +2809,7 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 }
 function gen_physical_custody_timesharing_6_03() {
 	$table = new HolidayTableWord();
-	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
+	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
 	echo $holidayTable;
 	$this->fileContentString .= $holidayTable;
 }
