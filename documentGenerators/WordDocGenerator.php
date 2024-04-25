@@ -412,7 +412,7 @@ function gen_children_4_00(int $num) {
 		  </w:r>
 		  <w:r>
 			<w:t>. The Parents have $num Child(ren) together as follows: ";
-	echo $header;
+	 $header;
 	$this->fileContentString .= $header;
 }
 
@@ -424,13 +424,13 @@ function gen_children_4_00_individual(int $childNum, string $letter) {
 			. $this->responses["child" . $childNum . "Birthday"] . "”) born in ("
 			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
-	echo $childrenInfo;
+	 $childrenInfo;
 }
 function gen_children_4_00_last() {
 	$endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
 			</w:t>
 		  </w:r>";
-	echo $endSentence;
+	 $endSentence;
 	$this->fileContentString .= $endSentence;
 }
 
@@ -471,7 +471,7 @@ function gen_legal_custody_5_00()
 		<w:t>eighteen (18) years of age, and decisions involving a child’s travel to any distance beyond the jurisdiction of the United States for any period of time. </w:t>
 	</w:r>
 </w:p>";
-	echo $definition;
+	 $definition;
 	$this->fileContentString .= $definition;
 }
 function gen_legal_custody_5_01()
@@ -537,7 +537,7 @@ $tableCon = "<w:p w14:paraId='3741EBBC' w14:textId='3ADA358B' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_03A()
@@ -593,7 +593,7 @@ $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_03B()
@@ -649,7 +649,7 @@ $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_05A()
@@ -748,7 +748,7 @@ function gen_legal_custody_5_05A()
 	</w:p>";
 	$this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_05B()
@@ -869,7 +869,7 @@ $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307'
 </w:p>";
 	$this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_04()
@@ -938,7 +938,7 @@ $tableCon = "<w:p w14:paraId='5B86F9DF' w14:textId='7EFA53B1' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_06()
@@ -1011,7 +1011,7 @@ $tableCon = "<w:p w14:paraId='255B156B' w14:textId='4EC938DE' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_07()
@@ -1070,7 +1070,7 @@ $tableCon = "<w:p w14:paraId='32516AFC' w14:textId='03D28050' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_08()
@@ -1138,7 +1138,7 @@ $tableCon = "<w:p w14:paraId='78821977' w14:textId='5AF1EDE8' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_09()
@@ -1206,7 +1206,7 @@ $tableCon = "<w:p w14:paraId='3217D4DB' w14:textId='6A705D40' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_10()
@@ -1278,7 +1278,7 @@ $tableCon = "<w:p w14:paraId='574D9B51' w14:textId='38DB855D' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_legal_custody_5_11()
@@ -1347,7 +1347,7 @@ $tableCon = "<w:p w14:paraId='574C5062' w14:textId='532F38AC' w:rsidR='00505307'
 </w:p>";
 $this -> tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 } //end of legal custody section 3
 
@@ -1393,7 +1393,7 @@ function gen_physical_custody_timesharing_6_00() {
 
 		//Tags don't match; starts from <w:r>, but ends with </w:p>.
 
-	echo $header;
+	 $header;
 	$this->fileContentString .= $header;
 }
 function gen_physical_custody_timesharing_6_01() {
@@ -1433,7 +1433,7 @@ function gen_physical_custody_timesharing_6_01() {
 			</w:t>
 		  </w:r>
 		</w:p>";
-	echo $header;
+	 $header;
 
 	$tableCon = "<w:p w14:paraId='20E76241' w14:textId='262935A3' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
   <w:pPr>
@@ -1657,35 +1657,35 @@ function gen_physical_custody_timesharing_6_01A() {
 </w:p>";
 		$this -> tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($this->responses["schoolYearSchedule"]) {
 		case "2-2-3":
 			$equalSchedule = new EqualTimeSharing();
 			$schedule = $equalSchedule->get_2_2_3();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		case "3-4-4-3":
 			$equalSchedule = new EqualTimeSharing();
 			$schedule = $equalSchedule->get_3_4_4_3();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		case "2-2-5-5":
 			$equalSchedule = new EqualTimeSharing();
 			$schedule = $equalSchedule->get_2_2_5_5();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		case "7-7":
 			$equalSchedule = new EqualTimeSharing();
 			$schedule = $equalSchedule->get_7_7();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.";
+			 "Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.";
 	}
 }
 function gen_physical_custody_timesharing_6_01B() {
@@ -1777,29 +1777,29 @@ function gen_physical_custody_timesharing_6_01B() {
 </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($this->responses["schoolYearSchedule"]) {
 		case "8-6":
 			$otherSchedule = new OtherTimeSharing();
 			$schedule = $otherSchedule->get_8_6();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		case "10-4":
 			$otherSchedule = new OtherTimeSharing();
 			$schedule = $otherSchedule->get_10_4();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		case "ownSchedule":
 			$otherSchedule = new OtherTimeSharing();
 			$schedule = $otherSchedule->get_own_schedule();
-			echo $schedule;
+			 $schedule;
 			$this->fileContentString .= $schedule;
 			break;
 		default:
-			echo "Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.";
+			 "Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.";
 	}
 }
 function gen_physical_custody_timesharing_6_02() {
@@ -1856,7 +1856,7 @@ function gen_physical_custody_timesharing_6_02() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_02A(string $type) {
@@ -1990,29 +1990,29 @@ function gen_physical_custody_timesharing_6_02A(string $type) {
 		$this->tableOfContentsString .= $tableCon;
 		//6.02(i) is missing in document.xml
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "fall-split-break":
 			$split = new Fall();
 			$fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $fall;
+			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-alternate-break":
 			$alternate = new Fall();
 			$fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $fall;
+			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-continue-schedule":
 			$continue = new Fall();
 			$fall = $continue->get_continue();
-			echo $fall;
+			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
+			 "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
 	}
 }
 function gen_physical_custody_timesharing_6_02B(string $type) {
@@ -2192,35 +2192,35 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "thanksgiving-split-break":
 			$split = new Thanksgiving();
 			$thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $thanksgiving;
+			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-alternate-break":
 			$alternate = new Thanksgiving();
 			$thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $thanksgiving;
+			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-continue-schedule":
 			$continue = new Thanksgiving();
 			$thanksgiving = $continue->get_continue();
-			echo $thanksgiving;
+			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.";
+			 "Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.";
 	}
 }
 function gen_physical_custody_timesharing_6_02BOptional() {
 	$time_break = new Thanksgiving();
 	$thanksgiving = $time_break->get_time();
-	echo $thanksgiving;
+	 $thanksgiving;
 	$this->fileContentString .= $thanksgiving;
 }
 function gen_physical_custody_timesharing_6_02C(string $type) {
@@ -2407,35 +2407,35 @@ function gen_physical_custody_timesharing_6_02C(string $type) {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "winter-split-break":
 			$split = new Winter();
 			$winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $winter;
+			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-alternate-break":
 			$alternate = new Winter();
 			$winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $winter;
+			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-split-holiday-break":
 			$split_holiday = new Winter();
 			$winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
-			echo $winter;
+			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-continue-schedule":
 			$continue = new Winter();
 			$winter = $continue->get_continue();
-			echo $winter;
+			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.";
+			 "Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.";
 	}
 }
 function gen_physical_custody_timesharing_6_02D(string $type) {
@@ -2594,29 +2594,25 @@ function gen_physical_custody_timesharing_6_02D(string $type) {
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
-	echo $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "spring-split-break":
 			$split = new Spring();
 			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $spring;
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-alternate-break":
 			$alternate = new Spring();
 			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $spring;
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-continue-schedule":
 			$continue = new Spring();
 			$spring = $continue->get_continue();
-			echo $spring;
 			$this->fileContentString .= $spring;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.";
+			 "Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.";
 	}
 }
 function gen_physical_custody_timesharing_6_02E(string $type) {
@@ -2782,35 +2778,34 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
+	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "summer-split-break":
 			$split = new Summer();
 			$summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			echo $summer;
+			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-uninterrupted-schedule":
 			$alternate = new Summer();
 			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
-			echo $summer;
+			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-schedule":
 			$continue = new Summer();
 			$summer = $continue->get_continue();
-			echo $summer;
+			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		default:
-			echo "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
+			 "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
 	}
 }
 function gen_physical_custody_timesharing_6_03() {
 	$table = new HolidayTableWord();
 	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-	echo $holidayTable;
 	$this->fileContentString .= $holidayTable;
 }
 function gen_physical_custody_timesharing_6_03A() {
@@ -2911,7 +2906,6 @@ function gen_physical_custody_timesharing_6_03A() {
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
-	echo $alt;
 	$this->fileContentString .= $alt;
 }
 function gen_physical_custody_timesharing_6_03B() {
@@ -2982,7 +2976,6 @@ function gen_physical_custody_timesharing_6_03B() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-	echo $split;
 	$this->fileContentString .= $split;
 }
 function gen_physical_custody_timesharing_6_03C() {
@@ -3059,7 +3052,6 @@ function gen_physical_custody_timesharing_6_03C() {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_03D() {
@@ -3131,8 +3123,6 @@ function gen_physical_custody_timesharing_6_03D() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_04() {
@@ -3241,8 +3231,6 @@ function gen_physical_custody_timesharing_6_04() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_05() {
@@ -3321,8 +3309,6 @@ function gen_physical_custody_timesharing_6_05() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_06() {
@@ -3403,8 +3389,6 @@ function gen_physical_custody_timesharing_6_06() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_07() {
@@ -3485,8 +3469,6 @@ function gen_physical_custody_timesharing_6_07() {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 		//weird indent in table between 6.07 and 6.08
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_08() {
@@ -3567,8 +3549,6 @@ function gen_physical_custody_timesharing_6_08() {
 		</w:r>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_09() {
@@ -3639,8 +3619,6 @@ function gen_physical_custody_timesharing_6_09() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_10() {
@@ -3720,8 +3698,6 @@ function gen_physical_custody_timesharing_6_10() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_11() {
@@ -3794,8 +3770,6 @@ function gen_physical_custody_timesharing_6_11() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_12() {
@@ -3875,8 +3849,6 @@ function gen_physical_custody_timesharing_6_12() {
 		</w:r>
 	  </w:p>";
 	$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_13() {
@@ -3978,8 +3950,6 @@ function gen_physical_custody_timesharing_6_13() {
 		</w:r>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_14() {
@@ -4036,8 +4006,6 @@ function gen_physical_custody_timesharing_6_14() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	echo $content;
 	$this->fileContentString .= $content;
 } // End of section 4: Physical custody and Timesharing
 
@@ -4314,8 +4282,6 @@ $tableCon = "<w:p w14:paraId='437FD4E4' w14:textId='4B223E1B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_01() 
@@ -4386,8 +4352,6 @@ $tableCon = "<w:p w14:paraId='1A16F5DD' w14:textId='1C116F79' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 
@@ -4459,8 +4423,6 @@ $tableCon = " <w:p w14:paraId='7DE2DA40' w14:textId='070AC226' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_03() 
@@ -4521,8 +4483,6 @@ $tableCon = "<w:p w14:paraId='02DBC795' w14:textId='2A5AF3DB' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_04() 
@@ -4592,8 +4552,6 @@ $tableCon = "<w:p w14:paraId='44845C32' w14:textId='54627EA4' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_05() 
@@ -4651,8 +4609,6 @@ $tableCon = "<w:p w14:paraId='24D1C56E' w14:textId='76FC6CB7' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_06() 
@@ -4716,8 +4672,6 @@ $tableCon = "<w:p w14:paraId='1E8FE095' w14:textId='68EA3C87' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_06a() 
@@ -4741,7 +4695,6 @@ function gen_communication_7_06a()
 		<w:t xml:space='preserve'> </w:t>
 	</w:r>
 </w:p>";
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_07() 
@@ -4808,8 +4761,6 @@ $tableCon = "<w:p w14:paraId='10A782E2' w14:textId='0C1B980B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_08() 
@@ -4873,8 +4824,6 @@ $tableCon = "<w:p w14:paraId='0554C7E9' w14:textId='419C7A55' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_09() 
@@ -4937,7 +4886,6 @@ $tableCon = "<w:p w14:paraId='2085E4C7' w14:textId='04336079' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_10() 
@@ -5031,7 +4979,7 @@ $tableCon = "<w:p w14:paraId='4BA6636F' w14:textId='5CCB6274' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_11() 
@@ -5096,7 +5044,7 @@ $tableCon = "<w:p w14:paraId='49417B8E' w14:textId='358D17BA' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 
@@ -5166,7 +5114,7 @@ $tableCon = " <w:p w14:paraId='702DD571' w14:textId='70495F34' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_01()
@@ -5234,7 +5182,7 @@ $tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_03()
@@ -5326,7 +5274,7 @@ $tableCon = "<w:p w14:paraId='3B6E6235' w14:textId='6132329F' w:rsidR='00505307'
 $this->tableOfContentsString .= $tableCon;
 //Put both 8.02 and 8.03 
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_04()
@@ -5411,7 +5359,7 @@ $tableCon = "<w:p w14:paraId='4B161A4D' w14:textId='71DB9B0A' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_05()
@@ -5477,7 +5425,7 @@ $tableCon = "<w:p w14:paraId='29FBC8DA' w14:textId='6561EE79' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_06()
@@ -5531,7 +5479,7 @@ $tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_07()
@@ -5587,7 +5535,7 @@ $tableCon = "<w:p w14:paraId='4A046E1A' w14:textId='29630DCC' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_08()
@@ -5655,7 +5603,7 @@ $tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09()
@@ -5715,7 +5663,7 @@ $tableCon = "<w:p w14:paraId='614302AC' w14:textId='35D513A0' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09A()
@@ -5795,7 +5743,7 @@ $tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09B()
@@ -5873,7 +5821,7 @@ $tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09C()
@@ -6026,7 +5974,7 @@ $tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10()
@@ -6078,7 +6026,7 @@ $tableCon = "<w:p w14:paraId='46AF528D' w14:textId='27F74889' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10A()
@@ -6155,7 +6103,7 @@ $tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10B()
@@ -6236,7 +6184,7 @@ $tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10C()
@@ -6322,7 +6270,7 @@ $tableCon = "<w:p w14:paraId='6FC343D3' w14:textId='030E034B' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10D()
@@ -6399,7 +6347,7 @@ $tableCon = "<w:p w14:paraId='310DDEA1' w14:textId='2C68D17D' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11()
@@ -6457,7 +6405,7 @@ $tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11A()
@@ -6534,7 +6482,7 @@ $tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11B()
@@ -6611,7 +6559,7 @@ $tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11C()
@@ -6688,7 +6636,7 @@ $tableCon = "<w:p w14:paraId='780CA74D' w14:textId='1B6EE2A0' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11D()
@@ -6771,7 +6719,7 @@ $tableCon = "<w:p w14:paraId='187B3720' w14:textId='22503B53' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11E()
@@ -6853,7 +6801,7 @@ $tableCon = "<w:p w14:paraId='49FE8DBB' w14:textId='1E17DAB7' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12()
@@ -6912,7 +6860,7 @@ $tableCon = "<w:p w14:paraId='4590273C' w14:textId='76BF38BF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12A()
@@ -6986,7 +6934,7 @@ $tableCon = "<w:p w14:paraId='463DFCA4' w14:textId='6D96CAE1' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12B()
@@ -7063,7 +7011,7 @@ $tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12C()
@@ -7156,7 +7104,7 @@ $tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12D()
@@ -7240,7 +7188,7 @@ $tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12E()
@@ -7319,7 +7267,7 @@ $tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12F()
@@ -7388,7 +7336,7 @@ $tableCon = " <w:p w14:paraId='7C893177' w14:textId='4D6C0F72' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12G()
@@ -7482,7 +7430,7 @@ $tableCon = "<w:p w14:paraId='363B8DAE' w14:textId='4D423F75' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12H()
@@ -7557,7 +7505,7 @@ $tableCon = "<w:p w14:paraId='25B711F9' w14:textId='25570154' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13()
@@ -7616,7 +7564,7 @@ $tableCon = "<w:p w14:paraId='7B39350D' w14:textId='46423AD8' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13A()
@@ -7696,7 +7644,7 @@ $tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13B()
@@ -7793,7 +7741,7 @@ $tableCon = "<w:p w14:paraId='2D4E2B97' w14:textId='298C2014' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13C()
@@ -7883,7 +7831,7 @@ $tableCon = "<w:p w14:paraId='2AEB034B' w14:textId='049FDB31' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13D()
@@ -7967,7 +7915,7 @@ $tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14()
@@ -8026,7 +7974,7 @@ $tableCon = "<w:p w14:paraId='73F47652' w14:textId='5F068939' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14A()
@@ -8103,7 +8051,7 @@ $tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14B()
@@ -8191,7 +8139,7 @@ $tableCon = "<w:p w14:paraId='42FF5BC3' w14:textId='28E01CEF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14C()
@@ -8268,7 +8216,7 @@ $tableCon = "<w:p w14:paraId='597031A3' w14:textId='7AEC5A9C' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14D()
@@ -8345,7 +8293,7 @@ $tableCon = " <w:p w14:paraId='402D2656' w14:textId='3D787A27' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14E()
@@ -8424,7 +8372,7 @@ $tableCon = "<w:p w14:paraId='1F248F34' w14:textId='26D54941' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14F()
@@ -8512,7 +8460,7 @@ $tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 } //end of child support section 6
 
@@ -8593,7 +8541,7 @@ $tableCon = "<w:p w14:paraId='2300015A' w14:textId='125E7276' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_01() 
@@ -8652,7 +8600,7 @@ $tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_02() 
@@ -8711,7 +8659,7 @@ $tableCon = " <w:p w14:paraId='12CD9324' w14:textId='2F5749CC' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_03() 
@@ -8773,7 +8721,7 @@ $tableCon = " <w:p w14:paraId='7392834C' w14:textId='64C87E0B' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_04() 
@@ -8841,7 +8789,7 @@ $tableCon = " <w:p w14:paraId='56C3F5CA' w14:textId='0DBD847A' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_05() 
@@ -8918,7 +8866,7 @@ $tableCon = "<w:p w14:paraId='36B937E6' w14:textId='4DD2B156' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_06() 
@@ -8993,7 +8941,7 @@ $tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_07() 
@@ -9071,7 +9019,7 @@ $tableCon = "<w:p w14:paraId='406AA414' w14:textId='78AF25A1' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_08() 
@@ -9144,7 +9092,7 @@ $tableCon = "<w:p w14:paraId='562564DD' w14:textId='2FB7B2F2' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_09() 
@@ -9225,7 +9173,7 @@ $tableCon = " <w:p w14:paraId='739B44B4' w14:textId='397228A3' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_10() 
@@ -9291,7 +9239,7 @@ $tableCon = " <w:p w14:paraId='26A7A61A' w14:textId='776E4B21' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_11() 
@@ -9370,7 +9318,7 @@ $tableCon = " <w:p w14:paraId='089BFEE7' w14:textId='1D519E9C' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_12() 
@@ -9438,7 +9386,7 @@ $tableCon = " <w:p w14:paraId='638E9405' w14:textId='366FE802' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_13() 
@@ -9506,7 +9454,7 @@ $tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_14() 
@@ -9575,7 +9523,7 @@ $tableCon = " <w:p w14:paraId='51895F18' w14:textId='05A7E18F' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_15() 
@@ -9805,7 +9753,7 @@ $tableCon = "<w:p w14:paraId='1E11FF73' w14:textId='315BD30E' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_16() 
@@ -9864,7 +9812,7 @@ $tableCon = "<w:p w14:paraId='3381AF8D' w14:textId='0D6C31F2' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	echo $snippet;
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 //End of other section
@@ -9947,7 +9895,7 @@ function gen_legal_10_00() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $continuingJurisdiction;
+	 $continuingJurisdiction;
 	$this->fileContentString .= $continuingJurisdiction;
 }
 function gen_legal_10_01() {
@@ -10027,7 +9975,7 @@ function gen_legal_10_01() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $enforcement;
+	 $enforcement;
 	$this->fileContentString .= $enforcement;
 }
 function gen_legal_10_02() {
@@ -10085,7 +10033,7 @@ function gen_legal_10_02() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	echo $execution;
+	 $execution;
 	$this->fileContentString .= $execution;
 }
 
