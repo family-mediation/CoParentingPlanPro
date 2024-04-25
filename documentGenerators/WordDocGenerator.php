@@ -6,6 +6,7 @@ include 'timeSharingSchedulesWordDoc/Thanksgiving.php';
 include 'timeSharingSchedulesWordDoc/Winter.php';
 include 'timeSharingSchedulesWordDoc/Spring.php';
 include 'timeSharingSchedulesWordDoc/Summer.php';
+include 'HolidayTableWord.php';
 //include 'Signature.php';
 //include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
@@ -417,11 +418,11 @@ function gen_children_4_00(int $num) {
 
 function gen_children_4_00_individual(int $childNum, string $letter) {
 	if ($childNum == 1) {
-		$childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1BirthYears"] . ")";
+		$childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1Birthday"] . ")";
 	} else {
 		$childrenInfo = ", Child $letter (“"
-			. $this->responses["child" . $childNum . "BirthYears"] . "”) born in ("
-			. $this->responses["child" . $childNum . "BirthYears"] . ")";
+			. $this->responses["child" . $childNum . "Birthday"] . "”) born in ("
+			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
 	echo $childrenInfo;
 }
