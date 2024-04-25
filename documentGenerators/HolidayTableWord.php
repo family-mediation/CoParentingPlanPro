@@ -69,7 +69,6 @@ class HolidayTableWord {
       <w:tblGrid>
         <w:gridCol w:w='9350'/>
       </w:tblGrid>
-     </w:tbl>
       <w:tr w:rsidR='00505307' w14:paraId='6414A3F0' w14:textId='77777777'>
         <w:tc>
           <w:tcPr>
