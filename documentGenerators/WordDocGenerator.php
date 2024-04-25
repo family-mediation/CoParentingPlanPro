@@ -113,7 +113,7 @@ class wordDocGenerator extends documentGenerator
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
-	  <w:bookmarkStart w:id=0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
+	  <w:bookmarkStart w:id='0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
 	  <w:p w14:paraId='7C2206BB' w14:textId='2234CAEB' w:rsidR='00505307' w:rsidRDefault='00D72616'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
@@ -371,7 +371,8 @@ class wordDocGenerator extends documentGenerator
 
 // Section 2: Children
 function gen_children_4_00(int $num) {
-	$header = "<w:r>
+	$header = "<w:p>
+	      <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
@@ -425,11 +426,13 @@ function gen_children_4_00_individual(int $childNum, string $letter) {
 			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
 	 $childrenInfo;
+    $this->fileContentString .= $childrenInfo;
 }
 function gen_children_4_00_last() {
 	$endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
 			</w:t>
-		  </w:r>";
+		  </w:r>
+		</w:p>";
 	 $endSentence;
 	$this->fileContentString .= $endSentence;
 }
@@ -1353,7 +1356,16 @@ $this -> tableOfContentsString .= $tableCon;
 
 //Section 4: Physical Custody and Timesharing
 function gen_physical_custody_timesharing_6_00() {
-	$header = "<w:r>
+	$header = "<w:p w14:paraId='4A8E97F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+      <w:pPr>
+        <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+        <w:jc w:val='center'/>
+        <w:rPr>
+          <w:u w:val='single'/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
@@ -2805,8 +2817,19 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 }
 function gen_physical_custody_timesharing_6_03() {
 	$table = new HolidayTableWord();
-	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-	$this->fileContentString .= $holidayTable;
+    $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+    $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
+    for ($i = 2; $i <= 6; $i++) {
+        $initials = $this->responses['child' . $i . 'Initials'];
+        $birthday = $this->responses['child' . $i . 'Birthday'];
+        if ($initials != "" && $birthday != "") {
+            $childrenRows .= $table->getChildren($initials, $birthday);
+        }
+    }
+    $end = $table->getEnd();
+    $this->fileContentString .= $holidayTable;
+    $this->fileContentString .= $childrenRows;
+    $this->fileContentString .= $end;
 }
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -10059,7 +10082,7 @@ function gen_legal_10_02() {
 		$zip->close();
 		$documentXML = fopen($this->fileName . "/word/document.xml" , "w+");
         if($documentXML != false)
-        {
+        {   fwrite( $documentXML, $this->tableOfContentsString); 
 		    fwrite( $documentXML, $this->fileContentString);
         }
         fclose($documentXML);

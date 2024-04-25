@@ -768,6 +768,8 @@ class HtmlGenerator extends documentGenerator
         }
         $end = $table->getEnd();
         $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
     // Alternate Yearly.
     function gen_physical_custody_timesharing_6_03A() {
