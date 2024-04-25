@@ -55,7 +55,7 @@ abstract class documentGenerator
     public abstract function gen_physical_custody_timesharing_6_02C(string $type);
     public abstract function gen_physical_custody_timesharing_6_02D(string $type);
     public abstract function gen_physical_custody_timesharing_6_02E(string $type);
-    public abstract function gen_physical_custody_timesharing_6_03();
+    public abstract function gen_physical_custody_timesharing_6_03(array $res);
     public abstract function gen_physical_custody_timesharing_6_03A();
     public abstract function gen_physical_custody_timesharing_6_03B();
     public abstract function gen_physical_custody_timesharing_6_03C();
@@ -383,8 +383,335 @@ abstract class documentGenerator
                     break;
             }
         }
-        // Page 2 - Holiday Table, need to implement: three choices shown in doc but excel sheet only chooses between parent A and B.
-        $this->gen_physical_custody_timesharing_6_03();
+        // Page 2 - Holiday Table
+        $arr = []; //an array that will be assigned values to list out in the table
+        for ($i = 0; $i < 40; $i++) {
+            $arr[$i] = 'Blank';
+        }
+        //newYears
+        switch ($this->responses['newYearsA']) {
+            case 'newYearsBlankA':
+                $arr[0] = 'Blank';
+                break;
+            case 'newYearsEveryA':
+                $arr[0] = 'Every Year';
+                break;
+            case 'newYearsEvenA':
+                $arr[0] = 'Even Years';
+                break;
+            case 'newYearsOddA':
+                $arr[0] = 'Odd Years';
+                break;
+            case 'newYearsAttachA':
+                $arr[0] = 'Attach to Weekend';
+                break;
+            case 'newYearsSplitA':
+                $arr[0] = 'Split';
+                break;
+            default:
+                console_log("error in newYearsA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['newYearsB']) {
+            case 'newYearsBlankB':
+                $arr[1] = 'Blank';
+                break;
+            case 'newYearsEveryB':
+                $arr[1] = 'Every Year';
+                break;
+            case 'newYearsEvenB':
+                $arr[1] = 'Even Years';
+                break;
+            case 'newYearsOddB':
+                $arr[1] = 'Odd Years';
+                break;
+            case 'newYearsAttachB':
+                $arr[1] = 'Attach to Weekend';
+                break;
+            case 'newYearsSplitB':
+                $arr[1] = 'Split';
+                break;
+            default:
+                console_log("error in newYearsB switch - DocumentGenerator.php");
+        }
+
+        //mlk
+        switch ($this->responses['mlkA']) {
+            case 'mlkBlankA':
+                $arr[2] = 'Blank';
+                break;
+            case 'mlkEveryA':
+                $arr[2] = 'Every Year';
+                break;
+            case 'mlkEvenA':
+                $arr[2] = 'Even Years';
+                break;
+            case 'mlkOddA':
+                $arr[2] = 'Odd Years';
+                break;
+            case 'mlkAttachA':
+                $arr[2] = 'Attach to Weekend';
+                break;
+            case 'mlkSplitA':
+                $arr[2] = 'Split';
+                break;
+            default:
+                console_log("error in mlkA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['mlkB']) {
+            case 'mlkBlankB':
+                $arr[3] = 'Blank';
+                break;
+            case 'mlkEveryB':
+                $arr[3] = 'Every Year';
+                break;
+            case 'mlkEvenB':
+                $arr[3] = 'Even Years';
+                break;
+            case 'mlkOddB':
+                $arr[3] = 'Odd Years';
+                break;
+            case 'mlkAttachB':
+                $arr[3] = 'Attach to Weekend';
+                break;
+            case 'mlkSplitB':
+                $arr[3] = 'Split';
+                break;
+            default:
+                console_log("error in mlkB switch - DocumentGenerator.php");
+        }
+
+        //presidents
+        switch ($this->responses['presidentsA']) {
+            case 'presidentsBlankA':
+                $arr[4] = 'Blank';
+                break;
+            case 'presidentsEveryA':
+                $arr[4] = 'Every Year';
+                break;
+            case 'presidentsEvenA':
+                $arr[4] = 'Even Years';
+                break;
+            case 'presidentsOddA':
+                $arr[4] = 'Odd Years';
+                break;
+            case 'presidentsAttachA':
+                $arr[4] = 'Attach to Weekend';
+                break;
+            case 'presidentsSplitA':
+                $arr[4] = 'Split';
+                break;
+            default:
+                console_log("error in presidentsA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['presidentsB']) {
+            case 'presidentsBlankB':
+                $arr[5] = 'Blank';
+                break;
+            case 'presidentsEveryB':
+                $arr[5] = 'Every Year';
+                break;
+            case 'presidentsEvenB':
+                $arr[5] = 'Even Years';
+                break;
+            case 'presidentsOddB':
+                $arr[5] = 'Odd Years';
+                break;
+            case 'presidentsAttachB':
+                $arr[5] = 'Attach to Weekend';
+                break;
+            case 'presidentsSplitB':
+                $arr[5] = 'Split';
+                break;
+            default:
+                console_log("error in presidentsB switch - DocumentGenerator.php");
+        }
+
+        //kuhio
+        switch ($this->responses['kuhioA']) {
+            case 'kuhioBlankA':
+                $arr[6] = 'Blank';
+                break;
+            case 'kuhioEveryA':
+                $arr[6] = 'Every Year';
+                break;
+            case 'kuhioEvenA':
+                $arr[6] = 'Even Years';
+                break;
+            case 'kuhioOddA':
+                $arr[6] = 'Odd Years';
+                break;
+            case 'kuhioAttachA':
+                $arr[6] = 'Attach to Weekend';
+                break;
+            case 'kuhioSplitA':
+                $arr[6] = 'Split';
+                break;
+            default:
+                console_log("error in kuhioA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['kuhioB']) {
+            case 'kuhioBlankB':
+                $arr[7] = 'Blank';
+                break;
+            case 'kuhioEveryB':
+                $arr[7] = 'Every Year';
+                break;
+            case 'kuhioEvenB':
+                $arr[7] = 'Even Years';
+                break;
+            case 'kuhioOddB':
+                $arr[7] = 'Odd Years';
+                break;
+            case 'kuhioAttachB':
+                $arr[7] = 'Attach to Weekend';
+                break;
+            case 'kuhioSplitB':
+                $arr[7] = 'Split';
+                break;
+            default:
+                console_log("error in kuhioB switch - DocumentGenerator.php");
+        }
+
+        //goodFriday
+        switch ($this->responses['goodFridayA']) {
+            case 'goodFridayBlankA':
+                $arr[8] = 'Blank';
+                break;
+            case 'goodFridayEveryA':
+                $arr[8] = 'Every Year';
+                break;
+            case 'goodFridayEvenA':
+                $arr[8] = 'Even Years';
+                break;
+            case 'goodFridayOddA':
+                $arr[8] = 'Odd Years';
+                break;
+            case 'goodFridayAttachA':
+                $arr[8] = 'Attach to Weekend';
+                break;
+            case 'goodFridaySplitA':
+                $arr[8] = 'Split';
+                break;
+            default:
+                console_log("error in goodFridayA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['goodFridayB']) {
+            case 'goodFridayBlankB':
+                $arr[9] = 'Blank';
+                break;
+            case 'goodFridayEveryB':
+                $arr[9] = 'Every Year';
+                break;
+            case 'goodFridayEvenB':
+                $arr[9] = 'Even Years';
+                break;
+            case 'goodFridayOddB':
+                $arr[9] = 'Odd Years';
+                break;
+            case 'goodFridayAttachB':
+                $arr[9] = 'Attach to Weekend';
+                break;
+            case 'goodFridaySplitB':
+                $arr[9] = 'Split';
+                break;
+            default:
+                console_log("error in goodFridayB switch - DocumentGenerator.php");
+        }
+
+        //easter
+        switch ($this->responses['easterA']) {
+            case 'easterBlankA':
+                $arr[10] = 'Blank';
+                break;
+            case 'easterEveryA':
+                $arr[10] = 'Every Year';
+                break;
+            case 'easterEvenA':
+                $arr[10] = 'Even Years';
+                break;
+            case 'easterOddA':
+                $arr[10] = 'Odd Years';
+                break;
+            case 'easterAttachA':
+                $arr[10] = 'Attach to Weekend';
+                break;
+            case 'easterSplitA':
+                $arr[10] = 'Split';
+                break;
+            default:
+                console_log("error in easterA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['easterB']) {
+            case 'easterBlankB':
+                $arr[11] = 'Blank';
+                break;
+            case 'easterEveryB':
+                $arr[11] = 'Every Year';
+                break;
+            case 'easterEvenB':
+                $arr[11] = 'Even Years';
+                break;
+            case 'easterOddB':
+                $arr[11] = 'Odd Years';
+                break;
+            case 'easterAttachB':
+                $arr[11] = 'Attach to Weekend';
+                break;
+            case 'easterSplitB':
+                $arr[11] = 'Split';
+                break;
+            default:
+                console_log("error in easterB switch - DocumentGenerator.php");
+        }
+
+        //mothers
+        switch ($this->responses['mothersA']) {
+            case 'mothersBlankA':
+                $arr[12] = 'Blank';
+                break;
+            case 'mothersEveryA':
+                $arr[12] = 'Every Year';
+                break;
+            case 'mothersEvenA':
+                $arr[12] = 'Even Years';
+                break;
+            case 'mothersOddA':
+                $arr[12] = 'Odd Years';
+                break;
+            case 'mothersAttachA':
+                $arr[12] = 'Attach to Weekend';
+                break;
+            case 'mothersSplitA':
+                $arr[12] = 'Split';
+                break;
+            default:
+                console_log("error in mothersA switch - DocumentGenerator.php");
+        }
+        switch ($this->responses['mothersB']) {
+            case 'mothersBlankB':
+                $arr[13] = 'Blank';
+                break;
+            case 'mothersEveryB':
+                $arr[13] = 'Every Year';
+                break;
+            case 'mothersEvenB':
+                $arr[13] = 'Even Years';
+                break;
+            case 'mothersOddB':
+                $arr[13] = 'Odd Years';
+                break;
+            case 'mothersAttachB':
+                $arr[13] = 'Attach to Weekend';
+                break;
+            case 'mothersSplitB':
+                $arr[13] = 'Split';
+                break;
+            default:
+                console_log("error in mothersB switch - DocumentGenerator.php");
+        }
+
+
+        $this->gen_physical_custody_timesharing_6_03($arr);
         $this->gen_physical_custody_timesharing_6_03A();
         $this->gen_physical_custody_timesharing_6_03B();
         $this->gen_physical_custody_timesharing_6_03C();

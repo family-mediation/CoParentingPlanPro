@@ -1381,7 +1381,7 @@ class wordDocGenerator extends documentGenerator
                 echo "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
         }
     }
-    function gen_physical_custody_timesharing_6_03() {
+    function gen_physical_custody_timesharing_6_03(array $res) {
         $table = new HolidayTableWord();
         $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
         $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);

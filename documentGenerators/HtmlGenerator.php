@@ -1166,9 +1166,9 @@ class HtmlGenerator extends documentGenerator
     }
 
     // Holiday Table.
-    function gen_physical_custody_timesharing_6_03() {
+    function gen_physical_custody_timesharing_6_03(array $res) {
         $table = new HolidayTable();
-        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
         $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
         for ($i = 2; $i <= 6; $i++) {
             $initials = $this->responses['child' . $i . 'Initials'];
