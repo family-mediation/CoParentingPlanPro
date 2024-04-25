@@ -113,7 +113,7 @@ class wordDocGenerator extends documentGenerator
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
-	  <w:bookmarkStart w:id=0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
+	  <w:bookmarkStart w:id='0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
 	  <w:p w14:paraId='7C2206BB' w14:textId='2234CAEB' w:rsidR='00505307' w:rsidRDefault='00D72616'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
