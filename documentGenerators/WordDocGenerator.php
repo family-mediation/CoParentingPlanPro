@@ -371,7 +371,8 @@ class wordDocGenerator extends documentGenerator
 
 // Section 2: Children
 function gen_children_4_00(int $num) {
-	$header = "<w:r>
+	$header = "<w:p>
+	    <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
