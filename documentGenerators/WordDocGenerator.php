@@ -371,7 +371,8 @@ class wordDocGenerator extends documentGenerator
 
 // Section 2: Children
 function gen_children_4_00(int $num) {
-	$header = "<w:r>
+	$header = "<w:p>
+	      <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
@@ -425,11 +426,13 @@ function gen_children_4_00_individual(int $childNum, string $letter) {
 			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
 	 $childrenInfo;
+    $this->fileContentString .= $childrenInfo;
 }
 function gen_children_4_00_last() {
 	$endSentence = ", collectively hereinafter referred to as “the Child(ren)” or individually referred to using their initials.
 			</w:t>
-		  </w:r>";
+		  </w:r>
+		</w:p>";
 	 $endSentence;
 	$this->fileContentString .= $endSentence;
 }
