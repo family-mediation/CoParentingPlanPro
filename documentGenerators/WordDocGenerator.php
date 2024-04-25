@@ -1356,7 +1356,16 @@ $this -> tableOfContentsString .= $tableCon;
 
 //Section 4: Physical Custody and Timesharing
 function gen_physical_custody_timesharing_6_00() {
-	$header = "<w:r>
+	$header = "<w:p w14:paraId='4A8E97F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+      <w:pPr>
+        <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+        <w:ind w:left='0' w:right='36' w:firstLine='0'/>
+        <w:jc w:val='center'/>
+        <w:rPr>
+          <w:u w:val='single'/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
