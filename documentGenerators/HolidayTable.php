@@ -110,11 +110,11 @@ class HolidayTable {
               </tr>";
     }
 
-    public function getChildren(string $childXInitials, string $childXBirthday): string {
+    public function getChildren(string $childXInitials, string $childXBirthday, string $partyARes, string $partyBRes): string {
         return "<tr class='c6'>
                 <td class='c1' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c5'><span class='c0'>$childXInitials&rsquo;s Birthday [$childXBirthday]</span></p></td>
-                <td class='c3' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c4'><span class='c0'>somethinghere</span></p></td>
-                <td class='c2' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c4'><span class='c0'>somethinghere</span></p></td>
+                <td class='c3' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c4'><span class='c0'>$partyARes</span></p></td>
+                <td class='c2' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c4'><span class='c0'>$partyBRes</span></p></td>
               </tr>";
     }
 

@@ -738,8 +738,8 @@
                 <td>
                   <label for="child1A">
                     <select id="child1A" name="child1A" required>
-                      <option value="child1A"></option>
-                      <option value="child1A">Every Year</option>
+                      <option value="child1BlankA"></option>
+                      <option value="child1EveryA">Every Year</option>
                       <option value="child1EvenA">Even Years</option>
                       <option value="child1OddA">Odd Years</option>
                       <option value="child1AttachA">Attach to Weekend</option>
@@ -765,8 +765,8 @@
                 <td>
                   <label for="child2A">
                     <select id="child2A" name="child2A" required>
-                      <option value="child2A"></option>
-                      <option value="child2A">Every Year</option>
+                      <option value="child2BlankA"></option>
+                      <option value="child2EveryA">Every Year</option>
                       <option value="child2EvenA">Even Years</option>
                       <option value="child2OddA">Odd Years</option>
                       <option value="child2AttachA">Attach to Weekend</option>
@@ -792,8 +792,8 @@
                 <td>
                   <label for="child3A">
                     <select id="child3A" name="child3A" required>
-                      <option value="child3A"></option>
-                      <option value="child3A">Every Year</option>
+                      <option value="child3BlankA"></option>
+                      <option value="child3EveryA">Every Year</option>
                       <option value="child3EvenA">Even Years</option>
                       <option value="child3OddA">Odd Years</option>
                       <option value="child3AttachA">Attach to Weekend</option>
@@ -819,8 +819,8 @@
                 <td>
                   <label for="child4A">
                     <select id="child4A" name="child4A" required>
-                      <option value="child4A"></option>
-                      <option value="child4A">Every Year</option>
+                      <option value="child4BlankA"></option>
+                      <option value="child4EveryA">Every Year</option>
                       <option value="child4EvenA">Even Years</option>
                       <option value="child4OddA">Odd Years</option>
                       <option value="child4AttachA">Attach to Weekend</option>
@@ -846,8 +846,8 @@
                 <td>
                   <label for="child5A">
                     <select id="child5A" name="child5A" required>
-                      <option value="child5A"></option>
-                      <option value="child5A">Every Year</option>
+                      <option value="child5BlankA"></option>
+                      <option value="child5EveryA">Every Year</option>
                       <option value="child5EvenA">Even Years</option>
                       <option value="child5OddA">Odd Years</option>
                       <option value="child5AttachA">Attach to Weekend</option>
@@ -873,8 +873,8 @@
                 <td>
                   <label for="child6A">
                     <select id="child6A" name="child6A" required>
-                      <option value="child6A"></option>
-                      <option value="child6A">Every Year</option>
+                      <option value="child6BlankA"></option>
+                      <option value="child6EveryA">Every Year</option>
                       <option value="child6EvenA">Even Years</option>
                       <option value="child6OddA">Odd Years</option>
                       <option value="child6AttachA">Attach to Weekend</option>
