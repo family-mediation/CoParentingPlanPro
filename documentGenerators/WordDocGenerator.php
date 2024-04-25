@@ -2594,25 +2594,21 @@ function gen_physical_custody_timesharing_6_02D(string $type) {
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
-	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "spring-split-break":
 			$split = new Spring();
 			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			 $spring;
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-alternate-break":
 			$alternate = new Spring();
 			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-			 $spring;
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-continue-schedule":
 			$continue = new Spring();
 			$spring = $continue->get_continue();
-			 $spring;
 			$this->fileContentString .= $spring;
 			break;
 		default:
@@ -2809,8 +2805,7 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 }
 function gen_physical_custody_timesharing_6_03() {
 	$table = new HolidayTableWord();
-	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday'], $this->responses['childBirthdays']);
-	 $holidayTable;
+	$holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
 	$this->fileContentString .= $holidayTable;
 }
 function gen_physical_custody_timesharing_6_03A() {
@@ -2911,7 +2906,6 @@ function gen_physical_custody_timesharing_6_03A() {
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
-	 $alt;
 	$this->fileContentString .= $alt;
 }
 function gen_physical_custody_timesharing_6_03B() {
@@ -2982,7 +2976,6 @@ function gen_physical_custody_timesharing_6_03B() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-	 $split;
 	$this->fileContentString .= $split;
 }
 function gen_physical_custody_timesharing_6_03C() {
@@ -3059,7 +3052,6 @@ function gen_physical_custody_timesharing_6_03C() {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_03D() {
@@ -3131,8 +3123,6 @@ function gen_physical_custody_timesharing_6_03D() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_04() {
@@ -3241,8 +3231,6 @@ function gen_physical_custody_timesharing_6_04() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_05() {
@@ -3321,8 +3309,6 @@ function gen_physical_custody_timesharing_6_05() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_06() {
@@ -3403,8 +3389,6 @@ function gen_physical_custody_timesharing_6_06() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_07() {
@@ -3485,8 +3469,6 @@ function gen_physical_custody_timesharing_6_07() {
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 		//weird indent in table between 6.07 and 6.08
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_08() {
@@ -3567,8 +3549,6 @@ function gen_physical_custody_timesharing_6_08() {
 		</w:r>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_09() {
@@ -3639,8 +3619,6 @@ function gen_physical_custody_timesharing_6_09() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_10() {
@@ -3720,8 +3698,6 @@ function gen_physical_custody_timesharing_6_10() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_11() {
@@ -3794,8 +3770,6 @@ function gen_physical_custody_timesharing_6_11() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_12() {
@@ -3875,8 +3849,6 @@ function gen_physical_custody_timesharing_6_12() {
 		</w:r>
 	  </w:p>";
 	$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_13() {
@@ -3978,8 +3950,6 @@ function gen_physical_custody_timesharing_6_13() {
 		</w:r>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 }
 function gen_physical_custody_timesharing_6_14() {
@@ -4036,8 +4006,6 @@ function gen_physical_custody_timesharing_6_14() {
 		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $content;
 	$this->fileContentString .= $content;
 } // End of section 4: Physical custody and Timesharing
 
@@ -4314,8 +4282,6 @@ $tableCon = "<w:p w14:paraId='437FD4E4' w14:textId='4B223E1B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_01() 
@@ -4386,8 +4352,6 @@ $tableCon = "<w:p w14:paraId='1A16F5DD' w14:textId='1C116F79' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 
@@ -4459,8 +4423,6 @@ $tableCon = " <w:p w14:paraId='7DE2DA40' w14:textId='070AC226' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_03() 
@@ -4521,8 +4483,6 @@ $tableCon = "<w:p w14:paraId='02DBC795' w14:textId='2A5AF3DB' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_04() 
@@ -4592,8 +4552,6 @@ $tableCon = "<w:p w14:paraId='44845C32' w14:textId='54627EA4' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_05() 
@@ -4651,8 +4609,6 @@ $tableCon = "<w:p w14:paraId='24D1C56E' w14:textId='76FC6CB7' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_06() 
@@ -4716,8 +4672,6 @@ $tableCon = "<w:p w14:paraId='1E8FE095' w14:textId='68EA3C87' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_06a() 
@@ -4741,7 +4695,6 @@ function gen_communication_7_06a()
 		<w:t xml:space='preserve'> </w:t>
 	</w:r>
 </w:p>";
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_07() 
@@ -4808,8 +4761,6 @@ $tableCon = "<w:p w14:paraId='10A782E2' w14:textId='0C1B980B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_08() 
@@ -4873,8 +4824,6 @@ $tableCon = "<w:p w14:paraId='0554C7E9' w14:textId='419C7A55' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_09() 
@@ -4937,7 +4886,6 @@ $tableCon = "<w:p w14:paraId='2085E4C7' w14:textId='04336079' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_10() 
