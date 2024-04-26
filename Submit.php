@@ -3,7 +3,18 @@ require_once("documentGenerators/HtmlGenerator.php");
 require_once("documentGenerators/WordDocGenerator.php");
 require_once("documentGenerators/CalendarGenerator.php");
 require_once("views/Header.php");
+
+function sanitize(&$inputs)
+{
+    foreach ($inputs as &$value)
+    {
+        echo "<span> the value before is ". $value;
+        $value = htmlspecialchars($value) . "test";   
+        echo " and after is ". $value . "</span></br></br>";
+    }
+}
 $src = $_SESSION['responses'];
+sanitize($src);
 $fileName = "Case " . $src["caseNo"]." ". $src["partyALast"]." ".$src["partyBLast"] ;
 $filePath = "./documents/" . $fileName;
 $zipFilePath = $filePath . "/" . $fileName ;
