@@ -758,7 +758,6 @@ function gen_legal_custody_5_05A()
 		</w:r>
 	</w:hyperlink>
 	</w:p>";
-        echo $snippet;
         $this->fileContentString .= $snippet;
         $this -> tableOfContentsString .= $tableCon;
 	} //end of legal custody section 3
@@ -802,7 +801,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $header;
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01() {
@@ -842,7 +840,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $header;
         $this->fileContentString .= $header;
     }
     function gen_physical_custody_timesharing_6_01A() {
@@ -1011,35 +1008,30 @@ function gen_legal_custody_5_05A()
                 <w:t>Both Parents agree that the 50/50 schedule is best for their Child(ren).</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "2-2-3":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_2_2_3();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             case "3-4-4-3":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_3_4_4_3();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             case "2-2-5-5":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_2_2_5_5();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             case "7-7":
                 $equalSchedule = new EqualTimeSharing();
                 $schedule = $equalSchedule->get_7_7();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.";
+                console_log("Error in WordDoc Generator for the variable: schoolYearSchedule - equal schedules.");
         }
     }
     function gen_physical_custody_timesharing_6_01B() {
@@ -1089,29 +1081,25 @@ function gen_legal_custody_5_05A()
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($this->responses["schoolYearSchedule"]) {
             case "8-6":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_8_6();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             case "10-4":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_10_4();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             case "ownSchedule":
                 $otherSchedule = new OtherTimeSharing();
                 $schedule = $otherSchedule->get_own_schedule();
-                echo $schedule;
                 $this->fileContentString .= $schedule;
                 break;
             default:
-                echo "Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.";
+                console_log("Error in Word Doc Generator for the variable: schoolYearSchedule - other schedules.");
         }
     }
     function gen_physical_custody_timesharing_6_02() {
@@ -1144,7 +1132,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_02A(string $type) {
@@ -1182,29 +1169,25 @@ function gen_legal_custody_5_05A()
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Fall Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "fall-split-break":
                 $split = new Fall();
                 $fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-alternate-break":
                 $alternate = new Fall();
                 $fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             case "fall-continue-schedule":
                 $continue = new Fall();
                 $fall = $continue->get_continue();
-                echo $fall;
                 $this->fileContentString .= $fall;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolFallBreakSchedule.";
+                console_log("Error in WordDoc Generator for the variable: schoolFallBreakSchedule.");
         }
     }
     function gen_physical_custody_timesharing_6_02B(string $type) {
@@ -1238,35 +1221,30 @@ function gen_legal_custody_5_05A()
                 <w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "thanksgiving-split-break":
                 $split = new Thanksgiving();
                 $thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-alternate-break":
                 $alternate = new Thanksgiving();
                 $thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             case "thanksgiving-continue-schedule":
                 $continue = new Thanksgiving();
                 $thanksgiving = $continue->get_continue();
-                echo $thanksgiving;
                 $this->fileContentString .= $thanksgiving;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.";
+                console_log("Error in WordDoc Generator for the variable: schoolThanksgivingBreakSchedule.");
         }
     }
     function gen_physical_custody_timesharing_6_02BOptional() {
         $time_break = new Thanksgiving();
         $thanksgiving = $time_break->get_time();
-        echo $thanksgiving;
         $this->fileContentString .= $thanksgiving;
     }
     function gen_physical_custody_timesharing_6_02C(string $type) {
@@ -1300,35 +1278,30 @@ function gen_legal_custody_5_05A()
                 <w:t>. The Parents shall share time with the Child(ren) during Winter Break as follows:</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "winter-split-break":
                 $split = new Winter();
                 $winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-alternate-break":
                 $alternate = new Winter();
                 $winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-split-holiday-break":
                 $split_holiday = new Winter();
                 $winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             case "winter-continue-schedule":
                 $continue = new Winter();
                 $winter = $continue->get_continue();
-                echo $winter;
                 $this->fileContentString .= $winter;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.";
+                console_log("Error in WordDoc Generator for the variable: schoolWinterBreakSchedule.");
         }
     }
     function gen_physical_custody_timesharing_6_02D(string $type) {
@@ -1365,29 +1338,25 @@ function gen_legal_custody_5_05A()
                 <w:t xml:space='preserve'>The Parents shall share time with the Child(ren) during Spring Breaks as follows:  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "spring-split-break":
                 $split = new Spring();
                 $spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-alternate-break":
                 $alternate = new Spring();
                 $spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             case "spring-continue-schedule":
                 $continue = new Spring();
                 $spring = $continue->get_continue();
-                echo $spring;
                 $this->fileContentString .= $spring;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.";
+                console_log("Error in WordDoc Generator for the variable: schoolSpringBreakSchedule.");
         }
     }
     function gen_physical_custody_timesharing_6_02E(string $type) {
@@ -1428,29 +1397,25 @@ function gen_legal_custody_5_05A()
                 <w:t>. The Parents shall share time with the Child(ren) during Summer Break as follows:</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
         switch ($type) {
             case "summer-split-break":
                 $split = new Summer();
                 $summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-uninterrupted-schedule":
                 $alternate = new Summer();
                 $summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['summerDaysUninterrupted'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             case "summer-continue-schedule":
                 $continue = new Summer();
                 $summer = $continue->get_continue();
-                echo $summer;
                 $this->fileContentString .= $summer;
                 break;
             default:
-                echo "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
+                console_log("Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.");
         }
     }
     function gen_physical_custody_timesharing_6_03(array $res) {
@@ -1511,9 +1476,6 @@ function gen_legal_custody_5_05A()
             }
         }
         $end = $table->getEnd();
-//        echo $holidayTable;
-//        echo $childrenRows;
-//        echo $end;
         $this->fileContentString .= $holidayTable;
         $this->fileContentString .= $childrenRows;
         $this->fileContentString .= $end;
@@ -1552,7 +1514,6 @@ function gen_legal_custody_5_05A()
                 <w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</w:t>
               </w:r>
             </w:p>";
-        echo $alt;
         $this->fileContentString .= $alt;
     }
     function gen_physical_custody_timesharing_6_03B() {
@@ -1588,7 +1549,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $split;
         $this->fileContentString .= $split;
     }
     function gen_physical_custody_timesharing_6_03C() {
@@ -1629,7 +1589,6 @@ function gen_legal_custody_5_05A()
               </w:r>
             </w:p>
             <w:bookmarkEnd w:id='56'/>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_03D() {
@@ -1666,7 +1625,6 @@ function gen_legal_custody_5_05A()
                 <w:t>.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_04() {
@@ -1752,7 +1710,6 @@ function gen_legal_custody_5_05A()
                 <w:t xml:space='preserve'> travel, such a trip shall require the non-traveling parent’s consent which, if such requests are occasional, shall not be unreasonably withheld. Parents agree that off-island travel shall not negatively impact the Child(ren)’s education.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_05() {
@@ -1808,7 +1765,6 @@ function gen_legal_custody_5_05A()
                 <w:t>schedule. If the change in the schedule results in the Child(ren) missing considerable time with the accommodating parent, reasonable “make-up time” will be arranged by the Parents.</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_06() {
@@ -1866,7 +1822,6 @@ function gen_legal_custody_5_05A()
                 <w:t>If the non-custodial Parent cannot accommodate the request, the custodial Parent is responsible for arranging and paying for alternate childcare and will inform the other Parent of who will be caring for the Child(ren).</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_07() {
@@ -1902,7 +1857,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_08() {
@@ -1939,7 +1893,6 @@ function gen_legal_custody_5_05A()
                 <w:tab/>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_09() {
@@ -1987,7 +1940,6 @@ function gen_legal_custody_5_05A()
                 <w:t>" . $this->responses['exchangesNeutral'] . ".</w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_10() {
@@ -2044,7 +1996,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_11() {
@@ -2094,7 +2045,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>"; //only one person has been implemented so far
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_12() {
@@ -2148,7 +2098,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_13() {
@@ -2224,7 +2173,6 @@ function gen_legal_custody_5_05A()
                 <w:t xml:space='preserve'>an agreement, the Child(ren) shall remain with the non-moving parent until Parents are able to mutually agree or further order of the Court.  </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     }
     function gen_physical_custody_timesharing_6_14() {
@@ -2258,7 +2206,6 @@ function gen_legal_custody_5_05A()
                 </w:t>
               </w:r>
             </w:p>";
-        echo $content;
         $this->fileContentString .= $content;
     } // End of section 4: Physical custody and Timesharing
 
@@ -2512,7 +2459,6 @@ function gen_legal_custody_5_05A()
 			<w:t xml:space='preserve'>Discipline of a child during one parent’s timesharing day which may affect the other parent’s timesharing.  </w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
 	function gen_communication_7_01() 
@@ -2560,13 +2506,8 @@ function gen_legal_custody_5_05A()
 			<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 		</w:r>
 	</w:p>";
-		echo $snippet;
 		$this->fileContentString .= $snippet;
 	}
-
-	 $snippet;
-	$this->fileContentString .= $snippet;
-}
 function gen_legal_custody_5_05B()
 {   // 5.02 
 	$snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
