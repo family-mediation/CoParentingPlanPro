@@ -1,5 +1,5 @@
 <div class="text-center">
-  <form method="post" class="" locale="ENGLISH" action="./?page=5">
+  <form method="post" class="" locale="ENGLISH" action="./?page=5" onsubmit="return false;">
     <div id="mainForm">
       <div id="page0" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
+          <button id="next0" onclick="showPage('page1')">Next Page</button>
         </div>
       </div>
       <div id="page1" class="container card p-4">
@@ -100,29 +100,27 @@
                       <input id="winter-alternate-break" type="radio" name="schoolWinterBreakSchedule" value="winter-alternate-break"/>
                       Alternate Break Schedule
                     </label>
-
                   </div>
                   <div>
                     <label class="flex-label" for="winter-split-holiday-break">
-                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" data-toggle="collapse" data-target="#split-break"/>
+                      <input id="winter-split-holiday-break" type="radio" name="schoolWinterBreakSchedule" value="winter-split-holiday-break" onclick="winterHolidayMore()"/>
                       Split Break with Holiday Time Schedule
                     </label>
                   </div>
-                  <label class="collapse" id="split-break">
-                    (click again to close window)
-                    <label hide="true" data-dm->Start time Christmas
+                  <div class="container card p-4" id="split-break" style="display: none;">
+                    <label>Start time Christmas
                       <input type="time" class="form-control" name="christmasStart" required>
                     </label>
-                    <label hide="true" data-dm->End time Christmas
+                    <label>End time Christmas
                       <input type="time" class="form-control" name="christmasEnd" required>
                     </label>
-                    <label hide="true" data-dm->Start time New Years Day
+                    <label>Start time New Years Day
                       <input type="time" class="form-control" name="newYearsStart" required>
                     </label>
-                    <label hide="true" data-dm->End time New Years Day
+                    <label>End time New Years Day
                       <input type="time" class="form-control" name="newYearsEnd" required>
                     </label>
-                  </label>
+                  </div>
                   <div>
                     <input id="winter-continue-schedule" type="radio" name="schoolWinterBreakSchedule" value="winter-continue-schedule"/>
                     <label for="winter-continue-schedule">Continued Schedule</label>
@@ -157,30 +155,57 @@
                   </div>
                   <div>
                     <label class="flex-label" for="summer-continue-uninterrupted-schedule">
-                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" data-toggle="collapse" data-target="#uninterrupted"/>
+                      <input id="summer-continue-uninterrupted-schedule" type="radio" name="schoolSummerBreakSchedule" value="summer-continue-uninterrupted-schedule" onclick="summerBreakMore()"/>
                         Continued Schedule with Option for Uninterrupted Time
                     </label>
-                    <label class="collapse" id="uninterrupted">
+                    <div class="container card p-4" id="uninterrupted" style="display: none;">
                       <label>
-                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
                         Exchange date
+                        <input id="no-later-than" type="date" name="no-later-than" value="no-later-than"/>
+                      </label><br><br>
+                      <label>Both parents shall have the option to take <div style="display: inline-flex;"><input type="number" class="form-control" name="summerDaysUninterrupted" style="width: 100px; margin-right: 10px;" value="numDaysUninterrupted" required> <select id="summerDayOrWeek" name="summerDayOrWeek">
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
+                      </select></div> of uninterrupted time with the Child(ren)
                       </label>
-                      <label>
-                        <label hide="true" data-dm->Number of days
-                          <input type="number" class="form-control" name="summerDaysUninterrupted" value="numDaysUninterrupted" required>
-                        </label>
-                      </label>
-                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row justify-content-center pt-4 pb-4">
-            <button id="another" onclick="nextHandler()">Next Page</button>
+          <button id="previous1" onClick="showPage('page0')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next1" onclick="showPage('page2')">Next Page</button>
           </div>
         </div>
       </div>
+      <script> 
+        // hide popup when option for "winter break -> split break with holiday time schedule" is not selected 
+        function winterHolidayMore() {
+          var a = document.getElementById('split-break');
+          a.style.display = document.getElementById('winter-split-holiday-break').checked ? 'block' : 'none';
+        }
+        var radioButtonsX = document.querySelectorAll('input[type="radio"][name="schoolWinterBreakSchedule"]');
+        radioButtonsX.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            winterHolidayMore();
+          });
+        }); 
+
+        // hide popup when option for "summer break -> continued schedule w/option for uninterrupted time" is not selected  
+        function summerBreakMore() {
+          var a = document.getElementById('uninterrupted');
+          a.style.display = document.getElementById('summer-continue-uninterrupted-schedule').checked ? 'block' : 'none';
+        }
+        var radioButtonsY = document.querySelectorAll('input[type="radio"][name="schoolSummerBreakSchedule"]');
+        radioButtonsY.forEach(function(radioButton1) {
+          radioButton1.addEventListener('change', function() {
+            summerBreakMore();
+          });
+        }); 
+      </script>
+      
       <div id="page2" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
         <h3>Holiday Table</h3>
@@ -971,8 +996,8 @@
           </div>
         </div>
         <div class="row justify-content-center pt-4 pb-4">
-          <button id="next" onclick="nextHandler()">Next Page</button>
-        </div>
+          <button id="previous2" onclick="showPage('page1')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next2" onclick="showPage('page3')">Next Page</button>        </div>
       </div>
       <div id="page3" class="container card p-4">
         <h1>Physical Custody and Time Sharing</h1>
@@ -983,11 +1008,13 @@
             <div class="row justify-content-center" style="text-align: left">
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
-                  <input id="travel-with-children" type="checkbox" name="travel-with-children" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
+                  <input id="travel-with-children" type="checkbox" name="physicalOptional[]" value="travel-with-children" data-toggle="collapse" data-target="#travelChildren"/>
                   <label for="travel-with-children">Travel with the Children</label>
                   <label class="collapse" id="travelChildren">
                     <label>
-                      <label hide="true" data-dm->Number of days
+                      <label hide="true" data-dm->Number of <select id="travelDayOrWeek" name="travelDayOrWeek" style="margin-bottom: 10px;">
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
                         <input type="number" class="form-control" name="daysOff" value="daysOff">
                       </label>
                     </label>
@@ -1015,11 +1042,11 @@
                   </label>
                 </div>
                 <div>
-                  <input id="reschedule-make-up-time" type="checkbox" name="reschedule-make-up-time" value="reschedule-make-up-time"/>
+                  <input id="reschedule-make-up-time" type="checkbox" name="physicalOptional[]" value="reschedule-make-up-time"/>
                   <label for="reschedule-make-up-time">Reschedule and Make-Up Time</label>
                 </div>
                 <div>
-                  <input id="first-refusal" type="checkbox" name="first-refusal" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
+                  <input id="first-refusal" type="checkbox" name="physicalOptional[]" value="first-refusal" data-toggle="collapse" data-target="#firstRefusal"/>
                   <label for="first-refusal">Right of First Refusal</label>
                   <label class="collapse" id="firstRefusal">
                     <label>
@@ -1030,15 +1057,15 @@
                   </label>
                 </div>
                 <div>
-                  <input id="pick-up" type="checkbox" name="pick-up" value="pick-up"/>
+                  <input id="pick-up" type="checkbox" name="physicalOptional[]" value="pick-up"/>
                   <label for="pick-up">Pick Up for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="drop-off" type="checkbox" name="drop-off" value="drop-off"/>
+                  <input id="drop-off" type="checkbox" name="physicalOptional[]" value="drop-off"/>
                   <label for="drop-off">Drop Off for Non-School Exchange</label>
                 </div>
                 <div>
-                  <input id="exchanges-neutral-location" type="checkbox" name="exchanges-neutral-location" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
+                  <input id="exchanges-neutral-location" type="checkbox" name="physicalOptional[]" value="exchanges-neutral-location" data-toggle="collapse" data-target="#exchangesNeutral"/>
                   <label for="exchanges-neutral-location">Exchanges at a Neutral Location</label>
                   <label class="collapse" id="exchangesNeutral">
                     <label hide="true" data-dm->Address
@@ -1046,26 +1073,17 @@
                     </label>
                   </label>
                 </div>
-                <div>
-                  <input id="relocation" type="checkbox" name="relocation" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
-                  <label for="relocation">Relocation</label>
-                  <label class="collapse" id="relocationDays">
-                    <label hide="true" data-dm->Days of notice
-                      <input type="number" class="form-control" name="relocationDays">
-                    </label>
-                  </label>
-                </div>
               </div>
               <div class="column p-3" style="border-style: double; width: 350px">
                 <div>
                   <label for="delegate-pick-up">
-                    <input id="delegate-pick-up" type="checkbox" name="delegate-pick-up" value="delegate-pick-up"/>
+                    <input id="delegate-pick-up" type="checkbox" name="physicalOptional[]" value="delegate-pick-up"/>
                     Parental Authority to Delegate Pick-Up and Drop Off
                   </label>
                 </div>
                 <div>
                   <label for="persons-authorized">
-                    <input id="persons-authorized" type="checkbox" name="persons-authorized" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
+                    <input id="persons-authorized" type="checkbox" name="physicalOptional[]" value="persons-authorized" data-toggle="collapse" data-target="#persons" />
                     Persons Authorized to Pick Up and Drop Off
                     <label class="collapse" id="persons">
                       <label hide="true" data-dm->Person Authorized
@@ -1075,12 +1093,21 @@
                   </label>
                 </div>
                 <div>
-                  <input id="children-belongings" type="checkbox" name="children-belongings" value="children-belongings"/>
+                  <input id="children-belongings" type="checkbox" name="physicalOptional[]" value="children-belongings"/>
                   <label for="children-belongings">Children's Personal Belongings</label>
                 </div>
                 <div>
+                  <input id="relocation" type="checkbox" name="physicalOptional[]" value="relocation" data-toggle="collapse" data-target="#relocationDays"/>
+                  <label for="relocation">Relocation</label>
+                  <label class="collapse" id="relocationDays">
+                    <label hide="true" data-dm->Days of notice
+                      <input type="number" class="form-control" name="relocationDays">
+                    </label>
+                  </label>
+                </div>
+                <div>
                   <label for="modify-schedule">
-                    <input id="modify-schedule" type="checkbox" name="modify-schedule" value="modify-schedule"/>
+                    <input id="modify-schedule" type="checkbox" name="physicalOptional[]" value="modify-schedule"/>
                     Modification of Schedule by Agreement of Both Parties
                   </label>
                 </div>
@@ -1088,10 +1115,22 @@
             </div>
           </div>
           <div class="row justify-content-center pt-4 pb-4">
-            <button id="toCommunication" onclick="submit()">Next Section</button>
+          <button id="previous3" onClick="showPage('page2')">Previous Page</button> &nbsp;&nbsp;
+          <button id="next3" onclick="submit()">Next Section</button>
           </div>
         </div>
       </div>
     </div>
   </form>
 </div>
+
+<script>
+    // for the page buttons 
+    function showPage(pageId) {
+    document.getElementById("page0").style.display = "none";
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+    document.getElementById(pageId).style.display = "block";
+  }
+</script>

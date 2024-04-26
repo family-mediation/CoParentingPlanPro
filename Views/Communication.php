@@ -2,7 +2,7 @@
   <form method="post" class="" locale="ENGLISH" action="./?page=6" onsubmit="return false;">
     <div id="mainForm">
       <div id="page0" class="container card p-4">
-        <h1>COMMUNICATION</h1>
+        <h1>Communication</h1>
         <div class="form-group row p-3" name="communication">
           <p>Parents agree and understand that communication between Co-Parents is critical to their Child(ren)’s well-being.  
             Parents shall work together to agree on what information needs to be communicated to the other Parent in a timely manner and, 
@@ -57,51 +57,51 @@
               <h4>Communication Between Co-Parents:</h4>
 
               <div>
-              <input type="checkbox" name="commbetweenCP" id="7.04" value="7.04" onclick="showParentOptions()" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.04" value="7.04" onclick="showParentOptions()" />
               <label for="7.04">Monthly Conference</label>
               </div>
 
               <div class="container card p-4" id="monthly" value="monthCon" style="display: none;">
                Conference shall be on the first (insert day of the week of each month)
-              <input type="text" id="insertmonthly"/> unless mutually agreed to otherwise.
+              <input type="text" name="insertmonthly" id="insertmonthly"/> unless mutually agreed to otherwise.
               </div>
 
               <div>
-              <input type="checkbox" name="commbetweenCP" id="7.05" value="7.05" onclick="showParentOptions2()" />
-              <lable for="7.05">Semi Annual Conference</lable>
+              <input type="checkbox" name="commbetweenCP[]" id="7.05" value="7.05" onclick="showParentOptions2()" />
+              <label for="7.05">Semi Annual Conference</label>
               </div>
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="text" id="semidate1" />(insert date) and <input type="text" name="commbetweenCP[]" id="semidate2" />(insert date) every year.
+              <input type="date" name="semidate1" id="semidate1" /> and <input type="date" name="semidate2" id="semidate2" /> every year.
               </div>
               
               <div>
-              <input type="checkbox" name="commbetweenCP" id="7.06" value="7.06" onclick="showParentOptions3()" />
-              <lable for="7.06">Annual Conference</lable>
+              <input type="checkbox" name="commbetweenCP[]" id="7.06" value="7.06" onclick="showParentOptions3()" />
+              <label for="7.06">Annual Conference</label>
               </div>
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="text" id="annualdate" /> every year.
+              <input type="date" name="annualdate" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
               <h4>Communication Between Child(ren) and Non-Custodial Parent:</h4>
               <div>
-              <input type="checkbox" name="betweenchildparent" id="7.07" value="7.07"/>
+              <input type="checkbox" name="commbetweenCP[]" id="7.07" value="7.07"/>
               <label for="7.07">Unlimited</label>
               </div>
 
               <div>
-              <input type="checkbox" id="7.08" name="betweenchildparent" onclick="commSpecific()" />
+              <input type="checkbox" id="7.08" name="commbetweenCP[]" value="7.08" onclick="commSpecific()" />
               <label for="7.08">Specific</label>
               </div>
               
               <div class="container card p-4" id="schedule" style="display: none;">
               During the regular parenting time schedule, Parent A may call the child between 
-              <input type="time" name="betweenchildparent" id="A9:00" value="09:00" /> and <input type="time" name="betweenchildparent" id="A17:00" value="17:00" /> when they are with Parent B
-              and Parent B may call the childe between <input type="time" name="betweenchildparent" id="B09:00" value="09:00" /> and <input type="time" name="betweenchildparent" id="B17:00" value="17:00" />
+              <input type="time" name="A9:00" id="A9:00" value="09:00" /> and <input type="time" name="A17:00" id="A17:00" value="17:00" /> when they are with Parent B
+              and Parent B may call the childe between <input type="time" name="B09:00" id="B09:00" value="09:00" /> and <input type="time" name="B17:00" id="B17:00" value="17:00" />
               when they are with Parent A.
               </div>
               
@@ -109,17 +109,17 @@
               <br>
               <h4>Communication:</h4>
               <div>
-              <input type="checkbox" name="otherComm" id="7.09" value="7.09" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.09" value="7.09" />
               <label for="7.09">Exchange of Contact Information</label>
               </div>
 
               <div>
-              <input type="checkbox" name="otherComm" id="7.10" value="7.10" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.10" value="7.10" />
               <label for="7.10">Scheduling Extracurricular Activities for the Child(ren)</label>
               </div>
 
               <div>
-              <input type="checkbox" name="otherComm" id="7.11" value="7.11" />
+              <input type="checkbox" name="commbetweenCP[]" id="7.11" value="7.11" />
               <label for="7.11">Selecting Extracurricular Activities for the Child(ren)</label>
               </div>
             
