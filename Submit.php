@@ -7,7 +7,7 @@ require_once("Utility.php");
 
 
 $src = $_SESSION['responses'];
-sanitize($src);
+// sanitize($src);
 $fileName = "Case " . $src["caseNo"]." ". $src["partyALast"]." ".$src["partyBLast"] ;
 $filePath = "./documents/" . $fileName;
 $zipFilePath = $filePath . "/" . $fileName ;
