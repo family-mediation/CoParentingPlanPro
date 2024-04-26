@@ -8,9 +8,9 @@ function sanitize(&$inputs)
 {
     foreach ($inputs as &$value)
     {
-        echo "<span> the value before is ". $value;
-        $value = htmlspecialchars($value) . "test";   
-        echo " and after is ". $value . "</span></br></br>";
+     //   echo "<span> the value before is ". $value;
+        $value = htmlspecialchars($value);   
+      //  echo " and after is ". $value . "</span></br></br>";
     }
 }
 $src = $_SESSION['responses'];
