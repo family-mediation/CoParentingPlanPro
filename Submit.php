@@ -16,7 +16,7 @@ $htmlGen = new HtmlGenerator($filePath.'/'.$fileName, ".html",$src);
 $htmlGen->generateDocument();
 $wordGen = new wordDocGenerator($filePath.'/'.$fileName , ".docx",$src);
 $wordGen->generateDocument();
-$calGen = new CalendarGenerator($filePath.'/'.$fileName, ".ics",$src);
+$calGen = new CalendarGenerator($filePath.'/'.$fileName .".ics",$src);
 $calGen->generateDocument();
 //unset($_SESSION['responses']);
 $documents = new ZipArchive();// add error testing

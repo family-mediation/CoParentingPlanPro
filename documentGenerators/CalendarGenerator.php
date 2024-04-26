@@ -12,9 +12,6 @@ class CalendarGenerator
 		$this->fileName = $fileName;
 		$this->responses = $responses;
 		$this->fileOutput = fopen("./".$fileName,"w+");
-        $timestamp = time();
-        $this->$generationDate = gmdate('Ymd', $timestamp);
-        $this->$generationTime = gmdate('His', $timestamp);
  	}
 
 	private function generateEvent($eventTitle,$eventDescription) : string
@@ -43,7 +40,7 @@ class CalendarGenerator
 				$ical_event .= "LAST-MODIFIED:" . $generationDate . "T" . $generationTime . "Z\n";
 				$ical_event .= "SEQUENCE:1\n";
 				$ical_event .= "STATUS:CONFIRMED\n";
-				$ical_event .= "SUMMARY:".$eventTitle"\n";
+				$ical_event .= "SUMMARY:".$eventTitle."\n";
 				$ical_event .= "DESCRIPTION:".$eventDescription."\n";
 				$ical_event .= "TRANSP:OPAQUE\n";
 				$ical_event .= "END:VEVENT\n";
@@ -51,27 +48,26 @@ class CalendarGenerator
 
 	}
 // Generate the different components.
-	public function genHeader()
+	public function genHeader($calName = "Parenting Time Schedule")
 	{
-	    $headerString =
-	    "BEGIN:VCALENDAR
-        PRODID:-//Google Inc//Google Calendar 70.9054//EN
-        VERSION:2.0
-        CALSCALE:GREGORIAN
-        METHOD:PUBLISH
-        X-WR-CALNAME:wjs7@hawaii.edu
-        X-WR-TIMEZONE:Pacific/Honolulu
-        BEGIN:VTIMEZONE
-        TZID:Pacific/Honolulu
-        X-LIC-LOCATION:Pacific/Honolulu
-        BEGIN:STANDARD
-        TZOFFSETFROM:-1000
-        TZOFFSETTO:-1000
-        TZNAME:HST
-        DTSTART:19700101T000000
-        END:STANDARD
-        END:VTIMEZONE
-        ";
+	   
+	   $headerString .=  "BEGIN:VCALENDAR";
+       $headerString .=  "PRODID:-//Google Inc//Google Calendar 70.9054//EN";
+       $headerString .=  "VERSION:2.0";
+       $headerString .=  "CALSCALE:GREGORIAN";
+       $headerString .=  "METHOD:PUBLISH";
+       $headerString .=  "X-WR-CALNAME:wjs7@hawaii.edu";
+       $headerString .=  "X-WR-TIMEZONE:Pacific/Honolulu";
+       $headerString .=  "BEGIN:VTIMEZONE";
+       $headerString .=  "TZID:Pacific/Honolulu";
+       $headerString .=  "X-LIC-LOCATION:Pacific/Honolulu";
+       $headerString .=  "BEGIN:STANDARD";
+       $headerString .=  "TZOFFSETFROM:-1000";
+       $headerString .=  "TZOFFSETTO:-1000";
+       $headerString .=  "TZNAME:HST";
+       $headerString .=  "DTSTART:19700101T000000";
+       $headerString .=  "END:STANDARD";
+       $headerString .=  "END:VTIMEZONE";
         $this->fileContentString .= $headerString;
 	}
 	public function genFooter()
@@ -82,7 +78,7 @@ class CalendarGenerator
 	//todo make it party specific.
 	public function gen_7_7()
 	{
-		$parentAEvents = $this->generateEvent();
+		$parentAEvents = $this->generateEvent("Test Event 1","Testing out the calendar function!");
         $this->fileContentString .= $parentAEvents;
 	}
 
@@ -112,13 +108,12 @@ class CalendarGenerator
                 case "8-6":
                     $this->gen_8_6();
                 case "10-4":
-                    $this->gen_10_4()
+                    $this->gen_10_4();
 				case "ownSchedule":
 				default:
 					$this->gen_7_7();
                 break;
             }
-		$this->genPart1();
 		$this->genFooter();
 		$this->packageDocument();
 		fclose($this->fileOutput);
