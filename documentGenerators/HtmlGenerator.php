@@ -1228,6 +1228,8 @@ class HtmlGenerator extends documentGenerator
 //        echo $childrenRows;
 //        echo $end;
         $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
     // Alternate Yearly.
     function gen_physical_custody_timesharing_6_03A() {
