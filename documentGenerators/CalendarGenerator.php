@@ -16,6 +16,40 @@ class CalendarGenerator
         $this->$generationDate = gmdate('Ymd', $timestamp);
         $this->$generationTime = gmdate('His', $timestamp);
  	}
+
+	private function generateEvent($eventTitle,$eventDescription) : string
+	{
+				// Define the start date and end date of the event
+				$start_date = new DateTime('2015-09-07 12:00:00', new DateTimeZone('Pacific/Honolulu'));
+				$end_date = new DateTime('2015-09-07 13:15:00', new DateTimeZone('Pacific/Honolulu'));
+				$end_repeat_date = new DateTime('2015-12-28 22:00:00', new DateTimeZone('Pacific/Honolulu'));
+		
+				// Generate RRULE
+				$rrule = 'FREQ=WEEKLY;INTERVAL=1;COUNT=7;BYDAY=MO';
+				// Format the dates according to iCalendar format
+				$start_date_formatted = $start_date->format('Ymd\THis');
+				$end_date_formatted = $end_date->format('Ymd\THis');
+				$end_repeat_date_formatted = $end_repeat_date->format('Ymd\THis');
+				// Other event information
+				$generationDate = date("Ymd");
+				$generationTime = date("His");
+				// Construct the iCalendar event as a string
+				$ical_event = "BEGIN:VEVENT\n";
+				$ical_event .= "DTSTART;TZID=Pacific/Honolulu:" . $start_date_formatted . "\n";
+				$ical_event .= "DTEND;TZID=Pacific/Honolulu:" . $end_date_formatted . "\n";
+				$ical_event .= "RRULE:" . $rrule . ";UNTIL=" . $end_repeat_date_formatted . "Z\n";
+				$ical_event .= "DTSTAMP:" . $generationDate . "T" . $generationTime . "Z\n";
+				$ical_event .= "CREATED:" . $generationDate . "T" . $generationTime . "Z\n";
+				$ical_event .= "LAST-MODIFIED:" . $generationDate . "T" . $generationTime . "Z\n";
+				$ical_event .= "SEQUENCE:1\n";
+				$ical_event .= "STATUS:CONFIRMED\n";
+				$ical_event .= "SUMMARY:".$eventTitle"\n";
+				$ical_event .= "DESCRIPTION:".$eventDescription."\n";
+				$ical_event .= "TRANSP:OPAQUE\n";
+				$ical_event .= "END:VEVENT\n";
+				return $ical_event; // Just for demonstration, you can remove this line
+
+	}
 // Generate the different components.
 	public function genHeader()
 	{
@@ -40,39 +74,18 @@ class CalendarGenerator
         ";
         $this->fileContentString .= $headerString;
 	}
-	//todo make it party specific.
-	public function genPart1()
-	{
-    $part1String =
-        "BEGIN:VEVENT
-        DTSTART;TZID=Pacific/Honolulu:20150901T120000
-        DTEND;TZID=Pacific/Honolulu:20150901T131500
-        RRULE:FREQ=WEEKLY;UNTIL=20151229T220000Z;BYDAY=TU,TH
-        DTSTAMP:20240206T030807Z
-        UID:r79kfboffhrmncef3ca2fe4sqk@google.com
-        CREATED:".$this->generationDate."T".$this->generationTime."Z
-        LAST-MODIFIED:20150830T020131Z
-        LOCATION:Pacific Ocean Science & Technology\, Honolulu\, HI 96822\, USA
-        SEQUENCE:1
-        STATUS:CONFIRMED
-        SUMMARY: simpleEvent
-        TRANSP:OPAQUE
-        END:VEVENT
-        ";
-        $this->fileContentString .= $part1String;
-
-	}
-	public function genPart2(){}
-	public function genPart3(){}
-	public function genPart4(){}
-	public function genPart5(){}
-	public function genPart6(){}
-	public function genPart7(){}
 	public function genFooter()
 	{
      $footerString ="END:VCALENDAR";
      $this->fileContentString .= $footerString;
 	}
+	//todo make it party specific.
+	public function gen_7_7()
+	{
+		$parentAEvents = $this->generateEvent();
+        $this->fileContentString .= $parentAEvents;
+	}
+
 	public function packageDocument()
 	{
 	    fwrite($this->fileOutput,$this->fileContentString);
@@ -81,14 +94,31 @@ class CalendarGenerator
     public function generateDocument()
 	{
 		$this->genHeader();
+            switch ($this->responses['schoolYearSchedule']) {
+                // Equal Timesharing schedules.
+                case "2-2-3":
+                     $this->gen_2_2_3();
+                break;
+                case "3-4-4-3":
+                     $this->gen_3_4_4_3();
+                break;
+                case "2-2-5-5":
+                    $this->gen_2_2_5_5();
+                break;
+                case "7-7":
+                    $this->gen_7_7();
+                break;
+                // Other Timesharing schedules.
+                case "8-6":
+                    $this->gen_8_6();
+                case "10-4":
+                    $this->gen_10_4()
+				case "ownSchedule":
+				default:
+					$this->gen_7_7();
+                break;
+            }
 		$this->genPart1();
-		$this->genPart1();
-		$this->genPart2();
-		$this->genPart3();
-		$this->genPart4();
-		$this->genPart5();
-		$this->genPart6();
-		$this->genPart7();
 		$this->genFooter();
 		$this->packageDocument();
 		fclose($this->fileOutput);
