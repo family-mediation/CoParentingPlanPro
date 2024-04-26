@@ -16,5 +16,16 @@ function sanitize(&$inputs)
       //  echo " and after is ". $value . "</span></br></br>";
     }
 }
+function cleanValOutput($varName,$default = "")
+{
+    if(isset($_SESSION[$varname]))
+    {
+        return "value='".htmlSpecialChars($_SESSION[$varName])."'";
+    }
+    else
+    {
+        return "value='".$default."'";
+    }
+}
 
 ?>

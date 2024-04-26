@@ -15,7 +15,7 @@ $zipFilePath = $filePath . "/" . $fileName ;
 if(!is_dir($filePath))
 {
     mkdir($filePath);
- }
+}
 $htmlGen = new HtmlGenerator($filePath.'/'.$fileName, ".html",$src);
 $htmlGen->generateDocument();
 $wordGen = new wordDocGenerator($filePath.'/'.$fileName , ".docx",$src);
