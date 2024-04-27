@@ -1473,8 +1473,7 @@ function gen_physical_custody_timesharing_6_00() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='26'/>
 		  <w:r>
-			<w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with
-			  the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
+			<w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -1536,9 +1535,7 @@ function gen_physical_custody_timesharing_6_01() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='27'/>
 		  <w:r>
-			<w:t>During the school year, parents agree to share time with their children as set forth hereinbelow. Understanding that each individual Child’s developmental stage and needs should be the primary consideration for setting a schedule.
-			  Generally, younger children need more frequent transitions so they do not feel abandoned by either parent, while older children can tolerate longer absences. Each Child’s health, education, special needs, and social, emotional, and physical
-			  well-being must be considered in selecting an appropriate schedule. Schedules may change over time by agreement of the Parents based on the Child(ren)’s needs. Below are suggested templates to be modified and based on each family’s needs.
+			<w:t>During the school year, parents agree to share time with their children as set forth hereinbelow. Understanding that each individual Child’s developmental stage and needs should be the primary consideration for setting a schedule. Generally, younger children need more frequent transitions so they do not feel abandoned by either parent, while older children can tolerate longer absences. Each Child’s health, education, special needs, and social, emotional, and physical well-being must be considered in selecting an appropriate schedule. Schedules may change over time by agreement of the Parents based on the Child(ren)’s needs. Below are suggested templates to be modified and based on each family’s needs.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -1600,8 +1597,7 @@ function gen_physical_custody_timesharing_6_01A() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='28'/>
 		  <w:r>
-			<w:t>. 50/50 schedules can benefit a Child because the Child spends substantial time living with both Parents. This allows the Child(ren) to build close relationships with both Parents and to feel cared for by both Parents. 50/50 schedules
-			  work best when:
+			<w:t>. 50/50 schedules can benefit a Child because the Child spends substantial time living with both Parents. This allows the Child(ren) to build close relationships with both Parents and to feel cared for by both Parents. 50/50 schedules work best when:
 			</w:t>
 		  </w:r>
 		</w:p>
