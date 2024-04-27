@@ -46,6 +46,7 @@ if(!isset($_SESSION['canSeeLegal'])) {
 $db = new Database;
 $page = $_GET['page'] ?? 1;
 console_log($_SESSION['responses']);
+require_once("Utility.php");
 switch($page)
 {
     case 1:
