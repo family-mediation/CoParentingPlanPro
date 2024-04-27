@@ -1479,7 +1479,28 @@ function gen_physical_custody_timesharing_6_00() {
 		  </w:r>
 		</w:p>";
 
-		//Tags don't match; starts from <w:r>, but ends with </w:p>.
+$tableCon = "<w:p w14:paraId='25B4B744' w14:textId='10638B4B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+<w:pPr>
+	<w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+	<w:ind w:left='0' w:right='0' />
+</w:pPr>
+<w:hyperlink w:anchor='PhysicalCustodyGlobalPriority' w:history='1'>
+	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+		<w:rPr>
+			<w:rStyle w:val='Hyperlink' />
+		</w:rPr>
+		<w:t>6.00</w:t>
+	</w:r>
+	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+		<w:rPr>
+			<w:rStyle w:val='Hyperlink' />
+		</w:rPr>
+		<w:tab />
+		<w:t>Physical Custody and Timesharing: Global Priority</w:t>
+	</w:r>
+</w:hyperlink>
+</w:p>";
+$this -> tableOfContentsString .= $tableCon;
 
 	 $header;
 	$this->fileContentString .= $header;
