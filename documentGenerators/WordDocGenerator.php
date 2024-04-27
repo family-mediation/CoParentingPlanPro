@@ -151,7 +151,7 @@ class wordDocGenerator extends documentGenerator
 			  <w:rStyle w:val='Hyperlink'/>
 			  <w:lang w:val='fr-FR'/>
 			</w:rPr>
-			<w:t xml:space='preserve'> Information on Parent A</w:t>
+			<w:t xml:space='preserve'> Information on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
@@ -192,7 +192,7 @@ class wordDocGenerator extends documentGenerator
 			  <w:rStyle w:val='Hyperlink'/>
 			  <w:lang w:val='fr-FR'/>
 			</w:rPr>
-			<w:t xml:space='preserve'> Information on Parent B</w:t>
+			<w:t xml:space='preserve'> Information on " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
@@ -342,7 +342,24 @@ function gen_children_4_00_last() {
 // legal custody section 3
 function gen_legal_custody_5_00()
 {
-	$definition = "<w:p w14:paraId='3CB4A065' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$definition = "<w:p w14:paraId='29690369' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+		<w:ind w:left='0' w:right='36' w:firstLine='0' />
+		<w:jc w:val='center' />
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+	</w:pPr>
+	<w:r>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>LEGAL CUSTODY:</w:t>
+	</w:r>
+</w:p>
+	
+	<w:p w14:paraId='3CB4A065' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
 		<w:ind w:left='0' w:right='36' w:firstLine='0' />
@@ -470,8 +487,23 @@ function gen_legal_custody_5_03A()
 	</w:r>
 	<w:bookmarkEnd w:id='17' />
 	<w:r>
-		<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent A shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
-	</w:r>
+    <w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then </w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:t>shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -526,8 +558,23 @@ function gen_legal_custody_5_03B()
 	</w:r>
 	<w:bookmarkEnd w:id='17' />
 	<w:r>
-		<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent B shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
-	</w:r>
+    <w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then </w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:t>shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -581,12 +628,24 @@ function gen_legal_custody_5_05A()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT</w:t>
+		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT.</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='16' />
 	<w:r>
-		<w:t>.Parent A shall have sole legal custody of the Child(ren).</w:t>
-	</w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+	<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:t> shall have sole legal custody of the Child(ren).</w:t>
+</w:r>
 </w:p>
 
 <w:p w14:paraId='3A1BB760' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -613,7 +672,25 @@ function gen_legal_custody_5_05A()
 </w:r>
 <w:bookmarkEnd w:id='19' />
 <w:r>
-	<w:t xml:space='preserve'>. Although Parent A  is awarded sole legal custody, Parent B  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
+    <w:t xml:space='preserve'>. Although </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> is awarded sole legal custody, </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access</w:t>
 </w:r>
 <w:proofErr w:type='gramStart' />
 <w:r>
@@ -649,7 +726,30 @@ function gen_legal_custody_5_05A()
 		<w:t>Legal Custody: Sole to One Parent</w:t>
 		</w:r>
 	</w:hyperlink>
-	</w:p>";
+	</w:p>
+	
+	
+	<w:p w14:paraId='642CCA55' w14:textId='2A47A141' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+  <w:pPr>
+	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	<w:ind w:left='0' w:right='0'/>
+  </w:pPr>
+  <w:hyperlink w:anchor='LegalCustodyAccesstoInformation' w:history='1'>
+	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+	  <w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+	  </w:rPr>
+	  <w:t>5.05</w:t>
+	</w:r>
+	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+	  <w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+	  </w:rPr>
+	  <w:tab/>
+	  <w:t>Legal Custody: Access to Information for Parent Without Legal Custody</w:t>
+	</w:r>
+  </w:hyperlink>
+</w:p>";
 	$this -> tableOfContentsString .= $tableCon;
 
 	 $snippet;
@@ -680,12 +780,25 @@ function gen_legal_custody_5_05B()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT</w:t>
+		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT.</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='16' />
 	<w:r>
-		<w:t>.Parent B shall have sole legal custody of the Child(ren).</w:t>
-	</w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+	<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+<w:t xml:space='preserve'> </w:t> 
+</w:r>
+<w:r>
+    <w:t> shall have sole legal custody of the Child(ren).</w:t>
+</w:r>
+
 </w:p>
 
 <w:p w14:paraId='3A1BB760' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -712,8 +825,27 @@ function gen_legal_custody_5_05B()
 </w:r>
 <w:bookmarkEnd w:id='19' />
 <w:r>
-	<w:t xml:space='preserve'>. Although Parent B  is awarded sole legal custody, Parent A  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
+    <w:t xml:space='preserve'>. Although </w:t>
 </w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " </w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> is awarded sole legal custody, </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " </w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
+</w:r>
+
 <w:proofErr w:type='gramStart' />
 <w:r>
 	<w:t>any and all</w:t>
@@ -808,14 +940,57 @@ function gen_legal_custody_5_04()
 	</w:r>
 	<w:bookmarkEnd w:id='18' />
 	<w:r>
-		<w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then " . $this->responses["parentABW"] . " shall have tie-breaking authority to make </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentABW"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall have tie-breaking authority to make </w:t>
+</w:r>
+
 	<w:r>
 		<w:rPr>
 			<w:color w:val='333333' />
 		</w:rPr>
-		<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with " . $this->responses["parentABX"] . " and the Child(ren) and " . $this->responses["parentABY"] . " 
-		shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with " . $this->responses["parentABZ"] . " and the child.</w:t>
+		<w:r>
+		<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with </w:t>
+	</w:r>
+	<w:r>
+    <w:t xml:space='preserve'> </w:t> 
+</w:r>
+	<w:r>
+		<w:rPr>
+			<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>" . $this->responses["parentABX"] . "</w:t>
+	</w:r>
+	<w:r>
+		<w:t xml:space='preserve'> and the Child(ren) and </w:t>
+	</w:r>
+	<w:r>
+		<w:rPr>
+			<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>" . $this->responses["parentABY"] . "</w:t>
+	</w:r>
+	<w:r>
+		<w:t xml:space='preserve'> shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with </w:t>
+	</w:r>
+
+	<w:r>
+		<w:rPr>
+			<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>" . $this->responses["parentABZ"] . "</w:t>
+	</w:r>
+	<w:r>
+		<w:t xml:space='preserve'> and the child.</w:t>
+	</w:r>
+	
 	</w:r>
 </w:p>";
 

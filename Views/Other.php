@@ -89,7 +89,7 @@
               <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
               <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
               </select> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, 
-              and <input type="text" class="form-control" name="otherDocuments" id="otherDocuments" placeholder="Input any other relevant documents" style="margin: 10px;" /> at their home, and these documents will be made available to 
+              and <input type="text" class="form-control" name="otherDocuments" id="otherDocuments" placeholder="Input any other relevant documents, leave blank if N/A" style="margin: 10px;" /> at their home, and these documents will be made available to 
               <select name="parentABdoc_Other2" id="parentABdoc_Other2">
               <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
               <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>" selected>Parent B</option></select> as needed. 
