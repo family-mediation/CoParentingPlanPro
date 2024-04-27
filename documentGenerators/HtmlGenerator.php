@@ -45,7 +45,7 @@ class HtmlGenerator extends documentGenerator
          Not Intend to Seek Family Court Approval</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PartiesInformationon" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
+         href=\"#PartiesInformationonParentA\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
          on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span></a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
@@ -250,11 +250,10 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=PartiesInformationon<b><span lang=FR>3.00&nbsp; </span></b></a><u><span
-         lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
-         A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
-         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "'s residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
-          " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>
+         name=PartiesInformationonParentA><b>3.00</b> <u>PARTIES: INFORMATION ON PARENT A</u></a>. 
+         Parent A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "'s residence
+         address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
+          " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . "</span>.&nbsp; </p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
