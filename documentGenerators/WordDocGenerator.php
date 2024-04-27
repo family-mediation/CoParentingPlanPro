@@ -1932,8 +1932,7 @@ function gen_physical_custody_timesharing_6_02() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='30'/>
 		  <w:r>
-			<w:t>. Unless otherwise agreed by both Parents, school breaks shall be defined as beginning after school on the last day prior to the break and ending at the morning drop off at school on the day school resumes. During their designated school
-			  break time with the Child(ren), either Parent may elect to travel with the Child(ren) per the Travel with the Child(ren) provision hereinbelow.
+			<w:t>. Unless otherwise agreed by both Parents, school breaks shall be defined as beginning after school on the last day prior to the break and ending at the morning drop off at school on the day school resumes. During their designated school break time with the Child(ren), either Parent may elect to travel with the Child(ren) per the Travel with the Child(ren) provision hereinbelow.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -2040,77 +2039,137 @@ function gen_physical_custody_timesharing_6_02A(string $type) {
 			<w:t>Fall Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>
-	  
-	  <w:p w14:paraId='30F97A26' w14:textId='35F9AA68' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			<w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:bookmarkStart w:id='2' w:name='_heading=h.ptfvl3aera8c' w:colFirst='0' w:colLast='0'/>
-		<w:bookmarkEnd w:id='2'/>
-		<w:r>
-			<w:tab/>
-		</w:r>
-		<w:r>
-			<w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-			<w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyFallBreakAB' w:history='1'>
-			<w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-				<w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02A(ii) Alternate Break</w:t>
-			</w:r>
-		</w:hyperlink>
-		</w:p>
-		<w:p w14:paraId='6DCFBFE5' w14:textId='460B17D8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			<w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:bookmarkStart w:id='3' w:name='_heading=h.q5n0t569stji' w:colFirst='0' w:colLast='0'/>
-		<w:bookmarkEnd w:id='3'/>
-		<w:r>
-			<w:tab/>
-		</w:r>
-		<w:r>
-			<w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-			<w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyFallBreakContinueSchedule' w:history='1'>
-			<w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-				<w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02A(iii) Continue Schedule During the School Year</w:t>
-			</w:r>
-		</w:hyperlink>
-		</w:p>";
+	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
-		//6.02(i) is missing in document.xml
 
 	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "fall-split-break":
+			$toc = "<w:p w14:paraId='351991C1' w14:textId='3FA19C65' w:rsidR='00505307' w:rsidRDefault='00EF5343'>
+            <w:pPr>
+                <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+                <w:ind w:left='0' w:right='0' />
+            </w:pPr>
+            <w:r>
+                <w:fldChar w:fldCharType='begin' />
+            </w:r>
+            <w:r>
+                <w:instrText>HYPERLINK \l 'PhysicalCustodyFallBreakSB'</w:instrText>
+            </w:r>
+            <w:r>
+                <w:fldChar w:fldCharType='separate' />
+            </w:r>
+            <w:r w:rsidRPr='00EF5343'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:tab />
+            </w:r>
+            <w:r w:rsidRPr='00EF5343'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:tab />
+            </w:r>
+            <w:r w:rsidR='00E616E1'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:tab />
+            </w:r>
+            <w:r w:rsidRPr='00EF5343'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:t>6.02A(</w:t>
+            </w:r>
+            <w:proofErr w:type='spellStart' />
+            <w:r w:rsidRPr='00EF5343'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:t>i</w:t>
+            </w:r>
+            <w:proofErr w:type='spellEnd' />
+            <w:r w:rsidRPr='00EF5343'>
+                <w:rPr>
+                    <w:rStyle w:val='Hyperlink' />
+                </w:rPr>
+                <w:t>) Split Break</w:t>
+            </w:r>
+            <w:r>
+                <w:fldChar w:fldCharType='end' />
+            </w:r>
+        </w:p>";
+		$this->tableOfContentsString .= $toc;
+
 			$split = new Fall();
-			$fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-alternate-break":
+			$toc = "<w:p w14:paraId='30F97A26' w14:textId='35F9AA68' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:bookmarkStart w:id='2' w:name='_heading=h.ptfvl3aera8c' w:colFirst='0' w:colLast='0'/>
+			<w:bookmarkEnd w:id='2'/>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+				<w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreakAB' w:history='1'>
+				<w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A(ii) Alternate Break</w:t>
+				</w:r>
+			</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $toc;
+
 			$alternate = new Fall();
-			$fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-continue-schedule":
+			$toc = "<w:p w14:paraId='6DCFBFE5' w14:textId='460B17D8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:bookmarkStart w:id='3' w:name='_heading=h.q5n0t569stji' w:colFirst='0' w:colLast='0'/>
+			<w:bookmarkEnd w:id='3'/>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r>
+				<w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+				<w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreakContinueSchedule' w:history='1'>
+				<w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A(iii) Continue Schedule During the School Year</w:t>
+				</w:r>
+			</w:hyperlink>
+			</w:p>";
+			$this->tableOfContentsString .= $toc;
+
 			$continue = new Fall();
 			$fall = $continue->get_continue();
 			 $fall;
@@ -2148,7 +2207,7 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 		  </w:r>
 		  <w:bookmarkEnd w:id='35'/>
 		  <w:r>
-			<w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
+			<w:t xml:space='preserve'>. The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
 		  </w:r>
 		</w:p>";
 
@@ -2184,116 +2243,6 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 			<w:t>Thanksgiving Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='18952DE9' w14:textId='0A439B54' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingSB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02B (</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellStart'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>i</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellEnd'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>) Split Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='2E0EF732' w14:textId='5EAAA5F4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingAB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02B (ii) Alternate Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='0F2E11CF' w14:textId='53AD6392' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingTimeonDay' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02B (iii) Time on Thanksgiving Day</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='756DE11A' w14:textId='3DD1C164' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingContinueSched' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02B (iv) Continue Schedule During the School Year</w:t>
-		  </w:r>
-		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -2301,18 +2250,104 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "thanksgiving-split-break":
+			$toc = "<w:p w14:paraId='18952DE9' w14:textId='0A439B54' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
 			$split = new Thanksgiving();
-			$thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-alternate-break":
+			$toc = "<w:p w14:paraId='2E0EF732' w14:textId='5EAAA5F4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>"; 
+			$this->tableOfContentsString .= $toc;
 			$alternate = new Thanksgiving();
-			$thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-continue-schedule":
+			$toc = "<w:p w14:paraId='756DE11A' w14:textId='3DD1C164' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02B (iv) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
 			$continue = new Thanksgiving();
 			$thanksgiving = $continue->get_continue();
 			 $thanksgiving;
@@ -2323,6 +2358,31 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 	}
 }
 function gen_physical_custody_timesharing_6_02BOptional() {
+	$toc = "<w:p w14:paraId='0F2E11CF' w14:textId='53AD6392' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+	  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	  <w:ind w:left='0' w:right='0'/>
+	</w:pPr>
+	<w:r>
+	  <w:tab/>
+	</w:r>
+	<w:r>
+	  <w:tab/>
+	</w:r>
+	<w:r w:rsidR='00E616E1'>
+	  <w:tab/>
+	</w:r>
+	<w:hyperlink w:anchor='PhysicalCustodyThanksgivingTimeonDay' w:history='1'>
+	  <w:r w:rsidRPr='00EF5343'>
+		<w:rPr>
+		  <w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:t>6.02B (iii) Time on Thanksgiving Day</w:t>
+	  </w:r>
+	</w:hyperlink>
+  </w:p>";
+  $this->tableOfContentsString .= $toc;
+
 	$time_break = new Thanksgiving();
 	$thanksgiving = $time_break->get_time();
 	 $thanksgiving;
@@ -2398,117 +2458,6 @@ function gen_physical_custody_timesharing_6_02C(string $type) {
 			<w:t>Winter Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='21FA5F74' w14:textId='769AF2E6' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02C (</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellStart'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>i</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellEnd'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>) Split Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='1D2CA37C' w14:textId='316556F8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakAB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02C (ii) Alternate Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='54888451' w14:textId='17C633D9' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSBwithHoliday' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02C (iii) Split Break with Holiday Time</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='14490114' w14:textId='29BFD7D0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:lastRenderedPageBreak/>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakContinueSched' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02C (iv) Continue Schedule During the School Year</w:t>
-		  </w:r>
-		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -2516,24 +2465,135 @@ function gen_physical_custody_timesharing_6_02C(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "winter-split-break":
+			$toc = "<w:p w14:paraId='21FA5F74' w14:textId='769AF2E6' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $toc;
 			$split = new Winter();
-			$winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-alternate-break":
+			$toc = "<w:p w14:paraId='1D2CA37C' w14:textId='316556F8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $toc;
 			$alternate = new Winter();
-			$winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-split-holiday-break":
+			$toc = "<w:p w14:paraId='54888451' w14:textId='17C633D9' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSBwithHoliday' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (iii) Split Break with Holiday Time</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $toc;
 			$split_holiday = new Winter();
-			$winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
+			$winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-continue-schedule":
+			$toc = "<w:p w14:paraId='14490114' w14:textId='29BFD7D0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:lastRenderedPageBreak/>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02C (iv) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+		  $this->tableOfContentsString .= $toc;
 			$continue = new Winter();
 			$winter = $continue->get_continue();
 			 $winter;
@@ -2610,108 +2670,108 @@ function gen_physical_custody_timesharing_6_02D(string $type) {
 			<w:t>Spring Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='56FE7631' w14:textId='50815726' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySpringBreakSB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02D (</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellStart'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>i</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellEnd'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>) Split Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='7B092CB5' w14:textId='0CF92273' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySpringBreakAB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02D (ii) Alternate Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='2A052613' w14:textId='4CAB60DB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySpringBreakContinueSched' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02D (iii) Continue Scheduling During the School Year</w:t>
-		  </w:r>
-		</w:hyperlink>
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "spring-split-break":
+			$toc = "<w:p w14:paraId='56FE7631' w14:textId='50815726' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
 			$split = new Spring();
-			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-alternate-break":
+			$toc = "<w:p w14:paraId='7B092CB5' w14:textId='0CF92273' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakAB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (ii) Alternate Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
 			$alternate = new Spring();
-			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-continue-schedule":
+			$toc = "<w:p w14:paraId='2A052613' w14:textId='4CAB60DB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySpringBreakContinueSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02D (iii) Continue Scheduling During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
 			$continue = new Spring();
 			$spring = $continue->get_continue();
 			$this->fileContentString .= $spring;
@@ -2791,95 +2851,6 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			<w:t>Summer Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='656DF837' w14:textId='1A895978' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySummerBreakSB' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02E (</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellStart'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>i</w:t>
-		  </w:r>
-		  <w:proofErr w:type='spellEnd'/>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>) Split Break</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
-		  </w:r>
-		</w:hyperlink>
-		<w:r>
-		  <w:t xml:space='preserve'> </w:t>
-		</w:r>
-	  </w:p>
-
-	  <w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r>
-		  <w:tab/>
-		</w:r>
-		<w:r w:rsidR='00E616E1'>
-		  <w:tab/>
-		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSchedUnint' w:history='1'>
-		  <w:r w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
-		  </w:r>
-		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -2887,18 +2858,110 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "summer-split-break":
+			$toc = "<w:p w14:paraId='656DF837' w14:textId='1A895978' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
+
 			$split = new Summer();
-			$summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
+			$summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
 			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-uninterrupted-schedule":
+			$toc = "<w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			  <w:pPr>
+				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+				<w:ind w:left='0' w:right='0'/>
+			  </w:pPr>
+			  <w:r>
+				<w:tab/>
+			  </w:r>
+			  <w:r>
+				<w:tab/>
+			  </w:r>
+			  <w:r w:rsidR='00E616E1'>
+				<w:tab/>
+			  </w:r>
+			  <w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
+				<w:r w:rsidRPr='00EF5343'>
+				  <w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				  </w:rPr>
+				  <w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
+				</w:r>
+			  </w:hyperlink>
+			  <w:r>
+				<w:t xml:space='preserve'> </w:t>
+			  </w:r>
+			</w:p>";
+			$this->tableOfContentsString .= $toc;
+
 			$alternate = new Summer();
 			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
 			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-schedule":
+			$toc = "<w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSchedUnint' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
+
 			$continue = new Summer();
 			$summer = $continue->get_continue();
 			 $summer;
@@ -2909,6 +2972,29 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 	}
 }
 function gen_physical_custody_timesharing_6_03() {
+	$toc = "<w:p w14:paraId='7553B9ED' w14:textId='1E13F7FE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+	<w:pPr>
+	  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	  <w:ind w:left='0' w:right='0'/>
+	</w:pPr>
+	<w:hyperlink w:anchor='PhysicalCustodyHolidaysandSpecialDays' w:history='1'>
+	  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+		<w:rPr>
+		  <w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:t>6.03</w:t>
+	  </w:r>
+	  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+		<w:rPr>
+		  <w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+		<w:t>Physical Custody and Timesharing: Holidays and Special Days</w:t>
+	  </w:r>
+	</w:hyperlink>
+  </w:p>";
+  $this->tableOfContentsString .= $toc;
+
 	$table = new HolidayTableWord();
     $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
     $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
@@ -2953,35 +3039,68 @@ function gen_physical_custody_timesharing_6_03A() {
 			</w:rPr>
 			<w:t>ALTERNATE YEARLY</w:t>
 		  </w:r>
+		  <w:r>
+		  <w:t xml:space='preserve'>.  </w:t>
+		</w:r>
 		  <w:bookmarkEnd w:id='54'/>
 		  <w:r>
-			<w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at ___ am/pm and ending at ___ am/pm.</w:t>
-		  </w:r>
+		  <w:rPr>
+		  <w:highlight w:val='yellow' />
+	  </w:rPr>
+		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> shall have the Child(ren) in </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>even/odd</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> years. </w:t>
+	  </w:r>
+	  <w:r>
+	  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> shall have the Child(ren) in </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>even/odd</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> years. An alternated holiday/special day shall be defined as beginning at </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>___</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> am/pm and ending at </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>___</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> am/pm.</w:t>
+	  </w:r>
+	  
 		</w:p>";
-
-		$tableCon = "<w:p w14:paraId='7553B9ED' w14:textId='1E13F7FE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
-		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
-		</w:pPr>
-		<w:hyperlink w:anchor='PhysicalCustodyHolidaysandSpecialDays' w:history='1'>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.03</w:t>
-		  </w:r>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:tab/>
-			<w:t>Physical Custody and Timesharing: Holidays and Special Days</w:t>
-		  </w:r>
-		</w:hyperlink>
-	  </w:p>
-
-	  <w:p w14:paraId='2810ADEA' w14:textId='02BCD5B7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		
+		$tableCon = "<w:p w14:paraId='2810ADEA' w14:textId='02BCD5B7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 		  <w:ind w:left='0' w:right='0'/>
@@ -3048,14 +3167,89 @@ function gen_physical_custody_timesharing_6_03B() {
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
-			<w:t>SPLIT EVERY YEAR</w:t>
+			<w:t>SPLIT EVERY YEAR.</w:t>
 		  </w:r>
+		  <w:r>
+		  <w:t xml:space='preserve'></w:t>
+	  </w:r>
+	  <w:r>
+	  <w:t xml:space='preserve'></w:t>
+	</w:r>
 		  <w:bookmarkEnd w:id='55'/>
 		  <w:r>
-			<w:t>. Parent A shall have the Child(ren) for the first half and Parent B shall have the Child(ren) for the second half of this holiday/special day in even/odd years. Parent B shall have the Child(ren) for the first half and Parent A shall
-			  have the Child(ren) for the second half of this holiday/special day in even/odd years. A split holiday shall be defined as beginning at ___ am/pm and ending at ___ am/pm.
-			</w:t>
-		  </w:r>
+		  <w:rPr>
+		  <w:highlight w:val='yellow' />
+	  </w:rPr>
+		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> shall have the Child(ren) for the first half and </w:t>
+	  </w:r>
+	  <w:r>
+	  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> shall have the Child(ren) for the second half of this holiday/special day in </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>even/odd</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> years. </w:t>
+	  </w:r>
+	  <w:r>
+	  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> shall have the Child(ren) for the first half and </w:t>
+	  </w:r>
+	  <w:r>
+	  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
+	  </w:r>
+	  <w:r>
+	
+		  <w:t xml:space='preserve'> shall have the Child(ren) for the second half of this holiday/special day in </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>even/odd</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> years. A split holiday shall be defined as beginning at </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>___</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> am/pm and ending at </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='yellow' />
+		  </w:rPr>
+		  <w:t>___</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> am/pm.</w:t>
+	  </w:r>
+	  
 		</w:p>";
 
 		$tableCon = " <w:p w14:paraId='22ECA461' w14:textId='215F7040' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -3197,7 +3391,7 @@ function gen_physical_custody_timesharing_6_03D() {
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
-			<w:t>EVERY YEAR WITH " . $this->responses['partyAFirst'] . " OR " . $this->responses['partyBFirst'] . "</w:t>
+			<w:t>EVERY YEAR WITH  " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " OR  " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
 		  </w:r>
 		  <w:bookmarkEnd w:id='57'/>
 		  <w:r>
@@ -3234,7 +3428,7 @@ function gen_physical_custody_timesharing_6_03D() {
 			  <w:rStyle w:val='Hyperlink'/>
 			</w:rPr>
 			<w:tab/>
-			<w:t>Every Year with Parent A or Parent B</w:t>
+			<w:t>Every Year with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " or  " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>";

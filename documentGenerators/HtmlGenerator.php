@@ -779,9 +779,9 @@ class HtmlGenerator extends documentGenerator
 
         $alt = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;"
-            . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) in even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren)
-            in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
+            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;<span style='background:yellow'>"
+            . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) in <span style='background:yellow'>even/odd</span> years.&nbsp;<span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> shall have the Child(ren)
+            in <span style='background:yellow'>even/odd</span> years.&nbsp; An alternated holiday/special day shall be defined as
             beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
         
         $this->fileContentString .= $alt;
@@ -791,10 +791,10 @@ class HtmlGenerator extends documentGenerator
         $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
-            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren) for the second half of this holiday/special day in
-            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . " shall have the Child(ren) for the first half and
-            " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the second half of this holiday/special
-            day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
+            YEAR</u></a>.&nbsp;<span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) for the first half and <span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> shall have the Child(ren) for the second half of this holiday/special day in
+            <span style='background:yellow'>even/odd</span> years.&nbsp;<span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . "</span> shall have the Child(ren) for the first half and
+            <span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) for the second half of this holiday/special
+            day in <span style='background:yellow'>even/odd</span> years.&nbsp; A split holiday shall be defined as beginning at
              <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
         
         $this->fileContentString .= $split;
