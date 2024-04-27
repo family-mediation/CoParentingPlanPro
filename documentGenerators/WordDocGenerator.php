@@ -2047,61 +2047,42 @@ function gen_physical_custody_timesharing_6_02A(string $type) {
 	switch ($type) {
 		case "fall-split-break":
 			$toc = "<w:p w14:paraId='351991C1' w14:textId='3FA19C65' w:rsidR='00505307' w:rsidRDefault='00EF5343'>
-            <w:pPr>
-                <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-                <w:ind w:left='0' w:right='0' />
-            </w:pPr>
-            <w:r>
-                <w:fldChar w:fldCharType='begin' />
-            </w:r>
-            <w:r>
-                <w:instrText>HYPERLINK \l 'PhysicalCustodyFallBreakSB'</w:instrText>
-            </w:r>
-            <w:r>
-                <w:fldChar w:fldCharType='separate' />
-            </w:r>
-            <w:r w:rsidRPr='00EF5343'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:tab />
-            </w:r>
-            <w:r w:rsidRPr='00EF5343'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:tab />
-            </w:r>
-            <w:r w:rsidR='00E616E1'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:tab />
-            </w:r>
-            <w:r w:rsidRPr='00EF5343'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:t>6.02A(</w:t>
-            </w:r>
-            <w:proofErr w:type='spellStart' />
-            <w:r w:rsidRPr='00EF5343'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:t>i</w:t>
-            </w:r>
-            <w:proofErr w:type='spellEnd' />
-            <w:r w:rsidRPr='00EF5343'>
-                <w:rPr>
-                    <w:rStyle w:val='Hyperlink' />
-                </w:rPr>
-                <w:t>) Split Break</w:t>
-            </w:r>
-            <w:r>
-                <w:fldChar w:fldCharType='end' />
-            </w:r>
-        </w:p>";
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodyFallBreakSB' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02A (</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellStart'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>i</w:t>
+			  </w:r>
+			  <w:proofErr w:type='spellEnd'/>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>) Split Break</w:t>
+			  </w:r>
+			</w:hyperlink>
+		  </w:p>";
 		$this->tableOfContentsString .= $toc;
 
 			$split = new Fall();
@@ -3466,8 +3447,18 @@ function gen_physical_custody_timesharing_6_04() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='58'/>
 		  <w:r>
-			<w:t xml:space='preserve'>Each parent shall have the right to take up to " . $this->responses['daysOff'] . " days/weeks of </w:t>
-		  </w:r>
+    <w:t xml:space='preserve'>Each parent shall have the right to take up to </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>5</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> days/weeks of </w:t>
+</w:r>
+
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
 			<w:t>off-island</w:t>
@@ -3737,46 +3728,28 @@ function gen_physical_custody_timesharing_6_07() {
 
 		$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='0'/>
 		</w:pPr>
 		<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.07</w:t>
-		  </w:r>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:tab/>
-			<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
-		  </w:r>
+			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.07</w:t>
+			</w:r>
+			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
+			</w:r>
 		</w:hyperlink>
 		<w:r w:rsidR='00EF5343'>
-		  <w:t xml:space='preserve'>. </w:t>
+			<w:t xml:space='preserve'>. </w:t>
 		</w:r>
-		<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.08</w:t>
-		  </w:r>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:tab/>
-			<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
-		  </w:r>
-		</w:hyperlink>
-		<w:r w:rsidR='00EF5343'>
-		  <w:t>.</w:t>
-		</w:r>
-	  </w:p>";
+	</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 		//weird indent in table between 6.07 and 6.08
 	$this->fileContentString .= $content;
@@ -3818,46 +3791,28 @@ function gen_physical_custody_timesharing_6_08() {
 
 		$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-		  <w:ind w:left='0' w:right='0'/>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='0'/>
 		</w:pPr>
-		<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.07</w:t>
-		  </w:r>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:tab/>
-			<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
-		  </w:r>
-		</w:hyperlink>
-		<w:r w:rsidR='00EF5343'>
-		  <w:t xml:space='preserve'>. </w:t>
-		</w:r>
 		<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:t>6.08</w:t>
-		  </w:r>
-		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-			<w:rPr>
-			  <w:rStyle w:val='Hyperlink'/>
-			</w:rPr>
-			<w:tab/>
-			<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
-		  </w:r>
+			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.08</w:t>
+			</w:r>
+			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+				<w:rPr>
+					<w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:tab/>
+				<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
+			</w:r>
 		</w:hyperlink>
 		<w:r w:rsidR='00EF5343'>
-		  <w:t>.</w:t>
+			<w:t>.</w:t>
 		</w:r>
-	  </w:p>";
+	</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 	$this->fileContentString .= $content;
 }
