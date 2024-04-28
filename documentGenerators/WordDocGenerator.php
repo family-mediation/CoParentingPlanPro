@@ -5534,7 +5534,6 @@ $tableCon = "<w:p w14:paraId='4BA6636F' w14:textId='5CCB6274' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_11() 
@@ -5599,7 +5598,6 @@ $tableCon = "<w:p w14:paraId='49417B8E' w14:textId='358D17BA' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 
@@ -5609,7 +5607,24 @@ $this->tableOfContentsString .= $tableCon;
 // child support section 6
 function gen_child_support_8_00()
 {
-	$snippet = "<w:p w14:paraId='039E6D0E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$snippet = "<w:p w14:paraId='27D72475' w14:textId='77777777' w:rsidR='00505307' w:rsidRPr='00D52A55' w:rsidRDefault='006830FF'>
+	<w:pPr>
+		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+		<w:ind w:left='0' w:right='36' w:firstLine='0' />
+		<w:jc w:val='center' />
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+	</w:pPr>
+	<w:r w:rsidRPr='00D52A55'>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>SUPPORT OF THE CHILD(REN):</w:t>
+	</w:r>
+</w:p>
+	
+	<w:p w14:paraId='039E6D0E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:pBdr>
 			<w:top w:val='nil' />
@@ -5669,7 +5684,6 @@ $tableCon = " <w:p w14:paraId='702DD571' w14:textId='70495F34' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_01()
@@ -5710,8 +5724,27 @@ function gen_child_support_8_01()
 	</w:r>
 	<w:bookmarkEnd w:id='82' />
 	<w:r>
-		<w:t xml:space='preserve'>Child support shall be paid by " . $this->responses["parentAB1"] . " to " . $this->responses["parentAB2"] . " and calculated pursuant to the State child support guidelines worksheet. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>Child support shall be paid by </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> to </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and calculated pursuant to the State child support guidelines worksheet. </w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5737,7 +5770,6 @@ $tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_03()
@@ -5769,10 +5801,45 @@ function gen_child_support_8_03()
 	</w:r>
 	<w:bookmarkEnd w:id='84' />
 	<w:r>
-		<w:t xml:space='preserve'>. Child Support shall be paid by " . $this->responses["parentAB3"] . " to " . $this->responses["parentAB4"] . " by agreement of the Parents in the 
-		amount of $" . $this->responses["mutual-1"] . "/per Child per month for a total monthly child support amount of $" . $this->responses["mutual-2"] . ". Both Parents understand that child support
-		is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. Child Support shall be paid by </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB3"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> to </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB4"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> by agreement of the Parents in the amount of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["mutual-1"] . "/per Child</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per month for a total monthly child support amount of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["mutual-2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'>. Both Parents understand that child support is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
+</w:r>
+
 	<w:proofErr w:type='spellStart' />
 	<w:r>
 		<w:t>and</w:t>
@@ -5783,29 +5850,7 @@ function gen_child_support_8_03()
 	</w:r>
 </w:p>";
 
-$tableCon = "<w:p w14:paraId='3B6E6235' w14:textId='6132329F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
-	<w:pPr>
-	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	<w:ind w:left='0' w:right='0'/>
-	</w:pPr>
-	<w:hyperlink w:anchor='SoCChildSupportDifferentState' w:history='1'>
-	<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:t>8.02</w:t>
-	</w:r>
-	<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-		<w:t>Support of the Child(ren): Child Support Guidelines Amount When Parents Reside in Different States</w:t>
-	</w:r>
-	</w:hyperlink>
-</w:p>
-
-<w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+$tableCon = "<w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 	<w:pPr>
 	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 	<w:ind w:left='0' w:right='0'/>
@@ -5827,9 +5872,7 @@ $tableCon = "<w:p w14:paraId='3B6E6235' w14:textId='6132329F' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-//Put both 8.02 and 8.03 
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_04()
@@ -5914,7 +5957,6 @@ $tableCon = "<w:p w14:paraId='4B161A4D' w14:textId='71DB9B0A' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_05()
@@ -5959,7 +6001,7 @@ function gen_child_support_8_05()
 		<w:rPr>
 			<w:highlight w:val='yellow' />
 		</w:rPr>
-		<w:t>that</w:t>
+		<w:t>that " . $this->responses["accountAlternative"] . "</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 </w:p>";
@@ -5980,7 +6022,6 @@ $tableCon = "<w:p w14:paraId='29FBC8DA' w14:textId='6561EE79' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_06()
@@ -6016,6 +6057,7 @@ function gen_child_support_8_06()
 	<w:r>
 		<w:t>.</w:t>
 	</w:r>
+	<w:bookmarkEnd w:id='87' />
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -6033,8 +6075,6 @@ $tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_07()
@@ -6089,8 +6129,6 @@ $tableCon = "<w:p w14:paraId='4A046E1A' w14:textId='29630DCC' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_08()
@@ -6131,8 +6169,26 @@ function gen_child_support_8_08()
 		<w:t>S</w:t>
 	</w:r>
 	<w:r>
-		<w:t>. " . $this->responses["parentAB5"] . " shall cover the Child(ren)’s health insurance premiums in the amount of $" . $this->responses["insurancePremium"] . " per month.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB5"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover the Child(ren)’s health insurance premiums in the amount of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["insurancePremium"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per month.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -6158,7 +6214,6 @@ $tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09()
@@ -6256,8 +6311,27 @@ function gen_child_support_8_09A()
 	</w:r>
 	<w:bookmarkEnd w:id='91' />
 	<w:r>
-		<w:t>. " . $this->responses["parentAB6"] . " shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of $" . $this->responses["sole-1"] . " per month.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB6"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["sole-1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per month.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
@@ -6297,8 +6371,6 @@ $tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09B()
@@ -6336,9 +6408,36 @@ function gen_child_support_8_09B()
 	</w:r>
 	<w:bookmarkEnd w:id='92' />
 	<w:r>
-		<w:t>. Parent A shall cover " . $this->responses["split-1"] . "% and Parent B shall cover " . $this->responses["split-2"] . "% of the Child(ren)’s uninsured 
-		co-pays for health-related expenses premiums in the amount of $" . $this->responses["split-3"] . " per month.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["split-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["split-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["split-3"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per month.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -6375,8 +6474,6 @@ $tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09C()
@@ -6414,16 +6511,54 @@ function gen_child_support_8_09C()
 	</w:r>
 	<w:bookmarkEnd w:id='93' />
 	<w:r>
-		<w:t xml:space='preserve'>. Each Parent shall cover up to $" . $this->responses["threshold1"] . " per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. Each Parent shall cover up to </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["threshold1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t>In the event that</w:t>
+		<w:t xml:space='preserve'>In the event that</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-		<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds $" . $this->responses["threshold2"] . " per calendar year, then Parent A shall cover " . $this->responses["threshold3"] . "% and Parent B shall cover " . $this->responses["threshold4"] . "% of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["threshold2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> per calendar year, then " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["threshold3"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["threshold4"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -6458,78 +6593,8 @@ $tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307'
 		<w:t>Responsibility for Threshold Amount</w:t>
 	</w:r>
 	</w:hyperlink>
-</w:p>
-
-	<w:p w14:paraId='605C7136' w14:textId='104B8D8A' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	<w:ind w:left='0' w:right='0'/>
-	</w:pPr>
-	<w:r>
-	<w:tab/>
-	</w:r>
-	<w:r w:rsidR='00E616E1'>
-	<w:tab/>
-	</w:r>
-	<w:hyperlink w:anchor='SoCUninsuredCoPaysRecbyProvider' w:history='1'>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:t>8.09D</w:t>
-	</w:r>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-	</w:r>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-		<w:t>Definition of Uninsured Health-Related Expenses: Recommended by Providers</w:t>
-	</w:r>
-	</w:hyperlink>
-</w:p>
-
-<w:p w14:paraId='55700CFE' w14:textId='7140CB63' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
-	<w:pPr>
-	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	<w:ind w:left='0' w:right='0'/>
-	</w:pPr>
-	<w:r>
-	<w:tab/>
-	</w:r>
-	<w:r>
-	<w:tab/>
-	</w:r>
-	<w:hyperlink w:anchor='SoCUninsuredCoPaysAgreementbyParents' w:history='1'>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:t>8.09E</w:t>
-	</w:r>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-	</w:r>
-	<w:r w:rsidRPr='00D305A5'>
-		<w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-		<w:t>Definition of Uninsured Health-Related Expenses: Mutual Agreement of the Parents</w:t>
-	</w:r>
-	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10()
@@ -6580,8 +6645,6 @@ $tableCon = "<w:p w14:paraId='46AF528D' w14:textId='27F74889' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10A()
@@ -6619,8 +6682,17 @@ function gen_child_support_8_10A()
 	</w:r>
 	<w:bookmarkEnd w:id='97' />
 	<w:r>
-		<w:t>. " . $this->responses["parentAB_EC"] . " shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_EC"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -6657,8 +6729,6 @@ $tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10B()
@@ -6700,8 +6770,27 @@ function gen_child_support_8_10B()
 	</w:r>
 	<w:bookmarkEnd w:id='98' />
 	<w:r>
-		<w:t xml:space='preserve'> Parent A shall cover " . $this->responses["splitEC-1"] . "% and Parent B shall cover " . $this->responses["splitEC-2"] . "% of the Child(ren)’s extracurricular expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>  " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitEC-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitEC-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s extracurricular expenses.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -6738,8 +6827,6 @@ $tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10C()
@@ -6824,8 +6911,6 @@ $tableCon = "<w:p w14:paraId='6FC343D3' w14:textId='030E034B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10D()
@@ -6902,7 +6987,6 @@ $tableCon = "<w:p w14:paraId='310DDEA1' w14:textId='2C68D17D' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11()
@@ -6935,7 +7019,8 @@ function gen_child_support_8_11()
 	<w:r>
 		<w:t>.</w:t>
 	</w:r>
-</w:p>";
+</w:p>
+<w:bookmarkEnd w:id='101' />";
 
 $tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 	<w:pPr>
@@ -6960,7 +7045,6 @@ $tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11A()
@@ -6998,8 +7082,17 @@ function gen_child_support_8_11A()
 	</w:r>
 	<w:bookmarkEnd w:id='102' />
 	<w:r>
-		<w:t>. " . $this->responses["parentAB_Priv"] . " shall cover 100% of the Child(ren)’s private school expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_Priv"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s private school expenses.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7037,7 +7130,6 @@ $tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11B()
@@ -7075,8 +7167,27 @@ function gen_child_support_8_11B()
 	</w:r>
 	<w:bookmarkEnd w:id='103' />
 	<w:r>
-		<w:t>. Parent A shall cover " . $this->responses["splitPriv-1"] . "% and Parent B shall cover " . $this->responses["splitPriv-2"] . "% of the Child(ren)’s private school expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitPriv-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitPriv-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s private school expenses.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7114,7 +7225,6 @@ $tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11C()
@@ -7190,8 +7300,6 @@ $tableCon = "<w:p w14:paraId='780CA74D' w14:textId='1B6EE2A0' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11D()
@@ -7273,8 +7381,6 @@ $tableCon = "<w:p w14:paraId='187B3720' w14:textId='22503B53' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11E()
@@ -7355,8 +7461,6 @@ $tableCon = "<w:p w14:paraId='49FE8DBB' w14:textId='1E17DAB7' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12()
@@ -7415,7 +7519,6 @@ $tableCon = "<w:p w14:paraId='4590273C' w14:textId='76BF38BF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12A()
@@ -7450,8 +7553,18 @@ function gen_child_support_8_12A()
 	</w:r>
 	<w:bookmarkEnd w:id='108' />
 	<w:r>
-		<w:t xml:space='preserve'>.  " . $this->responses["parentAB_High"] . " shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>.  </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_High"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='463DFCA4' w14:textId='6D96CAE1' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7527,8 +7640,27 @@ function gen_child_support_8_12B()
 	</w:r>
 	<w:bookmarkEnd w:id='109' />
 	<w:r>
-		<w:t>. Parent A shall cover " . $this->responses["splitHigh-1"] . "% and Parent B shall cover " . $this->responses["splitHigh-2"] . "% of the Child(ren)’s post-high school education expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitHigh-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["splitHigh-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s post-high school education expenses.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7566,7 +7698,6 @@ $tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12C()
@@ -7607,9 +7738,18 @@ function gen_child_support_8_12C()
 	</w:r>
 	<w:bookmarkEnd w:id='110' />
 	<w:r>
-		<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then " . $this->responses["parentAB_Sole529"] . " shall 
-		cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_Sole529"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7659,7 +7799,6 @@ $tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12D()
@@ -7691,9 +7830,26 @@ function gen_child_support_8_12D()
 	</w:r>
 	<w:bookmarkEnd w:id='111' />
 	<w:r>
-		<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then Parent A shall cover " . $this->responses["split529-1"] . "% and 
-		Parent B shall cover " . $this->responses["split529-2"] . "% of the Child(ren)’s remaining post-high school education expenses.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["split529-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["split529-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)’s remaining post-high school education expenses.</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7742,8 +7898,6 @@ $tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12E()
@@ -7781,10 +7935,45 @@ function gen_child_support_8_12E()
 	</w:r>
 	<w:bookmarkEnd w:id='112' />
 	<w:r>
-		<w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that Parent A shall cover " . $this->responses["postCap-1"] . "% up to a cap 
-		of $" . $this->responses["postCapA"] . " amount per academic school year and Parent B shall cover " . $this->responses["postCap-2"] . "% up to a cap 
-		of $" . $this->responses["postCapB"] . " amount per academic school year. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["postCap-1"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> up to a cap of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["postCapA"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> amount per academic school year and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["postCap-2"] . "%</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> up to a cap of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$" . $this->responses["postCapB"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> amount per academic school year. </w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7821,8 +8010,6 @@ $tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12F()
@@ -7890,8 +8077,6 @@ $tableCon = " <w:p w14:paraId='7C893177' w14:textId='4D6C0F72' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12G()
@@ -7984,8 +8169,6 @@ $tableCon = "<w:p w14:paraId='363B8DAE' w14:textId='4D423F75' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12H()
@@ -8060,7 +8243,6 @@ $tableCon = "<w:p w14:paraId='25B711F9' w14:textId='25570154' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13()
@@ -8119,7 +8301,6 @@ $tableCon = "<w:p w14:paraId='7B39350D' w14:textId='46423AD8' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13A()
@@ -8160,8 +8341,17 @@ function gen_child_support_8_13A()
 		<w:t>)</w:t>
 	</w:r>
 	<w:r>
-		<w:t xml:space='preserve'>. " . $this->responses["parentAB_taxSole"] . " shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_taxSole"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8198,8 +8388,6 @@ $tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13B()
@@ -8237,22 +8425,36 @@ function gen_child_support_8_13B()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t>)</w:t>
+		<w:t xml:space='preserve'>)</w:t>
 	</w:r>
 	<w:r>
-		<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATax"] . "</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to claim </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["partyATax"] . "</w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t>_(</w:t>
+		<w:t xml:space='preserve'> (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-		<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTax"] . "</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall be entitled to claim </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["partyBTax"] . "</w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t>_(</w:t>
+		<w:t xml:space='preserve'> (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
@@ -8295,8 +8497,6 @@ $tableCon = "<w:p w14:paraId='2D4E2B97' w14:textId='298C2014' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13C()
@@ -8331,19 +8531,33 @@ function gen_child_support_8_13C()
 	</w:r>
 	<w:bookmarkEnd w:id='119' />
 	<w:r>
-		<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATaxAlt"] . "</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to claim </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["partyATaxAlt"] . "</w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t>_(</w:t>
+		<w:t xml:space='preserve'> (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-		<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTaxAlt"] . "</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . " shall be entitled to claim </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["partyBTaxAlt"] . "</w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t>_(</w:t>
+		<w:t xml:space='preserve'> (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
@@ -8385,8 +8599,6 @@ $tableCon = "<w:p w14:paraId='2AEB034B' w14:textId='049FDB31' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13D()
@@ -8427,12 +8639,32 @@ function gen_child_support_8_13D()
 		<w:t>)</w:t>
 	</w:r>
 	<w:r>
-		<w:t xml:space='preserve'>. Parent A shall be entitled to claim the Child(ren) as dependent(s) for tax purposes </w:t>
-	</w:r>
-	<w:r>
-		<w:lastRenderedPageBreak />
-		<w:t xml:space='preserve'>in even years. Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall be entitled to claim the Child(ren) as dependent(s) for tax purposes </w:t>
+</w:r>
+
+<w:r>
+    <w:lastRenderedPageBreak />
+    <w:t xml:space='preserve'>in even years. </w:t>
+</w:r>
+<w:r>
+<w:rPr>
+<w:highlight w:val='yellow' />
+</w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8469,8 +8701,6 @@ $tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14()
@@ -8528,8 +8758,6 @@ $tableCon = "<w:p w14:paraId='73F47652' w14:textId='5F068939' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14A()
@@ -8564,8 +8792,21 @@ function gen_child_support_8_14A()
 	</w:r>
 	<w:bookmarkEnd w:id='122' />
 	<w:r>
-		<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within " . $this->responses["timeVal"] . " days.</w:t>
-	</w:r>
+    <w:t>.</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["timeVal"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> days.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8605,8 +8846,6 @@ $tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14B()
@@ -8693,8 +8932,6 @@ $tableCon = "<w:p w14:paraId='42FF5BC3' w14:textId='28E01CEF' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14C()
@@ -8770,8 +9007,6 @@ $tableCon = "<w:p w14:paraId='597031A3' w14:textId='7AEC5A9C' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14D()
@@ -8847,8 +9082,6 @@ $tableCon = " <w:p w14:paraId='402D2656' w14:textId='3D787A27' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14E()
@@ -8926,16 +9159,55 @@ $tableCon = "<w:p w14:paraId='1F248F34' w14:textId='26D54941' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14F()
 {
-	$content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, show a blank line instead of displaying nothing
+	$content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, do not output the "or ___" part
 	if (empty($content)) {
-		$content = "________";
-	}
+		$snippet = "<w:p w14:paraId='0433F65B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='36' w:firstLine='0' />
+			<w:jc w:val='both' />
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+		</w:pPr>
+		<w:r>
+			<w:tab />
+		</w:r>
+		<w:bookmarkStart w:id='127' w:name='SoCProtocolsforReimbursmentMethod' />
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:t>8.14F</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single' />
+			</w:rPr>
+			<w:t>REIMBURSEMENT METHOD</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='127' />
+		<w:r>
+			<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or application.</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b />
+			</w:rPr>
+			<w:tab />
+		</w:r>
+	</w:p>";
+	} else {
 	$snippet = "<w:p w14:paraId='0433F65B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
@@ -8969,9 +9241,20 @@ function gen_child_support_8_14F()
 	</w:r>
 	<w:bookmarkEnd w:id='127' />
 	<w:r>
-		<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually 
-		agreed upon parenting expense tool or application, or $content.</w:t>
-	</w:r>
+    <w:t>.</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or application, or </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$content</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'>.</w:t>
+</w:r>
 	<w:r>
 		<w:rPr>
 			<w:b />
@@ -8979,7 +9262,7 @@ function gen_child_support_8_14F()
 		<w:tab />
 	</w:r>
 </w:p>";
-
+    }
 $tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
@@ -9014,8 +9297,6 @@ $tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 } //end of child support section 6
 

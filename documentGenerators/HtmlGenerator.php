@@ -1891,8 +1891,8 @@ class HtmlGenerator extends documentGenerator
         FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per
         calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
         that any Child's uninsured co-pays for health-related expenses paid by either
-        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
-        " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
+        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
+        " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums exceeding the threshold amount.</p>";
         
         $this->fileContentString .= $snippet;
@@ -2165,8 +2165,8 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
         PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
-        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
-        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
+        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
+        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
         
         $this->fileContentString .= $snippet;
@@ -2277,9 +2277,9 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
-        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " shall be entitled to
-        claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
-        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span> (Child's Initials) as a dependent for
+        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to
+        claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span> (Child's Initials) as a dependent for tax purposes every year.&nbsp;
+        " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span> (Child's Initials) as a dependent for
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
