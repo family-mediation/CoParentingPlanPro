@@ -1514,11 +1514,45 @@ function gen_children_4_00(int $num) {
 
 function gen_children_4_00_individual(int $childNum, string $letter) {
 	if ($childNum == 1) {
-		$childrenInfo = "Child A (“". $this->responses["child1Initials"] . "”) born in ( ". $this->responses["child1Birthday"] . ")";
+		$childrenInfo = "Child A </w:t></w:r>
+
+		<w:r>
+		<w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+	<w:t xml:space='preserve'>(“". $this->responses["child1Initials"] . "”)</w:t>
+	</w:r>
+
+	<w:r><w:t xml:space='preserve'> born in </w:t></w:r>
+
+	<w:r>
+		<w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+	 <w:t>(" . $this->responses["child1Birthday"] . ")</w:t>
+	 </w:r>	
+
+	 <w:r><w:t xml:space='preserve'>";
 	} else {
-		$childrenInfo = ", Child $letter (“"
-			. $this->responses["child" . $childNum . "Initials"] . "”) born in ("
-			. $this->responses["child" . $childNum . "Birthday"] . ")";
+		$childrenInfo = ", Child $letter </w:t></w:r>
+
+		<w:r>
+		<w:rPr>
+		<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t xml:space='preserve'>(“". $this->responses["child" . $childNum . "Initials"] . "”)</w:t>
+		</w:r>
+
+		<w:r><w:t xml:space='preserve'> born in </w:t></w:r>
+
+		<w:r>
+		<w:rPr>
+		<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>(". $this->responses["child" . $childNum . "Birthday"] . ")</w:t>
+		</w:r>
+
+		<w:r><w:t xml:space='preserve'>";
 	}
     $this->fileContentString .= $childrenInfo;
 }
