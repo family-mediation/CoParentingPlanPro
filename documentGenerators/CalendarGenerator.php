@@ -14,7 +14,7 @@ class CalendarGenerator
 		$this->fileOutput = fopen("./".$fileName,"w+");
  	}
 
-	private function generateEvent($eventTitle,$eventDescription) : string
+	private function generateEvent($eventTitle,$eventDescription, $recurrence = "FREQ=WEEKLY;INTERVAL=2;BYDAY=MO,TU,WE,TH,FR") : string
 	{
 				// Define the start date and end date of the event
 				$start_date = new DateTime('2015-09-07 12:00:00', new DateTimeZone('Pacific/Honolulu'));
@@ -22,7 +22,7 @@ class CalendarGenerator
 				$end_repeat_date = new DateTime('2015-12-28 22:00:00', new DateTimeZone('Pacific/Honolulu'));
 		
 				// Generate RRULE
-				$rrule = 'FREQ=WEEKLY;INTERVAL=1;COUNT=7;BYDAY=MO';
+				$rrule = $recurrence;
 				// Format the dates according to iCalendar format
 				$start_date_formatted = $start_date->format('Ymd\THis');
 				$end_date_formatted = $end_date->format('Ymd\THis');
@@ -48,15 +48,15 @@ class CalendarGenerator
 
 	}
 // Generate the different components.
-	public function genHeader($calName = "Parenting Time Schedule")
+	public function genHeader()
 	{
 	   
-	   $headerString .=  "BEGIN:VCALENDAR";
+	   $headerString =  "BEGIN:VCALENDAR";
        $headerString .=  "PRODID:-//Google Inc//Google Calendar 70.9054//EN";
        $headerString .=  "VERSION:2.0";
        $headerString .=  "CALSCALE:GREGORIAN";
        $headerString .=  "METHOD:PUBLISH";
-       $headerString .=  "X-WR-CALNAME:wjs7@hawaii.edu";
+       $headerString .=  "X-WR-CALNAME:Parenting Time Schedule";
        $headerString .=  "X-WR-TIMEZONE:Pacific/Honolulu";
        $headerString .=  "BEGIN:VTIMEZONE";
        $headerString .=  "TZID:Pacific/Honolulu";
@@ -89,7 +89,7 @@ class CalendarGenerator
 	/* TODO:// HEY YOU GUYS, THIS IS WHERE ALL OF THE LOGIC GOES.*/
     public function generateDocument()
 	{
-		$this->genHeader();
+			$this->genHeader();
             switch ($this->responses['schoolYearSchedule']) {
                 // Equal Timesharing schedules.
                 case "2-2-3":

@@ -28,6 +28,7 @@ if($documents->open($zipFilePath . " download.zip",ZipArchive::CREATE))
 {
     $documents->addGlob($filePath . "/*.docx" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
     $documents->addGlob($filePath . "/*.html" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
+    $documents->addGlob($filePath . "/*.ics" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
     $documents->close();
 }
 else
