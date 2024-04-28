@@ -2831,7 +2831,7 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
     function gen_physical_custody_timesharing_6_03(array $res) {
         $table = new HolidayTableWord();
         $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-        /*$childrenRows = '';
+        $childrenRows = '';
         for ($i = 1; $i <= 6; $i++) {
             $initials = $this->responses['child' . $i . 'Initials'];
             $birthday = $this->responses['child' . $i . 'Birthday'];
@@ -2886,9 +2886,9 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
             }
         }
         $end = $table->getEnd();
-        */$this->fileContentString .= $holidayTable;
-//        $this->fileContentString .= $childrenRows;
-//        $this->fileContentString .= $end;
+        $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
