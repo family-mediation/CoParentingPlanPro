@@ -1506,10 +1506,10 @@ function gen_children_4_00(int $num) {
 
 function gen_children_4_00_individual(int $childNum, string $letter) {
 	if ($childNum == 1) {
-		$childrenInfo = "Child A (“". $this->responses["partyAFirst"] . "”) born in ( ". $this->responses["child1Birthday"] . ")";
+		$childrenInfo = "Child A (“". $this->responses["child1Initials"] . "”) born in ( ". $this->responses["child1Birthday"] . ")";
 	} else {
 		$childrenInfo = ", Child $letter (“"
-			. $this->responses["child" . $childNum . "Birthday"] . "”) born in ("
+			. $this->responses["child" . $childNum . "Initials"] . "”) born in ("
 			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
 	 $childrenInfo;
@@ -10487,7 +10487,8 @@ $this->tableOfContentsString .= $tableCon;
 } //end of child support section 6
 
 //Other Section
-function gen_other_9_00() 
+
+function gen_other_9_00_header() 
 {
 	$snippet = "<w:p w14:paraId='587EA373' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
@@ -10504,7 +10505,14 @@ function gen_other_9_00()
 		</w:rPr>
 		<w:t>OTHER ISSUES:</w:t>
 	</w:r>
-</w:p>
+</w:p>";
+$this->fileContentString .= $snippet;
+
+
+}
+function gen_other_9_00() 
+{
+	$snippet = "
 <w:p w14:paraId='0D515AEE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>

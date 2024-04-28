@@ -2431,12 +2431,17 @@ class HtmlGenerator extends documentGenerator
     }   // end of child support
 
     //Other section
-    function gen_other_9_00()
+    function gen_other_9_00_header() 
     {
         $header = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
         margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
-        line-height:150%'><u>OTHER ISSUES:</u></p>
-        
+        line-height:150%'><u>OTHER ISSUES:</u></p>";
+        $this->fileContentString .= $header;
+
+    }
+    function gen_other_9_00()
+    {
+        $header = "
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT

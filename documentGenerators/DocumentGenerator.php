@@ -135,6 +135,7 @@ abstract class documentGenerator
 	public abstract function gen_child_support_8_14F();
 
 	//Section 8 Other section
+	public abstract function gen_other_9_00_header(); 
 	public abstract function gen_other_9_00();
 	public abstract function gen_other_9_01();
 	public abstract function gen_other_9_02();
@@ -463,8 +464,8 @@ abstract class documentGenerator
 		}
 
 		//Optional communication page2
-		if (isset($_SESSION['responses']['commbetweenCP'])) {
-		  foreach($_SESSION['responses']['commbetweenCP']as $x) {
+		if (isset($this->responses['commbetweenCP'])) {
+		  foreach ($this->responses['commbetweenCP']as $x) {
 			switch ($x) {
 				//Communication Between Co-Parents:
 				case '7.04':
@@ -670,8 +671,10 @@ abstract class documentGenerator
 
 
 		//Section 8 Other section
-		if (isset($_SESSION['responses']['other'])) {
-			foreach($_SESSION['responses']['other'] as $x) {
+		$this->gen_other_9_00_header();
+		
+		if (isset($this->responses['other'])) {
+			foreach ($this->responses['other'] as $x) {
 			  switch ($x) {
 				  case '9.00':
 					  $this->gen_other_9_00();
