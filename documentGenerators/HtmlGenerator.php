@@ -749,21 +749,65 @@ class HtmlGenerator extends documentGenerator
     }
 
     // Holiday Table.
-    function gen_physical_custody_timesharing_6_03() {
+    function gen_physical_custody_timesharing_6_03(array $res) {
         $toc = "<p class=MsoNormal style='margin:0in;line-height:normal'><a
         href=\"#PhysicalCustodyHolidaysandSpecialDays\">6.03&nbsp;&nbsp; Physical Custody and
         Timesharing: Holidays and Special Days</a></p>";
         $this->tableOfContentsString .= $toc;
-
         $table = new HolidayTable();
-
-        $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-        $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
-        for ($i = 2; $i <= 6; $i++) {
+        $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = '';
+        for ($i = 1; $i <= 6; $i++) {
             $initials = $this->responses['child' . $i . 'Initials'];
             $birthday = $this->responses['child' . $i . 'Birthday'];
+            $partyARes = 'Blank';
+            $partyBRes = 'Blank';
             if ($initials != "" && $birthday != "") {
-                $childrenRows .= $table->getChildren($initials, $birthday);
+                switch ($this->responses['child' . $i . 'A']) {
+                    case 'child' . $i . 'BlankA':
+                        $partyARes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryA':
+                        $partyARes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenA':
+                        $partyARes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddA':
+                        $partyARes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachA':
+                        $partyARes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitA':
+                        $partyARes = 'Split';
+                        break;
+                    default:
+                        console_log("error in childrenA switch - HtmlGen");
+                }
+                switch ($this->responses['child' . $i . 'B']) {
+                    case 'child' . $i . 'BlankB':
+                        $partyBRes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryB':
+                        $partyBRes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenB':
+                        $partyBRes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddB':
+                        $partyBRes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachB':
+                        $partyBRes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitB':
+                        $partyBRes = 'Split';
+                        break;
+                    default:
+                        console_log("error in children switch - HtmlGen");
+                }
+                $childrenRows .= $table->getChildren($initials, $birthday, $partyARes, $partyBRes);
             }
         }
         $end = $table->getEnd();

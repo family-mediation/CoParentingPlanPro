@@ -12,6 +12,12 @@ include 'HolidayTableWord.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
 {
+	public function __construct(string $fileName, string $fileType, array $responses)
+	{
+		$this->fileName = $fileName;
+		$this->responses = $responses;
+		$this->fileType = $fileType;
+	}
 	function genHeader()
 	{
 		
@@ -758,11 +764,10 @@ function gen_legal_custody_5_05A()
 		</w:r>
 	</w:hyperlink>
 	</w:p>";
-	$this -> tableOfContentsString .= $tableCon;
+        $this->fileContentString .= $snippet;
+        $this -> tableOfContentsString .= $tableCon;
+	} //end of legal custody section 3
 
-	 $snippet;
-	$this->fileContentString .= $snippet;
-}
 function gen_legal_custody_5_05B()
 {   // 5.02 
 	$snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -2241,7 +2246,6 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 function gen_physical_custody_timesharing_6_02BOptional() {
 	$time_break = new Thanksgiving();
 	$thanksgiving = $time_break->get_time();
-	 $thanksgiving;
 	$this->fileContentString .= $thanksgiving;
 }
 function gen_physical_custody_timesharing_6_02C(string $type) {
@@ -2824,22 +2828,68 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			 "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
 	}
 }
-function gen_physical_custody_timesharing_6_03() {
-	$table = new HolidayTableWord();
-    $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-    $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
-    for ($i = 2; $i <= 6; $i++) {
-        $initials = $this->responses['child' . $i . 'Initials'];
-        $birthday = $this->responses['child' . $i . 'Birthday'];
-        if ($initials != "" && $birthday != "") {
-            $childrenRows .= $table->getChildren($initials, $birthday);
+    function gen_physical_custody_timesharing_6_03(array $res) {
+        $table = new HolidayTableWord();
+        $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = '';
+        for ($i = 1; $i <= 6; $i++) {
+            $initials = $this->responses['child' . $i . 'Initials'];
+            $birthday = $this->responses['child' . $i . 'Birthday'];
+            $partyARes = 'Blank';
+            $partyBRes = 'Blank';
+            if ($initials != "" && $birthday != "") {
+                switch ($this->responses['child' . $i . 'A']) {
+                    case 'child' . $i . 'BlankA':
+                        $partyARes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryA':
+                        $partyARes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenA':
+                        $partyARes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddA':
+                        $partyARes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachA':
+                        $partyARes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitA':
+                        $partyARes = 'Split';
+                        break;
+                    default:
+                        console_log("error in childrenA switch - HtmlGen");
+                }
+                switch ($this->responses['child' . $i . 'B']) {
+                    case 'child' . $i . 'BlankB':
+                        $partyBRes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryB':
+                        $partyBRes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenB':
+                        $partyBRes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddB':
+                        $partyBRes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachB':
+                        $partyBRes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitB':
+                        $partyBRes = 'Split';
+                        break;
+                    default:
+                        console_log("error in children switch - HtmlGen");
+                }
+                $childrenRows .= $table->getChildren($initials, $birthday, $partyARes, $partyBRes);
+            }
         }
+        $end = $table->getEnd();
+        $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
-    $end = $table->getEnd();
-    $this->fileContentString .= $holidayTable;
-    $this->fileContentString .= $childrenRows;
-    $this->fileContentString .= $end;
-}
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 		  <w:pPr>
@@ -10098,7 +10148,7 @@ function gen_legal_10_02() {
 		// Zip the folder and rename it to .docx
 		$zipOutput = new ZipArchive;
 
-		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
+		if($zipOutput->open($this->fileName . ".zip",(ZipArchive::CREATE)))
 		{
 		    $folderRefsToZip = $this->fileName ."/_rels/.rels";
 		    $folderLevel1ToZip = $this->fileName ."/*.*";
@@ -10117,7 +10167,7 @@ function gen_legal_10_02() {
         {
            		$zipOutput->close();
         }
-		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
+		rename($this->fileName . ".zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
 	}
 

@@ -220,133 +220,705 @@
               </tr>
               <tr>
                 <td>New Year's Day (January 1)</td>
-                <td><input class="form-control" type="radio" name="newYears" required></td>
-                <td><input class="form-control" type="radio" name="newYears" required></td>
+                <td>
+                  <label for="newYearsA">
+                    <select id="newYearsA" name="newYearsA" required>
+                      <option value="newYearsBlankA"></option>
+                      <option value="newYearsEveryA">Every Year</option>
+                      <option value="newYearsEvenA">Even Years</option>
+                      <option value="newYearsOddA">Odd Years</option>
+                      <option value="newYearsAttachA">Attach to Weekend</option>
+                      <option value="newYearsSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="newYearsB">
+                    <select id="newYearsB" name="newYearsB" required>
+                      <option value="newYearsBlankB"></option>
+                      <option value="newYearsEveryB">Every Year</option>
+                      <option value="newYearsEvenB">Even Years</option>
+                      <option value="newYearsOddB">Odd Years</option>
+                      <option value="newYearsAttachB">Attach to Weekend</option>
+                      <option value="newYearsSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Martin Luther King Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="mlk"></td>
-                <td><input class="form-control" type="radio" name="mlk"></td>
+                <td>
+                  <label for="mlkA">
+                    <select id="mlkA" name="mlkA" required>
+                      <option value="mlkBlankA"></option>
+                      <option value="mlkEveryA">Every Year</option>
+                      <option value="mlkEvenA">Even Years</option>
+                      <option value="mlkOddA">Odd Years</option>
+                      <option value="mlkAttachA">Attach to Weekend</option>
+                      <option value="mlkSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="mlkB">
+                    <select id="mlkB" name="mlkB" required>
+                      <option value="mlkBlankB"></option>
+                      <option value="mlkEveryB">Every Year</option>
+                      <option value="mlkEvenB">Even Years</option>
+                      <option value="mlkOddB">Odd Years</option>
+                      <option value="mlkAttachB">Attach to Weekend</option>
+                      <option value="mlkSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>President's Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="presidents"></td>
-                <td><input class="form-control" type="radio" name="presidents"></td>
+                <td>
+                  <label for="presidentsA">
+                    <select id="presidentsA" name="presidentsA" required>
+                      <option value="presidentsBlankA"></option>
+                      <option value="presidentsEveryA">Every Year</option>
+                      <option value="presidentsEvenA">Even Years</option>
+                      <option value="presidentsOddA">Odd Years</option>
+                      <option value="presidentsAttachA">Attach to Weekend</option>
+                      <option value="presidentsSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="presidentsB">
+                    <select id="presidentsB" name="presidentsB" required>
+                      <option value="presidentsBlankB"></option>
+                      <option value="presidentsEveryB">Every Year</option>
+                      <option value="presidentsEvenB">Even Years</option>
+                      <option value="presidentsOddB">Odd Years</option>
+                      <option value="presidentsAttachB">Attach to Weekend</option>
+                      <option value="presidentsSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Kuhio Day (Friday)</td>
-                <td><input class="form-control" type="radio" name="kuhio"></td>
-                <td><input class="form-control" type="radio" name="kuhio"></td>
+                <td>
+                  <label for="kuhioA">
+                    <select id="kuhioA" name="kuhioA" required>
+                      <option value="kuhioBlankA"></option>
+                      <option value="kuhioEveryA">Every Year</option>
+                      <option value="kuhioEvenA">Even Years</option>
+                      <option value="kuhioOddA">Odd Years</option>
+                      <option value="kuhioAttachA">Attach to Weekend</option>
+                      <option value="kuhioSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="kuhioB">
+                    <select id="kuhioB" name="kuhioB" required>
+                      <option value="kuhioBlankB"></option>
+                      <option value="kuhioEveryB">Every Year</option>
+                      <option value="kuhioEvenB">Even Years</option>
+                      <option value="kuhioOddB">Odd Years</option>
+                      <option value="kuhioAttachB">Attach to Weekend</option>
+                      <option value="kuhioSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Good Friday (Friday)</td>
-                <td><input class="form-control" type="radio" name="goodFriday"></td>
-                <td><input class="form-control" type="radio" name="goodFriday"></td>
+                <td>
+                  <label for="goodFridayA">
+                    <select id="goodFridayA" name="goodFridayA" required>
+                      <option value="goodFridayBlankA"></option>
+                      <option value="goodFridayEveryA">Every Year</option>
+                      <option value="goodFridayEvenA">Even Years</option>
+                      <option value="goodFridayOddA">Odd Years</option>
+                      <option value="goodFridayAttachA">Attach to Weekend</option>
+                      <option value="goodFridaySplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="goodFridayB">
+                    <select id="goodFridayB" name="goodFridayB" required>
+                      <option value="goodFridayBlankB"></option>
+                      <option value="goodFridayEveryB">Every Year</option>
+                      <option value="goodFridayEvenB">Even Years</option>
+                      <option value="goodFridayOddB">Odd Years</option>
+                      <option value="goodFridayAttachB">Attach to Weekend</option>
+                      <option value="goodFridaySplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Easter (Sunday)</td>
-                <td><input class="form-control" type="radio" name="easter"></td>
-                <td><input class="form-control" type="radio" name="easter"></td>
+                <td>
+                  <label for="easterA">
+                    <select id="easterA" name="easterA" required>
+                      <option value="easterBlankA"></option>
+                      <option value="easterEveryA">Every Year</option>
+                      <option value="easterEvenA">Even Years</option>
+                      <option value="easterOddA">Odd Years</option>
+                      <option value="easterAttachA">Attach to Weekend</option>
+                      <option value="easterSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="easterB">
+                    <select id="easterB" name="easterB" required>
+                      <option value="easterBlankB"></option>
+                      <option value="easterEveryB">Every Year</option>
+                      <option value="easterEvenB">Even Years</option>
+                      <option value="easterOddB">Odd Years</option>
+                      <option value="easterAttachB">Attach to Weekend</option>
+                      <option value="easterSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Mother's Day (Sunday)</td>
-                <td><input class="form-control" type="radio" name="mothers"></td>
-                <td><input class="form-control" type="radio" name="mothers"></td>
+                <td>
+                  <label for="mothersA">
+                    <select id="mothersA" name="mothersA" required>
+                      <option value="mothersBlankA"></option>
+                      <option value="mothersEveryA">Every Year</option>
+                      <option value="mothersEvenA">Even Years</option>
+                      <option value="mothersOddA">Odd Years</option>
+                      <option value="mothersAttachA">Attach to Weekend</option>
+                      <option value="mothersSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="mothersB">
+                    <select id="mothersB" name="mothersB" required>
+                      <option value="mothersBlankB"></option>
+                      <option value="mothersEveryB">Every Year</option>
+                      <option value="mothersEvenB">Even Years</option>
+                      <option value="mothersOddB">Odd Years</option>
+                      <option value="mothersAttachB">Attach to Weekend</option>
+                      <option value="mothersSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Memorial Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="memorial"></td>
-                <td><input class="form-control" type="radio" name="memorial"></td>
+                <td>
+                  <label for="memorialA">
+                    <select id="memorialA" name="memorialA" required>
+                      <option value="memorialBlankA"></option>
+                      <option value="memorialEveryA">Every Year</option>
+                      <option value="memorialEvenA">Even Years</option>
+                      <option value="memorialOddA">Odd Years</option>
+                      <option value="memorialAttachA">Attach to Weekend</option>
+                      <option value="memorialSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="memorialB">
+                    <select id="memorialB" name="memorialB" required>
+                      <option value="memorialBlankB"></option>
+                      <option value="memorialEveryB">Every Year</option>
+                      <option value="memorialEvenB">Even Years</option>
+                      <option value="memorialOddB">Odd Years</option>
+                      <option value="memorialAttachB">Attach to Weekend</option>
+                      <option value="memorialSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Father's Day (Sunday)</td>
-                <td><input class="form-control" type="radio" name="fathers"></td>
-                <td><input class="form-control" type="radio" name="fathers"></td>
+                <td>
+                  <label for="fathersA">
+                    <select id="fathersA" name="fathersA" required>
+                      <option value="fathersBlankA"></option>
+                      <option value="fathersEveryA">Every Year</option>
+                      <option value="fathersEvenA">Even Years</option>
+                      <option value="fathersOddA">Odd Years</option>
+                      <option value="fathersAttachA">Attach to Weekend</option>
+                      <option value="fathersSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="fathersB">
+                    <select id="fathersB" name="fathersB" required>
+                      <option value="fathersBlankB"></option>
+                      <option value="fathersEveryB">Every Year</option>
+                      <option value="fathersEvenB">Even Years</option>
+                      <option value="fathersOddB">Odd Years</option>
+                      <option value="fathersAttachB">Attach to Weekend</option>
+                      <option value="fathersSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Fourth of July (July 4)</td>
-                <td><input class="form-control" type="radio" name="julyFourth" ></td>
-                <td><input class="form-control" type="radio" name="julyFourth" ></td>
+                <td>
+                  <label for="julyFourthA">
+                    <select id="julyFourthA" name="julyFourthA" required>
+                      <option value="julyFourthA"></option>
+                      <option value="julyFourthA">Every Year</option>
+                      <option value="julyFourthEvenA">Even Years</option>
+                      <option value="julyFourthOddA">Odd Years</option>
+                      <option value="julyFourthAttachA">Attach to Weekend</option>
+                      <option value="julyFourthSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="julyFourthB">
+                    <select id="julyFourthB" name="julyFourthB" required>
+                      <option value="julyFourthBlankB"></option>
+                      <option value="julyFourthEveryB">Every Year</option>
+                      <option value="julyFourthEvenB">Even Years</option>
+                      <option value="julyFourthOddB">Odd Years</option>
+                      <option value="julyFourthAttachB">Attach to Weekend</option>
+                      <option value="julyFourthSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Statehood Day (Friday)</td>
-                <td><input class="form-control" type="radio" name="statehood" ></td>
-                <td><input class="form-control" type="radio" name="statehood" ></td>
+                <td>
+                  <label for="statehoodA">
+                    <select id="statehoodA" name="statehoodA" required>
+                      <option value="statehoodA"></option>
+                      <option value="statehoodA">Every Year</option>
+                      <option value="statehoodEvenA">Even Years</option>
+                      <option value="statehoodOddA">Odd Years</option>
+                      <option value="statehoodAttachA">Attach to Weekend</option>
+                      <option value="statehoodSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="statehoodB">
+                    <select id="statehoodB" name="statehoodB" required>
+                      <option value="statehoodBlankB"></option>
+                      <option value="statehoodEveryB">Every Year</option>
+                      <option value="statehoodEvenB">Even Years</option>
+                      <option value="statehoodOddB">Odd Years</option>
+                      <option value="statehoodAttachB">Attach to Weekend</option>
+                      <option value="statehoodSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Labor Day (Monday)</td>
-                <td><input class="form-control" type="radio" name="labor" ></td>
-                <td><input class="form-control" type="radio" name="labor" ></td>
+                <td>
+                  <label for="laborA">
+                    <select id="laborA" name="laborA" required>
+                      <option value="laborA"></option>
+                      <option value="laborA">Every Year</option>
+                      <option value="laborEvenA">Even Years</option>
+                      <option value="laborOddA">Odd Years</option>
+                      <option value="laborAttachA">Attach to Weekend</option>
+                      <option value="laborSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="laborB">
+                    <select id="laborB" name="laborB" required>
+                      <option value="laborBlankB"></option>
+                      <option value="laborEveryB">Every Year</option>
+                      <option value="laborEvenB">Even Years</option>
+                      <option value="laborOddB">Odd Years</option>
+                      <option value="laborAttachB">Attach to Weekend</option>
+                      <option value="laborSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Election Day (Tuesday)</td>
-                <td><input class="form-control" type="radio" name="election" ></td>
-                <td><input class="form-control" type="radio" name="election" ></td>
+                <td>
+                  <label for="electionA">
+                    <select id="electionA" name="electionA" required>
+                      <option value="electionA"></option>
+                      <option value="electionA">Every Year</option>
+                      <option value="electionEvenA">Even Years</option>
+                      <option value="electionOddA">Odd Years</option>
+                      <option value="electionAttachA">Attach to Weekend</option>
+                      <option value="electionSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="electionB">
+                    <select id="electionB" name="electionB" required>
+                      <option value="electionBlankB"></option>
+                      <option value="electionEveryB">Every Year</option>
+                      <option value="electionEvenB">Even Years</option>
+                      <option value="electionOddB">Odd Years</option>
+                      <option value="electionAttachB">Attach to Weekend</option>
+                      <option value="electionSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Veteran's Day (November 11)</td>
-                <td><input class="form-control" type="radio" name="veterans" ></td>
-                <td><input class="form-control" type="radio" name="veterans" ></td>
+                <td>
+                  <label for="veteransA">
+                    <select id="veteransA" name="veteransA" required>
+                      <option value="veteransA"></option>
+                      <option value="veteransA">Every Year</option>
+                      <option value="veteransEvenA">Even Years</option>
+                      <option value="veteransOddA">Odd Years</option>
+                      <option value="veteransAttachA">Attach to Weekend</option>
+                      <option value="veteransSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="veteransB">
+                    <select id="veteransB" name="veteransB" required>
+                      <option value="veteransBlankB"></option>
+                      <option value="veteransEveryB">Every Year</option>
+                      <option value="veteransEvenB">Even Years</option>
+                      <option value="veteransOddB">Odd Years</option>
+                      <option value="veteransAttachB">Attach to Weekend</option>
+                      <option value="veteransSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Thanksgiving (Thursday)</td>
-                <td><input class="form-control" type="radio" name="thanksgiving" ></td>
-                <td><input class="form-control" type="radio" name="thanksgiving" ></td>
+                <td>
+                  <label for="thanksgivingA">
+                    <select id="thanksgivingA" name="thanksgivingA" required>
+                      <option value="thanksgivingA"></option>
+                      <option value="thanksgivingA">Every Year</option>
+                      <option value="thanksgivingEvenA">Even Years</option>
+                      <option value="thanksgivingOddA">Odd Years</option>
+                      <option value="thanksgivingAttachA">Attach to Weekend</option>
+                      <option value="thanksgivingSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="thanksgivingB">
+                    <select id="thanksgivingB" name="thanksgivingB" required>
+                      <option value="thanksgivingBlankB"></option>
+                      <option value="thanksgivingEveryB">Every Year</option>
+                      <option value="thanksgivingEvenB">Even Years</option>
+                      <option value="thanksgivingOddB">Odd Years</option>
+                      <option value="thanksgivingAttachB">Attach to Weekend</option>
+                      <option value="thanksgivingSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Christmas Eve (December 24)</td>
-                <td><input class="form-control" type="radio" name="christmasEve" ></td>
-                <td><input class="form-control" type="radio" name="christmasEve" ></td>
+                <td>
+                  <label for="christmasEveA">
+                    <select id="christmasEveA" name="christmasEveA" required>
+                      <option value="christmasEveA"></option>
+                      <option value="christmasEveA">Every Year</option>
+                      <option value="christmasEveEvenA">Even Years</option>
+                      <option value="christmasEveOddA">Odd Years</option>
+                      <option value="christmasEveAttachA">Attach to Weekend</option>
+                      <option value="christmasEveSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="christmasEveB">
+                    <select id="christmasEveB" name="christmasEveB" required>
+                      <option value="christmasEveBlankB"></option>
+                      <option value="christmasEveEveryB">Every Year</option>
+                      <option value="christmasEveEvenB">Even Years</option>
+                      <option value="christmasEveOddB">Odd Years</option>
+                      <option value="christmasEveAttachB">Attach to Weekend</option>
+                      <option value="christmasEveSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>Christmas Day (December 25)</td>
-                <td><input class="form-control" type="radio" name="christmas" ></td>
-                <td><input class="form-control" type="radio" name="christmas" ></td>
+                <td>
+                  <label for="christmasA">
+                    <select id="christmasA" name="christmasA" required>
+                      <option value="christmasA"></option>
+                      <option value="christmasA">Every Year</option>
+                      <option value="christmasEvenA">Even Years</option>
+                      <option value="christmasOddA">Odd Years</option>
+                      <option value="christmasAttachA">Attach to Weekend</option>
+                      <option value="christmasSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="christmasB">
+                    <select id="christmasB" name="christmasB" required>
+                      <option value="christmasBlankB"></option>
+                      <option value="christmasEveryB">Every Year</option>
+                      <option value="christmasEvenB">Even Years</option>
+                      <option value="christmasOddB">Odd Years</option>
+                      <option value="christmasAttachB">Attach to Weekend</option>
+                      <option value="christmasSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td>New Year's Eve (December 31)</td>
-                <td><input class="form-control" type="radio" name="nye" ></td>
-                <td><input class="form-control" type="radio" name="nye" ></td>
+                <td>
+                  <label for="nyeA">
+                    <select id="nyeA" name="nyeA" required>
+                      <option value="nyeA"></option>
+                      <option value="nyeA">Every Year</option>
+                      <option value="nyeEvenA">Even Years</option>
+                      <option value="nyeOddA">Odd Years</option>
+                      <option value="nyeAttachA">Attach to Weekend</option>
+                      <option value="nyeSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="nyeB">
+                    <select id="nyeB" name="nyeB" required>
+                      <option value="nyeBlankB"></option>
+                      <option value="nyeEveryB">Every Year</option>
+                      <option value="nyeEvenB">Even Years</option>
+                      <option value="nyeOddB">Odd Years</option>
+                      <option value="nyeAttachB">Attach to Weekend</option>
+                      <option value="nyeSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td><?php echo $_SESSION['responses']['partyAFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyABirthday']?>)</td>
-                <td><input class="form-control" type="radio" name="partyA" ></td>
-                <td><input class="form-control" type="radio" name="partyA" ></td>
+                <td>
+                  <label for="partyAA">
+                    <select id="partyAA" name="partyAA" required>
+                      <option value="partyAA"></option>
+                      <option value="partyAA">Every Year</option>
+                      <option value="partyAEvenA">Even Years</option>
+                      <option value="partyAOddA">Odd Years</option>
+                      <option value="partyAAttachA">Attach to Weekend</option>
+                      <option value="partyASplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="partyAB">
+                    <select id="partyAB" name="partyAB" required>
+                      <option value="partyABlankB"></option>
+                      <option value="partyAEveryB">Every Year</option>
+                      <option value="partyAEvenB">Even Years</option>
+                      <option value="partyAOddB">Odd Years</option>
+                      <option value="partyAAttachB">Attach to Weekend</option>
+                      <option value="partyASplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td><?php echo $_SESSION['responses']['partyBFirst']?>'s Birthday (<?php echo $_SESSION['responses']['partyBBirthday']?>)</td>
-                <td><input class="form-control" type="radio" name="partyB" ></td>
-                <td><input class="form-control" type="radio" name="partyB" ></td>
+                <td>
+                  <label for="partyBA">
+                    <select id="partyBA" name="partyBA" required>
+                      <option value="partyBA"></option>
+                      <option value="partyBA">Every Year</option>
+                      <option value="partyBEvenA">Even Years</option>
+                      <option value="partyBOddA">Odd Years</option>
+                      <option value="partyBAttachA">Attach to Weekend</option>
+                      <option value="partyBSplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="partyBB">
+                    <select id="partyBB" name="partyBB" required>
+                      <option value="partyBBlankB"></option>
+                      <option value="partyBEveryB">Every Year</option>
+                      <option value="partyBEvenB">Even Years</option>
+                      <option value="partyBOddB">Odd Years</option>
+                      <option value="partyBAttachB">Attach to Weekend</option>
+                      <option value="partyBSplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr>
                 <td><?php echo $_SESSION['responses']['child1Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child1Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child1" ></td>
-                <td><input class="form-control" type="radio" name="child1" ></td>
+                <td>
+                  <label for="child1A">
+                    <select id="child1A" name="child1A" required>
+                      <option value="child1BlankA"></option>
+                      <option value="child1EveryA">Every Year</option>
+                      <option value="child1EvenA">Even Years</option>
+                      <option value="child1OddA">Odd Years</option>
+                      <option value="child1AttachA">Attach to Weekend</option>
+                      <option value="child1SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child1B">
+                    <select id="child1B" name="child1B" required>
+                      <option value="child1BlankB"></option>
+                      <option value="child1EveryB">Every Year</option>
+                      <option value="child1EvenB">Even Years</option>
+                      <option value="child1OddB">Odd Years</option>
+                      <option value="child1AttachB">Attach to Weekend</option>
+                      <option value="child1SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr id="child2" hidden>
                 <td><?php echo $_SESSION['responses']['child2Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child2Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child2" ></td>
-                <td><input class="form-control" type="radio" name="child2" ></td>
+                <td>
+                  <label for="child2A">
+                    <select id="child2A" name="child2A" required>
+                      <option value="child2BlankA"></option>
+                      <option value="child2EveryA">Every Year</option>
+                      <option value="child2EvenA">Even Years</option>
+                      <option value="child2OddA">Odd Years</option>
+                      <option value="child2AttachA">Attach to Weekend</option>
+                      <option value="child2SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child2B">
+                    <select id="child2B" name="child2B" required>
+                      <option value="child2BlankB"></option>
+                      <option value="child2EveryB">Every Year</option>
+                      <option value="child2EvenB">Even Years</option>
+                      <option value="child2OddB">Odd Years</option>
+                      <option value="child2AttachB">Attach to Weekend</option>
+                      <option value="child2SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr id="child3" hidden>
                 <td><?php echo $_SESSION['responses']['child3Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child3Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child3" ></td>
-                <td><input class="form-control" type="radio" name="child3" ></td>
+                <td>
+                  <label for="child3A">
+                    <select id="child3A" name="child3A" required>
+                      <option value="child3BlankA"></option>
+                      <option value="child3EveryA">Every Year</option>
+                      <option value="child3EvenA">Even Years</option>
+                      <option value="child3OddA">Odd Years</option>
+                      <option value="child3AttachA">Attach to Weekend</option>
+                      <option value="child3SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child3B">
+                    <select id="child3B" name="child3B" required>
+                      <option value="child3BlankB"></option>
+                      <option value="child3EveryB">Every Year</option>
+                      <option value="child3EvenB">Even Years</option>
+                      <option value="child3OddB">Odd Years</option>
+                      <option value="child3AttachB">Attach to Weekend</option>
+                      <option value="child3SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr id="child4" hidden>
                 <td><?php echo $_SESSION['responses']['child4Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child4Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child4" ></td>
-                <td><input class="form-control" type="radio" name="child4" ></td>
+                <td>
+                  <label for="child4A">
+                    <select id="child4A" name="child4A" required>
+                      <option value="child4BlankA"></option>
+                      <option value="child4EveryA">Every Year</option>
+                      <option value="child4EvenA">Even Years</option>
+                      <option value="child4OddA">Odd Years</option>
+                      <option value="child4AttachA">Attach to Weekend</option>
+                      <option value="child4SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child4B">
+                    <select id="child4B" name="child4B" required>
+                      <option value="child4BlankB"></option>
+                      <option value="child4EveryB">Every Year</option>
+                      <option value="child4EvenB">Even Years</option>
+                      <option value="child4OddB">Odd Years</option>
+                      <option value="child4AttachB">Attach to Weekend</option>
+                      <option value="child4SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr id="child5" hidden>
                 <td><?php echo $_SESSION['responses']['child5Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child5Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child5" ></td>
-                <td><input class="form-control" type="radio" name="child5" ></td>
+                <td>
+                  <label for="child5A">
+                    <select id="child5A" name="child5A" required>
+                      <option value="child5BlankA"></option>
+                      <option value="child5EveryA">Every Year</option>
+                      <option value="child5EvenA">Even Years</option>
+                      <option value="child5OddA">Odd Years</option>
+                      <option value="child5AttachA">Attach to Weekend</option>
+                      <option value="child5SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child5B">
+                    <select id="child5B" name="child5B" required>
+                      <option value="child5BlankB"></option>
+                      <option value="child5EveryB">Every Year</option>
+                      <option value="child5EvenB">Even Years</option>
+                      <option value="child5OddB">Odd Years</option>
+                      <option value="child5AttachB">Attach to Weekend</option>
+                      <option value="child5SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
               <tr id="child6" hidden>
                 <td><?php echo $_SESSION['responses']['child6Initials']?>'s Birthday(s) (<?php echo $_SESSION['responses']['child6Birthday']?>)</td>
-                <td><input class="form-control" type="radio" name="child6" ></td>
-                <td><input class="form-control" type="radio" name="child6" ></td>
+                <td>
+                  <label for="child6A">
+                    <select id="child6A" name="child6A" required>
+                      <option value="child6BlankA"></option>
+                      <option value="child6EveryA">Every Year</option>
+                      <option value="child6EvenA">Even Years</option>
+                      <option value="child6OddA">Odd Years</option>
+                      <option value="child6AttachA">Attach to Weekend</option>
+                      <option value="child6SplitA">Split</option>
+                    </select>
+                  </label>
+                </td>
+                <td>
+                  <label for="child6B">
+                    <select id="child6B" name="child6B" required>
+                      <option value="child6BlankB"></option>
+                      <option value="child6EveryB">Every Year</option>
+                      <option value="child6EvenB">Even Years</option>
+                      <option value="child6OddB">Odd Years</option>
+                      <option value="child6AttachB">Attach to Weekend</option>
+                      <option value="child6SplitB">Split</option>
+                    </select>
+                  </label>
+                </td>
               </tr>
             </table>
 
