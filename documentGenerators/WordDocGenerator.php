@@ -3481,7 +3481,7 @@ function gen_physical_custody_timesharing_6_04() {
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-			<w:t xml:space='preserve'>i.  If the trip is within the State of </w:t>
+			<w:t xml:space='preserve'>i. If the trip is within the State of </w:t>
 		  </w:r>
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
@@ -9346,11 +9346,20 @@ function gen_other_9_00()
 	</w:r>
 	<w:bookmarkEnd w:id='128'/>
 	<w:r>
-		<w:t xml:space='preserve'>.  Parents agree to engage" . $this->responses["therapistInput9.00"] . " (name), or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. Parents agree to engage </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["therapistInput1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'>, or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
+</w:r>
 	<w:r>
 		<w:lastRenderedPageBreak/>
-		<w:t>parenting the Child(ren).  Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
+		<w:t>parenting the Child(ren). Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
 	</w:r>
 </w:p>";
 
@@ -9376,8 +9385,6 @@ $tableCon = "<w:p w14:paraId='2300015A' w14:textId='125E7276' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_01() 
@@ -9409,8 +9416,18 @@ function gen_other_9_01()
 	</w:r>
 	<w:bookmarkEnd w:id='129'/>
 	<w:r>
-		<w:t>.  Parents agree to " . $this->responses["therapistInput9.01"] . " (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. Parents agree to </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["therapistInput2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren). Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion. Parents shall alternate taking the Child(ren) to therapy. Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged. If mutually agreed, parent may jointly select a new therapist for Child(ren). Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -9435,8 +9452,6 @@ $tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_02() 
@@ -9494,8 +9509,6 @@ $tableCon = " <w:p w14:paraId='12CD9324' w14:textId='2F5749CC' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_03() 
@@ -9556,8 +9569,6 @@ $tableCon = " <w:p w14:paraId='7392834C' w14:textId='64C87E0B' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_04() 
@@ -9624,8 +9635,6 @@ $tableCon = " <w:p w14:paraId='56C3F5CA' w14:textId='0DBD847A' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_05() 
@@ -9701,8 +9710,6 @@ $tableCon = "<w:p w14:paraId='36B937E6' w14:textId='4DD2B156' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_06() 
@@ -9744,14 +9751,29 @@ function gen_other_9_06()
 	</w:r>
 	<w:bookmarkEnd w:id='134'/>
 	<w:r>
-		<w:t>.</w:t>
+		<w:t xml:space='preserve'>. </w:t>
 	</w:r>
 	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-		</w:rPr>
-		<w:t>Parent A/B will attend all parent-teacher meetings and will advise " . $this->responses["9.06"] . "/A of the Child(ren)'s progress.</w:t>
-	</w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_Other"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> will attend all parent-teacher meetings and will advise </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_Other1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of the Child(ren)'s progress.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -9776,8 +9798,6 @@ $tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_07() 
@@ -9828,7 +9848,7 @@ function gen_other_9_07()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>.  Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
+		<w:t>. Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
 	</w:r>
 </w:p>";
 
@@ -9854,8 +9874,6 @@ $tableCon = "<w:p w14:paraId='406AA414' w14:textId='78AF25A1' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_08() 
@@ -9901,7 +9919,7 @@ function gen_other_9_08()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>.  Both Parents may attend school events and extra-curricular activities.</w:t>
+		<w:t>. Both Parents may attend school events and extra-curricular activities.</w:t>
 	</w:r>
 </w:p>";
 
@@ -9927,8 +9945,6 @@ $tableCon = "<w:p w14:paraId='562564DD' w14:textId='2FB7B2F2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_09() 
@@ -10008,8 +10024,6 @@ $tableCon = " <w:p w14:paraId='739B44B4' w14:textId='397228A3' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_10() 
@@ -10048,7 +10062,7 @@ function gen_other_9_10()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>.  Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
+		<w:t>. Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
 	</w:r>
 </w:p>";
 
@@ -10074,12 +10088,87 @@ $tableCon = " <w:p w14:paraId='26A7A61A' w14:textId='776E4B21' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_11() 
 {
+	$content = $this->responses["otherDocuments"]; // if user doesn't enter anything, do not output the "and [insert any other relevant documents]" part
+	if (empty($content)) {
+		$snippet = "<w:p w14:paraId='634C2BC8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
+			<w:ind w:right='36'/>
+			<w:jc w:val='both'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='140' w:name='OtherIssuesDocuments'/>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:t>9.11</w:t>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:b/>
+			</w:rPr>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:rPr>
+				<w:u w:val='single'/>
+			</w:rPr>
+			<w:t>OTHER ISSUES: DOCUMENTS</w:t>
+		</w:r>
+		<w:bookmarkEnd w:id='140'/>
+		<w:r>
+			<w:t xml:space='preserve'>.  </w:t>
+		</w:r>
+		<w:r>
+		<w:rPr>
+			<w:color w:val='333333'/>
+		</w:rPr>
+		<w:t xml:space='preserve'>. </w:t>
+	</w:r>
+	<w:r>
+		<w:rPr>
+			<w:color w:val='333333'/>
+			<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>" . $this->responses["parentABdoc_Other"] . "</w:t>
+	</w:r>
+	<w:r>
+		<w:t xml:space='preserve'> will keep the original passport issued in the Child(ren)'s name, their social security card, and birth certificate at their home, and these documents will be made available to </w:t>
+	</w:r>
+	<w:r>
+		<w:rPr>
+			<w:color w:val='333333'/>
+			<w:highlight w:val='yellow' />
+		</w:rPr>
+		<w:t>" . $this->responses["parentABdoc_Other2"] . "</w:t>
+	</w:r>
+	<w:r>
+		<w:t xml:space='preserve'> as needed. Both Parents shall have copies of </w:t>
+	</w:r>
+	
+		<w:proofErr w:type='gramStart'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t>all of</w:t>
+		</w:r>
+		<w:proofErr w:type='gramEnd'/>
+		<w:r>
+			<w:rPr>
+				<w:color w:val='333333'/>
+			</w:rPr>
+			<w:t xml:space='preserve'> the important documents.</w:t>
+		</w:r>
+	</w:p>";
+	} else {
+		$snippet = "";
+	}
+
 	$snippet = "<w:p w14:paraId='634C2BC8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -10107,14 +10196,39 @@ function gen_other_9_11()
 	</w:r>
 	<w:bookmarkEnd w:id='140'/>
 	<w:r>
-		<w:t xml:space='preserve'>.  </w:t>
+		<w:t xml:space='preserve'>. </w:t>
 	</w:r>
 	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-		</w:rPr>
-		<w:t xml:space='preserve'>" . $this->responses["parentABdoc_Other"] . "/B will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and [insert any other relevant documents] at their home, and these documents will be made available to " . $this->responses["parentABdoc_Other2"] . "/A as needed. Both Parents shall have copies of </w:t>
-	</w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t xml:space='preserve'>" . $this->responses["parentABdoc_Other"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$content</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> at their home, and these documents will be made available to </w:t>
+</w:r>
+
+<w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentABdoc_Other2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> as needed. Both Parents shall have copies of </w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
 		<w:rPr>
@@ -10153,8 +10267,6 @@ $tableCon = " <w:p w14:paraId='089BFEE7' w14:textId='1D519E9C' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_12() 
@@ -10195,7 +10307,7 @@ function gen_other_9_12()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>Parent A and Parent B must both consent for the purposes of a passport application for any Child.</w:t>
+		<w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " must both consent for the purposes of a passport application for any Child.</w:t>
 	</w:r>
 </w:p>";
 
@@ -10221,8 +10333,6 @@ $tableCon = " <w:p w14:paraId='638E9405' w14:textId='366FE802' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_13() 
@@ -10260,11 +10370,22 @@ function gen_other_9_13()
 		<w:t xml:space='preserve'>.  </w:t>
 	</w:r>
 	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-		</w:rPr>
-		<w:t>Parent " . $this->responses["parentAB_Other3"] . " can apply for the passport for a Child without the consent of " . $this->responses["parentAB_Other4"] . "/A.</w:t>
-	</w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentABOther3"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> can apply for the passport for a Child without the consent of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["parentAB_Other4"] . ".</w:t>
+</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -10289,8 +10410,6 @@ $tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_14() 
@@ -10328,11 +10447,11 @@ function gen_other_9_14()
 	</w:r>
 	<w:bookmarkEnd w:id='143'/>
 	<w:r>
-		<w:t xml:space='preserve'>Both parents agree that they shall not introduce any of their minor children to a new significant other or intimate partner until (a) they have been in an intimate dating relationship for six (6) months or longer and (b) the other parent has been given an opportunity to meet that significant other/intimate partner first.  Parents shall be guided by the children’s best interests and conflict </w:t>
+		<w:t xml:space='preserve'>Both parents agree that they shall not introduce any of their minor children to a new significant other or intimate partner until (a) they have been in an intimate dating relationship for six (6) months or longer and (b) the other parent has been given an opportunity to meet that significant other/intimate partner first. Parents shall be guided by the children’s best interests and conflict </w:t>
 	</w:r>
 	<w:r>
 		<w:lastRenderedPageBreak/>
-		<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner.  This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
+		<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner. This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
 	</w:r>
 </w:p>";
 
@@ -10358,8 +10477,6 @@ $tableCon = " <w:p w14:paraId='51895F18' w14:textId='05A7E18F' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_15() 
@@ -10391,7 +10508,7 @@ function gen_other_9_15()
 	</w:r>
 	<w:bookmarkEnd w:id='144'/>
 	<w:r>
-		<w:t xml:space='preserve'>.  Given that both parents will likely engage in new intimate partner relationships in the future, it is their intent that the children’s well-being, </w:t>
+		<w:t xml:space='preserve'>. Given that both parents will likely engage in new intimate partner relationships in the future, it is their intent that the children’s well-being, </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -10399,7 +10516,7 @@ function gen_other_9_15()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> and stability remain the highest priority.  Both parents agree to be respectful of one another and guided by the following concepts and protocols: </w:t>
+		<w:t xml:space='preserve'> and stability remain the highest priority. Both parents agree to be respectful of one another and guided by the following concepts and protocols: </w:t>
 	</w:r>
 </w:p>
 <w:p w14:paraId='5229168B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -10420,7 +10537,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t>Take an honest look at the relationship.  If you are just having fun enjoying a new person’s company but know there is no long-term potential, it is probably best not to introduce the children to a new intimate partner.</w:t>
+		<w:t>Take an honest look at the relationship. If you are just having fun enjoying a new person’s company but know there is no long-term potential, it is probably best not to introduce the children to a new intimate partner.</w:t>
 	</w:r>
 </w:p>
 <w:p w14:paraId='0D52C06B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -10441,7 +10558,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t xml:space='preserve'>Your relationship shall be well-established and stable prior to initiating these new intimate partner protocols.  The Parents shall discuss the appropriate timing and circumstances in which the children should formally meet a new intimate partner and be told that the nature of the relationship is romantic.  It is understood that the children may </w:t>
+		<w:t xml:space='preserve'>Your relationship shall be well-established and stable prior to initiating these new intimate partner protocols. The Parents shall discuss the appropriate timing and circumstances in which the children should formally meet a new intimate partner and be told that the nature of the relationship is romantic. It is understood that the children may </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -10495,7 +10612,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t>Parents shall use best practices and judgment when engaging in appropriate public displays of affection with their new intimate partner in front of any of the children.  Parents shall further check in with the children to gauge their comfort with the new intimate partner.  This may be accomplished within a therapeutic process (</w:t>
+		<w:t>Parents shall use best practices and judgment when engaging in appropriate public displays of affection with their new intimate partner in front of any of the children. Parents shall further check in with the children to gauge their comfort with the new intimate partner. This may be accomplished within a therapeutic process (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -10538,7 +10655,7 @@ function gen_other_9_15()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t xml:space='preserve'>.  </w:t>
+		<w:t xml:space='preserve'>. </w:t>
 	</w:r>
 	<w:r>
 		<w:t>The Parents shall discuss age-appropriate discipline options for the children.</w:t>
@@ -10588,8 +10705,6 @@ $tableCon = "<w:p w14:paraId='1E11FF73' w14:textId='315BD30E' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_16() 
@@ -10621,7 +10736,7 @@ function gen_other_9_16()
 	</w:r>
 	<w:bookmarkEnd w:id='145'/>
 	<w:r>
-		<w:t>.  If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
+		<w:t>. If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
 	</w:r>
 </w:p>";
 
@@ -10647,8 +10762,6 @@ $tableCon = "<w:p w14:paraId='3381AF8D' w14:textId='0D6C31F2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
-
-	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 //End of other section
@@ -10702,8 +10815,7 @@ function gen_legal_10_00() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='146'/>
 		  <w:r>
-			<w:t>. Except as otherwise limited by Statute, Court Rule or case authority, the Family Court shall have the ongoing authority and personal and subject matter jurisdiction to make any other just and equitable orders which may be necessary to
-			  enforce the intended agreement and specific provisions set forth herein.
+			<w:t>. Except as otherwise limited by Statute, Court Rule or case authority, the Family Court shall have the ongoing authority and personal and subject matter jurisdiction to make any other just and equitable orders which may be necessary to enforce the intended agreement and specific provisions set forth herein.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -10763,7 +10875,7 @@ function gen_legal_10_01() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='147'/>
 		  <w:r>
-			<w:t xml:space='preserve'>.  A Parent who fails to comply with this </w:t>
+			<w:t xml:space='preserve'>. A Parent who fails to comply with this </w:t>
 		  </w:r>
 		  <w:r>
 			<w:rPr>
@@ -10784,7 +10896,7 @@ function gen_legal_10_01() {
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-			<w:t xml:space='preserve'> noncompliance.  The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
+			<w:t xml:space='preserve'> noncompliance. The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
 		  </w:r>
 		</w:p>";
 
@@ -10811,7 +10923,6 @@ function gen_legal_10_01() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
-	 $enforcement;
 	$this->fileContentString .= $enforcement;
 }
 function gen_legal_10_02() {
@@ -10840,7 +10951,7 @@ function gen_legal_10_02() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='148'/>
 		  <w:r>
-			<w:t xml:space='preserve'>.  Each Parent acknowledges that they have voluntarily executed this </w:t>
+			<w:t xml:space='preserve'>. Each Parent acknowledges that they have voluntarily executed this </w:t>
 		  </w:r>
 		  <w:r>
 			<w:rPr>
@@ -10849,7 +10960,7 @@ function gen_legal_10_02() {
 			<w:t>Co-Parenting Plan: Agreement Regarding Child Custody, Timesharing, and Support</w:t>
 		  </w:r>
 		  <w:r>
-			<w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable.  Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
+			<w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable. Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
 		  </w:r>
 		</w:p>";
 
@@ -10868,8 +10979,6 @@ function gen_legal_10_02() {
 			</w:hyperlink>
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
-
-	 $execution;
 	$this->fileContentString .= $execution;
 }
 

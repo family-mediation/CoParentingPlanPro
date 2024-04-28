@@ -2440,7 +2440,7 @@ class HtmlGenerator extends documentGenerator
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
-        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>  " . $this->responses["therapistInput1"] .  "</span>, or
+        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>" . $this->responses["therapistInput1"] .  "</span>, or
         other mutually selected licensed mental health professional, as a Co-Parent
         Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
         Parents shall continue in Co-Parent Counseling until clinically discharged or
