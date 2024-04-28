@@ -9,8 +9,16 @@
 */
 function sanitize(&$inputs)
 {
+    // if its an array call sanitize and return.
+
     foreach ($inputs as &$value)
     {
+        if(is_array($value))
+        {
+            sanitize($value);
+ //           echo "</br>recursing</br>";
+            return;
+        }
      //   echo "<span> the value before is ". $value;
         $value = htmlspecialchars($value);   
       //  echo " and after is ". $value . "</span></br></br>";

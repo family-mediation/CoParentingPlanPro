@@ -7,7 +7,7 @@ require_once("Utility.php");
 
 
 $src = $_SESSION['responses'];
-// sanitize($src);
+sanitize($src);
 $fileName = "Case " . $src["caseNo"]." ". $src["partyALast"]." ".$src["partyBLast"] ;
 $filePath = "./documents/" . $fileName;
 $zipFilePath = $filePath . "/" . $fileName ;
@@ -26,7 +26,8 @@ $wordGen->generateDocument();
 $documents = new ZipArchive();// add error testing
 if($documents->open($zipFilePath . " download.zip",ZipArchive::CREATE))
 {
-    $documents->addGlob($filePath . "/*.*" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
+    $documents->addGlob($filePath . "/*.docx" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
+    $documents->addGlob($filePath . "/*.html" , ZipArchive::CM_DEFLATE,['remove_path' => $filePath]);
     $documents->close();
 }
 else
