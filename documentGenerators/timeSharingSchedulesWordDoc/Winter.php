@@ -234,7 +234,7 @@ class Winter {
       <w:t>$parentAFirst $parentALast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the first half of Winter Break to include Christmas Eve and Christmas Day, and </w:t>
+      <w:t xml:space='preserve'> shall have the first half of Winter Break to include Christmas Eve and Christmas Day, and </w:t>
   </w:r>
   <w:r>
       <w:rPr>
@@ -243,7 +243,7 @@ class Winter {
       <w:t>$parentBFirst $parentBLast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the second half to include New Year’s Eve and New Year’s Day. In odd years, </w:t>
+      <w:t xml:space='preserve'> shall have the second half to include New Year’s Eve and New Year’s Day. In odd years, </w:t>
   </w:r>
   <w:r>
       <w:rPr>
@@ -252,7 +252,7 @@ class Winter {
       <w:t>$parentBFirst $parentBLast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the first half of Winter Break to include Christmas Eve and Christmas Day and </w:t>
+      <w:t xml:space='preserve'> shall have the first half of Winter Break to include Christmas Eve and Christmas Day and </w:t>
   </w:r>
   <w:r>
       <w:rPr>
@@ -266,7 +266,7 @@ class Winter {
   
       <w:proofErr w:type='gramStart'/>
       <w:r>
-        <w:t>In the event that</w:t>
+        <w:t xml:space='preserve'> In the event that</w:t>
       </w:r>
       <w:proofErr w:type='gramEnd'/>
       <w:r>

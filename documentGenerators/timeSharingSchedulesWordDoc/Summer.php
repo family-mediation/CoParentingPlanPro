@@ -175,16 +175,22 @@ class Summer {
       <w:t xml:space='preserve'> of the same year.  In even years, </w:t>
   </w:r>
   <w:r>
+  <w:rPr>
+  <w:highlight w:val='yellow' />
+</w:rPr>
       <w:t>$parentAFirst $parentALast</w:t>
   </w:r>
   <w:r>
-      <w:t xml:space='preserve'>shall have the first choice of dates for uninterrupted time during the Summer Break. In odd years, </w:t>
+      <w:t xml:space='preserve'> shall have the first choice of dates for uninterrupted time during the Summer Break. In odd years, </w:t>
   </w:r>
   <w:r>
+  <w:rPr>
+  <w:highlight w:val='yellow' />
+</w:rPr>
       <w:t>$parentBFirst $parentBLast</w:t>
   </w:r>
   <w:r>
-      <w:t xml:space='preserve'>shall have the first choice of dates for uninterrupted time during the Summer Break.</w:t>
+      <w:t xml:space='preserve'> shall have the first choice of dates for uninterrupted time during the Summer Break.</w:t>
   </w:r>
     </w:p>";
     }

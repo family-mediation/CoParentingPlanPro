@@ -2884,40 +2884,6 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-uninterrupted-schedule":
-			$toc = "<w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			  <w:pPr>
-				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-				<w:ind w:left='0' w:right='0'/>
-			  </w:pPr>
-			  <w:r>
-				<w:tab/>
-			  </w:r>
-			  <w:r>
-				<w:tab/>
-			  </w:r>
-			  <w:r w:rsidR='00E616E1'>
-				<w:tab/>
-			  </w:r>
-			  <w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
-				<w:r w:rsidRPr='00EF5343'>
-				  <w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				  </w:rPr>
-				  <w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
-				</w:r>
-			  </w:hyperlink>
-			  <w:r>
-				<w:t xml:space='preserve'> </w:t>
-			  </w:r>
-			</w:p>";
-			$this->tableOfContentsString .= $toc;
-
-			$alternate = new Summer();
-			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
-			 $summer;
-			$this->fileContentString .= $summer;
-			break;
-		case "summer-continue-schedule":
 			$toc = "<w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 			<w:pPr>
 			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
@@ -2940,6 +2906,40 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 				<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
 			  </w:r>
 			</w:hyperlink>
+		  </w:p>";
+			$this->tableOfContentsString .= $toc;
+
+			$alternate = new Summer();
+			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
+			 $summer;
+			$this->fileContentString .= $summer;
+			break;
+		case "summer-continue-schedule":
+			$toc = "<w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			<w:pPr>
+			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			  <w:ind w:left='0' w:right='0'/>
+			</w:pPr>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r>
+			  <w:tab/>
+			</w:r>
+			<w:r w:rsidR='00E616E1'>
+			  <w:tab/>
+			</w:r>
+			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
+			  <w:r w:rsidRPr='00EF5343'>
+				<w:rPr>
+				  <w:rStyle w:val='Hyperlink'/>
+				</w:rPr>
+				<w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
+			  </w:r>
+			</w:hyperlink>
+			<w:r>
+			  <w:t xml:space='preserve'> </w:t>
+			</w:r>
 		  </w:p>";
 			$this->tableOfContentsString .= $toc;
 
@@ -4475,7 +4475,24 @@ function gen_physical_custody_timesharing_6_14() {
 //Communication section
 function gen_communication_7() 
 {
-	$snippet = "<w:p w14:paraId='3D84B06F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$snippet = "<w:p w14:paraId='16B51F76' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+		<w:ind w:left='0' w:right='36' w:firstLine='0' />
+		<w:jc w:val='center' />
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+	</w:pPr>
+	<w:r>
+		<w:rPr>
+			<w:u w:val='single' />
+		</w:rPr>
+		<w:t>COMMUNICATION:</w:t>
+	</w:r>
+</w:p>
+
+	<w:p w14:paraId='3D84B06F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
 		<w:ind w:left='0' w:right='36' w:firstLine='0'/>
@@ -4773,7 +4790,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:bookmarkEnd w:id='70'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail.  The Parents may utilize text or telephone calls in </w:t>
+		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail. The Parents may utilize text or telephone calls in </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -4781,7 +4798,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail.  Both Parents shall check their e-mail at least once daily and shall respond to messages or other items needing attention (</w:t>
+		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours). Otherwise, all communication shall be via e-mail. Both Parents shall check their e-mail at least once daily and shall respond to messages or other items needing attention (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -4789,7 +4806,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		<w:t xml:space='preserve'> switch requests) within 48 hours. If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 	</w:r>
 </w:p>";
 
@@ -4844,7 +4861,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:bookmarkEnd w:id='71'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail and text.  The Parents may utilize telephone calls in </w:t>
+		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail and text. The Parents may utilize telephone calls in </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -4852,7 +4869,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail or text.  Both Parents shall check their e-mail and texts at least once daily and shall respond to messages or other items needing attention (</w:t>
+		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours). Otherwise, all communication shall be via e-mail or text. Both Parents shall check their e-mail and texts at least once daily and shall respond to messages or other items needing attention (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -4860,7 +4877,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		<w:t xml:space='preserve'> switch requests) within 48 hours. If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 	</w:r>
 </w:p>";
 
@@ -4920,7 +4937,7 @@ function gen_communication_7_03()
 	</w:r>
 	<w:bookmarkEnd w:id='72'/>
 	<w:r>
-		<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application.  Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
+		<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application. Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
 	</w:r>
 </w:p>";
 
@@ -4981,15 +4998,18 @@ function gen_communication_7_04()
 		<w:t>.</w:t>
 	</w:r>
 	<w:r>
-		<w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren).  Conferences shall be on the first " . $this->responses["insertmonthly"] . "</w:t>
-	</w:r>
+    <w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren). Conferences shall be on the first </w:t>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["insertmonthly"] . "</w:t>
+</w:r>
+
 	<w:proofErr w:type='gramStart'/>
-	<w:r>
-		<w:t>_  [</w:t>
-	</w:r>
+
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'>insert day of the week] of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+		<w:t xml:space='preserve'> of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 	</w:r>
 </w:p>";
 
@@ -5046,8 +5066,27 @@ function gen_communication_7_05()
 	</w:r>
 	<w:bookmarkEnd w:id='74'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than " . $this->responses["semidate1"] . " [insert date] and " . $this->responses["semidate2"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
-	</w:r>
+    <w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["semidate1"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["semidate2"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> every year. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents. </w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='24D1C56E' w14:textId='76FC6CB7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5149,8 +5188,18 @@ function gen_communication_7_06a()
 		</w:rPr>
 	</w:pPr>
 	<w:r>
-		<w:t>Parents shall meet and confer annually by no later than " . $this->responses["annuldate"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
-	</w:r>
+    <w:t xml:space='preserve'>Parents shall meet and confer annually by no later than </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" . $this->responses["annualdate"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> every year. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
+</w:r>
+
 	<w:r>
 		<w:rPr>
 			<w:u w:val='single'/>
@@ -5228,6 +5277,12 @@ $this->tableOfContentsString .= $tableCon;
 }
 function gen_communication_7_08() 
 {
+	// convert output from military time 
+	$time1 = date("h:i A", strtotime($this->responses["A9:00"]));
+	$time2 = date("h:i A", strtotime($this->responses["A17:00"]));
+	$time3 = date("h:i A", strtotime($this->responses["B09:00"]));
+	$time4 = date("h:i A", strtotime($this->responses["B17:00"]));
+
 	$snippet = "<w:p w14:paraId='0B356DE2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -5258,11 +5313,48 @@ function gen_communication_7_08()
 		<w:t xml:space='preserve'>. </w:t>
 	</w:r>
 	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-		</w:rPr>
-		<w:t>During the regular parenting time schedule, Parent A may call the child between " . $this->responses["A9:00"] . " and " . $this->responses["A17:00"] . " when they are with Parent B and Parent B may call the child between " . $this->responses["B09:00"] . " and " . $this->responses["B17:00"] . " when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
-	</w:r>
+    <w:rPr>
+        <w:color w:val='333333'/>
+    </w:rPr>
+    <w:t xml:space='preserve'>During the regular parenting time schedule, " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " may call the child between </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$time1</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$time2</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> when they are with " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " may call the child between </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$time3</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$time4</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ". Calls will normally be no more than 10 minutes.</w:t>
+</w:r>
+
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0554C7E9' w14:textId='419C7A55' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5303,7 +5395,7 @@ function gen_communication_7_09()
 			<w:b/>
 		</w:rPr>
 		<w:lastRenderedPageBreak/>
-		<w:t xml:space='preserve'>7.08 </w:t>
+		<w:t xml:space='preserve'>7.09 </w:t>
 	</w:r>
 	<w:r>
 		<w:tab/>
@@ -5312,7 +5404,7 @@ function gen_communication_7_09()
 		<w:rPr>
 			<w:u w:val='single'/>
 		</w:rPr>
-		<w:t>COMMUNICATION:  EXCHANGE OF CONTACT INFORMATION</w:t>
+		<w:t>COMMUNICATION: EXCHANGE OF CONTACT INFORMATION</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='78'/>
 	<w:r>
@@ -5367,7 +5459,7 @@ function gen_communication_7_10()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t>7.09</w:t>
+		<w:t>7.10</w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -5383,7 +5475,7 @@ function gen_communication_7_10()
 	</w:r>
 	<w:bookmarkEnd w:id='79'/>
 	<w:r>
-		<w:t xml:space='preserve'>.  Both Parents understand that reasonable extracurricular activities are healthy and appropriate outlets for our Child(ren).  Both Parents understand that selecting extracurricular activities for the Child(ren) is a legal custody decision. </w:t>
+		<w:t xml:space='preserve'>.  Both Parents understand that reasonable extracurricular activities are healthy and appropriate outlets for our Child(ren). Both Parents understand that selecting extracurricular activities for the Child(ren) is a legal custody decision. </w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -5409,7 +5501,7 @@ function gen_communication_7_10()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t xml:space='preserve'>  </w:t>
+		<w:t xml:space='preserve'> </w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -5458,7 +5550,7 @@ function gen_communication_7_11()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t>7.10</w:t>
+		<w:t>7.11</w:t>
 	</w:r>
 	<w:r>
 		<w:tab/>
