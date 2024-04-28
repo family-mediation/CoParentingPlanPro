@@ -1499,8 +1499,16 @@ function gen_children_4_00(int $num) {
 			<w:t>)</w:t>
 		  </w:r>
 		  <w:r>
-			<w:t>. The Parents have $num Child(ren) together as follows: ";
-	 $header;
+			<w:t xml:space='preserve'>. The Parents have </w:t>
+		  </w:r>
+		  <w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>$num</w:t>
+</w:r>
+<w:r>
+<w:t xml:space='preserve'> Child(ren) together as follows: ";
 	$this->fileContentString .= $header;
 }
 
@@ -1512,7 +1520,6 @@ function gen_children_4_00_individual(int $childNum, string $letter) {
 			. $this->responses["child" . $childNum . "Initials"] . "”) born in ("
 			. $this->responses["child" . $childNum . "Birthday"] . ")";
 	}
-	 $childrenInfo;
     $this->fileContentString .= $childrenInfo;
 }
 function gen_children_4_00_last() {
@@ -1520,7 +1527,7 @@ function gen_children_4_00_last() {
 			</w:t>
 		  </w:r>
 		</w:p>";
-	 $endSentence;
+	 
 	$this->fileContentString .= $endSentence;
 }
 
