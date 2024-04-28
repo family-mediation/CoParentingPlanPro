@@ -241,6 +241,1046 @@ class wordDocGenerator extends documentGenerator
 		  <w:t xml:space='preserve'> </w:t>
 		</w:r>
 	  </w:p>";
+
+	  $header2String = "<w:p w14:paraId='6F3DCE0A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='3116479A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='3EC59D10' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='3E27388B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='01B0FC26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='69E3C98F' w14:textId='77777777' w:rsidR='00D72616' w:rsidRDefault='00D72616'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='7DC5F480' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='2E41C345' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='2BED06B5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='3F272306' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Name of Parent A</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='5B776BC7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Address</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='0F6E9FE4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Telephone</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='21F8A534' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>E-Mail</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='5AE67848' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='56A14B6E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Name of Parent B</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='04D79CAC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Address</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='5EA22090' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>Telephone</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='0CC8295B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>E-Mail</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='75E730E4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='414B9ACE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+		  <w:jc w:val='center' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>IN THE FAMILY COURT OF THE ___________ CIRCUIT</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='0C7EB3F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+		  <w:jc w:val='center' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='73CAF07B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+		  <w:jc w:val='center' />
+	  </w:pPr>
+	  <w:r>
+		  <w:t>STATE OF _____________</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='4B789226' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='6B8B9232' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:tbl>
+	  <w:tblPr>
+		  <w:tblStyle w:val='a' />
+		  <w:tblW w:w='9360' w:type='dxa' />
+		  <w:tblLayout w:type='fixed' />
+		  <w:tblLook w:val='0000' w:firstRow='0' w:lastRow='0' w:firstColumn='0' w:lastColumn='0' w:noHBand='0' w:noVBand='0' />
+	  </w:tblPr>
+	  <w:tblGrid>
+		  <w:gridCol w:w='4608' />
+		  <w:gridCol w:w='432' />
+		  <w:gridCol w:w='4320' />
+	  </w:tblGrid>
+	  <w:tr w:rsidR='00505307' w14:paraId='7BAD059E' w14:textId='77777777'>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='4608' w:type='dxa' />
+				  <w:tcBorders>
+					  <w:right w:val='single' w:sz='4' w:space='0' w:color='000000' />
+				  </w:tcBorders>
+			  </w:tcPr>
+			  <w:p w14:paraId='6474728F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:t>PARENT A,</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='625BD574' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='7818A67E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:tabs>
+						  <w:tab w:val='left' w:pos='1440' />
+						  <w:tab w:val='left' w:pos='2169' />
+					  </w:tabs>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:tab />
+					  <w:t>Plaintiff/Petitioner,</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='64B82A6E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='0840A524' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:tabs>
+						  <w:tab w:val='left' w:pos='1440' />
+					  </w:tabs>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='720' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:t>vs.</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='330C0E20' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='7086B65E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:t>PARENT B,</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='7B0F1EB1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='0E1977E5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:tabs>
+						  <w:tab w:val='left' w:pos='1421' />
+						  <w:tab w:val='left' w:pos='2160' />
+					  </w:tabs>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:tab />
+					  <w:t>Defendant/Respondent.</w:t>
+				  </w:r>
+			  </w:p>
+		  </w:tc>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='432' w:type='dxa' />
+				  <w:tcBorders>
+					  <w:left w:val='nil' />
+				  </w:tcBorders>
+			  </w:tcPr>
+			  <w:p w14:paraId='02194EF5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+		  </w:tc>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='4320' w:type='dxa' />
+			  </w:tcPr>
+			  <w:p w14:paraId='1FF6BA6A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+				  <w:r>
+					  <w:t>Case No. (Family Court)</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='575A2AD5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='392A124F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+					  <w:rPr>
+						  <w:b />
+					  </w:rPr>
+				  </w:pPr>
+				  <w:r>
+					  <w:rPr>
+						  <w:b />
+					  </w:rPr>
+					  <w:t>CO-PARENTING PLAN: AGREEMENT REGARDING CHILD CUSTODY, TIMESHARING, AND SUPPORT</w:t>
+				  </w:r>
+			  </w:p>
+			  <w:p w14:paraId='1E0D2DE1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='7AA5C7A8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='44E97DB4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='4C883E07' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='21C07201' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+			  <w:p w14:paraId='6EE25392' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+		  </w:tc>
+	  </w:tr>
+	  <w:tr w:rsidR='00505307' w14:paraId='33F1F371' w14:textId='77777777'>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='4608' w:type='dxa' />
+				  <w:tcBorders>
+					  <w:bottom w:val='single' w:sz='4' w:space='0' w:color='000000' />
+					  <w:right w:val='single' w:sz='4' w:space='0' w:color='000000' />
+				  </w:tcBorders>
+			  </w:tcPr>
+			  <w:p w14:paraId='37BD68B9' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+		  </w:tc>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='432' w:type='dxa' />
+				  <w:tcBorders>
+					  <w:left w:val='nil' />
+				  </w:tcBorders>
+			  </w:tcPr>
+			  <w:p w14:paraId='78675174' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+		  </w:tc>
+		  <w:tc>
+			  <w:tcPr>
+				  <w:tcW w:w='4320' w:type='dxa' />
+			  </w:tcPr>
+			  <w:p w14:paraId='2EACBD96' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+				  <w:pPr>
+					  <w:pBdr>
+						  <w:top w:val='nil' />
+						  <w:left w:val='nil' />
+						  <w:bottom w:val='nil' />
+						  <w:right w:val='nil' />
+						  <w:between w:val='nil' />
+					  </w:pBdr>
+					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+				  </w:pPr>
+			  </w:p>
+		  </w:tc>
+	  </w:tr>
+  </w:tbl>
+  <w:p w14:paraId='6415089F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:spacing w:after='0' w:line='259' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='15F89C0C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:spacing w:after='0' w:line='259' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='7D873B7E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+		  <w:jc w:val='center' />
+		  <w:rPr>
+			  <w:b />
+			  <w:u w:val='single' />
+		  </w:rPr>
+	  </w:pPr>
+	  <w:r>
+		  <w:rPr>
+			  <w:b />
+			  <w:u w:val='single' />
+		  </w:rPr>
+		  <w:t xml:space='preserve'>CO-PARENTING PLAN: AGREEMENT REGARDING </w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='48024762' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+		  <w:jc w:val='center' />
+		  <w:rPr>
+			  <w:b />
+			  <w:u w:val='single' />
+		  </w:rPr>
+	  </w:pPr>
+	  <w:r>
+		  <w:rPr>
+			  <w:b />
+			  <w:u w:val='single' />
+		  </w:rPr>
+		  <w:t>CHILD CUSTODY, TIMESHARING, AND SUPPORT</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='1A796920' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		  <w:ind w:left='-15' w:right='36' w:firstLine='0' />
+		  <w:jc w:val='both' />
+	  </w:pPr>
+  </w:p>
+  <w:p w14:paraId='3EC2A107' w14:textId='216F5082' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
+	  <w:pPr>
+		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='36' w:firstLine='0' />
+		  <w:jc w:val='both' />
+	  </w:pPr>
+	  <w:r>
+		  <w:rPr>
+			  <w:b />
+		  </w:rPr>
+		  <w:t xml:space='preserve'>1.00 </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'>THIS AGREEMENT is made and </w:t>
+	  </w:r>
+	  <w:r>
+		  <w:rPr>
+			  <w:highlight w:val='white' />
+		  </w:rPr>
+		  <w:t>entered this __ (day) day of _______ (month), ______ (year)</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t>, by and between PARENT A and PARENT B (collectively hereinafter referred to as “Parents”) and applies to the Child(ren) named below in Paragraph 3.00.</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='4BA8706B' w14:textId='644BCB6B' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
+		  <w:jc w:val='both' />
+	  </w:pPr>
+	  <w:bookmarkStart w:id='4' w:name='IntroductionParentsDesire' />
+	  <w:r w:rsidRPr='00D52A55'>
+		  <w:rPr>
+			  <w:b />
+			  <w:bCs />
+		  </w:rPr>
+		  <w:t>1.01</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> </w:t>
+	  </w:r>
+	  <w:bookmarkEnd w:id='4' />
+	  <w:r>
+		  <w:t>WHEREAS, Parents wish to effectuate a preliminary settlement of all matters relating to their minor Child(ren);</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='17EDA1C6' w14:textId='5C7A4A39' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
+		  <w:jc w:val='both' />
+	  </w:pPr>
+	  <w:bookmarkStart w:id='5' w:name='IntroductionParentstoSeekFamilyCourt' />
+	  <w:r w:rsidRPr='00D52A55'>
+		  <w:rPr>
+			  <w:b />
+			  <w:bCs />
+		  </w:rPr>
+		  <w:lastRenderedPageBreak />
+		  <w:t>1.02</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> </w:t>
+	  </w:r>
+	  <w:bookmarkEnd w:id='5' />
+	  <w:r>
+		  <w:t>WHEREAS, parents intend to seek approval of their Agreement from the Family Court of the ____________ Circuit of the State of ____________ hereinafter referred to as the “Family Court”;</w:t>
+	  </w:r>
+  </w:p>
+  <w:p w14:paraId='1263E7CC' w14:textId='6CCADD84' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
+		  <w:jc w:val='both' />
+	  </w:pPr>
+	  <w:bookmarkStart w:id='6' w:name='IntroductionParentsDoNotSeekFamilyCourt' />
+	  <w:r w:rsidRPr='00D52A55'>
+		  <w:rPr>
+			  <w:b />
+			  <w:bCs />
+		  </w:rPr>
+		  <w:t>1.03</w:t>
+	  </w:r>
+	  <w:r>
+		  <w:t xml:space='preserve'> </w:t>
+	  </w:r>
+	  <w:bookmarkEnd w:id='6' />
+	  <w:r>
+		  <w:t>WHEREAS, Parents intend this to be a binding agreement between them to govern the co-parenting of their Child(ren) but do not plan to seek approval of their Agreement from the Family Court of their jurisdiction.</w:t>
+	  </w:r>
+  </w:p>
+  
+  <w:p w14:paraId='27215177' w14:textId='77777777' w:rsidR='00D52A55' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
+  <w:pPr>
+	  <w:pBdr>
+		  <w:top w:val='nil' />
+		  <w:left w:val='nil' />
+		  <w:bottom w:val='nil' />
+		  <w:right w:val='nil' />
+		  <w:between w:val='nil' />
+	  </w:pBdr>
+	  <w:tabs>
+		  <w:tab w:val='left' w:pos='720' />
+	  </w:tabs>
+	  <w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+	  <w:ind w:left='0' w:right='43' w:firstLine='0' />
+	  <w:jc w:val='both' />
+  </w:pPr>
+</w:p>
+<w:p w14:paraId='3A443912' w14:textId='59A7A8A4' w:rsidR='00505307' w:rsidRPr='006830FF' w:rsidRDefault='006830FF' w:rsidP='00D52A55'>
+  <w:pPr>
+	  <w:pBdr>
+		  <w:top w:val='nil' />
+		  <w:left w:val='nil' />
+		  <w:bottom w:val='nil' />
+		  <w:right w:val='nil' />
+		  <w:between w:val='nil' />
+	  </w:pBdr>
+	  <w:tabs>
+		  <w:tab w:val='left' w:pos='720' />
+	  </w:tabs>
+	  <w:spacing w:after='1' w:line='360' w:lineRule='auto' />
+	  <w:ind w:left='0' w:right='43' w:firstLine='0' />
+	  <w:jc w:val='center' />
+	  <w:rPr>
+		  <w:u w:val='single' />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+  </w:pPr>
+  <w:proofErr w:type='gramStart' />
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:u w:val='single' />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:t>PARTIES:</w:t>
+  </w:r>
+  <w:proofErr w:type='gramEnd' />
+</w:p>
+<w:p w14:paraId='664E475F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+  <w:pPr>
+	  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+	  <w:ind w:left='0' w:right='46' w:firstLine='0' />
+	  <w:jc w:val='both' />
+  </w:pPr>
+  <w:bookmarkStart w:id='10' w:name='PartiesInformationonParentA' />
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:b />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:lastRenderedPageBreak />
+	  <w:t>3.00</w:t>
+  </w:r>
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:b />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:tab />
+  </w:r>
+  <w:proofErr w:type='gramStart' />
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:u w:val='single' />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:t>PARTIES:</w:t>
+  </w:r>
+  <w:proofErr w:type='gramEnd' />
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:u w:val='single' />
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:t xml:space='preserve'> INFORMATION ON PARENT A</w:t>
+  </w:r>
+  <w:bookmarkEnd w:id='10' />
+  <w:r w:rsidRPr='006830FF'>
+	  <w:rPr>
+		  <w:lang w:val='fr-FR' />
+	  </w:rPr>
+	  <w:t xml:space='preserve'>. </w:t>
+  </w:r>
+  <w:r>
+	  <w:t xml:space='preserve'>PARENT A’s full legal name is ____________. Parent A’s residence address is ____________. </w:t>
+  </w:r>
+</w:p>
+<w:p w14:paraId='6414ED90' w14:textId='19F2DA0A' w:rsidR='00505307' w:rsidRDefault='00D52A55'>
+  <w:pPr>
+	  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
+	  <w:ind w:left='0' w:right='46' w:firstLine='0' />
+	  <w:jc w:val='both' />
+  </w:pPr>
+  <w:bookmarkStart w:id='11' w:name='PartiesInformationonParentB' />
+  <w:r>
+	  <w:rPr>
+		  <w:b />
+	  </w:rPr>
+	  <w:t>3.01</w:t>
+  </w:r>
+  <w:r>
+	  <w:t xml:space='preserve'> </w:t>
+  </w:r>
+  <w:r w:rsidRPr='00D52A55'>
+	  <w:rPr>
+		  <w:u w:val='single' />
+	  </w:rPr>
+	  <w:t>PARTIES:</w:t>
+  </w:r>
+  <w:r>
+	  <w:rPr>
+		  <w:u w:val='single' />
+	  </w:rPr>
+	  <w:t xml:space='preserve'> INFORMATION ON PARENT B</w:t>
+  </w:r>
+  <w:bookmarkEnd w:id='11' />
+  <w:r>
+	  <w:t xml:space='preserve'>. Parent B’s full legal name is ____________. Parent B’s residence address is ____________. </w:t>
+  </w:r>
+</w:p>";
+
+$this->fileContentString .= $header2String;
+
 	}
   
 	function genFooter()
