@@ -12,6 +12,12 @@ include 'HolidayTableWord.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
 {
+	public function __construct(string $fileName, string $fileType, array $responses)
+	{
+		$this->fileName = $fileName;
+		$this->responses = $responses;
+		$this->fileType = $fileType;
+	}
 	function genHeader()
 	{
 		
@@ -113,7 +119,115 @@ class wordDocGenerator extends documentGenerator
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
-
+	  <w:bookmarkStart w:id='0' w:name='GuidingPrinciplesResponsibilitiestoChild'/>
+	  <w:p w14:paraId='7C2206BB' w14:textId='2234CAEB' w:rsidR='00505307' w:rsidRDefault='00D72616'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:fldChar w:fldCharType='begin'/>
+		</w:r>
+		<w:r>
+		  <w:instrText>HYPERLINK \l 'GuidingPrinciplesResponsibilitiestoChild'</w:instrText>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='separate'/>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:t>2.00</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:tab/>
+		  <w:t>Guiding Principles. Responsibilities to Our Child(ren)</w:t>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='end'/>
+		</w:r>
+	  </w:p>
+	  <w:bookmarkEnd w:id='0'/>
+	  <w:p w14:paraId='40692321' w14:textId='5CAB8703' w:rsidR='00505307' w:rsidRDefault='00D72616'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:fldChar w:fldCharType='begin'/>
+		</w:r>
+		<w:r>
+		  <w:instrText>HYPERLINK \l 'GuidingPrinciplesResponsibilitiestoCoPar'</w:instrText>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='separate'/>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:t>2.01</w:t>
+		</w:r>
+		<w:r w:rsidRPr='00D72616'>
+		  <w:rPr>
+			<w:rStyle w:val='Hyperlink'/>
+		  </w:rPr>
+		  <w:tab/>
+		  <w:t>Guiding Principles. Responsibilities to Our Co-Parent</w:t>
+		</w:r>
+		<w:r>
+		  <w:fldChar w:fldCharType='end'/>
+		</w:r>
+	  </w:p>
+	  <w:p w14:paraId='1C7571BF' w14:textId='70A0AAE8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='GuidingPrinciplesNewIntimatePartners' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>2.02</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Guiding Principles. Statement About New Intimate Partners</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+	  <w:p w14:paraId='60996E2C' w14:textId='559816F4' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='GuidingPrinciplesProtectionFromDisputes' w:history='1'>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>2.03</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Guiding Principles. Protection from Parental Disputes</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='00D72616'>
+		  <w:t xml:space='preserve'> </w:t>
+		</w:r>
+	  </w:p>
 	  <w:p w14:paraId='79247A41' w14:textId='3CCF4C5B' w:rsidR='00505307' w:rsidRPr='006830FF' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
@@ -151,7 +265,7 @@ class wordDocGenerator extends documentGenerator
 			  <w:rStyle w:val='Hyperlink'/>
 			  <w:lang w:val='fr-FR'/>
 			</w:rPr>
-			<w:t xml:space='preserve'> Information on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+			<w:t xml:space='preserve'> Information on Parent A</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
@@ -192,7 +306,7 @@ class wordDocGenerator extends documentGenerator
 			  <w:rStyle w:val='Hyperlink'/>
 			  <w:lang w:val='fr-FR'/>
 			</w:rPr>
-			<w:t xml:space='preserve'> Information on " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+			<w:t xml:space='preserve'> Information on Parent B</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>
@@ -241,1192 +355,6 @@ class wordDocGenerator extends documentGenerator
 		  <w:t xml:space='preserve'> </w:t>
 		</w:r>
 	  </w:p>";
-
-	  $header2String = "<w:p w14:paraId='6F3DCE0A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='3116479A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='3EC59D10' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='3E27388B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='01B0FC26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='69E3C98F' w14:textId='77777777' w:rsidR='00D72616' w:rsidRDefault='00D72616'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='7DC5F480' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='2E41C345' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='2BED06B5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='3F272306' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Name of Parent A: " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='5B776BC7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Address: " . $this->responses["partyAResidence"] . ", " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='0F6E9FE4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Telephone: " . $this->responses["partyACell"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='21F8A534' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>E-Mail: " . $this->responses["partyAEmail"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='5AE67848' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='56A14B6E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Name of Parent B: " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='04D79CAC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Address: " . $this->responses["partyBResidence"] . ", " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='5EA22090' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>Telephone: " . $this->responses["partyBCell"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='0CC8295B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>E-Mail: " . $this->responses["partyBEmail"] . "</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='75E730E4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-    <w:p w14:paraId='7DC5F480' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='414B9ACE' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-		  <w:jc w:val='center' />
-	  </w:pPr>
-	  <w:r>
-	  <w:t xml:space='preserve'>IN THE FAMILY COURT OF THE </w:t>
-  </w:r>
-  <w:r>
-	  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-	  <w:t>" . $this->responses["court"] . "</w:t>
-  </w:r>
-  <w:r>
-	  <w:t xml:space='preserve'> CIRCUIT</w:t>
-  </w:r>
-  
-  </w:p>
-  <w:p w14:paraId='0C7EB3F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-		  <w:jc w:val='center' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='73CAF07B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-		  <w:jc w:val='center' />
-	  </w:pPr>
-	  <w:r>
-		  <w:t>STATE OF HAWAII</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='4B789226' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='6B8B9232' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:tbl>
-	  <w:tblPr>
-		  <w:tblStyle w:val='a' />
-		  <w:tblW w:w='9360' w:type='dxa' />
-		  <w:tblLayout w:type='fixed' />
-		  <w:tblLook w:val='0000' w:firstRow='0' w:lastRow='0' w:firstColumn='0' w:lastColumn='0' w:noHBand='0' w:noVBand='0' />
-	  </w:tblPr>
-	  <w:tblGrid>
-		  <w:gridCol w:w='4608' />
-		  <w:gridCol w:w='432' />
-		  <w:gridCol w:w='4320' />
-	  </w:tblGrid>
-	  <w:tr w:rsidR='00505307' w14:paraId='7BAD059E' w14:textId='77777777'>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='4608' w:type='dxa' />
-				  <w:tcBorders>
-					  <w:right w:val='single' w:sz='4' w:space='0' w:color='000000' />
-				  </w:tcBorders>
-			  </w:tcPr>
-			  <w:p w14:paraId='6474728F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-					  <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ",</w:t>
-				  </w:r>
-			  </w:p>
-			  <w:p w14:paraId='625BD574' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='7818A67E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:tabs>
-						  <w:tab w:val='left' w:pos='1440' />
-						  <w:tab w:val='left' w:pos='2169' />
-					  </w:tabs>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-					  <w:tab />
-					  <w:t>Plaintiff/Petitioner,</w:t>
-				  </w:r>
-			  </w:p>
-			  <w:p w14:paraId='64B82A6E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='0840A524' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:tabs>
-						  <w:tab w:val='left' w:pos='1440' />
-					  </w:tabs>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='720' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-					  <w:t>vs.</w:t>
-				  </w:r>
-			  </w:p>
-			  <w:p w14:paraId='330C0E20' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='7086B65E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-					  <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . ",</w:t>
-				  </w:r>
-			  </w:p>
-			  <w:p w14:paraId='7B0F1EB1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='0E1977E5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:tabs>
-						  <w:tab w:val='left' w:pos='1421' />
-						  <w:tab w:val='left' w:pos='2160' />
-					  </w:tabs>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-					  <w:tab />
-					  <w:t>Defendant/Respondent.</w:t>
-				  </w:r>
-			  </w:p>
-		  </w:tc>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='432' w:type='dxa' />
-				  <w:tcBorders>
-					  <w:left w:val='nil' />
-				  </w:tcBorders>
-			  </w:tcPr>
-			  <w:p w14:paraId='02194EF5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-		  </w:tc>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='4320' w:type='dxa' />
-			  </w:tcPr>
-			  <w:p w14:paraId='1FF6BA6A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-				  <w:r>
-				  <w:t xml:space='preserve'>Case No. </w:t>
-			  </w:r>
-			  <w:r>
-				  <w:rPr>
-					  <w:highlight w:val='yellow' />
-				  </w:rPr>
-				  <w:t>" . $this->responses["caseNo"] . "</w:t>
-			  </w:r>
-			  </w:p>
-
-			  <w:p w14:paraId='1FF6BA6A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			  <w:pPr>
-				  <w:pBdr>
-					  <w:top w:val='nil' />
-					  <w:left w:val='nil' />
-					  <w:bottom w:val='nil' />
-					  <w:right w:val='nil' />
-					  <w:between w:val='nil' />
-				  </w:pBdr>
-				  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-				  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-			  </w:pPr>
-			  <w:r>
-			  <w:t xml:space='preserve'>Nature of Case: </w:t>
-		  </w:r>
-		  <w:r>
-			  <w:rPr>
-				  <w:highlight w:val='yellow' />
-			  </w:rPr>
-			  <w:t>" . $this->responses["natureCase"] . "</w:t>
-		  </w:r>
-		  </w:p>
-
-			  <w:p w14:paraId='575A2AD5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='392A124F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-					  <w:rPr>
-						  <w:b />
-					  </w:rPr>
-				  </w:pPr>
-				  <w:r>
-					  <w:rPr>
-						  <w:b />
-					  </w:rPr>
-					  <w:t>CO-PARENTING PLAN: AGREEMENT REGARDING CHILD CUSTODY, TIMESHARING, AND SUPPORT</w:t>
-				  </w:r>
-			  </w:p>
-			  <w:p w14:paraId='1E0D2DE1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='7AA5C7A8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='44E97DB4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='4C883E07' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='21C07201' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-			  <w:p w14:paraId='6EE25392' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-		  </w:tc>
-	  </w:tr>
-	  <w:tr w:rsidR='00505307' w14:paraId='33F1F371' w14:textId='77777777'>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='4608' w:type='dxa' />
-				  <w:tcBorders>
-					  <w:bottom w:val='single' w:sz='4' w:space='0' w:color='000000' />
-					  <w:right w:val='single' w:sz='4' w:space='0' w:color='000000' />
-				  </w:tcBorders>
-			  </w:tcPr>
-			  <w:p w14:paraId='37BD68B9' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-		  </w:tc>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='432' w:type='dxa' />
-				  <w:tcBorders>
-					  <w:left w:val='nil' />
-				  </w:tcBorders>
-			  </w:tcPr>
-			  <w:p w14:paraId='78675174' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-		  </w:tc>
-		  <w:tc>
-			  <w:tcPr>
-				  <w:tcW w:w='4320' w:type='dxa' />
-			  </w:tcPr>
-			  <w:p w14:paraId='2EACBD96' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-				  <w:pPr>
-					  <w:pBdr>
-						  <w:top w:val='nil' />
-						  <w:left w:val='nil' />
-						  <w:bottom w:val='nil' />
-						  <w:right w:val='nil' />
-						  <w:between w:val='nil' />
-					  </w:pBdr>
-					  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-				  </w:pPr>
-			  </w:p>
-		  </w:tc>
-	  </w:tr>
-  </w:tbl>
-  <w:p w14:paraId='6415089F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:spacing w:after='0' w:line='259' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='15F89C0C' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:spacing w:after='0' w:line='259' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='7D873B7E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-		  <w:jc w:val='center' />
-		  <w:rPr>
-			  <w:b />
-			  <w:u w:val='single' />
-		  </w:rPr>
-	  </w:pPr>
-	  <w:r>
-		  <w:rPr>
-			  <w:b />
-			  <w:u w:val='single' />
-		  </w:rPr>
-		  <w:t xml:space='preserve'>CO-PARENTING PLAN: AGREEMENT REGARDING </w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='48024762' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
-		  <w:jc w:val='center' />
-		  <w:rPr>
-			  <w:b />
-			  <w:u w:val='single' />
-		  </w:rPr>
-	  </w:pPr>
-	  <w:r>
-		  <w:rPr>
-			  <w:b />
-			  <w:u w:val='single' />
-		  </w:rPr>
-		  <w:t>CHILD CUSTODY, TIMESHARING, AND SUPPORT</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='1A796920' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
-	  <w:pPr>
-		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		  <w:ind w:left='-15' w:right='36' w:firstLine='0' />
-		  <w:jc w:val='both' />
-	  </w:pPr>
-  </w:p>
-  <w:p w14:paraId='3EC2A107' w14:textId='216F5082' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
-	  <w:pPr>
-		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='36' w:firstLine='0' />
-		  <w:jc w:val='both' />
-	  </w:pPr>
-	  <w:r>
-		  <w:rPr>
-			  <w:b />
-		  </w:rPr>
-		  <w:t xml:space='preserve'>1.00 </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'>THIS AGREEMENT is made and </w:t>
-	  </w:r>
-	  <w:r>
-    <w:rPr>
-        <w:highlight w:val='white' />
-    </w:rPr>
-    <w:t xml:space='preserve'>entered this </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t xml:space='preserve'>" . $this->day . " (day)</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t xml:space='preserve'>" . $this->month . " (month)</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'>, </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t xml:space='preserve'>" . $this->year . " (year)</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'>, by and between </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> (collectively hereinafter referred to as “Parents”) and applies to the Child(ren) named below in Paragraph 3.00.</w:t>
-</w:r>
-  </w:p>
-  <w:p w14:paraId='4BA8706B' w14:textId='644BCB6B' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
-		  <w:jc w:val='both' />
-	  </w:pPr>
-	  <w:bookmarkStart w:id='4' w:name='IntroductionParentsDesire' />
-	  <w:r w:rsidRPr='00D52A55'>
-		  <w:rPr>
-			  <w:b />
-			  <w:bCs />
-		  </w:rPr>
-		  <w:t>1.01</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> </w:t>
-	  </w:r>
-	  <w:bookmarkEnd w:id='4' />
-	  <w:r>
-		  <w:t>WHEREAS, Parents wish to effectuate a preliminary settlement of all matters relating to their minor Child(ren);</w:t>
-	  </w:r>
-  </w:p>
-  <w:p w14:paraId='17EDA1C6' w14:textId='5C7A4A39' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
-		  <w:jc w:val='both' />
-	  </w:pPr>
-	  <w:bookmarkStart w:id='5' w:name='IntroductionParentstoSeekFamilyCourt' />
-	  <w:r w:rsidRPr='00D52A55'>
-		  <w:rPr>
-			  <w:b />
-			  <w:bCs />
-		  </w:rPr>
-		  <w:lastRenderedPageBreak />
-		  <w:t>1.02</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> </w:t>
-	  </w:r>
-	  <w:bookmarkEnd w:id='5' />
-	  <w:r>
-	  <w:t xml:space='preserve'>WHEREAS, parents intend to seek approval of their Agreement from the Family Court of the </w:t>
-  </w:r>
-  <w:r>
-	  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-	  <w:t>" . $this->responses["court"] . "</w:t>
-  </w:r>
-  <w:r>
-	  <w:t xml:space='preserve'> Circuit of the State of </w:t>
-  </w:r>
-  <w:r>
-	  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-	  <w:t>Hawaii</w:t>
-  </w:r>
-  <w:r>
-	  <w:t xml:space='preserve'> hereinafter referred to as the “Family Court”;</w:t>
-  </w:r>
-  </w:p>
-
-  <w:p w14:paraId='1263E7CC' w14:textId='6CCADD84' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
-	  <w:pPr>
-		  <w:pBdr>
-			  <w:top w:val='nil' />
-			  <w:left w:val='nil' />
-			  <w:bottom w:val='nil' />
-			  <w:right w:val='nil' />
-			  <w:between w:val='nil' />
-		  </w:pBdr>
-		  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-		  <w:ind w:left='0' w:right='46' w:firstLine='0' />
-		  <w:jc w:val='both' />
-	  </w:pPr>
-	  <w:bookmarkStart w:id='6' w:name='IntroductionParentsDoNotSeekFamilyCourt' />
-	  <w:r w:rsidRPr='00D52A55'>
-		  <w:rPr>
-			  <w:b />
-			  <w:bCs />
-		  </w:rPr>
-		  <w:t>1.03</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> </w:t>
-	  </w:r>
-	  <w:bookmarkEnd w:id='6' />
-	  <w:r>
-		  <w:t>WHEREAS, Parents intend this to be a binding agreement between them to govern the co-parenting of their Child(ren) but do not plan to seek approval of their Agreement from the Family Court of their jurisdiction.</w:t>
-	  </w:r>
-  </w:p>
-  
-  <w:p w14:paraId='27215177' w14:textId='77777777' w:rsidR='00D52A55' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
-  <w:pPr>
-	  <w:pBdr>
-		  <w:top w:val='nil' />
-		  <w:left w:val='nil' />
-		  <w:bottom w:val='nil' />
-		  <w:right w:val='nil' />
-		  <w:between w:val='nil' />
-	  </w:pBdr>
-	  <w:tabs>
-		  <w:tab w:val='left' w:pos='720' />
-	  </w:tabs>
-	  <w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-	  <w:ind w:left='0' w:right='43' w:firstLine='0' />
-	  <w:jc w:val='both' />
-  </w:pPr>
-</w:p>
-<w:p w14:paraId='3A443912' w14:textId='59A7A8A4' w:rsidR='00505307' w:rsidRPr='006830FF' w:rsidRDefault='006830FF' w:rsidP='00D52A55'>
-  <w:pPr>
-	  <w:pBdr>
-		  <w:top w:val='nil' />
-		  <w:left w:val='nil' />
-		  <w:bottom w:val='nil' />
-		  <w:right w:val='nil' />
-		  <w:between w:val='nil' />
-	  </w:pBdr>
-	  <w:tabs>
-		  <w:tab w:val='left' w:pos='720' />
-	  </w:tabs>
-	  <w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-	  <w:ind w:left='0' w:right='43' w:firstLine='0' />
-	  <w:jc w:val='center' />
-	  <w:rPr>
-		  <w:u w:val='single' />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-  </w:pPr>
-  <w:proofErr w:type='gramStart' />
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:u w:val='single' />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:t>PARTIES:</w:t>
-  </w:r>
-  <w:proofErr w:type='gramEnd' />
-</w:p>
-<w:p w14:paraId='664E475F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-  <w:pPr>
-	  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-	  <w:ind w:left='0' w:right='46' w:firstLine='0' />
-	  <w:jc w:val='both' />
-  </w:pPr>
-  <w:bookmarkStart w:id='10' w:name='PartiesInformationonParentA' />
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:b />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:lastRenderedPageBreak />
-	  <w:t>3.00</w:t>
-  </w:r>
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:b />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:tab />
-  </w:r>
-  <w:proofErr w:type='gramStart' />
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:u w:val='single' />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:t>PARTIES:</w:t>
-  </w:r>
-  <w:proofErr w:type='gramEnd' />
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:u w:val='single' />
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:t xml:space='preserve'> INFORMATION ON PARENT A</w:t>
-  </w:r>
-  <w:bookmarkEnd w:id='10' />
-  <w:r w:rsidRPr='006830FF'>
-	  <w:rPr>
-		  <w:lang w:val='fr-FR' />
-	  </w:rPr>
-	  <w:t xml:space='preserve'>. </w:t>
-  </w:r>
-  <w:r>
-  <w:t xml:space='preserve'>PARENT A’s full legal name is </w:t>
-</w:r>
-<w:r>
-  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-  <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-  <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "’s residence address is </w:t>
-</w:r>
-<w:r>
-  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-  <w:t>" . $this->responses["partyAResidence"] . ", " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . ".</w:t>
-</w:r>
-
-</w:p>
-<w:p w14:paraId='6414ED90' w14:textId='19F2DA0A' w:rsidR='00505307' w:rsidRDefault='00D52A55'>
-  <w:pPr>
-	  <w:spacing w:after='0' w:line='360' w:lineRule='auto' />
-	  <w:ind w:left='0' w:right='46' w:firstLine='0' />
-	  <w:jc w:val='both' />
-  </w:pPr>
-  <w:bookmarkStart w:id='11' w:name='PartiesInformationonParentB' />
-  <w:r>
-	  <w:rPr>
-		  <w:b />
-	  </w:rPr>
-	  <w:t>3.01</w:t>
-  </w:r>
-  <w:r>
-	  <w:t xml:space='preserve'> </w:t>
-  </w:r>
-  <w:r w:rsidRPr='00D52A55'>
-	  <w:rPr>
-		  <w:u w:val='single' />
-	  </w:rPr>
-	  <w:t>PARTIES:</w:t>
-  </w:r>
-  <w:r>
-	  <w:rPr>
-		  <w:u w:val='single' />
-	  </w:rPr>
-	  <w:t xml:space='preserve'> INFORMATION ON PARENT B</w:t>
-  </w:r>
-  <w:bookmarkEnd w:id='11' />
-  <w:r>
-  <w:t xml:space='preserve'>. PARENT B’s full legal name is </w:t>
-</w:r>
-<w:r>
-  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-  <w:t>" . $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-  <w:t xml:space='preserve'>. " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "’s residence address is </w:t>
-</w:r>
-<w:r>
-  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-  <w:t>" . $this->responses["partyBResidence"] . ", " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . ".</w:t>
-</w:r>
-
-</w:p>";
-
-$this->fileContentString .= $header2String;
-
 	}
   
 	function genFooter()
@@ -1528,24 +456,7 @@ function gen_children_4_00_last() {
 // legal custody section 3
 function gen_legal_custody_5_00()
 {
-	$definition = "<w:p w14:paraId='29690369' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-		<w:ind w:left='0' w:right='36' w:firstLine='0' />
-		<w:jc w:val='center' />
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-	</w:pPr>
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>LEGAL CUSTODY:</w:t>
-	</w:r>
-</w:p>
-	
-	<w:p w14:paraId='3CB4A065' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$definition = "<w:p w14:paraId='3CB4A065' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
 		<w:ind w:left='0' w:right='36' w:firstLine='0' />
@@ -1673,23 +584,8 @@ function gen_legal_custody_5_03A()
 	</w:r>
 	<w:bookmarkEnd w:id='17' />
 	<w:r>
-    <w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then </w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:t>shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
-</w:r>
+		<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent A shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -1744,23 +640,8 @@ function gen_legal_custody_5_03B()
 	</w:r>
 	<w:bookmarkEnd w:id='17' />
 	<w:r>
-    <w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then </w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:t>shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
-</w:r>
+		<w:t>. Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren) after consulting with the other Parent and the Child(ren), then Parent B shall have tie-breaking authority to make the legal custody decision in the event of an impasse.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6F4C41D8' w14:textId='03D492FA' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -1814,24 +695,12 @@ function gen_legal_custody_5_05A()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT.</w:t>
+		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='16' />
 	<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-	<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:t> shall have sole legal custody of the Child(ren).</w:t>
-</w:r>
+		<w:t>.Parent A shall have sole legal custody of the Child(ren).</w:t>
+	</w:r>
 </w:p>
 
 <w:p w14:paraId='3A1BB760' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -1858,25 +727,7 @@ function gen_legal_custody_5_05A()
 </w:r>
 <w:bookmarkEnd w:id='19' />
 <w:r>
-    <w:t xml:space='preserve'>. Although </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> is awarded sole legal custody, </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access</w:t>
+	<w:t xml:space='preserve'>. Although Parent A  is awarded sole legal custody, Parent B  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
 </w:r>
 <w:proofErr w:type='gramStart' />
 <w:r>
@@ -1912,35 +763,11 @@ function gen_legal_custody_5_05A()
 		<w:t>Legal Custody: Sole to One Parent</w:t>
 		</w:r>
 	</w:hyperlink>
-	</w:p>
-	
-	
-	<w:p w14:paraId='642CCA55' w14:textId='2A47A141' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
-  <w:pPr>
-	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	<w:ind w:left='0' w:right='0'/>
-  </w:pPr>
-  <w:hyperlink w:anchor='LegalCustodyAccesstoInformation' w:history='1'>
-	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
-	  <w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-	  </w:rPr>
-	  <w:t>5.05</w:t>
-	</w:r>
-	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
-	  <w:rPr>
-		<w:rStyle w:val='Hyperlink'/>
-	  </w:rPr>
-	  <w:tab/>
-	  <w:t>Legal Custody: Access to Information for Parent Without Legal Custody</w:t>
-	</w:r>
-  </w:hyperlink>
-</w:p>";
-	$this -> tableOfContentsString .= $tableCon;
+	</w:p>";
+        $this->fileContentString .= $snippet;
+        $this -> tableOfContentsString .= $tableCon;
+	} //end of legal custody section 3
 
-	 $snippet;
-	$this->fileContentString .= $snippet;
-}
 function gen_legal_custody_5_05B()
 {   // 5.02 
 	$snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -1966,25 +793,12 @@ function gen_legal_custody_5_05B()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT.</w:t>
+		<w:t>LEGAL CUSTODY: SOLE TO ONE PARENT</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='16' />
 	<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-	<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-<w:t xml:space='preserve'> </w:t> 
-</w:r>
-<w:r>
-    <w:t> shall have sole legal custody of the Child(ren).</w:t>
-</w:r>
-
+		<w:t>.Parent B shall have sole legal custody of the Child(ren).</w:t>
+	</w:r>
 </w:p>
 
 <w:p w14:paraId='3A1BB760' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -2011,27 +825,8 @@ function gen_legal_custody_5_05B()
 </w:r>
 <w:bookmarkEnd w:id='19' />
 <w:r>
-    <w:t xml:space='preserve'>. Although </w:t>
+	<w:t xml:space='preserve'>. Although Parent B  is awarded sole legal custody, Parent A  shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
 </w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " </w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> is awarded sole legal custody, </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " </w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access </w:t>
-</w:r>
-
 <w:proofErr w:type='gramStart' />
 <w:r>
 	<w:t>any and all</w:t>
@@ -2126,57 +921,14 @@ function gen_legal_custody_5_04()
 	</w:r>
 	<w:bookmarkEnd w:id='18' />
 	<w:r>
-    <w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentABW"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall have tie-breaking authority to make </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>Parents shall share joint legal custody of the Child(ren), provided however, that if Parents cannot mutually agree on a legal custody decision for the Child(ren), then " . $this->responses["parentABW"] . " shall have tie-breaking authority to make </w:t>
+	</w:r>
 	<w:r>
 		<w:rPr>
 			<w:color w:val='333333' />
 		</w:rPr>
-		<w:r>
-		<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with </w:t>
-	</w:r>
-	<w:r>
-    <w:t xml:space='preserve'> </w:t> 
-</w:r>
-	<w:r>
-		<w:rPr>
-			<w:highlight w:val='yellow' />
-		</w:rPr>
-		<w:t>" . $this->responses["parentABX"] . "</w:t>
-	</w:r>
-	<w:r>
-		<w:t xml:space='preserve'> and the Child(ren) and </w:t>
-	</w:r>
-	<w:r>
-		<w:rPr>
-			<w:highlight w:val='yellow' />
-		</w:rPr>
-		<w:t>" . $this->responses["parentABY"] . "</w:t>
-	</w:r>
-	<w:r>
-		<w:t xml:space='preserve'> shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with </w:t>
-	</w:r>
-
-	<w:r>
-		<w:rPr>
-			<w:highlight w:val='yellow' />
-		</w:rPr>
-		<w:t>" . $this->responses["parentABZ"] . "</w:t>
-	</w:r>
-	<w:r>
-		<w:t xml:space='preserve'> and the child.</w:t>
-	</w:r>
-	
+		<w:t>major decisions about the Child(ren)'s education and extracurricular activities, after consulting with " . $this->responses["parentABX"] . " and the Child(ren) and " . $this->responses["parentABY"] . " 
+		shall have tie-breaking authority to make major decisions about the Child(ren)'s health care, language, and spirituality, after consulting with " . $this->responses["parentABZ"] . " and the child.</w:t>
 	</w:r>
 </w:p>";
 
@@ -2659,33 +1411,13 @@ function gen_physical_custody_timesharing_6_00() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='26'/>
 		  <w:r>
-			<w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
+			<w:t>. If there is a conflict with different sections of the Physical Custody and Timesharing schedule, the governing hierarchy is from the highest to lowest as follows: (1) Holidays and Special Days; (2) Travel and Uninterrupted Time with
+			  the Child(ren); (3) Timesharing with the Child(ren) During School Breaks, and (4) Timesharing with the Child(ren) During the School Year.
 			</w:t>
 		  </w:r>
 		</w:p>";
 
-$tableCon = "<w:p w14:paraId='25B4B744' w14:textId='10638B4B' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
-<w:pPr>
-	<w:spacing w:after='0' w:line='240' w:lineRule='auto' />
-	<w:ind w:left='0' w:right='0' />
-</w:pPr>
-<w:hyperlink w:anchor='PhysicalCustodyGlobalPriority' w:history='1'>
-	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
-		<w:rPr>
-			<w:rStyle w:val='Hyperlink' />
-		</w:rPr>
-		<w:t>6.00</w:t>
-	</w:r>
-	<w:r w:rsidR='00D72616' w:rsidRPr='00D72616'>
-		<w:rPr>
-			<w:rStyle w:val='Hyperlink' />
-		</w:rPr>
-		<w:tab />
-		<w:t>Physical Custody and Timesharing: Global Priority</w:t>
-	</w:r>
-</w:hyperlink>
-</w:p>";
-$this -> tableOfContentsString .= $tableCon;
+		//Tags don't match; starts from <w:r>, but ends with </w:p>.
 
 	 $header;
 	$this->fileContentString .= $header;
@@ -2721,7 +1453,9 @@ function gen_physical_custody_timesharing_6_01() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='27'/>
 		  <w:r>
-			<w:t>During the school year, parents agree to share time with their children as set forth hereinbelow. Understanding that each individual Child’s developmental stage and needs should be the primary consideration for setting a schedule. Generally, younger children need more frequent transitions so they do not feel abandoned by either parent, while older children can tolerate longer absences. Each Child’s health, education, special needs, and social, emotional, and physical well-being must be considered in selecting an appropriate schedule. Schedules may change over time by agreement of the Parents based on the Child(ren)’s needs. Below are suggested templates to be modified and based on each family’s needs.
+			<w:t>During the school year, parents agree to share time with their children as set forth hereinbelow. Understanding that each individual Child’s developmental stage and needs should be the primary consideration for setting a schedule.
+			  Generally, younger children need more frequent transitions so they do not feel abandoned by either parent, while older children can tolerate longer absences. Each Child’s health, education, special needs, and social, emotional, and physical
+			  well-being must be considered in selecting an appropriate schedule. Schedules may change over time by agreement of the Parents based on the Child(ren)’s needs. Below are suggested templates to be modified and based on each family’s needs.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -2783,7 +1517,8 @@ function gen_physical_custody_timesharing_6_01A() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='28'/>
 		  <w:r>
-			<w:t>. 50/50 schedules can benefit a Child because the Child spends substantial time living with both Parents. This allows the Child(ren) to build close relationships with both Parents and to feel cared for by both Parents. 50/50 schedules work best when:
+			<w:t>. 50/50 schedules can benefit a Child because the Child spends substantial time living with both Parents. This allows the Child(ren) to build close relationships with both Parents and to feel cared for by both Parents. 50/50 schedules
+			  work best when:
 			</w:t>
 		  </w:r>
 		</w:p>
@@ -3118,7 +1853,8 @@ function gen_physical_custody_timesharing_6_02() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='30'/>
 		  <w:r>
-			<w:t>. Unless otherwise agreed by both Parents, school breaks shall be defined as beginning after school on the last day prior to the break and ending at the morning drop off at school on the day school resumes. During their designated school break time with the Child(ren), either Parent may elect to travel with the Child(ren) per the Travel with the Child(ren) provision hereinbelow.
+			<w:t>. Unless otherwise agreed by both Parents, school breaks shall be defined as beginning after school on the last day prior to the break and ending at the morning drop off at school on the day school resumes. During their designated school
+			  break time with the Child(ren), either Parent may elect to travel with the Child(ren) per the Travel with the Child(ren) provision hereinbelow.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -3225,118 +1961,77 @@ function gen_physical_custody_timesharing_6_02A(string $type) {
 			<w:t>Fall Break</w:t>
 		  </w:r>
 		</w:hyperlink>
-	  </w:p>";
+	  </w:p>
+	  
+	  <w:p w14:paraId='30F97A26' w14:textId='35F9AA68' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='2' w:name='_heading=h.ptfvl3aera8c' w:colFirst='0' w:colLast='0'/>
+		<w:bookmarkEnd w:id='2'/>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+			<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyFallBreakAB' w:history='1'>
+			<w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+				<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02A(ii) Alternate Break</w:t>
+			</w:r>
+		</w:hyperlink>
+		</w:p>
+		<w:p w14:paraId='6DCFBFE5' w14:textId='460B17D8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+			<w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:bookmarkStart w:id='3' w:name='_heading=h.q5n0t569stji' w:colFirst='0' w:colLast='0'/>
+		<w:bookmarkEnd w:id='3'/>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r>
+			<w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+			<w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyFallBreakContinueSchedule' w:history='1'>
+			<w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+				<w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02A(iii) Continue Schedule During the School Year</w:t>
+			</w:r>
+		</w:hyperlink>
+		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
+		//6.02(i) is missing in document.xml
 
 	 $content;
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "fall-split-break":
-			$toc = "<w:p w14:paraId='351991C1' w14:textId='3FA19C65' w:rsidR='00505307' w:rsidRDefault='00EF5343'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyFallBreakSB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02A (</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellStart'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>i</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellEnd'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>) Split Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-		$this->tableOfContentsString .= $toc;
-
 			$split = new Fall();
-			$fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$fall = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-alternate-break":
-			$toc = "<w:p w14:paraId='30F97A26' w14:textId='35F9AA68' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-				<w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:bookmarkStart w:id='2' w:name='_heading=h.ptfvl3aera8c' w:colFirst='0' w:colLast='0'/>
-			<w:bookmarkEnd w:id='2'/>
-			<w:r>
-				<w:tab/>
-			</w:r>
-			<w:r>
-				<w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-				<w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyFallBreakAB' w:history='1'>
-				<w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02A(ii) Alternate Break</w:t>
-				</w:r>
-			</w:hyperlink>
-			</w:p>";
-			$this->tableOfContentsString .= $toc;
-
 			$alternate = new Fall();
-			$fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$fall = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $fall;
 			$this->fileContentString .= $fall;
 			break;
 		case "fall-continue-schedule":
-			$toc = "<w:p w14:paraId='6DCFBFE5' w14:textId='460B17D8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-				<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-				<w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:bookmarkStart w:id='3' w:name='_heading=h.q5n0t569stji' w:colFirst='0' w:colLast='0'/>
-			<w:bookmarkEnd w:id='3'/>
-			<w:r>
-				<w:tab/>
-			</w:r>
-			<w:r>
-				<w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-				<w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyFallBreakContinueSchedule' w:history='1'>
-				<w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02A(iii) Continue Schedule During the School Year</w:t>
-				</w:r>
-			</w:hyperlink>
-			</w:p>";
-			$this->tableOfContentsString .= $toc;
-
 			$continue = new Fall();
 			$fall = $continue->get_continue();
 			 $fall;
@@ -3374,7 +2069,7 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 		  </w:r>
 		  <w:bookmarkEnd w:id='35'/>
 		  <w:r>
-			<w:t xml:space='preserve'>. The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
+			<w:t xml:space='preserve'>.  The Parents shall share time with the Child(ren) during Thanksgiving Breaks as follows:  </w:t>
 		  </w:r>
 		</w:p>";
 
@@ -3410,6 +2105,116 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 			<w:t>Thanksgiving Break</w:t>
 		  </w:r>
 		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='18952DE9' w14:textId='0A439B54' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingSB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02B (</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellStart'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>i</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellEnd'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>) Split Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='2E0EF732' w14:textId='5EAAA5F4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingAB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02B (ii) Alternate Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='0F2E11CF' w14:textId='53AD6392' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingTimeonDay' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02B (iii) Time on Thanksgiving Day</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='756DE11A' w14:textId='3DD1C164' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyThanksgivingContinueSched' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02B (iv) Continue Schedule During the School Year</w:t>
+		  </w:r>
+		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -3417,104 +2222,18 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "thanksgiving-split-break":
-			$toc = "<w:p w14:paraId='18952DE9' w14:textId='0A439B54' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingSB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02B (</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellStart'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>i</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellEnd'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>) Split Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
 			$split = new Thanksgiving();
-			$thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$thanksgiving = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-alternate-break":
-			$toc = "<w:p w14:paraId='2E0EF732' w14:textId='5EAAA5F4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingAB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02B (ii) Alternate Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>"; 
-			$this->tableOfContentsString .= $toc;
 			$alternate = new Thanksgiving();
-			$thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$thanksgiving = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $thanksgiving;
 			$this->fileContentString .= $thanksgiving;
 			break;
 		case "thanksgiving-continue-schedule":
-			$toc = "<w:p w14:paraId='756DE11A' w14:textId='3DD1C164' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyThanksgivingContinueSched' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02B (iv) Continue Schedule During the School Year</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
 			$continue = new Thanksgiving();
 			$thanksgiving = $continue->get_continue();
 			 $thanksgiving;
@@ -3525,34 +2244,8 @@ function gen_physical_custody_timesharing_6_02B(string $type) {
 	}
 }
 function gen_physical_custody_timesharing_6_02BOptional() {
-	$toc = "<w:p w14:paraId='0F2E11CF' w14:textId='53AD6392' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-	  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	  <w:ind w:left='0' w:right='0'/>
-	</w:pPr>
-	<w:r>
-	  <w:tab/>
-	</w:r>
-	<w:r>
-	  <w:tab/>
-	</w:r>
-	<w:r w:rsidR='00E616E1'>
-	  <w:tab/>
-	</w:r>
-	<w:hyperlink w:anchor='PhysicalCustodyThanksgivingTimeonDay' w:history='1'>
-	  <w:r w:rsidRPr='00EF5343'>
-		<w:rPr>
-		  <w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:t>6.02B (iii) Time on Thanksgiving Day</w:t>
-	  </w:r>
-	</w:hyperlink>
-  </w:p>";
-  $this->tableOfContentsString .= $toc;
-
 	$time_break = new Thanksgiving();
 	$thanksgiving = $time_break->get_time();
-	 $thanksgiving;
 	$this->fileContentString .= $thanksgiving;
 }
 function gen_physical_custody_timesharing_6_02C(string $type) {
@@ -3625,6 +2318,117 @@ function gen_physical_custody_timesharing_6_02C(string $type) {
 			<w:t>Winter Break</w:t>
 		  </w:r>
 		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='21FA5F74' w14:textId='769AF2E6' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02C (</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellStart'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>i</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellEnd'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>) Split Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='1D2CA37C' w14:textId='316556F8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakAB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02C (ii) Alternate Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='54888451' w14:textId='17C633D9' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSBwithHoliday' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02C (iii) Split Break with Holiday Time</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='14490114' w14:textId='29BFD7D0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:lastRenderedPageBreak/>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyWinterBreakContinueSched' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02C (iv) Continue Schedule During the School Year</w:t>
+		  </w:r>
+		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -3632,135 +2436,24 @@ function gen_physical_custody_timesharing_6_02C(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "winter-split-break":
-			$toc = "<w:p w14:paraId='21FA5F74' w14:textId='769AF2E6' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02C (</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellStart'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>i</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellEnd'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>) Split Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-		  $this->tableOfContentsString .= $toc;
 			$split = new Winter();
-			$winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$winter = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-alternate-break":
-			$toc = "<w:p w14:paraId='1D2CA37C' w14:textId='316556F8' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakAB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02C (ii) Alternate Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-		  $this->tableOfContentsString .= $toc;
 			$alternate = new Winter();
-			$winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$winter = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-split-holiday-break":
-			$toc = "<w:p w14:paraId='54888451' w14:textId='17C633D9' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakSBwithHoliday' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02C (iii) Split Break with Holiday Time</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-		  $this->tableOfContentsString .= $toc;
 			$split_holiday = new Winter();
-			$winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
+			$winter = $split_holiday->get_split_break_holidays($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['christmasStart'], $this->responses['christmasEnd'], $this->responses['newYearsStart'], $this->responses['newYearsEnd']);
 			 $winter;
 			$this->fileContentString .= $winter;
 			break;
 		case "winter-continue-schedule":
-			$toc = "<w:p w14:paraId='14490114' w14:textId='29BFD7D0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:lastRenderedPageBreak/>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodyWinterBreakContinueSched' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02C (iv) Continue Schedule During the School Year</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-		  $this->tableOfContentsString .= $toc;
 			$continue = new Winter();
 			$winter = $continue->get_continue();
 			 $winter;
@@ -3837,108 +2530,108 @@ function gen_physical_custody_timesharing_6_02D(string $type) {
 			<w:t>Spring Break</w:t>
 		  </w:r>
 		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='56FE7631' w14:textId='50815726' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySpringBreakSB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02D (</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellStart'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>i</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellEnd'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>) Split Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='7B092CB5' w14:textId='0CF92273' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySpringBreakAB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02D (ii) Alternate Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='2A052613' w14:textId='4CAB60DB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySpringBreakContinueSched' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02D (iii) Continue Scheduling During the School Year</w:t>
+		  </w:r>
+		</w:hyperlink>
 	  </w:p>";
 	  $this->tableOfContentsString .= $tableCon;
 
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "spring-split-break":
-			$toc = "<w:p w14:paraId='56FE7631' w14:textId='50815726' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySpringBreakSB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02D (</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellStart'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>i</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellEnd'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>) Split Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
 			$split = new Spring();
-			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$spring = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-alternate-break":
-			$toc = "<w:p w14:paraId='7B092CB5' w14:textId='0CF92273' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySpringBreakAB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02D (ii) Alternate Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
 			$alternate = new Spring();
-			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$spring = $alternate->get_alternate($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			$this->fileContentString .= $spring;
 			break;
 		case "spring-continue-schedule":
-			$toc = "<w:p w14:paraId='2A052613' w14:textId='4CAB60DB' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySpringBreakContinueSched' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02D (iii) Continue Scheduling During the School Year</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
 			$continue = new Spring();
 			$spring = $continue->get_continue();
 			$this->fileContentString .= $spring;
@@ -4018,6 +2711,95 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			<w:t>Summer Break</w:t>
 		  </w:r>
 		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='656DF837' w14:textId='1A895978' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySummerBreakSB' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02E (</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellStart'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>i</w:t>
+		  </w:r>
+		  <w:proofErr w:type='spellEnd'/>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>) Split Break</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r>
+		  <w:t xml:space='preserve'> </w:t>
+		</w:r>
+	  </w:p>
+
+	  <w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r>
+		  <w:tab/>
+		</w:r>
+		<w:r w:rsidR='00E616E1'>
+		  <w:tab/>
+		</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSchedUnint' w:history='1'>
+		  <w:r w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
+		  </w:r>
+		</w:hyperlink>
 	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
@@ -4025,110 +2807,18 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 	$this->fileContentString .= $content;
 	switch ($type) {
 		case "summer-split-break":
-			$toc = "<w:p w14:paraId='656DF837' w14:textId='1A895978' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySummerBreakSB' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02E (</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellStart'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>i</w:t>
-			  </w:r>
-			  <w:proofErr w:type='spellEnd'/>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>) Split Break</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
-
 			$split = new Summer();
-			$summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast']);
+			$summer = $split->get_split($this->responses['partyAFirst'], $this->responses['partyBFirst']);
 			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-uninterrupted-schedule":
-			$toc = "<w:p w14:paraId='7349E7EF' w14:textId='2B2D4500' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSchedUnint' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02E (iii) Continue Schedule During the School Year with Option for Uninterrupted Time</w:t>
-			  </w:r>
-			</w:hyperlink>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
-
 			$alternate = new Summer();
 			$summer = $alternate->get_continue_uninterrupted($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['summerDaysUninterrupted'], $this->responses['summerDayOrWeek'], $this->responses['no-later-than']); //need to implement this part, taking in time inputs
 			 $summer;
 			$this->fileContentString .= $summer;
 			break;
 		case "summer-continue-schedule":
-			$toc = "<w:p w14:paraId='46D84E8A' w14:textId='223A21BE' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-			<w:pPr>
-			  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			  <w:ind w:left='0' w:right='0'/>
-			</w:pPr>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r>
-			  <w:tab/>
-			</w:r>
-			<w:r w:rsidR='00E616E1'>
-			  <w:tab/>
-			</w:r>
-			<w:hyperlink w:anchor='PhysicalCustodySummerBreakContSched' w:history='1'>
-			  <w:r w:rsidRPr='00EF5343'>
-				<w:rPr>
-				  <w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.02E (ii) Continue Schedule During the School Year</w:t>
-			  </w:r>
-			</w:hyperlink>
-			<w:r>
-			  <w:t xml:space='preserve'> </w:t>
-			</w:r>
-		  </w:p>";
-			$this->tableOfContentsString .= $toc;
-
 			$continue = new Summer();
 			$summer = $continue->get_continue();
 			 $summer;
@@ -4138,45 +2828,68 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			 "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
 	}
 }
-function gen_physical_custody_timesharing_6_03() {
-	$toc = "<w:p w14:paraId='7553B9ED' w14:textId='1E13F7FE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
-	<w:pPr>
-	  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-	  <w:ind w:left='0' w:right='0'/>
-	</w:pPr>
-	<w:hyperlink w:anchor='PhysicalCustodyHolidaysandSpecialDays' w:history='1'>
-	  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-		<w:rPr>
-		  <w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:t>6.03</w:t>
-	  </w:r>
-	  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-		<w:rPr>
-		  <w:rStyle w:val='Hyperlink'/>
-		</w:rPr>
-		<w:tab/>
-		<w:t>Physical Custody and Timesharing: Holidays and Special Days</w:t>
-	  </w:r>
-	</w:hyperlink>
-  </w:p>";
-  $this->tableOfContentsString .= $toc;
-
-	$table = new HolidayTableWord();
-    $holidayTable = $table->getHolidayTable($this->responses['partyABirthday'], $this->responses['partyBBirthday']);
-    $childrenRows = $table->getChildren($this->responses['child1Initials'], $this->responses['child1Birthday']);
-    for ($i = 2; $i <= 6; $i++) {
-        $initials = $this->responses['child' . $i . 'Initials'];
-        $birthday = $this->responses['child' . $i . 'Birthday'];
-        if ($initials != "" && $birthday != "") {
-            $childrenRows .= $table->getChildren($initials, $birthday);
+    function gen_physical_custody_timesharing_6_03(array $res) {
+        $table = new HolidayTableWord();
+        $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
+        $childrenRows = '';
+        for ($i = 1; $i <= 6; $i++) {
+            $initials = $this->responses['child' . $i . 'Initials'];
+            $birthday = $this->responses['child' . $i . 'Birthday'];
+            $partyARes = 'Blank';
+            $partyBRes = 'Blank';
+            if ($initials != "" && $birthday != "") {
+                switch ($this->responses['child' . $i . 'A']) {
+                    case 'child' . $i . 'BlankA':
+                        $partyARes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryA':
+                        $partyARes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenA':
+                        $partyARes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddA':
+                        $partyARes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachA':
+                        $partyARes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitA':
+                        $partyARes = 'Split';
+                        break;
+                    default:
+                        console_log("error in childrenA switch - HtmlGen");
+                }
+                switch ($this->responses['child' . $i . 'B']) {
+                    case 'child' . $i . 'BlankB':
+                        $partyBRes = 'Blank';
+                        break;
+                    case 'child' . $i . 'EveryB':
+                        $partyBRes = 'Every Year';
+                        break;
+                    case 'child' . $i . 'EvenB':
+                        $partyBRes = 'Even Years';
+                        break;
+                    case 'child' . $i . 'OddB':
+                        $partyBRes = 'Odd Years';
+                        break;
+                    case 'child' . $i . 'AttachB':
+                        $partyBRes = 'Attach to Weekend';
+                        break;
+                    case 'child' . $i . 'SplitB':
+                        $partyBRes = 'Split';
+                        break;
+                    default:
+                        console_log("error in children switch - HtmlGen");
+                }
+                $childrenRows .= $table->getChildren($initials, $birthday, $partyARes, $partyBRes);
+            }
         }
+        $end = $table->getEnd();
+        $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
-    $end = $table->getEnd();
-    $this->fileContentString .= $holidayTable;
-    $this->fileContentString .= $childrenRows;
-    $this->fileContentString .= $end;
-}
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 		  <w:pPr>
@@ -4206,68 +2919,35 @@ function gen_physical_custody_timesharing_6_03A() {
 			</w:rPr>
 			<w:t>ALTERNATE YEARLY</w:t>
 		  </w:r>
-		  <w:r>
-		  <w:t xml:space='preserve'>.  </w:t>
-		</w:r>
 		  <w:bookmarkEnd w:id='54'/>
 		  <w:r>
-		  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have the Child(ren) in </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>even/odd</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> years. </w:t>
-	  </w:r>
-	  <w:r>
-	  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have the Child(ren) in </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>even/odd</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> years. An alternated holiday/special day shall be defined as beginning at </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>___</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> am/pm and ending at </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>___</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> am/pm.</w:t>
-	  </w:r>
-	  
+			<w:t>. Parent A shall have the Child(ren) in even/odd years. Parent B shall have the Child(ren) in even/odd years. An alternated holiday/special day shall be defined as beginning at ___ am/pm and ending at ___ am/pm.</w:t>
+		  </w:r>
 		</w:p>";
-		
-		$tableCon = "<w:p w14:paraId='2810ADEA' w14:textId='02BCD5B7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+
+		$tableCon = "<w:p w14:paraId='7553B9ED' w14:textId='1E13F7FE' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+		<w:pPr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
+		</w:pPr>
+		<w:hyperlink w:anchor='PhysicalCustodyHolidaysandSpecialDays' w:history='1'>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.03</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Physical Custody and Timesharing: Holidays and Special Days</w:t>
+		  </w:r>
+		</w:hyperlink>
+	  </w:p>
+
+	  <w:p w14:paraId='2810ADEA' w14:textId='02BCD5B7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
 		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 		  <w:ind w:left='0' w:right='0'/>
@@ -4336,85 +3016,12 @@ function gen_physical_custody_timesharing_6_03B() {
 			</w:rPr>
 			<w:t>SPLIT EVERY YEAR</w:t>
 		  </w:r>
-		  <w:r>
-		  <w:t xml:space='preserve'>. </w:t>
-	  </w:r>
-	
 		  <w:bookmarkEnd w:id='55'/>
 		  <w:r>
-		  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have the Child(ren) for the first half and </w:t>
-	  </w:r>
-	  <w:r>
-	  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have the Child(ren) for the second half of this holiday/special day in </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>even/odd</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> years. </w:t>
-	  </w:r>
-	  <w:r>
-	  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have the Child(ren) for the first half and </w:t>
-	  </w:r>
-	  <w:r>
-	  <w:rPr>
-	  <w:highlight w:val='yellow' />
-  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-	  <w:r>
-	
-		  <w:t xml:space='preserve'> shall have the Child(ren) for the second half of this holiday/special day in </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>even/odd</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> years. A split holiday shall be defined as beginning at </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>___</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> am/pm and ending at </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>___</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> am/pm.</w:t>
-	  </w:r>
-	  
+			<w:t>. Parent A shall have the Child(ren) for the first half and Parent B shall have the Child(ren) for the second half of this holiday/special day in even/odd years. Parent B shall have the Child(ren) for the first half and Parent A shall
+			  have the Child(ren) for the second half of this holiday/special day in even/odd years. A split holiday shall be defined as beginning at ___ am/pm and ending at ___ am/pm.
+			</w:t>
+		  </w:r>
 		</w:p>";
 
 		$tableCon = " <w:p w14:paraId='22ECA461' w14:textId='215F7040' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -4556,7 +3163,7 @@ function gen_physical_custody_timesharing_6_03D() {
 			<w:rPr>
 			  <w:u w:val='single'/>
 			</w:rPr>
-			<w:t>EVERY YEAR WITH  " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " OR  " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+			<w:t>EVERY YEAR WITH " . $this->responses['partyAFirst'] . " OR " . $this->responses['partyBFirst'] . "</w:t>
 		  </w:r>
 		  <w:bookmarkEnd w:id='57'/>
 		  <w:r>
@@ -4593,7 +3200,7 @@ function gen_physical_custody_timesharing_6_03D() {
 			  <w:rStyle w:val='Hyperlink'/>
 			</w:rPr>
 			<w:tab/>
-			<w:t>Every Year with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " or  " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+			<w:t>Every Year with Parent A or Parent B</w:t>
 		  </w:r>
 		</w:hyperlink>
 	  </w:p>";
@@ -4631,43 +3238,15 @@ function gen_physical_custody_timesharing_6_04() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='58'/>
 		  <w:r>
-    <w:t xml:space='preserve'>Each parent shall have the right to take up to </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses['daysOff'] . " " . $this->responses['travelDayOrWeek'] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of </w:t>
-</w:r>
-
+			<w:t xml:space='preserve'>Each parent shall have the right to take up to " . $this->responses['daysOff'] . " days/weeks of </w:t>
+		  </w:r>
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
 			<w:t>off-island</w:t>
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-		  <w:t xml:space='preserve'> travel with the Child(ren) every year. The traveling parent shall provide </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['daysNotify'] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> days’ notice in writing to the non-traveling parent if the trip is outside of the State of </w:t>
-	  </w:r>
-	  
-		  <w:proofErr w:type='gramStart'/>
-		  <w:r>
-			<w:t>Hawai‘</w:t>
-		  </w:r>
-		  <w:proofErr w:type='gramEnd'/>
-		  <w:r>
-			<w:t xml:space='preserve'>i. If the trip is within the State of </w:t>
+			<w:t xml:space='preserve'> travel with the Child(ren) every year. The traveling parent shall provide " . $this->responses['daysNotify'] . " days’ notice in writing to the non-traveling parent if the trip is outside of the State of </w:t>
 		  </w:r>
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
@@ -4675,36 +3254,16 @@ function gen_physical_custody_timesharing_6_04() {
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-		  <w:t xml:space='preserve'>i, the traveling parent shall provide </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['daysNotifyHawaii'] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> days’ notice in writing to the non-traveling parent. For out-of-state travel, at least </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['daysNotifyOutside'] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> days prior to departure (or </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['daysNotifyHawaii'] . "</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t xml:space='preserve'> days prior to departure for in-state travel), the traveling parent shall provide the non-traveling parent full details regarding the trip including: (a) airline; flight number; dates and times of each flight leg; (b) the dates and times the traveling parent and the Child(ren) will be staying in each hotel, residence, etc.; and (c) if the Child(ren) are going to be traveling with others, the names of the other travelers. If the traveling parent does not provide this information, the trip shall not occur.  </w:t>
-	  </w:r>
-	  
+			<w:t xml:space='preserve'>i.  If the trip is within the State of </w:t>
+		  </w:r>
+		  <w:proofErr w:type='gramStart'/>
+		  <w:r>
+			<w:t>Hawai‘</w:t>
+		  </w:r>
+		  <w:proofErr w:type='gramEnd'/>
+		  <w:r>
+			<w:t xml:space='preserve'>i, the traveling parent shall provide " . $this->responses['daysNotifyHawaii'] . " days’ notice in writing to the non-traveling parent.  For out-of-state travel, at least " . $this->responses['daysNotifyOutside'] . " days prior to departure (or " . $this->responses['dayNotifyHawaii'] . " days prior to departure for in-state travel), the traveling parent shall provide the non-traveling parent full details regarding the trip including: (a) airline; flight number; dates and times of each flight leg; (b) the dates and times the traveling parent and the Child(ren) will be staying in each hotel, residence, etc.; and (c) if the Child(ren) are going to be traveling with others, the names of the other travelers.  If the traveling parent does not provide this information, the trip shall not occur.   </w:t>
+		  </w:r>
 		</w:p>
 		<w:p w14:paraId='5F01A48D' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 		  <w:pPr>
@@ -4720,97 +3279,8 @@ function gen_physical_custody_timesharing_6_04() {
 			<w:jc w:val='both'/>
 		  </w:pPr>
 		  <w:r>
-		  <w:t xml:space='preserve'>Parents shall alternate having the first choice for dates for off-island travel during the Child(ren)’s summer vacations each year. In </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t xml:space='preserve'>even</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> years, </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have first choice for dates of travel so long as they provide those specific dates in writing to </w:t>
-	  </w:r>
-
-	  <w:r>
-	  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-	  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
-  </w:r>
-
-  <w:r>
-  <w:t xml:space='preserve'> by no later than </w:t>
-</w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['dateANotify'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> of that same year. In </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t xml:space='preserve'>odd</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> years, </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> shall have first choice for dates of travel so long as they provide the specific dates in writing to </w:t>
-	  </w:r>
-
-	  <w:r>
-	  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-	  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-  </w:r>
-
-  <w:r>
-		  <w:t xml:space='preserve'> by no later than </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['dateBNotify'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> of that same year. If either parent wishes to take the Child(ren) out of the country or miss any school days </w:t>
-	  </w:r>
-	  
+			<w:t xml:space='preserve'>Parents shall alternate having the first choice for dates for off-island travel during the Child(ren)’s summer vacations each year.  In even years, " . $this->responses['partyAFirst'] . " shall have first choice for dates of travel so long as they provide those specific dates in writing to " . $this->responses['partyBFirst'] . " by no later than " . $this->responses['dateANotify'] . " of that same year.  In odd years, " . $this->responses['partyBFirst'] . " shall have first choice for dates of travel so long as they provide the specific dates in writing to " . $this->responses['partyAFirst'] . " by no later than " . $this->responses['dateBNotify'] . " of that same year. If either parent wishes to take the Child(ren) out of the country or miss any school days </w:t>
+		  </w:r>
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
 			<w:t>in order to</w:t>
@@ -4960,20 +3430,14 @@ function gen_physical_custody_timesharing_6_06() {
 			<w:t xml:space='preserve'>  </w:t>
 		  </w:r>
 		  <w:r>
-		  <w:rPr>
+			<w:rPr>
 			  <w:color w:val='333333'/>
-		  </w:rPr>
-		  <w:t xml:space='preserve'>We agree that if a Parent is unable to care for the Child(ren) themselves for a period of more than </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['refusalHours'] . "</w:t>
-	  </w:r>
-	  
-		
+			</w:rPr>
+			<w:t>We agree that if a Parent is unable to care for the Child(ren) themselves for a period of more than " . $this->responses['refusalHours'] . "</w:t>
+		  </w:r>
+		  <w:r>
+			<w:t xml:space='preserve'> [insert number of hours]</w:t>
+		  </w:r>
 		  <w:r>
 			<w:rPr>
 			  <w:color w:val='333333'/>
@@ -5037,35 +3501,54 @@ function gen_physical_custody_timesharing_6_07() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='61'/>
 		  <w:r>
-			<w:t>. If possible, exchanges shall occur at school provided however, that if exchanges are not during school pick-ups or drop offs, then the Parents receiving the Child(ren) for custodial time shall pick-up the Child(ren) from the other Parent.
+			<w:t>. If possible, exchanges shall occur at school provided however, that if exchanges are not during school pick-ups or drop offs, then the Parents receiving the Child(ren) for custodial time shall pick-up the Child(ren) from the other
+			  Parent.
 			</w:t>
 		  </w:r>
 		</w:p>";
 
 		$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
-			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			<w:ind w:left='0' w:right='0'/>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
 		</w:pPr>
 		<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
-			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.07</w:t>
-			</w:r>
-			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:tab/>
-				<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
-			</w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.07</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
+		  </w:r>
 		</w:hyperlink>
 		<w:r w:rsidR='00EF5343'>
-			<w:t xml:space='preserve'>. </w:t>
+		  <w:t xml:space='preserve'>. </w:t>
 		</w:r>
-	</w:p>";
+		<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.08</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='00EF5343'>
+		  <w:t>.</w:t>
+		</w:r>
+	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 		//weird indent in table between 6.07 and 6.08
 	$this->fileContentString .= $content;
@@ -5098,7 +3581,7 @@ function gen_physical_custody_timesharing_6_08() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='62'/>
 		  <w:r>
-			<w:t xml:space='preserve'>. If possible, exchanges shall occur at school provided however, that if exchanges are not during school pick-ups or drop offs, then the Parents relinquishing the Child(ren) for custodial time shall drop off the Child(ren) to the other Parent. </w:t>
+			<w:t xml:space='preserve'>.  If possible, exchanges shall occur at school provided however, that if exchanges are not during school pick-ups or drop offs, then the Parents relinquishing the Child(ren) for custodial time shall drop off the Child(ren) to the other Parent. </w:t>
 		  </w:r>
 		  <w:r>
 			<w:tab/>
@@ -5107,28 +3590,46 @@ function gen_physical_custody_timesharing_6_08() {
 
 		$tableCon = "<w:p w14:paraId='2356F1A9' w14:textId='5587BEE6' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 		<w:pPr>
-			<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
-			<w:ind w:left='0' w:right='0'/>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+		  <w:ind w:left='0' w:right='0'/>
 		</w:pPr>
-		<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
-			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:t>6.08</w:t>
-			</w:r>
-			<w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
-				<w:rPr>
-					<w:rStyle w:val='Hyperlink'/>
-				</w:rPr>
-				<w:tab/>
-				<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
-			</w:r>
+		<w:hyperlink w:anchor='PhysicalCustodyPickupNonSchool' w:history='1'>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.07</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Physical Custody and Timesharing: Pick-Up for Non-School Exchanges</w:t>
+		  </w:r>
 		</w:hyperlink>
 		<w:r w:rsidR='00EF5343'>
-			<w:t>.</w:t>
+		  <w:t xml:space='preserve'>. </w:t>
 		</w:r>
-	</w:p>";
+		<w:hyperlink w:anchor='PhysicalCustodyDropOffNonSchool' w:history='1'>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:t>6.08</w:t>
+		  </w:r>
+		  <w:r w:rsidR='00EF5343' w:rsidRPr='00EF5343'>
+			<w:rPr>
+			  <w:rStyle w:val='Hyperlink'/>
+			</w:rPr>
+			<w:tab/>
+			<w:t>Physical Custody and Timesharing: Drop Off for Non-School Exchanges</w:t>
+		  </w:r>
+		</w:hyperlink>
+		<w:r w:rsidR='00EF5343'>
+		  <w:t>.</w:t>
+		</w:r>
+	  </w:p>";
 		$this->tableOfContentsString .= $tableCon;
 	$this->fileContentString .= $content;
 }
@@ -5170,15 +3671,12 @@ function gen_physical_custody_timesharing_6_09() {
 		  </w:r>
 		  <w:proofErr w:type='gramStart'/>
 		  <w:r>
-			<w:t xml:space='preserve'>location: </w:t>
+			<w:t>location _</w:t>
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-		  <w:rPr>
-		  <w:highlight w:val='yellow' />
-	  </w:rPr>
-		  <w:t>" . $this->responses['exchangeAddress'] . ".</w:t>
-	  </w:r>
+			<w:t>" . $this->responses['exchangesNeutral'] . ".</w:t>
+		  </w:r>
 		</w:p>";
 
 		$tableCon = "<w:p w14:paraId='5981A926' w14:textId='4A26E196' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5255,7 +3753,7 @@ function gen_physical_custody_timesharing_6_10() {
 			  <w:color w:val='333333'/>
 			</w:rPr>
 			<w:lastRenderedPageBreak/>
-			<w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " or " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " to pick up or drop off the Child(ren) as provided for in the parenting time arrangement, the Parent who is responsible for the pick-up or drop off may delegate another person to pick up or drop off the Child(ren).
+			<w:t>" . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to pick up or drop off the Child(ren) as provided for in the parenting time arrangement, the Parent who is responsible for the pick-up or drop off may delegate another person to pick up or drop off the Child(ren).
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -5324,47 +3822,12 @@ function gen_physical_custody_timesharing_6_11() {
 			<w:t xml:space='preserve'>. </w:t>
 		  </w:r>
 		  <w:r>
-		  <w:t xml:space='preserve'>If it is not possible for </w:t>
-	  </w:r>
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> or </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . " </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
+			<w:rPr>
 			  <w:color w:val='333333'/>
-		  </w:rPr>
-		  <w:t xml:space='preserve'> to pick up or drop off the Child(ren) as provided for in the parenting time arrangement, the following people may pick up or drop off the Child(ren): </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['personsAuthorized'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:color w:val='333333'/>
-		  </w:rPr>
-		  <w:t>.</w:t>
-	  </w:r>
-	  
+			</w:rPr>
+			<w:t>If it is not possible for " . $this->responses['partyAFirst'] . " or " . $this->responses['partyBFirst'] . " to pick up or drop off the Child(ren) as provided for in the parenting time arrangement, the following people may pick up or drop off the Child(ren): " . $this->responses['personsAuthorized'] . ".
+			</w:t>
+		  </w:r>
 		</w:p>"; //only one person has been implemented so far
 
 		$tableCon = "<w:p w14:paraId='4B3BC2E9' w14:textId='039B4002' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5437,30 +3900,10 @@ function gen_physical_custody_timesharing_6_12() {
 			<w:t xml:space='preserve'>Child(ren) often have favorite clothing, toys, or communication devices that they would like to have with them, wherever they are living. Even if these are gifts from one parent, it is normally appropriate to recognize the Child(ren)’s attachments and rights to personal property. If there is potential for conflict on this issue, it can be important to be clear about where the Child(ren) may take these items and communicate this directly to the other Parent.  </w:t>
 		  </w:r>
 		  <w:r>
-		  <w:t xml:space='preserve'>Child(ren) may take personal items (for example, clothing, toys, sports equipment, cell phone, regardless of which Parent purchased these items), between the homes of </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyAFirst'] . " " . $this->responses['partyALast'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> and </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'>. Parents will not restrict the Child(ren)'s ability to take these items between homes. Parents will each have toiletries, pajamas and as many belongings as possible for the Child(ren) in their homes. These items will not travel back and forth.</w:t>
-	  </w:r>
+			<w:t>Child(ren) may take personal items (for example, clothing, toys, sports equipment, cell phone, regardless of which Parent purchased these items), between the homes of " . $this->responses['parentAFirst'] . " and " . $this->responses['parentBFirst'] . ". Parents will not restrict the Child(ren)'s
+			  ability to take these items between homes. Parents will each have toiletries, pajamas and as many belongings as possible for the Child(ren) in their homes. These items will not travel back and forth.
+			</w:t>
+		  </w:r>
 		</w:p>";
 
 		$tableCon = "<w:p w14:paraId='4EB1508A' w14:textId='1ADBDBE8' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -5530,20 +3973,8 @@ function gen_physical_custody_timesharing_6_13() {
 			<w:t xml:space='preserve'>  </w:t>
 		  </w:r>
 		  <w:r>
-		  <w:t xml:space='preserve'>If either Parent intends to relocate away from the island of their current residences or outside of the State where they currently reside, then the moving Parent shall provide the other Parent at least </w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='yellow' />
-		  </w:rPr>
-		  <w:t>" . $this->responses['relocationDays'] . "</w:t>
-	  </w:r>
-	  
-	  <w:r>
-		  <w:t xml:space='preserve'> days’ notice of their intent to move. After receiving notice of an intent to relocate, Parents shall meet and review this</w:t>
-	  </w:r>
-	  
+			<w:t xml:space='preserve'>If either Parent intends to relocate away from the island of their current residences or outside of the State where they currently reside, then the moving Parent shall provide the other Parent at least " . $this->responses['relocationDays'] . " (" . $this->responses['relocationDays'] . ") days’ notice of their intent to move.  After receiving notice of an intent to relocate, Parents shall meet and review this </w:t>
+		  </w:r>
 		  <w:r>
 			<w:rPr>
 			  <w:u w:val='single'/>
@@ -5628,7 +4059,9 @@ function gen_physical_custody_timesharing_6_14() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='68'/>
 		  <w:r>
-			<w:t>. While both Parents agree and intend that it is a priority to maintain stability and consistency in the life of their Child(ren), they understand that they have the power to modify the foregoing schedule at any time. Parents shall continue to work out the details of the Child(ren)’s schedules based on what is reasonable under the circumstances, mutually agreed to, and deemed in the best interest of the Child(ren). The foregoing schedule may be modified upon mutual agreement of the Parents in writing (text or e-mail is sufficient).
+			<w:t>. While both Parents agree and intend that it is a priority to maintain stability and consistency in the life of their Child(ren), they understand that they have the power to modify the foregoing schedule at any time. Parents shall
+			  continue to work out the details of the Child(ren)’s schedules based on what is reasonable under the circumstances, mutually agreed to, and deemed in the best interest of the Child(ren). The foregoing schedule may be modified upon mutual
+			  agreement of the Parents in writing (text or e-mail is sufficient).
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -5661,24 +4094,7 @@ function gen_physical_custody_timesharing_6_14() {
 //Communication section
 function gen_communication_7() 
 {
-	$snippet = "<w:p w14:paraId='16B51F76' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-	<w:pPr>
-		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-		<w:ind w:left='0' w:right='36' w:firstLine='0' />
-		<w:jc w:val='center' />
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-	</w:pPr>
-	<w:r>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>COMMUNICATION:</w:t>
-	</w:r>
-</w:p>
-
-	<w:p w14:paraId='3D84B06F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$snippet = "<w:p w14:paraId='3D84B06F' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
 		<w:ind w:left='0' w:right='36' w:firstLine='0'/>
@@ -5976,7 +4392,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:bookmarkEnd w:id='70'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail. The Parents may utilize text or telephone calls in </w:t>
+		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail.  The Parents may utilize text or telephone calls in </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -5984,7 +4400,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours). Otherwise, all communication shall be via e-mail. Both Parents shall check their e-mail at least once daily and shall respond to messages or other items needing attention (</w:t>
+		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail.  Both Parents shall check their e-mail at least once daily and shall respond to messages or other items needing attention (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -5992,7 +4408,7 @@ function gen_communication_7_01()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> switch requests) within 48 hours. If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 	</w:r>
 </w:p>";
 
@@ -6047,7 +4463,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:bookmarkEnd w:id='71'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail and text. The Parents may utilize telephone calls in </w:t>
+		<w:t xml:space='preserve'>. Parents shall communicate primarily through e-mail and text.  The Parents may utilize telephone calls in </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -6055,7 +4471,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours). Otherwise, all communication shall be via e-mail or text. Both Parents shall check their e-mail and texts at least once daily and shall respond to messages or other items needing attention (</w:t>
+		<w:t xml:space='preserve'> or in the event a timely response is needed (within 2 – 4 hours).  Otherwise, all communication shall be via e-mail or text.  Both Parents shall check their e-mail and texts at least once daily and shall respond to messages or other items needing attention (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -6063,7 +4479,7 @@ function gen_communication_7_02()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> switch requests) within 48 hours. If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
+		<w:t xml:space='preserve'> switch requests) within 48 hours.  If more time is needed to respond, the receiving parent shall acknowledge the message and provide a timeline in which a response shall be provided.</w:t>
 	</w:r>
 </w:p>";
 
@@ -6123,7 +4539,7 @@ function gen_communication_7_03()
 	</w:r>
 	<w:bookmarkEnd w:id='72'/>
 	<w:r>
-		<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application. Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
+		<w:t xml:space='preserve'> Parents shall communicate solely through Our Family Wizard or other mutually agreed upon parenting communication application.  Both Parents shall sign up for Our Family Wizard or other mutually agreed upon parenting communication application within ten (10) days of the date the last party signs this Agreement and shall maintain an account with said program.</w:t>
 	</w:r>
 </w:p>";
 
@@ -6184,18 +4600,15 @@ function gen_communication_7_04()
 		<w:t>.</w:t>
 	</w:r>
 	<w:r>
-    <w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren). Conferences shall be on the first </w:t>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["insertmonthly"] . "</w:t>
-</w:r>
-
+		<w:t xml:space='preserve'> Parents shall meet monthly to discuss the children’s development and needs including education, health, well-being, extracurricular activities, scheduling issues, travel and any other issues pertaining to their child(ren).  Conferences shall be on the first " . $this->responses["insertmonthly"] . "</w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart'/>
-
+	<w:r>
+		<w:t>_  [</w:t>
+	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+		<w:t xml:space='preserve'>insert day of the week] of each month unless mutually agreed to otherwise. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for monthly conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
 	</w:r>
 </w:p>";
 
@@ -6252,27 +4665,8 @@ function gen_communication_7_05()
 	</w:r>
 	<w:bookmarkEnd w:id='74'/>
 	<w:r>
-    <w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["semidate1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["semidate2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> every year. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>. Parents shall meet and confer twice annually by no later than " . $this->responses["semidate1"] . " [insert date] and " . $this->responses["semidate2"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for bi-annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.  </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='24D1C56E' w14:textId='76FC6CB7' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -6374,18 +4768,8 @@ function gen_communication_7_06a()
 		</w:rPr>
 	</w:pPr>
 	<w:r>
-    <w:t xml:space='preserve'>Parents shall meet and confer annually by no later than </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["annualdate"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> every year. Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents. This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
-</w:r>
-
+		<w:t>Parents shall meet and confer annually by no later than " . $this->responses["annuldate"] . " [insert date] every year.  Meetings may be via in-person, video conference or telephone calls, as mutually agreed by the Parents.  This requirement for annual conferences between Parents shall end upon each child’s eighteenth (18th) birthday, or as mutually agreed by the Parents.</w:t>
+	</w:r>
 	<w:r>
 		<w:rPr>
 			<w:u w:val='single'/>
@@ -6463,12 +4847,6 @@ $this->tableOfContentsString .= $tableCon;
 }
 function gen_communication_7_08() 
 {
-	// convert output from military time 
-	$time1 = date("h:i A", strtotime($this->responses["A9:00"]));
-	$time2 = date("h:i A", strtotime($this->responses["A17:00"]));
-	$time3 = date("h:i A", strtotime($this->responses["B09:00"]));
-	$time4 = date("h:i A", strtotime($this->responses["B17:00"]));
-
 	$snippet = "<w:p w14:paraId='0B356DE2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -6499,48 +4877,11 @@ function gen_communication_7_08()
 		<w:t xml:space='preserve'>. </w:t>
 	</w:r>
 	<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-    </w:rPr>
-    <w:t xml:space='preserve'>During the regular parenting time schedule, " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " may call the child between </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$time1</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$time2</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> when they are with " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " may call the child between </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$time3</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$time4</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> when they are with " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ". Calls will normally be no more than 10 minutes.</w:t>
-</w:r>
-
+		<w:rPr>
+			<w:color w:val='333333'/>
+		</w:rPr>
+		<w:t>During the regular parenting time schedule, Parent A may call the child between " . $this->responses["A9:00"] . " and " . $this->responses["A17:00"] . " when they are with Parent B and Parent B may call the child between " . $this->responses["B09:00"] . " and " . $this->responses["B17:00"] . " when they are with Parent A. Calls will normally be no more than 10 minutes.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0554C7E9' w14:textId='419C7A55' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -6581,7 +4922,7 @@ function gen_communication_7_09()
 			<w:b/>
 		</w:rPr>
 		<w:lastRenderedPageBreak/>
-		<w:t xml:space='preserve'>7.09 </w:t>
+		<w:t xml:space='preserve'>7.08 </w:t>
 	</w:r>
 	<w:r>
 		<w:tab/>
@@ -6590,7 +4931,7 @@ function gen_communication_7_09()
 		<w:rPr>
 			<w:u w:val='single'/>
 		</w:rPr>
-		<w:t>COMMUNICATION: EXCHANGE OF CONTACT INFORMATION</w:t>
+		<w:t>COMMUNICATION:  EXCHANGE OF CONTACT INFORMATION</w:t>
 	</w:r>
 	<w:bookmarkEnd w:id='78'/>
 	<w:r>
@@ -6645,7 +4986,7 @@ function gen_communication_7_10()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t>7.10</w:t>
+		<w:t>7.09</w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -6661,7 +5002,7 @@ function gen_communication_7_10()
 	</w:r>
 	<w:bookmarkEnd w:id='79'/>
 	<w:r>
-		<w:t xml:space='preserve'>.  Both Parents understand that reasonable extracurricular activities are healthy and appropriate outlets for our Child(ren). Both Parents understand that selecting extracurricular activities for the Child(ren) is a legal custody decision. </w:t>
+		<w:t xml:space='preserve'>.  Both Parents understand that reasonable extracurricular activities are healthy and appropriate outlets for our Child(ren).  Both Parents understand that selecting extracurricular activities for the Child(ren) is a legal custody decision. </w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -6687,7 +5028,7 @@ function gen_communication_7_10()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t xml:space='preserve'> </w:t>
+		<w:t xml:space='preserve'>  </w:t>
 	</w:r>
 	<w:r>
 		<w:rPr>
@@ -6720,6 +5061,7 @@ $tableCon = "<w:p w14:paraId='4BA6636F' w14:textId='5CCB6274' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_communication_7_11() 
@@ -6735,7 +5077,7 @@ function gen_communication_7_11()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t>7.11</w:t>
+		<w:t>7.10</w:t>
 	</w:r>
 	<w:r>
 		<w:tab/>
@@ -6784,6 +5126,7 @@ $tableCon = "<w:p w14:paraId='49417B8E' w14:textId='358D17BA' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 
@@ -6793,24 +5136,7 @@ $this->tableOfContentsString .= $tableCon;
 // child support section 6
 function gen_child_support_8_00()
 {
-	$snippet = "<w:p w14:paraId='27D72475' w14:textId='77777777' w:rsidR='00505307' w:rsidRPr='00D52A55' w:rsidRDefault='006830FF'>
-	<w:pPr>
-		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-		<w:ind w:left='0' w:right='36' w:firstLine='0' />
-		<w:jc w:val='center' />
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-	</w:pPr>
-	<w:r w:rsidRPr='00D52A55'>
-		<w:rPr>
-			<w:u w:val='single' />
-		</w:rPr>
-		<w:t>SUPPORT OF THE CHILD(REN):</w:t>
-	</w:r>
-</w:p>
-	
-	<w:p w14:paraId='039E6D0E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	$snippet = "<w:p w14:paraId='039E6D0E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:pBdr>
 			<w:top w:val='nil' />
@@ -6870,6 +5196,7 @@ $tableCon = " <w:p w14:paraId='702DD571' w14:textId='70495F34' w:rsidR='00505307
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_01()
@@ -6910,27 +5237,8 @@ function gen_child_support_8_01()
 	</w:r>
 	<w:bookmarkEnd w:id='82' />
 	<w:r>
-    <w:t xml:space='preserve'>Child support shall be paid by </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> to </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and calculated pursuant to the State child support guidelines worksheet. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>Child support shall be paid by " . $this->responses["parentAB1"] . " to " . $this->responses["parentAB2"] . " and calculated pursuant to the State child support guidelines worksheet. </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -6956,6 +5264,7 @@ $tableCon = "<w:p w14:paraId='29624E9B' w14:textId='00DA0048' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_03()
@@ -6987,45 +5296,10 @@ function gen_child_support_8_03()
 	</w:r>
 	<w:bookmarkEnd w:id='84' />
 	<w:r>
-    <w:t xml:space='preserve'>. Child Support shall be paid by </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB3"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> to </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB4"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> by agreement of the Parents in the amount of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["mutual-1"] . "/per Child</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per month for a total monthly child support amount of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["mutual-2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'>. Both Parents understand that child support is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>. Child Support shall be paid by " . $this->responses["parentAB3"] . " to " . $this->responses["parentAB4"] . " by agreement of the Parents in the 
+		amount of $" . $this->responses["mutual-1"] . "/per Child per month for a total monthly child support amount of $" . $this->responses["mutual-2"] . ". Both Parents understand that child support
+		is modifiable going forward and at any time either Parent may request that child support be calculated pursuant to their State guidelines and ordered to be paid pursuant to </w:t>
+	</w:r>
 	<w:proofErr w:type='spellStart' />
 	<w:r>
 		<w:t>and</w:t>
@@ -7036,7 +5310,29 @@ function gen_child_support_8_03()
 	</w:r>
 </w:p>";
 
-$tableCon = "<w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+$tableCon = "<w:p w14:paraId='3B6E6235' w14:textId='6132329F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+	<w:pPr>
+	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	<w:ind w:left='0' w:right='0'/>
+	</w:pPr>
+	<w:hyperlink w:anchor='SoCChildSupportDifferentState' w:history='1'>
+	<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:t>8.02</w:t>
+	</w:r>
+	<w:r w:rsidR='00D305A5' w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+		<w:t>Support of the Child(ren): Child Support Guidelines Amount When Parents Reside in Different States</w:t>
+	</w:r>
+	</w:hyperlink>
+</w:p>
+
+<w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 	<w:pPr>
 	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 	<w:ind w:left='0' w:right='0'/>
@@ -7058,7 +5354,9 @@ $tableCon = "<w:p w14:paraId='14BA5330' w14:textId='615E5C8C' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+//Put both 8.02 and 8.03 
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_04()
@@ -7143,6 +5441,7 @@ $tableCon = "<w:p w14:paraId='4B161A4D' w14:textId='71DB9B0A' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_05()
@@ -7187,7 +5486,7 @@ function gen_child_support_8_05()
 		<w:rPr>
 			<w:highlight w:val='yellow' />
 		</w:rPr>
-		<w:t>that " . $this->responses["accountAlternative"] . "</w:t>
+		<w:t>that</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 </w:p>";
@@ -7208,6 +5507,7 @@ $tableCon = "<w:p w14:paraId='29FBC8DA' w14:textId='6561EE79' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_06()
@@ -7243,7 +5543,6 @@ function gen_child_support_8_06()
 	<w:r>
 		<w:t>.</w:t>
 	</w:r>
-	<w:bookmarkEnd w:id='87' />
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -7261,6 +5560,8 @@ $tableCon = "<w:p w14:paraId='3B55149C' w14:textId='0F6A71FF' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_07()
@@ -7315,6 +5616,8 @@ $tableCon = "<w:p w14:paraId='4A046E1A' w14:textId='29630DCC' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_08()
@@ -7355,26 +5658,8 @@ function gen_child_support_8_08()
 		<w:t>S</w:t>
 	</w:r>
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB5"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover the Child(ren)’s health insurance premiums in the amount of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["insurancePremium"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per month.</w:t>
-</w:r>
+		<w:t>. " . $this->responses["parentAB5"] . " shall cover the Child(ren)’s health insurance premiums in the amount of $" . $this->responses["insurancePremium"] . " per month.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -7400,6 +5685,7 @@ $tableCon = "<w:p w14:paraId='2700B596' w14:textId='6E5D512F' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09()
@@ -7497,27 +5783,8 @@ function gen_child_support_8_09A()
 	</w:r>
 	<w:bookmarkEnd w:id='91' />
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB6"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["sole-1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per month.</w:t>
-</w:r>
-
+		<w:t>. " . $this->responses["parentAB6"] . " shall cover 100% of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of $" . $this->responses["sole-1"] . " per month.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
@@ -7557,6 +5824,8 @@ $tableCon = "<w:p w14:paraId='62CA6FC0' w14:textId='6B5032B5' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09B()
@@ -7594,36 +5863,9 @@ function gen_child_support_8_09B()
 	</w:r>
 	<w:bookmarkEnd w:id='92' />
 	<w:r>
-    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["split-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["split-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s uninsured co-pays for health-related expenses premiums in the amount of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["split-3"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per month.</w:t>
-</w:r>
-
+		<w:t>. Parent A shall cover " . $this->responses["split-1"] . "% and Parent B shall cover " . $this->responses["split-2"] . "% of the Child(ren)’s uninsured 
+		co-pays for health-related expenses premiums in the amount of $" . $this->responses["split-3"] . " per month.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7660,6 +5902,8 @@ $tableCon = "<w:p w14:paraId='0B2E0ED7' w14:textId='602629B2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_09C()
@@ -7697,54 +5941,16 @@ function gen_child_support_8_09C()
 	</w:r>
 	<w:bookmarkEnd w:id='93' />
 	<w:r>
-    <w:t xml:space='preserve'>. Each Parent shall cover up to </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["threshold1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>. Each Parent shall cover up to $" . $this->responses["threshold1"] . " per Child per calendar year in uninsured co-pays for health-related expenses. </w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t xml:space='preserve'>In the event that</w:t>
+		<w:t>In the event that</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-    <w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["threshold2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> per calendar year, then " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["threshold3"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["threshold4"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
-</w:r>
-
+		<w:t xml:space='preserve'> any Child’s uninsured co-pays for health-related expenses paid by either parent exceeds $" . $this->responses["threshold2"] . " per calendar year, then Parent A shall cover " . $this->responses["threshold3"] . "% and Parent B shall cover " . $this->responses["threshold4"] . "% of the Child(ren)’s uninsured co-pays for health-related expenses premiums exceeding the threshold amount.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7779,8 +5985,78 @@ $tableCon = "<w:p w14:paraId='00FC0BC7' w14:textId='1BEC07C4' w:rsidR='00505307'
 		<w:t>Responsibility for Threshold Amount</w:t>
 	</w:r>
 	</w:hyperlink>
+</w:p>
+
+	<w:p w14:paraId='605C7136' w14:textId='104B8D8A' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+	<w:pPr>
+	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	<w:ind w:left='0' w:right='0'/>
+	</w:pPr>
+	<w:r>
+	<w:tab/>
+	</w:r>
+	<w:r w:rsidR='00E616E1'>
+	<w:tab/>
+	</w:r>
+	<w:hyperlink w:anchor='SoCUninsuredCoPaysRecbyProvider' w:history='1'>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:t>8.09D</w:t>
+	</w:r>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+	</w:r>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+		<w:t>Definition of Uninsured Health-Related Expenses: Recommended by Providers</w:t>
+	</w:r>
+	</w:hyperlink>
+</w:p>
+
+<w:p w14:paraId='55700CFE' w14:textId='7140CB63' w:rsidR='00505307' w:rsidRDefault='00E616E1'>
+	<w:pPr>
+	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
+	<w:ind w:left='0' w:right='0'/>
+	</w:pPr>
+	<w:r>
+	<w:tab/>
+	</w:r>
+	<w:r>
+	<w:tab/>
+	</w:r>
+	<w:hyperlink w:anchor='SoCUninsuredCoPaysAgreementbyParents' w:history='1'>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:t>8.09E</w:t>
+	</w:r>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+	</w:r>
+	<w:r w:rsidRPr='00D305A5'>
+		<w:rPr>
+		<w:rStyle w:val='Hyperlink'/>
+		</w:rPr>
+		<w:tab/>
+		<w:t>Definition of Uninsured Health-Related Expenses: Mutual Agreement of the Parents</w:t>
+	</w:r>
+	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10()
@@ -7831,6 +6107,8 @@ $tableCon = "<w:p w14:paraId='46AF528D' w14:textId='27F74889' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10A()
@@ -7868,17 +6146,8 @@ function gen_child_support_8_10A()
 	</w:r>
 	<w:bookmarkEnd w:id='97' />
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_EC"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
-</w:r>
+		<w:t>. " . $this->responses["parentAB_EC"] . " shall cover 100% of the Child(ren)’s extracurricular expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -7915,6 +6184,8 @@ $tableCon = "<w:p w14:paraId='4EFEC2BD' w14:textId='68415E16' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10B()
@@ -7956,27 +6227,8 @@ function gen_child_support_8_10B()
 	</w:r>
 	<w:bookmarkEnd w:id='98' />
 	<w:r>
-    <w:t xml:space='preserve'>  " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitEC-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitEC-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s extracurricular expenses.</w:t>
-</w:r>
-
+		<w:t xml:space='preserve'> Parent A shall cover " . $this->responses["splitEC-1"] . "% and Parent B shall cover " . $this->responses["splitEC-2"] . "% of the Child(ren)’s extracurricular expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8013,6 +6265,8 @@ $tableCon = "<w:p w14:paraId='1E81AC7F' w14:textId='164980DF' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10C()
@@ -8097,6 +6351,8 @@ $tableCon = "<w:p w14:paraId='6FC343D3' w14:textId='030E034B' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_10D()
@@ -8173,6 +6429,7 @@ $tableCon = "<w:p w14:paraId='310DDEA1' w14:textId='2C68D17D' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11()
@@ -8205,8 +6462,7 @@ function gen_child_support_8_11()
 	<w:r>
 		<w:t>.</w:t>
 	</w:r>
-</w:p>
-<w:bookmarkEnd w:id='101' />";
+</w:p>";
 
 $tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 	<w:pPr>
@@ -8231,6 +6487,7 @@ $tableCon = "<w:p w14:paraId='7C228C65' w14:textId='4C80DA27' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11A()
@@ -8268,17 +6525,8 @@ function gen_child_support_8_11A()
 	</w:r>
 	<w:bookmarkEnd w:id='102' />
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_Priv"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s private school expenses.</w:t>
-</w:r>
+		<w:t>. " . $this->responses["parentAB_Priv"] . " shall cover 100% of the Child(ren)’s private school expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8316,6 +6564,7 @@ $tableCon = "<w:p w14:paraId='5470EA96' w14:textId='3DB7AF33' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11B()
@@ -8353,27 +6602,8 @@ function gen_child_support_8_11B()
 	</w:r>
 	<w:bookmarkEnd w:id='103' />
 	<w:r>
-    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitPriv-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitPriv-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s private school expenses.</w:t>
-</w:r>
-
+		<w:t>. Parent A shall cover " . $this->responses["splitPriv-1"] . "% and Parent B shall cover " . $this->responses["splitPriv-2"] . "% of the Child(ren)’s private school expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8411,6 +6641,7 @@ $tableCon = "<w:p w14:paraId='0AE46BEA' w14:textId='251C63D3' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11C()
@@ -8486,6 +6717,8 @@ $tableCon = "<w:p w14:paraId='780CA74D' w14:textId='1B6EE2A0' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11D()
@@ -8567,6 +6800,8 @@ $tableCon = "<w:p w14:paraId='187B3720' w14:textId='22503B53' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_11E()
@@ -8647,6 +6882,8 @@ $tableCon = "<w:p w14:paraId='49FE8DBB' w14:textId='1E17DAB7' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12()
@@ -8705,6 +6942,7 @@ $tableCon = "<w:p w14:paraId='4590273C' w14:textId='76BF38BF' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12A()
@@ -8739,18 +6977,8 @@ function gen_child_support_8_12A()
 	</w:r>
 	<w:bookmarkEnd w:id='108' />
 	<w:r>
-    <w:t xml:space='preserve'>.  </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_High"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>.  " . $this->responses["parentAB_High"] . " shall cover 100% of the Child(ren)’s post-high school education expenses. </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='463DFCA4' w14:textId='6D96CAE1' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8826,27 +7054,8 @@ function gen_child_support_8_12B()
 	</w:r>
 	<w:bookmarkEnd w:id='109' />
 	<w:r>
-    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitHigh-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["splitHigh-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s post-high school education expenses.</w:t>
-</w:r>
-
+		<w:t>. Parent A shall cover " . $this->responses["splitHigh-1"] . "% and Parent B shall cover " . $this->responses["splitHigh-2"] . "% of the Child(ren)’s post-high school education expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8884,6 +7093,7 @@ $tableCon = "<w:p w14:paraId='5312033B' w14:textId='1A769FCD' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12C()
@@ -8924,18 +7134,9 @@ function gen_child_support_8_12C()
 	</w:r>
 	<w:bookmarkEnd w:id='110' />
 	<w:r>
-    <w:t xml:space='preserve'>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_Sole529"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
-</w:r>
-
+		<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then " . $this->responses["parentAB_Sole529"] . " shall 
+		cover 100% of the Child(ren)’s remaining post-high school education expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -8985,6 +7186,7 @@ $tableCon = "<w:p w14:paraId='7512DE99' w14:textId='5AAE5DA0' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12D()
@@ -9016,26 +7218,9 @@ function gen_child_support_8_12D()
 	</w:r>
 	<w:bookmarkEnd w:id='111' />
 	<w:r>
-    <w:t xml:space='preserve'>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["split529-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["split529-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)’s remaining post-high school education expenses.</w:t>
-</w:r>
+		<w:t>. After funds from any 529 accounts held on behalf of a Child or Child(ren), Coverdell accounts or other funds ear-marked to pay for a Child’s post-high school education expenses are expended, then Parent A shall cover " . $this->responses["split529-1"] . "% and 
+		Parent B shall cover " . $this->responses["split529-2"] . "% of the Child(ren)’s remaining post-high school education expenses.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -9084,6 +7269,8 @@ $tableCon = "<w:p w14:paraId='6FF2908F' w14:textId='340F3C79' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12E()
@@ -9121,45 +7308,10 @@ function gen_child_support_8_12E()
 	</w:r>
 	<w:bookmarkEnd w:id='112' />
 	<w:r>
-    <w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["postCap-1"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> up to a cap of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["postCapA"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> amount per academic school year and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["postCap-2"] . "%</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> up to a cap of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$" . $this->responses["postCapB"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> amount per academic school year. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>. The Child(ren)’s post-high school education expenses shall be paid such that Parent A shall cover " . $this->responses["postCap-1"] . "% up to a cap 
+		of $" . $this->responses["postCapA"] . " amount per academic school year and Parent B shall cover " . $this->responses["postCap-2"] . "% up to a cap 
+		of $" . $this->responses["postCapB"] . " amount per academic school year. </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -9196,6 +7348,8 @@ $tableCon = "<w:p w14:paraId='47A0BD41' w14:textId='6176AA96' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12F()
@@ -9263,6 +7417,8 @@ $tableCon = " <w:p w14:paraId='7C893177' w14:textId='4D6C0F72' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12G()
@@ -9355,6 +7511,8 @@ $tableCon = "<w:p w14:paraId='363B8DAE' w14:textId='4D423F75' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_12H()
@@ -9429,6 +7587,7 @@ $tableCon = "<w:p w14:paraId='25B711F9' w14:textId='25570154' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13()
@@ -9487,6 +7646,7 @@ $tableCon = "<w:p w14:paraId='7B39350D' w14:textId='46423AD8' w:rsidR='00505307'
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
 
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13A()
@@ -9527,17 +7687,8 @@ function gen_child_support_8_13A()
 		<w:t>)</w:t>
 	</w:r>
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_taxSole"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
-</w:r>
+		<w:t xml:space='preserve'>. " . $this->responses["parentAB_taxSole"] . " shall be entitled to claim any Child(ren) as a dependent for tax purposes every year. </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -9574,6 +7725,8 @@ $tableCon = "<w:p w14:paraId='5CB52B62' w14:textId='4BCE7B42' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13B()
@@ -9611,36 +7764,22 @@ function gen_child_support_8_13B()
 		<w:rPr>
 			<w:u w:val='single' />
 		</w:rPr>
-		<w:t xml:space='preserve'>)</w:t>
+		<w:t>)</w:t>
 	</w:r>
 	<w:r>
-    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to claim </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["partyATax"] . "</w:t>
-</w:r>
-
+		<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATax"] . "</w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t xml:space='preserve'> (</w:t>
+		<w:t>_(</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-    <w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall be entitled to claim </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["partyBTax"] . "</w:t>
-</w:r>
-
+		<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTax"] . "</w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t xml:space='preserve'> (</w:t>
+		<w:t>_(</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
@@ -9683,6 +7822,8 @@ $tableCon = "<w:p w14:paraId='2D4E2B97' w14:textId='298C2014' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13C()
@@ -9717,33 +7858,19 @@ function gen_child_support_8_13C()
 	</w:r>
 	<w:bookmarkEnd w:id='119' />
 	<w:r>
-    <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to claim </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["partyATaxAlt"] . "</w:t>
-</w:r>
-
+		<w:t>. Parent A shall be entitled to claim " . $this->responses["partyATaxAlt"] . "</w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t xml:space='preserve'> (</w:t>
+		<w:t>_(</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
-    <w:t xml:space='preserve'>Child’s Initials) as a dependent for tax purposes every year. " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . " shall be entitled to claim </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["partyBTaxAlt"] . "</w:t>
-</w:r>
-
+		<w:t>Child’s Initials) as a dependent for tax purposes every year. Parent B shall be entitled to claim " . $this->responses["partyBTaxAlt"] . "</w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart' />
 	<w:r>
-		<w:t xml:space='preserve'> (</w:t>
+		<w:t>_(</w:t>
 	</w:r>
 	<w:proofErr w:type='gramEnd' />
 	<w:r>
@@ -9785,6 +7912,8 @@ $tableCon = "<w:p w14:paraId='2AEB034B' w14:textId='049FDB31' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_13D()
@@ -9825,32 +7954,12 @@ function gen_child_support_8_13D()
 		<w:t>)</w:t>
 	</w:r>
 	<w:r>
-    <w:t xml:space='preserve'>. </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall be entitled to claim the Child(ren) as dependent(s) for tax purposes </w:t>
-</w:r>
-
-<w:r>
-    <w:lastRenderedPageBreak />
-    <w:t xml:space='preserve'>in even years. </w:t>
-</w:r>
-<w:r>
-<w:rPr>
-<w:highlight w:val='yellow' />
-</w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
-</w:r>
-
+		<w:t xml:space='preserve'>. Parent A shall be entitled to claim the Child(ren) as dependent(s) for tax purposes </w:t>
+	</w:r>
+	<w:r>
+		<w:lastRenderedPageBreak />
+		<w:t xml:space='preserve'>in even years. Parent B shall be entitled to claim the Child(ren) as dependent(s) for tax purposes in odd years. </w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -9887,6 +7996,8 @@ $tableCon = "<w:p w14:paraId='14EA1A02' w14:textId='05207471' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14()
@@ -9944,6 +8055,8 @@ $tableCon = "<w:p w14:paraId='73F47652' w14:textId='5F068939' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14A()
@@ -9978,21 +8091,8 @@ function gen_child_support_8_14A()
 	</w:r>
 	<w:bookmarkEnd w:id='122' />
 	<w:r>
-    <w:t>.</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["timeVal"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> days.</w:t>
-</w:r>
-
+		<w:t>. Upon a request in writing (text or email is ok) from a Parent for reimbursement, the other Parent shall reimburse the requesting Parent within " . $this->responses["timeVal"] . " days.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -10032,6 +8132,8 @@ $tableCon = "<w:p w14:paraId='046C1F74' w14:textId='3D1204DF' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14B()
@@ -10118,6 +8220,8 @@ $tableCon = "<w:p w14:paraId='42FF5BC3' w14:textId='28E01CEF' w:rsidR='00505307'
 	</w:r>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14C()
@@ -10193,6 +8297,8 @@ $tableCon = "<w:p w14:paraId='597031A3' w14:textId='7AEC5A9C' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14D()
@@ -10268,6 +8374,8 @@ $tableCon = " <w:p w14:paraId='402D2656' w14:textId='3D787A27' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14E()
@@ -10345,55 +8453,16 @@ $tableCon = "<w:p w14:paraId='1F248F34' w14:textId='26D54941' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_child_support_8_14F()
 {
-	$content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, do not output the "or ___" part
+	$content = $this->responses["reimburseMethod"]; // if user doesn't enter anything, show a blank line instead of displaying nothing
 	if (empty($content)) {
-		$snippet = "<w:p w14:paraId='0433F65B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
-			<w:ind w:left='0' w:right='36' w:firstLine='0' />
-			<w:jc w:val='both' />
-			<w:rPr>
-				<w:b />
-			</w:rPr>
-		</w:pPr>
-		<w:r>
-			<w:tab />
-		</w:r>
-		<w:bookmarkStart w:id='127' w:name='SoCProtocolsforReimbursmentMethod' />
-		<w:r>
-			<w:rPr>
-				<w:b />
-			</w:rPr>
-			<w:t>8.14F</w:t>
-		</w:r>
-		<w:r>
-			<w:rPr>
-				<w:b />
-			</w:rPr>
-			<w:tab />
-		</w:r>
-		<w:r>
-			<w:rPr>
-				<w:u w:val='single' />
-			</w:rPr>
-			<w:t>REIMBURSEMENT METHOD</w:t>
-		</w:r>
-		<w:bookmarkEnd w:id='127' />
-		<w:r>
-			<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or application.</w:t>
-		</w:r>
-		<w:r>
-			<w:rPr>
-				<w:b />
-			</w:rPr>
-			<w:tab />
-		</w:r>
-	</w:p>";
-	} else {
+		$content = "________";
+	}
 	$snippet = "<w:p w14:paraId='0433F65B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
@@ -10427,20 +8496,9 @@ function gen_child_support_8_14F()
 	</w:r>
 	<w:bookmarkEnd w:id='127' />
 	<w:r>
-    <w:t>.</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or application, or </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$content</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'>.</w:t>
-</w:r>
+		<w:t>. Parents shall use the following method to reimburse each other for child-related expenses: Check, Bank Account Transfer, Venmo, Our Family Wizard or other mutually 
+		agreed upon parenting expense tool or application, or $content.</w:t>
+	</w:r>
 	<w:r>
 		<w:rPr>
 			<w:b />
@@ -10448,7 +8506,7 @@ function gen_child_support_8_14F()
 		<w:tab />
 	</w:r>
 </w:p>";
-    }
+
 $tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 	<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
@@ -10483,6 +8541,8 @@ $tableCon = "<w:p w14:paraId='58968F30' w14:textId='1B3FF332' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 } //end of child support section 6
 
@@ -10532,20 +8592,11 @@ function gen_other_9_00()
 	</w:r>
 	<w:bookmarkEnd w:id='128'/>
 	<w:r>
-    <w:t xml:space='preserve'>. Parents agree to engage </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["therapistInput1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'>, or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
-</w:r>
+		<w:t xml:space='preserve'>.  Parents agree to engage" . $this->responses["therapistInput9.00"] . " (name), or other mutually selected licensed mental health professional, as a Co-Parent Counselor to assist them in collaboratively </w:t>
+	</w:r>
 	<w:r>
 		<w:lastRenderedPageBreak/>
-		<w:t>parenting the Child(ren). Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
+		<w:t>parenting the Child(ren).  Both Parents shall continue in Co-Parent Counseling until clinically discharged or upon the mutual agreement of both Parents.</w:t>
 	</w:r>
 </w:p>";
 
@@ -10571,6 +8622,8 @@ $tableCon = "<w:p w14:paraId='2300015A' w14:textId='125E7276' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_01() 
@@ -10602,18 +8655,8 @@ function gen_other_9_01()
 	</w:r>
 	<w:bookmarkEnd w:id='129'/>
 	<w:r>
-    <w:t xml:space='preserve'>. Parents agree to </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["therapistInput2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren). Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion. Parents shall alternate taking the Child(ren) to therapy. Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged. If mutually agreed, parent may jointly select a new therapist for Child(ren). Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
-</w:r>
-
+		<w:t>.  Parents agree to " . $this->responses["therapistInput9.01"] . " (name), or other mutually selected licensed mental health professional, as a Child-Focused Therapist for Child(ren).  Both parents shall have access to the child therapist and shall participate in therapy and/or engage with the Child-Focused Therapist at the therapist’s discretion.  Parents shall alternate taking the Child(ren) to therapy.  Parents agree that the Child(ren) shall continue in therapy as needed and upon the schedule recommended by the therapist with input from the Child(ren) until clinically discharged.  If mutually agreed, parent may jointly select a new therapist for Child(ren).  Unless they have sole legal custody of the Child(ren), neither Parent may unilaterally terminate child therapy without the other Parent’s consent.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -10638,6 +8681,8 @@ $tableCon = " <w:p w14:paraId='52409629' w14:textId='75F83438' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_02() 
@@ -10695,6 +8740,8 @@ $tableCon = " <w:p w14:paraId='12CD9324' w14:textId='2F5749CC' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_03() 
@@ -10755,6 +8802,8 @@ $tableCon = " <w:p w14:paraId='7392834C' w14:textId='64C87E0B' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_04() 
@@ -10821,6 +8870,8 @@ $tableCon = " <w:p w14:paraId='56C3F5CA' w14:textId='0DBD847A' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_05() 
@@ -10896,6 +8947,8 @@ $tableCon = "<w:p w14:paraId='36B937E6' w14:textId='4DD2B156' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_06() 
@@ -10937,29 +8990,14 @@ function gen_other_9_06()
 	</w:r>
 	<w:bookmarkEnd w:id='134'/>
 	<w:r>
-		<w:t xml:space='preserve'>. </w:t>
+		<w:t>.</w:t>
 	</w:r>
 	<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_Other"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> will attend all parent-teacher meetings and will advise </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_Other1"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> of the Child(ren)'s progress.</w:t>
-</w:r>
-
+		<w:rPr>
+			<w:color w:val='333333'/>
+		</w:rPr>
+		<w:t>Parent A/B will attend all parent-teacher meetings and will advise " . $this->responses["9.06"] . "/A of the Child(ren)'s progress.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -10984,6 +9022,8 @@ $tableCon = "<w:p w14:paraId='7AA25382' w14:textId='6BBA8B63' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_07() 
@@ -11034,7 +9074,7 @@ function gen_other_9_07()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>. Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
+		<w:t>.  Both Parents will be provided with separate report cards for the Child(ren). Parents shall notify the school authorities to provide separate report cards.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11060,6 +9100,8 @@ $tableCon = "<w:p w14:paraId='406AA414' w14:textId='78AF25A1' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_08() 
@@ -11105,7 +9147,7 @@ function gen_other_9_08()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>. Both Parents may attend school events and extra-curricular activities.</w:t>
+		<w:t>.  Both Parents may attend school events and extra-curricular activities.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11131,6 +9173,8 @@ $tableCon = "<w:p w14:paraId='562564DD' w14:textId='2FB7B2F2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_09() 
@@ -11210,6 +9254,8 @@ $tableCon = " <w:p w14:paraId='739B44B4' w14:textId='397228A3' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_10() 
@@ -11248,7 +9294,7 @@ function gen_other_9_10()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>. Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
+		<w:t>.  Parent shall alternate attending the Child(ren)’s school events and extracurricular activities.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11274,87 +9320,12 @@ $tableCon = " <w:p w14:paraId='26A7A61A' w14:textId='776E4B21' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_11() 
 {
-	$content = $this->responses["otherDocuments"]; // if user doesn't enter anything, do not output the "and [insert any other relevant documents]" part
-	if (empty($content)) {
-		$snippet = "<w:p w14:paraId='634C2BC8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
-		<w:pPr>
-			<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
-			<w:ind w:right='36'/>
-			<w:jc w:val='both'/>
-		</w:pPr>
-		<w:bookmarkStart w:id='140' w:name='OtherIssuesDocuments'/>
-		<w:r>
-			<w:rPr>
-				<w:b/>
-			</w:rPr>
-			<w:t>9.11</w:t>
-		</w:r>
-		<w:r>
-			<w:rPr>
-				<w:b/>
-			</w:rPr>
-			<w:tab/>
-		</w:r>
-		<w:r>
-			<w:rPr>
-				<w:u w:val='single'/>
-			</w:rPr>
-			<w:t>OTHER ISSUES: DOCUMENTS</w:t>
-		</w:r>
-		<w:bookmarkEnd w:id='140'/>
-		<w:r>
-			<w:t xml:space='preserve'>.  </w:t>
-		</w:r>
-		<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-		</w:rPr>
-		<w:t xml:space='preserve'>. </w:t>
-	</w:r>
-	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-			<w:highlight w:val='yellow' />
-		</w:rPr>
-		<w:t>" . $this->responses["parentABdoc_Other"] . "</w:t>
-	</w:r>
-	<w:r>
-		<w:t xml:space='preserve'> will keep the original passport issued in the Child(ren)'s name, their social security card, and birth certificate at their home, and these documents will be made available to </w:t>
-	</w:r>
-	<w:r>
-		<w:rPr>
-			<w:color w:val='333333'/>
-			<w:highlight w:val='yellow' />
-		</w:rPr>
-		<w:t>" . $this->responses["parentABdoc_Other2"] . "</w:t>
-	</w:r>
-	<w:r>
-		<w:t xml:space='preserve'> as needed. Both Parents shall have copies of </w:t>
-	</w:r>
-	
-		<w:proofErr w:type='gramStart'/>
-		<w:r>
-			<w:rPr>
-				<w:color w:val='333333'/>
-			</w:rPr>
-			<w:t>all of</w:t>
-		</w:r>
-		<w:proofErr w:type='gramEnd'/>
-		<w:r>
-			<w:rPr>
-				<w:color w:val='333333'/>
-			</w:rPr>
-			<w:t xml:space='preserve'> the important documents.</w:t>
-		</w:r>
-	</w:p>";
-	} else {
-		$snippet = "";
-	}
-
 	$snippet = "<w:p w14:paraId='634C2BC8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -11382,39 +9353,14 @@ function gen_other_9_11()
 	</w:r>
 	<w:bookmarkEnd w:id='140'/>
 	<w:r>
-		<w:t xml:space='preserve'>. </w:t>
+		<w:t xml:space='preserve'>.  </w:t>
 	</w:r>
 	<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t xml:space='preserve'>" . $this->responses["parentABdoc_Other"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>$content</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> at their home, and these documents will be made available to </w:t>
-</w:r>
-
-<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentABdoc_Other2"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> as needed. Both Parents shall have copies of </w:t>
-</w:r>
-
+		<w:rPr>
+			<w:color w:val='333333'/>
+		</w:rPr>
+		<w:t xml:space='preserve'>" . $this->responses["parentABdoc_Other"] . "/B will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, and [insert any other relevant documents] at their home, and these documents will be made available to " . $this->responses["parentABdoc_Other2"] . "/A as needed. Both Parents shall have copies of </w:t>
+	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
 		<w:rPr>
@@ -11453,6 +9399,8 @@ $tableCon = " <w:p w14:paraId='089BFEE7' w14:textId='1D519E9C' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_12() 
@@ -11493,7 +9441,7 @@ function gen_other_9_12()
 		<w:rPr>
 			<w:color w:val='333333'/>
 		</w:rPr>
-		<w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " must both consent for the purposes of a passport application for any Child.</w:t>
+		<w:t>Parent A and Parent B must both consent for the purposes of a passport application for any Child.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11519,6 +9467,8 @@ $tableCon = " <w:p w14:paraId='638E9405' w14:textId='366FE802' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_13() 
@@ -11556,22 +9506,11 @@ function gen_other_9_13()
 		<w:t xml:space='preserve'>.  </w:t>
 	</w:r>
 	<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentABOther3"] . "</w:t>
-</w:r>
-<w:r>
-    <w:t xml:space='preserve'> can apply for the passport for a Child without the consent of </w:t>
-</w:r>
-<w:r>
-    <w:rPr>
-        <w:color w:val='333333'/>
-        <w:highlight w:val='yellow' />
-    </w:rPr>
-    <w:t>" . $this->responses["parentAB_Other4"] . ".</w:t>
-</w:r>
+		<w:rPr>
+			<w:color w:val='333333'/>
+		</w:rPr>
+		<w:t>Parent " . $this->responses["parentAB_Other3"] . " can apply for the passport for a Child without the consent of " . $this->responses["parentAB_Other4"] . "/A.</w:t>
+	</w:r>
 </w:p>";
 
 $tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
@@ -11596,6 +9535,8 @@ $tableCon = "<w:p w14:paraId='6FD1752E' w14:textId='5DB7D316' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_14() 
@@ -11633,11 +9574,11 @@ function gen_other_9_14()
 	</w:r>
 	<w:bookmarkEnd w:id='143'/>
 	<w:r>
-		<w:t xml:space='preserve'>Both parents agree that they shall not introduce any of their minor children to a new significant other or intimate partner until (a) they have been in an intimate dating relationship for six (6) months or longer and (b) the other parent has been given an opportunity to meet that significant other/intimate partner first. Parents shall be guided by the children’s best interests and conflict </w:t>
+		<w:t xml:space='preserve'>Both parents agree that they shall not introduce any of their minor children to a new significant other or intimate partner until (a) they have been in an intimate dating relationship for six (6) months or longer and (b) the other parent has been given an opportunity to meet that significant other/intimate partner first.  Parents shall be guided by the children’s best interests and conflict </w:t>
 	</w:r>
 	<w:r>
 		<w:lastRenderedPageBreak/>
-		<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner. This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
+		<w:t>minimization in determining a reasonable compromise on any issues arising from this provision. If parents cannot agree, they shall consult with and engage mutually acceptable therapist or other mental health professional informed and guided by their recommendations. Unless otherwise agreed upon in writing, neither parent shall be allowed to travel with the children and their significant other/intimate partner unless or until that parent has, in fact, married their new partner.  This plan is subject to further review based on the best interests of the children and their observed reactions and behaviors throughout any introduction process.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11663,6 +9604,8 @@ $tableCon = " <w:p w14:paraId='51895F18' w14:textId='05A7E18F' w:rsidR='00505307
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_15() 
@@ -11694,7 +9637,7 @@ function gen_other_9_15()
 	</w:r>
 	<w:bookmarkEnd w:id='144'/>
 	<w:r>
-		<w:t xml:space='preserve'>. Given that both parents will likely engage in new intimate partner relationships in the future, it is their intent that the children’s well-being, </w:t>
+		<w:t xml:space='preserve'>.  Given that both parents will likely engage in new intimate partner relationships in the future, it is their intent that the children’s well-being, </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -11702,7 +9645,7 @@ function gen_other_9_15()
 	</w:r>
 	<w:proofErr w:type='gramEnd'/>
 	<w:r>
-		<w:t xml:space='preserve'> and stability remain the highest priority. Both parents agree to be respectful of one another and guided by the following concepts and protocols: </w:t>
+		<w:t xml:space='preserve'> and stability remain the highest priority.  Both parents agree to be respectful of one another and guided by the following concepts and protocols: </w:t>
 	</w:r>
 </w:p>
 <w:p w14:paraId='5229168B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -11723,7 +9666,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t>Take an honest look at the relationship. If you are just having fun enjoying a new person’s company but know there is no long-term potential, it is probably best not to introduce the children to a new intimate partner.</w:t>
+		<w:t>Take an honest look at the relationship.  If you are just having fun enjoying a new person’s company but know there is no long-term potential, it is probably best not to introduce the children to a new intimate partner.</w:t>
 	</w:r>
 </w:p>
 <w:p w14:paraId='0D52C06B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -11744,7 +9687,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t xml:space='preserve'>Your relationship shall be well-established and stable prior to initiating these new intimate partner protocols. The Parents shall discuss the appropriate timing and circumstances in which the children should formally meet a new intimate partner and be told that the nature of the relationship is romantic. It is understood that the children may </w:t>
+		<w:t xml:space='preserve'>Your relationship shall be well-established and stable prior to initiating these new intimate partner protocols.  The Parents shall discuss the appropriate timing and circumstances in which the children should formally meet a new intimate partner and be told that the nature of the relationship is romantic.  It is understood that the children may </w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -11798,7 +9741,7 @@ function gen_other_9_15()
 		<w:jc w:val='both'/>
 	</w:pPr>
 	<w:r>
-		<w:t>Parents shall use best practices and judgment when engaging in appropriate public displays of affection with their new intimate partner in front of any of the children. Parents shall further check in with the children to gauge their comfort with the new intimate partner. This may be accomplished within a therapeutic process (</w:t>
+		<w:t>Parents shall use best practices and judgment when engaging in appropriate public displays of affection with their new intimate partner in front of any of the children.  Parents shall further check in with the children to gauge their comfort with the new intimate partner.  This may be accomplished within a therapeutic process (</w:t>
 	</w:r>
 	<w:proofErr w:type='gramStart'/>
 	<w:r>
@@ -11841,7 +9784,7 @@ function gen_other_9_15()
 		<w:rPr>
 			<w:b/>
 		</w:rPr>
-		<w:t xml:space='preserve'>. </w:t>
+		<w:t xml:space='preserve'>.  </w:t>
 	</w:r>
 	<w:r>
 		<w:t>The Parents shall discuss age-appropriate discipline options for the children.</w:t>
@@ -11891,6 +9834,8 @@ $tableCon = "<w:p w14:paraId='1E11FF73' w14:textId='315BD30E' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 function gen_other_9_16() 
@@ -11922,7 +9867,7 @@ function gen_other_9_16()
 	</w:r>
 	<w:bookmarkEnd w:id='145'/>
 	<w:r>
-		<w:t>. If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
+		<w:t>.  If there is any disagreement related to this Agreement or any Child-related issues, both Parents agree that they shall engage a mutually selected mediator to help them resolve the issue(s) prior to filing a motion for relief with the Family Court.</w:t>
 	</w:r>
 </w:p>";
 
@@ -11948,6 +9893,8 @@ $tableCon = "<w:p w14:paraId='3381AF8D' w14:textId='0D6C31F2' w:rsidR='00505307'
 	</w:hyperlink>
 </w:p>";
 $this->tableOfContentsString .= $tableCon;
+
+	 $snippet;
 	$this->fileContentString .= $snippet;
 }
 //End of other section
@@ -12001,7 +9948,8 @@ function gen_legal_10_00() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='146'/>
 		  <w:r>
-			<w:t>. Except as otherwise limited by Statute, Court Rule or case authority, the Family Court shall have the ongoing authority and personal and subject matter jurisdiction to make any other just and equitable orders which may be necessary to enforce the intended agreement and specific provisions set forth herein.
+			<w:t>. Except as otherwise limited by Statute, Court Rule or case authority, the Family Court shall have the ongoing authority and personal and subject matter jurisdiction to make any other just and equitable orders which may be necessary to
+			  enforce the intended agreement and specific provisions set forth herein.
 			</w:t>
 		  </w:r>
 		</w:p>";
@@ -12061,7 +10009,7 @@ function gen_legal_10_01() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='147'/>
 		  <w:r>
-			<w:t xml:space='preserve'>. A Parent who fails to comply with this </w:t>
+			<w:t xml:space='preserve'>.  A Parent who fails to comply with this </w:t>
 		  </w:r>
 		  <w:r>
 			<w:rPr>
@@ -12082,7 +10030,7 @@ function gen_legal_10_01() {
 		  </w:r>
 		  <w:proofErr w:type='gramEnd'/>
 		  <w:r>
-			<w:t xml:space='preserve'> noncompliance. The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
+			<w:t xml:space='preserve'> noncompliance.  The Family Court shall have continuing jurisdiction over the parents and their property to enforce and implement the provisions of the Agreement, to the extent permitted by applicable statutory authority, court rule and/or case law.</w:t>
 		  </w:r>
 		</w:p>";
 
@@ -12109,6 +10057,7 @@ function gen_legal_10_01() {
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
 
+	 $enforcement;
 	$this->fileContentString .= $enforcement;
 }
 function gen_legal_10_02() {
@@ -12137,7 +10086,7 @@ function gen_legal_10_02() {
 		  </w:r>
 		  <w:bookmarkEnd w:id='148'/>
 		  <w:r>
-			<w:t xml:space='preserve'>. Each Parent acknowledges that they have voluntarily executed this </w:t>
+			<w:t xml:space='preserve'>.  Each Parent acknowledges that they have voluntarily executed this </w:t>
 		  </w:r>
 		  <w:r>
 			<w:rPr>
@@ -12146,7 +10095,7 @@ function gen_legal_10_02() {
 			<w:t>Co-Parenting Plan: Agreement Regarding Child Custody, Timesharing, and Support</w:t>
 		  </w:r>
 		  <w:r>
-			<w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable. Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
+			<w:t xml:space='preserve'> with sufficient knowledge of the facts and the law, and that it is fair and reasonable.  Both Parents have been advised to seek independent legal counsel regarding these and all other matters contained herein.</w:t>
 		  </w:r>
 		</w:p>";
 
@@ -12165,6 +10114,8 @@ function gen_legal_10_02() {
 			</w:hyperlink>
 		</w:p>";
 		$this->tableOfContentsString .= $tableCon;
+
+	 $execution;
 	$this->fileContentString .= $execution;
 }
 
@@ -12197,7 +10148,7 @@ function gen_legal_10_02() {
 		// Zip the folder and rename it to .docx
 		$zipOutput = new ZipArchive;
 
-		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
+		if($zipOutput->open($this->fileName . ".zip",(ZipArchive::CREATE)))
 		{
 		    $folderRefsToZip = $this->fileName ."/_rels/.rels";
 		    $folderLevel1ToZip = $this->fileName ."/*.*";
@@ -12216,7 +10167,7 @@ function gen_legal_10_02() {
         {
            		$zipOutput->close();
         }
-		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
+		rename($this->fileName . ".zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
 	}
 

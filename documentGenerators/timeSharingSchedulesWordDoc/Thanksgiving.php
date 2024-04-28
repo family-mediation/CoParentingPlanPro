@@ -1,6 +1,6 @@
 <?php
 class Thanksgiving {
-    public function get_split(string $parentAFirst, string $parentALast, string $parentBFirst, string $parentBLast): string {
+    public function get_split(string $parentAFirst, string $parentBFirst): string {
         return "<w:p w14:paraId='70D84475' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -42,48 +42,13 @@ class Thanksgiving {
       </w:r>
       <w:bookmarkEnd w:id='36'/>
       <w:r>
-      <w:t xml:space='preserve'>. In odd years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the first half of the break and </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the second half of the break. In even years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the first half of the break and </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the second half of the break.</w:t>
-  </w:r>
-  
+        <w:t>. In odd years, $parentAFirst shall have the Child(ren) during the first half of the break and $parentBFirst shall have the Child(ren) during the second half of the break. In even years, $parentBFirst shall have the Child(ren) during the first half of
+          the break and $parentAFirst shall have the Child(ren) during the second half of the break.
+        </w:t>
+      </w:r>
     </w:p>";
     }
-    public function get_alternate(string $parentAFirst, string $parentALast, string $parentBFirst, string $parentBLast): string {
+    public function get_alternate(string $parentAFirst, string $parentBFirst): string {
         return "<w:p w14:paraId='33C72345' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -111,27 +76,8 @@ class Thanksgiving {
       </w:r>
       <w:bookmarkEnd w:id='37'/>
       <w:r>
-      <w:t xml:space='preserve'>.  In odd calendar years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the entire break.  In even calendar years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the entire break.</w:t>
-  </w:r>
-  
+        <w:t xml:space='preserve'>.  In odd calendar years, $parentAFirst shall have the entire break.  In even calendar years, $parentBFirst shall have the entire break.   </w:t>
+      </w:r>
     </w:p>";
     }
 

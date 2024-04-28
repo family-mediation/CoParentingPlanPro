@@ -1,6 +1,6 @@
 <?php
 class Summer {
-    public function get_split(string $parentAFirst, string $parentALast, string $parentBFirst, string $parentBLast): string {
+    public function get_split(string $parentAFirst, string $parentBFirst): string {
         return "<w:p w14:paraId='5AF5F2E3' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='1' w:line='360' w:lineRule='auto'/>
@@ -40,50 +40,12 @@ class Summer {
         </w:rPr>
         <w:t>SPLIT BREAK</w:t>
       </w:r>
-      <w:r>
-      <w:t xml:space='preserve'>.  </w:t>
-    </w:r>
       <w:bookmarkEnd w:id='50'/>
       <w:r>
-      <w:t xml:space='preserve'>In odd years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the first half of the break and </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the second half of the break. In even years, </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the first half of the break and </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the Child(ren) during the second half of the break, to include New Year’s Eve and New Year’s Day.</w:t>
-  </w:r>
-  
+        <w:t>. In odd years, $parentAFirst shall have the Child(ren) during the first half of the break and $parentBFirst shall have the Child(ren) during the second half of the break. In even years, $parentBFirst shall have the Child(ren) during the first half of
+          the break and $parentAFirst shall have the Child(ren) during the second half of the break, to include New Year’s Eve and New Year’s Day.
+        </w:t>
+      </w:r>
     </w:p>";
     }
     public function get_continue(): string {
@@ -154,44 +116,8 @@ class Summer {
       </w:r>
       <w:bookmarkEnd w:id='52'/>
       <w:r>
-      <w:t xml:space='preserve'>.Parents shall continue the normal during the school year schedule during this break provided however that both parents shall have the option to take </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$days_weeks $summerDayWeek</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> of uninterrupted time with the Child(ren) every summer. Parents shall select and exchange their dates for uninterrupted time with the Child(ren) by no later than </w:t>
-  </w:r>
-  <w:r>
-      <w:rPr>
-          <w:highlight w:val='yellow' />
-      </w:rPr>
-      <w:t>$no_later_than</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> of the same year. In even years, </w:t>
-  </w:r>
-  <w:r>
-  <w:rPr>
-  <w:highlight w:val='yellow' />
-</w:rPr>
-      <w:t>$parentAFirst $parentALast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the first choice of dates for uninterrupted time during the Summer Break. In odd years, </w:t>
-  </w:r>
-  <w:r>
-  <w:rPr>
-  <w:highlight w:val='yellow' />
-</w:rPr>
-      <w:t>$parentBFirst $parentBLast</w:t>
-  </w:r>
-  <w:r>
-      <w:t xml:space='preserve'> shall have the first choice of dates for uninterrupted time during the Summer Break.</w:t>
-  </w:r>
+        <w:t xml:space='preserve'>.  Parents shall continue the normal during the school year schedule during this break provided however that both parents shall have the option to take $days_weeks $summerDayWeek of uninterrupted time with the Child(ren) every summer.  Parents shall select and exchange their dates for uninterrupted time with the Child(ren) by no later than $no_later_than of the same year.  In even years, $parentAFirst $parentALast shall have the first choice of dates for uninterrupted time during the Summer Break.  In odd years, $parentBFirst $parentBLast shall have the first choice of dates for uninterrupted time during the Summer Break.  </w:t>
+      </w:r>
     </w:p>";
     }
 }
