@@ -44,7 +44,7 @@ class CalendarGenerator
 				return $ical_event; // Just for demonstration, you can remove this line
 
 	}
-// Generate the different components.
+	// Generate the different components.
 	public function genHeader()
 	{
 	   
@@ -77,7 +77,11 @@ class CalendarGenerator
 	{
 		// Define the start date and end date of the event
 		$start_date = new DateTime('now', new DateTimeZone('Pacific/Honolulu'));
-		$alternate_date = date_add($start_date, DateInterval::createFromDateString('7 day'));
+		$alternate_date = $start_date;
+		if($alternate_date->modify('+7 days') == false)
+		{
+			echo "DATE MODIFICATION NOT WORKING";
+		}
 		$parentAEvents = $this->generateEvent($this->partyAFull," Parenting time for ".$this->partyAFull.".",$start_date);
 		$parentBEvents = $this->generateEvent($this->partyBFull," Parenting time for ".$this->partyBFull.".",$alternate_date);
         $this->fileContentString .= $parentAEvents;
