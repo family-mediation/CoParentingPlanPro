@@ -261,7 +261,7 @@ class Winter {
       <w:t>$parentAFirst $parentALast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the second half, to include New Year’s Eve and New Year’s Day. During their time, either parent may elect to travel with the Child(ren).</w:t>
+      <w:t xml:space='preserve'> shall have the second half, to include New Year’s Eve and New Year’s Day. During their time, either parent may elect to travel with the Child(ren).</w:t>
   </w:r>
   
       <w:proofErr w:type='gramStart'/>

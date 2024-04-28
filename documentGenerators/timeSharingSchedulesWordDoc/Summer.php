@@ -172,7 +172,7 @@ class Summer {
       <w:t>$no_later_than</w:t>
   </w:r>
   <w:r>
-      <w:t xml:space='preserve'> of the same year.  In even years, </w:t>
+      <w:t xml:space='preserve'> of the same year. In even years, </w:t>
   </w:r>
   <w:r>
   <w:rPr>
