@@ -123,7 +123,7 @@ class Spring {
       <w:t>$parentAFirst $parentALast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the entire break.  In even calendar years, </w:t>
+      <w:t xml:space='preserve'> shall have the entire break. In even calendar years, </w:t>
   </w:r>
   <w:r>
       <w:rPr>
@@ -132,7 +132,7 @@ class Spring {
       <w:t>$parentBFirst $parentBLast</w:t>
   </w:r>
   <w:r>
-      <w:t> shall have the entire break.</w:t>
+      <w:t xml:space='preserve'> shall have the entire break.</w:t>
   </w:r>
   
     </w:p>";
