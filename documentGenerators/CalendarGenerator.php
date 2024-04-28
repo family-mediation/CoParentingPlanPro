@@ -7,21 +7,23 @@ class CalendarGenerator
 	public $fileContentString;
 	public $generationDate;
 	public $generationTime;
+	public $partyAFull;
+	public $partyBFull;
 	public function __construct(string $fileName,array $responses)
  	{
 		$this->fileName = $fileName;
 		$this->responses = $responses;
 		$this->fileOutput = fopen("./".$fileName,"w+");
+		$this->partyAFull = $this->responses["partyAFirst"] . ' '.$this->responses["partyALast"];
+		$this->partyBFull = $this->responses["partyBFirst"] . ' '.$this->responses["partyBLast"];
  	}
 
-	private function generateEvent($eventTitle,$eventDescription, $recurrence = "FREQ=WEEKLY;INTERVAL=2;BYDAY=MO,TU,WE,TH,FR") : string
+	private function generateEvent($eventTitle,$eventDescription,$start_date, $recurrence = "FREQ=WEEKLY;INTERVAL=2;BYDAY=MO,TU,WE,TH,FR,SA,SU") : string
 	{
-				// Define the start date and end date of the event
-				$start_date = new DateTime('now', new DateTimeZone('Pacific/Honolulu'));
 				// Generate RRULE
 				$rrule = $recurrence;
 				// Format the dates according to iCalendar format
-				$start_date_formatted = $start_date->format('Ymd\THis');
+				$start_date_formatted = $start_date->format('Ymd');
 				// Other event information
 				$generationDate = date("Ymd");
 				$generationTime = date("His");
@@ -83,6 +85,7 @@ class CalendarGenerator
 		$parentAEvents = $this->generateEvent($this->partyAFull," Parenting time for ".$this->partyAFull.".",$start_date);
 		$parentBEvents = $this->generateEvent($this->partyBFull," Parenting time for ".$this->partyBFull.".",$alternate_date);
         $this->fileContentString .= $parentAEvents;
+		$this->fileContentString .= $parentBEvents;
 	}
 
 	public function packageDocument()
