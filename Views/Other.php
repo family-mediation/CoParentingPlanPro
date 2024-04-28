@@ -27,21 +27,41 @@
               <div>
               <input type="checkbox" name="other[]" id="9.02" value="9.02"/>
               <label for="9.02">Social Media Between Parents</label>
+              <span class="otherTool" data-bs-placement="top" title="Neither Parent shall post any pictures of the other Parent on social media nor make any derogatory
+              comment about the other Parent on social media.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
           
               <div>
               <input type="checkbox" name="other[]" id="9.03" value="9.03"/>
               <label for="9.03">Social Media For Child(ren)</label>
+              <span class="otherTool" data-bs-placement="top" title="Parents agree that none
+              of their Child(ren) shall have access to any social media platform until they reach
+              thirteen (13) years of age, and thereafter both Parents shall monitor any Child’s social
+              media usage to ensure that it is safe and does not cause embarrassment to either
+              Parent or the Child.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
             <div>
               <input type="checkbox" name="other[]" id="9.04" value="9.04"/>
               <label for="9.04">Joint Parent-Teacher Meetings</label>
+              <span class="otherTool" data-bs-placement="top" title="Parents agree that it
+              is in their Child(ren)’s best interests that they both attend parent-teacher meetings
+              together.">
+              <i class="bi bi-info-circle"></i>
+              </span>
             </div>
 
               <div>
               <input type="checkbox" name="other[]" id="9.05" value="9.05"/>
               <label for="9.05">Separate Parent-Teacher Meetings</label>
+              <span class="otherTool" data-bs-placement="top" title="Parents agree
+              that they will each arrange our own separate parent-teacher meetings.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
@@ -62,21 +82,39 @@
               <div>
               <input type="checkbox" name="other[]" id="9.07" value="9.07"/>
               <label for="9.07">Report Cards for the Child(ren)</label>
+              <span class="otherTool" data-bs-placement="top" title="Both Parents will
+              be provided with separate report cards for the Child(ren). Parents shall notify the school
+              authorities to provide separate report cards.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
               <input type="checkbox" name="other[]" id="9.08" value="9.08"/>
               <label for="9.08">Joint Attendance at School and Extracurricular Events</label>
+              <span class="otherTool" data-bs-placement="top" title="Both Parents may attend school events and extra-
+              curricular activities.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
               <input type="checkbox" name="other[]" id="9.09" value="9.09"/>
               <label for="9.09">Custodial Parent to Attend School and Extracurricular Events</label>
+              <span class="otherTool" data-bs-placement="top" title="The Parent with whom the Child(ren) is/are residing
+              at the time of the school event and extracurricular activity will be the sole Parent to
+              attend these events.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
               <input type="checkbox" name="other[]" id="9.10" value="9.10"/>
               <label for="9.10">Alternate Attendance at School and Extracurricular Events</label>
+              <span class="otherTool" data-bs-placement="top" title="Parent shall alternate attending the Child(ren)’s
+              school events and extracurricular activities.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
@@ -89,7 +127,7 @@
               <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
               <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>">Parent B</option>
               </select> will keep the original passport issued in the Child(ren)'s name, their social security card, birth certificate, 
-              and <input type="text" class="form-control" name="otherDocuments" id="otherDocuments" placeholder="Input any other relevant documents" style="margin: 10px;" /> at their home, and these documents will be made available to 
+              and <input type="text" class="form-control" name="otherDocuments" id="otherDocuments" placeholder="Input any other relevant documents, leave blank if N/A" style="margin: 10px;" /> at their home, and these documents will be made available to 
               <select name="parentABdoc_Other2" id="parentABdoc_Other2">
               <option value="<?php echo $_SESSION['responses']['partyAFirst'] . ' ' . $_SESSION['responses']['partyALast']; ?>">Parent A</option>
               <option value="<?php echo $_SESSION['responses']['partyBFirst'] . ' ' . $_SESSION['responses']['partyBLast']; ?>" selected>Parent B</option></select> as needed. 
@@ -102,6 +140,9 @@
               <div>
               <input type="checkbox" name="other[]" id="9.12" value="9.12"/>
               <label for="9.12">Joint Authority to Consent for Passport</label>
+              <span class="otherTool" data-bs-placement="top" title="Parent A and Parent B must both consent for the purposes of a passport application for any Child.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
@@ -122,16 +163,33 @@
               <div>
               <input type="checkbox" id="9.14" value="9.14" name="other[]"/>
               <label for="9.14">New Intimate Partner Protocols (Less Detailed)</label>
+              <span class="otherTool" data-bs-placement="top" title="Both parents agree that they shall not introduce any of their minor children to a new
+              significant other or intimate partner until (a) they have been in an intimate dating
+              relationship for six (6) months or longer and (b) the other parent has been given an
+              opportunity to meet that significant other/intimate partner first.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
               <input type="checkbox" id="9.15" value="9.15" name="other[]"/>
               <label for="9.15">New Intimate Partner Protocols (More Detailed)</label>
+              <span class="otherTool" data-bs-placement="top" title="If there is any
+              disagreement related to this Agreement or any Child-related issues, both Parents agree
+              that they shall engage a mutually selected mediator to help them resolve the issue(s)
+              prior to filing a motion for relief with the Family Court.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
 
               <div>
               <input type="checkbox" id="9.16" value="9.16" name="other[]"/>
               <label for="9.16">Alternative Dispute Resolution</label>
+              <span class="otherTool" data-bs-placement="top" title="Given that both parents will likely engage in new intimate partner
+              relationships in the future, it is their intent that the children’s well-being, comfort and
+              stability remain the highest priority.">
+              <i class="bi bi-info-circle"></i>
+              </span>
               </div>
           <div class="row justify-content-center pt-4 pb-4">
           <button id="next0" onclick="submit()">Next Section</button>
@@ -193,6 +251,11 @@
       parentOptions.style.display = "none";
     }
   }
+
+  const tooltips = document.querySelectorAll('.otherTool')
+  tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)
+  })
 
 </script>
 

@@ -45,7 +45,7 @@ class HtmlGenerator extends documentGenerator
          Not Intend to Seek Family Court Approval</a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
-         href=\"#PartiesInformationon" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
+         href=\"#PartiesInformationonParentA\"><span lang=FR>3.00&nbsp;&nbsp; Parties: Information
          on " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span></a></p>
 
          <p class=MsoNormal style='margin:0in;line-height:normal'><a
@@ -250,11 +250,10 @@ class HtmlGenerator extends documentGenerator
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
-         name=PartiesInformationon<b><span lang=FR>3.00&nbsp; </span></b></a><u><span
-         lang=FR>PARTIES: INFORMATION ON PARENT A</span></u><span lang=FR>.&nbsp; </span>PARENT
-         A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; 
-         " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "'s residence address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
-          " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyBZip"] . "</span>.&nbsp; </p>
+         name=PartiesInformationonParentA><b>3.00</b> <u>PARTIES: INFORMATION ON PARENT A</u></a>. 
+         Parent A's full legal name is <span style='background:yellow'>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</span>.&nbsp; " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "'s residence
+         address is <span style='background:yellow'>" . $this->responses["partyAResidence"] . ", 
+          " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . "</span>.&nbsp; </p>
 
          <p class=MsoNormal style='margin-top:0in;margin-right:2.3pt;margin-bottom:0in;
          margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
@@ -824,9 +823,9 @@ class HtmlGenerator extends documentGenerator
 
         $alt = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;"
-            . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) in even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren)
-            in even/odd years.&nbsp; An alternated holiday/special day shall be defined as
+            name=PhysicalCustodyHolidaysAltYearly><b>6.03A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>ALTERNATE YEARLY</u></a>.&nbsp;<span style='background:yellow'>"
+            . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) in <span style='background:yellow'>even/odd</span> years.&nbsp;<span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> shall have the Child(ren)
+            in <span style='background:yellow'>even/odd</span> years.&nbsp; An alternated holiday/special day shall be defined as
             beginning at <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
         
         $this->fileContentString .= $alt;
@@ -836,10 +835,10 @@ class HtmlGenerator extends documentGenerator
         $split = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
             margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
             name=PhysicalCustodyHolidaysSplitEveryYear><b>6.03B</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>SPLIT EVERY
-            YEAR</u></a>.&nbsp; " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the first half and " . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . " shall have the Child(ren) for the second half of this holiday/special day in
-            even/odd years.&nbsp; " . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . " shall have the Child(ren) for the first half and
-            " . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . " shall have the Child(ren) for the second half of this holiday/special
-            day in even/odd years.&nbsp; A split holiday shall be defined as beginning at
+            YEAR</u></a>.&nbsp;<span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) for the first half and <span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses["partyBLast"] . "</span> shall have the Child(ren) for the second half of this holiday/special day in
+            <span style='background:yellow'>even/odd</span> years.&nbsp;<span style='background:yellow'>" . $this->responses['partyBFirst'] . " " . $this->responses['partyBLast'] . "</span> shall have the Child(ren) for the first half and
+            <span style='background:yellow'>" . $this->responses['partyAFirst'] . " " . $this->responses["partyALast"] . "</span> shall have the Child(ren) for the second half of this holiday/special
+            day in <span style='background:yellow'>even/odd</span> years.&nbsp; A split holiday shall be defined as beginning at
              <span style='background:yellow'>___</span> am/pm and ending at <span style='background:yellow'>___</span> am/pm.</p>";
         
         $this->fileContentString .= $split;
@@ -1936,8 +1935,8 @@ class HtmlGenerator extends documentGenerator
         FOR THRESHOLD AMOUNT</u>. Each Parent shall cover up to <span style='background:yellow'>$" . $this->responses["threshold1"] . "</span> per Child per
         calendar year in uninsured co-pays for health-related expenses.&nbsp; In the event
         that any Child's uninsured co-pays for health-related expenses paid by either
-        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
-        " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
+        parent exceeds <span style='background:yellow'>$" . $this->responses["threshold2"] . "</span> per calendar year, then " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover  <span style='background:yellow'>" . $this->responses["threshold3"] . "%</span> and
+        " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["threshold4"] . "%</span> of the Child(ren)'s uninsured co-pays for
         health-related expenses premiums exceeding the threshold amount.</p>";
         
         $this->fileContentString .= $snippet;
@@ -2210,8 +2209,8 @@ class HtmlGenerator extends documentGenerator
         margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
         name=SoCPostSchoolExpensesCap>8.12E</a></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>CAP ON PAYMENT BY EACH
         PARENT PER ACADEMIC SCHOOL YEAR</u>.&nbsp; The Child(ren)'s post-high school
-        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
-        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
+        education expenses shall be paid such that " .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-1"] . "%</span> up to a
+        cap of <span style='background:yellow'>$" . $this->responses["postCapA"] . "</span> amount per academic school year and " .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . " shall cover <span style='background:yellow'>" . $this->responses["postCap-2"] . "%</span> up
         to a cap of <span style='background:yellow'>$" . $this->responses["postCapB"] . "</span> amount per academic school year. </p>";
         
         $this->fileContentString .= $snippet;
@@ -2322,9 +2321,9 @@ class HtmlGenerator extends documentGenerator
         $snippet = "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:0in;text-align:justify;text-indent:.5in;line-height:150%'><a
         name=SoCDependentsSpAthenAlternate><b>8.13C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><u>SPLIT AUTHORITY TO
-        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " shall be entitled to
-        claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span>(Child's Initials) as a dependent for tax purposes every year.&nbsp;
-        " .  $this->responses["partyBFirst"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span> (Child's Initials) as a dependent for
+        CLAIM THE CHILD(REN) THEN ALTERNATE</u></a>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . " shall be entitled to
+        claim <span style='background:yellow'>" . $this->responses["partyATaxAlt"] . "</span> (Child's Initials) as a dependent for tax purposes every year.&nbsp;
+        " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . " shall be entitled to claim <span style='background:yellow'>" . $this->responses["partyBTaxAlt"] . "</span> (Child's Initials) as a dependent for
         tax purposes every year. Once the older Child is no longer eligible to be
         claimed for tax purposes, then the Parents shall alternate claiming the younger
         Child.&nbsp;&nbsp; </p>";
@@ -2476,16 +2475,21 @@ class HtmlGenerator extends documentGenerator
     }   // end of child support
 
     //Other section
-    function gen_other_9_00()
+    function gen_other_9_00_header() 
     {
         $header = "<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
         margin-bottom:.05pt;margin-left:0in;text-align:center;text-indent:0in;
-        line-height:150%'><u>OTHER ISSUES:</u></p>
-        
+        line-height:150%'><u>OTHER ISSUES:</u></p>";
+        $this->fileContentString .= $header;
+
+    }
+    function gen_other_9_00()
+    {
+        $header = "
         <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
         margin-left:.5pt;text-align:justify;line-height:150%'><a
         name=OtherIssuesCoParentingCounseling><b>9.00</b>&nbsp; <u>OTHER ISSUES: CO-PARENT
-        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>  " . $this->responses["therapistInput1"] .  "</span>, or
+        COUNSELING</u></a>.&nbsp; Parents agree to engage <span style='background:yellow'>" . $this->responses["therapistInput1"] .  "</span>, or
         other mutually selected licensed mental health professional, as a Co-Parent
         Counselor to assist them in collaboratively parenting the Child(ren).&nbsp; Both
         Parents shall continue in Co-Parent Counseling until clinically discharged or

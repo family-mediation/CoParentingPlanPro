@@ -517,7 +517,7 @@
         <p>Parents shall use the following method to
           reimburse each other for child-related expenses: Check, Bank Account Transfer,
           Venmo, Our Family Wizard or other mutually agreed upon parenting expense tool or
-          application, or <input type="text" name="reimburseMethod" />
+          application, or <input type="text" name="reimburseMethod" placeholder="leave blank if N/A" />
         </p>
 
         <div class="row justify-content-center pt-4 pb-4">

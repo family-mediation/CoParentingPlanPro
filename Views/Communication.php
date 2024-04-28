@@ -73,7 +73,7 @@
 
               <div class="container card p-4" id="semi" style="display: none;">
               Parents shall meet and confer twice annually by no later than
-              <input type="date" name="semidate1" id="semidate1" /> and <input type="date" name="semidate2" id="semidate2" /> every year.
+              <input type="text" name="semidate1" id="semidate1" /> and <input type="text" name="semidate2" id="semidate2" /> every year.
               </div>
               
               <div>
@@ -83,7 +83,7 @@
 
               <div class="container card p-4" id="annual" style="display: none;">
               Parents shall meet and confer annually by no later than
-              <input type="date" name="annualdate" id="annualdate" /> every year.
+              <input type="text" name="annualdate" id="annualdate" /> every year.
               </div>
               <br>&nbsp;
                     
