@@ -12,6 +12,12 @@ include 'HolidayTableWord.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
 {
+	public function __construct(string $fileName, string $fileType, array $responses)
+	{
+		$this->fileName = $fileName;
+		$this->responses = $responses;
+		$this->fileType = $fileType;
+	}
 	function genHeader()
 	{
 		
@@ -10142,7 +10148,7 @@ function gen_legal_10_02() {
 		// Zip the folder and rename it to .docx
 		$zipOutput = new ZipArchive;
 
-		if($zipOutput->open($this->fileName . " Coparenting Plan.zip",(ZipArchive::CREATE)))
+		if($zipOutput->open($this->fileName . ".zip",(ZipArchive::CREATE)))
 		{
 		    $folderRefsToZip = $this->fileName ."/_rels/.rels";
 		    $folderLevel1ToZip = $this->fileName ."/*.*";
@@ -10161,7 +10167,7 @@ function gen_legal_10_02() {
         {
            		$zipOutput->close();
         }
-		rename($this->fileName . " Coparenting Plan.zip",$this->fileName . " Coparenting Plan.docx");
+		rename($this->fileName . ".zip",$this->fileName . " Coparenting Plan.docx");
 		// Cleanup
 	}
 
