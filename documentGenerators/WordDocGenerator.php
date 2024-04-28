@@ -365,7 +365,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Name of Parent A</w:t>
+		  <w:t>Name of Parent A: " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='5B776BC7' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -381,7 +381,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Address</w:t>
+		  <w:t>Address: " . $this->responses["partyAResidence"] . ", " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='0F6E9FE4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -397,7 +397,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Telephone</w:t>
+		  <w:t>Telephone: " . $this->responses["partyACell"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='21F8A534' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -413,7 +413,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>E-Mail</w:t>
+		  <w:t>E-Mail: " . $this->responses["partyAEmail"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='5AE67848' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
@@ -442,7 +442,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Name of Parent B</w:t>
+		  <w:t>Name of Parent B: " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='04D79CAC' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -458,7 +458,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Address</w:t>
+		  <w:t>Address: " . $this->responses["partyBResidence"] . ", " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='5EA22090' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -474,7 +474,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>Telephone</w:t>
+		  <w:t>Telephone: " . $this->responses["partyBCell"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='0CC8295B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -490,10 +490,23 @@ class wordDocGenerator extends documentGenerator
 		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>E-Mail</w:t>
+		  <w:t>E-Mail: " . $this->responses["partyBEmail"] . "</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='75E730E4' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+	  <w:pPr>
+		  <w:pBdr>
+			  <w:top w:val='nil' />
+			  <w:left w:val='nil' />
+			  <w:bottom w:val='nil' />
+			  <w:right w:val='nil' />
+			  <w:between w:val='nil' />
+		  </w:pBdr>
+		  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+		  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+	  </w:pPr>
+  </w:p>
+    <w:p w14:paraId='7DC5F480' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
 	  <w:pPr>
 		  <w:pBdr>
 			  <w:top w:val='nil' />
@@ -520,8 +533,18 @@ class wordDocGenerator extends documentGenerator
 		  <w:jc w:val='center' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>IN THE FAMILY COURT OF THE ___________ CIRCUIT</w:t>
-	  </w:r>
+	  <w:t xml:space='preserve'>IN THE FAMILY COURT OF THE </w:t>
+  </w:r>
+  <w:r>
+	  <w:rPr>
+		  <w:highlight w:val='yellow' />
+	  </w:rPr>
+	  <w:t>" . $this->responses["court"] . "</w:t>
+  </w:r>
+  <w:r>
+	  <w:t xml:space='preserve'> CIRCUIT</w:t>
+  </w:r>
+  
   </w:p>
   <w:p w14:paraId='0C7EB3F8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
 	  <w:pPr>
@@ -551,7 +574,7 @@ class wordDocGenerator extends documentGenerator
 		  <w:jc w:val='center' />
 	  </w:pPr>
 	  <w:r>
-		  <w:t>STATE OF _____________</w:t>
+		  <w:t>STATE OF HAWAII</w:t>
 	  </w:r>
   </w:p>
   <w:p w14:paraId='4B789226' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
@@ -613,7 +636,7 @@ class wordDocGenerator extends documentGenerator
 					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 				  </w:pPr>
 				  <w:r>
-					  <w:t>PARENT A,</w:t>
+					  <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . ",</w:t>
 				  </w:r>
 			  </w:p>
 			  <w:p w14:paraId='625BD574' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
@@ -708,7 +731,7 @@ class wordDocGenerator extends documentGenerator
 					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 				  </w:pPr>
 				  <w:r>
-					  <w:t>PARENT B,</w:t>
+					  <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . ",</w:t>
 				  </w:r>
 			  </w:p>
 			  <w:p w14:paraId='7B0F1EB1' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
@@ -784,9 +807,39 @@ class wordDocGenerator extends documentGenerator
 					  <w:ind w:left='0' w:right='0' w:firstLine='0' />
 				  </w:pPr>
 				  <w:r>
-					  <w:t>Case No. (Family Court)</w:t>
-				  </w:r>
+				  <w:t xml:space='preserve'>Case No. </w:t>
+			  </w:r>
+			  <w:r>
+				  <w:rPr>
+					  <w:highlight w:val='yellow' />
+				  </w:rPr>
+				  <w:t>" . $this->responses["caseNo"] . "</w:t>
+			  </w:r>
 			  </w:p>
+
+			  <w:p w14:paraId='1FF6BA6A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+			  <w:pPr>
+				  <w:pBdr>
+					  <w:top w:val='nil' />
+					  <w:left w:val='nil' />
+					  <w:bottom w:val='nil' />
+					  <w:right w:val='nil' />
+					  <w:between w:val='nil' />
+				  </w:pBdr>
+				  <w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+				  <w:ind w:left='0' w:right='0' w:firstLine='0' />
+			  </w:pPr>
+			  <w:r>
+			  <w:t xml:space='preserve'>Nature of Case: </w:t>
+		  </w:r>
+		  <w:r>
+			  <w:rPr>
+				  <w:highlight w:val='yellow' />
+			  </w:rPr>
+			  <w:t>" . $this->responses["natureCase"] . "</w:t>
+		  </w:r>
+		  </w:p>
+
 			  <w:p w14:paraId='575A2AD5' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
 				  <w:pPr>
 					  <w:pBdr>
@@ -1051,14 +1104,56 @@ class wordDocGenerator extends documentGenerator
 		  <w:t xml:space='preserve'>THIS AGREEMENT is made and </w:t>
 	  </w:r>
 	  <w:r>
-		  <w:rPr>
-			  <w:highlight w:val='white' />
-		  </w:rPr>
-		  <w:t>entered this __ (day) day of _______ (month), ______ (year)</w:t>
-	  </w:r>
-	  <w:r>
-		  <w:t>, by and between PARENT A and PARENT B (collectively hereinafter referred to as “Parents”) and applies to the Child(ren) named below in Paragraph 3.00.</w:t>
-	  </w:r>
+    <w:rPr>
+        <w:highlight w:val='white' />
+    </w:rPr>
+    <w:t xml:space='preserve'>entered this </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t xml:space='preserve'>" . $this->day . " (day)</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> of </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t xml:space='preserve'>" . $this->month . " (month)</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'>, </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t xml:space='preserve'>" . $this->year . " (year)</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'>, by and between </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> and </w:t>
+</w:r>
+<w:r>
+    <w:rPr>
+        <w:highlight w:val='yellow' />
+    </w:rPr>
+    <w:t>" .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+    <w:t xml:space='preserve'> (collectively hereinafter referred to as “Parents”) and applies to the Child(ren) named below in Paragraph 3.00.</w:t>
+</w:r>
   </w:p>
   <w:p w14:paraId='4BA8706B' w14:textId='644BCB6B' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
 	  <w:pPr>
@@ -1116,9 +1211,28 @@ class wordDocGenerator extends documentGenerator
 	  </w:r>
 	  <w:bookmarkEnd w:id='5' />
 	  <w:r>
-		  <w:t>WHEREAS, parents intend to seek approval of their Agreement from the Family Court of the ____________ Circuit of the State of ____________ hereinafter referred to as the “Family Court”;</w:t>
-	  </w:r>
+	  <w:t xml:space='preserve'>WHEREAS, parents intend to seek approval of their Agreement from the Family Court of the </w:t>
+  </w:r>
+  <w:r>
+	  <w:rPr>
+		  <w:highlight w:val='yellow' />
+	  </w:rPr>
+	  <w:t>" . $this->responses["court"] . "</w:t>
+  </w:r>
+  <w:r>
+	  <w:t xml:space='preserve'> Circuit of the State of </w:t>
+  </w:r>
+  <w:r>
+	  <w:rPr>
+		  <w:highlight w:val='yellow' />
+	  </w:rPr>
+	  <w:t>Hawaii</w:t>
+  </w:r>
+  <w:r>
+	  <w:t xml:space='preserve'> hereinafter referred to as the “Family Court”;</w:t>
+  </w:r>
   </w:p>
+
   <w:p w14:paraId='1263E7CC' w14:textId='6CCADD84' w:rsidR='00505307' w:rsidRDefault='00D52A55' w:rsidP='00D52A55'>
 	  <w:pPr>
 		  <w:pBdr>
@@ -1242,8 +1356,24 @@ class wordDocGenerator extends documentGenerator
 	  <w:t xml:space='preserve'>. </w:t>
   </w:r>
   <w:r>
-	  <w:t xml:space='preserve'>PARENT A’s full legal name is ____________. Parent A’s residence address is ____________. </w:t>
-  </w:r>
+  <w:t xml:space='preserve'>PARENT A’s full legal name is </w:t>
+</w:r>
+<w:r>
+  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+  <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+</w:r>
+<w:r>
+  <w:t xml:space='preserve'>. " .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "’s residence address is </w:t>
+</w:r>
+<w:r>
+  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+  <w:t>" . $this->responses["partyAResidence"] . ", " . $this->responses["partyACity"] . ", " . $this->responses["partyAState"] . ", " . $this->responses["partyAZip"] . ".</w:t>
+</w:r>
+
 </w:p>
 <w:p w14:paraId='6414ED90' w14:textId='19F2DA0A' w:rsidR='00505307' w:rsidRDefault='00D52A55'>
   <w:pPr>
@@ -1275,8 +1405,24 @@ class wordDocGenerator extends documentGenerator
   </w:r>
   <w:bookmarkEnd w:id='11' />
   <w:r>
-	  <w:t xml:space='preserve'>. Parent B’s full legal name is ____________. Parent B’s residence address is ____________. </w:t>
-  </w:r>
+  <w:t xml:space='preserve'>. PARENT B’s full legal name is </w:t>
+</w:r>
+<w:r>
+  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+  <w:t>" . $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
+</w:r>
+<w:r>
+  <w:t xml:space='preserve'>. " .  $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "’s residence address is </w:t>
+</w:r>
+<w:r>
+  <w:rPr>
+	  <w:highlight w:val='yellow' />
+  </w:rPr>
+  <w:t>" . $this->responses["partyBResidence"] . ", " . $this->responses["partyBCity"] . ", " . $this->responses["partyBState"] . ", " . $this->responses["partyBZip"] . ".</w:t>
+</w:r>
+
 </w:p>";
 
 $this->fileContentString .= $header2String;
