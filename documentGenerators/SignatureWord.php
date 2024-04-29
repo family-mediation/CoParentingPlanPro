@@ -1,7 +1,7 @@
 <?php
 
 class SignatureWord {
-    public function getSignature(string $parentAName, string $parentBName, string $addressA, string $addressB, string $partyAEmail, string $partyBEmail, int $ssnA, int $ssnB, string $dateA, string $dateB): string {
+    public function getSignature(string $parentAName, string $parentALastName, string $parentBName, string $parentBLastName, string $addressA, string $cityA, string $stateA, string $zipA, string $addressB, string $cityB, string $stateB, string $zipB, string $partyAEmail, string $partyBEmail, int $ssnA, int $ssnB, string $dateA, string $dateB, string $cellA, string $cellB): string {
         return "<w:p w14:paraId='3137585E' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='160' w:line='360' w:lineRule='auto'/>
@@ -111,6 +111,7 @@ class SignatureWord {
         <w:t>Name:</w:t>
       </w:r>
     </w:p>
+
     <w:p w14:paraId='1755CF26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:spacing w:after='4' w:line='259' w:lineRule='auto'/>
@@ -118,7 +119,7 @@ class SignatureWord {
         <w:jc w:val='both'/>
       </w:pPr>
       <w:r>
-        <w:t xml:space='preserve'>$parentAName </w:t>
+        <w:t>$parentAName $parentALastName</w:t>
       </w:r>
       <w:r>
         <w:tab/>
@@ -137,9 +138,23 @@ class SignatureWord {
       </w:r>
       <w:r>
         <w:tab/>
-        <w:t>$parentBName</w:t>
+        <w:t>$parentBName $parentBLastName</w:t>
       </w:r>
     </w:p>
+
+    <w:p w14:paraId='0693296B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+    <w:pPr>
+      <w:tabs>
+        <w:tab w:val='left' w:pos='1440'/>
+        <w:tab w:val='left' w:pos='2160'/>
+        <w:tab w:val='center' w:pos='4680'/>
+      </w:tabs>
+      <w:spacing w:after='0' w:line='259' w:lineRule='auto'/>
+      <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+      <w:jc w:val='both'/>
+    </w:pPr>
+  </w:p>
+
     <w:p w14:paraId='51F8AB76' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
       <w:pPr>
         <w:tabs>
@@ -152,19 +167,75 @@ class SignatureWord {
         <w:jc w:val='both'/>
       </w:pPr>
       <w:r>
-        <w:t>Residential Address: $addressA</w:t>
+        <w:t>Residential Address:</w:t>
       </w:r>
       <w:r>
         <w:tab/>
       </w:r>
       <w:r>
         <w:tab/>
-        <w:t>Residential Address: $addressB</w:t>
+        <w:t>Residential Address:</w:t>
       </w:r>
       <w:r>
         <w:tab/>
       </w:r>
     </w:p>
+
+    <w:p w14:paraId='1755CF26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+      <w:pPr>
+        <w:spacing w:after='4' w:line='259' w:lineRule='auto'/>
+        <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+        <w:jc w:val='both'/>
+      </w:pPr>
+      <w:r>
+        <w:t>$addressA</w:t>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:tab/>
+      </w:r>
+      <w:r>
+        <w:tab/>
+        <w:t>$addressB</w:t>
+      </w:r>
+    </w:p>
+
+
+    <w:p w14:paraId='1755CF26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+    <w:pPr>
+      <w:spacing w:after='4' w:line='259' w:lineRule='auto'/>
+      <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+      <w:jc w:val='both'/>
+    </w:pPr>
+    <w:r>
+      <w:t>$cityA, $stateA $zipA</w:t>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+      <w:tab/>
+      <w:t>$cityB, $stateB $zipB</w:t>
+    </w:r>
+  </w:p>
+
+
+
+
     <w:p w14:paraId='4BD6B2B8' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
       <w:pPr>
         <w:tabs>
@@ -201,7 +272,7 @@ class SignatureWord {
         <w:jc w:val='both'/>
       </w:pPr>
       <w:r>
-        <w:t>E-Mail Address:$partyAEmail</w:t>
+        <w:t>E-Mail Address:</w:t>
       </w:r>
       <w:r>
         <w:tab/>
@@ -211,7 +282,7 @@ class SignatureWord {
       </w:r>
       <w:r>
         <w:tab/>
-        <w:t>E-Mail Address:$partyBEmail</w:t>
+        <w:t>E-Mail Address:</w:t>
       </w:r>
       <w:r>
         <w:tab/>
@@ -223,6 +294,106 @@ class SignatureWord {
         <w:tab/>
       </w:r>
     </w:p>
+    <w:p w14:paraId='1755CF26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+    <w:pPr>
+      <w:spacing w:after='4' w:line='259' w:lineRule='auto'/>
+      <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+      <w:jc w:val='both'/>
+    </w:pPr>
+    <w:r>
+      <w:t>$partyAEmail</w:t>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+      <w:tab/>
+    </w:r>
+    <w:r>
+    <w:tab/>
+  </w:r>
+    <w:r>
+      <w:tab/>
+      <w:t>$partyBEmail</w:t>
+    </w:r>
+  </w:p>
+
+  <w:p w14:paraId='0693296B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
+  <w:pPr>
+    <w:tabs>
+      <w:tab w:val='left' w:pos='1440'/>
+      <w:tab w:val='left' w:pos='2160'/>
+      <w:tab w:val='center' w:pos='4680'/>
+    </w:tabs>
+    <w:spacing w:after='0' w:line='259' w:lineRule='auto'/>
+    <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+    <w:jc w:val='both'/>
+  </w:pPr>
+</w:p>
+
+  
+  <w:p w14:paraId='51F8AB76' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+  <w:pPr>
+    <w:tabs>
+      <w:tab w:val='left' w:pos='1440'/>
+      <w:tab w:val='left' w:pos='2160'/>
+      <w:tab w:val='center' w:pos='4680'/>
+    </w:tabs>
+    <w:spacing w:after='0' w:line='259' w:lineRule='auto'/>
+    <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+    <w:jc w:val='both'/>
+  </w:pPr>
+  <w:r>
+    <w:t>Cell Phone:</w:t>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+    <w:t>Cell Phone:</w:t>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+</w:p>
+
+<w:p w14:paraId='1755CF26' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+  <w:pPr>
+    <w:spacing w:after='4' w:line='259' w:lineRule='auto'/>
+    <w:ind w:left='-15' w:right='0' w:firstLine='0'/>
+    <w:jc w:val='both'/>
+  </w:pPr>
+  <w:r>
+    <w:t>$cellA</w:t>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+  </w:r>
+  <w:r>
+    <w:tab/>
+    <w:t>$cellB</w:t>
+  </w:r>
+</w:p>
+
     <w:p w14:paraId='1F64F7F2' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='00505307'>
       <w:pPr>
         <w:tabs>

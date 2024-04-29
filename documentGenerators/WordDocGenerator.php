@@ -7,7 +7,7 @@ include 'timeSharingSchedulesWordDoc/Winter.php';
 include 'timeSharingSchedulesWordDoc/Spring.php';
 include 'timeSharingSchedulesWordDoc/Summer.php';
 include 'HolidayTableWord.php';
-//include 'Signature.php';
+include 'SignatureWord.php';
 //include 'HolidayTable.php';
 require_once("DocumentGenerator.php");
 class wordDocGenerator extends documentGenerator
@@ -12218,10 +12218,10 @@ function gen_legal_10_02() {
 }
 
     function signature() {
-        //$signature = new SignatureWord();
-        //$signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyAResidence'], $this->responses['partyBResidence'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned']);
+        $signature = new SignatureWord();
+        $signatures = $signature->getSignature($this->responses['partyAFirst'], $this->responses['partyALast'], $this->responses['partyBFirst'], $this->responses['partyBLast'], $this->responses['partyAResidence'], $this->responses['partyACity'], $this->responses['partyAState'], $this->responses['partyAZip'], $this->responses['partyBResidence'], $this->responses['partyBCity'], $this->responses['partyBState'], $this->responses['partyBZip'], $this->responses['partyAEmail'], $this->responses['partyBEmail'], $this->responses['partyASocial'], $this->responses['partyBSocial'], $this->responses['partyADateSigned'], $this->responses['partyBDateSigned'], $this->responses['partyACell'], $this->responses['partyBCell']);
        // 
-       // $this->fileContentString .= $signatures;
+       $this->fileContentString .= $signatures;
     }
 
     //End of other section
