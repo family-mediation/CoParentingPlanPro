@@ -4213,7 +4213,7 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
                         $partyARes = 'Split';
                         break;
                     default:
-                        console_log("error in childrenA switch - HtmlGen");
+                        console_log("error in childrenA switch - WordGen");
                 }
                 switch ($this->responses['child' . $i . 'B']) {
                     case 'child' . $i . 'BlankB':
@@ -4235,15 +4235,16 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
                         $partyBRes = 'Split';
                         break;
                     default:
-                        console_log("error in children switch - HtmlGen");
+                        console_log("error in children switch - WordGen");
                 }
+                console_log('calling getChildren ' . $i);
                 $childrenRows .= $table->getChildren($initials, $birthday, $partyARes, $partyBRes);
             }
-            $end = $table->getEnd();
-            $this->fileContentString .= $holidayTable;
-            $this->fileContentString .= $childrenRows;
-            $this->fileContentString .= $end;
         }
+        $end = $table->getEnd();
+        $this->fileContentString .= $holidayTable;
+        $this->fileContentString .= $childrenRows;
+        $this->fileContentString .= $end;
     }
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
