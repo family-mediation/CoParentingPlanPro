@@ -19,6 +19,8 @@ body
     --color1: #896c24;
     --color2: #5b4a00;
     --color3:#ffffff;
+    width: 100%;
+    overflow: none;
 }
 header, footer, header a
 {
@@ -48,6 +50,7 @@ header, footer, header a
 #wrapper
 {
     min-height: 100vh;
+    width:100vw;
 }
 #content
 {
