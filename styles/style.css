@@ -20,6 +20,7 @@ body
     --color2: #5b4a00;
     --color3:#ffffff;
     position: absolute;
+    min-width: 100vw;
 }
 header, footer, header a
 {
