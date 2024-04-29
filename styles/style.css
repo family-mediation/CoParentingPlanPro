@@ -19,6 +19,7 @@ body
     --color1: #896c24;
     --color2: #5b4a00;
     --color3:#ffffff;
+    position: absolute;
 }
 header, footer, header a
 {
@@ -83,8 +84,4 @@ input[type=radio] {
 }
 .tooltip-inner {
     max-width: 400px; /* Adjust the width as needed */
-}
-.yscroll
-{
-    overflow-y:scroll;
 }
