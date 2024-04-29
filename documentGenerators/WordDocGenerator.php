@@ -1838,7 +1838,7 @@ $this -> tableOfContentsString .= $tableCon;
 }
 function gen_legal_custody_5_05A()
 {   // 5.02  
-	$snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
+    $snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
 	<w:pPr>
 		<w:spacing w:after='1' w:line='360' w:lineRule='auto' />
 		<w:ind w:left='0' w:right='36' w:firstLine='0' />
@@ -1871,7 +1871,7 @@ function gen_legal_custody_5_05A()
     <w:rPr>
         <w:highlight w:val='yellow' />
     </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
+    <w:t>" . $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
 </w:r>
 <w:r>
     <w:t xml:space='preserve'> </w:t> 
@@ -1911,7 +1911,7 @@ function gen_legal_custody_5_05A()
     <w:rPr>
         <w:highlight w:val='yellow' />
     </w:rPr>
-    <w:t>" .  $this->responses["partyAFirst"] . " " .  $this->responses["partyALast"] . "</w:t>
+    <w:t>" . $this->responses["partyAFirst"] . " " . $this->responses["partyALast"] . "</w:t>
 </w:r>
 <w:r>
     <w:t xml:space='preserve'> is awarded sole legal custody, </w:t>
@@ -1920,7 +1920,7 @@ function gen_legal_custody_5_05A()
     <w:rPr>
         <w:highlight w:val='yellow' />
     </w:rPr>
-    <w:t>" .  $this->responses["partyBFirst"] . " " .  $this->responses["partyBLast"] . "</w:t>
+    <w:t>" . $this->responses["partyBFirst"] . " " . $this->responses["partyBLast"] . "</w:t>
 </w:r>
 <w:r>
     <w:t xml:space='preserve'> shall have free and unrestricted access to all information pertaining to the Child(ren). The Parent who does not have legal custody may independently contact any provider serving the Child(ren) including education, health-related, extracurricular, etc. and access</w:t>
@@ -1939,7 +1939,7 @@ function gen_legal_custody_5_05A()
 </w:r>
 </w:p>";
 
-	$tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
+    $tableCon = "<w:p w14:paraId='76FD5253' w14:textId='3A6A9E70' w:rsidR='00505307' w:rsidRDefault='00FC64E6'>
 	<w:pPr>
 		<w:spacing w:after='0' w:line='240' w:lineRule='auto'/>
 		<w:ind w:left='0' w:right='0'/>
@@ -1983,9 +1983,9 @@ function gen_legal_custody_5_05A()
 	</w:r>
   </w:hyperlink>
 </w:p>";
-  $this->fileContentString .= $snippet;
-	$this -> tableOfContentsString .= $tableCon;
-
+    $this->fileContentString .= $snippet;
+    $this->tableOfContentsString .= $tableCon;
+}
 function gen_legal_custody_5_05B()
 {   // 5.02 
 	$snippet = "<w:p w14:paraId='0134ED1B' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
@@ -4182,7 +4182,8 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 			 "Error in WordDoc Generator for the variable: schoolSummerBreakSchedule.";
 	}
 }
-    function gen_physical_custody_timesharing_6_03(array $res) {
+    function gen_physical_custody_timesharing_6_03(array $res)
+    {
         $table = new HolidayTableWord();
         $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
         $childrenRows = '';
@@ -4238,10 +4239,11 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
                 }
                 $childrenRows .= $table->getChildren($initials, $birthday, $partyARes, $partyBRes);
             }
-        $end = $table->getEnd();
-        $this->fileContentString .= $holidayTable;
-        $this->fileContentString .= $childrenRows;
-        $this->fileContentString .= $end;
+            $end = $table->getEnd();
+            $this->fileContentString .= $holidayTable;
+            $this->fileContentString .= $childrenRows;
+            $this->fileContentString .= $end;
+        }
     }
 function gen_physical_custody_timesharing_6_03A() {
 	$alt = "<w:p w14:paraId='51C48F5A' w14:textId='77777777' w:rsidR='00505307' w:rsidRDefault='006830FF'>
