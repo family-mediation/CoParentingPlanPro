@@ -1,7 +1,13 @@
 <?php
 class HolidayTable {
     public function getHolidayTable(array $res, string $parentAFirst, string $parentBFirst, string $parentABirthday, string $parentBBirthday): string {
-        return "<body class='c8 doc-content'><p class='c11'><span class='c0'></span></p><a id='t.d3363e6d847e3a4431506d233c5dda81d43b8398'></a><a id='t.0'></a>
+        return "<p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:.05pt;
+        margin-left:0in;text-align:justify;text-indent:0in;line-height:150%'><a
+        name=PhysicalCustodyHolidaysandSpecialDays><b>6.03</b>&nbsp; <u>PHYSICAL CUSTODY AND
+        TIMESHARING: HOLIDAYS AND SPECIAL DAYS</u>.&nbsp; </a>Parents agree that the
+        following holidays shall be shared as follows:</p>
+        
+        <body class='c8 doc-content'><p class='c11'><span class='c0'></span></p><a id='t.d3363e6d847e3a4431506d233c5dda81d43b8398'></a><a id='t.0'></a>
             <table class='c10'>
               <tr class='c6' style='text-align: center;'>
                 <td class='c1' colspan='1' rowspan='1' style='border:solid black 1.0pt;'><p class='c14'><span class='c7'>Holiday</span></p></td>
