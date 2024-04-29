@@ -4184,6 +4184,34 @@ function gen_physical_custody_timesharing_6_02E(string $type) {
 }
     function gen_physical_custody_timesharing_6_03(array $res)
     {
+
+		$tableContent = "<w:p w:rsidR='00000000' w:rsidDel='00000000' w:rsidP='00000000' w:rsidRDefault='00000000' w:rsidRPr='00000000' w14:paraId='00000036'>
+		<w:pPr>
+			<w:spacing w:after='0' w:line='240' w:lineRule='auto' />
+			<w:ind w:left='0' w:right='0' w:hanging='10' />
+			<w:rPr />
+		</w:pPr>
+		<w:hyperlink w:anchor='bookmark=id.1mrcu09'>
+			<w:r w:rsidDel='00000000' w:rsidR='00000000' w:rsidRPr='00000000'>
+				<w:rPr>
+					<w:color w:val='0563c1' />
+					<w:u w:val='single' />
+					<w:rtl w:val='0' />
+				</w:rPr>
+				<w:t xml:space='preserve'>6.03</w:t>
+				<w:tab />
+				<w:t xml:space='preserve'>Physical Custody and Timesharing: Holidays and Special Days</w:t>
+			</w:r>
+		</w:hyperlink>
+		<w:r w:rsidDel='00000000' w:rsidR='00000000' w:rsidRPr='00000000'>
+			<w:rPr>
+				<w:rtl w:val='0' />
+			</w:rPr>
+		</w:r>
+	</w:p>";
+	$this->tableOfContentsString .= $tableContent;
+
+
         $table = new HolidayTableWord();
         $holidayTable = $table->getHolidayTable($res, $this->responses['partyAFirst'], $this->responses['partyBFirst'], $this->responses['partyABirthday'], $this->responses['partyBBirthday']);
         $childrenRows = '';
