@@ -6,8 +6,6 @@ if(!isset($_SESSION['responses'])) {
 if(isset($_POST)) {
     $_SESSION['responses'] = array_replace($_SESSION['responses'], $_POST);
 }
-require_once("MysqlUtil.php");
-//delete this later: use for convenience
 function console_log($output, $with_script_tags = true)
 {
     $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
@@ -42,8 +40,6 @@ if(!isset($_SESSION['canSeeIssues'])) {
 if(!isset($_SESSION['canSeeLegal'])) {
     $_SESSION['canSeeLegal'] = false;
 }
-// create an object that will serve as our database.
-$db = new Database;
 $page = $_GET['page'] ?? 1;
 console_log($_SESSION['responses']);
 require_once("Utility.php");

@@ -366,12 +366,12 @@ abstract class documentGenerator
         // Page 2 - Holiday Table
         $arr = []; //an array that will be assigned values to list out in the table
         for ($i = 0; $i < 40; $i++) {
-            $arr[$i] = 'Blank';
+            $arr[$i] = '';
         }
         //newYears
         switch ($this->responses['newYearsA']) {
             case 'newYearsBlankA':
-                $arr[0] = 'Blank';
+                $arr[0] = '';
                 break;
             case 'newYearsEveryA':
                 $arr[0] = 'Every Year';
@@ -393,7 +393,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['newYearsB']) {
             case 'newYearsBlankB':
-                $arr[1] = 'Blank';
+                $arr[1] = '';
                 break;
             case 'newYearsEveryB':
                 $arr[1] = 'Every Year';
@@ -417,7 +417,7 @@ abstract class documentGenerator
         //mlk
         switch ($this->responses['mlkA']) {
             case 'mlkBlankA':
-                $arr[2] = 'Blank';
+                $arr[2] = '';
                 break;
             case 'mlkEveryA':
                 $arr[2] = 'Every Year';
@@ -439,7 +439,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['mlkB']) {
             case 'mlkBlankB':
-                $arr[3] = 'Blank';
+                $arr[3] = '';
                 break;
             case 'mlkEveryB':
                 $arr[3] = 'Every Year';
@@ -463,7 +463,7 @@ abstract class documentGenerator
         //presidents
         switch ($this->responses['presidentsA']) {
             case 'presidentsBlankA':
-                $arr[4] = 'Blank';
+                $arr[4] = '';
                 break;
             case 'presidentsEveryA':
                 $arr[4] = 'Every Year';
@@ -485,7 +485,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['presidentsB']) {
             case 'presidentsBlankB':
-                $arr[5] = 'Blank';
+                $arr[5] = '';
                 break;
             case 'presidentsEveryB':
                 $arr[5] = 'Every Year';
@@ -509,7 +509,7 @@ abstract class documentGenerator
         //kuhio
         switch ($this->responses['kuhioA']) {
             case 'kuhioBlankA':
-                $arr[6] = 'Blank';
+                $arr[6] = '';
                 break;
             case 'kuhioEveryA':
                 $arr[6] = 'Every Year';
@@ -531,7 +531,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['kuhioB']) {
             case 'kuhioBlankB':
-                $arr[7] = 'Blank';
+                $arr[7] = '';
                 break;
             case 'kuhioEveryB':
                 $arr[7] = 'Every Year';
@@ -555,7 +555,7 @@ abstract class documentGenerator
         //goodFriday
         switch ($this->responses['goodFridayA']) {
             case 'goodFridayBlankA':
-                $arr[8] = 'Blank';
+                $arr[8] = '';
                 break;
             case 'goodFridayEveryA':
                 $arr[8] = 'Every Year';
@@ -577,7 +577,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['goodFridayB']) {
             case 'goodFridayBlankB':
-                $arr[9] = 'Blank';
+                $arr[9] = '';
                 break;
             case 'goodFridayEveryB':
                 $arr[9] = 'Every Year';
@@ -601,7 +601,7 @@ abstract class documentGenerator
         //easter
         switch ($this->responses['easterA']) {
             case 'easterBlankA':
-                $arr[10] = 'Blank';
+                $arr[10] = '';
                 break;
             case 'easterEveryA':
                 $arr[10] = 'Every Year';
@@ -623,7 +623,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['easterB']) {
             case 'easterBlankB':
-                $arr[11] = 'Blank';
+                $arr[11] = '';
                 break;
             case 'easterEveryB':
                 $arr[11] = 'Every Year';
@@ -647,7 +647,7 @@ abstract class documentGenerator
         //mothers
         switch ($this->responses['mothersA']) {
             case 'mothersBlankA':
-                $arr[12] = 'Blank';
+                $arr[12] = '';
                 break;
             case 'mothersEveryA':
                 $arr[12] = 'Every Year';
@@ -669,7 +669,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['mothersB']) {
             case 'mothersBlankB':
-                $arr[13] = 'Blank';
+                $arr[13] = '';
                 break;
             case 'mothersEveryB':
                 $arr[13] = 'Every Year';
@@ -693,7 +693,7 @@ abstract class documentGenerator
         //memorial
         switch ($this->responses['memorialA']) {
             case 'memorialBlankA':
-                $arr[14] = 'Blank';
+                $arr[14] = '';
                 break;
             case 'memorialEveryA':
                 $arr[14] = 'Every Year';
@@ -715,7 +715,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['memorialB']) {
             case 'memorialBlankB':
-                $arr[15] = 'Blank';
+                $arr[15] = '';
                 break;
             case 'memorialEveryB':
                 $arr[15] = 'Every Year';
@@ -739,7 +739,7 @@ abstract class documentGenerator
         //fathers
         switch ($this->responses['fathersA']) {
             case 'fathersBlankA':
-                $arr[16] = 'Blank';
+                $arr[16] = '';
                 break;
             case 'fathersEveryA':
                 $arr[16] = 'Every Year';
@@ -761,7 +761,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['fathersB']) {
             case 'fathersBlankB':
-                $arr[17] = 'Blank';
+                $arr[17] = '';
                 break;
             case 'fathersEveryB':
                 $arr[17] = 'Every Year';
@@ -785,7 +785,7 @@ abstract class documentGenerator
         //julyFourth
         switch ($this->responses['julyFourthA']) {
             case 'julyFourthBlankA':
-                $arr[18] = 'Blank';
+                $arr[18] = '';
                 break;
             case 'julyFourthEveryA':
                 $arr[18] = 'Every Year';
@@ -807,7 +807,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['julyFourthB']) {
             case 'julyFourthBlankB':
-                $arr[19] = 'Blank';
+                $arr[19] = '';
                 break;
             case 'julyFourthEveryB':
                 $arr[19] = 'Every Year';
@@ -831,7 +831,7 @@ abstract class documentGenerator
         //statehood
         switch ($this->responses['statehoodA']) {
             case 'statehoodBlankA':
-                $arr[20] = 'Blank';
+                $arr[20] = '';
                 break;
             case 'statehoodEveryA':
                 $arr[20] = 'Every Year';
@@ -853,7 +853,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['statehoodB']) {
             case 'statehoodBlankB':
-                $arr[21] = 'Blank';
+                $arr[21] = '';
                 break;
             case 'statehoodEveryB':
                 $arr[21] = 'Every Year';
@@ -877,7 +877,7 @@ abstract class documentGenerator
         //labor
         switch ($this->responses['laborA']) {
             case 'laborBlankA':
-                $arr[22] = 'Blank';
+                $arr[22] = '';
                 break;
             case 'laborEveryA':
                 $arr[22] = 'Every Year';
@@ -899,7 +899,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['laborB']) {
             case 'laborBlankB':
-                $arr[23] = 'Blank';
+                $arr[23] = '';
                 break;
             case 'laborEveryB':
                 $arr[23] = 'Every Year';
@@ -923,7 +923,7 @@ abstract class documentGenerator
         //election
         switch ($this->responses['electionA']) {
             case 'electionBlankA':
-                $arr[24] = 'Blank';
+                $arr[24] = '';
                 break;
             case 'electionEveryA':
                 $arr[24] = 'Every Year';
@@ -945,7 +945,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['electionB']) {
             case 'electionBlankB':
-                $arr[25] = 'Blank';
+                $arr[25] = '';
                 break;
             case 'electionEveryB':
                 $arr[25] = 'Every Year';
@@ -969,7 +969,7 @@ abstract class documentGenerator
         //veterans
         switch ($this->responses['veteransA']) {
             case 'veteransBlankA':
-                $arr[26] = 'Blank';
+                $arr[26] = '';
                 break;
             case 'veteransEveryA':
                 $arr[26] = 'Every Year';
@@ -991,7 +991,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['veteransB']) {
             case 'veteransBlankB':
-                $arr[27] = 'Blank';
+                $arr[27] = '';
                 break;
             case 'veteransEveryB':
                 $arr[27] = 'Every Year';
@@ -1015,7 +1015,7 @@ abstract class documentGenerator
         //thanksgiving
         switch ($this->responses['thanksgivingA']) {
             case 'thanksgivingBlankA':
-                $arr[28] = 'Blank';
+                $arr[28] = '';
                 break;
             case 'thanksgivingEveryA':
                 $arr[28] = 'Every Year';
@@ -1037,7 +1037,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['thanksgivingB']) {
             case 'thanksgivingBlankB':
-                $arr[29] = 'Blank';
+                $arr[29] = '';
                 break;
             case 'thanksgivingEveryB':
                 $arr[29] = 'Every Year';
@@ -1061,7 +1061,7 @@ abstract class documentGenerator
         //christmasEve
         switch ($this->responses['christmasEveA']) {
             case 'christmasEveBlankA':
-                $arr[30] = 'Blank';
+                $arr[30] = '';
                 break;
             case 'christmasEveEveryA':
                 $arr[30] = 'Every Year';
@@ -1083,7 +1083,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['christmasEveB']) {
             case 'christmasEveBlankB':
-                $arr[31] = 'Blank';
+                $arr[31] = '';
                 break;
             case 'christmasEveEveryB':
                 $arr[31] = 'Every Year';
@@ -1107,7 +1107,7 @@ abstract class documentGenerator
         //christmas
         switch ($this->responses['christmasA']) {
             case 'christmasBlankA':
-                $arr[32] = 'Blank';
+                $arr[32] = '';
                 break;
             case 'christmasEveryA':
                 $arr[32] = 'Every Year';
@@ -1129,7 +1129,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['christmasB']) {
             case 'christmasBlankB':
-                $arr[33] = 'Blank';
+                $arr[33] = '';
                 break;
             case 'christmasEveryB':
                 $arr[33] = 'Every Year';
@@ -1153,7 +1153,7 @@ abstract class documentGenerator
         //nye
         switch ($this->responses['nyeA']) {
             case 'nyeBlankA':
-                $arr[34] = 'Blank';
+                $arr[34] = '';
                 break;
             case 'nyeEveryA':
                 $arr[34] = 'Every Year';
@@ -1175,7 +1175,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['nyeB']) {
             case 'nyeBlankB':
-                $arr[35] = 'Blank';
+                $arr[35] = '';
                 break;
             case 'nyeEveryB':
                 $arr[35] = 'Every Year';
@@ -1199,7 +1199,7 @@ abstract class documentGenerator
         //partyA
         switch ($this->responses['partyAA']) {
             case 'partyABlankA':
-                $arr[36] = 'Blank';
+                $arr[36] = '';
                 break;
             case 'partyAEveryA':
                 $arr[36] = 'Every Year';
@@ -1221,7 +1221,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['partyAB']) {
             case 'partyABlankB':
-                $arr[37] = 'Blank';
+                $arr[37] = '';
                 break;
             case 'partyAEveryB':
                 $arr[37] = 'Every Year';
@@ -1245,7 +1245,7 @@ abstract class documentGenerator
         //partyB
         switch ($this->responses['partyBA']) {
             case 'partyBBlankA':
-                $arr[38] = 'Blank';
+                $arr[38] = '';
                 break;
             case 'partyBEveryA':
                 $arr[38] = 'Every Year';
@@ -1267,7 +1267,7 @@ abstract class documentGenerator
         }
         switch ($this->responses['partyBB']) {
             case 'partyBBlankB':
-                $arr[39] = 'Blank';
+                $arr[39] = '';
                 break;
             case 'partyBEveryB':
                 $arr[39] = 'Every Year';

@@ -764,7 +764,7 @@ class HtmlGenerator extends documentGenerator
             if ($initials != "" && $birthday != "") {
                 switch ($this->responses['child' . $i . 'A']) {
                     case 'child' . $i . 'BlankA':
-                        $partyARes = 'Blank';
+                        $partyARes = '';
                         break;
                     case 'child' . $i . 'EveryA':
                         $partyARes = 'Every Year';
@@ -786,7 +786,7 @@ class HtmlGenerator extends documentGenerator
                 }
                 switch ($this->responses['child' . $i . 'B']) {
                     case 'child' . $i . 'BlankB':
-                        $partyBRes = 'Blank';
+                        $partyBRes = '';
                         break;
                     case 'child' . $i . 'EveryB':
                         $partyBRes = 'Every Year';
